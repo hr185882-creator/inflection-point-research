@@ -1,174 +1,221 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-09T19:17:04Z",
+  "fetched_at": "2026-03-09T20:49:22Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-09T19:17:05Z",
+      "last_updated": "2026-03-09T20:49:22Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
-          "price": 670.64,
+          "price": 678.27,
           "prev_close": 672.38,
-          "change": -1.74,
-          "change_pct": -0.26,
+          "change": 5.89,
+          "change_pct": 0.88,
           "currency": "USD"
         },
         "QQQ": {
           "label": "Nasdaq 100 ETF",
-          "price": 600.269,
+          "price": 607.76,
           "prev_close": 599.75,
-          "change": 0.519,
-          "change_pct": 0.09,
+          "change": 8.01,
+          "change_pct": 1.34,
           "currency": "USD"
         },
         "GLD": {
           "label": "Gold ETF",
-          "price": 470.32,
+          "price": 472.53,
           "prev_close": 473.51,
-          "change": -3.19,
-          "change_pct": -0.67,
+          "change": -0.98,
+          "change_pct": -0.21,
           "currency": "USD"
         },
         "TLT": {
           "label": "20Y Treasury ETF",
-          "price": 88.94,
+          "price": 89.23,
           "prev_close": 88.46,
-          "change": 0.48,
-          "change_pct": 0.54,
+          "change": 0.77,
+          "change_pct": 0.87,
           "currency": "USD"
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 68416.28,
+          "price": 68901.586,
           "prev_close": 65975.7,
-          "change": 2440.58,
-          "change_pct": 3.7,
+          "change": 2925.886,
+          "change_pct": 4.43,
           "currency": "USD"
         },
         "EURUSD=X": {
           "label": "EUR/USD",
-          "price": 1.1586,
+          "price": 1.1631,
           "prev_close": 1.1621,
-          "change": -0.0035,
-          "change_pct": -0.3,
+          "change": 0.001,
+          "change_pct": 0.09,
           "currency": "USD"
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 99.152,
+          "price": 98.853,
           "prev_close": 98.986,
-          "change": 0.166,
-          "change_pct": 0.17,
+          "change": -0.133,
+          "change_pct": -0.13,
           "currency": "USD"
         }
       },
-      "yield_10y": null,
-      "headline": null
+      "yield_10y": 4.15,
+      "headline": "SPY 0.88%  |  BTC $68,902  |  10Y 4.15%"
     },
     "energy": {
-      "last_updated": "2026-03-09T19:17:05Z",
+      "last_updated": "2026-03-09T20:49:32Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 95.35,
+          "price": 83.88,
           "prev_close": 90.9,
-          "change": 4.45,
-          "change_pct": 4.9,
+          "change": -7.02,
+          "change_pct": -7.72,
           "currency": "USD"
         },
         "NG=F": {
           "label": "Natural Gas ($/MMBtu)",
-          "price": 3.149,
+          "price": 3.05,
           "prev_close": 3.186,
-          "change": -0.037,
-          "change_pct": -1.16,
+          "change": -0.136,
+          "change_pct": -4.27,
           "currency": "USD"
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 99.45,
+          "price": 87.85,
           "prev_close": 92.69,
-          "change": 6.76,
-          "change_pct": 7.29,
+          "change": -4.84,
+          "change_pct": -5.22,
           "currency": "USD"
         },
         "XLE": {
           "label": "Energy ETF",
-          "price": 56.55,
+          "price": 56.32,
           "prev_close": 56.57,
-          "change": -0.02,
-          "change_pct": -0.04,
+          "change": -0.25,
+          "change_pct": -0.44,
           "currency": "USD"
         }
       },
-      "headlines": [],
-      "headline": "WTI $95.35/bbl"
+      "headlines": [
+        {
+          "title": "U.S. exports of major transportation fuels in 2025 were about the same as in 2024",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67304",
+          "published": "Mon, 09 Mar 2026 09:00:00 EST"
+        },
+        {
+          "title": "U.S. electricity generation in 2025 hit a record, again",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67284",
+          "published": "Thu, 05 Mar 2026 09:00:00 EST"
+        },
+        {
+          "title": "U.S. LNG developers sign highest volume of sale and purchase contracts since 2022",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67264",
+          "published": "Tue, 03 Mar 2026 09:00:00 EST"
+        },
+        {
+          "title": "Nuclear reactor restart in Japan will likely displace natural gas electricity generation",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67244",
+          "published": "Mon, 02 Mar 2026  09:00:00 EST"
+        }
+      ],
+      "headline": "WTI $83.88/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-09T19:17:06Z",
+      "last_updated": "2026-03-09T20:49:33Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
-          "price": 179.95,
+          "price": 182.65,
           "prev_close": 177.885,
-          "change": 2.065,
-          "change_pct": 1.16,
+          "change": 4.765,
+          "change_pct": 2.68,
           "currency": "USD"
         },
         "MSFT": {
           "label": "Microsoft",
-          "price": 405.24,
+          "price": 409.41,
           "prev_close": 408.96,
-          "change": -3.72,
-          "change_pct": -0.91,
+          "change": 0.45,
+          "change_pct": 0.11,
           "currency": "USD"
         },
         "AAPL": {
           "label": "Apple",
-          "price": 257.45,
+          "price": 259.88,
           "prev_close": 257.46,
-          "change": -0.01,
-          "change_pct": -0.0,
+          "change": 2.42,
+          "change_pct": 0.94,
           "currency": "USD"
         },
         "META": {
           "label": "Meta",
-          "price": 636.44,
+          "price": 647.39,
           "prev_close": 644.86,
-          "change": -8.42,
-          "change_pct": -1.31,
+          "change": 2.53,
+          "change_pct": 0.39,
           "currency": "USD"
         },
         "TSLA": {
           "label": "Tesla",
-          "price": 393.21,
+          "price": 398.68,
           "prev_close": 396.73,
-          "change": -3.52,
-          "change_pct": -0.89,
+          "change": 1.95,
+          "change_pct": 0.49,
           "currency": "USD"
         },
         "AMZN": {
           "label": "Amazon",
-          "price": 209.575,
+          "price": 213.49,
           "prev_close": 213.12,
-          "change": -3.545,
-          "change_pct": -1.66,
+          "change": 0.37,
+          "change_pct": 0.17,
           "currency": "USD"
         },
         "GOOGL": {
           "label": "Alphabet",
-          "price": 302.84,
+          "price": 306.36,
           "prev_close": 298.27,
-          "change": 4.57,
-          "change_pct": 1.53,
+          "change": 8.09,
+          "change_pct": 2.71,
           "currency": "USD"
         }
       },
-      "recent_filings": [],
-      "headline": "NVDA 1.16%  |  MSFT -0.91%"
+      "recent_filings": [
+        {
+          "title": "IONIS PHARMACEUTICALS INC  (IONS) \u2014 8-K (2026-03-09)",
+          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=IONIS%20PHARMACEUTICALS%20INC%20%20%28IONS%29&type=8-K&dateb=&owner=include&count=5",
+          "published": "2026-03-09"
+        },
+        {
+          "title": "Cartesian Therapeutics, Inc.  (RNAC) \u2014 8-K (2026-03-09)",
+          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Cartesian%20Therapeutics%2C%20Inc.%20%20%28RNAC%29&type=8-K&dateb=&owner=include&count=5",
+          "published": "2026-03-09"
+        },
+        {
+          "title": "enCore Energy Corp.  (EU) \u2014 8-K (2026-03-09)",
+          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=enCore%20Energy%20Corp.%20%20%28EU%29&type=8-K&dateb=&owner=include&count=5",
+          "published": "2026-03-09"
+        },
+        {
+          "title": "NET Power Inc.  (NPWR, NPWR-WT) \u2014 8-K (2026-03-09)",
+          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=NET%20Power%20Inc.%20%20%28NPWR%2C%20NPWR-WT%29&type=8-K&dateb=&owner=include&count=5",
+          "published": "2026-03-09"
+        },
+        {
+          "title": "Symbotic Inc.  (SYM) \u2014 8-K (2026-03-09)",
+          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Symbotic%20Inc.%20%20%28SYM%29&type=8-K&dateb=&owner=include&count=5",
+          "published": "2026-03-09"
+        }
+      ],
+      "headline": "NVDA 2.68%  |  MSFT 0.11%"
     },
     "sports": {
-      "last_updated": "2026-03-09T19:17:06Z",
+      "last_updated": "2026-03-09T20:49:34Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -222,29 +269,29 @@
               "home": "ATL",
               "away": "MIN",
               "home_score": "9",
-              "away_score": "4",
-              "status": "Top 7th"
+              "away_score": "8",
+              "status": "Final"
             },
             {
               "home": "BOS",
               "away": "PHI",
               "home_score": "5",
               "away_score": "3",
-              "status": "Bot 8th"
+              "status": "Final"
             },
             {
               "home": "DET",
               "away": "TB",
               "home_score": "4",
               "away_score": "4",
-              "status": "Top 8th"
+              "status": "Final"
             },
             {
               "home": "HOU",
               "away": "STL",
-              "home_score": "5",
-              "away_score": "2",
-              "status": "Top 7th"
+              "home_score": "10",
+              "away_score": "3",
+              "status": "Final"
             }
           ]
         }
@@ -276,16 +323,16 @@
             "detail": "Dotson and the Falcons have reached agreement on a two-year contract, Adam Schefter of ESPN reports."
           },
           {
+            "player": "John Simpson",
+            "team": "",
+            "status": "Active",
+            "detail": "Simpson agreed to a three-year, $30 million contract with the Ravens on Monday, Mike Garafolo of NFL Network reports."
+          },
+          {
             "player": "Tyler Huntley",
             "team": "",
             "status": "Active",
             "detail": "Huntley and the Ravens agreed to a two-year, $11 million contract Saturday, Adam Schefter of ESPN reports."
-          },
-          {
-            "player": "Nate Wiggins",
-            "team": "",
-            "status": "Questionable",
-            "detail": "Wiggins (undisclosed) underwent offseason surgery, Jonas Shaffer of TheBaltimoreBanner.com reports."
           }
         ],
         "nba": [
@@ -302,23 +349,23 @@
             "detail": "Vucevic underwent surgery Saturday to stabilize a fracture in his right ring finger and will be reevaluated in 3-to-4 weeks."
           },
           {
+            "player": "Egor Demin",
+            "team": "",
+            "status": "Out",
+            "detail": "The Nets announced Monday that Demin (foot) will miss the rest of the season, NBA reporter Marc Stein reports."
+          },
+          {
             "player": "Michael Porter Jr.",
             "team": "",
             "status": "Out",
             "detail": "Porter (rest) has been ruled out for Monday's game against the Grizzlies."
-          },
-          {
-            "player": "Egor Demin",
-            "team": "",
-            "status": "Out",
-            "detail": "Demin (foot) won't play Monday versus Memphis."
           }
         ]
       },
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-09T19:17:17Z",
+      "last_updated": "2026-03-09T20:49:34Z",
       "headlines": [
         {
           "title": "Who is Mojtaba Khamenei, Iran's new supreme leader?",
@@ -333,7 +380,7 @@
         {
           "title": "G7 to take 'necessary measures' to support energy supplies",
           "link": "https://www.bbc.com/news/articles/c79542n0grwo?at_medium=RSS&at_campaign=rss",
-          "published": "Mon, 09 Mar 2026 17:33:36 GMT"
+          "published": "Mon, 09 Mar 2026 20:40:38 GMT"
         },
         {
           "title": "Hundreds of teenagers report for duty as Croatia reinstates conscription",
@@ -349,37 +396,37 @@
       "headline": "Who is Mojtaba Khamenei, Iran's new supreme leader?"
     },
     "technology": {
-      "last_updated": "2026-03-09T19:17:17Z",
+      "last_updated": "2026-03-09T20:49:35Z",
       "hn_top": [
         {
-          "title": "Fixfest is a global gathering of repairers, tinkerers, and activists",
-          "url": "https://fixfest.therestartproject.org/",
-          "score": 89,
-          "comments": 7
+          "title": "Building a Procedural Hex Map with Wave Function Collapse",
+          "url": "https://felixturner.github.io/hex-map-wfc/article/",
+          "score": 232,
+          "comments": 32
         },
         {
           "title": "JSLinux Now Supports x86_64",
           "url": "https://bellard.org/jslinux/",
-          "score": 76,
-          "comments": 16
-        },
-        {
-          "title": "Building a Procedural Hex Map with Wave Function Collapse",
-          "url": "https://felixturner.github.io/hex-map-wfc/article/",
-          "score": 133,
-          "comments": 26
-        },
-        {
-          "title": "Launch HN: Terminal Use (YC W26) \u2013 Vercel for filesystem-based agents",
-          "url": "https://news.ycombinator.com/item?id=47311657",
-          "score": 37,
-          "comments": 18
+          "score": 125,
+          "comments": 27
         },
         {
           "title": "Show HN: The Mog Programming Language",
           "url": "https://moglang.org",
-          "score": 26,
-          "comments": 5
+          "score": 68,
+          "comments": 29
+        },
+        {
+          "title": "Is legal the same as legitimate: AI reimplementation and the erosion of copyleft",
+          "url": "https://writings.hongminhee.org/2026/03/legal-vs-legitimate/",
+          "score": 161,
+          "comments": 155
+        },
+        {
+          "title": "Bluesky CEO Jay Graber is stepping down",
+          "url": "https://bsky.social/about/blog/03-09-2026-a-new-chapter-for-bluesky",
+          "score": 138,
+          "comments": 134
         }
       ],
       "tech_headlines": [
@@ -409,10 +456,10 @@
           "published": "Wed, 04 Mar 2026 22:13:27 +0000"
         }
       ],
-      "headline": "Fixfest is a global gathering of repairers, tinkerers, and activists"
+      "headline": "Building a Procedural Hex Map with Wave Function Collapse"
     },
     "policy": {
-      "last_updated": "2026-03-09T19:17:18Z",
+      "last_updated": "2026-03-09T20:49:36Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -451,7 +498,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-09T19:17:20Z",
+      "last_updated": "2026-03-09T20:49:37Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
