@@ -1,9 +1,9 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-09T23:31:33Z",
+  "fetched_at": "2026-03-09T23:49:11Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-09T23:31:34Z",
+      "last_updated": "2026-03-09T23:49:12Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
@@ -39,57 +39,57 @@
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 68632.03,
+          "price": 68541.39,
           "prev_close": 65975.7,
-          "change": 2656.33,
-          "change_pct": 4.03,
+          "change": 2565.69,
+          "change_pct": 3.89,
           "currency": "USD"
         },
         "EURUSD=X": {
           "label": "EUR/USD",
-          "price": 1.1629,
+          "price": 1.162,
           "prev_close": 1.1621,
-          "change": 0.0008,
-          "change_pct": 0.07,
+          "change": -0.0001,
+          "change_pct": -0.01,
           "currency": "USD"
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 98.726,
+          "price": 98.797,
           "prev_close": 99.175,
-          "change": -0.449,
-          "change_pct": -0.45,
+          "change": -0.378,
+          "change_pct": -0.38,
           "currency": "USD"
         }
       },
       "yield_10y": 4.15,
-      "headline": "SPY 0.88%  |  BTC $68,632  |  10Y 4.15%"
+      "headline": "SPY 0.88%  |  BTC $68,541  |  10Y 4.15%"
     },
     "energy": {
-      "last_updated": "2026-03-09T23:31:44Z",
+      "last_updated": "2026-03-09T23:49:20Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 88.18,
+          "price": 88.92,
           "prev_close": 94.77,
-          "change": -6.59,
-          "change_pct": -6.95,
+          "change": -5.85,
+          "change_pct": -6.17,
           "currency": "USD"
         },
         "NG=F": {
           "label": "Natural Gas ($/MMBtu)",
-          "price": 3.09,
+          "price": 3.105,
           "prev_close": 3.12,
-          "change": -0.03,
-          "change_pct": -0.96,
+          "change": -0.015,
+          "change_pct": -0.48,
           "currency": "USD"
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 92.45,
+          "price": 93.7,
           "prev_close": 98.96,
-          "change": -6.51,
-          "change_pct": -6.58,
+          "change": -5.26,
+          "change_pct": -5.32,
           "currency": "USD"
         },
         "XLE": {
@@ -123,10 +123,10 @@
           "published": "Mon, 02 Mar 2026  09:00:00 EST"
         }
       ],
-      "headline": "WTI $88.18/bbl"
+      "headline": "WTI $88.92/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-09T23:31:45Z",
+      "last_updated": "2026-03-09T23:49:22Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
@@ -187,27 +187,27 @@
       },
       "recent_filings": [
         {
-          "title": "IONIS PHARMACEUTICALS INC  (IONS) \u2014 8-K (2026-03-09)",
+          "title": "IONIS PHARMACEUTICALS INC  (IONS) -- 8-K (2026-03-09)",
           "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=IONIS%20PHARMACEUTICALS%20INC%20%20%28IONS%29&type=8-K&dateb=&owner=include&count=5",
           "published": "2026-03-09"
         },
         {
-          "title": "Cartesian Therapeutics, Inc.  (RNAC) \u2014 8-K (2026-03-09)",
+          "title": "Cartesian Therapeutics, Inc.  (RNAC) -- 8-K (2026-03-09)",
           "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Cartesian%20Therapeutics%2C%20Inc.%20%20%28RNAC%29&type=8-K&dateb=&owner=include&count=5",
           "published": "2026-03-09"
         },
         {
-          "title": "enCore Energy Corp.  (EU) \u2014 8-K (2026-03-09)",
+          "title": "enCore Energy Corp.  (EU) -- 8-K (2026-03-09)",
           "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=enCore%20Energy%20Corp.%20%20%28EU%29&type=8-K&dateb=&owner=include&count=5",
           "published": "2026-03-09"
         },
         {
-          "title": "NET Power Inc.  (NPWR, NPWR-WT) \u2014 8-K (2026-03-09)",
+          "title": "NET Power Inc.  (NPWR, NPWR-WT) -- 8-K (2026-03-09)",
           "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=NET%20Power%20Inc.%20%20%28NPWR%2C%20NPWR-WT%29&type=8-K&dateb=&owner=include&count=5",
           "published": "2026-03-09"
         },
         {
-          "title": "Symbotic Inc.  (SYM) \u2014 8-K (2026-03-09)",
+          "title": "Symbotic Inc.  (SYM) -- 8-K (2026-03-09)",
           "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Symbotic%20Inc.%20%20%28SYM%29&type=8-K&dateb=&owner=include&count=5",
           "published": "2026-03-09"
         }
@@ -215,7 +215,7 @@
       "headline": "NVDA 2.68%  |  MSFT 0.11%"
     },
     "sports": {
-      "last_updated": "2026-03-09T23:31:45Z",
+      "last_updated": "2026-03-09T23:49:22Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -235,23 +235,23 @@
             {
               "home": "CLE",
               "away": "PHI",
-              "home_score": "16",
-              "away_score": "18",
-              "status": "3:05 - 1st"
+              "home_score": "30",
+              "away_score": "25",
+              "status": "9:54 - 2nd"
             },
             {
               "home": "BKN",
               "away": "MEM",
-              "home_score": "0",
-              "away_score": "0",
-              "status": "3/9 - 7:30 PM EDT"
+              "home_score": "8",
+              "away_score": "15",
+              "status": "7:23 - 1st"
             },
             {
               "home": "OKC",
               "away": "DEN",
-              "home_score": "0",
-              "away_score": "0",
-              "status": "3/9 - 7:30 PM EDT"
+              "home_score": "8",
+              "away_score": "14",
+              "status": "8:19 - 1st"
             },
             {
               "home": "UTAH",
@@ -299,16 +299,16 @@
       "injuries": {
         "nfl": [
           {
+            "player": "Isaac Seumalo",
+            "team": "",
+            "status": "Active",
+            "detail": "The Cardinals agreed to terms with Seumalo on a three-year, $31.5 million contract Monday, Jeremy Fowler of ESPN.com reports."
+          },
+          {
             "player": "Roy Lopez",
             "team": "",
             "status": "Active",
             "detail": "Lopez signed a two-year, $11.5 million contract with the Cardinals on Monday that includes $7 million guaranteed, Ian Rapoport of NFL Network reports."
-          },
-          {
-            "player": "Kendrick Bourne",
-            "team": "",
-            "status": "Active",
-            "detail": "Bourne is slated to signed a two-year contract with the Cardinals, NFL reporter Jordan Schultz reports."
           },
           {
             "player": "Tyrone Wheatley Jr.",
@@ -371,7 +371,7 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-09T23:31:45Z",
+      "last_updated": "2026-03-09T23:49:22Z",
       "headlines": [
         {
           "title": "Who is Mojtaba Khamenei, Iran's new supreme leader?",
@@ -402,47 +402,47 @@
       "headline": "Who is Mojtaba Khamenei, Iran's new supreme leader?"
     },
     "technology": {
-      "last_updated": "2026-03-09T23:31:46Z",
+      "last_updated": "2026-03-09T23:49:23Z",
       "hn_top": [
         {
           "title": "Sir Tony Hoare has died",
           "url": "http://lefenetrou.blogspot.com/2026/03/in-memoriam-tony-hoare.html",
-          "score": 77,
-          "comments": 20
+          "score": 124,
+          "comments": 33
         },
         {
           "title": "Building a Procedural Hex Map with Wave Function Collapse",
           "url": "https://felixturner.github.io/hex-map-wfc/article/",
-          "score": 344,
-          "comments": 49
+          "score": 352,
+          "comments": 52
         },
         {
           "title": "JSLinux Now Supports x86_64",
           "url": "https://bellard.org/jslinux/",
-          "score": 211,
-          "comments": 48
+          "score": 216,
+          "comments": 52
         },
         {
           "title": "Is legal the same as legitimate: AI reimplementation and the erosion of copyleft",
           "url": "https://writings.hongminhee.org/2026/03/legal-vs-legitimate/",
-          "score": 281,
-          "comments": 309
+          "score": 294,
+          "comments": 319
         },
         {
           "title": "The first airplane fatality",
           "url": "https://www.amusingplanet.com/2026/03/thomas-selfridge-first-airplane-fatality.html",
-          "score": 37,
-          "comments": 5
+          "score": 41,
+          "comments": 9
         }
       ],
       "tech_headlines": [
         {
-          "title": "Don\u2019t Expect Big Surprises in the Government\u2019s Alien Files",
+          "title": "Don't Expect Big Surprises in the Government's Alien Files",
           "link": "https://www.wired.com/story/dont-expect-big-surprises-in-the-governments-alien-files/",
           "published": "Mon, 09 Mar 2026 10:00:00 +0000"
         },
         {
-          "title": "Why RFK\u2019s CDC Is Endorsing \u2018Shared Decisionmaking\u2019 for Vaccines",
+          "title": "Why RFK's CDC Is Endorsing 'Shared Decisionmaking' for Vaccines",
           "link": "https://www.wired.com/story/why-rfks-cdc-is-endorsing-shared-decision-making-for-vaccines/",
           "published": "Mon, 09 Mar 2026 09:30:00 +0000"
         },
@@ -452,7 +452,7 @@
           "published": "Sun, 08 Mar 2026 09:00:00 +0000"
         },
         {
-          "title": "Sleep Apnea Often Goes Undetected in Women. That\u2019s Starting to Change",
+          "title": "Sleep Apnea Often Goes Undetected in Women. That's Starting to Change",
           "link": "https://www.wired.com/story/sleep-apnea-women-detection-treatment/",
           "published": "Fri, 06 Mar 2026 09:30:00 +0000"
         },
@@ -465,7 +465,7 @@
       "headline": "Sir Tony Hoare has died"
     },
     "policy": {
-      "last_updated": "2026-03-09T23:31:47Z",
+      "last_updated": "2026-03-09T23:49:24Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -504,7 +504,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-09T23:31:49Z",
+      "last_updated": "2026-03-09T23:49:28Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
