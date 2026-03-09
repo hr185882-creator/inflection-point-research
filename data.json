@@ -1,249 +1,160 @@
 {
-  "last_updated": "2026-03-09T15:49:47Z",
-  "geopolitics": {
-    "top_events": [
-      {
-        "title": "Haos u Tirani : Demonstranti bacali Molotovljeve koktele na zgradu Vlade",
-        "url": "https://www.blic.rs/vesti/svet/haos-u-tirani-demonstranti-bacali-molotovljeve-koktele-na-zgradu-vlade/ljlq7s7",
-        "source": "blic.rs",
-        "date": "20260210T213000Z"
-      },
-      {
-        "title": "\uad6d\ubbfc 10\uba85 \uc911 9\uba85  \ubcf4\uc218 \u00b7 \uc9c4\ubcf4 \uac08\ub4f1 \uc2ec\uac01  ",
-        "url": "https://segye.com:443/newsView/20260211517287",
-        "source": "segye.com",
-        "date": "20260211T113000Z"
-      },
-      {
-        "title": "Konflik Kwamki Narama Tewaskan 10 Orang , Bupati Mimika Siapkan Perda",
-        "url": "https://regional.kompas.com/read/2026/01/05/112451978/konflik-kwamki-narama-tewaskan-10-orang-bupati-mimika-siapkan-perda",
-        "source": "regional.kompas.com",
-        "date": "20260105T044500Z"
-      },
-      {
-        "title": "  \uad6d\ubbfc 92 %, \uc9c4\ubcf4 - \ubcf4\uc218 \uc815\uce58\uac08\ub4f1 \uc2ec\uac01 \u2026 70 %  \ub2ec\ub77c\ub3c4 \ub300\ud654 \uc758\ud5a5  \uc788\uc5b4  ",
-        "url": "https://www.hani.co.kr/arti/politics/bluehouse/1244470.html",
-        "source": "hani.co.kr",
-        "date": "20260211T050000Z"
-      },
-      {
-        "title": "Lagi , Konflik Kwamki Narama Tewaskan Seorang Wanita yang Tertancap Panah",
-        "url": "https://regional.kompas.com/read/2026/01/05/120100278/lagi-konflik-kwamki-narama-tewaskan-seorang-wanita-yang-tertancap-panah",
-        "source": "regional.kompas.com",
-        "date": "20260105T054500Z"
-      }
-    ],
-    "conflict_count_24h": 5,
-    "last_updated": "2026-03-09T15:49:46Z"
-  },
   "markets": {
-    "sp500": 6703.46,
-    "sp500_change_pct": -0.5424,
-    "us10y": 4.134,
-    "dxy": 99.101,
-    "btc": 68887.96,
-    "gold": 468.21,
-    "last_updated": "2026-03-09T15:49:40Z"
+    "sp500": 6711.27,
+    "sp500_change_pct": -0.4266,
+    "us10y": 4.132,
+    "dxy": 99.037,
+    "btc": 69032.734,
+    "gold": 469.195,
+    "last_updated": "2026-03-09T16:10:29Z"
   },
   "energy": {
-    "wti_crude": 96.09,
-    "brent_crude": 98.37,
-    "natural_gas": 3.154,
-    "last_updated": "2026-03-09T15:49:40Z"
-  },
-  "companies": {
-    "top_movers": [
-      {
-        "symbol": "HIMS",
-        "name": "Hims & Hers Health, Inc.",
-        "price": 21.544,
-        "change_pct": 36.8742,
-        "volume": 101333657
-      },
-      {
-        "symbol": "NVDA",
-        "name": "NVIDIA Corporation",
-        "price": 179.3785,
-        "change_pct": 0.8396,
-        "volume": 68593242
-      },
-      {
-        "symbol": "ONDS",
-        "name": "Ondas Inc",
-        "price": 9.43,
-        "change_pct": -4.0692,
-        "volume": 50939626
-      },
-      {
-        "symbol": "AAL",
-        "name": "American Airlines Group, Inc.",
-        "price": 10.7001,
-        "change_pct": -4.2906,
-        "volume": 45636914
-      },
-      {
-        "symbol": "INTC",
-        "name": "Intel Corporation",
-        "price": 43.875,
-        "change_pct": 1.048,
-        "volume": 33331461
-      }
-    ],
-    "last_updated": "2026-03-09T15:49:47Z"
+    "wti_crude": 95.9,
+    "brent_crude": 98.45,
+    "natural_gas": 3.137,
+    "last_updated": "2026-03-09T16:10:29Z"
   },
   "technology": {
     "hn_top": [
       {
-        "id": 47310073,
         "title": "The engine of Germany's wealth is blocking its future",
         "url": "https://europeancorrespondent.com/en/r/the-engine-of-germanys-wealth-is-blocking-its-future",
-        "score": 75
+        "score": 117
       },
       {
-        "id": 47306655,
         "title": "Fontcrafter: Turn Your Handwriting into a Real Font",
         "url": "https://arcade.pirillo.com/fontcrafter.html",
-        "score": 249
+        "score": 260
       },
       {
-        "id": 47308394,
         "title": "FreeBSD Capsicum vs. Linux Seccomp Process Sandboxing",
         "url": "https://vivianvoss.net/blog/capsicum-vs-seccomp",
-        "score": 52
+        "score": 55
       },
       {
-        "id": 47307055,
         "title": "Ireland shuts last coal plant, becomes 15th coal-free country in Europe (2025)",
         "url": "https://www.pv-magazine.com/2025/06/20/ireland-coal-free-ends-coal-power-generation-moneypoint/",
-        "score": 484
+        "score": 517
       },
       {
-        "id": 47308278,
         "title": "Reverse-engineering the UniFi inform protocol",
         "url": "https://tamarack.cloud/blog/reverse-engineering-unifi-inform-protocol",
-        "score": 55
+        "score": 65
       }
     ],
-    "last_updated": "2026-03-09T15:49:41Z"
+    "last_updated": "2026-03-09T16:10:29Z"
   },
   "policy": {
-    "recent_bills": [
+    "fed_reg_docs": [
       {
         "title": "Ratepayer Protection Pledge",
-        "doc_number": "2026-04645",
-        "date": "2026-03-09",
-        "url": "https://www.federalregister.gov/documents/2026/03/09/2026-04645/ratepayer-protection-pledge",
-        "type": "Presidential Document"
+        "document_number": "2026-04645",
+        "publication_date": "2026-03-09",
+        "type": "Presidential Document",
+        "agency_names": [
+          "Executive Office of the President"
+        ]
       },
       {
         "title": "Sunshine Act Meetings",
-        "doc_number": "2026-04601",
-        "date": "2026-03-09",
-        "url": "https://www.federalregister.gov/documents/2026/03/09/2026-04601/sunshine-act-meetings",
-        "type": "Notice"
+        "document_number": "2026-04601",
+        "publication_date": "2026-03-09",
+        "type": "Notice",
+        "agency_names": [
+          "Nuclear Regulatory Commission"
+        ]
       },
       {
         "title": "Dairy Tariff-Rate Quota Import Licensing Program",
-        "doc_number": "2026-04599",
-        "date": "2026-03-09",
-        "url": "https://www.federalregister.gov/documents/2026/03/09/2026-04599/dairy-tariff-rate-quota-import-licensing-program",
-        "type": "Proposed Rule"
+        "document_number": "2026-04599",
+        "publication_date": "2026-03-09",
+        "type": "Proposed Rule",
+        "agency_names": [
+          "Agriculture Department",
+          "Foreign Agricultural Service"
+        ]
       },
       {
         "title": "Agency Information Collection Activities; Submission for OMB Review; Comment Request on Information Collection Requirements Related to Practice Before the Internal Revenue Service",
-        "doc_number": "2026-04591",
-        "date": "2026-03-09",
-        "url": "https://www.federalregister.gov/documents/2026/03/09/2026-04591/agency-information-collection-activities-submission-for-omb-review-comment-request-on-information",
-        "type": "Notice"
+        "document_number": "2026-04591",
+        "publication_date": "2026-03-09",
+        "type": "Notice",
+        "agency_names": [
+          "Treasury Department",
+          "Internal Revenue Service"
+        ]
       },
       {
         "title": "National Drinking Water Advisory Council: Request for Nominations",
-        "doc_number": "2026-04590",
-        "date": "2026-03-09",
-        "url": "https://www.federalregister.gov/documents/2026/03/09/2026-04590/national-drinking-water-advisory-council-request-for-nominations",
-        "type": "Notice"
+        "document_number": "2026-04590",
+        "publication_date": "2026-03-09",
+        "type": "Notice",
+        "agency_names": [
+          "Environmental Protection Agency"
+        ]
       }
     ],
-    "federal_register_headlines": [
-      {
-        "title": "Ratepayer Protection Pledge",
-        "doc_number": "2026-04645",
-        "date": "2026-03-09",
-        "url": "https://www.federalregister.gov/documents/2026/03/09/2026-04645/ratepayer-protection-pledge",
-        "type": "Presidential Document"
-      },
-      {
-        "title": "Sunshine Act Meetings",
-        "doc_number": "2026-04601",
-        "date": "2026-03-09",
-        "url": "https://www.federalregister.gov/documents/2026/03/09/2026-04601/sunshine-act-meetings",
-        "type": "Notice"
-      },
-      {
-        "title": "Dairy Tariff-Rate Quota Import Licensing Program",
-        "doc_number": "2026-04599",
-        "date": "2026-03-09",
-        "url": "https://www.federalregister.gov/documents/2026/03/09/2026-04599/dairy-tariff-rate-quota-import-licensing-program",
-        "type": "Proposed Rule"
-      },
-      {
-        "title": "Agency Information Collection Activities; Submission for OMB Review; Comment Request on Information Collection Requirements Related to Practice Before the Internal Revenue Service",
-        "doc_number": "2026-04591",
-        "date": "2026-03-09",
-        "url": "https://www.federalregister.gov/documents/2026/03/09/2026-04591/agency-information-collection-activities-submission-for-omb-review-comment-request-on-information",
-        "type": "Notice"
-      },
-      {
-        "title": "National Drinking Water Advisory Council: Request for Nominations",
-        "doc_number": "2026-04590",
-        "date": "2026-03-09",
-        "url": "https://www.federalregister.gov/documents/2026/03/09/2026-04590/national-drinking-water-advisory-council-request-for-nominations",
-        "type": "Notice"
-      }
-    ],
-    "last_updated": "2026-03-09T15:49:47Z"
-  },
-  "sports": {
-    "top_headlines": [],
-    "last_updated": "2026-03-09T15:49:47Z"
-  },
-  "media": {
-    "top_headlines": [],
-    "last_updated": "2026-03-09T15:49:47Z"
+    "last_updated": "2026-03-09T16:10:30Z"
   },
   "claims": {
-    "polymarket_top": [
+    "top_markets": [
       {
-        "question": "Counter-Strike: Acend vs Bebop (BO3) - CCT Europe Series #14 Play-In Group B",
-        "volume": "9999.995006",
-        "end_date": "2026-01-23T18:30:00Z",
-        "market_slug": "cs2-ace1-bbp-2026-01-23"
+        "question": "Will Joe Biden get Coronavirus before the election?",
+        "outcomes": "[\"Yes\", \"No\"]",
+        "prices": null,
+        "volume24hr": 0
       },
       {
-        "question": "Will the price of Bitcoin be above $110,000 on September 26 at 4AM ET?",
-        "volume": "99.9998",
-        "end_date": "2025-09-26T08:00:00Z",
-        "market_slug": "btc-multistrike-4h-1758873600-110k"
+        "question": "Will Airbnb begin publicly trading before Jan 1, 2021?",
+        "outcomes": "[\"Yes\", \"No\"]",
+        "prices": null,
+        "volume24hr": 0
       },
       {
-        "question": "Martin vs. Jianu: Match O/U 21.5",
-        "volume": "99.9997",
-        "end_date": "2026-03-09T09:00:00Z",
-        "market_slug": "atp-mar-jianu-2026-03-02-match-total-21pt5"
+        "question": "Will a new Supreme Court Justice be confirmed before Nov 3rd, 2020?",
+        "outcomes": "[\"Yes\", \"No\"]",
+        "prices": null,
+        "volume24hr": 0
       },
       {
-        "question": "Set 1 Winner: Lizunova vs Yoshida",
-        "volume": "999.99",
-        "end_date": "2026-02-07T00:00:00Z",
-        "market_slug": "atp-lizunov-yoshida-2026-01-24-first-set-winner-Lizunova-vs-Yoshida"
+        "question": "Will Kim Kardashian and Kanye West divorce before Jan 1, 2021?",
+        "outcomes": "[\"Yes\", \"No\"]",
+        "prices": null,
+        "volume24hr": 0
       },
       {
-        "question": "Series: Most kills?",
-        "volume": "999.99",
-        "end_date": "2026-01-10T16:00:00Z",
-        "market_slug": "dota2-4p-pr1-2026-01-10-most-kill"
+        "question": "Will Coinbase begin publicly trading before Jan 1, 2021?",
+        "outcomes": "[\"Yes\", \"No\"]",
+        "prices": null,
+        "volume24hr": 0
       }
     ],
-    "last_updated": "2026-03-09T15:49:46Z"
-  }
+    "last_updated": "2026-03-09T16:10:30Z"
+  },
+  "geopolitics": {
+    "articles": [],
+    "last_updated": "2026-03-09T16:10:30Z"
+  },
+  "weather": {
+    "current_weather": {
+      "time": "2026-03-09T21:00",
+      "interval": 900,
+      "temperature": 19.7,
+      "windspeed": 17.6,
+      "winddirection": 311,
+      "is_day": 0,
+      "weathercode": 3
+    },
+    "last_updated": "2026-03-09T16:10:31Z"
+  },
+  "air_quality": {
+    "hourly": null,
+    "last_updated": "2026-03-09T16:10:32Z"
+  },
+  "crypto": {
+    "value": "8",
+    "value_classification": "Extreme Fear",
+    "last_updated": "2026-03-09T16:10:32Z"
+  },
+  "last_updated": "2026-03-09T16:10:32Z"
 }
