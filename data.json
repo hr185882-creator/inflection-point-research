@@ -1,200 +1,174 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-09T17:37:34Z",
+  "fetched_at": "2026-03-09T19:17:04Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-09T17:37:35Z",
+      "last_updated": "2026-03-09T19:17:05Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
-          "price": 668.62,
+          "price": 670.64,
           "prev_close": 672.38,
-          "change": -3.76,
-          "change_pct": -0.56,
+          "change": -1.74,
+          "change_pct": -0.26,
           "currency": "USD"
         },
         "QQQ": {
           "label": "Nasdaq 100 ETF",
-          "price": 598.3,
+          "price": 600.269,
           "prev_close": 599.75,
-          "change": -1.45,
-          "change_pct": -0.24,
+          "change": 0.519,
+          "change_pct": 0.09,
           "currency": "USD"
         },
         "GLD": {
           "label": "Gold ETF",
-          "price": 468.02,
+          "price": 470.32,
           "prev_close": 473.51,
-          "change": -5.49,
-          "change_pct": -1.16,
+          "change": -3.19,
+          "change_pct": -0.67,
           "currency": "USD"
         },
         "TLT": {
           "label": "20Y Treasury ETF",
-          "price": 88.955,
+          "price": 88.94,
           "prev_close": 88.46,
-          "change": 0.495,
-          "change_pct": 0.56,
+          "change": 0.48,
+          "change_pct": 0.54,
           "currency": "USD"
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 68724.87,
+          "price": 68416.28,
           "prev_close": 65975.7,
-          "change": 2749.17,
-          "change_pct": 4.17,
+          "change": 2440.58,
+          "change_pct": 3.7,
           "currency": "USD"
         },
         "EURUSD=X": {
           "label": "EUR/USD",
-          "price": 1.1587,
+          "price": 1.1586,
           "prev_close": 1.1621,
-          "change": -0.0034,
-          "change_pct": -0.29,
+          "change": -0.0035,
+          "change_pct": -0.3,
           "currency": "USD"
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 99.117,
+          "price": 99.152,
           "prev_close": 98.986,
-          "change": 0.131,
-          "change_pct": 0.13,
+          "change": 0.166,
+          "change_pct": 0.17,
           "currency": "USD"
         }
       },
-      "yield_10y": 4.13,
-      "headline": "SPY -0.56%  |  BTC $68,725  |  10Y 4.13%"
+      "yield_10y": null,
+      "headline": null
     },
     "energy": {
-      "last_updated": "2026-03-09T17:37:45Z",
+      "last_updated": "2026-03-09T19:17:05Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 94.82,
+          "price": 95.35,
           "prev_close": 90.9,
-          "change": 3.92,
-          "change_pct": 4.31,
+          "change": 4.45,
+          "change_pct": 4.9,
           "currency": "USD"
         },
         "NG=F": {
           "label": "Natural Gas ($/MMBtu)",
-          "price": 3.113,
+          "price": 3.149,
           "prev_close": 3.186,
-          "change": -0.073,
-          "change_pct": -2.29,
+          "change": -0.037,
+          "change_pct": -1.16,
           "currency": "USD"
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 99.06,
+          "price": 99.45,
           "prev_close": 92.69,
-          "change": 6.37,
-          "change_pct": 6.87,
+          "change": 6.76,
+          "change_pct": 7.29,
           "currency": "USD"
         },
         "XLE": {
           "label": "Energy ETF",
-          "price": 56.405,
+          "price": 56.55,
           "prev_close": 56.57,
-          "change": -0.165,
-          "change_pct": -0.29,
+          "change": -0.02,
+          "change_pct": -0.04,
           "currency": "USD"
         }
       },
       "headlines": [],
-      "headline": "WTI $94.82/bbl"
+      "headline": "WTI $95.35/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-09T17:37:47Z",
+      "last_updated": "2026-03-09T19:17:06Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
-          "price": 179.26,
+          "price": 179.95,
           "prev_close": 177.885,
-          "change": 1.375,
-          "change_pct": 0.77,
+          "change": 2.065,
+          "change_pct": 1.16,
           "currency": "USD"
         },
         "MSFT": {
           "label": "Microsoft",
-          "price": 405.17,
+          "price": 405.24,
           "prev_close": 408.96,
-          "change": -3.79,
-          "change_pct": -0.93,
+          "change": -3.72,
+          "change_pct": -0.91,
           "currency": "USD"
         },
         "AAPL": {
           "label": "Apple",
-          "price": 256.23,
+          "price": 257.45,
           "prev_close": 257.46,
-          "change": -1.23,
-          "change_pct": -0.48,
+          "change": -0.01,
+          "change_pct": -0.0,
           "currency": "USD"
         },
         "META": {
           "label": "Meta",
-          "price": 634.275,
+          "price": 636.44,
           "prev_close": 644.86,
-          "change": -10.585,
-          "change_pct": -1.64,
+          "change": -8.42,
+          "change_pct": -1.31,
           "currency": "USD"
         },
         "TSLA": {
           "label": "Tesla",
-          "price": 389.24,
+          "price": 393.21,
           "prev_close": 396.73,
-          "change": -7.49,
-          "change_pct": -1.89,
+          "change": -3.52,
+          "change_pct": -0.89,
           "currency": "USD"
         },
         "AMZN": {
           "label": "Amazon",
-          "price": 209.23,
+          "price": 209.575,
           "prev_close": 213.12,
-          "change": -3.89,
-          "change_pct": -1.83,
+          "change": -3.545,
+          "change_pct": -1.66,
           "currency": "USD"
         },
         "GOOGL": {
           "label": "Alphabet",
-          "price": 301.03,
+          "price": 302.84,
           "prev_close": 298.27,
-          "change": 2.76,
-          "change_pct": 0.93,
+          "change": 4.57,
+          "change_pct": 1.53,
           "currency": "USD"
         }
       },
-      "recent_filings": [
-        {
-          "title": "IONIS PHARMACEUTICALS INC  (IONS) \u2014 8-K (2026-03-09)",
-          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=IONIS%20PHARMACEUTICALS%20INC%20%20%28IONS%29&type=8-K&dateb=&owner=include&count=5",
-          "published": "2026-03-09"
-        },
-        {
-          "title": "Cartesian Therapeutics, Inc.  (RNAC) \u2014 8-K (2026-03-09)",
-          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Cartesian%20Therapeutics%2C%20Inc.%20%20%28RNAC%29&type=8-K&dateb=&owner=include&count=5",
-          "published": "2026-03-09"
-        },
-        {
-          "title": "enCore Energy Corp.  (EU) \u2014 8-K (2026-03-09)",
-          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=enCore%20Energy%20Corp.%20%20%28EU%29&type=8-K&dateb=&owner=include&count=5",
-          "published": "2026-03-09"
-        },
-        {
-          "title": "MARZETTI CO  (MZTI) \u2014 8-K (2026-03-09)",
-          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=MARZETTI%20CO%20%20%28MZTI%29&type=8-K&dateb=&owner=include&count=5",
-          "published": "2026-03-09"
-        },
-        {
-          "title": "FUELCELL ENERGY INC  (FCEL, FCELB) \u2014 8-K (2026-03-09)",
-          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=FUELCELL%20ENERGY%20INC%20%20%28FCEL%2C%20FCELB%29&type=8-K&dateb=&owner=include&count=5",
-          "published": "2026-03-09"
-        }
-      ],
-      "headline": "NVDA 0.77%  |  MSFT -0.93%"
+      "recent_filings": [],
+      "headline": "NVDA 1.16%  |  MSFT -0.91%"
     },
     "sports": {
-      "last_updated": "2026-03-09T17:37:47Z",
+      "last_updated": "2026-03-09T19:17:06Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -247,30 +221,30 @@
             {
               "home": "ATL",
               "away": "MIN",
-              "home_score": "5",
-              "away_score": "0",
-              "status": "Bot 1st"
+              "home_score": "9",
+              "away_score": "4",
+              "status": "Top 7th"
             },
             {
               "home": "BOS",
               "away": "PHI",
-              "home_score": "0",
-              "away_score": "2",
-              "status": "Top 3rd"
+              "home_score": "5",
+              "away_score": "3",
+              "status": "Bot 8th"
             },
             {
               "home": "DET",
               "away": "TB",
-              "home_score": "3",
-              "away_score": "0",
-              "status": "End 2nd"
+              "home_score": "4",
+              "away_score": "4",
+              "status": "Top 8th"
             },
             {
               "home": "HOU",
               "away": "STL",
-              "home_score": "0",
-              "away_score": "0",
-              "status": "Top 2nd"
+              "home_score": "5",
+              "away_score": "2",
+              "status": "Top 7th"
             }
           ]
         }
@@ -278,16 +252,16 @@
       "injuries": {
         "nfl": [
           {
+            "player": "Tyler Allgeier",
+            "team": "",
+            "status": "Active",
+            "detail": "Allgeier agreed to terms on a two-year, $12.25 million contract with Arizona on Monday, Mike Garafolo of NFL Network reports."
+          },
+          {
             "player": "Blake Gillikin",
             "team": "",
             "status": "Questionable",
             "detail": "Gillikin (back) and the Cardinals agreed on a one-year, $2.65 million contract Sunday, Mike Garafolo of NFL Network reports."
-          },
-          {
-            "player": "Chad Ryland",
-            "team": "",
-            "status": "Active",
-            "detail": "Ryland agreed to sign a one-year deal with the Cardinals on Sunday, Mike Garafolo of NFL Network reports."
           },
           {
             "player": "Tyrone Wheatley Jr.",
@@ -296,10 +270,10 @@
             "detail": "questionable"
           },
           {
-            "player": "Austin Hooper",
+            "player": "Jahan Dotson",
             "team": "",
             "status": "Active",
-            "detail": "Hooper agreed on a one-year, $3.25 million contract with the Falcons on Monday, Ian Rapoport of NFL Network reports."
+            "detail": "Dotson and the Falcons have reached agreement on a two-year contract, Adam Schefter of ESPN reports."
           },
           {
             "player": "Tyler Huntley",
@@ -308,10 +282,10 @@
             "detail": "Huntley and the Ravens agreed to a two-year, $11 million contract Saturday, Adam Schefter of ESPN reports."
           },
           {
-            "player": "Tyler Linderbaum",
+            "player": "Nate Wiggins",
             "team": "",
-            "status": "Active",
-            "detail": "Ravens GM Eric DeCosta said Tuesday that Baltimore has made a market-setting offer to impending free agent Linderbaum, Jeff Zrebiec of The Athletic reports."
+            "status": "Questionable",
+            "detail": "Wiggins (undisclosed) underwent offseason surgery, Jonas Shaffer of TheBaltimoreBanner.com reports."
           }
         ],
         "nba": [
@@ -344,33 +318,8 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-09T17:37:53Z",
+      "last_updated": "2026-03-09T19:17:17Z",
       "headlines": [
-        {
-          "title": "Russian economy withstood pressure from outside German expert",
-          "link": "https://tass.com/economy/2073165",
-          "published": "20260119T140000Z"
-        },
-        {
-          "title": "Sudan : united kingdom Hits  Sudan War Machine  With New Sanctions",
-          "link": "https://allafrica.com/stories/202602060005.html",
-          "published": "20260206T060000Z"
-        },
-        {
-          "title": "UK Sanctions Sudanese Army and RSF Leaders",
-          "link": "https://english.aawsat.com/arab-world/5237657-uk-sanctions-sudanese-army-and-rsf-leaders",
-          "published": "20260205T183000Z"
-        },
-        {
-          "title": "U . S . sanctions Gaza charities over alleged Hamas ties \u2013 NaturalNews . com",
-          "link": "https://www.naturalnews.com/2026-01-26-us-sanctions-gaza-charities-over-hamas-ties.html",
-          "published": "20260126T130000Z"
-        },
-        {
-          "title": "Myanmar military using commercial paramotors , gyrocopters for attacks : Report",
-          "link": "https://www.siasat.com/myanmar-military-using-commercial-paramotors-gyrocopters-for-attacks-report-3331737/",
-          "published": "20260126T140000Z"
-        },
         {
           "title": "Who is Mojtaba Khamenei, Iran's new supreme leader?",
           "link": "https://www.bbc.com/news/articles/c78xxg05w0zo?at_medium=RSS&at_campaign=rss",
@@ -380,42 +329,57 @@
           "title": "US teacher killed after toilet paper prank goes wrong",
           "link": "https://www.bbc.com/news/articles/cdr24g1p3vpo?at_medium=RSS&at_campaign=rss",
           "published": "Mon, 09 Mar 2026 17:09:21 GMT"
+        },
+        {
+          "title": "G7 to take 'necessary measures' to support energy supplies",
+          "link": "https://www.bbc.com/news/articles/c79542n0grwo?at_medium=RSS&at_campaign=rss",
+          "published": "Mon, 09 Mar 2026 17:33:36 GMT"
+        },
+        {
+          "title": "Hundreds of teenagers report for duty as Croatia reinstates conscription",
+          "link": "https://www.bbc.com/news/articles/c93j2l32lzgo?at_medium=RSS&at_campaign=rss",
+          "published": "Mon, 09 Mar 2026 14:49:34 GMT"
+        },
+        {
+          "title": "Alleged Bondi gunman seeks order to suppress family's identity",
+          "link": "https://www.bbc.com/news/articles/cy8lwnyj40eo?at_medium=RSS&at_campaign=rss",
+          "published": "Mon, 09 Mar 2026 08:13:58 GMT"
         }
       ],
-      "headline": "Russian economy withstood pressure from outside German expert"
+      "headline": "Who is Mojtaba Khamenei, Iran's new supreme leader?"
     },
     "technology": {
-      "last_updated": "2026-03-09T17:37:54Z",
+      "last_updated": "2026-03-09T19:17:17Z",
       "hn_top": [
+        {
+          "title": "Fixfest is a global gathering of repairers, tinkerers, and activists",
+          "url": "https://fixfest.therestartproject.org/",
+          "score": 89,
+          "comments": 7
+        },
+        {
+          "title": "JSLinux Now Supports x86_64",
+          "url": "https://bellard.org/jslinux/",
+          "score": 76,
+          "comments": 16
+        },
         {
           "title": "Building a Procedural Hex Map with Wave Function Collapse",
           "url": "https://felixturner.github.io/hex-map-wfc/article/",
-          "score": 22,
-          "comments": 1
-        },
-        {
-          "title": "Restoring a Sun SPARCstation IPX Part 1: PSU and Nvram",
-          "url": "https://www.rs-online.com/designspark/restoring-a-sun-sparcstation-ipx-part-1-psu-and-nvram",
-          "score": 39,
-          "comments": 14
+          "score": 133,
+          "comments": 26
         },
         {
           "title": "Launch HN: Terminal Use (YC W26) \u2013 Vercel for filesystem-based agents",
           "url": "https://news.ycombinator.com/item?id=47311657",
-          "score": 12,
-          "comments": 8
+          "score": 37,
+          "comments": 18
         },
         {
-          "title": "Flash media longevity testing \u2013 6 years later",
-          "url": "https://old.reddit.com/r/DataHoarder/comments/1q6xnun/flash_media_longevity_testing_6_years_later/",
-          "score": 64,
-          "comments": 22
-        },
-        {
-          "title": "Fontcrafter: Turn Your Handwriting into a Real Font",
-          "url": "https://arcade.pirillo.com/fontcrafter.html",
-          "score": 315,
-          "comments": 106
+          "title": "Show HN: The Mog Programming Language",
+          "url": "https://moglang.org",
+          "score": 26,
+          "comments": 5
         }
       ],
       "tech_headlines": [
@@ -445,10 +409,10 @@
           "published": "Wed, 04 Mar 2026 22:13:27 +0000"
         }
       ],
-      "headline": "Building a Procedural Hex Map with Wave Function Collapse"
+      "headline": "Fixfest is a global gathering of repairers, tinkerers, and activists"
     },
     "policy": {
-      "last_updated": "2026-03-09T17:37:54Z",
+      "last_updated": "2026-03-09T19:17:18Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -487,7 +451,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-09T17:37:56Z",
+      "last_updated": "2026-03-09T19:17:20Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
