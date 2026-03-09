@@ -1,160 +1,148 @@
 {
+  "last_updated": "2026-03-09T16:28:05Z",
   "markets": {
-    "sp500": 6711.27,
-    "sp500_change_pct": -0.4266,
-    "us10y": 4.132,
-    "dxy": 99.037,
-    "btc": 69032.734,
-    "gold": 469.195,
-    "last_updated": "2026-03-09T16:10:29Z"
+    "sp500": 6726.64,
+    "sp500_change_pct": -0.1985,
+    "us10y": 4.129,
+    "dxy": 99.068,
+    "btc": 68899.016,
+    "gold": 468.745,
+    "last_updated": "2026-03-09T16:27:56Z"
   },
   "energy": {
-    "wti_crude": 95.9,
-    "brent_crude": 98.45,
-    "natural_gas": 3.137,
-    "last_updated": "2026-03-09T16:10:29Z"
+    "wti_crude": 96.12,
+    "brent_crude": 99.62,
+    "natural_gas": 3.118,
+    "last_updated": "2026-03-09T16:27:56Z"
   },
   "technology": {
     "hn_top": [
       {
-        "title": "The engine of Germany's wealth is blocking its future",
-        "url": "https://europeancorrespondent.com/en/r/the-engine-of-germanys-wealth-is-blocking-its-future",
-        "score": 117
-      },
-      {
         "title": "Fontcrafter: Turn Your Handwriting into a Real Font",
         "url": "https://arcade.pirillo.com/fontcrafter.html",
-        "score": 260
+        "score": 279
       },
       {
-        "title": "FreeBSD Capsicum vs. Linux Seccomp Process Sandboxing",
-        "url": "https://vivianvoss.net/blog/capsicum-vs-seccomp",
-        "score": 55
+        "title": "Flash media longevity testing \u2013 6 years later",
+        "url": "https://old.reddit.com/r/DataHoarder/comments/1q6xnun/flash_media_longevity_testing_6_years_later/",
+        "score": 31
+      },
+      {
+        "title": "I'm Getting a Whiff of Iain Banks' Culture",
+        "url": "https://probablydance.com/2026/03/07/im-getting-a-whiff-of-iain-banks-culture/",
+        "score": 12
       },
       {
         "title": "Ireland shuts last coal plant, becomes 15th coal-free country in Europe (2025)",
         "url": "https://www.pv-magazine.com/2025/06/20/ireland-coal-free-ends-coal-power-generation-moneypoint/",
-        "score": 517
+        "score": 542
       },
       {
-        "title": "Reverse-engineering the UniFi inform protocol",
-        "url": "https://tamarack.cloud/blog/reverse-engineering-unifi-inform-protocol",
-        "score": 65
+        "title": "FreeBSD Capsicum vs. Linux Seccomp Process Sandboxing",
+        "url": "https://vivianvoss.net/blog/capsicum-vs-seccomp",
+        "score": 58
       }
     ],
-    "last_updated": "2026-03-09T16:10:29Z"
+    "last_updated": "2026-03-09T16:27:57Z"
   },
   "policy": {
-    "fed_reg_docs": [
-      {
-        "title": "Ratepayer Protection Pledge",
-        "document_number": "2026-04645",
-        "publication_date": "2026-03-09",
-        "type": "Presidential Document",
-        "agency_names": [
-          "Executive Office of the President"
-        ]
-      },
-      {
-        "title": "Sunshine Act Meetings",
-        "document_number": "2026-04601",
-        "publication_date": "2026-03-09",
-        "type": "Notice",
-        "agency_names": [
-          "Nuclear Regulatory Commission"
-        ]
-      },
-      {
-        "title": "Dairy Tariff-Rate Quota Import Licensing Program",
-        "document_number": "2026-04599",
-        "publication_date": "2026-03-09",
-        "type": "Proposed Rule",
-        "agency_names": [
-          "Agriculture Department",
-          "Foreign Agricultural Service"
-        ]
-      },
-      {
-        "title": "Agency Information Collection Activities; Submission for OMB Review; Comment Request on Information Collection Requirements Related to Practice Before the Internal Revenue Service",
-        "document_number": "2026-04591",
-        "publication_date": "2026-03-09",
-        "type": "Notice",
-        "agency_names": [
-          "Treasury Department",
-          "Internal Revenue Service"
-        ]
-      },
-      {
-        "title": "National Drinking Water Advisory Council: Request for Nominations",
-        "document_number": "2026-04590",
-        "publication_date": "2026-03-09",
-        "type": "Notice",
-        "agency_names": [
-          "Environmental Protection Agency"
-        ]
-      }
-    ],
-    "last_updated": "2026-03-09T16:10:30Z"
+    "federal_register_latest": [],
+    "last_updated": "2026-03-09T16:27:57Z"
   },
   "claims": {
-    "top_markets": [
+    "polymarket_top": [
       {
         "question": "Will Joe Biden get Coronavirus before the election?",
-        "outcomes": "[\"Yes\", \"No\"]",
-        "prices": null,
-        "volume24hr": 0
+        "volume": "32257.445115"
       },
       {
         "question": "Will Airbnb begin publicly trading before Jan 1, 2021?",
-        "outcomes": "[\"Yes\", \"No\"]",
-        "prices": null,
-        "volume24hr": 0
+        "volume": "89665.252158"
       },
       {
         "question": "Will a new Supreme Court Justice be confirmed before Nov 3rd, 2020?",
-        "outcomes": "[\"Yes\", \"No\"]",
-        "prices": null,
-        "volume24hr": 0
+        "volume": "43279.456005"
       },
       {
         "question": "Will Kim Kardashian and Kanye West divorce before Jan 1, 2021?",
-        "outcomes": "[\"Yes\", \"No\"]",
-        "prices": null,
-        "volume24hr": 0
+        "volume": "22067.475119"
       },
       {
         "question": "Will Coinbase begin publicly trading before Jan 1, 2021?",
-        "outcomes": "[\"Yes\", \"No\"]",
-        "prices": null,
-        "volume24hr": 0
+        "volume": "116803.377183"
       }
     ],
-    "last_updated": "2026-03-09T16:10:30Z"
+    "last_updated": "2026-03-09T16:27:57Z"
   },
   "geopolitics": {
-    "articles": [],
-    "last_updated": "2026-03-09T16:10:30Z"
+    "gdelt_top": [],
+    "last_updated": "2026-03-09T16:28:04Z"
+  },
+  "media": {
+    "wiki_trending": [
+      {
+        "title": "Main_Page",
+        "views": 7019470
+      },
+      {
+        "title": "Special:Search",
+        "views": 2010194
+      },
+      {
+        "title": "Men's_T20_World_Cup",
+        "views": 408441
+      },
+      {
+        "title": "2026_Iran_war",
+        "views": 366172
+      },
+      {
+        "title": ".xxx",
+        "views": 356861
+      },
+      {
+        "title": "Soham_murders",
+        "views": 310431
+      },
+      {
+        "title": "International_Women's_Day",
+        "views": 282080
+      },
+      {
+        "title": "Wikipedia:Featured_pictures",
+        "views": 273802
+      },
+      {
+        "title": "Mojtaba_Khamenei",
+        "views": 233402
+      },
+      {
+        "title": "War_Machine_(2026_film)",
+        "views": 203667
+      }
+    ],
+    "last_updated": "2026-03-09T16:28:05Z"
+  },
+  "sports": {
+    "nfl_latest": [
+      {
+        "name": "Seattle Seahawks at New England Patriots",
+        "date": "2026-02-08T23:30Z",
+        "status": "Final"
+      }
+    ],
+    "last_updated": "2026-03-09T16:28:05Z"
   },
   "weather": {
-    "current_weather": {
-      "time": "2026-03-09T21:00",
+    "weather_nyc": {
+      "time": "2026-03-09T16:15",
       "interval": 900,
-      "temperature": 19.7,
-      "windspeed": 17.6,
-      "winddirection": 311,
-      "is_day": 0,
-      "weathercode": 3
+      "temperature": 18.5,
+      "windspeed": 12.9,
+      "winddirection": 210,
+      "is_day": 1,
+      "weathercode": 0
     },
-    "last_updated": "2026-03-09T16:10:31Z"
-  },
-  "air_quality": {
-    "hourly": null,
-    "last_updated": "2026-03-09T16:10:32Z"
-  },
-  "crypto": {
-    "value": "8",
-    "value_classification": "Extreme Fear",
-    "last_updated": "2026-03-09T16:10:32Z"
-  },
-  "last_updated": "2026-03-09T16:10:32Z"
+    "last_updated": "2026-03-09T16:28:05Z"
+  }
 }
