@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>NFL Free Agency 2026 Tracker</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg:       #0a0a0f;
+    --card:     #1a1a24;
+    --border:   #2a2a3a;
+    --nfl-blue: #013369;
+    --nfl-red:  #d50a0a;
+    --gold:     #f5a623;
+    --green:    #00c853;
+    --blue:     #1a73e8;
+    --purple:   #a855f7;
+    --text:     #e8e8f0;
+    --muted:    #8888a0;
+    --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font);
+    font-size: 15px;
+    line-height: 1.5;
+    min-height: 100vh;
+  }
+
+  /* ── HEADER ── */
+  #site-header {
+    position: sticky; top: 0; z-index: 200;
+    background: linear-gradient(135deg, #010f26 0%, var(--nfl-blue) 60%, #021e4a 100%);
+    border-bottom: 2px solid var(--nfl-red);
+    padding: 0 24px;
+    display: flex; align-items: center; justify-content: space-between;
+    height: 64px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.6);
+  }
+  .header-left  { display: flex; align-items: center; gap: 14px; }
+  .nfl-shield   { width: 40px; height: 40px; flex-shrink: 0; }
+  .header-title { font-size: 1.2rem; font-weight: 800; letter-spacing: .5px; color: #fff; text-transform: uppercase; }
+  .header-title span { color: var(--nfl-red); }
+  .header-right { display: flex; align-items: center; gap: 16px; }
+
+  .live-badge {
+    display: flex; align-items: center; gap: 7px;
+    background: rgba(213,10,10,.18); border: 1px solid rgba(213,10,10,.45);
+    border-radius: 20px; padding: 4px 12px 4px 9px;
+    font-size: .72rem; font-weight: 700; letter-spacing: 1px;
+    text-transform: uppercase; color: #ff6060;
+  }
+  .pulse-dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: var(--nfl-red);
+    animation: pulse 1.6s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    0%,100% { opacity:1; transform:scale(1); }
+    50%      { opacity:.35; transform:scale(.7); }
+  }
+  #header-time { font-size: .78rem; color: rgba(255,255,255,.55); font-variant-numeric: tabular-nums; }
+
+  /* ── TICKER ── */
+  #ticker-wrap {
+    background: var(--nfl-red); overflow: hidden;
+    height: 36px; display: flex; align-items: center;
+  }
+  .ticker-label {
+    flex-shrink: 0; background: #9a0000;
+    padding: 0 16px; height: 100%; display: flex; align-items: center;
+    font-size: .72rem; font-weight: 800; letter-spacing: 1.5px;
+    text-transform: uppercase; color: #fff; white-space: nowrap;
+  }
+  .ticker-outer { overflow: hidden; flex: 1; }
+  .ticker-track { display: flex; white-space: nowrap; animation: ticker-scroll 75s linear infinite; }
+  .ticker-item  { display: inline-flex; align-items: center; font-size: .82rem; font-weight: 600; color: #fff; padding: 0 28px; }
+  .ticker-item::after { content: "\25CF"; margin-left: 28px; opacity: .55; font-size: .5rem; }
+  @keyframes ticker-scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+
+  /* ── HERO ── */
+  #hero {
+    background: linear-gradient(180deg, #010e22 0%, var(--bg) 100%);
+    padding: 52px 24px 44px; text-align: center;
+    border-bottom: 1px solid var(--border);
+  }
+  #hero h1 { font-size: clamp(1.8rem,4vw,3rem); font-weight: 900; letter-spacing: -.5px; color: #fff; margin-bottom: 10px; }
+  #hero h1 span { color: var(--nfl-red); }
+  #hero .subtitle { font-size: .95rem; color: var(--muted); margin-bottom: 36px; max-width: 560px; margin-left: auto; margin-right: auto; }
+
+  .stat-row { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; }
+  .stat-card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 18px 28px; min-width: 110px; text-align: center; }
+  .stat-card .num   { font-size: 2rem; font-weight: 900; color: #fff; line-height: 1; margin-bottom: 4px; }
+  .stat-card .label { font-size: .72rem; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: var(--muted); }
+  .stat-card.c-red    .num { color: var(--nfl-red); }
+  .stat-card.c-gold   .num { color: var(--gold); }
+  .stat-card.c-green  .num { color: var(--green); }
+  .stat-card.c-purple .num { color: var(--purple); }
+
+  /* ── MAIN LAYOUT ── */
+  #main {
+    max-width: 1280px; margin: 0 auto;
+    padding: 32px 20px 60px;
+    display: grid; grid-template-columns: 1fr 340px; gap: 28px; align-items: start;
+  }
+  @media (max-width: 900px) { #main { grid-template-columns: 1fr; } .sidebar { order: -1; } }
+
+  /* ── FEED CONTROLS ── */
+  #feed-controls { margin-bottom: 20px; display: flex; flex-direction: column; gap: 12px; }
+  #search-box {
+    width: 100%; background: var(--card); border: 1px solid var(--border);
+    border-radius: 8px; padding: 11px 16px;
+    color: var(--text); font-family: var(--font); font-size: .9rem; outline: none;
+    transition: border-color .2s;
+  }
+  #search-box::placeholder { color: var(--muted); }
+  #search-box:focus { border-color: var(--nfl-red); }
+  .filter-row { display: flex; flex-wrap: wrap; gap: 8px; }
+  .filter-btn {
+    background: var(--card); border: 1px solid var(--border); border-radius: 20px;
+    padding: 6px 16px; color: var(--muted); font-family: var(--font);
+    font-size: .8rem; font-weight: 600; cursor: pointer; transition: all .18s; letter-spacing: .3px;
+  }
+  .filter-btn:hover { border-color: rgba(213,10,10,.5); color: #fff; }
+  .filter-btn.active { background: var(--nfl-red); border-color: var(--nfl-red); color: #fff; }
+
+  .feed-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; }
+  .feed-header h2 { font-size: .8rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted); }
+  #result-count { font-size: .78rem; color: var(--muted); }
+
+  /* ── CARDS ── */
+  #feed { display: flex; flex-direction: column; gap: 10px; }
+  .tx-card {
+    background: var(--card); border: 1px solid var(--border);
+    border-left: 3px solid transparent; border-radius: 10px;
+    padding: 16px 18px; display: flex; gap: 14px; align-items: flex-start;
+    transition: transform .18s, box-shadow .18s; cursor: default;
+  }
+  .tx-card:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(0,0,0,.45); }
+  .tx-card.signing   { border-left-color: var(--green); }
+  .tx-card.trade     { border-left-color: var(--gold); }
+  .tx-card.release   { border-left-color: var(--nfl-red); }
+  .tx-card.extension { border-left-color: var(--blue); }
+  .tx-card.tag       { border-left-color: var(--purple); }
+  .tx-icon { font-size: 1.35rem; line-height: 1; flex-shrink: 0; margin-top: 2px; }
+  .tx-body { flex: 1; min-width: 0; }
+  .tx-name { font-size: 1rem; font-weight: 800; color: #fff; margin-bottom: 2px; }
+  .tx-pos  { font-size: .75rem; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: .5px; margin-left: 6px; }
+  .tx-detail { font-size: .87rem; color: var(--muted); margin-top: 4px; line-height: 1.45; }
+  .tx-meta { display: flex; align-items: flex-end; flex-direction: column; gap: 6px; flex-shrink: 0; text-align: right; }
+  .tx-value { font-size: 1rem; font-weight: 800; white-space: nowrap; }
+  .tx-card.signing   .tx-value { color: var(--green); }
+  .tx-card.trade     .tx-value { color: var(--gold); }
+  .tx-card.release   .tx-value { color: var(--nfl-red); }
+  .tx-card.extension .tx-value { color: var(--blue); }
+  .tx-card.tag       .tx-value { color: var(--purple); }
+  .tx-time { font-size: .72rem; color: var(--muted); white-space: nowrap; }
+  .type-pill { font-size: .65rem; font-weight: 700; letter-spacing: .8px; text-transform: uppercase; padding: 2px 8px; border-radius: 10px; white-space: nowrap; }
+  .pill-signing   { background: rgba(0,200,83,.15);   color: var(--green); }
+  .pill-trade     { background: rgba(245,166,35,.15); color: var(--gold); }
+  .pill-release   { background: rgba(213,10,10,.15);  color: var(--nfl-red); }
+  .pill-extension { background: rgba(26,115,232,.15); color: var(--blue); }
+  .pill-tag       { background: rgba(168,85,247,.15); color: var(--purple); }
+  #no-results { text-align: center; padding: 48px 0; color: var(--muted); font-size: .9rem; display: none; }
+
+  /* ── SIDEBAR ── */
+  .sidebar { display: flex; flex-direction: column; gap: 20px; }
+  .widget { background: var(--card); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
+  .widget-header {
+    padding: 14px 18px; border-bottom: 1px solid var(--border);
+    font-size: .72rem; font-weight: 800; letter-spacing: 1.5px;
+    text-transform: uppercase; color: var(--muted);
+    display: flex; align-items: center; gap: 8px;
+  }
+  .widget-body { padding: 6px 0; }
+
+  .contract-row {
+    display: flex; align-items: center; padding: 10px 18px; gap: 12px;
+    border-bottom: 1px solid rgba(255,255,255,.04); transition: background .15s;
+  }
+  .contract-row:last-child { border-bottom: none; }
+  .contract-row:hover { background: rgba(255,255,255,.03); }
+  .contract-rank { font-size: .72rem; font-weight: 800; color: var(--muted); width: 18px; flex-shrink: 0; text-align: center; }
+  .contract-info { flex: 1; min-width: 0; }
+  .contract-name { font-size: .88rem; font-weight: 700; color: #fff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .contract-team { font-size: .72rem; color: var(--muted); }
+  .contract-value { text-align: right; flex-shrink: 0; }
+  .contract-total { font-size: .9rem; font-weight: 800; color: var(--green); }
+  .contract-aav   { font-size: .68rem; color: var(--muted); }
+
+  .trade-row { padding: 11px 18px; border-bottom: 1px solid rgba(255,255,255,.04); transition: background .15s; }
+  .trade-row:last-child { border-bottom: none; }
+  .trade-row:hover { background: rgba(255,255,255,.03); }
+  .trade-player { font-size: .88rem; font-weight: 700; color: #fff; margin-bottom: 3px; }
+  .trade-teams  { font-size: .78rem; color: var(--gold); font-weight: 600; margin-bottom: 3px; }
+  .trade-comp   { font-size: .73rem; color: var(--muted); }
+
+  .fa-row {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 10px 18px; border-bottom: 1px solid rgba(255,255,255,.04); transition: background .15s;
+  }
+  .fa-row:last-child { border-bottom: none; }
+  .fa-row:hover { background: rgba(255,255,255,.03); }
+  .fa-name { font-size: .88rem; font-weight: 700; color: #fff; }
+  .fa-pos  { font-size: .72rem; color: var(--muted); }
+  .fa-aav  { font-size: .9rem; font-weight: 800; color: #fff; flex-shrink: 0; }
+
+  .cap-row {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 10px 18px; border-bottom: 1px solid rgba(255,255,255,.04); font-size: .85rem;
+  }
+  .cap-row:last-child { border-bottom: none; }
+  .cap-label { color: var(--muted); font-size: .8rem; }
+  .cap-value { font-weight: 700; color: #fff; }
+  .cap-value.v-green { color: var(--green); }
+  .cap-value.v-gold  { color: var(--gold); }
+
+  /* ── FOOTER ── */
+  footer { border-top: 1px solid var(--border); padding: 24px; text-align: center; font-size: .75rem; color: var(--muted); line-height: 1.7; }
+  footer strong { color: rgba(255,255,255,.4); }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header id="site-header">
+  <div class="header-left">
+    <svg class="nfl-shield" viewBox="0 0 60 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M30 2L4 12V38C4 52 16 63 30 68C44 63 56 52 56 38V12L30 2Z" fill="#013369"/>
+      <path d="M30 5L7 14.5V38C7 50.5 17.5 61 30 65.5C42.5 61 53 50.5 53 38V14.5L30 5Z" fill="#D50A0A"/>
+      <text x="30" y="43" text-anchor="middle" font-family="Arial Black,sans-serif" font-weight="900" font-size="17" fill="#fff" letter-spacing="-1">NFL</text>
+    </svg>
+    <div class="header-title">NFL &nbsp;<span>Free Agency</span>&nbsp; 2026</div>
+  </div>
+  <div class="header-right">
+    <div class="live-badge"><div class="pulse-dot"></div>Live</div>
+    <div id="header-time"></div>
+  </div>
+</header>
+
+<!-- TICKER -->
+<div id="ticker-wrap">
+  <div class="ticker-label">&#9658;&nbsp; Breaking</div>
+  <div class="ticker-outer">
+    <div class="ticker-track" id="ticker-track"></div>
+  </div>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <h1>NFL Free Agency <span>2026</span> Tracker</h1>
+  <p class="subtitle">Legal Tampering began Monday, March 9 at Noon ET &mdash; New League Year opens March 11 at 4 PM ET. All moves tracked in real time.</p>
+  <div class="stat-row">
+    <div class="stat-card c-gold"><div class="num">7</div><div class="label">Trades</div></div>
+    <div class="stat-card c-green"><div class="num">9</div><div class="label">Signings</div></div>
+    <div class="stat-card c-red"><div class="num">8</div><div class="label">Releases</div></div>
+    <div class="stat-card c-purple"><div class="num">4</div><div class="label">Tags</div></div>
+    <div class="stat-card"><div class="num">$301.2M</div><div class="label">2026 Cap</div></div>
+  </div>
+</section>
+
+<!-- MAIN -->
+<div id="main">
+
+  <div id="feed-col">
+    <div id="feed-controls">
+      <input id="search-box" type="text" placeholder="Search player, team, or position..." oninput="applyFilters()" />
+      <div class="filter-row">
+        <button class="filter-btn active" onclick="setFilter('all',this)">All</button>
+        <button class="filter-btn" onclick="setFilter('trade',this)">Trades</button>
+        <button class="filter-btn" onclick="setFilter('signing',this)">Signings</button>
+        <button class="filter-btn" onclick="setFilter('extension',this)">Extensions</button>
+        <button class="filter-btn" onclick="setFilter('release',this)">Releases</button>
+        <button class="filter-btn" onclick="setFilter('tag',this)">Tags</button>
+      </div>
+    </div>
+    <div class="feed-header">
+      <h2>Transaction Feed</h2>
+      <span id="result-count"></span>
+    </div>
+    <div id="feed"></div>
+    <div id="no-results">No transactions match your search.</div>
+  </div>
+
+  <aside class="sidebar">
+
+    <!-- Biggest Contracts -->
+    <div class="widget">
+      <div class="widget-header">&#128176;&nbsp; Biggest Contracts</div>
+      <div class="widget-body">
+        <div class="contract-row"><div class="contract-rank">1</div><div class="contract-info"><div class="contract-name">Trent McDuffie</div><div class="contract-team">CB &middot; Rams &middot; 4yr</div></div><div class="contract-value"><div class="contract-total">$124M</div><div class="contract-aav">$31M AAV</div></div></div>
+        <div class="contract-row"><div class="contract-rank">2</div><div class="contract-info"><div class="contract-name">Connor McGovern</div><div class="contract-team">C &middot; Bills &middot; 4yr</div></div><div class="contract-value"><div class="contract-total">$52M</div><div class="contract-aav">$13M AAV</div></div></div>
+        <div class="contract-row"><div class="contract-rank">3</div><div class="contract-info"><div class="contract-name">Minkah Fitzpatrick</div><div class="contract-team">S &middot; Jets &middot; 3yr</div></div><div class="contract-value"><div class="contract-total">$40M</div><div class="contract-aav">$13.3M AAV</div></div></div>
+        <div class="contract-row"><div class="contract-rank">4</div><div class="contract-info"><div class="contract-name">Ed Ingram</div><div class="contract-team">G &middot; Texans &middot; 3yr</div></div><div class="contract-value"><div class="contract-total">$37.5M</div><div class="contract-aav">$12.5M AAV</div></div></div>
+        <div class="contract-row"><div class="contract-rank">5</div><div class="contract-info"><div class="contract-name">Montaric Brown</div><div class="contract-team">CB &middot; Jaguars &middot; 3yr</div></div><div class="contract-value"><div class="contract-total">$33M</div><div class="contract-aav">$11M AAV</div></div></div>
+        <div class="contract-row"><div class="contract-rank">6</div><div class="contract-info"><div class="contract-name">Khalil Mack</div><div class="contract-team">Edge &middot; Chargers &middot; 1yr</div></div><div class="contract-value"><div class="contract-total">$18M</div><div class="contract-aav">$18M AAV</div></div></div>
+        <div class="contract-row"><div class="contract-rank">7</div><div class="contract-info"><div class="contract-name">Sheldon Rankins</div><div class="contract-team">DT &middot; Texans &middot; 2yr</div></div><div class="contract-value"><div class="contract-total">$12M</div><div class="contract-aav">$6M AAV</div></div></div>
+      </div>
+    </div>
+
+    <!-- Major Trades -->
+    <div class="widget">
+      <div class="widget-header">&#128260;&nbsp; Major Trades</div>
+      <div class="widget-body">
+        <div class="trade-row"><div class="trade-player">Trent McDuffie, CB</div><div class="trade-teams">Chiefs &rarr; Rams</div><div class="trade-comp">#29, 5th, 6th 2026 + 3rd 2027</div></div>
+        <div class="trade-row"><div class="trade-player">Maxx Crosby, Edge</div><div class="trade-teams">Raiders &rarr; Ravens</div><div class="trade-comp">#14 overall + 2027 1st</div></div>
+        <div class="trade-row"><div class="trade-player">DJ Moore, WR</div><div class="trade-teams">Bears &rarr; Bills</div><div class="trade-comp">2026 2nd + 5th</div></div>
+        <div class="trade-row"><div class="trade-player">Minkah Fitzpatrick, S</div><div class="trade-teams">Dolphins &rarr; Jets</div><div class="trade-comp">2026 7th + 3yr/$40M ext.</div></div>
+        <div class="trade-row"><div class="trade-player">Rashan Gary, DL</div><div class="trade-teams">Packers &rarr; Cowboys</div><div class="trade-comp">2027 4th-round pick</div></div>
+        <div class="trade-row"><div class="trade-player">Taron Johnson, CB</div><div class="trade-teams">Bills &rarr; Raiders</div><div class="trade-comp">6th-to-7th pick swap</div></div>
+      </div>
+    </div>
+
+    <!-- Top Available FAs -->
+    <div class="widget">
+      <div class="widget-header">&#127991;&nbsp; Top Available FAs</div>
+      <div class="widget-body">
+        <div class="fa-row"><div class="fa-info"><div class="fa-name">Trey Hendrickson</div><div class="fa-pos">Edge &middot; Bengals</div></div><div class="fa-aav">$25.4M</div></div>
+        <div class="fa-row"><div class="fa-info"><div class="fa-name">Jawaan Taylor</div><div class="fa-pos">OT &middot; Released / Chiefs</div></div><div class="fa-aav">$15.0M</div></div>
+        <div class="fa-row"><div class="fa-info"><div class="fa-name">Jamel Dean</div><div class="fa-pos">CB &middot; Buccaneers</div></div><div class="fa-aav">$12.5M</div></div>
+        <div class="fa-row"><div class="fa-info"><div class="fa-name">Jalen Thompson</div><div class="fa-pos">S &middot; Cardinals</div></div><div class="fa-aav">$9.5M</div></div>
+        <div class="fa-row"><div class="fa-info"><div class="fa-name">Kenneth Walker III</div><div class="fa-pos">RB &middot; Seahawks</div></div><div class="fa-aav">$9.0M</div></div>
+        <div class="fa-row"><div class="fa-info"><div class="fa-name">Marshon Lattimore</div><div class="fa-pos">CB &middot; Commanders</div></div><div class="fa-aav">$8.5M</div></div>
+        <div class="fa-row"><div class="fa-info"><div class="fa-name">Travis Etienne</div><div class="fa-pos">RB &middot; Jaguars</div></div><div class="fa-aav">$6.8M</div></div>
+        <div class="fa-row"><div class="fa-info"><div class="fa-name">Kyle Dugger</div><div class="fa-pos">S &middot; Patriots</div></div><div class="fa-aav">$5.9M</div></div>
+      </div>
+    </div>
+
+    <!-- 2026 Cap Info -->
+    <div class="widget">
+      <div class="widget-header">&#128202;&nbsp; 2026 Cap Info</div>
+      <div class="widget-body">
+        <div class="cap-row"><span class="cap-label">Salary Cap</span><span class="cap-value v-green">$301.2M</span></div>
+        <div class="cap-row"><span class="cap-label">Cap Increase vs 2025</span><span class="cap-value v-green">+$22M</span></div>
+        <div class="cap-row"><span class="cap-label">Legal Tampering</span><span class="cap-value">Mar 9, Noon ET</span></div>
+        <div class="cap-row"><span class="cap-label">New League Year</span><span class="cap-value">Mar 11, 4 PM ET</span></div>
+        <div class="cap-row"><span class="cap-label">FR Tag WR</span><span class="cap-value v-gold">$27.3M</span></div>
+        <div class="cap-row"><span class="cap-label">FR Tag RB</span><span class="cap-value v-gold">$14.293M</span></div>
+        <div class="cap-row"><span class="cap-label">Transition Tag QB</span><span class="cap-value v-gold">$37.83M</span></div>
+      </div>
+    </div>
+
+  </aside>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <strong>Data sourced from</strong> NFL.com, ESPN, Pro Football Reference, Spotrac, Over the Cap, Pro Football Talk &mdash; Updated continuously during legal tampering and free agency.<br>
+  &copy; 2026 NFL Free Agency Tracker &mdash; For informational purposes only.
+</footer>
+
+<script>
+var transactions = [
+  // RELEASES
+  {type:"release",icon:"&#x1F6AB;",name:"Tua Tagovailoa",pos:"QB",teams:"Dolphins",value:"$99M dead cap",detail:"Released after failed season &middot; $99M in dead cap hit",time:"Mar 9 &middot; 2:14 PM ET"},
+  {type:"release",icon:"&#x1F6AB;",name:"Kirk Cousins",pos:"QB",teams:"Falcons",value:"Cap cut",detail:"Released as cap casualty",time:"Mar 8 &middot; 3:00 PM ET"},
+  {type:"release",icon:"&#x1F6AB;",name:"Geno Smith",pos:"QB",teams:"Raiders",value:"Cap cut",detail:"Released after 2-13 season",time:"Mar 6 &middot; 2:00 PM ET"},
+  {type:"release",icon:"&#x1F6AB;",name:"Kyler Murray",pos:"QB",teams:"Cardinals",value:"Cap cut",detail:"Released as cap casualty",time:"Mar 7 &middot; 1:00 PM ET"},
+  {type:"release",icon:"&#x1F6AB;",name:"Aaron Jones",pos:"RB",teams:"Vikings",value:"$18.65M saved",detail:"Saves $18.65M in cap space",time:"Mar 5 &middot; 4:00 PM ET"},
+  {type:"release",icon:"&#x1F6AB;",name:"Jawaan Taylor",pos:"OT",teams:"Chiefs",value:"$20M saved",detail:"Clears $20M in cap space",time:"Mar 5 &middot; 3:30 PM ET"},
+  {type:"release",icon:"&#x1F6AB;",name:"Javon Hargrave",pos:"DL",teams:"Vikings",value:"Cap cut",detail:"Released alongside Aaron Jones",time:"Mar 5 &middot; 3:00 PM ET"},
+  {type:"release",icon:"&#x1F6AB;",name:"Calvin Anderson",pos:"OT",teams:"Steelers",value:"$2M saved",detail:"Released March 3",time:"Mar 3 &middot; 2:00 PM ET"},
+  // TRADES
+  {type:"trade",icon:"&#x1F504;",name:"Trent McDuffie",pos:"CB",teams:"Chiefs &#8594; Rams",value:"$124M ext.",detail:"4yr/$124M &middot; $100M gtd &middot; Record CB deal &middot; $31M AAV",time:"Mar 9 &middot; 1:58 PM ET"},
+  {type:"trade",icon:"&#x1F504;",name:"Maxx Crosby",pos:"Edge",teams:"Raiders &#8594; Ravens",value:"Trade",detail:"#14 overall + 2027 1st &middot; 5x Pro Bowl DE",time:"Mar 9 &middot; 1:45 PM ET"},
+  {type:"trade",icon:"&#x1F504;",name:"DJ Moore",pos:"WR",teams:"Bears &#8594; Bills",value:"Trade",detail:"2026 2nd + 5th &middot; Instant WR1 for Josh Allen",time:"Mar 9 &middot; 1:32 PM ET"},
+  {type:"trade",icon:"&#x1F504;",name:"Minkah Fitzpatrick",pos:"S",teams:"Dolphins &#8594; Jets",value:"$40M ext.",detail:"3yr/$40M extension &middot; Acquired for 2026 7th",time:"Mar 9 &middot; 1:21 PM ET"},
+  {type:"trade",icon:"&#x1F504;",name:"Rashan Gary",pos:"DL",teams:"Packers &#8594; Cowboys",value:"Trade",detail:"2027 4th-round pick &middot; 7.5 sacks in 2025",time:"Mar 9 &middot; 1:10 PM ET"},
+  {type:"trade",icon:"&#x1F504;",name:"Taron Johnson",pos:"CB",teams:"Bills &#8594; Raiders",value:"Trade",detail:"6th-to-7th pick swap before FA",time:"Mar 9 &middot; 12:55 PM ET"},
+  {type:"trade",icon:"&#x1F504;",name:"David Montgomery",pos:"RB",teams:"Lions &#8594; Texans",value:"Trade",detail:"Veteran RB bolsters Houston backfield",time:"Mar 9 &middot; 12:45 PM ET"},
+  // EXTENSIONS
+  {type:"extension",icon:"&#x1F4CB;",name:"Travis Kelce",pos:"TE",teams:"Chiefs",value:"Extension",detail:"Returns for 14th NFL season",time:"Mar 9 &middot; 12:40 PM ET"},
+  {type:"extension",icon:"&#x1F4CB;",name:"Ed Ingram",pos:"G",teams:"Texans",value:"$37.5M",detail:"3yr/$37.5M extension",time:"Mar 9 &middot; 12:15 PM ET"},
+  {type:"extension",icon:"&#x1F4CB;",name:"Sheldon Rankins",pos:"DT",teams:"Texans",value:"$12M",detail:"2yr/$12M extension",time:"Mar 9 &middot; 11:58 AM ET"},
+  // SIGNINGS
+  {type:"signing",icon:"&#x270D;&#xFE0F;",name:"Khalil Mack",pos:"Edge",teams:"Chargers",value:"$18M",detail:"1yr/$18M fully guaranteed &middot; Re-sign",time:"Mar 9 &middot; 12:30 PM ET"},
+  {type:"signing",icon:"&#x270D;&#xFE0F;",name:"Connor McGovern",pos:"C",teams:"Bills",value:"$52M",detail:"4yr/$52M &middot; $32M guaranteed &middot; Re-sign",time:"Mar 9 &middot; 12:22 PM ET"},
+  {type:"signing",icon:"&#x270D;&#xFE0F;",name:"Montaric Brown",pos:"CB",teams:"FA &#8594; Jaguars",value:"$33M",detail:"3yr/$33M &middot; 2 INTs in 2025",time:"Mar 9 &middot; 12:18 PM ET"},
+  {type:"signing",icon:"&#x270D;&#xFE0F;",name:"Tyler Huntley",pos:"QB",teams:"Ravens",value:"$11M",detail:"2yr/$11M reliable backup &middot; Re-sign",time:"Mar 9 &middot; 12:10 PM ET"},
+  {type:"signing",icon:"&#x270D;&#xFE0F;",name:"Alec Ingold",pos:"FB",teams:"FA &#8594; Chargers",value:"$7.5M",detail:"2yr/$7.5M &middot; Reunites with McDaniel",time:"Mar 9 &middot; 12:08 PM ET"},
+  {type:"signing",icon:"&#x270D;&#xFE0F;",name:"Asante Samuel Jr.",pos:"CB",teams:"FA &#8594; Steelers",value:"$4M",detail:"1yr/$4M",time:"Mar 9 &middot; 12:05 PM ET"},
+  {type:"signing",icon:"&#x270D;&#xFE0F;",name:"Cole Holcomb",pos:"LB",teams:"FA &#8594; Steelers",value:"$5M",detail:"2yr/$5M",time:"Mar 9 &middot; 12:02 PM ET"},
+  // FRANCHISE TAGS
+  {type:"tag",icon:"&#x1F3F7;&#xFE0F;",name:"George Pickens",pos:"WR",teams:"Cowboys",value:"$27.3M",detail:"Franchise tagged &middot; Per-season value",time:"Mar 6 &middot; 4:00 PM ET"},
+  {type:"tag",icon:"&#x1F3F7;&#xFE0F;",name:"Breece Hall",pos:"RB",teams:"Jets",value:"$14.293M",detail:"Franchise tagged",time:"Mar 6 &middot; 4:00 PM ET"},
+  {type:"tag",icon:"&#x1F3F7;&#xFE0F;",name:"Kyle Pitts",pos:"TE",teams:"Falcons",value:"Tag",detail:"Franchise tagged by Atlanta",time:"Mar 4 &middot; 4:00 PM ET"},
+  {type:"tag",icon:"&#x1F3F7;&#xFE0F;",name:"Daniel Jones",pos:"QB",teams:"Colts",value:"$37.83M",detail:"Transition tagged",time:"Mar 4 &middot; 4:00 PM ET"}
+];
+
+var currentFilter = "all";
+
+// Build ticker
+(function(){
+  var items = [
+    "Trent McDuffie traded Chiefs&#8594;Rams &mdash; 4yr/$124M record CB deal",
+    "Maxx Crosby traded Raiders&#8594;Ravens &mdash; #14 overall + 2027 1st",
+    "DJ Moore traded Bears&#8594;Bills &mdash; 2026 2nd + 5th",
+    "Tua Tagovailoa released by Dolphins &mdash; $99M dead cap",
+    "Khalil Mack re-signs Chargers &mdash; 1yr/$18M fully guaranteed",
+    "Minkah Fitzpatrick traded Dolphins&#8594;Jets &mdash; 3yr/$40M ext.",
+    "Kirk Cousins released by Falcons as cap casualty",
+    "George Pickens franchise tagged by Cowboys &mdash; $27.3M",
+    "Connor McGovern re-signs Bills &mdash; 4yr/$52M",
+    "Rashan Gary traded Packers&#8594;Cowboys for 2027 4th",
+    "Geno Smith released by Raiders",
+    "Kyler Murray released by Cardinals",
+    "Breece Hall franchise tagged by Jets &mdash; $14.293M",
+    "Travis Kelce extension Chiefs &mdash; returns for 14th season",
+    "Montaric Brown signs Jaguars &mdash; 3yr/$33M",
+    "Taron Johnson traded Bills&#8594;Raiders",
+    "Daniel Jones transition tagged by Colts &mdash; $37.83M",
+    "David Montgomery traded Lions&#8594;Texans",
+    "Ed Ingram extension Texans &mdash; 3yr/$37.5M",
+    "Kyle Pitts franchise tagged by Falcons",
+    "Aaron Jones released Vikings &mdash; saves $18.65M",
+    "Jawaan Taylor released Chiefs &mdash; saves $20M"
+  ];
+  var doubled = items.concat(items);
+  var html = doubled.map(function(i){ return '<span class="ticker-item">'+i+'</span>'; }).join("");
+  document.getElementById("ticker-track").innerHTML = html;
+})();
+
+function renderFeed(data){
+  var feed = document.getElementById("feed");
+  var noRes = document.getElementById("no-results");
+  var count = document.getElementById("result-count");
+  if(!data.length){
+    feed.innerHTML = "";
+    noRes.style.display = "block";
+    count.textContent = "0 results";
+    return;
+  }
+  noRes.style.display = "none";
+  count.textContent = data.length + " transaction" + (data.length!==1?"s":"");
+  feed.innerHTML = data.map(function(tx){
+    var label = tx.type.charAt(0).toUpperCase()+tx.type.slice(1);
+    return '<div class="tx-card '+tx.type+'">'+
+      '<div class="tx-icon">'+tx.icon+'</div>'+
+      '<div class="tx-body">'+
+        '<div class="tx-name">'+tx.name+'<span class="tx-pos">'+tx.pos+'</span></div>'+
+        '<div class="tx-detail"><strong style="color:rgba(255,255,255,.7)">'+tx.teams+'</strong> &mdash; '+tx.detail+'</div>'+
+      '</div>'+
+      '<div class="tx-meta">'+
+        '<div class="tx-value">'+tx.value+'</div>'+
+        '<span class="type-pill pill-'+tx.type+'">'+label+'</span>'+
+        '<div class="tx-time">'+tx.time+'</div>'+
+      '</div>'+
+    '</div>';
+  }).join("");
+}
+
+function setFilter(type, btn){
+  currentFilter = type;
+  document.querySelectorAll(".filter-btn").forEach(function(b){ b.classList.remove("active"); });
+  btn.classList.add("active");
+  applyFilters();
+}
+
+function applyFilters(){
+  var q = document.getElementById("search-box").value.toLowerCase().trim();
+  var data = transactions;
+  if(currentFilter !== "all") data = data.filter(function(tx){ return tx.type===currentFilter; });
+  if(q) data = data.filter(function(tx){
+    return (tx.name+" "+tx.pos+" "+tx.teams+" "+tx.detail).toLowerCase().indexOf(q)!==-1;
+  });
+  renderFeed(data);
+}
+
+function updateClock(){
+  var el = document.getElementById("header-time");
+  var now = new Date();
+  el.textContent = now.toLocaleString("en-US",{timeZone:"America/New_York",hour:"2-digit",minute:"2-digit",hour12:true,month:"short",day:"numeric"})+" ET";
+}
+
+applyFilters();
+updateClock();
+setInterval(updateClock, 60000);
+</script>
+</body>
+</html>
