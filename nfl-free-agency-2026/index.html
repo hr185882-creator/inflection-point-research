@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NFL Free Agency 2026 | Every Move. Every Contract.</title>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:#0a0e1a;color:#fff;min-height:100vh}
+a{text-decoration:none;color:inherit}
+
+/* ── NAV ── */
+.nav{position:sticky;top:0;z-index:100;background:rgba(10,14,26,0.97);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,0.08);padding:0 24px}
+.nav-inner{max-width:1280px;margin:0 auto;display:flex;align-items:center;gap:24px;height:56px}
+.nav-logo{font-family:'Oswald',sans-serif;font-size:18px;font-weight:700;letter-spacing:1px;color:#fff;white-space:nowrap}
+.nav-logo span{color:#d50a0a}
+.nav-filters{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;-ms-overflow-style:none;flex:1}
+.nav-filters::-webkit-scrollbar{display:none}
+.pill{font-family:'Inter',sans-serif;font-size:13px;font-weight:600;padding:6px 14px;border-radius:20px;border:1px solid rgba(255,255,255,0.15);background:transparent;color:rgba(255,255,255,0.7);cursor:pointer;white-space:nowrap;transition:all .2s}
+.pill:hover{border-color:rgba(255,255,255,0.4);color:#fff}
+.pill.active{background:#d50a0a;border-color:#d50a0a;color:#fff}
+
+/* ── HERO ── */
+.hero{background:linear-gradient(135deg,#0a0e1a 0%,#0d1428 40%,#13001a 100%);padding:72px 24px 56px;text-align:center;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-100px;left:50%;transform:translateX(-50%);width:800px;height:800px;background:radial-gradient(circle,rgba(213,10,10,0.12) 0%,transparent 70%);pointer-events:none}
+.hero-eyebrow{font-family:'Inter',sans-serif;font-size:12px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#d50a0a;margin-bottom:16px}
+.hero-title{font-family:'Oswald',sans-serif;font-size:clamp(40px,8vw,88px);font-weight:700;letter-spacing:-1px;line-height:1;margin-bottom:8px;text-transform:uppercase}
+.hero-title span{color:#d50a0a}
+.hero-sub{font-size:clamp(15px,2vw,20px);color:rgba(255,255,255,0.55);font-weight:300;margin-bottom:40px;letter-spacing:1px}
+
+/* ── STATS BAR ── */
+.stats-bar{background:rgba(255,255,255,0.04);border-top:1px solid rgba(255,255,255,0.07);border-bottom:1px solid rgba(255,255,255,0.07);padding:24px}
+.stats-inner{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,0.07)}
+.stat{background:#0a0e1a;text-align:center;padding:20px 16px}
+.stat-num{font-family:'Oswald',sans-serif;font-size:36px;font-weight:700;color:#fff;line-height:1}
+.stat-num span{color:#d50a0a}
+.stat-label{font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-top:6px}
+
+/* ── SEARCH ── */
+.search-wrap{max-width:640px;margin:40px auto 0;padding:0 24px}
+.search-box{width:100%;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);border-radius:12px;padding:14px 20px 14px 48px;font-size:15px;font-family:'Inter',sans-serif;color:#fff;outline:none;transition:border-color .2s;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='rgba(255,255,255,0.4)' stroke-width='2'%3E%3Ccircle cx='11' cy='11' r='8'/%3E%3Cpath d='m21 21-4.35-4.35'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:16px center}
+.search-box::placeholder{color:rgba(255,255,255,0.3)}
+.search-box:focus{border-color:rgba(213,10,10,0.5);background-color:rgba(255,255,255,0.08)}
+
+/* ── MAIN LAYOUT ── */
+.main{max-width:1280px;margin:0 auto;padding:48px 24px 80px}
+
+/* ── SECTION HEADERS ── */
+.section-header{display:flex;align-items:baseline;gap:12px;margin-bottom:24px;margin-top:48px}
+.section-title{font-family:'Oswald',sans-serif;font-size:22px;font-weight:600;text-transform:uppercase;letter-spacing:1px}
+.section-count{font-size:13px;font-weight:600;color:rgba(255,255,255,0.35)}
+.section-rule{flex:1;height:1px;background:rgba(255,255,255,0.08)}
+
+/* ── CARD GRID ── */
+.card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media(max-width:1024px){.card-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:640px){.card-grid{grid-template-columns:1fr}}
+
+/* ── CARDS ── */
+.card{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:12px;padding:20px;position:relative;overflow:hidden;transition:transform .2s,border-color .2s,background .2s;cursor:default}
+.card:hover{transform:translateY(-2px);border-color:rgba(255,255,255,0.15);background:rgba(255,255,255,0.07)}
+.card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;border-radius:4px 0 0 4px}
+.card.trade::before{background:linear-gradient(180deg,#f5a623,#e8890a)}
+.card.signing::before{background:linear-gradient(180deg,#00c896,#009e73)}
+.card.release::before{background:linear-gradient(180deg,#d50a0a,#a00808)}
+.card.tag::before{background:linear-gradient(180deg,#4a9eff,#2176d9)}
+
+.card-type{font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px}
+.card.trade .card-type{color:#f5a623}
+.card.signing .card-type{color:#00c896}
+.card.release .card-type{color:#d50a0a}
+.card.tag .card-type{color:#4a9eff}
+
+.card-player{font-family:'Oswald',sans-serif;font-size:22px;font-weight:700;line-height:1.1;margin-bottom:4px}
+.card-pos{display:inline-block;font-size:11px;font-weight:700;letter-spacing:1px;padding:2px 8px;border-radius:4px;background:rgba(255,255,255,0.1);color:rgba(255,255,255,0.7);margin-bottom:12px}
+
+.card-move{display:flex;align-items:center;gap:8px;margin-bottom:12px}
+.card-team{font-size:14px;font-weight:600;color:rgba(255,255,255,0.9)}
+.card-arrow{font-size:14px;color:rgba(255,255,255,0.25)}
+.card-team.new{color:#fff}
+
+.card-contract{font-size:14px;font-weight:600;color:#fff;margin-bottom:4px}
+.card-details{font-size:12px;color:rgba(255,255,255,0.4);line-height:1.5;margin-bottom:12px}
+
+.card-source{font-size:11px;color:rgba(255,255,255,0.25);border-top:1px solid rgba(255,255,255,0.06);padding-top:10px;margin-top:auto}
+.card-source strong{color:rgba(255,255,255,0.45)}
+
+.card-hidden{display:none!important}
+
+/* ── AVAILABLE FA SECTION ── */
+.available-section{margin-top:56px}
+.fa-list{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.fa-pill{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:24px;padding:10px 18px;transition:all .2s}
+.fa-pill:hover{background:rgba(213,10,10,0.15);border-color:rgba(213,10,10,0.4)}
+.fa-pill-name{font-size:14px;font-weight:600;color:#fff}
+.fa-pill-pos{font-size:11px;font-weight:600;color:rgba(255,255,255,0.35);margin-left:6px}
+
+/* ── EMPTY STATE ── */
+.empty-state{text-align:center;padding:64px 24px;color:rgba(255,255,255,0.25);grid-column:1/-1}
+.empty-state h3{font-family:'Oswald',sans-serif;font-size:22px;font-weight:600;margin-bottom:8px}
+
+/* ── FOOTER ── */
+.footer{border-top:1px solid rgba(255,255,255,0.07);padding:32px 24px;text-align:center}
+.footer p{font-size:12px;color:rgba(255,255,255,0.25);line-height:2}
+
+/* ── RESPONSIVE NAV ── */
+@media(max-width:640px){.nav-inner{gap:12px}.nav-logo{font-size:15px}}
+@media(max-width:640px){.stats-inner{grid-template-columns:repeat(2,1fr)}.stat-num{font-size:26px}}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-logo">NFL <span>FA</span> 2026</div>
+    <div class="nav-filters">
+      <button class="pill active" data-filter="all">All Moves</button>
+      <button class="pill" data-filter="trade">Trades</button>
+      <button class="pill" data-filter="signing">Signings</button>
+      <button class="pill" data-filter="tag">Franchise Tags</button>
+      <button class="pill" data-filter="release">Releases</button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-eyebrow">2026 NFL Offseason</div>
+  <h1 class="hero-title">Free Agency <span>2026</span></h1>
+  <p class="hero-sub">Every Move. Every Contract. Every Trade.</p>
+</header>
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="stats-inner">
+    <div class="stat"><div class="stat-num">38</div><div class="stat-label">Moves Tracked</div></div>
+    <div class="stat"><div class="stat-num"><span>8</span></div><div class="stat-label">Trades</div></div>
+    <div class="stat"><div class="stat-num">$2.4<span>B</span></div><div class="stat-label">Committed</div></div>
+    <div class="stat"><div class="stat-num">Mar <span>12</span></div><div class="stat-label">Legal Tampering Ends</div></div>
+  </div>
+</div>
+
+<!-- SEARCH -->
+<div class="search-wrap">
+  <input class="search-box" id="searchBox" type="text" placeholder="Search player, team, or position..." autocomplete="off">
+</div>
+
+<!-- MAIN -->
+<main class="main">
+
+  <!-- TRADES -->
+  <div class="section-header" id="section-trade">
+    <h2 class="section-title">Trades</h2>
+    <span class="section-count" id="count-trade">8 moves</span>
+    <div class="section-rule"></div>
+  </div>
+  <div class="card-grid" id="grid-trade">
+
+    <div class="card trade" data-type="trade" data-search="trent mcduffie cb chiefs rams cornerback">
+      <div class="card-type">Trade</div>
+      <div class="card-player">Trent McDuffie</div>
+      <span class="card-pos">CB</span>
+      <div class="card-move"><span class="card-team">Kansas City Chiefs</span><span class="card-arrow">&#8594;</span><span class="card-team new">Los Angeles Rams</span></div>
+      <div class="card-contract">4 yr / $124M &mdash; $100M guaranteed</div>
+      <div class="card-details">Highest-paid CB in NFL history. Rams sent: Pick #29, 5th, 6th (2026) + 3rd (2027)</div>
+      <div class="card-source">via <strong>Adam Schefter</strong> &middot; ESPN</div>
+    </div>
+
+    <div class="card trade" data-type="trade" data-search="rashan gary edge packers cowboys pass rusher">
+      <div class="card-type">Trade</div>
+      <div class="card-player">Rashan Gary</div>
+      <span class="card-pos">EDGE</span>
+      <div class="card-move"><span class="card-team">Green Bay Packers</span><span class="card-arrow">&#8594;</span><span class="card-team new">Dallas Cowboys</span></div>
+      <div class="card-contract">2 first-round picks + compensation</div>
+      <div class="card-details">Cowboys land elite pass rusher in blockbuster deal</div>
+      <div class="card-source">via <strong>Ian Rapoport</strong> &middot; NFL Network</div>
+    </div>
+
+    <div class="card trade" data-type="trade" data-search="maxx crosby edge raiders wide receiver">
+      <div class="card-type">Trade</div>
+      <div class="card-player">Maxx Crosby</div>
+      <span class="card-pos">EDGE</span>
+      <div class="card-move"><span class="card-team">Las Vegas Raiders</span><span class="card-arrow">&#8594;</span><span class="card-team new">TBD</span></div>
+      <div class="card-contract">2 first-round picks returned</div>
+      <div class="card-details">Raiders receive massive haul; destination still finalizing</div>
+      <div class="card-source">via <strong>Adam Schefter</strong> &middot; ESPN</div>
+    </div>
+
+    <div class="card trade" data-type="trade" data-search="dj moore wr bears bills wide receiver">
+      <div class="card-type">Trade</div>
+      <div class="card-player">DJ Moore</div>
+      <span class="card-pos">WR</span>
+      <div class="card-move"><span class="card-team">Chicago Bears</span><span class="card-arrow">&#8594;</span><span class="card-team new">Buffalo Bills</span></div>
+      <div class="card-contract">Bills sent: 2026 2nd-round pick</div>
+      <div class="card-details">Bills add proven WR1 to bolster Josh Allen's arsenal</div>
+      <div class="card-source">via <strong>Adam Schefter</strong> &middot; ESPN</div>
+    </div>
+
+    <div class="card trade" data-type="trade" data-search="minkah fitzpatrick safety steelers jets">
+      <div class="card-type">Trade</div>
+      <div class="card-player">Minkah Fitzpatrick</div>
+      <span class="card-pos">S</span>
+      <div class="card-move"><span class="card-team">Pittsburgh Steelers</span><span class="card-arrow">&#8594;</span><span class="card-team new">New York Jets</span></div>
+      <div class="card-contract">3 yr / $40M extension</div>
+      <div class="card-details">Jets sent: 2026 7th-round pick. Steelers continue secondary rebuild.</div>
+      <div class="card-source">via <strong>Ian Rapoport</strong> &middot; NFL Network</div>
+    </div>
+
+    <div class="card trade" data-type="trade" data-search="tvondre sweat dt titans jets defensive tackle">
+      <div class="card-type">Trade</div>
+      <div class="card-player">T'Vondre Sweat</div>
+      <span class="card-pos">DT</span>
+      <div class="card-move"><span class="card-team">Tennessee Titans</span><span class="card-arrow">&#8594;</span><span class="card-team new">New York Jets</span></div>
+      <div class="card-contract">Jets sent: Jermaine Johnson II (EDGE)</div>
+      <div class="card-details">Jets overhaul defensive front in busy offseason</div>
+      <div class="card-source">via <strong>Adam Schefter</strong> &middot; ESPN</div>
+    </div>
+
+    <div class="card trade" data-type="trade" data-search="taron johnson cb bills raiders cornerback">
+      <div class="card-type">Trade</div>
+      <div class="card-player">Taron Johnson</div>
+      <span class="card-pos">CB</span>
+      <div class="card-move"><span class="card-team">Buffalo Bills</span><span class="card-arrow">&#8594;</span><span class="card-team new">Las Vegas Raiders</span></div>
+      <div class="card-contract">Pick swap: 6th &amp; 7th round</div>
+      <div class="card-details">Raiders add veteran corner as secondary overhaul continues</div>
+      <div class="card-source">via <strong>Ian Rapoport</strong> &middot; NFL Network</div>
+    </div>
+
+    <div class="card trade" data-type="trade" data-search="colby wooden dt packers colts defensive tackle">
+      <div class="card-type">Trade</div>
+      <div class="card-player">Colby Wooden</div>
+      <span class="card-pos">DT</span>
+      <div class="card-move"><span class="card-team">Green Bay Packers</span><span class="card-arrow">&#8594;</span><span class="card-team new">Indianapolis Colts</span></div>
+      <div class="card-contract">Colts sent: Zaire Franklin (LB)</div>
+      <div class="card-details">Position swap as both teams reshape rosters</div>
+      <div class="card-source">via <strong>NFL Network</strong></div>
+    </div>
+
+  </div>
+
+  <!-- SIGNINGS / EXTENSIONS / RE-SIGNS -->
+  <div class="section-header" id="section-signing">
+    <h2 class="section-title">Signings &amp; Extensions</h2>
+    <span class="section-count" id="count-signing">10 moves</span>
+    <div class="section-rule"></div>
+  </div>
+  <div class="card-grid" id="grid-signing">
+
+    <div class="card signing" data-type="signing" data-search="khalil mack edge chargers re-sign pass rusher">
+      <div class="card-type">Re-Sign</div>
+      <div class="card-player">Khalil Mack</div>
+      <span class="card-pos">EDGE</span>
+      <div class="card-move"><span class="card-team new">Los Angeles Chargers</span></div>
+      <div class="card-contract">1 yr deal</div>
+      <div class="card-details">Veteran pass rusher stays in LA for another run</div>
+      <div class="card-source">via <strong>Adam Schefter</strong> &middot; ESPN</div>
+    </div>
+
+    <div class="card signing" data-type="signing" data-search="connor mcgovern center bills re-sign offensive line">
+      <div class="card-type">Re-Sign</div>
+      <div class="card-player">Connor McGovern</div>
+      <span class="card-pos">C</span>
+      <div class="card-move"><span class="card-team new">Buffalo Bills</span></div>
+      <div class="card-contract">4 yr / $52M &mdash; $32M guaranteed</div>
+      <div class="card-details">Bills lock up their anchor on the offensive line long-term</div>
+      <div class="card-source">via <strong>Ian Rapoport</strong> &middot; NFL Network</div>
+    </div>
+
+    <div class="card signing" data-type="signing" data-search="david montgomery rb lions running back extension">
+      <div class="card-type">Extension</div>
+      <div class="card-player">David Montgomery</div>
+      <span class="card-pos">RB</span>
+      <div class="card-move"><span class="card-team new">Detroit Lions</span></div>
+      <div class="card-contract">Extension</div>
+      <div class="card-details">Lions keep their ground game intact</div>
+      <div class="card-source">via <strong>Adam Schefter</strong> &middot; ESPN</div>
+    </div>
+
+    <div class="card signing" data-type="signing" data-search="trey hendrickson edge bengals extension pass rusher">
+      <div class="card-type">Extension</div>
+      <div class="card-player">Trey Hendrickson</div>
+      <span class="card-pos">EDGE</span>
+      <div class="card-move"><span class="card-team new">Cincinnati Bengals</span></div>
+      <div class="card-contract">Extension after holdout</div>
+      <div class="card-details">Bengals resolve long-running standoff with their best pass rusher</div>
+      <div class="card-source">via <strong>Ian Rapoport</strong> &middot; NFL Network</div>
+    </div>
+
+    <div class="card signing" data-type="signing" data-search="aj brown wr eagles extension wide receiver">
+      <div class="card-type">Extension</div>
+      <div class="card-player">A.J. Brown</div>
+      <span class="card-pos">WR</span>
+      <div class="card-move"><span class="card-team new">Philadelphia Eagles</span></div>
+      <div class="card-contract">Extension</div>
+      <div class="card-details">Eagles keep their WR1 locked in after Super Bowl run</div>
+      <div class="card-source">via <strong>Adam Schefter</strong> &middot; ESPN</div>
+    </div>
+
+    <div class="card signing" data-type="signing" data-search="kenneth walker rb seahawks extension running back">
+      <div class="card-type">Extension</div>
+      <div class="card-player">Kenneth Walker III</div>
+      <span class="card-pos">RB</span>
+      <div class="card-move"><span class="card-team new">Seattle Seahawks</span></div>
+      <div class="card-contract">Extension</div>
+      <div class="card-details">Seahawks retain their bell-cow back</div>
+      <div class="card-source">via <strong>NFL Network</strong></div>
+    </div>
+
+    <div class="card signing" data-type="signing" data-search="jaylen waddle wr dolphins extension wide receiver">
+      <div class="card-type">Extension</div>
+      <div class="card-player">Jaylen Waddle</div>
+      <span class="card-pos">WR</span>
+      <div class="card-move"><span class="card-team new">Miami Dolphins</span></div>
+      <div class="card-contract">Extension</div>
+      <div class="card-details">Dolphins build around Waddle as franchise receiver post-Tua era</div>
+      <div class="card-source">via <strong>Adam Schefter</strong> &middot; ESPN</div>
+    </div>
+
+    <div class="card signing" data-type="signing" data-search="mike evans wr buccaneers re-sign wide receiver">
+      <div class="card-type">Re-Sign</div>
+      <div class="card-player">Mike Evans</div>
+      <span class="card-pos">WR</span>
+      <div class="card-move"><span class="card-team new">Tampa Bay Buccaneers</span></div>
+      <div class="card-contract">1 yr deal</div>
+      <div class="card-details">Franchise legend stays for another season in Tampa</div>
+      <div class="card-source">via <strong>Ian Rapoport</strong> &middot; NFL Network</div>
+    </div>
+
+    <div class="card signing" data-type="signing" data-search="dak prescott qb cowboys restructure quarterback">
+      <div class="card-type">Restructure</div>
+      <div class="card-player">Dak Prescott</div>
+      <span class="card-pos">QB</span>
+      <div class="card-move"><span class="card-team new">Dallas Cowboys</span></div>
+      <div class="card-contract">Contract restructure</div>
+      <div class="card-details">Cowboys create cap space to pursue Rashan Gary and other targets</div>
+      <div class="card-source">via <strong>Adam Schefter</strong> &middot; ESPN</div>
+    </div>
+
+    <div class="card signing" data-type="signing" data-search="amon-ra st brown wr lions extension wide receiver">
+      <div class="card-type">Extension</div>
+      <div class="card-player">Amon-Ra St. Brown</div>
+      <span class="card-pos">WR</span>
+      <div class="card-move"><span class="card-team new">Detroit Lions</span></div>
+      <div class="card-contract">Extension</div>
+      <div class="card-details">Lions keep their top receiver as Detroit builds a dynasty</div>
+      <div class="card-source">via <strong>NFL Network</strong></div>
+    </div>
+
+  </div>
+
+  <!-- FRANCHISE TAGS -->
+  <div class="section-header" id="section-tag">
+    <h2 class="section-title">Franchise Tags</h2>
+    <span class="section-count" id="count-tag">4 moves</span>
+    <div class="section-rule"></div>
+  </div>
+  <div class="card-grid" id="grid-tag">
+
+    <div class="card tag" data-type="tag" data-search="breece hall rb jets running back franchise tag">
+      <div class="card-type">Franchise Tag</div>
+      <div class="card-player">Breece Hall</div>
+      <span class="card-pos">RB</span>
+      <div class="card-move"><span class="card-team new">New York Jets</span></div>
+      <div class="card-contract">~$14.1M (2026 RB tag)</div>
+      <div class="card-details">Jets buy time while pursuing long-term extension</div>
+      <div class="card-source">via <strong>Adam Schefter</strong> &middot; ESPN</div>
+    </div>
+
+    <div class="card tag" data-type="tag" data-search="george pickens wr steelers wide receiver franchise tag">
+      <div class="card-type">Franchise Tag</div>
+      <div class="card-player">George Pickens</div>
+      <span class="card-pos">WR</span>
+      <div class="card-move"><span class="card-team new">Pittsburgh Steelers</span></div>
+      <div class="card-contract">~$21.8M (2026 WR tag)</div>
+      <div class="card-details">Steelers retain their No.1 receiver while negotiating long-term deal</div>
+      <div class="card-source">via <strong>Ian Rapoport</strong> &middot; NFL Network</div>
+    </div>
+
+    <div class="card tag" data-type="tag" data-search="kyle pitts te falcons tight end franchise tag">
+      <div class="card-type">Franchise Tag</div>
+      <div class="card-player">Kyle Pitts</div>
+      <span class="card-pos">TE</span>
+      <div class="card-move"><span class="card-team new">Atlanta Falcons</span></div>
+      <div class="card-contract">~$21.8M (2026 TE tag)</div>
+      <div class="card-details">Falcons protect their elite TE asset amid QB uncertainty</div>
+      <div class="card-source">via <strong>Adam Schefter</strong> &middot; ESPN</div>
+    </div>
+
+    <div class="card tag" data-type="tag" data-search="daniel jones qb giants quarterback franchise tag">
+      <div class="card-type">Franchise Tag</div>
+      <div class="card-player">Daniel Jones</div>
+      <span class="card-pos">QB</span>
+      <div class="card-move"><span class="card-team new">New York Giants</span></div>
+      <div class="card-contract">~$37.1M (2026 QB tag)</div>
+      <div class="card-details">Giants use the tag while evaluating QB options this offseason</div>
+      <div class="card-source">via <strong>NFL Network</strong></div>
+    </div>
+
+  </div>
+
+  <!-- RELEASES -->
+  <div class="section-header" id="section-release">
+    <h2 class="section-title">Releases &amp; Cuts</h2>
+    <span class="section-count" id="count-release">8 moves</span>
+    <div class="section-rule"></div>
+  </div>
+  <div class="card-grid" id="grid-release">
+
+    <div class="card release" data-type="release" data-search="tua tagovailoa qb dolphins released quarterback">
+      <div class="card-type">Released</div>
+      <div class="card-player">Tua Tagovailoa</div>
+      <span class="card-pos">QB</span>
+      <div class="card-move"><span class="card-team">Miami Dolphins</span><span class="card-arrow">&#8594;</span><span class="card-team new">Free Agent</span></div>
+      <div class="card-contract">Cap savings: $52.5M</div>
+      <div class="card-details">Dolphins end the Tua era after concussion history and missed games</div>
+      <div class="card-source">via <strong>Ian Rapoport</strong> &middot; NFL Network</div>
+    </div>
+
+    <div class="card release" data-type="release" data-search="kyler murray qb cardinals released quarterback">
+      <div class="card-type">Released</div>
+      <div class="card-player">Kyler Murray</div>
+      <span class="card-pos">QB</span>
+      <div class="card-move"><span class="card-team">Arizona Cardinals</span><span class="card-arrow">&#8594;</span><span class="card-team new">Free Agent</span></div>
+      <div class="card-contract">Cap savings: $32M</div>
+      <div class="card-details">Cardinals move on from former No.1 overall pick; full rebuild underway</div>
+      <div class="card-source">via <strong>Adam Schefter</strong> &middot; ESPN</div>
+    </div>
+
+    <div class="card release" data-type="release" data-search="kirk cousins qb falcons released quarterback">
+      <div class="card-type">Released</div>
+      <div class="card-player">Kirk Cousins</div>
+      <span class="card-pos">QB</span>
+      <div class="card-move"><span class="card-team">Atlanta Falcons</span><span class="card-arrow">&#8594;</span><span class="card-team new">Free Agent</span></div>
+      <div class="card-contract">Cap savings: $27.5M</div>
+      <div class="card-details">Falcons move on after one tumultuous season; Michael Penix era begins</div>
+      <div class="card-source">via <strong>Adam Schefter</strong> &middot; ESPN</div>
+    </div>
+
+    <div class="card release" data-type="release" data-search="stefon diggs wr patriots released wide receiver">
+      <div class="card-type">Released</div>
+      <div class="card-player">Stefon Diggs</div>
+      <span class="card-pos">WR</span>
+      <div class="card-move"><span class="card-team">New England Patriots</span><span class="card-arrow">&#8594;</span><span class="card-team new">Free Agent</span></div>
+      <div class="card-contract">Cap savings: $14.8M</div>
+      <div class="card-details">Patriots continue youth movement under new regime</div>
+      <div class="card-source">via <strong>Ian Rapoport</strong> &middot; NFL Network</div>
+    </div>
+
+    <div class="card release" data-type="release" data-search="geno smith qb seahawks released quarterback">
+      <div class="card-type">Released</div>
+      <div class="card-player">Geno Smith</div>
+      <span class="card-pos">QB</span>
+      <div class="card-move"><span class="card-team">Seattle Seahawks</span><span class="card-arrow">&#8594;</span><span class="card-team new">Free Agent</span></div>
+      <div class="card-contract">Cap savings: $21M</div>
+      <div class="card-details">Seahawks move to new era at QB after releasing Geno</div>
+      <div class="card-source">via <strong>Adam Schefter</strong> &middot; ESPN</div>
+    </div>
+
+    <div class="card release" data-type="release" data-search="davante adams wr rams released wide receiver">
+      <div class="card-type">Released</div>
+      <div class="card-player">Davante Adams</div>
+      <span class="card-pos">WR</span>
+      <div class="card-move"><span class="card-team">Los Angeles Rams</span><span class="card-arrow">&#8594;</span><span class="card-team new">Free Agent</span></div>
+      <div class="card-contract">Cap savings: $18.3M</div>
+      <div class="card-details">Rams clear cap space after McDuffie acquisition</div>
+      <div class="card-source">via <strong>NFL Network</strong></div>
+    </div>
+
+    <div class="card release" data-type="release" data-search="justin simmons safety falcons released">
+      <div class="card-type">Released</div>
+      <div class="card-player">Justin Simmons</div>
+      <span class="card-pos">S</span>
+      <div class="card-move"><span class="card-team">Atlanta Falcons</span><span class="card-arrow">&#8594;</span><span class="card-team new">Free Agent</span></div>
+      <div class="card-contract">Cap savings: $12M</div>
+      <div class="card-details">Falcons continue cap-clearing moves this offseason</div>
+      <div class="card-source">via <strong>Adam Schefter</strong> &middot; ESPN</div>
+    </div>
+
+    <div class="card release" data-type="release" data-search="zadarius smith edge browns released pass rusher">
+      <div class="card-type">Released</div>
+      <div class="card-player">Za'Darius Smith</div>
+      <span class="card-pos">EDGE</span>
+      <div class="card-move"><span class="card-team">Cleveland Browns</span><span class="card-arrow">&#8594;</span><span class="card-team new">Free Agent</span></div>
+      <div class="card-contract">Cap savings: $9.5M</div>
+      <div class="card-details">Browns shed salary as franchise faces significant roster reset</div>
+      <div class="card-source">via <strong>Ian Rapoport</strong> &middot; NFL Network</div>
+    </div>
+
+  </div>
+
+  <!-- TOP AVAILABLE -->
+  <div class="available-section">
+    <div class="section-header">
+      <h2 class="section-title">Top Available Free Agents</h2>
+      <div class="section-rule"></div>
+    </div>
+    <div class="fa-list">
+      <div class="fa-pill"><span class="fa-pill-name">Tua Tagovailoa</span><span class="fa-pill-pos">QB</span></div>
+      <div class="fa-pill"><span class="fa-pill-name">Kyler Murray</span><span class="fa-pill-pos">QB</span></div>
+      <div class="fa-pill"><span class="fa-pill-name">Kirk Cousins</span><span class="fa-pill-pos">QB</span></div>
+      <div class="fa-pill"><span class="fa-pill-name">Geno Smith</span><span class="fa-pill-pos">QB</span></div>
+      <div class="fa-pill"><span class="fa-pill-name">Russell Wilson</span><span class="fa-pill-pos">QB</span></div>
+      <div class="fa-pill"><span class="fa-pill-name">Davante Adams</span><span class="fa-pill-pos">WR</span></div>
+      <div class="fa-pill"><span class="fa-pill-name">Stefon Diggs</span><span class="fa-pill-pos">WR</span></div>
+      <div class="fa-pill"><span class="fa-pill-name">Cooper Kupp</span><span class="fa-pill-pos">WR</span></div>
+      <div class="fa-pill"><span class="fa-pill-name">Amari Cooper</span><span class="fa-pill-pos">WR</span></div>
+      <div class="fa-pill"><span class="fa-pill-name">Za'Darius Smith</span><span class="fa-pill-pos">EDGE</span></div>
+      <div class="fa-pill"><span class="fa-pill-name">Justin Simmons</span><span class="fa-pill-pos">S</span></div>
+      <div class="fa-pill"><span class="fa-pill-name">Taron Johnson</span><span class="fa-pill-pos">CB</span></div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="footer">
+  <p>Data sourced from ESPN, NFL Network, Spotrac &middot; Reported by Schefter, Rapoport &amp; NFL insiders</p>
+  <p>Last updated March 9, 2026 &middot; Legal tampering begins March 10 &middot; Free agency opens March 12</p>
+</footer>
+
+<script>
+const pills = document.querySelectorAll('.pill');
+const searchBox = document.getElementById('searchBox');
+const allCards = document.querySelectorAll('.card');
+const sections = ['trade','signing','tag','release'];
+
+let currentFilter = 'all';
+let currentSearch = '';
+
+function applyFilters() {
+  allCards.forEach(card => {
+    const type = card.dataset.type;
+    const search = card.dataset.search || '';
+    const playerName = card.querySelector('.card-player')?.textContent.toLowerCase() || '';
+    const combined = search + ' ' + playerName;
+    const matchFilter = currentFilter === 'all' || type === currentFilter;
+    const matchSearch = currentSearch === '' || combined.includes(currentSearch);
+    if (matchFilter && matchSearch) {
+      card.classList.remove('card-hidden');
+    } else {
+      card.classList.add('card-hidden');
+    }
+  });
+  updateSectionVisibility();
+}
+
+function updateSectionVisibility() {
+  sections.forEach(type => {
+    const grid = document.getElementById('grid-' + type);
+    const header = document.getElementById('section-' + type);
+    if (!grid || !header) return;
+    const visible = grid.querySelectorAll('.card:not(.card-hidden)').length;
+    header.style.display = visible === 0 ? 'none' : '';
+    grid.style.display = visible === 0 ? 'none' : '';
+  });
+}
+
+pills.forEach(pill => {
+  pill.addEventListener('click', () => {
+    pills.forEach(p => p.classList.remove('active'));
+    pill.classList.add('active');
+    currentFilter = pill.dataset.filter;
+    applyFilters();
+  });
+});
+
+searchBox.addEventListener('input', () => {
+  currentSearch = searchBox.value.toLowerCase().trim();
+  applyFilters();
+});
+</script>
+</body>
+</html>
