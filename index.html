@@ -412,93 +412,128 @@
     if (d) { d.innerHTML = html; d.style.display = 'flex'; }
   }
 
-  function renderAll(d) {
-    var m = d.markets, e = d.energy, c = d.companies, t = d.technology,
-        p = d.policy, s = d.sports, med = d.media, g = d.geopolitics, cl = d.claims;
+  function renderAll(raw) {
+    var d  = raw.domains || {};
+    var m  = d.markets    || {};
+    var e  = d.energy     || {};
+    var c  = d.companies  || {};
+    var s  = d.sports     || {};
+    var g  = d.geopolitics|| {};
+    var t  = d.technology || {};
+    var p  = d.policy     || {};
+    var mq = m.quotes || {};
+    var eq = e.quotes || {};
+    var cq = c.quotes || {};
 
-    // Ticker
+    // ── Ticker bar ────────────────────────────────────────────────
     var ticks = [
-      {l:'SPX', v:fmt(m.sp500,2), pct:m.sp500_change_pct},
-      {l:'10Y', v:fmt(m.us10y,3)+'%', pct:null},
-      {l:'DXY', v:fmt(m.dxy,3), pct:null},
-      {l:'BTC', v:'$'+fmt(m.btc,0), pct:null},
-      {l:'GOLD', v:'$'+fmt(m.gold,2), pct:null},
-      {l:'WTI', v:'$'+fmt(e.wti_crude,2), pct:null},
-      {l:'BRENT', v:'$'+fmt(e.brent_crude,2), pct:null},
-      {l:'GAS', v:'$'+fmt(e.natural_gas,3), pct:null}
+      {l:'SPY',   v: mq['SPY']     ? '$'+fmt(mq['SPY'].price,2)     : '--', pct: mq['SPY']     ? mq['SPY'].change_pct     : null},
+      {l:'BTC',   v: mq['BTC-USD'] ? '$'+fmt(mq['BTC-USD'].price,0) : '--', pct: mq['BTC-USD'] ? mq['BTC-USD'].change_pct : null},
+      {l:'DXY',   v: mq['DX-Y.NYB']? fmt(mq['DX-Y.NYB'].price,2)   : '--', pct: mq['DX-Y.NYB']? mq['DX-Y.NYB'].change_pct: null},
+      {l:'10Y',   v: m.yield_10y   ? fmt(m.yield_10y,2)+'%'         : '--', pct: null},
+      {l:'EUR/USD',v: mq['EURUSD=X']? fmt(mq['EURUSD=X'].price,4)   : '--', pct: mq['EURUSD=X']? mq['EURUSD=X'].change_pct: null},
+      {l:'WTI',   v: eq['CL=F']   ? '$'+fmt(eq['CL=F'].price,2)    : '--', pct: eq['CL=F']   ? eq['CL=F'].change_pct    : null},
+      {l:'BRENT', v: eq['BZ=F']   ? '$'+fmt(eq['BZ=F'].price,2)    : '--', pct: eq['BZ=F']   ? eq['BZ=F'].change_pct    : null},
+      {l:'GOLD',  v: mq['GLD']    ? '$'+fmt(mq['GLD'].price,2)     : '--', pct: mq['GLD']    ? mq['GLD'].change_pct     : null}
     ];
     var tk = document.getElementById('ticker');
     if (tk) tk.innerHTML = ticks.map(function(x){
-      var ph = x.pct !== null && x.pct !== undefined ? ' <span class="' + pctCls(x.pct) + '">' + fmtPct(x.pct) + '</span>' : '';
+      var ph = x.pct !== null && x.pct !== undefined
+        ? ' <span class="'+pctCls(x.pct)+'">'+fmtPct(x.pct)+'</span>' : '';
       return '<span class="tick-item"><span class="tick-label">'+x.l+'</span> <span class="tick-val">'+x.v+'</span>'+ph+'</span>';
     }).join('');
     var ub = document.getElementById('last-updated-bar');
-    if (ub && d.last_updated) ub.textContent = 'Updated ' + timeAgo(d.last_updated);
+    if (ub) ub.textContent = 'Updated ' + timeAgo(raw.fetched_at || m.last_updated);
 
-    // Markets
-    var mh = row('S&amp;P 500', fmt(m.sp500,2)+' <span class="'+pctCls(m.sp500_change_pct)+'">'+fmtPct(m.sp500_change_pct)+'</span>');
-    mh += row('10Y Yield', fmt(m.us10y,3)+'%');
-    mh += row('DXY', fmt(m.dxy,3));
-    mh += row('BTC', '$'+fmt(m.btc,0));
-    mh += row('Gold (GLD)', '$'+fmt(m.gold,2));
-    show('mkt-loading','mkt-live',mh);
+    // ── Markets ───────────────────────────────────────────────────
+    var mh = '';
+    ['SPY','QQQ','GLD','TLT','BTC-USD','EURUSD=X'].forEach(function(sym){
+      var q = mq[sym]; if (!q) return;
+      var label = q.label || sym;
+      var val = sym === 'BTC-USD' ? '$'+fmt(q.price,0) : sym === 'EURUSD=X' ? fmt(q.price,4) : '$'+fmt(q.price,2);
+      val += ' <span class="'+pctCls(q.change_pct)+'">'+fmtPct(q.change_pct)+'</span>';
+      mh += row(label, val);
+    });
+    if (m.yield_10y) mh += row('10Y Treasury Yield', fmt(m.yield_10y,2)+'%');
+    show('mkt-loading','mkt-live',mh || row('Markets','--'));
 
-    // Energy
-    var eh = row('WTI Crude','$'+fmt(e.wti_crude,2));
-    eh += row('Brent','$'+fmt(e.brent_crude,2));
-    eh += row('Natural Gas','$'+fmt(e.natural_gas,3));
-    show('nrg-loading','nrg-live',eh);
+    // ── Energy ────────────────────────────────────────────────────
+    var eh = '';
+    ['CL=F','BZ=F','NG=F','XLE'].forEach(function(sym){
+      var q = eq[sym]; if (!q) return;
+      eh += row(q.label||sym, '$'+fmt(q.price,2)+' <span class="'+pctCls(q.change_pct)+'">'+fmtPct(q.change_pct)+'</span>');
+    });
+    if ((e.headlines||[]).length) {
+      eh += '<div style="margin-top:10px">';
+      e.headlines.slice(0,2).forEach(function(x){ eh += hl(x.title,x.link); });
+      eh += '</div>';
+    }
+    show('nrg-loading','nrg-live',eh || row('Energy','--'));
 
-    // Companies
+    // ── Companies ─────────────────────────────────────────────────
     var ch = '';
-    if (c.top_movers && c.top_movers.length) {
-      c.top_movers.slice(0,4).forEach(function(mv){
-        ch += row(mv.symbol,'$'+fmt(mv.price,2)+' <span class="'+pctCls(mv.change_pct)+'">'+fmtPct(mv.change_pct)+'</span>');
-      });
-    } else { ch = row('Movers','--'); }
-    show('co-loading','co-live',ch);
+    ['NVDA','MSFT','AAPL','META','TSLA','AMZN','GOOGL'].forEach(function(sym){
+      var q = cq[sym]; if (!q) return;
+      ch += row(q.label||sym, '$'+fmt(q.price,2)+' <span class="'+pctCls(q.change_pct)+'">'+fmtPct(q.change_pct)+'</span>');
+    });
+    var filings = c.recent_filings || [];
+    if (filings.length) {
+      ch += '<div style="margin-top:10px">';
+      filings.slice(0,2).forEach(function(x){ ch += hl(x.title,x.link); });
+      ch += '</div>';
+    }
+    show('co-loading','co-live',ch || row('Companies','--'));
 
-    // Tech
-    var th = '';
-    if (t.hn_top && t.hn_top.length) { t.hn_top.slice(0,4).forEach(function(x){ th += hl(x.title, x.url); }); }
-    else { th = '<div class="live-headline">No data</div>'; }
-    show('tech-loading','tech-live',th);
-
-    // Policy
-    var ph2 = '';
-    var pitems = (p.recent_bills && p.recent_bills.length ? p.recent_bills : p.federal_register_headlines) || [];
-    if (pitems.length) { pitems.slice(0,4).forEach(function(x){ ph2 += hl(x.title, x.url); }); }
-    else { ph2 = '<div class="live-headline">No data</div>'; }
-    show('pol-loading','pol-live',ph2);
-
-    // Sports
+    // ── Sports ────────────────────────────────────────────────────
     var sh = '';
-    if (s.top_headlines && s.top_headlines.length) { s.top_headlines.slice(0,4).forEach(function(x){ sh += hl(x.title||x, x.url); }); }
-    else { sh = '<div class="live-headline">No headlines available</div>'; }
-    show('spt-loading','spt-live',sh);
+    var scores = s.scores || {};
+    ['nfl','nba','mlb'].forEach(function(lid){
+      var lg = scores[lid]; if (!lg || !lg.games || !lg.games.length) return;
+      sh += '<div style="margin-bottom:8px"><span style="font-family:Courier New,monospace;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:var(--accent-dim)">'+lg.label+'</span></div>';
+      lg.games.slice(0,2).forEach(function(g){
+        var score = g.home_score !== '' && g.away_score !== ''
+          ? g.away+' '+g.away_score+' @ '+g.home+' '+g.home_score
+          : g.away+' @ '+g.home;
+        sh += row(score, g.status);
+      });
+    });
+    var injuries = s.injuries || {};
+    var injList = (injuries.nfl||[]).concat(injuries.nba||[]).slice(0,3);
+    if (injList.length) {
+      sh += '<div style="margin-top:10px">';
+      injList.forEach(function(p){ if(p.player) sh += hl(p.player+' ('+p.team+') \u2014 '+p.status, ''); });
+      sh += '</div>';
+    }
+    show('spt-loading','spt-live',sh || '<div class="live-headline">No games scheduled</div>');
 
-    // Media
-    var meh = '';
-    if (med.top_headlines && med.top_headlines.length) { med.top_headlines.slice(0,4).forEach(function(x){ meh += hl(x.title||x, x.url); }); }
-    else { meh = '<div class="live-headline">No headlines available</div>'; }
-    show('med-loading','med-live',meh);
-
-    // Geo
+    // ── Geopolitics ───────────────────────────────────────────────
     var gh = '';
-    if (g.top_events && g.top_events.length) { g.top_events.slice(0,4).forEach(function(x){ gh += hl(x.title||x, x.url); }); }
-    else { gh = '<div class="live-headline">No events data</div>'; }
-    if (g.conflict_count_24h !== null && g.conflict_count_24h !== undefined) { gh += row('Conflict events 24h', g.conflict_count_24h); }
+    var geo_heads = g.headlines || [];
+    if (geo_heads.length) geo_heads.slice(0,5).forEach(function(x){ gh += hl(x.title,x.link); });
+    else gh = '<div class="live-headline">No data</div>';
     show('geo-loading','geo-live',gh);
 
-    // Claims
-    var clh = '';
-    if (cl.polymarket_top && cl.polymarket_top.length) {
-      cl.polymarket_top.slice(0,4).forEach(function(x){
-        var vol = x.volume ? ' ($'+Number(x.volume).toLocaleString('en-US',{maximumFractionDigits:0})+')' : '';
-        clh += hl((x.question||'--') + vol, 'https://polymarket.com/market/'+(x.market_slug||''));
-      });
-    } else { clh = '<div class="live-headline">No markets data</div>'; }
-    show('clm-loading','clm-live',clh);
+    // ── Technology ────────────────────────────────────────────────
+    var th = '';
+    var hn = t.hn_top || [];
+    if (hn.length) hn.slice(0,4).forEach(function(x){ th += hl(x.title+' ('+x.score+'pts)',x.url); });
+    var tech_news = t.tech_headlines || [];
+    if (tech_news.length) {
+      th += '<div style="margin-top:8px">';
+      tech_news.slice(0,2).forEach(function(x){ th += hl(x.title,x.link||x.url); });
+      th += '</div>';
+    }
+    show('tech-loading','tech-live',th || '<div class="live-headline">No data</div>');
+
+    // ── Policy ────────────────────────────────────────────────────
+    var ph2 = '';
+    var bills = p.bills || [];
+    var rules = p.federal_rules || [];
+    var scotus = p.scotus || [];
+    if (bills.length) { ph2 += '<div style="margin-bottom:6px"><span style="font-family:Courier New,monospace;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:var(--accent-dim)">CONGRESS</span></div>'; bills.slice(0,2).forEach(function(x){ ph2 += hl(x.title,x.link); }); }
+    if (rules.length) { ph2 += '<div style="margin:8px 0 6px"><span style="font-family:Courier New,monospace;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:var(--accent-dim)">FED REGISTER</span></div>'; rules.slice(0,2).forEach(function(x){ ph2 += hl(x.title,x.link); }); }
+    if (scotus.length) { ph2 += '<div style="margin:8px 0 6px"><span style="font-family:Courier New,monospace;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:var(--accent-dim)">SCOTUS</span></div>'; scotus.slice(0,2).forEach(function(x){ ph2 += hl(x.title,x.link); }); }
+    show('pol-loading','pol-live',ph2 || '<div class="live-headline">No data</div>');
   }
 
   function loadData() {
@@ -506,7 +541,7 @@
       .then(function(r){ return r.json(); })
       .then(function(d){ renderAll(d); })
       .catch(function(){
-        ['geo','mkt','nrg','co','tech','pol','spt','med','clm'].forEach(function(id){
+        ['geo','mkt','nrg','co','spt','tech','pol'].forEach(function(id){
           var el = document.getElementById(id+'-loading');
           if (el) el.textContent = 'Data unavailable';
         });
