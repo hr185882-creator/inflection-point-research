@@ -1,53 +1,53 @@
 {
-  "last_updated": "2026-03-09T16:28:05Z",
+  "last_updated": "2026-03-09T16:32:23Z",
   "markets": {
-    "sp500": 6726.64,
-    "sp500_change_pct": -0.1985,
-    "us10y": 4.129,
-    "dxy": 99.068,
-    "btc": 68899.016,
-    "gold": 468.745,
-    "last_updated": "2026-03-09T16:27:56Z"
+    "sp500": 6714.65,
+    "sp500_change_pct": -0.3764,
+    "us10y": 4.13,
+    "dxy": 99.094,
+    "btc": 68970.99,
+    "gold": 469.101,
+    "last_updated": "2026-03-09T16:32:24Z"
   },
   "energy": {
-    "wti_crude": 96.12,
-    "brent_crude": 99.62,
-    "natural_gas": 3.118,
-    "last_updated": "2026-03-09T16:27:56Z"
+    "wti_crude": 95.56,
+    "brent_crude": 100.14,
+    "natural_gas": 3.122,
+    "last_updated": "2026-03-09T16:32:24Z"
   },
   "technology": {
     "hn_top": [
       {
-        "title": "Fontcrafter: Turn Your Handwriting into a Real Font",
-        "url": "https://arcade.pirillo.com/fontcrafter.html",
-        "score": 279
-      },
-      {
         "title": "Flash media longevity testing \u2013 6 years later",
         "url": "https://old.reddit.com/r/DataHoarder/comments/1q6xnun/flash_media_longevity_testing_6_years_later/",
-        "score": 31
+        "score": 33
       },
       {
-        "title": "I'm Getting a Whiff of Iain Banks' Culture",
-        "url": "https://probablydance.com/2026/03/07/im-getting-a-whiff-of-iain-banks-culture/",
-        "score": 12
+        "title": "Fontcrafter: Turn Your Handwriting into a Real Font",
+        "url": "https://arcade.pirillo.com/fontcrafter.html",
+        "score": 280
+      },
+      {
+        "title": "Restoring a Sun SPARCstation IPX Part 1: PSU and Nvram",
+        "url": "https://www.rs-online.com/designspark/restoring-a-sun-sparcstation-ipx-part-1-psu-and-nvram",
+        "score": 9
       },
       {
         "title": "Ireland shuts last coal plant, becomes 15th coal-free country in Europe (2025)",
         "url": "https://www.pv-magazine.com/2025/06/20/ireland-coal-free-ends-coal-power-generation-moneypoint/",
-        "score": 542
+        "score": 549
       },
       {
-        "title": "FreeBSD Capsicum vs. Linux Seccomp Process Sandboxing",
-        "url": "https://vivianvoss.net/blog/capsicum-vs-seccomp",
-        "score": 58
+        "title": "Reverse-engineering the UniFi inform protocol",
+        "url": "https://tamarack.cloud/blog/reverse-engineering-unifi-inform-protocol",
+        "score": 71
       }
     ],
-    "last_updated": "2026-03-09T16:27:57Z"
+    "last_updated": "2026-03-09T16:32:24Z"
   },
   "policy": {
     "federal_register_latest": [],
-    "last_updated": "2026-03-09T16:27:57Z"
+    "last_updated": "2026-03-09T16:32:25Z"
   },
   "claims": {
     "polymarket_top": [
@@ -72,11 +72,11 @@
         "volume": "116803.377183"
       }
     ],
-    "last_updated": "2026-03-09T16:27:57Z"
+    "last_updated": "2026-03-09T16:32:25Z"
   },
   "geopolitics": {
     "gdelt_top": [],
-    "last_updated": "2026-03-09T16:28:04Z"
+    "last_updated": "2026-03-09T16:32:29Z"
   },
   "media": {
     "wiki_trending": [
@@ -121,7 +121,7 @@
         "views": 203667
       }
     ],
-    "last_updated": "2026-03-09T16:28:05Z"
+    "last_updated": "2026-03-09T16:32:29Z"
   },
   "sports": {
     "nfl_latest": [
@@ -131,18 +131,18 @@
         "status": "Final"
       }
     ],
-    "last_updated": "2026-03-09T16:28:05Z"
+    "last_updated": "2026-03-09T16:32:30Z"
   },
   "weather": {
     "weather_nyc": {
-      "time": "2026-03-09T16:15",
+      "time": "2026-03-09T16:30",
       "interval": 900,
-      "temperature": 18.5,
-      "windspeed": 12.9,
-      "winddirection": 210,
+      "temperature": 19.0,
+      "windspeed": 13.7,
+      "winddirection": 203,
       "is_day": 1,
       "weathercode": 0
     },
-    "last_updated": "2026-03-09T16:28:05Z"
+    "last_updated": "2026-03-09T16:32:30Z"
   }
 }
