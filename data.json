@@ -1,78 +1,153 @@
 {
-  "last_updated": "2026-03-09T15:13:40Z",
-  "geopolitics": {
-    "top_events": [],
-    "conflict_count_24h": null,
-    "last_updated": "2026-03-09T15:13:37Z"
-  },
+  "last_updated": "2026-03-09T15:36:27Z",
   "markets": {
-    "sp500": 6698.88,
-    "sp500_change_pct": -0.6104,
-    "us10y": 4.156,
-    "dxy": 99.16,
-    "btc": 69093.57,
-    "gold": 467.78,
-    "last_updated": "2026-03-09T15:13:36Z"
+    "sp500": 6699.66,
+    "sp500_change_pct": -0.5988,
+    "us10y": 4.136,
+    "dxy": 99.093,
+    "btc": 68920.07,
+    "gold": 468.4,
+    "last_updated": "2026-03-09T15:36:27Z"
   },
   "energy": {
-    "wti_crude": 99.97,
-    "brent_crude": 102.06,
-    "natural_gas": 3.208,
-    "last_updated": "2026-03-09T15:13:37Z"
-  },
-  "companies": {
-    "top_movers": [
-      {"symbol": "HIMS", "name": "Hims & Hers Health, Inc.", "price": 22.55, "change_pct": 43.2656, "volume": 87984559},
-      {"symbol": "NVDA", "name": "NVIDIA Corporation", "price": 179.435, "change_pct": 0.8714, "volume": 59178508},
-      {"symbol": "ONDS", "name": "Ondas Inc", "price": 9.35, "change_pct": -4.8805, "volume": 45151085},
-      {"symbol": "AAL", "name": "American Airlines Group, Inc.", "price": 10.6702, "change_pct": -4.5599, "volume": 34353781},
-      {"symbol": "INTC", "name": "Intel Corporation", "price": 43.869, "change_pct": 1.0341, "volume": 28264226}
-    ],
-    "last_updated": "2026-03-09T15:13:40Z"
+    "wti_crude": 96.19,
+    "brent_crude": 98.77,
+    "natural_gas": 3.126,
+    "last_updated": "2026-03-09T15:36:27Z"
   },
   "technology": {
     "hn_top": [
-      {"id": 47306655, "title": "Fontcrafter: Turn Your Handwriting into a Real Font", "url": "https://arcade.pirillo.com/fontcrafter.html", "score": 219},
-      {"id": 47307055, "title": "Ireland shuts last coal plant, becomes 15th coal-free country in Europe (2025)", "url": "https://www.pv-magazine.com/2025/06/20/ireland-coal-free-ends-coal-power-generation-moneypoint/", "score": 424},
-      {"id": 47308278, "title": "Reverse-engineering the UniFi inform protocol", "url": "https://tamarack.cloud/blog/reverse-engineering-unifi-inform-protocol", "score": 38},
-      {"id": 47308394, "title": "FreeBSD Capsicum vs. Linux Seccomp Process Sandboxing", "url": "https://vivianvoss.net/blog/capsicum-vs-seccomp", "score": 35},
-      {"id": 47305461, "title": "US Court of Appeals: TOS may be updated by email, use can imply consent [pdf]", "url": "https://cdn.ca9.uscourts.gov/datastore/memoranda/2026/03/03/25-403.pdf", "score": 376}
+      {
+        "title": "The engine of Germany's wealth is blocking its future",
+        "url": "https://europeancorrespondent.com/en/r/the-engine-of-germanys-wealth-is-blocking-its-future",
+        "score": 44
+      },
+      {
+        "title": "Fontcrafter: Turn Your Handwriting into a Real Font",
+        "url": "https://arcade.pirillo.com/fontcrafter.html",
+        "score": 238
+      },
+      {
+        "title": "Reverse-engineering the UniFi inform protocol",
+        "url": "https://tamarack.cloud/blog/reverse-engineering-unifi-inform-protocol",
+        "score": 52
+      },
+      {
+        "title": "FreeBSD Capsicum vs. Linux Seccomp Process Sandboxing",
+        "url": "https://vivianvoss.net/blog/capsicum-vs-seccomp",
+        "score": 45
+      },
+      {
+        "title": "Ireland shuts last coal plant, becomes 15th coal-free country in Europe (2025)",
+        "url": "https://www.pv-magazine.com/2025/06/20/ireland-coal-free-ends-coal-power-generation-moneypoint/",
+        "score": 468
+      }
     ],
-    "last_updated": "2026-03-09T15:13:37Z"
+    "last_updated": "2026-03-09T15:36:28Z"
   },
   "policy": {
-    "recent_bills": [
-      {"title": "Ratepayer Protection Pledge", "doc_number": "2026-04645", "date": "2026-03-09", "url": "https://www.federalregister.gov/documents/2026/03/09/2026-04645/ratepayer-protection-pledge", "type": "Presidential Document"},
-      {"title": "Sunshine Act Meetings", "doc_number": "2026-04601", "date": "2026-03-09", "url": "https://www.federalregister.gov/documents/2026/03/09/2026-04601/sunshine-act-meetings", "type": "Notice"},
-      {"title": "Dairy Tariff-Rate Quota Import Licensing Program", "doc_number": "2026-04599", "date": "2026-03-09", "url": "https://www.federalregister.gov/documents/2026/03/09/2026-04599/dairy-tariff-rate-quota-import-licensing-program", "type": "Proposed Rule"},
-      {"title": "Agency Information Collection Activities; Submission for OMB Review; Comment Request on Information Collection Requirements Related to Practice Before the Internal Revenue Service", "doc_number": "2026-04591", "date": "2026-03-09", "url": "https://www.federalregister.gov/documents/2026/03/09/2026-04591/agency-information-collection-activities-submission-for-omb-review-comment-request-on-information", "type": "Notice"},
-      {"title": "National Drinking Water Advisory Council: Request for Nominations", "doc_number": "2026-04590", "date": "2026-03-09", "url": "https://www.federalregister.gov/documents/2026/03/09/2026-04590/national-drinking-water-advisory-council-request-for-nominations", "type": "Notice"}
+    "recent_docs": [
+      {
+        "title": "Ratepayer Protection Pledge",
+        "date": "2026-03-09",
+        "type": "Presidential Document",
+        "agency": [
+          "Executive Office of the President"
+        ]
+      },
+      {
+        "title": "Sunshine Act Meetings",
+        "date": "2026-03-09",
+        "type": "Notice",
+        "agency": [
+          "Nuclear Regulatory Commission"
+        ]
+      },
+      {
+        "title": "Dairy Tariff-Rate Quota Import Licensing Program",
+        "date": "2026-03-09",
+        "type": "Proposed Rule",
+        "agency": [
+          "Agriculture Department",
+          "Foreign Agricultural Service"
+        ]
+      },
+      {
+        "title": "Agency Information Collection Activities; Submission for OMB Review; Comment Request on Information Collection Requirements Related to Practice Before the Internal Revenue Service",
+        "date": "2026-03-09",
+        "type": "Notice",
+        "agency": [
+          "Treasury Department",
+          "Internal Revenue Service"
+        ]
+      },
+      {
+        "title": "National Drinking Water Advisory Council: Request for Nominations",
+        "date": "2026-03-09",
+        "type": "Notice",
+        "agency": [
+          "Environmental Protection Agency"
+        ]
+      }
     ],
-    "federal_register_headlines": [
-      {"title": "Ratepayer Protection Pledge", "doc_number": "2026-04645", "date": "2026-03-09", "url": "https://www.federalregister.gov/documents/2026/03/09/2026-04645/ratepayer-protection-pledge", "type": "Presidential Document"},
-      {"title": "Sunshine Act Meetings", "doc_number": "2026-04601", "date": "2026-03-09", "url": "https://www.federalregister.gov/documents/2026/03/09/2026-04601/sunshine-act-meetings", "type": "Notice"},
-      {"title": "Dairy Tariff-Rate Quota Import Licensing Program", "doc_number": "2026-04599", "date": "2026-03-09", "url": "https://www.federalregister.gov/documents/2026/03/09/2026-04599/dairy-tariff-rate-quota-import-licensing-program", "type": "Proposed Rule"},
-      {"title": "Agency Information Collection Activities; Submission for OMB Review; Comment Request on Information Collection Requirements Related to Practice Before the Internal Revenue Service", "doc_number": "2026-04591", "date": "2026-03-09", "url": "https://www.federalregister.gov/documents/2026/03/09/2026-04591/agency-information-collection-activities-submission-for-omb-review-comment-request-on-information", "type": "Notice"},
-      {"title": "National Drinking Water Advisory Council: Request for Nominations", "doc_number": "2026-04590", "date": "2026-03-09", "url": "https://www.federalregister.gov/documents/2026/03/09/2026-04590/national-drinking-water-advisory-council-request-for-nominations", "type": "Notice"}
-    ],
-    "last_updated": "2026-03-09T15:13:40Z"
-  },
-  "sports": {
-    "top_headlines": [],
-    "last_updated": "2026-03-09T15:13:39Z"
-  },
-  "media": {
-    "top_headlines": [],
-    "last_updated": "2026-03-09T15:13:39Z"
+    "last_updated": "2026-03-09T15:36:28Z"
   },
   "claims": {
-    "polymarket_top": [
-      {"question": "Counter-Strike: Acend vs Bebop (BO3) - CCT Europe Series #14 Play-In Group B", "volume": "9999.995006", "end_date": "2026-01-23T18:30:00Z", "market_slug": "cs2-ace1-bbp-2026-01-23"},
-      {"question": "Will the price of Bitcoin be above $110,000 on September 26 at 4AM ET?", "volume": "99.9998", "end_date": "2025-09-26T08:00:00Z", "market_slug": "btc-multistrike-4h-1758873600-110k"},
-      {"question": "Martin vs. Jianu: Match O/U 21.5", "volume": "99.9997", "end_date": "2026-03-09T09:00:00Z", "market_slug": "atp-mar-jianu-2026-03-02-match-total-21pt5"},
-      {"question": "Gormaz vs. Monnet: Match O/U 23.5", "volume": "999.99", "end_date": "2026-03-09T07:00:00Z", "market_slug": "wta-gormaz-monnet-2026-03-02-match-total-23pt5"},
-      {"question": "Series: Most kills?", "volume": "999.99", "end_date": "2026-01-10T16:00:00Z", "market_slug": "dota2-4p-pr1-2026-01-10-most-kill"}
+    "top_markets": [
+      {
+        "question": null,
+        "volume": null
+      },
+      {
+        "question": null,
+        "volume": null
+      },
+      {
+        "question": null,
+        "volume": null
+      },
+      {
+        "question": null,
+        "volume": null
+      },
+      {
+        "question": null,
+        "volume": null
+      }
     ],
-    "last_updated": "2026-03-09T15:13:39Z"
+    "last_updated": "2026-03-09T15:36:28Z"
+  },
+  "conflict": {
+    "recent_clips": [],
+    "last_updated": "2026-03-09T15:36:43Z"
+  },
+  "climate": {
+    "city_conditions": {
+      "NYC": {
+        "temp_c": 16.5,
+        "windspeed_kmh": 11.8
+      },
+      "London": {
+        "temp_c": 12.9,
+        "windspeed_kmh": 4.7
+      },
+      "Beijing": {
+        "temp_c": 4.2,
+        "windspeed_kmh": 6.2
+      },
+      "Dubai": {
+        "temp_c": 24.4,
+        "windspeed_kmh": 6.3
+      }
+    },
+    "last_updated": "2026-03-09T15:36:46Z"
+  },
+  "trending": {
+    "daily_top": [],
+    "last_updated": "2026-03-09T15:36:46Z"
+  },
+  "tech_trends": {
+    "trending": [],
+    "last_updated": "2026-03-09T15:37:01Z"
   }
 }
