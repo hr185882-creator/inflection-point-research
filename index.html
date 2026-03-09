@@ -14,528 +14,114 @@
       --text: #e8e8e8;
       --text-muted: #5a5a5a;
       --text-mid: #9a9a9a;
+      --green: #4caf7d;
+      --red: #e05555;
     }
-
     * { margin: 0; padding: 0; box-sizing: border-box; }
-
-    body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: 'Georgia', serif;
-      font-size: 16px;
-      line-height: 1.75;
-    }
-
+    body { background: var(--bg); color: var(--text); font-family: 'Georgia', serif; font-size: 16px; line-height: 1.75; }
     a { color: var(--accent); text-decoration: none; }
     a:hover { text-decoration: underline; }
-
-    /* NAV */
     nav {
-      position: fixed;
-      top: 0; left: 0; right: 0;
-      z-index: 100;
-      background: rgba(10,10,10,0.96);
-      border-bottom: 1px solid var(--border);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0 56px;
-      height: 62px;
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(10,10,10,0.96); border-bottom: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 56px; height: 62px;
     }
-
-    .nav-logo {
-      font-family: 'Courier New', monospace;
-      font-size: 11px;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: var(--accent);
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 40px;
-      list-style: none;
-    }
-
-    .nav-links a {
-      font-family: 'Courier New', monospace;
-      font-size: 10px;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--text-muted);
-      transition: color 0.2s;
-    }
-
+    .nav-logo { font-family: 'Courier New', monospace; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); }
+    .nav-links { display: flex; gap: 40px; list-style: none; }
+    .nav-links a { font-family: 'Courier New', monospace; font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-muted); transition: color 0.2s; }
     .nav-links a:hover { color: var(--accent); text-decoration: none; }
-
-    /* SECTIONS */
+    #live-bar {
+      position: fixed; top: 62px; left: 0; right: 0; z-index: 99;
+      background: #0d0d0d; border-bottom: 1px solid var(--border);
+      display: flex; align-items: center; padding: 0 56px; height: 34px; overflow: hidden;
+    }
+    .live-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--green); margin-right: 10px; flex-shrink: 0; animation: pulse 2s infinite; }
+    @keyframes pulse { 0%,100%{opacity:1}50%{opacity:0.3} }
+    .live-label { font-family: 'Courier New', monospace; font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-muted); margin-right: 24px; flex-shrink: 0; }
+    .live-ticker { display: flex; align-items: center; gap: 24px; overflow-x: auto; scrollbar-width: none; }
+    .live-ticker::-webkit-scrollbar { display: none; }
+    .tick-item { font-family: 'Courier New', monospace; font-size: 10px; letter-spacing: 0.08em; white-space: nowrap; color: var(--text-mid); display: flex; align-items: center; gap: 6px; }
+    .tick-label { color: var(--text-muted); }
+    .tick-val { color: var(--text); }
+    .tick-up { color: var(--green); }
+    .tick-dn { color: var(--red); }
+    .last-updated { font-family: 'Courier New', monospace; font-size: 9px; letter-spacing: 0.12em; color: var(--text-muted); margin-left: auto; flex-shrink: 0; padding-left: 24px; }
     section { width: 100%; border-bottom: 1px solid var(--border); }
-
-    .inner {
-      max-width: 860px;
-      margin: 0 auto;
-      padding: 100px 48px;
-    }
-
-    .inner-wide {
-      max-width: 1080px;
-      margin: 0 auto;
-      padding: 100px 48px;
-    }
-
-    /* HERO */
-    #hero {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      border-bottom: 1px solid var(--border);
-    }
-
-    #hero .inner { padding-top: 80px; }
-
-    .hero-eyebrow {
-      font-family: 'Courier New', monospace;
-      font-size: 10px;
-      letter-spacing: 0.22em;
-      text-transform: uppercase;
-      color: var(--accent-dim);
-      margin-bottom: 36px;
-    }
-
-    .hero-h1 {
-      font-size: clamp(34px, 5.5vw, 60px);
-      font-weight: normal;
-      line-height: 1.15;
-      color: var(--text);
-      margin-bottom: 28px;
-    }
-
-    .hero-h1 em {
-      font-style: normal;
-      color: var(--accent);
-    }
-
-    .hero-sub {
-      font-size: 18px;
-      color: var(--text-mid);
-      line-height: 1.7;
-      max-width: 680px;
-      margin-bottom: 20px;
-    }
-
-    .hero-support {
-      font-size: 14px;
-      color: var(--text-muted);
-      line-height: 1.75;
-      max-width: 640px;
-      margin-bottom: 48px;
-    }
-
-    .cta-row {
-      display: flex;
-      gap: 16px;
-      flex-wrap: wrap;
-    }
-
-    .btn-primary {
-      display: inline-block;
-      padding: 13px 28px;
-      background: var(--accent);
-      color: #0a0a0a;
-      font-family: 'Courier New', monospace;
-      font-size: 11px;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      font-weight: bold;
-      border: none;
-      cursor: pointer;
-      transition: opacity 0.2s;
-    }
-
+    .inner { max-width: 860px; margin: 0 auto; padding: 100px 48px; }
+    .inner-wide { max-width: 1080px; margin: 0 auto; padding: 100px 48px; }
+    #hero { min-height: 100vh; display: flex; align-items: center; border-bottom: 1px solid var(--border); }
+    #hero .inner { padding-top: 120px; }
+    .hero-eyebrow { font-family: 'Courier New', monospace; font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--accent-dim); margin-bottom: 36px; }
+    .hero-h1 { font-size: clamp(34px, 5.5vw, 60px); font-weight: normal; line-height: 1.15; color: var(--text); margin-bottom: 48px; }
+    .hero-h1 em { font-style: normal; color: var(--accent); }
+    .cta-row { display: flex; gap: 16px; flex-wrap: wrap; }
+    .btn-primary { display: inline-block; padding: 13px 28px; background: var(--accent); color: #0a0a0a; font-family: 'Courier New', monospace; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; font-weight: bold; border: none; cursor: pointer; transition: opacity 0.2s; }
     .btn-primary:hover { opacity: 0.85; text-decoration: none; }
-
-    .btn-secondary {
-      display: inline-block;
-      padding: 13px 28px;
-      background: transparent;
-      color: var(--text-mid);
-      font-family: 'Courier New', monospace;
-      font-size: 11px;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      border: 1px solid var(--border);
-      cursor: pointer;
-      transition: border-color 0.2s, color 0.2s;
-    }
-
+    .btn-secondary { display: inline-block; padding: 13px 28px; background: transparent; color: var(--text-mid); font-family: 'Courier New', monospace; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; border: 1px solid var(--border); cursor: pointer; transition: border-color 0.2s, color 0.2s; }
     .btn-secondary:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
-
-    /* SECTION LABELS */
-    .section-label {
-      font-family: 'Courier New', monospace;
-      font-size: 10px;
-      letter-spacing: 0.22em;
-      text-transform: uppercase;
-      color: var(--accent-dim);
-      margin-bottom: 40px;
-      display: block;
-    }
-
-    /* WHAT IT IS */
-    .what-h2 {
-      font-size: clamp(24px, 3.5vw, 36px);
-      font-weight: normal;
-      line-height: 1.3;
-      margin-bottom: 28px;
-    }
-
-    .body-text {
-      font-size: 16px;
-      color: var(--text-mid);
-      line-height: 1.8;
-      margin-bottom: 20px;
-    }
-
-    .body-text:last-child { margin-bottom: 0; }
-
-    /* DIFFERENT */
+    .section-label { font-family: 'Courier New', monospace; font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--accent-dim); margin-bottom: 40px; display: block; }
+    .what-h2 { font-size: clamp(24px, 3.5vw, 36px); font-weight: normal; line-height: 1.3; margin-bottom: 28px; }
+    .body-text { font-size: 16px; color: var(--text-mid); line-height: 1.8; margin-bottom: 20px; }
     #different { background: var(--surface); }
-
-    .diff-intro {
-      font-size: 16px;
-      color: var(--text-muted);
-      line-height: 1.8;
-      margin-bottom: 36px;
-      font-style: italic;
-    }
-
-    .diff-lead {
-      font-size: 18px;
-      color: var(--text);
-      line-height: 1.7;
-      margin-bottom: 32px;
-    }
-
-    .diff-list {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
-      margin-bottom: 40px;
-    }
-
-    .diff-list li {
-      font-size: 15px;
-      color: var(--text-mid);
-      padding-left: 20px;
-      position: relative;
-      line-height: 1.6;
-    }
-
-    .diff-list li::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 11px;
-      width: 6px;
-      height: 1px;
-      background: var(--accent);
-    }
-
-    .diff-close {
-      font-size: 15px;
-      color: var(--text-muted);
-      line-height: 1.8;
-      margin-bottom: 12px;
-    }
-
-    .diff-kicker {
-      font-size: 16px;
-      color: var(--accent);
-      font-style: italic;
-    }
-
-    /* HOW IT WORKS */
-    .steps {
-      display: flex;
-      flex-direction: column;
-      gap: 0;
-    }
-
-    .step {
-      display: grid;
-      grid-template-columns: 48px 1fr;
-      gap: 24px;
-      padding: 36px 0;
-      border-bottom: 1px solid var(--border);
-    }
-
+    .diff-intro { font-size: 16px; color: var(--text-muted); line-height: 1.8; margin-bottom: 36px; font-style: italic; }
+    .diff-lead { font-size: 18px; color: var(--text); line-height: 1.7; margin-bottom: 32px; }
+    .diff-list { list-style: none; display: flex; flex-direction: column; gap: 14px; margin-bottom: 40px; }
+    .diff-list li { font-size: 15px; color: var(--text-mid); padding-left: 20px; position: relative; line-height: 1.6; }
+    .diff-list li::before { content: ''; position: absolute; left: 0; top: 11px; width: 6px; height: 1px; background: var(--accent); }
+    .diff-close { font-size: 15px; color: var(--text-muted); line-height: 1.8; margin-bottom: 12px; }
+    .diff-kicker { font-size: 16px; color: var(--accent); font-style: italic; }
+    .steps { display: flex; flex-direction: column; gap: 0; }
+    .step { display: grid; grid-template-columns: 48px 1fr; gap: 24px; padding: 36px 0; border-bottom: 1px solid var(--border); }
     .step:last-child { border-bottom: none; }
-
-    .step-num {
-      font-family: 'Courier New', monospace;
-      font-size: 11px;
-      color: var(--accent-dim);
-      padding-top: 4px;
-      letter-spacing: 0.1em;
-    }
-
-    .step-title {
-      font-size: 17px;
-      color: var(--text);
-      font-weight: normal;
-      margin-bottom: 10px;
-    }
-
-    .step-body {
-      font-size: 14px;
-      color: var(--text-muted);
-      line-height: 1.75;
-    }
-
-    .loop-label {
-      font-family: 'Courier New', monospace;
-      font-size: 11px;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--text-muted);
-      margin-top: 48px;
-      margin-bottom: 20px;
-    }
-
-    .loop-items {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0;
-    }
-
-    .loop-item {
-      font-family: 'Courier New', monospace;
-      font-size: 11px;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--accent-dim);
-      padding: 10px 20px;
-      border: 1px solid var(--border);
-      margin-right: -1px;
-      margin-bottom: -1px;
-    }
-
-    /* DOMAINS */
+    .step-num { font-family: 'Courier New', monospace; font-size: 11px; color: var(--accent-dim); padding-top: 4px; letter-spacing: 0.1em; }
+    .step-title { font-size: 17px; color: var(--text); font-weight: normal; margin-bottom: 10px; }
     #domains { background: var(--surface); }
-
-    .domain-intro {
-      font-size: 16px;
-      color: var(--text-mid);
-      line-height: 1.8;
-      margin-bottom: 60px;
-    }
-
-    .domain-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 1px;
-      background: var(--border);
-      border: 1px solid var(--border);
-    }
-
-    .domain-card {
-      background: var(--surface);
-      padding: 32px 28px;
-      transition: background 0.2s;
-    }
-
+    .domain-intro { font-size: 16px; color: var(--text-mid); line-height: 1.8; margin-bottom: 60px; }
+    .domain-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1px; background: var(--border); border: 1px solid var(--border); }
+    .domain-card { background: var(--surface); padding: 32px 28px; transition: background 0.2s; }
     .domain-card:hover { background: #161616; }
-
-    .domain-tag {
-      font-family: 'Courier New', monospace;
-      font-size: 9px;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 12px;
-      display: block;
-    }
-
-    .domain-title {
-      font-size: 15px;
-      color: var(--text);
-      font-weight: normal;
-      margin-bottom: 10px;
-    }
-
-    .domain-body {
-      font-size: 13px;
-      color: var(--text-muted);
-      line-height: 1.7;
-    }
-
-    /* PRODUCT AREAS */
-    .product-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-      gap: 1px;
-      background: var(--border);
-      border: 1px solid var(--border);
-      margin-top: 16px;
-    }
-
-    .product-card {
-      background: var(--bg);
-      padding: 36px 32px;
-    }
-
-    .product-card:hover { background: #0d0d0d; }
-
-    .product-name {
-      font-size: 16px;
-      color: var(--text);
-      font-weight: normal;
-      margin-bottom: 12px;
-    }
-
-    .product-desc {
-      font-size: 14px;
-      color: var(--text-muted);
-      line-height: 1.75;
-    }
-
-    /* WHY IT MATTERS */
+    .domain-tag { font-family: 'Courier New', monospace; font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); margin-bottom: 12px; display: block; }
+    .domain-title { font-size: 15px; color: var(--text); font-weight: normal; margin-bottom: 10px; }
+    .domain-body { font-size: 13px; color: var(--text-muted); line-height: 1.7; margin-bottom: 14px; }
+    .live-data { margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--border); display: flex; flex-direction: column; gap: 6px; }
+    .live-row { display: flex; justify-content: space-between; align-items: baseline; font-family: 'Courier New', monospace; font-size: 11px; }
+    .live-row-label { color: var(--text-muted); letter-spacing: 0.06em; }
+    .live-row-val { color: var(--text); font-weight: bold; }
+    .live-row-val.up { color: var(--green); }
+    .live-row-val.dn { color: var(--red); }
+    .live-headline { font-size: 11px; color: var(--text-muted); line-height: 1.5; margin-top: 4px; font-family: 'Courier New', monospace; }
+    .live-headline a { color: var(--text-mid); font-size: 11px; }
+    .live-headline a:hover { color: var(--accent); }
+    .live-loading { font-family: 'Courier New', monospace; font-size: 10px; color: var(--text-muted); letter-spacing: 0.1em; margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--border); }
     #why { background: #0d0d0d; }
-
-    .why-lines {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      margin: 28px 0 36px;
-    }
-
-    .why-line {
-      font-family: 'Courier New', monospace;
-      font-size: 12px;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--text-muted);
-    }
-
-    /* WHO IT IS FOR */
-    .for-text {
-      font-size: 16px;
-      color: var(--text-mid);
-      line-height: 1.8;
-      margin-bottom: 20px;
-    }
-
-    .for-list {
-      list-style: none;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 32px;
-    }
-
-    .for-tag {
-      font-family: 'Courier New', monospace;
-      font-size: 10px;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--text-muted);
-      border: 1px solid var(--border);
-      padding: 8px 16px;
-    }
-
-    /* POSITIONING */
+    .why-lines { display: flex; flex-direction: column; gap: 10px; margin: 28px 0 36px; }
+    .why-line { font-family: 'Courier New', monospace; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-muted); }
+    .for-text { font-size: 16px; color: var(--text-mid); line-height: 1.8; margin-bottom: 20px; }
     #positioning { background: var(--surface); }
-
-    .position-statement {
-      font-size: clamp(18px, 2.5vw, 26px);
-      color: var(--text);
-      line-height: 1.5;
-      font-weight: normal;
-      max-width: 740px;
-    }
-
-    /* FEATURES */
-    .feature-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      gap: 1px;
-      background: var(--border);
-      border: 1px solid var(--border);
-      margin-top: 16px;
-    }
-
-    .feature-item {
-      background: var(--bg);
-      padding: 24px 22px;
-      font-family: 'Courier New', monospace;
-      font-size: 11px;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--text-muted);
-    }
-
-    /* FINAL CTA */
+    .position-statement { font-size: clamp(18px, 2.5vw, 26px); color: var(--text); line-height: 1.5; font-weight: normal; max-width: 740px; }
+    .feature-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1px; background: var(--border); border: 1px solid var(--border); margin-top: 16px; }
+    .feature-item { background: var(--bg); padding: 24px 22px; font-family: 'Courier New', monospace; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); }
     #cta { background: #0d0d0d; }
-
     #cta .inner { text-align: center; }
-
-    .cta-headline {
-      font-size: clamp(28px, 4vw, 48px);
-      font-weight: normal;
-      line-height: 1.25;
-      margin-bottom: 20px;
-    }
-
+    .cta-headline { font-size: clamp(28px, 4vw, 48px); font-weight: normal; line-height: 1.25; margin-bottom: 20px; }
     .cta-headline span { display: block; }
-
-    .cta-sub {
-      font-size: 15px;
-      color: var(--text-muted);
-      line-height: 1.8;
-      margin-bottom: 48px;
-    }
-
-    /* FOOTER */
-    footer {
-      border-top: 1px solid var(--border);
-      padding: 32px 56px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .footer-logo {
-      font-family: 'Courier New', monospace;
-      font-size: 10px;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: var(--text-muted);
-    }
-
-    .footer-tag {
-      font-family: 'Courier New', monospace;
-      font-size: 10px;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--accent-dim);
-      font-style: italic;
-    }
-
-    /* RESPONSIVE */
+    .cta-sub { font-size: 15px; color: var(--text-muted); line-height: 1.8; margin-bottom: 48px; }
+    footer { border-top: 1px solid var(--border); padding: 32px 56px; display: flex; align-items: center; justify-content: space-between; }
+    .footer-logo { font-family: 'Courier New', monospace; font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-muted); }
+    .footer-tag { font-family: 'Courier New', monospace; font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent-dim); font-style: italic; }
     @media (max-width: 720px) {
       nav { padding: 0 24px; }
       .nav-links { display: none; }
+      #live-bar { padding: 0 24px; }
       .inner, .inner-wide { padding: 72px 24px; }
+      #hero .inner { padding-top: 140px; }
       footer { padding: 28px 24px; flex-direction: column; gap: 12px; text-align: center; }
-      .loop-items { flex-direction: column; }
-      .loop-item { margin: 0; }
     }
   </style>
 </head>
 <body>
 
-<!-- NAV -->
 <nav>
   <span class="nav-logo">Inflection OS</span>
   <ul class="nav-links">
@@ -547,18 +133,26 @@
   </ul>
 </nav>
 
-<!-- HERO -->
+<div id="live-bar">
+  <span class="live-dot"></span>
+  <span class="live-label">Live</span>
+  <div class="live-ticker" id="ticker">
+    <span class="tick-item"><span class="tick-label">Loading...</span></span>
+  </div>
+  <span class="last-updated" id="last-updated-bar">--</span>
+</div>
+
 <section id="hero">
   <div class="inner">
     <p class="hero-eyebrow">Inflection OS</p>
     <h1 class="hero-h1">See what changed.<br>Understand why it matters.<br>Act before the shift becomes obvious.</h1>
     <div class="cta-row">
-      <a href="#product" class="btn-primary">Launch Inflection OS</a>
+      <a href="#domains" class="btn-primary">View Live Dashboard</a>
+      <a href="#how" class="btn-secondary">How It Works</a>
     </div>
   </div>
 </section>
 
-<!-- WHAT IT IS -->
 <section id="what">
   <div class="inner">
     <span class="section-label">What It Is</span>
@@ -568,7 +162,6 @@
   </div>
 </section>
 
-<!-- WHAT MAKES IT DIFFERENT -->
 <section id="different">
   <div class="inner">
     <span class="section-label">What Makes It Different</span>
@@ -587,58 +180,19 @@
   </div>
 </section>
 
-<!-- HOW IT WORKS -->
 <section id="how">
   <div class="inner">
     <span class="section-label">How It Works</span>
     <p class="body-text">The system runs a simple loop.</p>
     <div class="steps">
-
-      <div class="step">
-        <span class="step-num">01</span>
-        <div>
-          <h3 class="step-title">It monitors selected sources.</h3>
-        </div>
-      </div>
-
-      <div class="step">
-        <span class="step-num">02</span>
-        <div>
-          <h3 class="step-title">It ingests new evidence.</h3>
-        </div>
-      </div>
-
-      <div class="step">
-        <span class="step-num">03</span>
-        <div>
-          <h3 class="step-title">It extracts the core claims.</h3>
-        </div>
-      </div>
-
-      <div class="step">
-        <span class="step-num">04</span>
-        <div>
-          <h3 class="step-title">It scores importance and source quality.</h3>
-        </div>
-      </div>
-
-      <div class="step">
-        <span class="step-num">05</span>
-        <div>
-          <h3 class="step-title">It updates scenarios.</h3>
-        </div>
-      </div>
-
-      <div class="step">
-        <span class="step-num">06</span>
-        <div>
-          <h3 class="step-title">It sends alerts or review items when something meaningful changes.</h3>
-        </div>
-      </div>
-
+      <div class="step"><span class="step-num">01</span><div><h3 class="step-title">It monitors selected sources.</h3></div></div>
+      <div class="step"><span class="step-num">02</span><div><h3 class="step-title">It ingests new evidence.</h3></div></div>
+      <div class="step"><span class="step-num">03</span><div><h3 class="step-title">It extracts the core claims.</h3></div></div>
+      <div class="step"><span class="step-num">04</span><div><h3 class="step-title">It scores importance and source quality.</h3></div></div>
+      <div class="step"><span class="step-num">05</span><div><h3 class="step-title">It updates scenarios.</h3></div></div>
+      <div class="step"><span class="step-num">06</span><div><h3 class="step-title">It sends alerts or review items when something meaningful changes.</h3></div></div>
     </div>
-
-    <p class="body-text">Instead of just dumping information on me, the platform is built to answer a tighter set of questions:</p>
+    <p class="body-text" style="margin-top:48px;">Instead of just dumping information on me, the platform is built to answer a tighter set of questions:</p>
     <ul class="diff-list">
       <li>What changed?</li>
       <li>Why does it matter?</li>
@@ -649,10 +203,9 @@
   </div>
 </section>
 
-<!-- DOMAINS -->
 <section id="domains">
   <div class="inner-wide">
-    <span class="section-label">Built to track all domains</span>
+    <span class="section-label">Built to track all domains &mdash; updated every 6 minutes</span>
     <p class="domain-intro">Inflection OS is intentionally cross-domain. It is designed to track live developments wherever structured judgment creates value. The domain can change. The reasoning system stays the same.</p>
     <div class="domain-grid">
 
@@ -660,67 +213,83 @@
         <span class="domain-tag">01</span>
         <h3 class="domain-title">Geopolitics and security</h3>
         <p class="domain-body">Monitor states, alliances, conflict risk, sanctions, military posture, regional escalation, and diplomatic movement.</p>
+        <div class="live-loading" id="geo-loading">Loading...</div>
+        <div class="live-data" id="geo-live" style="display:none"></div>
       </div>
 
       <div class="domain-card">
         <span class="domain-tag">02</span>
         <h3 class="domain-title">Markets and macroeconomics</h3>
         <p class="domain-body">Track rates, inflation, liquidity, commodities, currencies, policy shifts, and broader market pressure.</p>
+        <div class="live-loading" id="mkt-loading">Loading...</div>
+        <div class="live-data" id="mkt-live" style="display:none"></div>
       </div>
 
       <div class="domain-card">
         <span class="domain-tag">03</span>
         <h3 class="domain-title">Energy and resources</h3>
         <p class="domain-body">Monitor oil, gas, logistics, supply disruptions, production changes, strategic reserves, and energy policy.</p>
+        <div class="live-loading" id="nrg-loading">Loading...</div>
+        <div class="live-data" id="nrg-live" style="display:none"></div>
       </div>
 
       <div class="domain-card">
         <span class="domain-tag">04</span>
         <h3 class="domain-title">Companies and filings</h3>
         <p class="domain-body">Track public companies through filings, earnings, guidance, management language, capital raises, and strategic changes.</p>
+        <div class="live-loading" id="co-loading">Loading...</div>
+        <div class="live-data" id="co-live" style="display:none"></div>
       </div>
 
       <div class="domain-card">
         <span class="domain-tag">05</span>
         <h3 class="domain-title">Technology and platforms</h3>
         <p class="domain-body">Monitor AI developments, product launches, platform policy changes, competition, adoption, and ecosystem shifts.</p>
+        <div class="live-loading" id="tech-loading">Loading...</div>
+        <div class="live-data" id="tech-live" style="display:none"></div>
       </div>
 
       <div class="domain-card">
         <span class="domain-tag">06</span>
         <h3 class="domain-title">Policy, law, and regulation</h3>
         <p class="domain-body">Track legislation, rule changes, court actions, agency decisions, and regulatory pressure.</p>
+        <div class="live-loading" id="pol-loading">Loading...</div>
+        <div class="live-data" id="pol-live" style="display:none"></div>
       </div>
 
       <div class="domain-card">
         <span class="domain-tag">07</span>
         <h3 class="domain-title">Sports and performance</h3>
         <p class="domain-body">Track injuries, roster changes, player status, usage, coaching decisions, and structural game edges.</p>
+        <div class="live-loading" id="spt-loading">Loading...</div>
+        <div class="live-data" id="spt-live" style="display:none"></div>
       </div>
 
       <div class="domain-card">
         <span class="domain-tag">08</span>
         <h3 class="domain-title">Media and public narratives</h3>
         <p class="domain-body">Monitor claims, narrative shifts, viral stories, public messaging, and distortion between signal and noise.</p>
+        <div class="live-loading" id="med-loading">Loading...</div>
+        <div class="live-data" id="med-live" style="display:none"></div>
       </div>
 
       <div class="domain-card">
         <span class="domain-tag">09</span>
         <h3 class="domain-title">Claim verification and open-source analysis</h3>
         <p class="domain-body">Audit important claims using source hierarchy, corroboration logic, and explicit uncertainty handling.</p>
+        <div class="live-loading" id="clm-loading">Loading...</div>
+        <div class="live-data" id="clm-live" style="display:none"></div>
       </div>
 
     </div>
   </div>
 </section>
 
-<!-- CORE PRODUCT AREAS -->
 <section id="product">
   <div class="inner-wide">
     <span class="section-label">What the dashboard does</span>
-    <p class="body-text">The dashboard is my command center.</p>
-    <p class="body-text">It shows:</p>
-    <ul class="dashboard-list">
+    <p class="body-text">The dashboard is my command center. It shows:</p>
+    <ul class="diff-list">
       <li>live alerts</li>
       <li>recent evidence</li>
       <li>tracked entities</li>
@@ -734,7 +303,6 @@
   </div>
 </section>
 
-<!-- WHY IT MATTERS -->
 <section id="why">
   <div class="inner">
     <span class="section-label">Why it exists</span>
@@ -747,7 +315,6 @@
   </div>
 </section>
 
-<!-- WHO IT IS FOR -->
 <section id="who">
   <div class="inner">
     <span class="section-label">Who it is for</span>
@@ -756,7 +323,6 @@
   </div>
 </section>
 
-<!-- POSITIONING -->
 <section id="positioning">
   <div class="inner">
     <span class="section-label">Positioning statement</span>
@@ -764,7 +330,6 @@
   </div>
 </section>
 
-<!-- FEATURES -->
 <section id="features">
   <div class="inner-wide">
     <span class="section-label">Core Features</span>
@@ -783,7 +348,6 @@
   </div>
 </section>
 
-<!-- FINAL CTA -->
 <section id="cta">
   <div class="inner">
     <h2 class="cta-headline">
@@ -793,16 +357,166 @@
     </h2>
     <p class="cta-sub">Inflection OS is my personal cross-domain live tracker, built to monitor important entities in real time, update scenarios as new evidence arrives, and alert me when something actually matters.</p>
     <div class="cta-row" style="justify-content:center;">
-      <a href="#product" class="btn-primary">Launch Inflection OS</a>
+      <a href="#domains" class="btn-primary">View Live Dashboard</a>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
   <span class="footer-logo">Inflection OS</span>
-  <span class="footer-tag">Built for one purpose</span>
+  <span class="footer-tag">Updated every 6 minutes</span>
 </footer>
+
+<script>
+(function () {
+  var DATA_URL = 'https://raw.githubusercontent.com/hr185882-creator/inflection-point-research/main/data.json';
+
+  function fmt(val, d) {
+    if (val === null || val === undefined) return '--';
+    return Number(val).toFixed(d !== undefined ? d : 2);
+  }
+
+  function fmtPct(val) {
+    if (val === null || val === undefined) return '';
+    var n = Number(val);
+    return (n >= 0 ? '+' : '') + n.toFixed(2) + '%';
+  }
+
+  function pctCls(val) {
+    if (val === null || val === undefined) return '';
+    return Number(val) >= 0 ? 'up' : 'dn';
+  }
+
+  function row(label, valHtml) {
+    return '<div class="live-row"><span class="live-row-label">' + label + '</span><span class="live-row-val">' + valHtml + '</span></div>';
+  }
+
+  function hl(text, url) {
+    var t = text ? (text.length > 62 ? text.slice(0, 62) + '...' : text) : '--';
+    var c = url ? '<a href="' + url + '" target="_blank" rel="noopener">' + t + '</a>' : t;
+    return '<div class="live-headline">&rsaquo; ' + c + '</div>';
+  }
+
+  function timeAgo(iso) {
+    if (!iso) return '--';
+    var s = Math.floor((Date.now() - new Date(iso).getTime()) / 1000);
+    if (s < 60) return s + 's ago';
+    if (s < 3600) return Math.floor(s / 60) + 'm ago';
+    if (s < 86400) return Math.floor(s / 3600) + 'h ago';
+    return Math.floor(s / 86400) + 'd ago';
+  }
+
+  function show(lid, did, html) {
+    var l = document.getElementById(lid), d = document.getElementById(did);
+    if (l) l.style.display = 'none';
+    if (d) { d.innerHTML = html; d.style.display = 'flex'; }
+  }
+
+  function renderAll(d) {
+    var m = d.markets, e = d.energy, c = d.companies, t = d.technology,
+        p = d.policy, s = d.sports, med = d.media, g = d.geopolitics, cl = d.claims;
+
+    // Ticker
+    var ticks = [
+      {l:'SPX', v:fmt(m.sp500,2), pct:m.sp500_change_pct},
+      {l:'10Y', v:fmt(m.us10y,3)+'%', pct:null},
+      {l:'DXY', v:fmt(m.dxy,3), pct:null},
+      {l:'BTC', v:'$'+fmt(m.btc,0), pct:null},
+      {l:'GOLD', v:'$'+fmt(m.gold,2), pct:null},
+      {l:'WTI', v:'$'+fmt(e.wti_crude,2), pct:null},
+      {l:'BRENT', v:'$'+fmt(e.brent_crude,2), pct:null},
+      {l:'GAS', v:'$'+fmt(e.natural_gas,3), pct:null}
+    ];
+    var tk = document.getElementById('ticker');
+    if (tk) tk.innerHTML = ticks.map(function(x){
+      var ph = x.pct !== null && x.pct !== undefined ? ' <span class="' + pctCls(x.pct) + '">' + fmtPct(x.pct) + '</span>' : '';
+      return '<span class="tick-item"><span class="tick-label">'+x.l+'</span> <span class="tick-val">'+x.v+'</span>'+ph+'</span>';
+    }).join('');
+    var ub = document.getElementById('last-updated-bar');
+    if (ub && d.last_updated) ub.textContent = 'Updated ' + timeAgo(d.last_updated);
+
+    // Markets
+    var mh = row('S&amp;P 500', fmt(m.sp500,2)+' <span class="'+pctCls(m.sp500_change_pct)+'">'+fmtPct(m.sp500_change_pct)+'</span>');
+    mh += row('10Y Yield', fmt(m.us10y,3)+'%');
+    mh += row('DXY', fmt(m.dxy,3));
+    mh += row('BTC', '$'+fmt(m.btc,0));
+    mh += row('Gold (GLD)', '$'+fmt(m.gold,2));
+    show('mkt-loading','mkt-live',mh);
+
+    // Energy
+    var eh = row('WTI Crude','$'+fmt(e.wti_crude,2));
+    eh += row('Brent','$'+fmt(e.brent_crude,2));
+    eh += row('Natural Gas','$'+fmt(e.natural_gas,3));
+    show('nrg-loading','nrg-live',eh);
+
+    // Companies
+    var ch = '';
+    if (c.top_movers && c.top_movers.length) {
+      c.top_movers.slice(0,4).forEach(function(mv){
+        ch += row(mv.symbol,'$'+fmt(mv.price,2)+' <span class="'+pctCls(mv.change_pct)+'">'+fmtPct(mv.change_pct)+'</span>');
+      });
+    } else { ch = row('Movers','--'); }
+    show('co-loading','co-live',ch);
+
+    // Tech
+    var th = '';
+    if (t.hn_top && t.hn_top.length) { t.hn_top.slice(0,4).forEach(function(x){ th += hl(x.title, x.url); }); }
+    else { th = '<div class="live-headline">No data</div>'; }
+    show('tech-loading','tech-live',th);
+
+    // Policy
+    var ph2 = '';
+    var pitems = (p.recent_bills && p.recent_bills.length ? p.recent_bills : p.federal_register_headlines) || [];
+    if (pitems.length) { pitems.slice(0,4).forEach(function(x){ ph2 += hl(x.title, x.url); }); }
+    else { ph2 = '<div class="live-headline">No data</div>'; }
+    show('pol-loading','pol-live',ph2);
+
+    // Sports
+    var sh = '';
+    if (s.top_headlines && s.top_headlines.length) { s.top_headlines.slice(0,4).forEach(function(x){ sh += hl(x.title||x, x.url); }); }
+    else { sh = '<div class="live-headline">No headlines available</div>'; }
+    show('spt-loading','spt-live',sh);
+
+    // Media
+    var meh = '';
+    if (med.top_headlines && med.top_headlines.length) { med.top_headlines.slice(0,4).forEach(function(x){ meh += hl(x.title||x, x.url); }); }
+    else { meh = '<div class="live-headline">No headlines available</div>'; }
+    show('med-loading','med-live',meh);
+
+    // Geo
+    var gh = '';
+    if (g.top_events && g.top_events.length) { g.top_events.slice(0,4).forEach(function(x){ gh += hl(x.title||x, x.url); }); }
+    else { gh = '<div class="live-headline">No events data</div>'; }
+    if (g.conflict_count_24h !== null && g.conflict_count_24h !== undefined) { gh += row('Conflict events 24h', g.conflict_count_24h); }
+    show('geo-loading','geo-live',gh);
+
+    // Claims
+    var clh = '';
+    if (cl.polymarket_top && cl.polymarket_top.length) {
+      cl.polymarket_top.slice(0,4).forEach(function(x){
+        var vol = x.volume ? ' ($'+Number(x.volume).toLocaleString('en-US',{maximumFractionDigits:0})+')' : '';
+        clh += hl((x.question||'--') + vol, 'https://polymarket.com/market/'+(x.market_slug||''));
+      });
+    } else { clh = '<div class="live-headline">No markets data</div>'; }
+    show('clm-loading','clm-live',clh);
+  }
+
+  function loadData() {
+    fetch(DATA_URL + '?t=' + Date.now())
+      .then(function(r){ return r.json(); })
+      .then(function(d){ renderAll(d); })
+      .catch(function(){
+        ['geo','mkt','nrg','co','tech','pol','spt','med','clm'].forEach(function(id){
+          var el = document.getElementById(id+'-loading');
+          if (el) el.textContent = 'Data unavailable';
+        });
+      });
+  }
+
+  loadData();
+  setInterval(loadData, 6 * 60 * 1000);
+})();
+</script>
 
 </body>
 </html>
