@@ -1,9 +1,9 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-09T23:17:42Z",
+  "fetched_at": "2026-03-09T23:31:33Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-09T23:17:43Z",
+      "last_updated": "2026-03-09T23:31:34Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
@@ -39,18 +39,18 @@
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 68653.35,
+          "price": 68632.03,
           "prev_close": 65975.7,
-          "change": 2677.65,
-          "change_pct": 4.06,
+          "change": 2656.33,
+          "change_pct": 4.03,
           "currency": "USD"
         },
         "EURUSD=X": {
           "label": "EUR/USD",
-          "price": 1.1632,
+          "price": 1.1629,
           "prev_close": 1.1621,
-          "change": 0.0011,
-          "change_pct": 0.09,
+          "change": 0.0008,
+          "change_pct": 0.07,
           "currency": "USD"
         },
         "DX-Y.NYB": {
@@ -63,33 +63,33 @@
         }
       },
       "yield_10y": 4.15,
-      "headline": "SPY 0.88%  |  BTC $68,653  |  10Y 4.15%"
+      "headline": "SPY 0.88%  |  BTC $68,632  |  10Y 4.15%"
     },
     "energy": {
-      "last_updated": "2026-03-09T23:17:52Z",
+      "last_updated": "2026-03-09T23:31:44Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 87.32,
+          "price": 88.18,
           "prev_close": 94.77,
-          "change": -7.45,
-          "change_pct": -7.86,
+          "change": -6.59,
+          "change_pct": -6.95,
           "currency": "USD"
         },
         "NG=F": {
           "label": "Natural Gas ($/MMBtu)",
-          "price": 3.094,
+          "price": 3.09,
           "prev_close": 3.12,
-          "change": -0.026,
-          "change_pct": -0.83,
+          "change": -0.03,
+          "change_pct": -0.96,
           "currency": "USD"
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 92.03,
+          "price": 92.45,
           "prev_close": 98.96,
-          "change": -6.93,
-          "change_pct": -7.0,
+          "change": -6.51,
+          "change_pct": -6.58,
           "currency": "USD"
         },
         "XLE": {
@@ -123,10 +123,10 @@
           "published": "Mon, 02 Mar 2026  09:00:00 EST"
         }
       ],
-      "headline": "WTI $87.32/bbl"
+      "headline": "WTI $88.18/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-09T23:17:54Z",
+      "last_updated": "2026-03-09T23:31:45Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
@@ -215,7 +215,7 @@
       "headline": "NVDA 2.68%  |  MSFT 0.11%"
     },
     "sports": {
-      "last_updated": "2026-03-09T23:17:54Z",
+      "last_updated": "2026-03-09T23:31:45Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -235,9 +235,9 @@
             {
               "home": "CLE",
               "away": "PHI",
-              "home_score": "4",
-              "away_score": "4",
-              "status": "8:55 - 1st"
+              "home_score": "16",
+              "away_score": "18",
+              "status": "3:05 - 1st"
             },
             {
               "home": "BKN",
@@ -299,16 +299,16 @@
       "injuries": {
         "nfl": [
           {
-            "player": "Gardner Minshew",
+            "player": "Roy Lopez",
             "team": "",
             "status": "Active",
-            "detail": "Minshew is in line to sign a one-year contract with the Cardinals, Adam Schefter of ESPN reports."
+            "detail": "Lopez signed a two-year, $11.5 million contract with the Cardinals on Monday that includes $7 million guaranteed, Ian Rapoport of NFL Network reports."
           },
           {
-            "player": "Tyler Allgeier",
+            "player": "Kendrick Bourne",
             "team": "",
             "status": "Active",
-            "detail": "Allgeier agreed to terms on a two-year, $12.25 million contract with Arizona on Monday, Mike Garafolo of NFL Network reports."
+            "detail": "Bourne is slated to signed a two-year contract with the Cardinals, NFL reporter Jordan Schultz reports."
           },
           {
             "player": "Tyrone Wheatley Jr.",
@@ -371,33 +371,8 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-09T23:18:03Z",
+      "last_updated": "2026-03-09T23:31:45Z",
       "headlines": [
-        {
-          "title": "Russian economy withstood pressure from outside German expert",
-          "link": "https://tass.com/economy/2073165",
-          "published": "20260119T140000Z"
-        },
-        {
-          "title": "Sudan : united kingdom Hits  Sudan War Machine  With New Sanctions",
-          "link": "https://allafrica.com/stories/202602060005.html",
-          "published": "20260206T060000Z"
-        },
-        {
-          "title": "UK Sanctions Sudanese Army and RSF Leaders",
-          "link": "https://english.aawsat.com/arab-world/5237657-uk-sanctions-sudanese-army-and-rsf-leaders",
-          "published": "20260205T183000Z"
-        },
-        {
-          "title": "U . S . sanctions Gaza charities over alleged Hamas ties \u2013 NaturalNews . com",
-          "link": "https://www.naturalnews.com/2026-01-26-us-sanctions-gaza-charities-over-hamas-ties.html",
-          "published": "20260126T130000Z"
-        },
-        {
-          "title": "Myanmar military using commercial paramotors , gyrocopters for attacks : Report",
-          "link": "https://www.siasat.com/myanmar-military-using-commercial-paramotors-gyrocopters-for-attacks-report-3331737/",
-          "published": "20260126T140000Z"
-        },
         {
           "title": "Who is Mojtaba Khamenei, Iran's new supreme leader?",
           "link": "https://www.bbc.com/news/articles/c78xxg05w0zo?at_medium=RSS&at_campaign=rss",
@@ -407,42 +382,57 @@
           "title": "US teacher killed after toilet paper prank goes wrong",
           "link": "https://www.bbc.com/news/articles/cdr24g1p3vpo?at_medium=RSS&at_campaign=rss",
           "published": "Mon, 09 Mar 2026 17:09:21 GMT"
+        },
+        {
+          "title": "G7 to take 'necessary measures' to support energy supplies",
+          "link": "https://www.bbc.com/news/articles/c79542n0grwo?at_medium=RSS&at_campaign=rss",
+          "published": "Mon, 09 Mar 2026 23:30:46 GMT"
+        },
+        {
+          "title": "Hundreds of teenagers report for duty as Croatia reinstates conscription",
+          "link": "https://www.bbc.com/news/articles/c93j2l32lzgo?at_medium=RSS&at_campaign=rss",
+          "published": "Mon, 09 Mar 2026 14:49:34 GMT"
+        },
+        {
+          "title": "Alleged Bondi gunman seeks order to suppress family's identity",
+          "link": "https://www.bbc.com/news/articles/cy8lwnyj40eo?at_medium=RSS&at_campaign=rss",
+          "published": "Mon, 09 Mar 2026 08:13:58 GMT"
         }
       ],
-      "headline": "Russian economy withstood pressure from outside German expert"
+      "headline": "Who is Mojtaba Khamenei, Iran's new supreme leader?"
     },
     "technology": {
-      "last_updated": "2026-03-09T23:18:04Z",
+      "last_updated": "2026-03-09T23:31:46Z",
       "hn_top": [
         {
-          "title": "Tony Hoare has died",
+          "title": "Sir Tony Hoare has died",
           "url": "http://lefenetrou.blogspot.com/2026/03/in-memoriam-tony-hoare.html",
-          "score": 36,
-          "comments": 13
+          "score": 77,
+          "comments": 20
         },
         {
           "title": "Building a Procedural Hex Map with Wave Function Collapse",
           "url": "https://felixturner.github.io/hex-map-wfc/article/",
-          "score": 336,
-          "comments": 47
+          "score": 344,
+          "comments": 49
         },
         {
           "title": "JSLinux Now Supports x86_64",
           "url": "https://bellard.org/jslinux/",
-          "score": 206,
+          "score": 211,
           "comments": 48
         },
         {
           "title": "Is legal the same as legitimate: AI reimplementation and the erosion of copyleft",
           "url": "https://writings.hongminhee.org/2026/03/legal-vs-legitimate/",
-          "score": 268,
-          "comments": 299
+          "score": 281,
+          "comments": 309
         },
         {
-          "title": "The First Airplane Fatality",
+          "title": "The first airplane fatality",
           "url": "https://www.amusingplanet.com/2026/03/thomas-selfridge-first-airplane-fatality.html",
-          "score": 35,
-          "comments": 3
+          "score": 37,
+          "comments": 5
         }
       ],
       "tech_headlines": [
@@ -472,10 +462,10 @@
           "published": "Wed, 04 Mar 2026 22:13:27 +0000"
         }
       ],
-      "headline": "Tony Hoare has died"
+      "headline": "Sir Tony Hoare has died"
     },
     "policy": {
-      "last_updated": "2026-03-09T23:18:04Z",
+      "last_updated": "2026-03-09T23:31:47Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -514,7 +504,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-09T23:18:07Z",
+      "last_updated": "2026-03-09T23:31:49Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
