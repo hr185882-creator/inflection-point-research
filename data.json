@@ -1,9 +1,9 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-09T21:18:30Z",
+  "fetched_at": "2026-03-09T21:32:21Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-09T21:18:31Z",
+      "last_updated": "2026-03-09T21:32:22Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
@@ -39,34 +39,34 @@
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 69034.56,
+          "price": 68868.64,
           "prev_close": 65975.7,
-          "change": 3058.86,
-          "change_pct": 4.64,
+          "change": 2892.94,
+          "change_pct": 4.38,
           "currency": "USD"
         },
         "EURUSD=X": {
           "label": "EUR/USD",
-          "price": 1.1636,
+          "price": 1.1637,
           "prev_close": 1.1621,
-          "change": 0.0015,
-          "change_pct": 0.13,
+          "change": 0.0016,
+          "change_pct": 0.14,
           "currency": "USD"
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 98.743,
+          "price": 98.737,
           "prev_close": 98.986,
-          "change": -0.243,
+          "change": -0.249,
           "change_pct": -0.25,
           "currency": "USD"
         }
       },
       "yield_10y": 4.15,
-      "headline": "SPY 0.88%  |  BTC $69,035  |  10Y 4.15%"
+      "headline": "SPY 0.88%  |  BTC $68,869  |  10Y 4.15%"
     },
     "energy": {
-      "last_updated": "2026-03-09T21:18:40Z",
+      "last_updated": "2026-03-09T21:32:30Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
@@ -126,7 +126,7 @@
       "headline": "WTI $85.08/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-09T21:18:41Z",
+      "last_updated": "2026-03-09T21:32:32Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
@@ -215,7 +215,7 @@
       "headline": "NVDA 2.68%  |  MSFT 0.11%"
     },
     "sports": {
-      "last_updated": "2026-03-09T21:18:44Z",
+      "last_updated": "2026-03-09T21:32:32Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -365,8 +365,33 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-09T21:18:45Z",
+      "last_updated": "2026-03-09T21:32:38Z",
       "headlines": [
+        {
+          "title": "Russian economy withstood pressure from outside German expert",
+          "link": "https://tass.com/economy/2073165",
+          "published": "20260119T140000Z"
+        },
+        {
+          "title": "Sudan : united kingdom Hits  Sudan War Machine  With New Sanctions",
+          "link": "https://allafrica.com/stories/202602060005.html",
+          "published": "20260206T060000Z"
+        },
+        {
+          "title": "UK Sanctions Sudanese Army and RSF Leaders",
+          "link": "https://english.aawsat.com/arab-world/5237657-uk-sanctions-sudanese-army-and-rsf-leaders",
+          "published": "20260205T183000Z"
+        },
+        {
+          "title": "U . S . sanctions Gaza charities over alleged Hamas ties \u2013 NaturalNews . com",
+          "link": "https://www.naturalnews.com/2026-01-26-us-sanctions-gaza-charities-over-hamas-ties.html",
+          "published": "20260126T130000Z"
+        },
+        {
+          "title": "Myanmar military using commercial paramotors , gyrocopters for attacks : Report",
+          "link": "https://www.siasat.com/myanmar-military-using-commercial-paramotors-gyrocopters-for-attacks-report-3331737/",
+          "published": "20260126T140000Z"
+        },
         {
           "title": "Who is Mojtaba Khamenei, Iran's new supreme leader?",
           "link": "https://www.bbc.com/news/articles/c78xxg05w0zo?at_medium=RSS&at_campaign=rss",
@@ -376,56 +401,41 @@
           "title": "US teacher killed after toilet paper prank goes wrong",
           "link": "https://www.bbc.com/news/articles/cdr24g1p3vpo?at_medium=RSS&at_campaign=rss",
           "published": "Mon, 09 Mar 2026 17:09:21 GMT"
-        },
-        {
-          "title": "G7 to take 'necessary measures' to support energy supplies",
-          "link": "https://www.bbc.com/news/articles/c79542n0grwo?at_medium=RSS&at_campaign=rss",
-          "published": "Mon, 09 Mar 2026 20:40:38 GMT"
-        },
-        {
-          "title": "Hundreds of teenagers report for duty as Croatia reinstates conscription",
-          "link": "https://www.bbc.com/news/articles/c93j2l32lzgo?at_medium=RSS&at_campaign=rss",
-          "published": "Mon, 09 Mar 2026 14:49:34 GMT"
-        },
-        {
-          "title": "Alleged Bondi gunman seeks order to suppress family's identity",
-          "link": "https://www.bbc.com/news/articles/cy8lwnyj40eo?at_medium=RSS&at_campaign=rss",
-          "published": "Mon, 09 Mar 2026 08:13:58 GMT"
         }
       ],
-      "headline": "Who is Mojtaba Khamenei, Iran's new supreme leader?"
+      "headline": "Russian economy withstood pressure from outside German expert"
     },
     "technology": {
-      "last_updated": "2026-03-09T21:18:46Z",
+      "last_updated": "2026-03-09T21:32:39Z",
       "hn_top": [
         {
           "title": "Building a Procedural Hex Map with Wave Function Collapse",
           "url": "https://felixturner.github.io/hex-map-wfc/article/",
-          "score": 256,
+          "score": 269,
           "comments": 38
         },
         {
           "title": "JSLinux Now Supports x86_64",
           "url": "https://bellard.org/jslinux/",
-          "score": 144,
-          "comments": 31
+          "score": 148,
+          "comments": 34
         },
         {
           "title": "Thomas Selfridge: The First Airplane Fatality",
           "url": "https://www.amusingplanet.com/2026/03/thomas-selfridge-first-airplane-fatality.html",
-          "score": 11,
+          "score": 13,
           "comments": 2
         },
         {
           "title": "Is legal the same as legitimate: AI reimplementation and the erosion of copyleft",
           "url": "https://writings.hongminhee.org/2026/03/legal-vs-legitimate/",
-          "score": 185,
-          "comments": 177
+          "score": 197,
+          "comments": 193
         },
         {
           "title": "Show HN: The Mog Programming Language",
           "url": "https://moglang.org",
-          "score": 75,
+          "score": 79,
           "comments": 34
         }
       ],
@@ -459,7 +469,7 @@
       "headline": "Building a Procedural Hex Map with Wave Function Collapse"
     },
     "policy": {
-      "last_updated": "2026-03-09T21:18:46Z",
+      "last_updated": "2026-03-09T21:32:40Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -498,7 +508,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-09T21:18:51Z",
+      "last_updated": "2026-03-09T21:32:43Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
