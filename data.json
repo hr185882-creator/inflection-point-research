@@ -1,148 +1,78 @@
 {
-  "last_updated": "2026-03-09T16:32:23Z",
+  "last_updated": "2026-03-09T16:46:48Z",
+  "geopolitics": {
+    "top_events": [],
+    "conflict_count_24h": null,
+    "last_updated": "2026-03-09T16:46:47Z"
+  },
   "markets": {
-    "sp500": 6714.65,
-    "sp500_change_pct": -0.3764,
+    "sp500": 6731.75,
+    "sp500_change_pct": -0.1227,
     "us10y": 4.13,
-    "dxy": 99.094,
-    "btc": 68970.99,
-    "gold": 469.101,
-    "last_updated": "2026-03-09T16:32:24Z"
+    "dxy": 99.004,
+    "btc": 69068.23,
+    "gold": 469.23,
+    "last_updated": "2026-03-09T16:46:36Z"
   },
   "energy": {
-    "wti_crude": 95.56,
-    "brent_crude": 100.14,
-    "natural_gas": 3.122,
-    "last_updated": "2026-03-09T16:32:24Z"
+    "wti_crude": 95.18,
+    "brent_crude": 99.78,
+    "natural_gas": 3.116,
+    "last_updated": "2026-03-09T16:46:37Z"
+  },
+  "companies": {
+    "top_movers": [
+      {"symbol": "HIMS", "name": "Hims & Hers Health, Inc.", "price": 22.09, "change_pct": 40.3431, "volume": 119610526},
+      {"symbol": "NVDA", "name": "NVIDIA Corporation", "price": 180.68, "change_pct": 1.5712, "volume": 84882945},
+      {"symbol": "AAL", "name": "American Airlines Group, Inc.", "price": 10.865, "change_pct": -2.8175, "volume": 60883719},
+      {"symbol": "ONDS", "name": "Ondas Inc", "price": 9.625, "change_pct": -2.0848, "volume": 60312201},
+      {"symbol": "INTC", "name": "Intel Corporation", "price": 44.41, "change_pct": 2.2801, "volume": 40596992}
+    ],
+    "last_updated": "2026-03-09T16:46:48Z"
   },
   "technology": {
     "hn_top": [
-      {
-        "title": "Flash media longevity testing \u2013 6 years later",
-        "url": "https://old.reddit.com/r/DataHoarder/comments/1q6xnun/flash_media_longevity_testing_6_years_later/",
-        "score": 33
-      },
-      {
-        "title": "Fontcrafter: Turn Your Handwriting into a Real Font",
-        "url": "https://arcade.pirillo.com/fontcrafter.html",
-        "score": 280
-      },
-      {
-        "title": "Restoring a Sun SPARCstation IPX Part 1: PSU and Nvram",
-        "url": "https://www.rs-online.com/designspark/restoring-a-sun-sparcstation-ipx-part-1-psu-and-nvram",
-        "score": 9
-      },
-      {
-        "title": "Ireland shuts last coal plant, becomes 15th coal-free country in Europe (2025)",
-        "url": "https://www.pv-magazine.com/2025/06/20/ireland-coal-free-ends-coal-power-generation-moneypoint/",
-        "score": 549
-      },
-      {
-        "title": "Reverse-engineering the UniFi inform protocol",
-        "url": "https://tamarack.cloud/blog/reverse-engineering-unifi-inform-protocol",
-        "score": 71
-      }
+      {"id": 47310296, "title": "Restoring a Sun SPARCstation IPX Part 1: PSU and Nvram", "url": "https://www.rs-online.com/designspark/restoring-a-sun-sparcstation-ipx-part-1-psu-and-nvram", "score": 16},
+      {"id": 47306655, "title": "Fontcrafter: Turn Your Handwriting into a Real Font", "url": "https://arcade.pirillo.com/fontcrafter.html", "score": 289},
+      {"id": 47298553, "title": "Flash media longevity testing - 6 years later", "url": "https://old.reddit.com/r/DataHoarder/comments/1q6xnun/flash_media_longevity_testing_6_years_later/", "score": 39},
+      {"id": 47308278, "title": "Reverse-engineering the UniFi inform protocol", "url": "https://tamarack.cloud/blog/reverse-engineering-unifi-inform-protocol", "score": 74},
+      {"id": 47307055, "title": "Ireland shuts last coal plant, becomes 15th coal-free country in Europe (2025)", "url": "https://www.pv-magazine.com/2025/06/20/ireland-coal-free-ends-coal-power-generation-moneypoint/", "score": 562}
     ],
-    "last_updated": "2026-03-09T16:32:24Z"
+    "last_updated": "2026-03-09T16:46:37Z"
   },
   "policy": {
-    "federal_register_latest": [],
-    "last_updated": "2026-03-09T16:32:25Z"
+    "recent_bills": [
+      {"title": "Ratepayer Protection Pledge", "doc_number": "2026-04645", "date": "2026-03-09", "url": "https://www.federalregister.gov/documents/2026/03/09/2026-04645/ratepayer-protection-pledge", "type": "Presidential Document"},
+      {"title": "Sunshine Act Meetings", "doc_number": "2026-04601", "date": "2026-03-09", "url": "https://www.federalregister.gov/documents/2026/03/09/2026-04601/sunshine-act-meetings", "type": "Notice"},
+      {"title": "Dairy Tariff-Rate Quota Import Licensing Program", "doc_number": "2026-04599", "date": "2026-03-09", "url": "https://www.federalregister.gov/documents/2026/03/09/2026-04599/dairy-tariff-rate-quota-import-licensing-program", "type": "Proposed Rule"},
+      {"title": "Agency Information Collection Activities; Submission for OMB Review; Comment Request on Information Collection Requirements Related to Practice Before the Internal Revenue Service", "doc_number": "2026-04591", "date": "2026-03-09", "url": "https://www.federalregister.gov/documents/2026/03/09/2026-04591/agency-information-collection-activities-submission-for-omb-review-comment-request-on-information", "type": "Notice"},
+      {"title": "National Drinking Water Advisory Council: Request for Nominations", "doc_number": "2026-04590", "date": "2026-03-09", "url": "https://www.federalregister.gov/documents/2026/03/09/2026-04590/national-drinking-water-advisory-council-request-for-nominations", "type": "Notice"}
+    ],
+    "federal_register_headlines": [
+      {"title": "Ratepayer Protection Pledge", "doc_number": "2026-04645", "date": "2026-03-09", "url": "https://www.federalregister.gov/documents/2026/03/09/2026-04645/ratepayer-protection-pledge", "type": "Presidential Document"},
+      {"title": "Sunshine Act Meetings", "doc_number": "2026-04601", "date": "2026-03-09", "url": "https://www.federalregister.gov/documents/2026/03/09/2026-04601/sunshine-act-meetings", "type": "Notice"},
+      {"title": "Dairy Tariff-Rate Quota Import Licensing Program", "doc_number": "2026-04599", "date": "2026-03-09", "url": "https://www.federalregister.gov/documents/2026/03/09/2026-04599/dairy-tariff-rate-quota-import-licensing-program", "type": "Proposed Rule"},
+      {"title": "Agency Information Collection Activities; Submission for OMB Review; Comment Request on Information Collection Requirements Related to Practice Before the Internal Revenue Service", "doc_number": "2026-04591", "date": "2026-03-09", "url": "https://www.federalregister.gov/documents/2026/03/09/2026-04591/agency-information-collection-activities-submission-for-omb-review-comment-request-on-information", "type": "Notice"},
+      {"title": "National Drinking Water Advisory Council: Request for Nominations", "doc_number": "2026-04590", "date": "2026-03-09", "url": "https://www.federalregister.gov/documents/2026/03/09/2026-04590/national-drinking-water-advisory-council-request-for-nominations", "type": "Notice"}
+    ],
+    "last_updated": "2026-03-09T16:46:48Z"
+  },
+  "sports": {
+    "top_headlines": [],
+    "last_updated": "2026-03-09T16:46:48Z"
+  },
+  "media": {
+    "top_headlines": [],
+    "last_updated": "2026-03-09T16:46:48Z"
   },
   "claims": {
     "polymarket_top": [
-      {
-        "question": "Will Joe Biden get Coronavirus before the election?",
-        "volume": "32257.445115"
-      },
-      {
-        "question": "Will Airbnb begin publicly trading before Jan 1, 2021?",
-        "volume": "89665.252158"
-      },
-      {
-        "question": "Will a new Supreme Court Justice be confirmed before Nov 3rd, 2020?",
-        "volume": "43279.456005"
-      },
-      {
-        "question": "Will Kim Kardashian and Kanye West divorce before Jan 1, 2021?",
-        "volume": "22067.475119"
-      },
-      {
-        "question": "Will Coinbase begin publicly trading before Jan 1, 2021?",
-        "volume": "116803.377183"
-      }
+      {"question": "Counter-Strike: Acend vs Bebop (BO3) - CCT Europe Series #14 Play-In Group B", "volume": "9999.995006", "end_date": "2026-01-23T18:30:00Z", "market_slug": "cs2-ace1-bbp-2026-01-23"},
+      {"question": "Will the price of Bitcoin be above $110,000 on September 26 at 4AM ET?", "volume": "99.9998", "end_date": "2025-09-26T08:00:00Z", "market_slug": "btc-multistrike-4h-1758873600-110k"},
+      {"question": "Martin vs. Jianu: Match O/U 21.5", "volume": "99.9997", "end_date": "2026-03-09T09:00:00Z", "market_slug": "atp-mar-jianu-2026-03-02-match-total-21pt5"},
+      {"question": "Gormaz vs. Monnet: Match O/U 23.5", "volume": "999.99", "end_date": "2026-03-09T07:00:00Z", "market_slug": "wta-gormaz-monnet-2026-03-02-match-total-23pt5"},
+      {"question": "Will Viktor Hovland finish in the Top 10 at the 2026 Arnold Palmer Invitational presented by Mastercard?", "volume": "999.99", "end_date": "2026-03-08T00:00:00Z", "market_slug": "2026-arnold-palmer-invitational-presented-by-mastercard-top10-viktor-hovland"}
     ],
-    "last_updated": "2026-03-09T16:32:25Z"
-  },
-  "geopolitics": {
-    "gdelt_top": [],
-    "last_updated": "2026-03-09T16:32:29Z"
-  },
-  "media": {
-    "wiki_trending": [
-      {
-        "title": "Main_Page",
-        "views": 7019470
-      },
-      {
-        "title": "Special:Search",
-        "views": 2010194
-      },
-      {
-        "title": "Men's_T20_World_Cup",
-        "views": 408441
-      },
-      {
-        "title": "2026_Iran_war",
-        "views": 366172
-      },
-      {
-        "title": ".xxx",
-        "views": 356861
-      },
-      {
-        "title": "Soham_murders",
-        "views": 310431
-      },
-      {
-        "title": "International_Women's_Day",
-        "views": 282080
-      },
-      {
-        "title": "Wikipedia:Featured_pictures",
-        "views": 273802
-      },
-      {
-        "title": "Mojtaba_Khamenei",
-        "views": 233402
-      },
-      {
-        "title": "War_Machine_(2026_film)",
-        "views": 203667
-      }
-    ],
-    "last_updated": "2026-03-09T16:32:29Z"
-  },
-  "sports": {
-    "nfl_latest": [
-      {
-        "name": "Seattle Seahawks at New England Patriots",
-        "date": "2026-02-08T23:30Z",
-        "status": "Final"
-      }
-    ],
-    "last_updated": "2026-03-09T16:32:30Z"
-  },
-  "weather": {
-    "weather_nyc": {
-      "time": "2026-03-09T16:30",
-      "interval": 900,
-      "temperature": 19.0,
-      "windspeed": 13.7,
-      "winddirection": 203,
-      "is_day": 1,
-      "weathercode": 0
-    },
-    "last_updated": "2026-03-09T16:32:30Z"
+    "last_updated": "2026-03-09T16:46:48Z"
   }
 }
