@@ -1,0 +1,48 @@
+{
+  "last_updated": "1970-01-01T00:00:00Z",
+  "geopolitics": {
+    "top_events": [],
+    "conflict_count_24h": null,
+    "last_updated": null
+  },
+  "markets": {
+    "sp500": null,
+    "sp500_change_pct": null,
+    "us10y": null,
+    "dxy": null,
+    "btc": null,
+    "gold": null,
+    "last_updated": null
+  },
+  "energy": {
+    "wti_crude": null,
+    "brent_crude": null,
+    "natural_gas": null,
+    "last_updated": null
+  },
+  "companies": {
+    "top_movers": [],
+    "last_updated": null
+  },
+  "technology": {
+    "hn_top": [],
+    "last_updated": null
+  },
+  "policy": {
+    "recent_bills": [],
+    "federal_register_headlines": [],
+    "last_updated": null
+  },
+  "sports": {
+    "top_headlines": [],
+    "last_updated": null
+  },
+  "media": {
+    "top_headlines": [],
+    "last_updated": null
+  },
+  "claims": {
+    "polymarket_top": [],
+    "last_updated": null
+  }
+}
