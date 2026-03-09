@@ -279,6 +279,13 @@
         <p class="domain-body">Audit important claims using source hierarchy, corroboration logic, and explicit uncertainty handling.</p>
         <div class="live-loading" id="clm-loading">Loading...</div>
         <div class="live-data" id="clm-live" style="display:none"></div>
+
+      <div class="domain-card">
+        <span class="domain-tag">10</span>
+        <h3 class="domain-title">Legal and judiciary</h3>
+        <p class="domain-body">Federal court opinions, SCOTUS decisions, antitrust enforcement, and regulatory litigation signals.</p>
+        <div class="live-loading" id="leg-loading">Loading...</div>
+        <div class="live-data" id="leg-live" style="display:none"></div>
       </div>
 
     </div>
@@ -536,12 +543,44 @@
     show('pol-loading','pol-live',ph2 || '<div class="live-headline">No data</div>');
   }
 
+  // Legal
+  function renderLegal(d) {
+    var leg = d.legal;
+    if (leg) {
+      var legEl = document.getElementById('leg-live');
+      var legLoad = document.getElementById('leg-loading');
+      if (legEl) {
+        var legHtml = '';
+        if (leg.cases && leg.cases.length) {
+          leg.cases.slice(0, 5).forEach(function(c) {
+            legHtml += '<div class="live-row" style="flex-direction:column;gap:2px;margin-bottom:8px;">';
+            legHtml += '<a href="' + (c.link || '#') + '" target="_blank" style="color:var(--text);text-decoration:none;font-size:11px;font-family:Courier New;">' + c.title + '</a>';
+            legHtml += '<span style="color:var(--accent);font-size:10px;font-family:Courier New;">' + (c.tag || '') + (c.court ? ' — ' + c.court : '') + (c.date ? ' (' + c.date + ')' : '') + '</span>';
+            legHtml += '</div>';
+          });
+        }
+        if (leg.scotus_opinions && leg.scotus_opinions.length) {
+          legHtml += '<div style="margin-top:6px;padding-top:6px;border-top:1px solid var(--border);font-family:Courier New;font-size:10px;color:var(--accent);">SCOTUS</div>';
+          leg.scotus_opinions.slice(0, 2).forEach(function(o) {
+            legHtml += '<div class="live-row" style="flex-direction:column;gap:1px;margin-bottom:4px;">';
+            legHtml += '<a href="' + (o.link || '#') + '" target="_blank" style="color:var(--text);text-decoration:none;font-size:11px;font-family:Courier New;">' + o.title + '</a>';
+            legHtml += '</div>';
+          });
+        }
+        if (!legHtml) legHtml = '<span class="live-headline">No cases returned this cycle</span>';
+        legEl.innerHTML = legHtml;
+        legEl.style.display = 'flex';
+        if (legLoad) legLoad.style.display = 'none';
+      }
+    }
+  }
+
   function loadData() {
     fetch(DATA_URL + '?t=' + Date.now())
       .then(function(r){ return r.json(); })
-      .then(function(d){ renderAll(d); })
+      .then(function(d){ renderAll(d); renderLegal(d); })
       .catch(function(){
-        ['geo','mkt','nrg','co','spt','tech','pol'].forEach(function(id){
+        ['geo','mkt','nrg','co','spt','tech','pol','leg'].forEach(function(id){
           var el = document.getElementById(id+'-loading');
           if (el) el.textContent = 'Data unavailable';
         });
