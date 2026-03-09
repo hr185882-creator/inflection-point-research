@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inflection Point Research</title>
+  <style>
+    :root {
+      --bg: #0a0a0a;
+      --surface: #111111;
+      --border: #1e1e1e;
+      --accent: #c8a96e;
+      --accent-dim: #8a7048;
+      --text: #e8e8e8;
+      --text-muted: #6b6b6b;
+      --text-mid: #a0a0a0;
+      --red: #c0392b;
+      --green: #27ae60;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Georgia', serif;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* NAV */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      background: rgba(10,10,10,0.95);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 48px;
+      height: 60px;
+    }
+
+    .nav-logo {
+      font-family: 'Georgia', serif;
+      font-size: 13px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: normal;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 36px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-family: 'Courier New', monospace;
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 120px 48px 80px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .hero-label {
+      font-family: 'Courier New', monospace;
+      font-size: 11px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent-dim);
+      margin-bottom: 32px;
+    }
+
+    .hero h1 {
+      font-size: clamp(32px, 5vw, 56px);
+      font-weight: normal;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      margin-bottom: 32px;
+    }
+
+    .hero h1 em {
+      color: var(--accent);
+      font-style: normal;
+    }
+
+    .hero-body {
+      font-size: 17px;
+      color: var(--text-mid);
+      max-width: 640px;
+      margin-bottom: 48px;
+      line-height: 1.8;
+    }
+
+    .hero-tag {
+      display: inline-block;
+      font-family: 'Courier New', monospace;
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      border: 1px solid var(--accent-dim);
+      padding: 10px 24px;
+    }
+
+    /* DIVIDER */
+    .divider {
+      width: 100%;
+      height: 1px;
+      background: var(--border);
+      margin: 0 auto;
+    }
+
+    /* SECTION */
+    section {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 96px 48px;
+    }
+
+    .section-label {
+      font-family: 'Courier New', monospace;
+      font-size: 10px;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--accent-dim);
+      margin-bottom: 48px;
+    }
+
+    h2 {
+      font-size: clamp(22px, 3vw, 32px);
+      font-weight: normal;
+      letter-spacing: -0.01em;
+      margin-bottom: 24px;
+      color: var(--text);
+    }
+
+    p {
+      color: var(--text-mid);
+      margin-bottom: 20px;
+      max-width: 660px;
+    }
+
+    /* QUESTIONS BLOCK */
+    .questions {
+      margin: 48px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .question-item {
+      display: flex;
+      align-items: baseline;
+      gap: 16px;
+      padding: 18px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .question-item:first-child {
+      border-top: 1px solid var(--border);
+    }
+
+    .q-num {
+      font-family: 'Courier New', monospace;
+      font-size: 10px;
+      color: var(--accent-dim);
+      min-width: 24px;
+      letter-spacing: 0.1em;
+    }
+
+    .q-text {
+      font-size: 16px;
+      color: var(--text);
+    }
+
+    /* WORKFLOW */
+    .workflow {
+      margin: 48px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .workflow-step {
+      display: flex;
+      align-items: stretch;
+      gap: 0;
+    }
+
+    .workflow-left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 40px;
+      flex-shrink: 0;
+    }
+
+    .workflow-dot {
+      width: 8px;
+      height: 8px;
+      border: 1px solid var(--accent);
+      background: transparent;
+      flex-shrink: 0;
+      margin-top: 6px;
+    }
+
+    .workflow-line {
+      width: 1px;
+      flex: 1;
+      background: var(--border);
+      min-height: 24px;
+    }
+
+    .workflow-step:last-child .workflow-line {
+      display: none;
+    }
+
+    .workflow-content {
+      padding: 0 0 32px 16px;
+    }
+
+    .workflow-title {
+      font-family: 'Courier New', monospace;
+      font-size: 11px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 6px;
+    }
+
+    .workflow-desc {
+      font-size: 15px;
+      color: var(--text-muted);
+      max-width: 520px;
+    }
+
+    /* FEATURES GRID */
+    .features-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1px;
+      background: var(--border);
+      margin-top: 48px;
+    }
+
+    .feature-card {
+      background: var(--surface);
+      padding: 36px;
+    }
+
+    .feature-icon {
+      font-family: 'Courier New', monospace;
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent-dim);
+      margin-bottom: 16px;
+    }
+
+    .feature-title {
+      font-size: 17px;
+      color: var(--text);
+      margin-bottom: 12px;
+      font-weight: normal;
+    }
+
+    .feature-desc {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin: 0;
+      max-width: 100%;
+    }
+
+    /* SIGNAL BAR */
+    .signal-bar {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: 32px 36px;
+      margin-top: 48px;
+      display: flex;
+      gap: 48px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .signal-item {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .signal-label {
+      font-family: 'Courier New', monospace;
+      font-size: 9px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+
+    .signal-value {
+      font-family: 'Courier New', monospace;
+      font-size: 14px;
+      color: var(--accent);
+    }
+
+    /* CTA */
+    .cta-section {
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .cta-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 96px 48px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      gap: 48px;
+    }
+
+    .cta-left h2 {
+      margin-bottom: 16px;
+    }
+
+    .cta-left p {
+      color: var(--text-muted);
+      font-size: 15px;
+    }
+
+    .cta-right {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      align-items: flex-end;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      font-family: 'Courier New', monospace;
+      font-size: 11px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--bg);
+      background: var(--accent);
+      padding: 14px 32px;
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .btn-primary:hover {
+      background: #d4b87a;
+      text-decoration: none;
+    }
+
+    .btn-secondary {
+      display: inline-block;
+      font-family: 'Courier New', monospace;
+      font-size: 11px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent);
+      border: 1px solid var(--accent-dim);
+      padding: 14px 32px;
+      cursor: pointer;
+      transition: border-color 0.2s;
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--accent);
+      text-decoration: none;
+    }
+
+    /* FOOTER */
+    footer {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 48px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .footer-logo {
+      font-family: 'Courier New', monospace;
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+
+    .footer-note {
+      font-family: 'Courier New', monospace;
+      font-size: 10px;
+      color: var(--text-muted);
+      letter-spacing: 0.05em;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 640px) {
+      nav { padding: 0 24px; }
+      .nav-links { display: none; }
+      .hero { padding: 100px 24px 60px; }
+      section { padding: 64px 24px; }
+      .features-grid { grid-template-columns: 1fr; }
+      .cta-inner { padding: 64px 24px; }
+      footer { padding: 32px 24px; }
+      .signal-bar { padding: 24px; gap: 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <span class="nav-logo">Inflection Point Research</span>
+    <ul class="nav-links">
+      <li><a href="#how-it-works">How it works</a></li>
+      <li><a href="#platform">Platform</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-label">Evidence-First Intelligence</div>
+    <h1>See <em>signal</em> before<br>consensus forms.</h1>
+    <p class="hero-body">
+      Inflection Point Research is an evidence-first intelligence platform built to track what matters, detect structural change early, and turn messy information into usable judgment.
+    </p>
+    <span class="hero-tag">Decision-support. Not a news feed.</span>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- WHAT IT DOES -->
+  <section id="platform">
+    <div class="section-label">// Platform</div>
+    <h2>Structured judgment at scale.</h2>
+    <p>
+      The platform monitors important entities across multiple domains, including geopolitics, markets, companies, sports, and public claims. It ingests new information from selected sources, extracts the core claims, scores relevance and credibility, updates live scenarios, and surfaces alerts when something materially changes.
+    </p>
+    <p>
+      Every time new information appears, the platform asks the same set of questions:
+    </p>
+
+    <div class="questions">
+      <div class="question-item">
+        <span class="q-num">01</span>
+        <span class="q-text">What changed?</span>
+      </div>
+      <div class="question-item">
+        <span class="q-num">02</span>
+        <span class="q-text">Why does it matter?</span>
+      </div>
+      <div class="question-item">
+        <span class="q-num">03</span>
+        <span class="q-text">Who does it affect?</span>
+      </div>
+      <div class="question-item">
+        <span class="q-num">04</span>
+        <span class="q-text">Which scenario became more or less likely?</span>
+      </div>
+      <div class="question-item">
+        <span class="q-num">05</span>
+        <span class="q-text">Does this require action, monitoring, or human review?</span>
+      </div>
+    </div>
+
+    <div class="signal-bar">
+      <div class="signal-item">
+        <span class="signal-label">Coverage</span>
+        <span class="signal-value">Multi-domain</span>
+      </div>
+      <div class="signal-item">
+        <span class="signal-label">Output</span>
+        <span class="signal-value">Structured claims</span>
+      </div>
+      <div class="signal-item">
+        <span class="signal-label">Standard</span>
+        <span class="signal-value">Evidence-first</span>
+      </div>
+      <div class="signal-item">
+        <span class="signal-label">Mode</span>
+        <span class="signal-value">Continuous</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- HOW IT WORKS -->
+  <section id="how-it-works">
+    <div class="section-label">// How it works</div>
+    <h2>From source intake to usable judgment.</h2>
+    <p>
+      The platform starts with a watchlist of tracked entities: countries, companies, teams, players, or other subjects that matter to the user. As new evidence arrives, it is parsed, scored, and routed — automatically.
+    </p>
+
+    <div class="workflow">
+      <div class="workflow-step">
+        <div class="workflow-left">
+          <div class="workflow-dot"></div>
+          <div class="workflow-line"></div>
+        </div>
+        <div class="workflow-content">
+          <div class="workflow-title">01 — Source Intake</div>
+          <div class="workflow-desc">New evidence ingested from trusted sources tied to tracked entities.</div>
+        </div>
+      </div>
+      <div class="workflow-step">
+        <div class="workflow-left">
+          <div class="workflow-dot"></div>
+          <div class="workflow-line"></div>
+        </div>
+        <div class="workflow-content">
+          <div class="workflow-title">02 — Claim Extraction</div>
+          <div class="workflow-desc">Raw information parsed into structured, discrete claims.</div>
+        </div>
+      </div>
+      <div class="workflow-step">
+        <div class="workflow-left">
+          <div class="workflow-dot"></div>
+          <div class="workflow-line"></div>
+        </div>
+        <div class="workflow-content">
+          <div class="workflow-title">03 — Scoring and Prioritization</div>
+          <div class="workflow-desc">Each claim evaluated for importance, credibility, time sensitivity, and structural relevance.</div>
+        </div>
+      </div>
+      <div class="workflow-step">
+        <div class="workflow-left">
+          <div class="workflow-dot"></div>
+          <div class="workflow-line"></div>
+        </div>
+        <div class="workflow-content">
+          <div class="workflow-title">04 — Scenario Updates</div>
+          <div class="workflow-desc">Scenario ladders for affected entities updated when meaningful thresholds are crossed.</div>
+        </div>
+      </div>
+      <div class="workflow-step">
+        <div class="workflow-left">
+          <div class="workflow-dot"></div>
+          <div class="workflow-line"></div>
+        </div>
+        <div class="workflow-content">
+          <div class="workflow-title">05 — Alerts, Memos, and Review</div>
+          <div class="workflow-desc">High-confidence findings surface as alerts or memos. Ambiguous or low-confidence evidence is routed to a human review queue rather than treated as settled fact.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- PLATFORM FEATURES -->
+  <section>
+    <div class="section-label">// What the platform includes</div>
+    <h2>Built for operators, not observers.</h2>
+    <p>Every component is designed to reduce noise and surface only what requires attention.</p>
+
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">// Dashboard</div>
+        <div class="feature-title">Main operating view</div>
+        <p class="feature-desc">Recent high-priority alerts, newly ingested evidence, scenario changes, and open review items. Updated continuously.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">// Watchlist</div>
+        <div class="feature-title">Tracked entities</div>
+        <p class="feature-desc">Countries, companies, teams, players, or any subject you define. The system monitors on your behalf and updates when something material changes.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">// Scenario Ladder</div>
+        <div class="feature-title">Live probability updates</div>
+        <p class="feature-desc">Scenarios for each entity updated as evidence arrives. Which outcome became more likely? Which became less? The ladder tracks it.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">// Review Queue</div>
+        <div class="feature-title">Human judgment gate</div>
+        <p class="feature-desc">Ambiguous, contradictory, or low-confidence evidence is not auto-resolved. It is flagged for human review before being treated as settled fact.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <div class="cta-section" id="contact">
+    <div class="cta-inner">
+      <div class="cta-left">
+        <h2>Get early access.</h2>
+        <p>Inflection Point Research is in active development.<br>Contact us to learn more or request access.</p>
+      </div>
+      <div class="cta-right">
+        <a href="mailto:contact@inflectionpointresearch.com" class="btn-primary">Request Access</a>
+        <a href="mailto:contact@inflectionpointresearch.com" class="btn-secondary">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <span class="footer-logo">Inflection Point Research</span>
+    <span class="footer-note">Evidence-first. Decision-support. Not a news feed.</span>
+  </footer>
+
+</body>
+</html>
