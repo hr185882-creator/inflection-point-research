@@ -1,1 +1,596 @@
-PCFET0NUWVBFIGh0bWw+CjxodG1sIGxhbmc9ImVuIj4KPGhlYWQ+CiAgPG1ldGEgY2hhcnNldD0iVVRGLTgiIC8+CiAgPG1ldGEg
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inflection OS</title>
+  <style>
+    :root {
+      --bg: #0a0a0a;
+      --surface: #111111;
+      --border: #1e1e1e;
+      --accent: #c8a96e;
+      --accent-dim: #7a6040;
+      --text: #e8e8e8;
+      --text-muted: #5a5a5a;
+      --text-mid: #9a9a9a;
+      --green: #4caf7d;
+      --red: #e05555;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: var(--bg); color: var(--text); font-family: 'Georgia', serif; font-size: 16px; line-height: 1.75; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(10,10,10,0.96); border-bottom: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 56px; height: 62px;
+    }
+    .nav-logo { font-family: 'Courier New', monospace; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); }
+    .nav-links { display: flex; gap: 40px; list-style: none; }
+    .nav-links a { font-family: 'Courier New', monospace; font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-muted); transition: color 0.2s; }
+    .nav-links a:hover { color: var(--accent); text-decoration: none; }
+    #live-bar {
+      position: fixed; top: 62px; left: 0; right: 0; z-index: 99;
+      background: #0d0d0d; border-bottom: 1px solid var(--border);
+      display: flex; align-items: center; padding: 0 56px; height: 34px; overflow: hidden;
+    }
+    .live-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--green); margin-right: 10px; flex-shrink: 0; animation: pulse 2s infinite; }
+    @keyframes pulse { 0%,100%{opacity:1}50%{opacity:0.3} }
+    .live-label { font-family: 'Courier New', monospace; font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-muted); margin-right: 24px; flex-shrink: 0; }
+    .live-ticker { display: flex; align-items: center; gap: 24px; overflow-x: auto; scrollbar-width: none; }
+    .live-ticker::-webkit-scrollbar { display: none; }
+    .tick-item { font-family: 'Courier New', monospace; font-size: 10px; letter-spacing: 0.08em; white-space: nowrap; color: var(--text-mid); display: flex; align-items: center; gap: 6px; }
+    .tick-label { color: var(--text-muted); }
+    .tick-val { color: var(--text); }
+    .tick-up { color: var(--green); }
+    .tick-dn { color: var(--red); }
+    .last-updated { font-family: 'Courier New', monospace; font-size: 9px; letter-spacing: 0.12em; color: var(--text-muted); margin-left: auto; flex-shrink: 0; padding-left: 24px; }
+    section { width: 100%; border-bottom: 1px solid var(--border); }
+    .inner { max-width: 860px; margin: 0 auto; padding: 100px 48px; }
+    .inner-wide { max-width: 1080px; margin: 0 auto; padding: 100px 48px; }
+    #hero { min-height: 100vh; display: flex; align-items: center; border-bottom: 1px solid var(--border); }
+    #hero .inner { padding-top: 120px; }
+    .hero-eyebrow { font-family: 'Courier New', monospace; font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--accent-dim); margin-bottom: 36px; }
+    .hero-h1 { font-size: clamp(34px, 5.5vw, 60px); font-weight: normal; line-height: 1.15; color: var(--text); margin-bottom: 48px; }
+    .hero-h1 em { font-style: normal; color: var(--accent); }
+    .cta-row { display: flex; gap: 16px; flex-wrap: wrap; }
+    .btn-primary { display: inline-block; padding: 13px 28px; background: var(--accent); color: #0a0a0a; font-family: 'Courier New', monospace; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; font-weight: bold; border: none; cursor: pointer; transition: opacity 0.2s; }
+    .btn-primary:hover { opacity: 0.85; text-decoration: none; }
+    .btn-secondary { display: inline-block; padding: 13px 28px; background: transparent; color: var(--text-mid); font-family: 'Courier New', monospace; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; border: 1px solid var(--border); cursor: pointer; transition: border-color 0.2s, color 0.2s; }
+    .btn-secondary:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
+    .section-label { font-family: 'Courier New', monospace; font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--accent-dim); margin-bottom: 40px; display: block; }
+    .what-h2 { font-size: clamp(24px, 3.5vw, 36px); font-weight: normal; line-height: 1.3; margin-bottom: 28px; }
+    .body-text { font-size: 16px; color: var(--text-mid); line-height: 1.8; margin-bottom: 20px; }
+    #different { background: var(--surface); }
+    .diff-intro { font-size: 16px; color: var(--text-muted); line-height: 1.8; margin-bottom: 36px; font-style: italic; }
+    .diff-lead { font-size: 18px; color: var(--text); line-height: 1.7; margin-bottom: 32px; }
+    .diff-list { list-style: none; display: flex; flex-direction: column; gap: 14px; margin-bottom: 40px; }
+    .diff-list li { font-size: 15px; color: var(--text-mid); padding-left: 20px; position: relative; line-height: 1.6; }
+    .diff-list li::before { content: ''; position: absolute; left: 0; top: 11px; width: 6px; height: 1px; background: var(--accent); }
+    .diff-close { font-size: 15px; color: var(--text-muted); line-height: 1.8; margin-bottom: 12px; }
+    .diff-kicker { font-size: 16px; color: var(--accent); font-style: italic; }
+    .steps { display: flex; flex-direction: column; gap: 0; }
+    .step { display: grid; grid-template-columns: 48px 1fr; gap: 24px; padding: 36px 0; border-bottom: 1px solid var(--border); }
+    .step:last-child { border-bottom: none; }
+    .step-num { font-family: 'Courier New', monospace; font-size: 11px; color: var(--accent-dim); padding-top: 4px; letter-spacing: 0.1em; }
+    .step-title { font-size: 17px; color: var(--text); font-weight: normal; margin-bottom: 10px; }
+    #domains { background: var(--surface); }
+    .domain-intro { font-size: 16px; color: var(--text-mid); line-height: 1.8; margin-bottom: 60px; }
+    .domain-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1px; background: var(--border); border: 1px solid var(--border); }
+    .domain-card { background: var(--surface); padding: 32px 28px; transition: background 0.2s; }
+    .domain-card:hover { background: #161616; }
+    .domain-tag { font-family: 'Courier New', monospace; font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); margin-bottom: 12px; display: block; }
+    .domain-title { font-size: 15px; color: var(--text); font-weight: normal; margin-bottom: 10px; }
+    .domain-body { font-size: 13px; color: var(--text-muted); line-height: 1.7; margin-bottom: 14px; }
+    .live-data { margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--border); display: flex; flex-direction: column; gap: 6px; }
+    .live-row { display: flex; justify-content: space-between; align-items: baseline; font-family: 'Courier New', monospace; font-size: 11px; }
+    .live-row-label { color: var(--text-muted); letter-spacing: 0.06em; }
+    .live-row-val { color: var(--text); font-weight: bold; }
+    .live-row-val.up { color: var(--green); }
+    .live-row-val.dn { color: var(--red); }
+    .live-headline { font-size: 11px; color: var(--text-muted); line-height: 1.5; margin-top: 4px; font-family: 'Courier New', monospace; }
+    .live-headline a { color: var(--text-mid); font-size: 11px; }
+    .live-headline a:hover { color: var(--accent); }
+    .live-loading { font-family: 'Courier New', monospace; font-size: 10px; color: var(--text-muted); letter-spacing: 0.1em; margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--border); }
+    #why { background: #0d0d0d; }
+    .why-lines { display: flex; flex-direction: column; gap: 10px; margin: 28px 0 36px; }
+    .why-line { font-family: 'Courier New', monospace; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-muted); }
+    .for-text { font-size: 16px; color: var(--text-mid); line-height: 1.8; margin-bottom: 20px; }
+    #positioning { background: var(--surface); }
+    .position-statement { font-size: clamp(18px, 2.5vw, 26px); color: var(--text); line-height: 1.5; font-weight: normal; max-width: 740px; }
+    .feature-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1px; background: var(--border); border: 1px solid var(--border); margin-top: 16px; }
+    .feature-item { background: var(--bg); padding: 24px 22px; font-family: 'Courier New', monospace; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); }
+    #cta { background: #0d0d0d; }
+    #cta .inner { text-align: center; }
+    .cta-headline { font-size: clamp(28px, 4vw, 48px); font-weight: normal; line-height: 1.25; margin-bottom: 20px; }
+    .cta-headline span { display: block; }
+    .cta-sub { font-size: 15px; color: var(--text-muted); line-height: 1.8; margin-bottom: 48px; }
+    footer { border-top: 1px solid var(--border); padding: 32px 56px; display: flex; align-items: center; justify-content: space-between; }
+    .footer-logo { font-family: 'Courier New', monospace; font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-muted); }
+    .footer-tag { font-family: 'Courier New', monospace; font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent-dim); font-style: italic; }
+    @media (max-width: 720px) {
+      nav { padding: 0 24px; }
+      .nav-links { display: none; }
+      #live-bar { padding: 0 24px; }
+      .inner, .inner-wide { padding: 72px 24px; }
+      #hero .inner { padding-top: 140px; }
+      footer { padding: 28px 24px; flex-direction: column; gap: 12px; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <span class="nav-logo">Inflection OS</span>
+  <ul class="nav-links">
+    <li><a href="#what">What It Is</a></li>
+    <li><a href="#how">How It Works</a></li>
+    <li><a href="#domains">Domains</a></li>
+    <li><a href="#product">Platform</a></li>
+    <li><a href="#who">Who It's For</a></li>
+  </ul>
+</nav>
+
+<div id="live-bar">
+  <span class="live-dot"></span>
+  <span class="live-label">Live</span>
+  <div class="live-ticker" id="ticker">
+    <span class="tick-item"><span class="tick-label">Loading...</span></span>
+  </div>
+  <span class="last-updated" id="last-updated-bar">--</span>
+</div>
+
+<section id="hero">
+  <div class="inner">
+    <p class="hero-eyebrow">Inflection OS</p>
+    <h1 class="hero-h1">See what changed.<br>Understand why it matters.<br>Act before the shift becomes obvious.</h1>
+    <div class="cta-row">
+      <a href="#domains" class="btn-primary">View Live Dashboard</a>
+      <a href="#how" class="btn-secondary">How It Works</a>
+    </div>
+  </div>
+</section>
+
+<section id="what">
+  <div class="inner">
+    <span class="section-label">What It Is</span>
+    <h2 class="what-h2">Inflection OS is a private live tracking and alert system designed for personal use.</h2>
+    <p class="body-text">It monitors the people, companies, countries, markets, players, teams, topics, and narratives I care about across all domains. It pulls in new information automatically, identifies what changed, evaluates whether it matters, updates scenario ladders, and helps me decide whether to act, monitor, or review.</p>
+    <p class="body-text">It is built for one purpose: turning live information into structured judgment before consensus catches up.</p>
+  </div>
+</section>
+
+<section id="different">
+  <div class="inner">
+    <span class="section-label">What Makes It Different</span>
+    <p class="diff-intro">Most systems either overwhelm the user with raw information or summarize events without structure.</p>
+    <p class="diff-lead">Inflection OS is different because it is built around disciplined reasoning.</p>
+    <ul class="diff-list">
+      <li>It separates fact from inference.</li>
+      <li>It prioritizes source quality.</li>
+      <li>It tracks structural pressure, not just headlines.</li>
+      <li>It updates scenarios instead of repeating noise.</li>
+      <li>It treats ambiguity honestly.</li>
+      <li>It is designed for action, not passive consumption.</li>
+    </ul>
+    <p class="diff-close">The goal is not perfect prediction.</p>
+    <p class="diff-kicker">The goal is better decisions under uncertainty.</p>
+  </div>
+</section>
+
+<section id="how">
+  <div class="inner">
+    <span class="section-label">How It Works</span>
+    <p class="body-text">The system runs a simple loop.</p>
+    <div class="steps">
+      <div class="step"><span class="step-num">01</span><div><h3 class="step-title">It monitors selected sources.</h3></div></div>
+      <div class="step"><span class="step-num">02</span><div><h3 class="step-title">It ingests new evidence.</h3></div></div>
+      <div class="step"><span class="step-num">03</span><div><h3 class="step-title">It extracts the core claims.</h3></div></div>
+      <div class="step"><span class="step-num">04</span><div><h3 class="step-title">It scores importance and source quality.</h3></div></div>
+      <div class="step"><span class="step-num">05</span><div><h3 class="step-title">It updates scenarios.</h3></div></div>
+      <div class="step"><span class="step-num">06</span><div><h3 class="step-title">It sends alerts or review items when something meaningful changes.</h3></div></div>
+    </div>
+    <p class="body-text" style="margin-top:48px;">Instead of just dumping information on me, the platform is built to answer a tighter set of questions:</p>
+    <ul class="diff-list">
+      <li>What changed?</li>
+      <li>Why does it matter?</li>
+      <li>Who does it affect?</li>
+      <li>What becomes more or less likely next?</li>
+      <li>Does this require action, monitoring, or skepticism?</li>
+    </ul>
+  </div>
+</section>
+
+<section id="domains">
+  <div class="inner-wide">
+    <span class="section-label">Built to track all domains &mdash; updated every 6 minutes</span>
+    <p class="domain-intro">Inflection OS is intentionally cross-domain. It is designed to track live developments wherever structured judgment creates value. The domain can change. The reasoning system stays the same.</p>
+    <div class="domain-grid">
+
+      <div class="domain-card">
+        <span class="domain-tag">01</span>
+        <h3 class="domain-title">Geopolitics and security</h3>
+        <p class="domain-body">Monitor states, alliances, conflict risk, sanctions, military posture, regional escalation, and diplomatic movement.</p>
+        <div class="live-loading" id="geo-loading">Loading...</div>
+        <div class="live-data" id="geo-live" style="display:none"></div>
+      </div>
+
+      <div class="domain-card">
+        <span class="domain-tag">02</span>
+        <h3 class="domain-title">Markets and macroeconomics</h3>
+        <p class="domain-body">Track rates, inflation, liquidity, commodities, currencies, policy shifts, and broader market pressure.</p>
+        <div class="live-loading" id="mkt-loading">Loading...</div>
+        <div class="live-data" id="mkt-live" style="display:none"></div>
+      </div>
+
+      <div class="domain-card">
+        <span class="domain-tag">03</span>
+        <h3 class="domain-title">Energy and resources</h3>
+        <p class="domain-body">Monitor oil, gas, logistics, supply disruptions, production changes, strategic reserves, and energy policy.</p>
+        <div class="live-loading" id="nrg-loading">Loading...</div>
+        <div class="live-data" id="nrg-live" style="display:none"></div>
+      </div>
+
+      <div class="domain-card">
+        <span class="domain-tag">04</span>
+        <h3 class="domain-title">Companies and filings</h3>
+        <p class="domain-body">Track public companies through filings, earnings, guidance, management language, capital raises, and strategic changes.</p>
+        <div class="live-loading" id="co-loading">Loading...</div>
+        <div class="live-data" id="co-live" style="display:none"></div>
+      </div>
+
+      <div class="domain-card">
+        <span class="domain-tag">05</span>
+        <h3 class="domain-title">Technology and platforms</h3>
+        <p class="domain-body">Monitor AI developments, product launches, platform policy changes, competition, adoption, and ecosystem shifts.</p>
+        <div class="live-loading" id="tech-loading">Loading...</div>
+        <div class="live-data" id="tech-live" style="display:none"></div>
+      </div>
+
+      <div class="domain-card">
+        <span class="domain-tag">06</span>
+        <h3 class="domain-title">Policy, law, and regulation</h3>
+        <p class="domain-body">Track legislation, rule changes, court actions, agency decisions, and regulatory pressure.</p>
+        <div class="live-loading" id="pol-loading">Loading...</div>
+        <div class="live-data" id="pol-live" style="display:none"></div>
+      </div>
+
+      <div class="domain-card">
+        <span class="domain-tag">07</span>
+        <h3 class="domain-title">Sports and performance</h3>
+        <p class="domain-body">Track injuries, roster changes, player status, usage, coaching decisions, and structural game edges.</p>
+        <div class="live-loading" id="spt-loading">Loading...</div>
+        <div class="live-data" id="spt-live" style="display:none"></div>
+      </div>
+
+      <div class="domain-card">
+        <span class="domain-tag">08</span>
+        <h3 class="domain-title">Media and public narratives</h3>
+        <p class="domain-body">Monitor claims, narrative shifts, viral stories, public messaging, and distortion between signal and noise.</p>
+        <div class="live-loading" id="med-loading">Loading...</div>
+        <div class="live-data" id="med-live" style="display:none"></div>
+      </div>
+
+      <div class="domain-card">
+        <span class="domain-tag">09</span>
+        <h3 class="domain-title">Claim verification and open-source analysis</h3>
+        <p class="domain-body">Audit important claims using source hierarchy, corroboration logic, and explicit uncertainty handling.</p>
+        <div class="live-loading" id="clm-loading">Loading...</div>
+        <div class="live-data" id="clm-live" style="display:none"></div>
+
+      <div class="domain-card">
+        <span class="domain-tag">10</span>
+        <h3 class="domain-title">Legal and judiciary</h3>
+        <p class="domain-body">Federal court opinions, SCOTUS decisions, antitrust enforcement, and regulatory litigation signals.</p>
+        <div class="live-loading" id="leg-loading">Loading...</div>
+        <div class="live-data" id="leg-live" style="display:none"></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="product">
+  <div class="inner-wide">
+    <span class="section-label">What the dashboard does</span>
+    <p class="body-text">The dashboard is my command center. It shows:</p>
+    <ul class="diff-list">
+      <li>live alerts</li>
+      <li>recent evidence</li>
+      <li>tracked entities</li>
+      <li>scenario changes</li>
+      <li>open review items</li>
+      <li>upcoming catalysts</li>
+      <li>cross-domain watchlists</li>
+    </ul>
+    <p class="body-text">Each entity has its own page with current scenarios, recent evidence, extracted signals, memo history, and review state.</p>
+    <p class="body-text">When the system is confident something important changed, it creates an alert or memo. When the signal is ambiguous, contradictory, or low-confidence, it sends it into a review queue instead of pretending certainty.</p>
+  </div>
+</section>
+
+<section id="why">
+  <div class="inner">
+    <span class="section-label">Why it exists</span>
+    <h2 class="what-h2">Complex systems move when incentives shift, constraints tighten, capabilities change, or timelines compress.</h2>
+    <div class="why-lines">
+      <p class="why-line">The challenge is not just finding information.</p>
+      <p class="why-line">The challenge is understanding what changed early enough for that change to matter.</p>
+    </div>
+    <p class="body-text">Inflection OS exists to give me a private system for monitoring those shifts live, without relying on scattered feeds, memory, or headline-driven noise.</p>
+  </div>
+</section>
+
+<section id="who">
+  <div class="inner">
+    <span class="section-label">Who it is for</span>
+    <p class="for-text">This version is built for me personally.</p>
+    <p class="for-text">It is a private operating system for live monitoring, structured judgment, and cross-domain decision support. It is meant to track what I care about, reduce noise, highlight signal, and make it easier to spot important shifts early.</p>
+  </div>
+</section>
+
+<section id="positioning">
+  <div class="inner">
+    <span class="section-label">Positioning statement</span>
+    <p class="position-statement">Inflection OS is my personal cross-domain live tracker, built to monitor important entities in real time, update scenarios as new evidence arrives, and alert me when something actually matters.</p>
+  </div>
+</section>
+
+<section id="features">
+  <div class="inner-wide">
+    <span class="section-label">Core Features</span>
+    <div class="feature-grid">
+      <div class="feature-item">Personal watchlists across all domains</div>
+      <div class="feature-item">Live source monitoring</div>
+      <div class="feature-item">Evidence ingestion and claim extraction</div>
+      <div class="feature-item">Source-quality prioritization</div>
+      <div class="feature-item">Scenario tracking and updates</div>
+      <div class="feature-item">Alert generation</div>
+      <div class="feature-item">Memo generation</div>
+      <div class="feature-item">Review queue for ambiguity</div>
+      <div class="feature-item">Entity pages with history and context</div>
+      <div class="feature-item">Private operator dashboard</div>
+    </div>
+  </div>
+</section>
+
+<section id="cta">
+  <div class="inner">
+    <h2 class="cta-headline">
+      <span>See what changed.</span>
+      <span>Understand why it matters.</span>
+      <span>Act before the shift becomes obvious.</span>
+    </h2>
+    <p class="cta-sub">Inflection OS is my personal cross-domain live tracker, built to monitor important entities in real time, update scenarios as new evidence arrives, and alert me when something actually matters.</p>
+    <div class="cta-row" style="justify-content:center;">
+      <a href="#domains" class="btn-primary">View Live Dashboard</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span class="footer-logo">Inflection OS</span>
+  <span class="footer-tag">Updated every 6 minutes</span>
+</footer>
+
+<script>
+(function () {
+  var DATA_URL = 'https://raw.githubusercontent.com/hr185882-creator/inflection-point-research/main/data.json';
+
+  function fmt(val, d) {
+    if (val === null || val === undefined) return '--';
+    return Number(val).toFixed(d !== undefined ? d : 2);
+  }
+
+  function fmtPct(val) {
+    if (val === null || val === undefined) return '';
+    var n = Number(val);
+    return (n >= 0 ? '+' : '') + n.toFixed(2) + '%';
+  }
+
+  function pctCls(val) {
+    if (val === null || val === undefined) return '';
+    return Number(val) >= 0 ? 'up' : 'dn';
+  }
+
+  function row(label, valHtml) {
+    return '<div class="live-row"><span class="live-row-label">' + label + '</span><span class="live-row-val">' + valHtml + '</span></div>';
+  }
+
+  function hl(text, url) {
+    var t = text ? (text.length > 62 ? text.slice(0, 62) + '...' : text) : '--';
+    var c = url ? '<a href="' + url + '" target="_blank" rel="noopener">' + t + '</a>' : t;
+    return '<div class="live-headline">&rsaquo; ' + c + '</div>';
+  }
+
+  function timeAgo(iso) {
+    if (!iso) return '--';
+    var s = Math.floor((Date.now() - new Date(iso).getTime()) / 1000);
+    if (s < 60) return s + 's ago';
+    if (s < 3600) return Math.floor(s / 60) + 'm ago';
+    if (s < 86400) return Math.floor(s / 3600) + 'h ago';
+    return Math.floor(s / 86400) + 'd ago';
+  }
+
+  function show(lid, did, html) {
+    var l = document.getElementById(lid), d = document.getElementById(did);
+    if (l) l.style.display = 'none';
+    if (d) { d.innerHTML = html; d.style.display = 'flex'; }
+  }
+
+  function renderAll(raw) {
+    var d  = raw.domains || {};
+    var m  = d.markets    || {};
+    var e  = d.energy     || {};
+    var c  = d.companies  || {};
+    var s  = d.sports     || {};
+    var g  = d.geopolitics|| {};
+    var t  = d.technology || {};
+    var p  = d.policy     || {};
+    var mq = m.quotes || {};
+    var eq = e.quotes || {};
+    var cq = c.quotes || {};
+
+    // ── Ticker bar ────────────────────────────────────────────────
+    var ticks = [
+      {l:'SPY',   v: mq['SPY']     ? '$'+fmt(mq['SPY'].price,2)     : '--', pct: mq['SPY']     ? mq['SPY'].change_pct     : null},
+      {l:'BTC',   v: mq['BTC-USD'] ? '$'+fmt(mq['BTC-USD'].price,0) : '--', pct: mq['BTC-USD'] ? mq['BTC-USD'].change_pct : null},
+      {l:'DXY',   v: mq['DX-Y.NYB']? fmt(mq['DX-Y.NYB'].price,2)   : '--', pct: mq['DX-Y.NYB']? mq['DX-Y.NYB'].change_pct: null},
+      {l:'10Y',   v: m.yield_10y   ? fmt(m.yield_10y,2)+'%'         : '--', pct: null},
+      {l:'EUR/USD',v: mq['EURUSD=X']? fmt(mq['EURUSD=X'].price,4)   : '--', pct: mq['EURUSD=X']? mq['EURUSD=X'].change_pct: null},
+      {l:'WTI',   v: eq['CL=F']   ? '$'+fmt(eq['CL=F'].price,2)    : '--', pct: eq['CL=F']   ? eq['CL=F'].change_pct    : null},
+      {l:'BRENT', v: eq['BZ=F']   ? '$'+fmt(eq['BZ=F'].price,2)    : '--', pct: eq['BZ=F']   ? eq['BZ=F'].change_pct    : null},
+      {l:'GOLD',  v: mq['GLD']    ? '$'+fmt(mq['GLD'].price,2)     : '--', pct: mq['GLD']    ? mq['GLD'].change_pct     : null}
+    ];
+    var tk = document.getElementById('ticker');
+    if (tk) tk.innerHTML = ticks.map(function(x){
+      var ph = x.pct !== null && x.pct !== undefined
+        ? ' <span class="'+pctCls(x.pct)+'">'+fmtPct(x.pct)+'</span>' : '';
+      return '<span class="tick-item"><span class="tick-label">'+x.l+'</span> <span class="tick-val">'+x.v+'</span>'+ph+'</span>';
+    }).join('');
+    var ub = document.getElementById('last-updated-bar');
+    if (ub) ub.textContent = 'Updated ' + timeAgo(raw.fetched_at || m.last_updated);
+
+    // ── Markets ───────────────────────────────────────────────────
+    var mh = '';
+    ['SPY','QQQ','GLD','TLT','BTC-USD','EURUSD=X'].forEach(function(sym){
+      var q = mq[sym]; if (!q) return;
+      var label = q.label || sym;
+      var val = sym === 'BTC-USD' ? '$'+fmt(q.price,0) : sym === 'EURUSD=X' ? fmt(q.price,4) : '$'+fmt(q.price,2);
+      val += ' <span class="'+pctCls(q.change_pct)+'">'+fmtPct(q.change_pct)+'</span>';
+      mh += row(label, val);
+    });
+    if (m.yield_10y) mh += row('10Y Treasury Yield', fmt(m.yield_10y,2)+'%');
+    show('mkt-loading','mkt-live',mh || row('Markets','--'));
+
+    // ── Energy ────────────────────────────────────────────────────
+    var eh = '';
+    ['CL=F','BZ=F','NG=F','XLE'].forEach(function(sym){
+      var q = eq[sym]; if (!q) return;
+      eh += row(q.label||sym, '$'+fmt(q.price,2)+' <span class="'+pctCls(q.change_pct)+'">'+fmtPct(q.change_pct)+'</span>');
+    });
+    if ((e.headlines||[]).length) {
+      eh += '<div style="margin-top:10px">';
+      e.headlines.slice(0,2).forEach(function(x){ eh += hl(x.title,x.link); });
+      eh += '</div>';
+    }
+    show('nrg-loading','nrg-live',eh || row('Energy','--'));
+
+    // ── Companies ─────────────────────────────────────────────────
+    var ch = '';
+    ['NVDA','MSFT','AAPL','META','TSLA','AMZN','GOOGL'].forEach(function(sym){
+      var q = cq[sym]; if (!q) return;
+      ch += row(q.label||sym, '$'+fmt(q.price,2)+' <span class="'+pctCls(q.change_pct)+'">'+fmtPct(q.change_pct)+'</span>');
+    });
+    var filings = c.recent_filings || [];
+    if (filings.length) {
+      ch += '<div style="margin-top:10px">';
+      filings.slice(0,2).forEach(function(x){ ch += hl(x.title,x.link); });
+      ch += '</div>';
+    }
+    show('co-loading','co-live',ch || row('Companies','--'));
+
+    // ── Sports ────────────────────────────────────────────────────
+    var sh = '';
+    var scores = s.scores || {};
+    ['nfl','nba','mlb'].forEach(function(lid){
+      var lg = scores[lid]; if (!lg || !lg.games || !lg.games.length) return;
+      sh += '<div style="margin-bottom:8px"><span style="font-family:Courier New,monospace;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:var(--accent-dim)">'+lg.label+'</span></div>';
+      lg.games.slice(0,2).forEach(function(g){
+        var score = g.home_score !== '' && g.away_score !== ''
+          ? g.away+' '+g.away_score+' @ '+g.home+' '+g.home_score
+          : g.away+' @ '+g.home;
+        sh += row(score, g.status);
+      });
+    });
+    var injuries = s.injuries || {};
+    var injList = (injuries.nfl||[]).concat(injuries.nba||[]).slice(0,3);
+    if (injList.length) {
+      sh += '<div style="margin-top:10px">';
+      injList.forEach(function(p){ if(p.player) sh += hl(p.player+' ('+p.team+') \u2014 '+p.status, ''); });
+      sh += '</div>';
+    }
+    show('spt-loading','spt-live',sh || '<div class="live-headline">No games scheduled</div>');
+
+    // ── Geopolitics ───────────────────────────────────────────────
+    var gh = '';
+    var geo_heads = g.headlines || [];
+    if (geo_heads.length) geo_heads.slice(0,5).forEach(function(x){ gh += hl(x.title,x.link); });
+    else gh = '<div class="live-headline">No data</div>';
+    show('geo-loading','geo-live',gh);
+
+    // ── Technology ────────────────────────────────────────────────
+    var th = '';
+    var hn = t.hn_top || [];
+    if (hn.length) hn.slice(0,4).forEach(function(x){ th += hl(x.title+' ('+x.score+'pts)',x.url); });
+    var tech_news = t.tech_headlines || [];
+    if (tech_news.length) {
+      th += '<div style="margin-top:8px">';
+      tech_news.slice(0,2).forEach(function(x){ th += hl(x.title,x.link||x.url); });
+      th += '</div>';
+    }
+    show('tech-loading','tech-live',th || '<div class="live-headline">No data</div>');
+
+    // ── Policy ────────────────────────────────────────────────────
+    var ph2 = '';
+    var bills = p.bills || [];
+    var rules = p.federal_rules || [];
+    var scotus = p.scotus || [];
+    if (bills.length) { ph2 += '<div style="margin-bottom:6px"><span style="font-family:Courier New,monospace;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:var(--accent-dim)">CONGRESS</span></div>'; bills.slice(0,2).forEach(function(x){ ph2 += hl(x.title,x.link); }); }
+    if (rules.length) { ph2 += '<div style="margin:8px 0 6px"><span style="font-family:Courier New,monospace;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:var(--accent-dim)">FED REGISTER</span></div>'; rules.slice(0,2).forEach(function(x){ ph2 += hl(x.title,x.link); }); }
+    if (scotus.length) { ph2 += '<div style="margin:8px 0 6px"><span style="font-family:Courier New,monospace;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:var(--accent-dim)">SCOTUS</span></div>'; scotus.slice(0,2).forEach(function(x){ ph2 += hl(x.title,x.link); }); }
+    show('pol-loading','pol-live',ph2 || '<div class="live-headline">No data</div>');
+  }
+
+  // Legal
+  function renderLegal(d) {
+    var leg = d.legal;
+    if (leg) {
+      var legEl = document.getElementById('leg-live');
+      var legLoad = document.getElementById('leg-loading');
+      if (legEl) {
+        var legHtml = '';
+        if (leg.cases && leg.cases.length) {
+          leg.cases.slice(0, 5).forEach(function(c) {
+            legHtml += '<div class="live-row" style="flex-direction:column;gap:2px;margin-bottom:8px;">';
+            legHtml += '<a href="' + (c.link || '#') + '" target="_blank" style="color:var(--text);text-decoration:none;font-size:11px;font-family:Courier New;">' + c.title + '</a>';
+            legHtml += '<span style="color:var(--accent);font-size:10px;font-family:Courier New;">' + (c.tag || '') + (c.court ? ' — ' + c.court : '') + (c.date ? ' (' + c.date + ')' : '') + '</span>';
+            legHtml += '</div>';
+          });
+        }
+        if (leg.scotus_opinions && leg.scotus_opinions.length) {
+          legHtml += '<div style="margin-top:6px;padding-top:6px;border-top:1px solid var(--border);font-family:Courier New;font-size:10px;color:var(--accent);">SCOTUS</div>';
+          leg.scotus_opinions.slice(0, 2).forEach(function(o) {
+            legHtml += '<div class="live-row" style="flex-direction:column;gap:1px;margin-bottom:4px;">';
+            legHtml += '<a href="' + (o.link || '#') + '" target="_blank" style="color:var(--text);text-decoration:none;font-size:11px;font-family:Courier New;">' + o.title + '</a>';
+            legHtml += '</div>';
+          });
+        }
+        if (!legHtml) legHtml = '<span class="live-headline">No cases returned this cycle</span>';
+        legEl.innerHTML = legHtml;
+        legEl.style.display = 'flex';
+        if (legLoad) legLoad.style.display = 'none';
+      }
+    }
+  }
+
+  function loadData() {
+    fetch(DATA_URL + '?t=' + Date.now())
+      .then(function(r){ return r.json(); })
+      .then(function(d){ renderAll(d); renderLegal(d); })
+      .catch(function(){
+        ['geo','mkt','nrg','co','spt','tech','pol','leg'].forEach(function(id){
+          var el = document.getElementById(id+'-loading');
+          if (el) el.textContent = 'Data unavailable';
+        });
+      });
+  }
+
+  loadData();
+  setInterval(loadData, 5 * 60 * 1000);
+})();
+</script>
+
+</body>
+</html>
