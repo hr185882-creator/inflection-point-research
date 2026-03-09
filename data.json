@@ -1,187 +1,166 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-09T18:32:55Z",
+  "fetched_at": "2026-03-09T17:37:34Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-09T18:32:26Z",
+      "last_updated": "2026-03-09T17:37:35Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
-          "price": 670.46,
+          "price": 668.62,
           "prev_close": 672.38,
-          "change": -1.92,
-          "change_pct": -0.29,
+          "change": -3.76,
+          "change_pct": -0.56,
           "currency": "USD"
         },
         "QQQ": {
           "label": "Nasdaq 100 ETF",
-          "price": 599.89,
+          "price": 598.3,
           "prev_close": 599.75,
-          "change": 0.14,
-          "change_pct": 0.02,
+          "change": -1.45,
+          "change_pct": -0.24,
           "currency": "USD"
         },
         "GLD": {
           "label": "Gold ETF",
-          "price": 469.2,
+          "price": 468.02,
           "prev_close": 473.51,
-          "change": -4.31,
-          "change_pct": -0.91,
+          "change": -5.49,
+          "change_pct": -1.16,
           "currency": "USD"
         },
         "TLT": {
           "label": "20Y Treasury ETF",
-          "price": 88.938,
+          "price": 88.955,
           "prev_close": 88.46,
-          "change": 0.478,
-          "change_pct": 0.54,
+          "change": 0.495,
+          "change_pct": 0.56,
           "currency": "USD"
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 68567.33,
+          "price": 68724.87,
           "prev_close": 65975.7,
-          "change": 2591.63,
-          "change_pct": 3.93,
+          "change": 2749.17,
+          "change_pct": 4.17,
           "currency": "USD"
         },
         "EURUSD=X": {
           "label": "EUR/USD",
-          "price": 1.1585,
+          "price": 1.1587,
           "prev_close": 1.1621,
-          "change": -0.0036,
-          "change_pct": -0.31,
+          "change": -0.0034,
+          "change_pct": -0.29,
           "currency": "USD"
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 99.157,
+          "price": 99.117,
           "prev_close": 98.986,
-          "change": 0.171,
-          "change_pct": 0.17,
+          "change": 0.131,
+          "change_pct": 0.13,
           "currency": "USD"
         }
       },
       "yield_10y": 4.13,
-      "headline": "SPY -0.29%  |  BTC $68,567  |  10Y 4.13%"
+      "headline": "SPY -0.56%  |  BTC $68,725  |  10Y 4.13%"
     },
     "energy": {
-      "last_updated": "2026-03-09T18:32:37Z",
+      "last_updated": "2026-03-09T17:37:45Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 93.63,
+          "price": 94.82,
           "prev_close": 90.9,
-          "change": 2.73,
-          "change_pct": 3.0,
+          "change": 3.92,
+          "change_pct": 4.31,
           "currency": "USD"
         },
         "NG=F": {
           "label": "Natural Gas ($/MMBtu)",
-          "price": 3.106,
+          "price": 3.113,
           "prev_close": 3.186,
-          "change": -0.08,
-          "change_pct": -2.51,
+          "change": -0.073,
+          "change_pct": -2.29,
           "currency": "USD"
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 97.86,
+          "price": 99.06,
           "prev_close": 92.69,
-          "change": 5.17,
-          "change_pct": 5.58,
+          "change": 6.37,
+          "change_pct": 6.87,
           "currency": "USD"
         },
         "XLE": {
           "label": "Energy ETF",
-          "price": 56.605,
+          "price": 56.405,
           "prev_close": 56.57,
-          "change": 0.035,
-          "change_pct": 0.06,
+          "change": -0.165,
+          "change_pct": -0.29,
           "currency": "USD"
         }
       },
-      "headlines": [
-        {
-          "title": "U.S. exports of major transportation fuels in 2025 were about the same as in 2024",
-          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67304",
-          "published": "Mon, 09 Mar 2026 09:00:00 EST"
-        },
-        {
-          "title": "U.S. electricity generation in 2025 hit a record, again",
-          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67284",
-          "published": "Thu, 05 Mar 2026 09:00:00 EST"
-        },
-        {
-          "title": "U.S. LNG developers sign highest volume of sale and purchase contracts since 2022",
-          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67264",
-          "published": "Tue, 03 Mar 2026 09:00:00 EST"
-        },
-        {
-          "title": "Nuclear reactor restart in Japan will likely displace natural gas electricity generation",
-          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67244",
-          "published": "Mon, 02 Mar 2026  09:00:00 EST"
-        }
-      ],
-      "headline": "WTI $93.63/bbl"
+      "headlines": [],
+      "headline": "WTI $94.82/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-09T18:32:38Z",
+      "last_updated": "2026-03-09T17:37:47Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
-          "price": 180.035,
+          "price": 179.26,
           "prev_close": 177.885,
-          "change": 2.15,
-          "change_pct": 1.21,
+          "change": 1.375,
+          "change_pct": 0.77,
           "currency": "USD"
         },
         "MSFT": {
           "label": "Microsoft",
-          "price": 405.5,
+          "price": 405.17,
           "prev_close": 408.96,
-          "change": -3.46,
-          "change_pct": -0.85,
+          "change": -3.79,
+          "change_pct": -0.93,
           "currency": "USD"
         },
         "AAPL": {
           "label": "Apple",
-          "price": 257.36,
+          "price": 256.23,
           "prev_close": 257.46,
-          "change": -0.1,
-          "change_pct": -0.04,
+          "change": -1.23,
+          "change_pct": -0.48,
           "currency": "USD"
         },
         "META": {
           "label": "Meta",
-          "price": 635.855,
+          "price": 634.275,
           "prev_close": 644.86,
-          "change": -9.005,
-          "change_pct": -1.4,
+          "change": -10.585,
+          "change_pct": -1.64,
           "currency": "USD"
         },
         "TSLA": {
           "label": "Tesla",
-          "price": 391.44,
+          "price": 389.24,
           "prev_close": 396.73,
-          "change": -5.29,
-          "change_pct": -1.33,
+          "change": -7.49,
+          "change_pct": -1.89,
           "currency": "USD"
         },
         "AMZN": {
           "label": "Amazon",
-          "price": 209.585,
+          "price": 209.23,
           "prev_close": 213.12,
-          "change": -3.535,
-          "change_pct": -1.66,
+          "change": -3.89,
+          "change_pct": -1.83,
           "currency": "USD"
         },
         "GOOGL": {
           "label": "Alphabet",
-          "price": 301.22,
+          "price": 301.03,
           "prev_close": 298.27,
-          "change": 2.95,
-          "change_pct": 0.99,
+          "change": 2.76,
+          "change_pct": 0.93,
           "currency": "USD"
         }
       },
@@ -212,10 +191,10 @@
           "published": "2026-03-09"
         }
       ],
-      "headline": "NVDA 1.21%  |  MSFT -0.85%"
+      "headline": "NVDA 0.77%  |  MSFT -0.93%"
     },
     "sports": {
-      "last_updated": "2026-03-09T18:32:40Z",
+      "last_updated": "2026-03-09T17:37:47Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -268,30 +247,30 @@
             {
               "home": "ATL",
               "away": "MIN",
-              "home_score": "8",
-              "away_score": "4",
-              "status": "End 4th"
+              "home_score": "5",
+              "away_score": "0",
+              "status": "Bot 1st"
             },
             {
               "home": "BOS",
               "away": "PHI",
-              "home_score": "5",
-              "away_score": "3",
-              "status": "Top 6th"
+              "home_score": "0",
+              "away_score": "2",
+              "status": "Top 3rd"
             },
             {
               "home": "DET",
               "away": "TB",
               "home_score": "3",
-              "away_score": "2",
-              "status": "Top 6th"
+              "away_score": "0",
+              "status": "End 2nd"
             },
             {
               "home": "HOU",
               "away": "STL",
-              "home_score": "3",
-              "away_score": "2",
-              "status": "Bot 4th"
+              "home_score": "0",
+              "away_score": "0",
+              "status": "Top 2nd"
             }
           ]
         }
@@ -299,16 +278,16 @@
       "injuries": {
         "nfl": [
           {
-            "player": "Tyler Allgeier",
-            "team": "",
-            "status": "Active",
-            "detail": "Allgeier agreed to terms on a two-year, $12.25 million contract with Arizona on Monday, Mike Garafolo of NFL Network reports."
-          },
-          {
             "player": "Blake Gillikin",
             "team": "",
             "status": "Questionable",
             "detail": "Gillikin (back) and the Cardinals agreed on a one-year, $2.65 million contract Sunday, Mike Garafolo of NFL Network reports."
+          },
+          {
+            "player": "Chad Ryland",
+            "team": "",
+            "status": "Active",
+            "detail": "Ryland agreed to sign a one-year deal with the Cardinals on Sunday, Mike Garafolo of NFL Network reports."
           },
           {
             "player": "Tyrone Wheatley Jr.",
@@ -317,10 +296,10 @@
             "detail": "questionable"
           },
           {
-            "player": "Nick Folk",
+            "player": "Austin Hooper",
             "team": "",
             "status": "Active",
-            "detail": "Folk agreed to terms Monday on a two-year contract with the Falcons, Tom Pelissero of NFL Network reports."
+            "detail": "Hooper agreed on a one-year, $3.25 million contract with the Falcons on Monday, Ian Rapoport of NFL Network reports."
           },
           {
             "player": "Tyler Huntley",
@@ -329,10 +308,10 @@
             "detail": "Huntley and the Ravens agreed to a two-year, $11 million contract Saturday, Adam Schefter of ESPN reports."
           },
           {
-            "player": "Nate Wiggins",
+            "player": "Tyler Linderbaum",
             "team": "",
-            "status": "Questionable",
-            "detail": "Wiggins (undisclosed) underwent offseason surgery, Jonas Shaffer of TheBaltimoreBanner.com reports."
+            "status": "Active",
+            "detail": "Ravens GM Eric DeCosta said Tuesday that Baltimore has made a market-setting offer to impending free agent Linderbaum, Jeff Zrebiec of The Athletic reports."
           }
         ],
         "nba": [
@@ -365,7 +344,7 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-09T18:32:49Z",
+      "last_updated": "2026-03-09T17:37:53Z",
       "headlines": [
         {
           "title": "Russian economy withstood pressure from outside German expert",
@@ -383,7 +362,7 @@
           "published": "20260205T183000Z"
         },
         {
-          "title": "U . S . sanctions Gaza charities over alleged Hamas ties - NaturalNews . com",
+          "title": "U . S . sanctions Gaza charities over alleged Hamas ties \u2013 NaturalNews . com",
           "link": "https://www.naturalnews.com/2026-01-26-us-sanctions-gaza-charities-over-hamas-ties.html",
           "published": "20260126T130000Z"
         },
@@ -394,59 +373,59 @@
         },
         {
           "title": "Who is Mojtaba Khamenei, Iran's new supreme leader?",
-          "link": "https://www.bbc.com/news/articles/c78xxg05w0zo",
+          "link": "https://www.bbc.com/news/articles/c78xxg05w0zo?at_medium=RSS&at_campaign=rss",
           "published": "Sun, 08 Mar 2026 21:51:48 GMT"
         },
         {
           "title": "US teacher killed after toilet paper prank goes wrong",
-          "link": "https://www.bbc.com/news/articles/cdr24g1p3vpo",
+          "link": "https://www.bbc.com/news/articles/cdr24g1p3vpo?at_medium=RSS&at_campaign=rss",
           "published": "Mon, 09 Mar 2026 17:09:21 GMT"
         }
       ],
       "headline": "Russian economy withstood pressure from outside German expert"
     },
     "technology": {
-      "last_updated": "2026-03-09T18:32:49Z",
+      "last_updated": "2026-03-09T17:37:54Z",
       "hn_top": [
-        {
-          "title": "Fixfest is a global gathering of repairers, tinkerers, and activists",
-          "url": "https://fixfest.therestartproject.org/",
-          "score": 52,
-          "comments": 0
-        },
         {
           "title": "Building a Procedural Hex Map with Wave Function Collapse",
           "url": "https://felixturner.github.io/hex-map-wfc/article/",
-          "score": 98,
-          "comments": 18
+          "score": 22,
+          "comments": 1
         },
         {
-          "title": "JSLinux Now Supports x86_64",
-          "url": "https://bellard.org/jslinux/",
-          "score": 37,
-          "comments": 9
+          "title": "Restoring a Sun SPARCstation IPX Part 1: PSU and Nvram",
+          "url": "https://www.rs-online.com/designspark/restoring-a-sun-sparcstation-ipx-part-1-psu-and-nvram",
+          "score": 39,
+          "comments": 14
         },
         {
-          "title": "Launch HN: Terminal Use (YC W26) - Vercel for filesystem-based agents",
+          "title": "Launch HN: Terminal Use (YC W26) \u2013 Vercel for filesystem-based agents",
           "url": "https://news.ycombinator.com/item?id=47311657",
-          "score": 27,
-          "comments": 15
+          "score": 12,
+          "comments": 8
         },
         {
-          "title": "DARPA's new X-76 Experimental Plane",
-          "url": "https://www.darpa.mil/news/2026/darpa-new-x-76-speed-of-jet-freedom-of-helicopter",
-          "score": 35,
-          "comments": 31
+          "title": "Flash media longevity testing \u2013 6 years later",
+          "url": "https://old.reddit.com/r/DataHoarder/comments/1q6xnun/flash_media_longevity_testing_6_years_later/",
+          "score": 64,
+          "comments": 22
+        },
+        {
+          "title": "Fontcrafter: Turn Your Handwriting into a Real Font",
+          "url": "https://arcade.pirillo.com/fontcrafter.html",
+          "score": 315,
+          "comments": 106
         }
       ],
       "tech_headlines": [
         {
-          "title": "Don't Expect Big Surprises in the Government's Alien Files",
+          "title": "Don\u2019t Expect Big Surprises in the Government\u2019s Alien Files",
           "link": "https://www.wired.com/story/dont-expect-big-surprises-in-the-governments-alien-files/",
           "published": "Mon, 09 Mar 2026 10:00:00 +0000"
         },
         {
-          "title": "Why RFK's CDC Is Endorsing 'Shared Decisionmaking' for Vaccines",
+          "title": "Why RFK\u2019s CDC Is Endorsing \u2018Shared Decisionmaking\u2019 for Vaccines",
           "link": "https://www.wired.com/story/why-rfks-cdc-is-endorsing-shared-decision-making-for-vaccines/",
           "published": "Mon, 09 Mar 2026 09:30:00 +0000"
         },
@@ -456,7 +435,7 @@
           "published": "Sun, 08 Mar 2026 09:00:00 +0000"
         },
         {
-          "title": "Sleep Apnea Often Goes Undetected in Women. That's Starting to Change",
+          "title": "Sleep Apnea Often Goes Undetected in Women. That\u2019s Starting to Change",
           "link": "https://www.wired.com/story/sleep-apnea-women-detection-treatment/",
           "published": "Fri, 06 Mar 2026 09:30:00 +0000"
         },
@@ -466,10 +445,10 @@
           "published": "Wed, 04 Mar 2026 22:13:27 +0000"
         }
       ],
-      "headline": "Fixfest is a global gathering of repairers, tinkerers, and activists"
+      "headline": "Building a Procedural Hex Map with Wave Function Collapse"
     },
     "policy": {
-      "last_updated": "2026-03-09T18:32:50Z",
+      "last_updated": "2026-03-09T17:37:54Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -508,7 +487,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-09T18:32:55Z",
+      "last_updated": "2026-03-09T17:37:56Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
