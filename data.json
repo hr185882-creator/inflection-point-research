@@ -1,1 +1,549 @@
-ewogICJsYXN0X3VwZGF0ZWQiOiAiMjAyNi0wMy0wOVQyMjowNjoyMVoiLAogICJleGVjdXRpb24iOiAyNiwKICAiZG9tYWlucyI6IHsKICAgICJtYXJrZXRzIjogewogICAgICAibGFzdF91cGRhdGVkIjogIjIwMjYtMDMtMDlUMjI6MDY6MjFaIiwKICAgICAgInNvdXJjZSI6ICJZYWhvbyBGaW5hbmNlIC8gQUludmVzdCAvIENvaW5EZXNrIC8gRm9ydHVuZSAvIENOQkMiLAogICAgICAiZXF1aXRpZXMiOiB7CiAgICAgICAgIlNQWSI6IHsKICAgICAgICAgICJ5dGRfcGN0IjogLTEuNCwKICAgICAgICAgICJub3RlIjogIk5ldCBvdXRmbG93ICQxMC44N0Igd2VlayBvZiBNYXIgMi02OyBBVU0gJDY3MC41OEIiCiAgICAgICAgfSwKICAgICAgICAiUVFRIjogewogICAgICAgICAgInl0ZF9wY3QiOiAtMi4zNywKICAgICAgICAgICJub3RlIjogIk5ldCBvdXRmbG93ICQxLjc2QjsgQVVNICQzODYuNzlCIgogICAgICAgIH0sCiAgICAgICAgIkdMRCI6IHsKICAgICAgICAgICJ5dGRfcGN0IjogMTkuNDgsCiAgICAgICAgICAibm90ZSI6ICJOZXQgb3V0ZmxvdyAkMy4zMEIgZGVzcGl0ZSBzdHJvbmcgZ2FpbnM7IEFVTSAkMTc2Ljg4QiIKICAgICAgICB9LAogICAgICAgICJUTFQiOiB7CiAgICAgICAgICAicHJpY2UiOiA4OS4xNywKICAgICAgICAgICJub3RlIjogIjIwKyB5ciB0cmVhc3VyeSBib25kIEVURiIKICAgICAgICB9LAogICAgICAgICJWR1QiOiB7CiAgICAgICAgICAieXRkX3BjdCI6IC00LjYxLAogICAgICAgICAgIm5vdGUiOiAiVGVjaCBFVEYgbmV0IG91dGZsb3cgJDIuMzZCIgogICAgICAgIH0sCiAgICAgICAgIlhMRiI6IHsKICAgICAgICAgICJ5dGRfcGN0IjogLTcuNjcsCiAgICAgICAgICAibm90ZSI6ICJGaW5hbmNpYWxzIG5ldCBvdXRmbG93ICQ2MDNNIgogICAgICAgIH0sCiAgICAgICAgIlhMSSI6IHsKICAgICAgICAgICJ5dGRfcGN0IjogOS41NSwKICAgICAgICAgICJub3RlIjogIkluZHVzdHJpYWxzIG91dHBlcmZvcm1pbmcgZGVzcGl0ZSBvdXRmbG93cyIKICAgICAgICB9LAogICAgICAgICJBQVBMIjogewogICAgICAgICAgInByaWNlIjogMjU5Ljg4CiAgICAgICAgfSwKICAgICAgICAiTVNGVCI6IHsKICAgICAgICAgICJwcmljZSI6IDQwOS40MQogICAgICAgIH0sCiAgICAgICAgIk5WREEiOiB7CiAgICAgICAgICAicHJpY2UiOiAxODIuNjUKICAgICAgICB9LAogICAgICAgICJNRVRBIjogewogICAgICAgICAgInByaWNlIjogNjQ3LjM5CiAgICAgICAgfSwKICAgICAgICAiQU1aTiI6IHsKICAgICAgICAgICJwcmljZSI6IDIxMy40OQogICAgICAgIH0sCiAgICAgICAgIlRTTEEiOiB7CiAgICAgICAgICAicHJpY2UiOiAzOTguNjgKICAgICAgICB9LAogICAgICAgICJHT09HIjogewogICAgICAgICAgInByaWNlIjogMzA2LjAxCiAgICAgICAgfSwKICAgICAgICAiQU1EIjogewogICAgICAgICAgInByaWNlIjogMjAyLjY4CiAgICAgICAgfSwKICAgICAgICAiT1JDTCI6IHsKICAgICAgICAgICJwcmljZSI6IDE1MS41NgogICAgICAgIH0sCiAgICAgICAgIkJBQyI6IHsKICAgICAgICAgICJwcmljZSI6IDQ3LjkKICAgICAgICB9LAogICAgICAgICJYT00iOiB7CiAgICAgICAgICAibm90ZSI6ICJVcCA2LjIlIG9uIG9pbCBzdXJnZSIKICAgICAgICB9LAogICAgICAgICJDVlgiOiB7CiAgICAgICAgICAibm90ZSI6ICJVcCA1LjglIG9uIG9pbCBzdXJnZSIKICAgICAgICB9CiAgICAgIH0sCiAgICAgICJjcnlwdG8iOiB7CiAgICAgICAgIkJUQyI6IHsKICAgICAgICAgICJwcmljZSI6IDY4OTMyLjk3LAogICAgICAgICAgImNoYW5nZV8yNGhfcGN0IjogMi44OSwKICAgICAgICAgICJub3RlIjogIlJpc2luZyBhbWlkIElyYW4gY29uZmxpY3Q7IHJlc2lsaWVudCB2cyBlcXVpdGllcyIKICAgICAgICB9LAogICAgICAgICJFVEgiOiB7CiAgICAgICAgICAicHJpY2UiOiAyMDAyLjg2LAogICAgICAgICAgImNoYW5nZV8yNGhfcGN0IjogMy42NCwKICAgICAgICAgICJub3RlIjogIkRlZmVuZGluZyAkMjAwMCBzdXBwb3J0IgogICAgICAgIH0sCiAgICAgICAgIlhSUCI6IHsKICAgICAgICAgICJwcmljZSI6IDEuMzUKICAgICAgICB9LAogICAgICAgICJTT0wiOiB7CiAgICAgICAgICAicHJpY2UiOiA4NS45LAogICAgICAgICAgImNoYW5nZV8yNGhfcGN0IjogNC40NQogICAgICAgIH0sCiAgICAgICAgInRvdGFsX21hcmtldF9jYXBfdHJpbGxpb25zIjogMi4zMSwKICAgICAgICAiYWx0Y29pbl9zZWFzb25faW5kZXgiOiAzNgogICAgICB9LAogICAgICAiY29tbW9kaXRpZXMiOiB7CiAgICAgICAgImJyZW50X2NydWRlIjogewogICAgICAgICAgInByaWNlIjogMTAzLjQ3LAogICAgICAgICAgImNoYW5nZV9wY3QiOiAxMS42LAogICAgICAgICAgInNlc3Npb25faGlnaCI6IDExOS41LAogICAgICAgICAgIm5vdGUiOiAiU3RyYWl0IG9mIEhvcm11eiBjbG9zdXJlOyArMjQlIGZyb20gRnJpZGF5IGNsb3NlIgogICAgICAgIH0sCiAgICAgICAgInd0aV9jcnVkZSI6IHsKICAgICAgICAgICJwcmljZSI6IDEwMS45NywKICAgICAgICAgICJjaGFuZ2VfcGN0IjogMTIuMiwKICAgICAgICAgICJzZXNzaW9uX2hpZ2giOiAxMTkuNDgsCiAgICAgICAgICAibm90ZSI6ICJXVEkgYnJpZWZseSBicmVhY2hlZCAkMTIwIgogICAgICAgIH0sCiAgICAgICAgIm5vdGUiOiAiRzcgZW1lcmdlbmN5IG1lZXRpbmcgY2FsbGVkOyBJRUEgY29vcmRpbmF0ZWQgU1BSIHJlbGVhc2UgYmVpbmcgZGlzY3Vzc2VkIgogICAgICB9LAogICAgICAibWFjcm9fY29udGV4dCI6ICJJcmFuIGNvbmZsaWN0IHRyaWdnZXJlZCBTdHJhaXQgb2YgSG9ybXV6IGRlLWZhY3RvIGNsb3N1cmUgb24gTWFyIDkuIE9pbCBzdXJnZWQgMjQlLiBOYXNkYXEvUyZQIGZ1dHVyZXMgLTEuNSUrLiBCVEMgcmVzaWxpZW50ICsyLjglLiBHb2xkIGZlbGwgMS42JS4gU1BSIHJlbGVhc2UgYmVpbmcgY29vcmRpbmF0ZWQgYnkgRzcvSUVBLiIKICAgIH0sCiAgICAidGVjaF9oYWNrZXJfbmV3cyI6IHsKICAgICAgImxhc3RfdXBkYXRlZCI6ICIyMDI2LTAzLTA5VDIyOjA2OjIxWiIsCiAgICAgICJzb3VyY2UiOiAiSGFja2VyIE5ld3MgLyBNYXJrVGVjaFBvc3QgLyBPZmZpY2VDaGFpIiwKICAgICAgInRvcF9zdG9yaWVzIjogWwogICAgICAgIHsKICAgICAgICAgICJ0aXRsZSI6ICJBbmRyZWogS2FycGF0aHkgb3Blbi1zb3VyY2VzICdBdXRvcmVzZWFyY2gnOiA2MzAtbGluZSBQeXRob24gdG9vbCBsZXR0aW5nIEFJIGFnZW50cyBydW4gYXV0b25vbW91cyBNTCBleHBlcmltZW50cyBvbiBzaW5nbGUgR1BVcyIsCiAgICAgICAgICAic3VtbWFyeSI6ICJBZ2VudHMgaXRlcmF0ZSBvbiB0cmFpbmluZyBjb2RlIGF1dG9ub21vdXNseSBpbiA1LW1pbiBzcHJpbnRzOyBTaG9waWZ5IENFTyBUb2JpIEx1dGtlIHVzZWQgaXQgb3Zlcm5pZ2h0IGFuZCBhY2hpZXZlZCAxOSUgbW9kZWwgaW1wcm92ZW1lbnQuIEthcnBhdGh5OiAnV2hvIGtuZXcgZWFybHkgc2luZ3VsYXJpdHkgY291bGQgYmUgdGhpcyBmdW4/JyIsCiAgICAgICAgICAidXJsIjogImh0dHBzOi8vb2ZmaWNlY2hhaS5jb20vYWkvYW5kcmVqLWthcnBhdGh5cy1hdXRvcmVzZWFyY2gtcHJvamVjdC1sZXRzLWFnZW50cy1ydW4tMTAwLWFpLXJlc2VhcmNoLWV4cGVyaW1lbnRzLXdoaWxlLXlvdS1zbGVlcC8iLAogICAgICAgICAgImRhdGUiOiAiMjAyNi0wMy0wOSIKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICJ0aXRsZSI6ICJHb29nbGUgQUkgaW50cm9kdWNlcyAnQmF5ZXNpYW4gVGVhY2hpbmcnIHRvIGZpeCBMTE0gYmVsaWVmLXVwZGF0aW5nIHBsYXRlYXUiLAogICAgICAgICAgInN1bW1hcnkiOiAiU3RhbmRhcmQgTExNcyBzaG93IG5lYXItemVybyBpbXByb3ZlbWVudCBhZnRlciBmaXJzdCBpbnRlcmFjdGlvbiByb3VuZC4gQmF5ZXNpYW4gVGVhY2hpbmcgU0ZUIGFjaGlldmVzIH44MCUgYWxpZ25tZW50IHdpdGggZ29sZC1zdGFuZGFyZCBCYXllc2lhbiBzdHJhdGVneTsgdHJhbnNmZXJzIGFjcm9zcyBkb21haW5zLiIsCiAgICAgICAgICAidXJsIjogImh0dHBzOi8vd3d3Lm1hcmt0ZWNocG9zdC5jb20vMjAyNi8wMy8wOS90aGUtYmF5ZXNpYW4tdXBncmFkZS13aHktZ29vZ2xlLWFpcy1uZXctdGVhY2hpbmctbWV0aG9kLWlzLXRoZS1rZXktdG8tbGxtLXJlYXNvbmluZy8iLAogICAgICAgICAgImRhdGUiOiAiMjAyNi0wMy0wOSIKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICJ0aXRsZSI6ICJBbnRocm9waWMgc3VlcyBUcnVtcCBhZG1pbmlzdHJhdGlvbiBhZnRlciBBSSBkaXNwdXRlIHdpdGggUGVudGFnb24iLAogICAgICAgICAgInN1bW1hcnkiOiAiQnJlYWtpbmc6IEFudGhyb3BpYyBoYXMgZmlsZWQgc3VpdCBhZ2FpbnN0IHRoZSBUcnVtcCBhZG1pbmlzdHJhdGlvbiBmb2xsb3dpbmcgYSBkaXNwdXRlIG92ZXIgQUkgcG9saWN5IGFuZCBQZW50YWdvbiBjb250cmFjdHMuIiwKICAgICAgICAgICJkYXRlIjogIjIwMjYtMDMtMDkiCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAidGl0bGUiOiAiQW5kcmV3IE5nJ3MgdGVhbSByZWxlYXNlcyBDb250ZXh0IEh1Yjogb3Blbi1zb3VyY2UgdG9vbCBnaXZpbmcgY29kaW5nIGFnZW50cyB1cC10by1kYXRlIEFQSSBkb2N1bWVudGF0aW9uIiwKICAgICAgICAgICJkYXRlIjogIjIwMjYtMDMtMDkiCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAidGl0bGUiOiAiU3BvdGlmeSB0aWdodGVucyBkZXZlbG9wZXIgQVBJIGFjY2VzcyAtLSBhbGwgZXhpc3RpbmcgaW50ZWdyYXRpb25zIGFmZmVjdGVkIGJ5IE1hcmNoIDkgZGVhZGxpbmUiLAogICAgICAgICAgInN1bW1hcnkiOiAiUHJlbWl1bSByZXF1aXJlZCBmb3IgRGV2IE1vZGU7IHNpbmdsZSBDbGllbnQgSUQgcGVyIGRldmVsb3BlcjsgNS11c2VyIGxpbWl0LiBFZmZlY3RpdmUgTWFyY2ggOSwgMjAyNiBmb3IgYWxsIGV4aXN0aW5nIGFwcHMuIiwKICAgICAgICAgICJkYXRlIjogIjIwMjYtMDMtMDkiCiAgICAgICAgfQogICAgICBdCiAgICB9LAogICAgImdlb3BvbGl0aWNzX2dkZWx0IjogewogICAgICAibGFzdF91cGRhdGVkIjogIjIwMjYtMDMtMDlUMjI6MDY6MjFaIiwKICAgICAgInNvdXJjZSI6ICJDTkJDIC8gQ29pbkRlc2sgLyBOZXdzd2VlayAvIEZpbmFuY2lhbCBUaW1lcyIsCiAgICAgICJ0b3BfZXZlbnRzIjogWwogICAgICAgIHsKICAgICAgICAgICJoZWFkbGluZSI6ICJJcmFuLWNvbmZsaWN0IGVzY2FsYXRpb246IFN0cmFpdCBvZiBIb3JtdXogZGUtZmFjdG8gY2xvc2VkIGFmdGVyIGRyb25lL21pc3NpbGUgc3RyaWtlcyBvbiB0cmFuc2l0IHZlc3NlbHMiLAogICAgICAgICAgInNpZ25pZmljYW5jZSI6ICJDUklUSUNBTCAtLSB+MjAlIG9mIGdsb2JhbCBvaWwgc3VwcGx5IGRpc3J1cHRlZDsgSXJhcSwgS3V3YWl0IGJlZ2luIHByb2R1Y3Rpb24gc2h1dC1pbnM7IFVBRSBhdCByaXNrIHdpdGhpbiA1LTcgZGF5czsgU2F1ZGkgQXJhYmlhIGF0IHJpc2sgaW4gMi0zIHdlZWtzIGlmIGNsb3N1cmUgcGVyc2lzdHMiLAogICAgICAgICAgImRhdGUiOiAiMjAyNi0wMy0wOSIKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICJoZWFkbGluZSI6ICJHNyBlbWVyZ2VuY3kgbWVldGluZyBjb252ZW5lZCB0byBjb29yZGluYXRlIElFQSBzdHJhdGVnaWMgcGV0cm9sZXVtIHJlc2VydmUgcmVsZWFzZSIsCiAgICAgICAgICAic2lnbmlmaWNhbmNlIjogIkhJR0ggLS0gVUsgVHJlYXN1cnkgYW5kIEZyZW5jaCBnb3Zlcm5tZW50IGNvbmZpcm0gZW1lcmdlbmN5IGNhbGw7IEJyZW50IHB1bGxlZCBiYWNrIGZyb20gJDExOS41MCB0byB+JDEwMyBvbiBuZXdzIiwKICAgICAgICAgICJkYXRlIjogIjIwMjYtMDMtMDkiCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAiaGVhZGxpbmUiOiAiTmV3IElyYW4gU3VwcmVtZSBMZWFkZXIgTW9qdGFiYSBLaGFtZW5laTsgVHJ1bXAgc2F5cyBJcmFuIHdhciAnY291bGQgYmUgb3ZlciBzb29uJyIsCiAgICAgICAgICAic2lnbmlmaWNhbmNlIjogIkhJR0ggLS0gVHJ1bXAgY29tbWVudHMgY2F1c2VkIGNyeXB0by9zdG9ja3MgdG8gcGFydGlhbGx5IHJlY292ZXIgaW50cmFkYXkiLAogICAgICAgICAgImRhdGUiOiAiMjAyNi0wMy0wOSIKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICJoZWFkbGluZSI6ICJJcmFuIGRyb25lIHN0cmlrZSBvbiBCYWhyYWluIHdvdW5kcyAzMiBjaXZpbGlhbnMgaW5jbHVkaW5nIGNoaWxkcmVuIiwKICAgICAgICAgICJkYXRlIjogIjIwMjYtMDMtMDkiCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAiaGVhZGxpbmUiOiAiVVMgQXJteSBpZGVudGlmaWVzIDd0aCBVUyBjYXN1YWx0eSBhcyBOYXRpb25hbCBHdWFyZCBzb2xkaWVyIGluIElyYW4gY29uZmxpY3QiLAogICAgICAgICAgImRhdGUiOiAiMjAyNi0wMy0wOSIKICAgICAgICB9CiAgICAgIF0sCiAgICAgICJvaWxfc2NlbmFyaW9fYW5hbHlzaXMiOiAiUnlzdGFkIEVuZXJneTogQnJlbnQgJDEzNS9iYmwgaWYgY2xvc3VyZSBwZXJzaXN0cyA0IG1vbnRocy4gU29jR2VuOiBVQUUgbmV4dCBhdCByaXNrIHdpdGhpbiA1LTcgZGF5cy4gRXh4b25Nb2JpbCBjaGllZiBlY29ub21pc3Qgc2tlcHRpY2FsIG9mIHF1aWNrIHJlb3BlbmluZy4gSUVBIFNQUiByZWxlYXNlOiBidXlzIHRpbWUgYnV0IGNhbm5vdCBmaXggYmxvY2tlZCBtYXJpdGltZSByb3V0ZS4iCiAgICB9LAogICAgImxlZ2FsX2NvdXJ0bGlzdGVuZXIiOiB7CiAgICAgICJsYXN0X3VwZGF0ZWQiOiAiMjAyNi0wMy0wOVQyMjowNjoyMVoiLAogICAgICAic291cmNlIjogIk5CQyBOZXdzIC8gTGF3LmNvbSAvIE1vbmRhcSIsCiAgICAgICJ0b3BfY2FzZXMiOiBbCiAgICAgICAgewogICAgICAgICAgImNhc2UiOiAiRE9KIHYuIExpdmUgTmF0aW9uIC8gVGlja2V0bWFzdGVyIiwKICAgICAgICAgICJzdGF0dXMiOiAiU0VUVExFRCAtLSBNYXIgOSwgMjAyNiIsCiAgICAgICAgICAic3VtbWFyeSI6ICJMaXZlIE5hdGlvbiBhdm9pZHMgYnJlYWt1cC4gU2V0dGxlbWVudDogVGlja2V0bWFzdGVyIHdpbGwgb3Blbi1zb3VyY2UgdGlja2V0aW5nIHBsYXRmb3JtIGZvciBjb21wZXRpdG9ycyAoU2VhdEdlZWssIFN0dWJIdWIpOyBkaXZlc3QgdXAgdG8gMTMgYW1waGl0aGVhdGVyczsgcmVzZXJ2ZSA1MCUgdGlja2V0cyBmb3Igbm9uLWV4Y2x1c2l2ZSB2ZW51ZXM7IHByb2hpYml0ZWQgZnJvbSByZXRhbGlhdGluZyBhZ2FpbnN0IHZlbnVlcy4gU3RhdGUgQUdzIChOWSwgMjArIHN0YXRlcykgY29udGludWluZyBzZXBhcmF0ZSBzdWl0LiIsCiAgICAgICAgICAic2lnbmlmaWNhbmNlIjogIk1ham9yIHNpZ25hbCB0aGF0IGZlZGVyYWwgYW50aXRydXN0IGVuZm9yY2VtZW50IGlzIHNvZnRlbmluZyB1bmRlciBUcnVtcCBhZG1pbmlzdHJhdGlvbiIKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICJjYXNlIjogIkNoYW1iZXIgb2YgQ29tbWVyY2Ugdi4gRlRDIChIU1IgZmlsaW5nIHJ1bGVzKSIsCiAgICAgICAgICAic3RhdHVzIjogIkZpZnRoIENpcmN1aXQgYWRtaW5pc3RyYXRpdmUgc3RheSAtLSBleHBhbmRlZCBIU1IgZm9ybSByZW1haW5zIGluIGVmZmVjdCBwZW5kaW5nIGFwcGVhbCIsCiAgICAgICAgICAic3VtbWFyeSI6ICJEaXN0cmljdCBjb3VydCAoRS5ELiBUZXguKSB2YWNhdGVkIEZUQydzIGV4cGFuZGVkIHByZW1lcmdlciBub3RpZmljYXRpb24gZm9ybSBGZWIgMTIuIEZpZnRoIENpcmN1aXQgZ3JhbnRlZCBhZG1pbmlzdHJhdGl2ZSBzdGF5IEZlYiAxOS4gRlRDJ3MgZXhwYW5kZWQgZm9ybSBzdGF5cyBpbiBlZmZlY3QgdW50aWwgYXQgbGVhc3QgZnVydGhlciBvcmRlci4iLAogICAgICAgICAgImRhdGUiOiAiMjAyNi0wMy0wMiIKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICJjYXNlIjogIkdvb2dsZSBhbnRpdHJ1c3QgcmVtZWRpZXMiLAogICAgICAgICAgInN0YXR1cyI6ICJBY3RpdmUgLS0gdGVjaG5pY2FsIGNvbW1pdHRlZSBhcHBvaW50ZWQiLAogICAgICAgICAgInN1bW1hcnkiOiAiSnVkZ2UgTWVodGEgaGlyZWQgdGVjaG5pY2FsIGNvbW1pdHRlZSB0byBtb25pdG9yIEdvb2dsZSBjb21wbGlhbmNlIHdoaWxlIEQuQy4gQ2lyY3VpdCByZXZpZXdzIHJlbWVkaWVzIGFwcGVhbC4gQm90aCBET0ogYW5kIEdvb2dsZSBhcHBlYWxpbmcgZmluYWwganVkZ21lbnQuIiwKICAgICAgICAgICJkYXRlIjogIjIwMjYtMDMtMDUiCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAiY2FzZSI6ICJIVUQgZXZpY3Rpb24gbm90aWNlIHJ1bGUgLS0gdGVuYW50IGFkdm9jYWN5IGxhd3N1aXQiLAogICAgICAgICAgInN0YXR1cyI6ICJQcmVsaW1pbmFyeSBpbmp1bmN0aW9uIHNvdWdodCIsCiAgICAgICAgICAic3VtbWFyeSI6ICJIVUQgcmVzY2luZGVkIDMwLWRheSBldmljdGlvbiBub3RpY2UgcmVxdWlyZW1lbnQgZm9yIDJNKyBIVUQtYXNzaXN0ZWQgaG91c2Vob2xkcy4gVGVuYW50cycgZ3JvdXBzIHN1aW5nIG92ZXIgYnlwYXNzIG9mIG5vdGljZS1hbmQtY29tbWVudC4gUnVsZSB0YWtlcyBlZmZlY3QgTWFyY2ggMzAuIiwKICAgICAgICAgICJkYXRlIjogIjIwMjYtMDMtMDUiCiAgICAgICAgfQogICAgICBdCiAgICB9LAogICAgImZlZGVyYWxfcmVnaXN0ZXIiOiB7CiAgICAgICJsYXN0X3VwZGF0ZWQiOiAiMjAyNi0wMy0wOVQyMjowNjoyMVoiLAogICAgICAic291cmNlIjogIkZlZGVyYWwgUmVnaXN0ZXIgLyBKRFN1cHJhIC8gTmV3c3dlZWsiLAogICAgICAicmVjZW50X3J1bGVzIjogWwogICAgICAgIHsKICAgICAgICAgICJ0aXRsZSI6ICJIVUQgcmVzY2luZHMgMzAtZGF5IGV2aWN0aW9uIG5vdGljZSByZXF1aXJlbWVudCBmb3IgSFVELWFzc2lzdGVkIGhvdXNpbmciLAogICAgICAgICAgImFnZW5jeSI6ICJEZXBhcnRtZW50IG9mIEhvdXNpbmcgYW5kIFVyYmFuIERldmVsb3BtZW50IiwKICAgICAgICAgICJlZmZlY3RpdmVfZGF0ZSI6ICIyMDI2LTAzLTMwIiwKICAgICAgICAgICJzdW1tYXJ5IjogIkVsaW1pbmF0ZXMgQmlkZW4tZXJhIDIwMjEvMjAyNCBydWxlIHJlcXVpcmluZyAzMC1kYXkgbm90aWNlIGZvciBub25wYXltZW50IGV2aWN0aW9ucy4gQWZmZWN0cyAyTSsgaG91c2Vob2xkcy4gUmV0dXJucyB0byBwcmUtMjAyMSA1LTMwIGRheSBzdGF0ZS9sb2NhbCBsYXcgcmVxdWlyZW1lbnRzLiIsCiAgICAgICAgICAic3RhdHVzIjogIkNoYWxsZW5nZWQgdmlhIGxhd3N1aXQgc2Vla2luZyBwcmVsaW1pbmFyeSBpbmp1bmN0aW9uIgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgInRpdGxlIjogIklSUyBOb3RpY2UgMjAyNi0xMTogSW50ZXJpbSBndWlkYW5jZSBvbiBwZXJtYW5lbnQgMTAwJSBib251cyBkZXByZWNpYXRpb24gdW5kZXIgT0JCQiBTZWN0aW9uIDE2OChrKSIsCiAgICAgICAgICAiYWdlbmN5IjogIlRyZWFzdXJ5IC8gSVJTIiwKICAgICAgICAgICJkYXRlIjogIjIwMjYtMDEtMTQiLAogICAgICAgICAgInN1bW1hcnkiOiAiUGVybWFuZW50IDEwMCUgZmlyc3QteWVhciBkZXByZWNpYXRpb24gZm9yIHByb3BlcnR5IGFjcXVpcmVkIGFmdGVyIEphbiAxOSwgMjAyNS4gSW50ZXJpbSBndWlkYW5jZSB3aGlsZSBwcm9wb3NlZCByZWdzIHBlbmRpbmcuIgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgInRpdGxlIjogIklSUyBOb3RpY2UgMjAyNi0xNjogSW50ZXJpbSBndWlkYW5jZSBvbiBRdWFsaWZpZWQgUHJvZHVjdGlvbiBQcm9wZXJ0eSAoUVBQKSBkZXByZWNpYXRpb24gdW5kZXIgU2VjdGlvbiAxNjgobikiLAogICAgICAgICAgImFnZW5jeSI6ICJUcmVhc3VyeSAvIElSUyIsCiAgICAgICAgICAiZGF0ZSI6ICIyMDI2LTAyLTIwIiwKICAgICAgICAgICJzdW1tYXJ5IjogIlRlbXBvcmFyeSAxMDAlIGRlcHJlY2lhdGlvbiBmb3IgZG9tZXN0aWMgbWFudWZhY3R1cmluZy9wcm9kdWN0aW9uIGZhY2lsaXRpZXMgcGxhY2VkIGluIHNlcnZpY2UgYWZ0ZXIgSnVseSA0LCAyMDI1IHRocm91Z2ggMjAzMC4gUHVibGljIGNvbW1lbnQgcGVyaW9kIG9wZW4gdGhyb3VnaCBBcHJpbCAyMCwgMjAyNi4iCiAgICAgICAgfQogICAgICBdCiAgICB9LAogICAgInNwb3J0c19lc3BuIjogewogICAgICAibGFzdF91cGRhdGVkIjogIjIwMjYtMDMtMDlUMjI6MDY6MjFaIiwKICAgICAgInNvdXJjZSI6ICJXZWIgcmVzZWFyY2giLAogICAgICAibmZsX2ZyZWVfYWdlbmN5IjogewogICAgICAgICJzdGF0dXMiOiAiQWN0aXZlIC0tIE1hcmNoIDIwMjYgZnJlZSBhZ2VuY3kgd2luZG93IG9wZW4iLAogICAgICAgICJub3RhYmxlX21vdmVzIjogWwogICAgICAgICAgIlR5cmVlayBIaWxsIGV4dGVuc2lvbiAvIHRyYWRlIHNwZWN1bGF0aW9uIG9uZ29pbmciLAogICAgICAgICAgIk11bHRpcGxlIGZyYW5jaGlzZSB0YWdzIGFwcGxpZWQgKEdlb3JnZSBLaXR0bGUsIG90aGVycykiLAogICAgICAgICAgIk1heHggQ3Jvc2J5IHRyYWRlIHJ1bW9yZWQgKDJ4IDFzdCByb3VuZCBwaWNrcykiCiAgICAgICAgXQogICAgICB9LAogICAgICAibm90ZSI6ICJGdWxsIHNwb3J0cyBkYXRhIHVuYXZhaWxhYmxlIC0tIEVTUE4gQVBJIG5vdCBhY2Nlc3NpYmxlIGluIHRoaXMgcnVuIgogICAgfQogIH0KfQ==
+{
+  "schema_version": "1.2",
+  "fetched_at": "2026-03-09T22:32:39Z",
+  "domains": {
+    "markets": {
+      "last_updated": "2026-03-09T22:32:40Z",
+      "quotes": {
+        "SPY": {
+          "label": "S&P 500 ETF",
+          "price": 678.27,
+          "prev_close": 672.38,
+          "change": 5.89,
+          "change_pct": 0.88,
+          "currency": "USD"
+        },
+        "QQQ": {
+          "label": "Nasdaq 100 ETF",
+          "price": 607.76,
+          "prev_close": 599.75,
+          "change": 8.01,
+          "change_pct": 1.34,
+          "currency": "USD"
+        },
+        "GLD": {
+          "label": "Gold ETF",
+          "price": 472.53,
+          "prev_close": 473.51,
+          "change": -0.98,
+          "change_pct": -0.21,
+          "currency": "USD"
+        },
+        "TLT": {
+          "label": "20Y Treasury ETF",
+          "price": 89.23,
+          "prev_close": 88.46,
+          "change": 0.77,
+          "change_pct": 0.87,
+          "currency": "USD"
+        },
+        "BTC-USD": {
+          "label": "Bitcoin",
+          "price": 68855.79,
+          "prev_close": 65975.7,
+          "change": 2880.09,
+          "change_pct": 4.37,
+          "currency": "USD"
+        },
+        "EURUSD=X": {
+          "label": "EUR/USD",
+          "price": 1.1637,
+          "prev_close": 1.1621,
+          "change": 0.0016,
+          "change_pct": 0.14,
+          "currency": "USD"
+        },
+        "DX-Y.NYB": {
+          "label": "DXY",
+          "price": 98.726,
+          "prev_close": 98.986,
+          "change": -0.26,
+          "change_pct": -0.26,
+          "currency": "USD"
+        }
+      },
+      "yield_10y": 4.15,
+      "headline": "SPY 0.88%  |  BTC $68,856  |  10Y 4.15%"
+    },
+    "energy": {
+      "last_updated": "2026-03-09T22:32:50Z",
+      "quotes": {
+        "CL=F": {
+          "label": "WTI Crude ($/bbl)",
+          "price": 89.03,
+          "prev_close": 94.77,
+          "change": -5.74,
+          "change_pct": -6.06,
+          "currency": "USD"
+        },
+        "NG=F": {
+          "label": "Natural Gas ($/MMBtu)",
+          "price": 3.106,
+          "prev_close": 3.12,
+          "change": -0.014,
+          "change_pct": -0.45,
+          "currency": "USD"
+        },
+        "BZ=F": {
+          "label": "Brent Crude ($/bbl)",
+          "price": 92.83,
+          "prev_close": 98.96,
+          "change": -6.13,
+          "change_pct": -6.19,
+          "currency": "USD"
+        },
+        "XLE": {
+          "label": "Energy ETF",
+          "price": 56.32,
+          "prev_close": 56.57,
+          "change": -0.25,
+          "change_pct": -0.44,
+          "currency": "USD"
+        }
+      },
+      "headlines": [],
+      "headline": "WTI $89.03/bbl"
+    },
+    "companies": {
+      "last_updated": "2026-03-09T22:32:54Z",
+      "quotes": {
+        "NVDA": {
+          "label": "NVIDIA",
+          "price": 182.65,
+          "prev_close": 177.885,
+          "change": 4.765,
+          "change_pct": 2.68,
+          "currency": "USD"
+        },
+        "MSFT": {
+          "label": "Microsoft",
+          "price": 409.41,
+          "prev_close": 408.96,
+          "change": 0.45,
+          "change_pct": 0.11,
+          "currency": "USD"
+        },
+        "AAPL": {
+          "label": "Apple",
+          "price": 259.88,
+          "prev_close": 257.46,
+          "change": 2.42,
+          "change_pct": 0.94,
+          "currency": "USD"
+        },
+        "META": {
+          "label": "Meta",
+          "price": 647.39,
+          "prev_close": 644.86,
+          "change": 2.53,
+          "change_pct": 0.39,
+          "currency": "USD"
+        },
+        "TSLA": {
+          "label": "Tesla",
+          "price": 398.68,
+          "prev_close": 396.73,
+          "change": 1.95,
+          "change_pct": 0.49,
+          "currency": "USD"
+        },
+        "AMZN": {
+          "label": "Amazon",
+          "price": 213.49,
+          "prev_close": 213.12,
+          "change": 0.37,
+          "change_pct": 0.17,
+          "currency": "USD"
+        },
+        "GOOGL": {
+          "label": "Alphabet",
+          "price": 306.36,
+          "prev_close": 298.27,
+          "change": 8.09,
+          "change_pct": 2.71,
+          "currency": "USD"
+        }
+      },
+      "recent_filings": [
+        {
+          "title": "IONIS PHARMACEUTICALS INC  (IONS) \u2014 8-K (2026-03-09)",
+          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=IONIS%20PHARMACEUTICALS%20INC%20%20%28IONS%29&type=8-K&dateb=&owner=include&count=5",
+          "published": "2026-03-09"
+        },
+        {
+          "title": "Cartesian Therapeutics, Inc.  (RNAC) \u2014 8-K (2026-03-09)",
+          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Cartesian%20Therapeutics%2C%20Inc.%20%20%28RNAC%29&type=8-K&dateb=&owner=include&count=5",
+          "published": "2026-03-09"
+        },
+        {
+          "title": "enCore Energy Corp.  (EU) \u2014 8-K (2026-03-09)",
+          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=enCore%20Energy%20Corp.%20%20%28EU%29&type=8-K&dateb=&owner=include&count=5",
+          "published": "2026-03-09"
+        },
+        {
+          "title": "NET Power Inc.  (NPWR, NPWR-WT) \u2014 8-K (2026-03-09)",
+          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=NET%20Power%20Inc.%20%20%28NPWR%2C%20NPWR-WT%29&type=8-K&dateb=&owner=include&count=5",
+          "published": "2026-03-09"
+        },
+        {
+          "title": "Symbotic Inc.  (SYM) \u2014 8-K (2026-03-09)",
+          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Symbotic%20Inc.%20%20%28SYM%29&type=8-K&dateb=&owner=include&count=5",
+          "published": "2026-03-09"
+        }
+      ],
+      "headline": "NVDA 2.68%  |  MSFT 0.11%"
+    },
+    "sports": {
+      "last_updated": "2026-03-09T22:32:58Z",
+      "scores": {
+        "nfl": {
+          "label": "NFL",
+          "games": [
+            {
+              "home": "NE",
+              "away": "SEA",
+              "home_score": "13",
+              "away_score": "29",
+              "status": "Final"
+            }
+          ]
+        },
+        "nba": {
+          "label": "NBA",
+          "games": [
+            {
+              "home": "CLE",
+              "away": "PHI",
+              "home_score": "0",
+              "away_score": "0",
+              "status": "3/9 - 7:00 PM EDT"
+            },
+            {
+              "home": "BKN",
+              "away": "MEM",
+              "home_score": "0",
+              "away_score": "0",
+              "status": "3/9 - 7:30 PM EDT"
+            },
+            {
+              "home": "OKC",
+              "away": "DEN",
+              "home_score": "0",
+              "away_score": "0",
+              "status": "3/9 - 7:30 PM EDT"
+            },
+            {
+              "home": "UTAH",
+              "away": "GS",
+              "home_score": "0",
+              "away_score": "0",
+              "status": "3/9 - 9:00 PM EDT"
+            }
+          ]
+        },
+        "mlb": {
+          "label": "MLB",
+          "games": [
+            {
+              "home": "ATL",
+              "away": "MIN",
+              "home_score": "9",
+              "away_score": "8",
+              "status": "Final"
+            },
+            {
+              "home": "BOS",
+              "away": "PHI",
+              "home_score": "5",
+              "away_score": "3",
+              "status": "Final"
+            },
+            {
+              "home": "DET",
+              "away": "TB",
+              "home_score": "4",
+              "away_score": "4",
+              "status": "Final"
+            },
+            {
+              "home": "HOU",
+              "away": "STL",
+              "home_score": "10",
+              "away_score": "3",
+              "status": "Final"
+            }
+          ]
+        }
+      },
+      "injuries": {
+        "nfl": [
+          {
+            "player": "Gardner Minshew",
+            "team": "",
+            "status": "Active",
+            "detail": "Minshew is in line to sign a one-year contract with the Cardinals, Adam Schefter of ESPN reports."
+          },
+          {
+            "player": "Tyler Allgeier",
+            "team": "",
+            "status": "Active",
+            "detail": "Allgeier agreed to terms on a two-year, $12.25 million contract with Arizona on Monday, Mike Garafolo of NFL Network reports."
+          },
+          {
+            "player": "Tyrone Wheatley Jr.",
+            "team": "",
+            "status": "Questionable",
+            "detail": "questionable"
+          },
+          {
+            "player": "Cameron Thomas",
+            "team": "",
+            "status": "Active",
+            "detail": "Thomas agreed to a one-year, $3.1 million contract with the Falcons on Monday, Marc Raimondi of ESPN.com reports."
+          },
+          {
+            "player": "John Simpson",
+            "team": "",
+            "status": "Active",
+            "detail": "Simpson agreed to a three-year, $30 million contract with the Ravens on Monday, Mike Garafolo of NFL Network reports."
+          },
+          {
+            "player": "Tyler Huntley",
+            "team": "",
+            "status": "Active",
+            "detail": "Huntley and the Ravens agreed to a two-year, $11 million contract Saturday, Adam Schefter of ESPN reports."
+          }
+        ],
+        "nba": [
+          {
+            "player": "Jonathan Kuminga",
+            "team": "",
+            "status": "Day-To-Day",
+            "detail": "Kuminga is questionable for Tuesday's game against the Mavericks due to a left knee bone bruise."
+          },
+          {
+            "player": "Payton Pritchard",
+            "team": "",
+            "status": "Day-To-Day",
+            "detail": "Pritchard (neck) is Taylor Snow of the Celtics' official site for Tuesday's game against the Spurs."
+          },
+          {
+            "player": "Nikola Vucevic",
+            "team": "",
+            "status": "Out",
+            "detail": "Vucevic underwent surgery Saturday to stabilize a fracture in his right ring finger and will be reevaluated in 3-to-4 weeks."
+          },
+          {
+            "player": "Egor Demin",
+            "team": "",
+            "status": "Out",
+            "detail": "The Nets announced Monday that Demin (foot) will miss the rest of the season, NBA reporter Marc Stein reports."
+          },
+          {
+            "player": "Michael Porter Jr.",
+            "team": "",
+            "status": "Out",
+            "detail": "Porter (rest) has been ruled out for Monday's game against the Grizzlies."
+          }
+        ]
+      },
+      "headline": "NFL / NBA / MLB live scores"
+    },
+    "geopolitics": {
+      "last_updated": "2026-03-09T22:32:59Z",
+      "headlines": [
+        {
+          "title": "Who is Mojtaba Khamenei, Iran's new supreme leader?",
+          "link": "https://www.bbc.com/news/articles/c78xxg05w0zo?at_medium=RSS&at_campaign=rss",
+          "published": "Sun, 08 Mar 2026 21:51:48 GMT"
+        },
+        {
+          "title": "US teacher killed after toilet paper prank goes wrong",
+          "link": "https://www.bbc.com/news/articles/cdr24g1p3vpo?at_medium=RSS&at_campaign=rss",
+          "published": "Mon, 09 Mar 2026 17:09:21 GMT"
+        },
+        {
+          "title": "G7 to take 'necessary measures' to support energy supplies",
+          "link": "https://www.bbc.com/news/articles/c79542n0grwo?at_medium=RSS&at_campaign=rss",
+          "published": "Mon, 09 Mar 2026 20:40:38 GMT"
+        },
+        {
+          "title": "Hundreds of teenagers report for duty as Croatia reinstates conscription",
+          "link": "https://www.bbc.com/news/articles/c93j2l32lzgo?at_medium=RSS&at_campaign=rss",
+          "published": "Mon, 09 Mar 2026 14:49:34 GMT"
+        },
+        {
+          "title": "Alleged Bondi gunman seeks order to suppress family's identity",
+          "link": "https://www.bbc.com/news/articles/cy8lwnyj40eo?at_medium=RSS&at_campaign=rss",
+          "published": "Mon, 09 Mar 2026 08:13:58 GMT"
+        }
+      ],
+      "headline": "Who is Mojtaba Khamenei, Iran's new supreme leader?"
+    },
+    "technology": {
+      "last_updated": "2026-03-09T22:33:00Z",
+      "hn_top": [
+        {
+          "title": "Building a Procedural Hex Map with Wave Function Collapse",
+          "url": "https://felixturner.github.io/hex-map-wfc/article/",
+          "score": 309,
+          "comments": 42
+        },
+        {
+          "title": "JSLinux Now Supports x86_64",
+          "url": "https://bellard.org/jslinux/",
+          "score": 179,
+          "comments": 39
+        },
+        {
+          "title": "Thomas Selfridge: The First Airplane Fatality",
+          "url": "https://www.amusingplanet.com/2026/03/thomas-selfridge-first-airplane-fatality.html",
+          "score": 25,
+          "comments": 3
+        },
+        {
+          "title": "Is legal the same as legitimate: AI reimplementation and the erosion of copyleft",
+          "url": "https://writings.hongminhee.org/2026/03/legal-vs-legitimate/",
+          "score": 245,
+          "comments": 253
+        },
+        {
+          "title": "Show HN: The Mog Programming Language",
+          "url": "https://moglang.org",
+          "score": 91,
+          "comments": 41
+        }
+      ],
+      "tech_headlines": [
+        {
+          "title": "Don\u2019t Expect Big Surprises in the Government\u2019s Alien Files",
+          "link": "https://www.wired.com/story/dont-expect-big-surprises-in-the-governments-alien-files/",
+          "published": "Mon, 09 Mar 2026 10:00:00 +0000"
+        },
+        {
+          "title": "Why RFK\u2019s CDC Is Endorsing \u2018Shared Decisionmaking\u2019 for Vaccines",
+          "link": "https://www.wired.com/story/why-rfks-cdc-is-endorsing-shared-decision-making-for-vaccines/",
+          "published": "Mon, 09 Mar 2026 09:30:00 +0000"
+        },
+        {
+          "title": "Left-Handed People Are More Competitive, Says Science",
+          "link": "https://www.wired.com/story/left-handed-people-are-more-competitive-says-science/",
+          "published": "Sun, 08 Mar 2026 09:00:00 +0000"
+        },
+        {
+          "title": "Sleep Apnea Often Goes Undetected in Women. That\u2019s Starting to Change",
+          "link": "https://www.wired.com/story/sleep-apnea-women-detection-treatment/",
+          "published": "Fri, 06 Mar 2026 09:30:00 +0000"
+        },
+        {
+          "title": "Big Tech Signs White House Data Center Pledge With Good Optics and Little Substance",
+          "link": "https://www.wired.com/story/big-tech-signs-white-house-data-center-pledge-with-good-optics-not-much-substance/",
+          "published": "Wed, 04 Mar 2026 22:13:27 +0000"
+        }
+      ],
+      "headline": "Building a Procedural Hex Map with Wave Function Collapse"
+    },
+    "policy": {
+      "last_updated": "2026-03-09T22:33:00Z",
+      "bills": [
+        {
+          "title": "Most-Viewed Bills - Week of March 8, 2026",
+          "link": "https://www.congress.gov/most-viewed-bills",
+          "published": ""
+        }
+      ],
+      "federal_rules": [
+        {
+          "title": "Christmas Tree Promotion, Research, and Information Order",
+          "link": "https://www.federalregister.gov/documents/2026/03/09/2026-04586/christmas-tree-promotion-research-and-information-order",
+          "published": "2026-03-09"
+        },
+        {
+          "title": "Magnuson-Stevens Fishery Conservation and Management Act Provisions; Fisheries of the Northeastern United States; Northeast Multispecies Fishery; Framework Adjustment 69",
+          "link": "https://www.federalregister.gov/documents/2026/03/09/2026-04585/magnuson-stevens-fishery-conservation-and-management-act-provisions-fisheries-of-the-northeastern",
+          "published": "2026-03-09"
+        },
+        {
+          "title": "Avocados Grown in South Florida and Imported Avocados; Change in Maturity Requirements",
+          "link": "https://www.federalregister.gov/documents/2026/03/09/2026-04584/avocados-grown-in-south-florida-and-imported-avocados-change-in-maturity-requirements",
+          "published": "2026-03-09"
+        },
+        {
+          "title": "Paper and Paper-Based Packaging Promotion, Research and Information Order Termination",
+          "link": "https://www.federalregister.gov/documents/2026/03/09/2026-04570/paper-and-paper-based-packaging-promotion-research-and-information-order-termination",
+          "published": "2026-03-09"
+        },
+        {
+          "title": "Supplemental Disaster Relief Program and Dairy Margin Coverage Program; Correction",
+          "link": "https://www.federalregister.gov/documents/2026/03/09/2026-04531/supplemental-disaster-relief-program-and-dairy-margin-coverage-program-correction",
+          "published": "2026-03-09"
+        }
+      ],
+      "scotus": [],
+      "headline": "Most-Viewed Bills - Week of March 8, 2026"
+    },
+    "legal": {
+      "last_updated": "2026-03-09T22:33:04Z",
+      "cases": [
+        {
+          "title": "In Re Bystolic Antitrust Litigation",
+          "court": "Court of Appeals for the Second Circuit",
+          "date": "2024-05-13",
+          "tag": "Antitrust",
+          "link": "https://www.courtlistener.com/opinion/9501475/in-re-bystolic-antitrust-litigation/"
+        },
+        {
+          "title": "Automotive Parts Antitrust Litig.",
+          "court": "Court of Appeals for the Sixth Circuit",
+          "date": "2022-05-12",
+          "tag": "Antitrust",
+          "link": "https://www.courtlistener.com/opinion/6468000/automotive-parts-antitrust-litig/"
+        },
+        {
+          "title": "Capon v. Monopoly Game LLC",
+          "court": "California Court of Appeal",
+          "date": "2011-03-04",
+          "tag": "Antitrust",
+          "link": "https://www.courtlistener.com/opinion/5810084/capon-v-monopoly-game-llc/"
+        },
+        {
+          "title": "In re Telexfree Sec. Litig.",
+          "court": "District Court, District of Columbia",
+          "date": "2019-01-29",
+          "tag": "Regulatory",
+          "link": "https://www.courtlistener.com/opinion/7333964/in-re-telexfree-sec-litig/"
+        },
+        {
+          "title": "Fed. Trade Comm'n v. Abbvie Inc.",
+          "court": "District Court, E.D. Pennsylvania",
+          "date": "2018-06-29",
+          "tag": "Regulatory",
+          "link": "https://www.courtlistener.com/opinion/7331819/fed-trade-commn-v-abbvie-inc/"
+        },
+        {
+          "title": "FTC v. ZAAPPAAZ",
+          "court": "Court of Appeals for the Fifth Circuit",
+          "date": "2025-06-16",
+          "tag": "Regulatory",
+          "link": "https://www.courtlistener.com/opinion/10605413/ftc-v-zaappaaz/"
+        },
+        {
+          "title": "Knight First Amendment Institute at Columbia University v. CIA",
+          "court": "Court of Appeals for the D.C. Circuit",
+          "date": "2021-08-27",
+          "tag": "Constitutional",
+          "link": "https://www.courtlistener.com/opinion/5064123/knight-first-amendment-institute-at-columbia-university-v-cia/"
+        },
+        {
+          "title": "Ratification of the Equal Rights Amendment",
+          "court": "Department of Justice Office of Legal Counsel",
+          "date": "2020-01-06",
+          "tag": "Constitutional",
+          "link": "https://www.courtlistener.com/opinion/4713839/ratification-of-the-equal-rights-amendment/"
+        }
+      ],
+      "scotus_opinions": [],
+      "headline": "In Re Bystolic Antitrust Litigation"
+    }
+  }
+}
