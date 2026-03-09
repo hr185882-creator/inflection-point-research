@@ -1,16 +1,16 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-09T20:07:44Z",
+  "fetched_at": "2026-03-09T20:17:21Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-09T20:07:45Z",
+      "last_updated": "2026-03-09T20:17:22Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
-          "price": 678.17,
+          "price": 678.27,
           "prev_close": 672.38,
-          "change": 5.79,
-          "change_pct": 0.86,
+          "change": 5.89,
+          "change_pct": 0.88,
           "currency": "USD"
         },
         "QQQ": {
@@ -23,10 +23,10 @@
         },
         "GLD": {
           "label": "Gold ETF",
-          "price": 472.46,
+          "price": 472.53,
           "prev_close": 473.51,
-          "change": -1.05,
-          "change_pct": -0.22,
+          "change": -0.98,
+          "change_pct": -0.21,
           "currency": "USD"
         },
         "TLT": {
@@ -39,57 +39,57 @@
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 69012.88,
+          "price": 68999.55,
           "prev_close": 65975.7,
-          "change": 3037.18,
-          "change_pct": 4.6,
+          "change": 3023.85,
+          "change_pct": 4.58,
           "currency": "USD"
         },
         "EURUSD=X": {
           "label": "EUR/USD",
-          "price": 1.1617,
+          "price": 1.1618,
           "prev_close": 1.1621,
-          "change": -0.0004,
+          "change": -0.0003,
           "change_pct": -0.03,
           "currency": "USD"
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 98.893,
+          "price": 98.884,
           "prev_close": 98.986,
-          "change": -0.093,
-          "change_pct": -0.09,
+          "change": -0.102,
+          "change_pct": -0.1,
           "currency": "USD"
         }
       },
       "yield_10y": 4.13,
-      "headline": "SPY 0.86%  |  BTC $69,013  |  10Y 4.13%"
+      "headline": "SPY 0.88%  |  BTC $69,000  |  10Y 4.13%"
     },
     "energy": {
-      "last_updated": "2026-03-09T20:07:55Z",
+      "last_updated": "2026-03-09T20:17:32Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 86.66,
+          "price": 88.31,
           "prev_close": 90.9,
-          "change": -4.24,
-          "change_pct": -4.66,
+          "change": -2.59,
+          "change_pct": -2.85,
           "currency": "USD"
         },
         "NG=F": {
           "label": "Natural Gas ($/MMBtu)",
-          "price": 3.057,
+          "price": 3.054,
           "prev_close": 3.186,
-          "change": -0.129,
-          "change_pct": -4.05,
+          "change": -0.132,
+          "change_pct": -4.14,
           "currency": "USD"
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 89.94,
+          "price": 91.99,
           "prev_close": 92.69,
-          "change": -2.75,
-          "change_pct": -2.97,
+          "change": -0.7,
+          "change_pct": -0.76,
           "currency": "USD"
         },
         "XLE": {
@@ -102,10 +102,10 @@
         }
       },
       "headlines": [],
-      "headline": "WTI $86.66/bbl"
+      "headline": "WTI $88.31/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-09T20:07:56Z",
+      "last_updated": "2026-03-09T20:17:33Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
@@ -181,20 +181,20 @@
           "published": "2026-03-09"
         },
         {
-          "title": "MARZETTI CO  (MZTI) \u2014 8-K (2026-03-09)",
-          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=MARZETTI%20CO%20%20%28MZTI%29&type=8-K&dateb=&owner=include&count=5",
+          "title": "NET Power Inc.  (NPWR, NPWR-WT) \u2014 8-K (2026-03-09)",
+          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=NET%20Power%20Inc.%20%20%28NPWR%2C%20NPWR-WT%29&type=8-K&dateb=&owner=include&count=5",
           "published": "2026-03-09"
         },
         {
-          "title": "FUELCELL ENERGY INC  (FCEL, FCELB) \u2014 8-K (2026-03-09)",
-          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=FUELCELL%20ENERGY%20INC%20%20%28FCEL%2C%20FCELB%29&type=8-K&dateb=&owner=include&count=5",
+          "title": "MARZETTI CO  (MZTI) \u2014 8-K (2026-03-09)",
+          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=MARZETTI%20CO%20%20%28MZTI%29&type=8-K&dateb=&owner=include&count=5",
           "published": "2026-03-09"
         }
       ],
       "headline": "NVDA 2.68%  |  MSFT 0.11%"
     },
     "sports": {
-      "last_updated": "2026-03-09T20:07:57Z",
+      "last_updated": "2026-03-09T20:17:34Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -344,33 +344,8 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-09T20:08:04Z",
+      "last_updated": "2026-03-09T20:17:44Z",
       "headlines": [
-        {
-          "title": "Russian economy withstood pressure from outside German expert",
-          "link": "https://tass.com/economy/2073165",
-          "published": "20260119T140000Z"
-        },
-        {
-          "title": "Sudan : united kingdom Hits  Sudan War Machine  With New Sanctions",
-          "link": "https://allafrica.com/stories/202602060005.html",
-          "published": "20260206T060000Z"
-        },
-        {
-          "title": "UK Sanctions Sudanese Army and RSF Leaders",
-          "link": "https://english.aawsat.com/arab-world/5237657-uk-sanctions-sudanese-army-and-rsf-leaders",
-          "published": "20260205T183000Z"
-        },
-        {
-          "title": "U . S . sanctions Gaza charities over alleged Hamas ties \u2013 NaturalNews . com",
-          "link": "https://www.naturalnews.com/2026-01-26-us-sanctions-gaza-charities-over-hamas-ties.html",
-          "published": "20260126T130000Z"
-        },
-        {
-          "title": "Myanmar military using commercial paramotors , gyrocopters for attacks : Report",
-          "link": "https://www.siasat.com/myanmar-military-using-commercial-paramotors-gyrocopters-for-attacks-report-3331737/",
-          "published": "20260126T140000Z"
-        },
         {
           "title": "Who is Mojtaba Khamenei, Iran's new supreme leader?",
           "link": "https://www.bbc.com/news/articles/c78xxg05w0zo?at_medium=RSS&at_campaign=rss",
@@ -380,42 +355,57 @@
           "title": "US teacher killed after toilet paper prank goes wrong",
           "link": "https://www.bbc.com/news/articles/cdr24g1p3vpo?at_medium=RSS&at_campaign=rss",
           "published": "Mon, 09 Mar 2026 17:09:21 GMT"
+        },
+        {
+          "title": "G7 to take 'necessary measures' to support energy supplies",
+          "link": "https://www.bbc.com/news/articles/c79542n0grwo?at_medium=RSS&at_campaign=rss",
+          "published": "Mon, 09 Mar 2026 17:33:36 GMT"
+        },
+        {
+          "title": "Hundreds of teenagers report for duty as Croatia reinstates conscription",
+          "link": "https://www.bbc.com/news/articles/c93j2l32lzgo?at_medium=RSS&at_campaign=rss",
+          "published": "Mon, 09 Mar 2026 14:49:34 GMT"
+        },
+        {
+          "title": "Alleged Bondi gunman seeks order to suppress family's identity",
+          "link": "https://www.bbc.com/news/articles/cy8lwnyj40eo?at_medium=RSS&at_campaign=rss",
+          "published": "Mon, 09 Mar 2026 08:13:58 GMT"
         }
       ],
-      "headline": "Russian economy withstood pressure from outside German expert"
+      "headline": "Who is Mojtaba Khamenei, Iran's new supreme leader?"
     },
     "technology": {
-      "last_updated": "2026-03-09T20:08:04Z",
+      "last_updated": "2026-03-09T20:17:45Z",
       "hn_top": [
         {
           "title": "Building a Procedural Hex Map with Wave Function Collapse",
           "url": "https://felixturner.github.io/hex-map-wfc/article/",
-          "score": 185,
+          "score": 196,
           "comments": 30
         },
         {
           "title": "JSLinux Now Supports x86_64",
           "url": "https://bellard.org/jslinux/",
-          "score": 109,
-          "comments": 20
+          "score": 112,
+          "comments": 23
         },
         {
           "title": "Show HN: The Mog Programming Language",
           "url": "https://moglang.org",
-          "score": 54,
-          "comments": 17
+          "score": 56,
+          "comments": 19
         },
         {
           "title": "DARPA's new X-76",
           "url": "https://www.darpa.mil/news/2026/darpa-new-x-76-speed-of-jet-freedom-of-helicopter",
-          "score": 74,
-          "comments": 62
+          "score": 78,
+          "comments": 64
         },
         {
           "title": "Launch HN: Terminal Use (YC W26) \u2013 Vercel for filesystem-based agents",
           "url": "https://news.ycombinator.com/item?id=47311657",
           "score": 46,
-          "comments": 25
+          "comments": 27
         }
       ],
       "tech_headlines": [
@@ -448,7 +438,7 @@
       "headline": "Building a Procedural Hex Map with Wave Function Collapse"
     },
     "policy": {
-      "last_updated": "2026-03-09T20:08:05Z",
+      "last_updated": "2026-03-09T20:17:45Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -487,7 +477,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-09T20:08:14Z",
+      "last_updated": "2026-03-09T20:17:47Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
