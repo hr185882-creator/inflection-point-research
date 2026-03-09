@@ -1,103 +1,103 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-09T17:07:17Z",
+  "fetched_at": "2026-03-09T17:17:48Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-09T17:07:28Z",
+      "last_updated": "2026-03-09T17:17:49Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
-          "price": 670.535,
+          "price": 670.24,
           "prev_close": 672.38,
-          "change": -1.845,
-          "change_pct": -0.27,
+          "change": -2.14,
+          "change_pct": -0.32,
           "currency": "USD"
         },
         "QQQ": {
           "label": "Nasdaq 100 ETF",
-          "price": 600.125,
+          "price": 599.86,
           "prev_close": 599.75,
-          "change": 0.375,
-          "change_pct": 0.06,
+          "change": 0.11,
+          "change_pct": 0.02,
           "currency": "USD"
         },
         "GLD": {
           "label": "Gold ETF",
-          "price": 468.79,
+          "price": 468.58,
           "prev_close": 473.51,
-          "change": -4.72,
-          "change_pct": -1.0,
+          "change": -4.93,
+          "change_pct": -1.04,
           "currency": "USD"
         },
         "TLT": {
           "label": "20Y Treasury ETF",
-          "price": 88.89,
+          "price": 88.915,
           "prev_close": 88.46,
-          "change": 0.43,
-          "change_pct": 0.49,
+          "change": 0.455,
+          "change_pct": 0.51,
           "currency": "USD"
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 68969.53,
+          "price": 68984.84,
           "prev_close": 65975.7,
-          "change": 2993.83,
-          "change_pct": 4.54,
+          "change": 3009.14,
+          "change_pct": 4.56,
           "currency": "USD"
         },
         "EURUSD=X": {
           "label": "EUR/USD",
-          "price": 1.159,
+          "price": 1.1587,
           "prev_close": 1.1621,
-          "change": -0.0031,
-          "change_pct": -0.27,
+          "change": -0.0034,
+          "change_pct": -0.29,
           "currency": "USD"
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 99.047,
+          "price": 99.083,
           "prev_close": 98.986,
-          "change": 0.061,
-          "change_pct": 0.06,
+          "change": 0.097,
+          "change_pct": 0.1,
           "currency": "USD"
         }
       },
-      "yield_10y": null,
-      "headline": null
+      "yield_10y": 4.13,
+      "headline": "SPY -0.32%  |  BTC $68,985  |  10Y 4.13%"
     },
     "energy": {
-      "last_updated": "2026-03-09T17:07:36Z",
+      "last_updated": "2026-03-09T17:17:57Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 94.53,
+          "price": 95.23,
           "prev_close": 90.9,
-          "change": 3.63,
-          "change_pct": 3.99,
+          "change": 4.33,
+          "change_pct": 4.76,
           "currency": "USD"
         },
         "NG=F": {
           "label": "Natural Gas ($/MMBtu)",
-          "price": 3.092,
+          "price": 3.099,
           "prev_close": 3.186,
-          "change": -0.094,
-          "change_pct": -2.95,
+          "change": -0.087,
+          "change_pct": -2.73,
           "currency": "USD"
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 99.39,
+          "price": 100.01,
           "prev_close": 92.69,
-          "change": 6.7,
-          "change_pct": 7.23,
+          "change": 7.32,
+          "change_pct": 7.9,
           "currency": "USD"
         },
         "XLE": {
           "label": "Energy ETF",
-          "price": 56.57,
+          "price": 56.455,
           "prev_close": 56.57,
-          "change": 0.0,
-          "change_pct": null,
+          "change": -0.115,
+          "change_pct": -0.2,
           "currency": "USD"
         }
       },
@@ -123,65 +123,65 @@
           "published": "Mon, 02 Mar 2026  09:00:00 EST"
         }
       ],
-      "headline": "WTI $94.53/bbl"
+      "headline": "WTI $95.23/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-09T17:07:38Z",
+      "last_updated": "2026-03-09T17:17:58Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
-          "price": 179.655,
+          "price": 179.78,
           "prev_close": 177.885,
-          "change": 1.77,
-          "change_pct": 1.0,
+          "change": 1.895,
+          "change_pct": 1.07,
           "currency": "USD"
         },
         "MSFT": {
           "label": "Microsoft",
-          "price": 406.77,
+          "price": 406.42,
           "prev_close": 408.96,
-          "change": -2.19,
-          "change_pct": -0.54,
+          "change": -2.54,
+          "change_pct": -0.62,
           "currency": "USD"
         },
         "AAPL": {
           "label": "Apple",
-          "price": 257.35,
+          "price": 256.901,
           "prev_close": 257.46,
-          "change": -0.11,
-          "change_pct": -0.04,
+          "change": -0.559,
+          "change_pct": -0.22,
           "currency": "USD"
         },
         "META": {
           "label": "Meta",
-          "price": 635.495,
+          "price": 634.67,
           "prev_close": 644.86,
-          "change": -9.365,
-          "change_pct": -1.45,
+          "change": -10.19,
+          "change_pct": -1.58,
           "currency": "USD"
         },
         "TSLA": {
           "label": "Tesla",
-          "price": 389.7,
+          "price": 389.86,
           "prev_close": 396.73,
-          "change": -7.03,
-          "change_pct": -1.77,
+          "change": -6.87,
+          "change_pct": -1.73,
           "currency": "USD"
         },
         "AMZN": {
           "label": "Amazon",
-          "price": 210.1,
+          "price": 209.855,
           "prev_close": 213.12,
-          "change": -3.02,
-          "change_pct": -1.42,
+          "change": -3.265,
+          "change_pct": -1.53,
           "currency": "USD"
         },
         "GOOGL": {
           "label": "Alphabet",
-          "price": 301.145,
+          "price": 300.79,
           "prev_close": 298.27,
-          "change": 2.875,
-          "change_pct": 0.96,
+          "change": 2.52,
+          "change_pct": 0.84,
           "currency": "USD"
         }
       },
@@ -212,10 +212,10 @@
           "published": "2026-03-09"
         }
       ],
-      "headline": "NVDA 1.0%  |  MSFT -0.54%"
+      "headline": "NVDA 1.07%  |  MSFT -0.62%"
     },
     "sports": {
-      "last_updated": "2026-03-09T17:07:38Z",
+      "last_updated": "2026-03-09T17:17:59Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -270,28 +270,28 @@
               "away": "MIN",
               "home_score": "0",
               "away_score": "0",
-              "status": "Top 1st"
+              "status": "Mid 1st"
             },
             {
               "home": "BOS",
               "away": "PHI",
               "home_score": "0",
               "away_score": "0",
-              "status": "Top 1st"
+              "status": "Bot 1st"
             },
             {
               "home": "DET",
               "away": "TB",
               "home_score": "0",
               "away_score": "0",
-              "status": "Top 1st"
+              "status": "Bot 1st"
             },
             {
               "home": "HOU",
               "away": "STL",
               "home_score": "0",
               "away_score": "0",
-              "status": "Top 1st"
+              "status": "Mid 1st"
             }
           ]
         }
@@ -365,78 +365,68 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-09T17:07:50Z",
+      "last_updated": "2026-03-09T17:18:03Z",
       "headlines": [
-        {
-          "title": "Russian economy withstood pressure from outside German expert",
-          "link": "https://tass.com/economy/2073165",
-          "published": "20260119T140000Z"
-        },
-        {
-          "title": "Sudan : united kingdom Hits  Sudan War Machine  With New Sanctions",
-          "link": "https://allafrica.com/stories/202602060005.html",
-          "published": "20260206T060000Z"
-        },
-        {
-          "title": "UK Sanctions Sudanese Army and RSF Leaders",
-          "link": "https://english.aawsat.com/arab-world/5237657-uk-sanctions-sudanese-army-and-rsf-leaders",
-          "published": "20260205T183000Z"
-        },
-        {
-          "title": "U . S . sanctions Gaza charities over alleged Hamas ties \u2013 NaturalNews . com",
-          "link": "https://www.naturalnews.com/2026-01-26-us-sanctions-gaza-charities-over-hamas-ties.html",
-          "published": "20260126T130000Z"
-        },
-        {
-          "title": "Myanmar military using commercial paramotors , gyrocopters for attacks : Report",
-          "link": "https://www.siasat.com/myanmar-military-using-commercial-paramotors-gyrocopters-for-attacks-report-3331737/",
-          "published": "20260126T140000Z"
-        },
         {
           "title": "Who is Mojtaba Khamenei, Iran's new supreme leader?",
           "link": "https://www.bbc.com/news/articles/c78xxg05w0zo?at_medium=RSS&at_campaign=rss",
           "published": "Sun, 08 Mar 2026 21:51:48 GMT"
         },
         {
+          "title": "Georgia school teacher killed after students' prank goes wrong",
+          "link": "https://www.bbc.com/news/articles/cdr24g1p3vpo?at_medium=RSS&at_campaign=rss",
+          "published": "Mon, 09 Mar 2026 17:09:21 GMT"
+        },
+        {
           "title": "G7 to take 'necessary measures' to support energy supplies",
           "link": "https://www.bbc.com/news/articles/c79542n0grwo?at_medium=RSS&at_campaign=rss",
           "published": "Mon, 09 Mar 2026 17:05:25 GMT"
+        },
+        {
+          "title": "Hundreds of teenagers report for duty as Croatia reinstates conscription",
+          "link": "https://www.bbc.com/news/articles/c93j2l32lzgo?at_medium=RSS&at_campaign=rss",
+          "published": "Mon, 09 Mar 2026 14:49:34 GMT"
+        },
+        {
+          "title": "Alleged Bondi gunman seeks order to suppress family's identity",
+          "link": "https://www.bbc.com/news/articles/cy8lwnyj40eo?at_medium=RSS&at_campaign=rss",
+          "published": "Mon, 09 Mar 2026 08:13:58 GMT"
         }
       ],
-      "headline": "Russian economy withstood pressure from outside German expert"
+      "headline": "Who is Mojtaba Khamenei, Iran's new supreme leader?"
     },
     "technology": {
-      "last_updated": "2026-03-09T17:07:51Z",
+      "last_updated": "2026-03-09T17:18:03Z",
       "hn_top": [
         {
           "title": "Is legal the same as legitimate: AI reimplementation and the erosion of copyleft",
           "url": "https://writings.hongminhee.org/2026/03/legal-vs-legitimate/",
-          "score": 41,
-          "comments": 14
+          "score": 62,
+          "comments": 29
         },
         {
           "title": "Restoring a Sun SPARCstation IPX Part 1: PSU and Nvram",
           "url": "https://www.rs-online.com/designspark/restoring-a-sun-sparcstation-ipx-part-1-psu-and-nvram",
-          "score": 22,
-          "comments": 9
+          "score": 26,
+          "comments": 12
         },
         {
           "title": "Flash media longevity testing \u2013 6 years later",
           "url": "https://old.reddit.com/r/DataHoarder/comments/1q6xnun/flash_media_longevity_testing_6_years_later/",
-          "score": 52,
-          "comments": 9
+          "score": 56,
+          "comments": 12
         },
         {
           "title": "Fontcrafter: Turn Your Handwriting into a Real Font",
           "url": "https://arcade.pirillo.com/fontcrafter.html",
-          "score": 303,
-          "comments": 98
+          "score": 306,
+          "comments": 101
         },
         {
-          "title": "Reverse-engineering the UniFi inform protocol",
-          "url": "https://tamarack.cloud/blog/reverse-engineering-unifi-inform-protocol",
-          "score": 81,
-          "comments": 30
+          "title": "Launch HN: Terminal Use (YC W26) \u2013 Vercel for filesystem-based agents",
+          "url": "https://news.ycombinator.com/item?id=47311657",
+          "score": 5,
+          "comments": 2
         }
       ],
       "tech_headlines": [
@@ -469,7 +459,7 @@
       "headline": "Is legal the same as legitimate: AI reimplementation and the erosion of copyleft"
     },
     "policy": {
-      "last_updated": "2026-03-09T17:07:52Z",
+      "last_updated": "2026-03-09T17:18:04Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -508,7 +498,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-09T17:07:56Z",
+      "last_updated": "2026-03-09T17:18:13Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
