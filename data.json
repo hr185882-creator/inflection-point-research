@@ -1,493 +1,249 @@
 {
-  "schema_version": "1.1",
-  "fetched_at": "2026-03-09T15:40:13Z",
-  "domains": {
-    "markets": {
-      "last_updated": "2026-03-09T15:40:13Z",
-      "quotes": {
-        "QQQ": {
-          "label": "Nasdaq 100 ETF",
-          "price": 598.34,
-          "prev_close": 599.75,
-          "change": -1.41,
-          "change_pct": -0.24,
-          "currency": "USD"
-        },
-        "GLD": {
-          "label": "Gold ETF",
-          "price": 468.07,
-          "prev_close": 473.51,
-          "change": -5.44,
-          "change_pct": -1.15,
-          "currency": "USD"
-        },
-        "TLT": {
-          "label": "20Y Treasury ETF",
-          "price": 88.78,
-          "prev_close": 88.46,
-          "change": 0.32,
-          "change_pct": 0.36,
-          "currency": "USD"
-        },
-        "BTC-USD": {
-          "label": "Bitcoin",
-          "price": 68825.766,
-          "prev_close": 65975.7,
-          "change": 2850.066,
-          "change_pct": 4.32,
-          "currency": "USD"
-        },
-        "EURUSD=X": {
-          "label": "EUR/USD",
-          "price": 1.1589,
-          "prev_close": 1.1621,
-          "change": -0.0032,
-          "change_pct": -0.28,
-          "currency": "USD"
-        },
-        "DX-Y.NYB": {
-          "label": "DXY",
-          "price": 99.105,
-          "prev_close": 98.986,
-          "change": 0.119,
-          "change_pct": 0.12,
-          "currency": "USD"
-        }
+  "last_updated": "2026-03-09T15:49:47Z",
+  "geopolitics": {
+    "top_events": [
+      {
+        "title": "Haos u Tirani : Demonstranti bacali Molotovljeve koktele na zgradu Vlade",
+        "url": "https://www.blic.rs/vesti/svet/haos-u-tirani-demonstranti-bacali-molotovljeve-koktele-na-zgradu-vlade/ljlq7s7",
+        "source": "blic.rs",
+        "date": "20260210T213000Z"
       },
-      "yield_10y": 4.13,
-      "headline": "SPY None%  |  BTC $68,826  |  10Y 4.13%"
-    },
-    "energy": {
-      "last_updated": "2026-03-09T15:40:23Z",
-      "quotes": {
-        "CL=F": {
-          "label": "WTI Crude ($/bbl)",
-          "price": 96.01,
-          "prev_close": 90.9,
-          "change": 5.11,
-          "change_pct": 5.62,
-          "currency": "USD"
-        },
-        "NG=F": {
-          "label": "Natural Gas ($/MMBtu)",
-          "price": 3.131,
-          "prev_close": 3.186,
-          "change": -0.055,
-          "change_pct": -1.73,
-          "currency": "USD"
-        },
-        "BZ=F": {
-          "label": "Brent Crude ($/bbl)",
-          "price": 98.5,
-          "prev_close": 92.69,
-          "change": 5.81,
-          "change_pct": 6.27,
-          "currency": "USD"
-        },
-        "XLE": {
-          "label": "Energy ETF",
-          "price": 56.73,
-          "prev_close": 56.57,
-          "change": 0.16,
-          "change_pct": 0.28,
-          "currency": "USD"
-        }
+      {
+        "title": "\uad6d\ubbfc 10\uba85 \uc911 9\uba85  \ubcf4\uc218 \u00b7 \uc9c4\ubcf4 \uac08\ub4f1 \uc2ec\uac01  ",
+        "url": "https://segye.com:443/newsView/20260211517287",
+        "source": "segye.com",
+        "date": "20260211T113000Z"
       },
-      "headlines": [
-        {
-          "title": "U.S. exports of major transportation fuels in 2025 were about the same as in 2024",
-          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67304",
-          "published": "Mon, 09 Mar 2026 09:00:00 EST"
-        },
-        {
-          "title": "U.S. electricity generation in 2025 hit a record, again",
-          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67284",
-          "published": "Thu, 05 Mar 2026 09:00:00 EST"
-        },
-        {
-          "title": "U.S. LNG developers sign highest volume of sale and purchase contracts since 2022",
-          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67264",
-          "published": "Tue, 03 Mar 2026 09:00:00 EST"
-        },
-        {
-          "title": "Nuclear reactor restart in Japan will likely displace natural gas electricity generation",
-          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67244",
-          "published": "Mon, 02 Mar 2026  09:00:00 EST"
-        }
-      ],
-      "headline": "WTI $96.01/bbl"
-    },
-    "companies": {
-      "last_updated": "2026-03-09T15:40:24Z",
-      "quotes": {
-        "NVDA": {
-          "label": "NVIDIA",
-          "price": 179.205,
-          "prev_close": 177.885,
-          "change": 1.32,
-          "change_pct": 0.74,
-          "currency": "USD"
-        },
-        "MSFT": {
-          "label": "Microsoft",
-          "price": 408.4,
-          "prev_close": 408.96,
-          "change": -0.56,
-          "change_pct": -0.14,
-          "currency": "USD"
-        },
-        "AAPL": {
-          "label": "Apple",
-          "price": 257.503,
-          "prev_close": 257.46,
-          "change": 0.043,
-          "change_pct": 0.02,
-          "currency": "USD"
-        },
-        "META": {
-          "label": "Meta",
-          "price": 636.395,
-          "prev_close": 644.86,
-          "change": -8.465,
-          "change_pct": -1.31,
-          "currency": "USD"
-        },
-        "TSLA": {
-          "label": "Tesla",
-          "price": 388.22,
-          "prev_close": 396.73,
-          "change": -8.51,
-          "change_pct": -2.15,
-          "currency": "USD"
-        },
-        "AMZN": {
-          "label": "Amazon",
-          "price": 210.33,
-          "prev_close": 213.12,
-          "change": -2.79,
-          "change_pct": -1.31,
-          "currency": "USD"
-        },
-        "GOOGL": {
-          "label": "Alphabet",
-          "price": 299.32,
-          "prev_close": 298.27,
-          "change": 1.05,
-          "change_pct": 0.35,
-          "currency": "USD"
-        }
+      {
+        "title": "Konflik Kwamki Narama Tewaskan 10 Orang , Bupati Mimika Siapkan Perda",
+        "url": "https://regional.kompas.com/read/2026/01/05/112451978/konflik-kwamki-narama-tewaskan-10-orang-bupati-mimika-siapkan-perda",
+        "source": "regional.kompas.com",
+        "date": "20260105T044500Z"
       },
-      "recent_filings": [
-        {
-          "title": "IONIS PHARMACEUTICALS INC  (IONS) \u2014 8-K (2026-03-09)",
-          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=IONIS%20PHARMACEUTICALS%20INC%20%20%28IONS%29&type=8-K&dateb=&owner=include&count=5",
-          "published": "2026-03-09"
-        },
-        {
-          "title": "Cartesian Therapeutics, Inc.  (RNAC) \u2014 8-K (2026-03-09)",
-          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Cartesian%20Therapeutics%2C%20Inc.%20%20%28RNAC%29&type=8-K&dateb=&owner=include&count=5",
-          "published": "2026-03-09"
-        },
-        {
-          "title": "enCore Energy Corp.  (EU) \u2014 8-K (2026-03-09)",
-          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=enCore%20Energy%20Corp.%20%20%28EU%29&type=8-K&dateb=&owner=include&count=5",
-          "published": "2026-03-09"
-        },
-        {
-          "title": "MARZETTI CO  (MZTI) \u2014 8-K (2026-03-09)",
-          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=MARZETTI%20CO%20%20%28MZTI%29&type=8-K&dateb=&owner=include&count=5",
-          "published": "2026-03-09"
-        },
-        {
-          "title": "FUELCELL ENERGY INC  (FCEL, FCELB) \u2014 8-K (2026-03-09)",
-          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=FUELCELL%20ENERGY%20INC%20%20%28FCEL%2C%20FCELB%29&type=8-K&dateb=&owner=include&count=5",
-          "published": "2026-03-09"
-        }
-      ],
-      "headline": "NVDA 0.74%  |  MSFT -0.14%"
-    },
-    "sports": {
-      "last_updated": "2026-03-09T15:40:25Z",
-      "scores": {
-        "nfl": {
-          "label": "NFL",
-          "games": [
-            {
-              "home": "NE",
-              "away": "SEA",
-              "home_score": "13",
-              "away_score": "29",
-              "status": "Final"
-            }
-          ]
-        },
-        "nba": {
-          "label": "NBA",
-          "games": [
-            {
-              "home": "CLE",
-              "away": "PHI",
-              "home_score": "0",
-              "away_score": "0",
-              "status": "3/9 - 7:00 PM EDT"
-            },
-            {
-              "home": "BKN",
-              "away": "MEM",
-              "home_score": "0",
-              "away_score": "0",
-              "status": "3/9 - 7:30 PM EDT"
-            },
-            {
-              "home": "OKC",
-              "away": "DEN",
-              "home_score": "0",
-              "away_score": "0",
-              "status": "3/9 - 7:30 PM EDT"
-            },
-            {
-              "home": "UTAH",
-              "away": "GS",
-              "home_score": "0",
-              "away_score": "0",
-              "status": "3/9 - 9:00 PM EDT"
-            }
-          ]
-        },
-        "mlb": {
-          "label": "MLB",
-          "games": [
-            {
-              "home": "ATL",
-              "away": "MIN",
-              "home_score": "0",
-              "away_score": "0",
-              "status": "3/9 - 1:05 PM EDT"
-            },
-            {
-              "home": "BOS",
-              "away": "PHI",
-              "home_score": "0",
-              "away_score": "0",
-              "status": "3/9 - 1:05 PM EDT"
-            },
-            {
-              "home": "DET",
-              "away": "TB",
-              "home_score": "0",
-              "away_score": "0",
-              "status": "3/9 - 1:05 PM EDT"
-            },
-            {
-              "home": "HOU",
-              "away": "STL",
-              "home_score": "0",
-              "away_score": "0",
-              "status": "3/9 - 1:05 PM EDT"
-            }
-          ]
-        }
+      {
+        "title": "  \uad6d\ubbfc 92 %, \uc9c4\ubcf4 - \ubcf4\uc218 \uc815\uce58\uac08\ub4f1 \uc2ec\uac01 \u2026 70 %  \ub2ec\ub77c\ub3c4 \ub300\ud654 \uc758\ud5a5  \uc788\uc5b4  ",
+        "url": "https://www.hani.co.kr/arti/politics/bluehouse/1244470.html",
+        "source": "hani.co.kr",
+        "date": "20260211T050000Z"
       },
-      "injuries": {
-        "nfl": [
-          {
-            "player": "Blake Gillikin",
-            "team": "",
-            "status": "Questionable",
-            "detail": "Gillikin (back) and the Cardinals agreed on a one-year, $2.65 million contract Sunday, Mike Garafolo of NFL Network reports."
-          },
-          {
-            "player": "Chad Ryland",
-            "team": "",
-            "status": "Active",
-            "detail": "Ryland agreed to sign a one-year deal with the Cardinals on Sunday, Mike Garafolo of NFL Network reports."
-          },
-          {
-            "player": "Tyrone Wheatley Jr.",
-            "team": "",
-            "status": "Questionable",
-            "detail": "questionable"
-          },
-          {
-            "player": "Darnell Mooney",
-            "team": "",
-            "status": "Active",
-            "detail": "The Falcons are planning to release Mooney when the new league year begins March 11, Ian Rapoport of NFL Network reports."
-          },
-          {
-            "player": "Tyler Huntley",
-            "team": "",
-            "status": "Active",
-            "detail": "Huntley and the Ravens agreed to a two-year, $11 million contract Saturday, Adam Schefter of ESPN reports."
-          },
-          {
-            "player": "Tyler Linderbaum",
-            "team": "",
-            "status": "Active",
-            "detail": "Ravens GM Eric DeCosta said Tuesday that Baltimore has made a market-setting offer to impending free agent Linderbaum, Jeff Zrebiec of The Athletic reports."
-          }
-        ],
-        "nba": [
-          {
-            "player": "Jonathan Kuminga",
-            "team": "",
-            "status": "Day-To-Day",
-            "detail": "Kuminga (knee) will not play Saturday against the 76ers."
-          },
-          {
-            "player": "Nikola Vucevic",
-            "team": "",
-            "status": "Out",
-            "detail": "Vucevic underwent surgery Saturday to stabilize a fracture in his right ring finger and will be reevaluated in 3-to-4 weeks."
-          },
-          {
-            "player": "Ben Saraf",
-            "team": "",
-            "status": "Day-To-Day",
-            "detail": "Saraf (back) is listed as probable for Monday's game against Memphis."
-          },
-          {
-            "player": "Michael Porter Jr.",
-            "team": "",
-            "status": "Out",
-            "detail": "Porter (rest) has been ruled out for Monday's game against the Grizzlies."
-          }
-        ]
+      {
+        "title": "Lagi , Konflik Kwamki Narama Tewaskan Seorang Wanita yang Tertancap Panah",
+        "url": "https://regional.kompas.com/read/2026/01/05/120100278/lagi-konflik-kwamki-narama-tewaskan-seorang-wanita-yang-tertancap-panah",
+        "source": "regional.kompas.com",
+        "date": "20260105T054500Z"
+      }
+    ],
+    "conflict_count_24h": 5,
+    "last_updated": "2026-03-09T15:49:46Z"
+  },
+  "markets": {
+    "sp500": 6703.46,
+    "sp500_change_pct": -0.5424,
+    "us10y": 4.134,
+    "dxy": 99.101,
+    "btc": 68887.96,
+    "gold": 468.21,
+    "last_updated": "2026-03-09T15:49:40Z"
+  },
+  "energy": {
+    "wti_crude": 96.09,
+    "brent_crude": 98.37,
+    "natural_gas": 3.154,
+    "last_updated": "2026-03-09T15:49:40Z"
+  },
+  "companies": {
+    "top_movers": [
+      {
+        "symbol": "HIMS",
+        "name": "Hims & Hers Health, Inc.",
+        "price": 21.544,
+        "change_pct": 36.8742,
+        "volume": 101333657
       },
-      "headline": "NFL / NBA / MLB live scores"
-    },
-    "geopolitics": {
-      "last_updated": "2026-03-09T15:40:25Z",
-      "headlines": [
-        {
-          "title": "Who is Mojtaba Khamenei, Iran's new supreme leader?",
-          "link": "https://www.bbc.com/news/articles/c78xxg05w0zo?at_medium=RSS&at_campaign=rss",
-          "published": "Sun, 08 Mar 2026 21:51:48 GMT"
-        },
-        {
-          "title": "G7 'not there yet' on releasing oil stocks, says French minister",
-          "link": "https://www.bbc.com/news/articles/c79542n0grwo?at_medium=RSS&at_campaign=rss",
-          "published": "Mon, 09 Mar 2026 15:03:04 GMT"
-        },
-        {
-          "title": "India offered sanctuary to Iranian ship three days before US sank it",
-          "link": "https://www.bbc.com/news/articles/c2e4yxj0pd3o?at_medium=RSS&at_campaign=rss",
-          "published": "Mon, 09 Mar 2026 12:04:29 GMT"
-        },
-        {
-          "title": "Alleged Bondi gunman seeks order to suppress family's identity",
-          "link": "https://www.bbc.com/news/articles/cy8lwnyj40eo?at_medium=RSS&at_campaign=rss",
-          "published": "Mon, 09 Mar 2026 08:13:58 GMT"
-        },
-        {
-          "title": "Police release images of Oslo US embassy explosion suspect",
-          "link": "https://www.bbc.com/news/articles/ce8wk563473o?at_medium=RSS&at_campaign=rss",
-          "published": "Mon, 09 Mar 2026 12:45:09 GMT"
-        }
-      ],
-      "headline": "Who is Mojtaba Khamenei, Iran's new supreme leader?"
-    },
-    "technology": {
-      "last_updated": "2026-03-09T15:40:27Z",
-      "hn_top": [
-        {
-          "title": "The engine of Germany's wealth is blocking its future",
-          "url": "https://europeancorrespondent.com/en/r/the-engine-of-germanys-wealth-is-blocking-its-future",
-          "score": 53,
-          "comments": 7
-        },
-        {
-          "title": "Fontcrafter: Turn Your Handwriting into a Real Font",
-          "url": "https://arcade.pirillo.com/fontcrafter.html",
-          "score": 240,
-          "comments": 86
-        },
-        {
-          "title": "Ireland shuts last coal plant, becomes 15th coal-free country in Europe (2025)",
-          "url": "https://www.pv-magazine.com/2025/06/20/ireland-coal-free-ends-coal-power-generation-moneypoint/",
-          "score": 471,
-          "comments": 253
-        },
-        {
-          "title": "Reverse-engineering the UniFi inform protocol",
-          "url": "https://tamarack.cloud/blog/reverse-engineering-unifi-inform-protocol",
-          "score": 53,
-          "comments": 20
-        },
-        {
-          "title": "FreeBSD Capsicum vs. Linux Seccomp Process Sandboxing",
-          "url": "https://vivianvoss.net/blog/capsicum-vs-seccomp",
-          "score": 50,
-          "comments": 8
-        }
-      ],
-      "tech_headlines": [
-        {
-          "title": "Don\u2019t Expect Big Surprises in the Government\u2019s Alien Files",
-          "link": "https://www.wired.com/story/dont-expect-big-surprises-in-the-governments-alien-files/",
-          "published": "Mon, 09 Mar 2026 10:00:00 +0000"
-        },
-        {
-          "title": "Why RFK\u2019s CDC Is Endorsing \u2018Shared Decisionmaking\u2019 for Vaccines",
-          "link": "https://www.wired.com/story/why-rfks-cdc-is-endorsing-shared-decision-making-for-vaccines/",
-          "published": "Mon, 09 Mar 2026 09:30:00 +0000"
-        },
-        {
-          "title": "Left-Handed People Are More Competitive, Says Science",
-          "link": "https://www.wired.com/story/left-handed-people-are-more-competitive-says-science/",
-          "published": "Sun, 08 Mar 2026 09:00:00 +0000"
-        },
-        {
-          "title": "Sleep Apnea Often Goes Undetected in Women. That\u2019s Starting to Change",
-          "link": "https://www.wired.com/story/sleep-apnea-women-detection-treatment/",
-          "published": "Fri, 06 Mar 2026 09:30:00 +0000"
-        },
-        {
-          "title": "Big Tech Signs White House Data Center Pledge With Good Optics and Little Substance",
-          "link": "https://www.wired.com/story/big-tech-signs-white-house-data-center-pledge-with-good-optics-not-much-substance/",
-          "published": "Wed, 04 Mar 2026 22:13:27 +0000"
-        }
-      ],
-      "headline": "The engine of Germany's wealth is blocking its future"
-    },
-    "policy": {
-      "last_updated": "2026-03-09T15:40:27Z",
-      "bills": [
-        {
-          "title": "Most-Viewed Bills - Week of March 8, 2026",
-          "link": "https://www.congress.gov/most-viewed-bills",
-          "published": ""
-        }
-      ],
-      "federal_rules": [
-        {
-          "title": "Christmas Tree Promotion, Research, and Information Order",
-          "link": "https://www.federalregister.gov/documents/2026/03/09/2026-04586/christmas-tree-promotion-research-and-information-order",
-          "published": "2026-03-09"
-        },
-        {
-          "title": "Magnuson-Stevens Fishery Conservation and Management Act Provisions; Fisheries of the Northeastern United States; Northeast Multispecies Fishery; Framework Adjustment 69",
-          "link": "https://www.federalregister.gov/documents/2026/03/09/2026-04585/magnuson-stevens-fishery-conservation-and-management-act-provisions-fisheries-of-the-northeastern",
-          "published": "2026-03-09"
-        },
-        {
-          "title": "Avocados Grown in South Florida and Imported Avocados; Change in Maturity Requirements",
-          "link": "https://www.federalregister.gov/documents/2026/03/09/2026-04584/avocados-grown-in-south-florida-and-imported-avocados-change-in-maturity-requirements",
-          "published": "2026-03-09"
-        },
-        {
-          "title": "Paper and Paper-Based Packaging Promotion, Research and Information Order Termination",
-          "link": "https://www.federalregister.gov/documents/2026/03/09/2026-04570/paper-and-paper-based-packaging-promotion-research-and-information-order-termination",
-          "published": "2026-03-09"
-        },
-        {
-          "title": "Supplemental Disaster Relief Program and Dairy Margin Coverage Program; Correction",
-          "link": "https://www.federalregister.gov/documents/2026/03/09/2026-04531/supplemental-disaster-relief-program-and-dairy-margin-coverage-program-correction",
-          "published": "2026-03-09"
-        }
-      ],
-      "scotus": [],
-      "headline": "Most-Viewed Bills - Week of March 8, 2026"
-    }
+      {
+        "symbol": "NVDA",
+        "name": "NVIDIA Corporation",
+        "price": 179.3785,
+        "change_pct": 0.8396,
+        "volume": 68593242
+      },
+      {
+        "symbol": "ONDS",
+        "name": "Ondas Inc",
+        "price": 9.43,
+        "change_pct": -4.0692,
+        "volume": 50939626
+      },
+      {
+        "symbol": "AAL",
+        "name": "American Airlines Group, Inc.",
+        "price": 10.7001,
+        "change_pct": -4.2906,
+        "volume": 45636914
+      },
+      {
+        "symbol": "INTC",
+        "name": "Intel Corporation",
+        "price": 43.875,
+        "change_pct": 1.048,
+        "volume": 33331461
+      }
+    ],
+    "last_updated": "2026-03-09T15:49:47Z"
+  },
+  "technology": {
+    "hn_top": [
+      {
+        "id": 47310073,
+        "title": "The engine of Germany's wealth is blocking its future",
+        "url": "https://europeancorrespondent.com/en/r/the-engine-of-germanys-wealth-is-blocking-its-future",
+        "score": 75
+      },
+      {
+        "id": 47306655,
+        "title": "Fontcrafter: Turn Your Handwriting into a Real Font",
+        "url": "https://arcade.pirillo.com/fontcrafter.html",
+        "score": 249
+      },
+      {
+        "id": 47308394,
+        "title": "FreeBSD Capsicum vs. Linux Seccomp Process Sandboxing",
+        "url": "https://vivianvoss.net/blog/capsicum-vs-seccomp",
+        "score": 52
+      },
+      {
+        "id": 47307055,
+        "title": "Ireland shuts last coal plant, becomes 15th coal-free country in Europe (2025)",
+        "url": "https://www.pv-magazine.com/2025/06/20/ireland-coal-free-ends-coal-power-generation-moneypoint/",
+        "score": 484
+      },
+      {
+        "id": 47308278,
+        "title": "Reverse-engineering the UniFi inform protocol",
+        "url": "https://tamarack.cloud/blog/reverse-engineering-unifi-inform-protocol",
+        "score": 55
+      }
+    ],
+    "last_updated": "2026-03-09T15:49:41Z"
+  },
+  "policy": {
+    "recent_bills": [
+      {
+        "title": "Ratepayer Protection Pledge",
+        "doc_number": "2026-04645",
+        "date": "2026-03-09",
+        "url": "https://www.federalregister.gov/documents/2026/03/09/2026-04645/ratepayer-protection-pledge",
+        "type": "Presidential Document"
+      },
+      {
+        "title": "Sunshine Act Meetings",
+        "doc_number": "2026-04601",
+        "date": "2026-03-09",
+        "url": "https://www.federalregister.gov/documents/2026/03/09/2026-04601/sunshine-act-meetings",
+        "type": "Notice"
+      },
+      {
+        "title": "Dairy Tariff-Rate Quota Import Licensing Program",
+        "doc_number": "2026-04599",
+        "date": "2026-03-09",
+        "url": "https://www.federalregister.gov/documents/2026/03/09/2026-04599/dairy-tariff-rate-quota-import-licensing-program",
+        "type": "Proposed Rule"
+      },
+      {
+        "title": "Agency Information Collection Activities; Submission for OMB Review; Comment Request on Information Collection Requirements Related to Practice Before the Internal Revenue Service",
+        "doc_number": "2026-04591",
+        "date": "2026-03-09",
+        "url": "https://www.federalregister.gov/documents/2026/03/09/2026-04591/agency-information-collection-activities-submission-for-omb-review-comment-request-on-information",
+        "type": "Notice"
+      },
+      {
+        "title": "National Drinking Water Advisory Council: Request for Nominations",
+        "doc_number": "2026-04590",
+        "date": "2026-03-09",
+        "url": "https://www.federalregister.gov/documents/2026/03/09/2026-04590/national-drinking-water-advisory-council-request-for-nominations",
+        "type": "Notice"
+      }
+    ],
+    "federal_register_headlines": [
+      {
+        "title": "Ratepayer Protection Pledge",
+        "doc_number": "2026-04645",
+        "date": "2026-03-09",
+        "url": "https://www.federalregister.gov/documents/2026/03/09/2026-04645/ratepayer-protection-pledge",
+        "type": "Presidential Document"
+      },
+      {
+        "title": "Sunshine Act Meetings",
+        "doc_number": "2026-04601",
+        "date": "2026-03-09",
+        "url": "https://www.federalregister.gov/documents/2026/03/09/2026-04601/sunshine-act-meetings",
+        "type": "Notice"
+      },
+      {
+        "title": "Dairy Tariff-Rate Quota Import Licensing Program",
+        "doc_number": "2026-04599",
+        "date": "2026-03-09",
+        "url": "https://www.federalregister.gov/documents/2026/03/09/2026-04599/dairy-tariff-rate-quota-import-licensing-program",
+        "type": "Proposed Rule"
+      },
+      {
+        "title": "Agency Information Collection Activities; Submission for OMB Review; Comment Request on Information Collection Requirements Related to Practice Before the Internal Revenue Service",
+        "doc_number": "2026-04591",
+        "date": "2026-03-09",
+        "url": "https://www.federalregister.gov/documents/2026/03/09/2026-04591/agency-information-collection-activities-submission-for-omb-review-comment-request-on-information",
+        "type": "Notice"
+      },
+      {
+        "title": "National Drinking Water Advisory Council: Request for Nominations",
+        "doc_number": "2026-04590",
+        "date": "2026-03-09",
+        "url": "https://www.federalregister.gov/documents/2026/03/09/2026-04590/national-drinking-water-advisory-council-request-for-nominations",
+        "type": "Notice"
+      }
+    ],
+    "last_updated": "2026-03-09T15:49:47Z"
+  },
+  "sports": {
+    "top_headlines": [],
+    "last_updated": "2026-03-09T15:49:47Z"
+  },
+  "media": {
+    "top_headlines": [],
+    "last_updated": "2026-03-09T15:49:47Z"
+  },
+  "claims": {
+    "polymarket_top": [
+      {
+        "question": "Counter-Strike: Acend vs Bebop (BO3) - CCT Europe Series #14 Play-In Group B",
+        "volume": "9999.995006",
+        "end_date": "2026-01-23T18:30:00Z",
+        "market_slug": "cs2-ace1-bbp-2026-01-23"
+      },
+      {
+        "question": "Will the price of Bitcoin be above $110,000 on September 26 at 4AM ET?",
+        "volume": "99.9998",
+        "end_date": "2025-09-26T08:00:00Z",
+        "market_slug": "btc-multistrike-4h-1758873600-110k"
+      },
+      {
+        "question": "Martin vs. Jianu: Match O/U 21.5",
+        "volume": "99.9997",
+        "end_date": "2026-03-09T09:00:00Z",
+        "market_slug": "atp-mar-jianu-2026-03-02-match-total-21pt5"
+      },
+      {
+        "question": "Set 1 Winner: Lizunova vs Yoshida",
+        "volume": "999.99",
+        "end_date": "2026-02-07T00:00:00Z",
+        "market_slug": "atp-lizunov-yoshida-2026-01-24-first-set-winner-Lizunova-vs-Yoshida"
+      },
+      {
+        "question": "Series: Most kills?",
+        "volume": "999.99",
+        "end_date": "2026-01-10T16:00:00Z",
+        "market_slug": "dota2-4p-pr1-2026-01-10-most-kill"
+      }
+    ],
+    "last_updated": "2026-03-09T15:49:46Z"
   }
 }
