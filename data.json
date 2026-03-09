@@ -1,218 +1,78 @@
 {
-  "last_updated": "2026-03-09T15:01:41Z",
+  "last_updated": "2026-03-09T15:13:40Z",
   "geopolitics": {
     "top_events": [],
     "conflict_count_24h": null,
-    "last_updated": "2026-03-09T15:01:40Z"
+    "last_updated": "2026-03-09T15:13:37Z"
   },
   "markets": {
-    "sp500": 6690.52,
-    "sp500_change_pct": -0.7344,
-    "us10y": 4.154,
-    "dxy": 99.193,
-    "btc": 69138.16,
-    "gold": 467.76,
-    "last_updated": "2026-03-09T15:01:24Z"
+    "sp500": 6698.88,
+    "sp500_change_pct": -0.6104,
+    "us10y": 4.156,
+    "dxy": 99.16,
+    "btc": 69093.57,
+    "gold": 467.78,
+    "last_updated": "2026-03-09T15:13:36Z"
   },
   "energy": {
-    "wti_crude": 100.34,
-    "brent_crude": 102.5,
-    "natural_gas": 3.234,
-    "last_updated": "2026-03-09T15:01:24Z"
+    "wti_crude": 99.97,
+    "brent_crude": 102.06,
+    "natural_gas": 3.208,
+    "last_updated": "2026-03-09T15:13:37Z"
   },
   "companies": {
     "top_movers": [
-      {
-        "symbol": "HIMS",
-        "name": "Hims & Hers Health, Inc.",
-        "price": 21.76,
-        "change_pct": 38.2465,
-        "volume": 83014105
-      },
-      {
-        "symbol": "NVDA",
-        "name": "NVIDIA Corporation",
-        "price": 178.9285,
-        "change_pct": 0.5866,
-        "volume": 55789009
-      },
-      {
-        "symbol": "ONDS",
-        "name": "Ondas Inc",
-        "price": 9.335,
-        "change_pct": -5.0356,
-        "volume": 43212966
-      },
-      {
-        "symbol": "AAL",
-        "name": "American Airlines Group, Inc.",
-        "price": 10.665,
-        "change_pct": -4.6064,
-        "volume": 32285249
-      },
-      {
-        "symbol": "INTC",
-        "name": "Intel Corporation",
-        "price": 43.42,
-        "change_pct": 0.0,
-        "volume": 26119828
-      }
+      {"symbol": "HIMS", "name": "Hims & Hers Health, Inc.", "price": 22.55, "change_pct": 43.2656, "volume": 87984559},
+      {"symbol": "NVDA", "name": "NVIDIA Corporation", "price": 179.435, "change_pct": 0.8714, "volume": 59178508},
+      {"symbol": "ONDS", "name": "Ondas Inc", "price": 9.35, "change_pct": -4.8805, "volume": 45151085},
+      {"symbol": "AAL", "name": "American Airlines Group, Inc.", "price": 10.6702, "change_pct": -4.5599, "volume": 34353781},
+      {"symbol": "INTC", "name": "Intel Corporation", "price": 43.869, "change_pct": 1.0341, "volume": 28264226}
     ],
-    "last_updated": "2026-03-09T15:01:41Z"
+    "last_updated": "2026-03-09T15:13:40Z"
   },
   "technology": {
     "hn_top": [
-      {
-        "id": 47306655,
-        "title": "Fontcrafter: Turn Your Handwriting into a Real Font",
-        "url": "https://arcade.pirillo.com/fontcrafter.html",
-        "score": 210
-      },
-      {
-        "id": 47307055,
-        "title": "Ireland shuts last coal plant, becomes 15th coal-free country in Europe (2025)",
-        "url": "https://www.pv-magazine.com/2025/06/20/ireland-coal-free-ends-coal-power-generation-moneypoint/",
-        "score": 404
-      },
-      {
-        "id": 47308278,
-        "title": "Reverse-engineering the UniFi inform protocol",
-        "url": "https://tamarack.cloud/blog/reverse-engineering-unifi-inform-protocol",
-        "score": 35
-      },
-      {
-        "id": 47308394,
-        "title": "FreeBSD Capsicum vs. Linux Seccomp Process Sandboxing",
-        "url": "https://vivianvoss.net/blog/capsicum-vs-seccomp",
-        "score": 30
-      },
-      {
-        "id": 47305461,
-        "title": "US Court of Appeals: TOS may be updated by email, use can imply consent [pdf]",
-        "url": "https://cdn.ca9.uscourts.gov/datastore/memoranda/2026/03/03/25-403.pdf",
-        "score": 371
-      }
+      {"id": 47306655, "title": "Fontcrafter: Turn Your Handwriting into a Real Font", "url": "https://arcade.pirillo.com/fontcrafter.html", "score": 219},
+      {"id": 47307055, "title": "Ireland shuts last coal plant, becomes 15th coal-free country in Europe (2025)", "url": "https://www.pv-magazine.com/2025/06/20/ireland-coal-free-ends-coal-power-generation-moneypoint/", "score": 424},
+      {"id": 47308278, "title": "Reverse-engineering the UniFi inform protocol", "url": "https://tamarack.cloud/blog/reverse-engineering-unifi-inform-protocol", "score": 38},
+      {"id": 47308394, "title": "FreeBSD Capsicum vs. Linux Seccomp Process Sandboxing", "url": "https://vivianvoss.net/blog/capsicum-vs-seccomp", "score": 35},
+      {"id": 47305461, "title": "US Court of Appeals: TOS may be updated by email, use can imply consent [pdf]", "url": "https://cdn.ca9.uscourts.gov/datastore/memoranda/2026/03/03/25-403.pdf", "score": 376}
     ],
-    "last_updated": "2026-03-09T15:01:25Z"
+    "last_updated": "2026-03-09T15:13:37Z"
   },
   "policy": {
     "recent_bills": [
-      {
-        "title": "Ratepayer Protection Pledge",
-        "doc_number": "2026-04645",
-        "date": "2026-03-09",
-        "url": "https://www.federalregister.gov/documents/2026/03/09/2026-04645/ratepayer-protection-pledge",
-        "type": "Presidential Document"
-      },
-      {
-        "title": "Sunshine Act Meetings",
-        "doc_number": "2026-04601",
-        "date": "2026-03-09",
-        "url": "https://www.federalregister.gov/documents/2026/03/09/2026-04601/sunshine-act-meetings",
-        "type": "Notice"
-      },
-      {
-        "title": "Dairy Tariff-Rate Quota Import Licensing Program",
-        "doc_number": "2026-04599",
-        "date": "2026-03-09",
-        "url": "https://www.federalregister.gov/documents/2026/03/09/2026-04599/dairy-tariff-rate-quota-import-licensing-program",
-        "type": "Proposed Rule"
-      },
-      {
-        "title": "Agency Information Collection Activities; Submission for OMB Review; Comment Request on Information Collection Requirements Related to Practice Before the Internal Revenue Service",
-        "doc_number": "2026-04591",
-        "date": "2026-03-09",
-        "url": "https://www.federalregister.gov/documents/2026/03/09/2026-04591/agency-information-collection-activities-submission-for-omb-review-comment-request-on-information",
-        "type": "Notice"
-      },
-      {
-        "title": "National Drinking Water Advisory Council: Request for Nominations",
-        "doc_number": "2026-04590",
-        "date": "2026-03-09",
-        "url": "https://www.federalregister.gov/documents/2026/03/09/2026-04590/national-drinking-water-advisory-council-request-for-nominations",
-        "type": "Notice"
-      }
+      {"title": "Ratepayer Protection Pledge", "doc_number": "2026-04645", "date": "2026-03-09", "url": "https://www.federalregister.gov/documents/2026/03/09/2026-04645/ratepayer-protection-pledge", "type": "Presidential Document"},
+      {"title": "Sunshine Act Meetings", "doc_number": "2026-04601", "date": "2026-03-09", "url": "https://www.federalregister.gov/documents/2026/03/09/2026-04601/sunshine-act-meetings", "type": "Notice"},
+      {"title": "Dairy Tariff-Rate Quota Import Licensing Program", "doc_number": "2026-04599", "date": "2026-03-09", "url": "https://www.federalregister.gov/documents/2026/03/09/2026-04599/dairy-tariff-rate-quota-import-licensing-program", "type": "Proposed Rule"},
+      {"title": "Agency Information Collection Activities; Submission for OMB Review; Comment Request on Information Collection Requirements Related to Practice Before the Internal Revenue Service", "doc_number": "2026-04591", "date": "2026-03-09", "url": "https://www.federalregister.gov/documents/2026/03/09/2026-04591/agency-information-collection-activities-submission-for-omb-review-comment-request-on-information", "type": "Notice"},
+      {"title": "National Drinking Water Advisory Council: Request for Nominations", "doc_number": "2026-04590", "date": "2026-03-09", "url": "https://www.federalregister.gov/documents/2026/03/09/2026-04590/national-drinking-water-advisory-council-request-for-nominations", "type": "Notice"}
     ],
     "federal_register_headlines": [
-      {
-        "title": "Ratepayer Protection Pledge",
-        "doc_number": "2026-04645",
-        "date": "2026-03-09",
-        "url": "https://www.federalregister.gov/documents/2026/03/09/2026-04645/ratepayer-protection-pledge",
-        "type": "Presidential Document"
-      },
-      {
-        "title": "Sunshine Act Meetings",
-        "doc_number": "2026-04601",
-        "date": "2026-03-09",
-        "url": "https://www.federalregister.gov/documents/2026/03/09/2026-04601/sunshine-act-meetings",
-        "type": "Notice"
-      },
-      {
-        "title": "Dairy Tariff-Rate Quota Import Licensing Program",
-        "doc_number": "2026-04599",
-        "date": "2026-03-09",
-        "url": "https://www.federalregister.gov/documents/2026/03/09/2026-04599/dairy-tariff-rate-quota-import-licensing-program",
-        "type": "Proposed Rule"
-      },
-      {
-        "title": "Agency Information Collection Activities; Submission for OMB Review; Comment Request on Information Collection Requirements Related to Practice Before the Internal Revenue Service",
-        "doc_number": "2026-04591",
-        "date": "2026-03-09",
-        "url": "https://www.federalregister.gov/documents/2026/03/09/2026-04591/agency-information-collection-activities-submission-for-omb-review-comment-request-on-information",
-        "type": "Notice"
-      },
-      {
-        "title": "National Drinking Water Advisory Council: Request for Nominations",
-        "doc_number": "2026-04590",
-        "date": "2026-03-09",
-        "url": "https://www.federalregister.gov/documents/2026/03/09/2026-04590/national-drinking-water-advisory-council-request-for-nominations",
-        "type": "Notice"
-      }
+      {"title": "Ratepayer Protection Pledge", "doc_number": "2026-04645", "date": "2026-03-09", "url": "https://www.federalregister.gov/documents/2026/03/09/2026-04645/ratepayer-protection-pledge", "type": "Presidential Document"},
+      {"title": "Sunshine Act Meetings", "doc_number": "2026-04601", "date": "2026-03-09", "url": "https://www.federalregister.gov/documents/2026/03/09/2026-04601/sunshine-act-meetings", "type": "Notice"},
+      {"title": "Dairy Tariff-Rate Quota Import Licensing Program", "doc_number": "2026-04599", "date": "2026-03-09", "url": "https://www.federalregister.gov/documents/2026/03/09/2026-04599/dairy-tariff-rate-quota-import-licensing-program", "type": "Proposed Rule"},
+      {"title": "Agency Information Collection Activities; Submission for OMB Review; Comment Request on Information Collection Requirements Related to Practice Before the Internal Revenue Service", "doc_number": "2026-04591", "date": "2026-03-09", "url": "https://www.federalregister.gov/documents/2026/03/09/2026-04591/agency-information-collection-activities-submission-for-omb-review-comment-request-on-information", "type": "Notice"},
+      {"title": "National Drinking Water Advisory Council: Request for Nominations", "doc_number": "2026-04590", "date": "2026-03-09", "url": "https://www.federalregister.gov/documents/2026/03/09/2026-04590/national-drinking-water-advisory-council-request-for-nominations", "type": "Notice"}
     ],
-    "last_updated": "2026-03-09T15:01:41Z"
+    "last_updated": "2026-03-09T15:13:40Z"
   },
   "sports": {
     "top_headlines": [],
-    "last_updated": "2026-03-09T15:01:41Z"
+    "last_updated": "2026-03-09T15:13:39Z"
   },
   "media": {
     "top_headlines": [],
-    "last_updated": "2026-03-09T15:01:41Z"
+    "last_updated": "2026-03-09T15:13:39Z"
   },
   "claims": {
     "polymarket_top": [
-      {
-        "question": "Counter-Strike: Acend vs Bebop (BO3) - CCT Europe Series #14 Play-In Group B",
-        "volume": "9999.995006",
-        "end_date": "2026-01-23T18:30:00Z",
-        "market_slug": "cs2-ace1-bbp-2026-01-23"
-      },
-      {
-        "question": "Will the price of Bitcoin be above $110,000 on September 26 at 4AM ET?",
-        "volume": "99.9998",
-        "end_date": "2025-09-26T08:00:00Z",
-        "market_slug": "btc-multistrike-4h-1758873600-110k"
-      },
-      {
-        "question": "Martin vs. Jianu: Match O/U 21.5",
-        "volume": "99.9997",
-        "end_date": "2026-03-09T09:00:00Z",
-        "market_slug": "atp-mar-jianu-2026-03-02-match-total-21pt5"
-      },
-      {
-        "question": "Total Kills Over/Under 30.5 in Game 1?",
-        "volume": "999.99",
-        "end_date": "2026-02-28T03:00:00Z",
-        "market_slug": "lol-ly-tl2-2026-02-27-game1-kill-over-30pt5"
-      },
-      {
-        "question": "Series: Most kills?",
-        "volume": "999.99",
-        "end_date": "2026-01-10T16:00:00Z",
-        "market_slug": "dota2-4p-pr1-2026-01-10-most-kill"
-      }
+      {"question": "Counter-Strike: Acend vs Bebop (BO3) - CCT Europe Series #14 Play-In Group B", "volume": "9999.995006", "end_date": "2026-01-23T18:30:00Z", "market_slug": "cs2-ace1-bbp-2026-01-23"},
+      {"question": "Will the price of Bitcoin be above $110,000 on September 26 at 4AM ET?", "volume": "99.9998", "end_date": "2025-09-26T08:00:00Z", "market_slug": "btc-multistrike-4h-1758873600-110k"},
+      {"question": "Martin vs. Jianu: Match O/U 21.5", "volume": "99.9997", "end_date": "2026-03-09T09:00:00Z", "market_slug": "atp-mar-jianu-2026-03-02-match-total-21pt5"},
+      {"question": "Gormaz vs. Monnet: Match O/U 23.5", "volume": "999.99", "end_date": "2026-03-09T07:00:00Z", "market_slug": "wta-gormaz-monnet-2026-03-02-match-total-23pt5"},
+      {"question": "Series: Most kills?", "volume": "999.99", "end_date": "2026-01-10T16:00:00Z", "market_slug": "dota2-4p-pr1-2026-01-10-most-kill"}
     ],
-    "last_updated": "2026-03-09T15:01:41Z"
+    "last_updated": "2026-03-09T15:13:39Z"
   }
 }
