@@ -1,9 +1,9 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-10T00:18:43Z",
+  "fetched_at": "2026-03-10T00:32:17Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-10T00:18:44Z",
+      "last_updated": "2026-03-10T00:32:18Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
@@ -39,26 +39,26 @@
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 68439.09,
+          "price": 68926.22,
           "prev_close": 68443.15,
-          "change": -4.06,
-          "change_pct": -0.01,
+          "change": 483.07,
+          "change_pct": 0.71,
           "currency": "USD"
         },
         "EURUSD=X": {
           "label": "EUR/USD",
-          "price": 1.1621,
+          "price": 1.1629,
           "prev_close": 1.1636,
-          "change": -0.0015,
-          "change_pct": -0.13,
+          "change": -0.0007,
+          "change_pct": -0.06,
           "currency": "USD"
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 98.891,
+          "price": 98.798,
           "prev_close": 99.175,
-          "change": -0.284,
-          "change_pct": -0.29,
+          "change": -0.377,
+          "change_pct": -0.38,
           "currency": "USD"
         }
       },
@@ -66,30 +66,30 @@
       "headline": null
     },
     "energy": {
-      "last_updated": "2026-03-10T00:18:44Z",
+      "last_updated": "2026-03-10T00:32:18Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 87.52,
+          "price": 88.73,
           "prev_close": 94.77,
-          "change": -7.25,
-          "change_pct": -7.65,
+          "change": -6.04,
+          "change_pct": -6.37,
           "currency": "USD"
         },
         "NG=F": {
           "label": "Natural Gas ($/MMBtu)",
-          "price": 3.095,
+          "price": 3.105,
           "prev_close": 3.12,
-          "change": -0.025,
-          "change_pct": -0.8,
+          "change": -0.015,
+          "change_pct": -0.48,
           "currency": "USD"
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 91.52,
+          "price": 92.33,
           "prev_close": 98.96,
-          "change": -7.44,
-          "change_pct": -7.52,
+          "change": -6.63,
+          "change_pct": -6.7,
           "currency": "USD"
         },
         "XLE": {
@@ -102,10 +102,10 @@
         }
       },
       "headlines": [],
-      "headline": "WTI $87.52/bbl"
+      "headline": "WTI $88.73/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-10T00:18:45Z",
+      "last_updated": "2026-03-10T00:32:19Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
@@ -168,7 +168,7 @@
       "headline": "NVDA 2.68%  |  MSFT 0.11%"
     },
     "sports": {
-      "last_updated": "2026-03-10T00:18:45Z",
+      "last_updated": "2026-03-10T00:32:19Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -188,23 +188,23 @@
             {
               "home": "CLE",
               "away": "PHI",
-              "home_score": "56",
+              "home_score": "58",
               "away_score": "44",
-              "status": "Halftime"
+              "status": "10:54 - 3rd"
             },
             {
               "home": "BKN",
               "away": "MEM",
-              "home_score": "46",
-              "away_score": "39",
-              "status": "7:18 - 2nd"
+              "home_score": "60",
+              "away_score": "47",
+              "status": "3:18 - 2nd"
             },
             {
               "home": "OKC",
               "away": "DEN",
-              "home_score": "40",
-              "away_score": "42",
-              "status": "10:35 - 2nd"
+              "home_score": "51",
+              "away_score": "46",
+              "status": "6:00 - 2nd"
             },
             {
               "home": "UTAH",
@@ -324,33 +324,8 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-10T00:18:51Z",
+      "last_updated": "2026-03-10T00:32:20Z",
       "headlines": [
-        {
-          "title": "Russian economy withstood pressure from outside German expert",
-          "link": "https://tass.com/economy/2073165",
-          "published": "20260119T140000Z"
-        },
-        {
-          "title": "Sudan : united kingdom Hits  Sudan War Machine  With New Sanctions",
-          "link": "https://allafrica.com/stories/202602060005.html",
-          "published": "20260206T060000Z"
-        },
-        {
-          "title": "UK Sanctions Sudanese Army and RSF Leaders",
-          "link": "https://english.aawsat.com/arab-world/5237657-uk-sanctions-sudanese-army-and-rsf-leaders",
-          "published": "20260205T183000Z"
-        },
-        {
-          "title": "U . S . sanctions Gaza charities over alleged Hamas ties \u2013 NaturalNews . com",
-          "link": "https://www.naturalnews.com/2026-01-26-us-sanctions-gaza-charities-over-hamas-ties.html",
-          "published": "20260126T130000Z"
-        },
-        {
-          "title": "Myanmar military using commercial paramotors , gyrocopters for attacks : Report",
-          "link": "https://www.siasat.com/myanmar-military-using-commercial-paramotors-gyrocopters-for-attacks-report-3331737/",
-          "published": "20260126T140000Z"
-        },
         {
           "title": "Who is Mojtaba Khamenei, Iran's new supreme leader?",
           "link": "https://www.bbc.com/news/articles/c78xxg05w0zo?at_medium=RSS&at_campaign=rss",
@@ -360,42 +335,57 @@
           "title": "US teacher killed after toilet paper prank goes wrong",
           "link": "https://www.bbc.com/news/articles/cdr24g1p3vpo?at_medium=RSS&at_campaign=rss",
           "published": "Mon, 09 Mar 2026 17:09:21 GMT"
+        },
+        {
+          "title": "G7 to take 'necessary measures' to support energy supplies",
+          "link": "https://www.bbc.com/news/articles/c79542n0grwo?at_medium=RSS&at_campaign=rss",
+          "published": "Mon, 09 Mar 2026 23:30:46 GMT"
+        },
+        {
+          "title": "Hundreds of teenagers report for duty as Croatia reinstates conscription",
+          "link": "https://www.bbc.com/news/articles/c93j2l32lzgo?at_medium=RSS&at_campaign=rss",
+          "published": "Mon, 09 Mar 2026 14:49:34 GMT"
+        },
+        {
+          "title": "Alleged Bondi gunman seeks order to suppress family's identity",
+          "link": "https://www.bbc.com/news/articles/cy8lwnyj40eo?at_medium=RSS&at_campaign=rss",
+          "published": "Mon, 09 Mar 2026 08:13:58 GMT"
         }
       ],
-      "headline": "Russian economy withstood pressure from outside German expert"
+      "headline": "Who is Mojtaba Khamenei, Iran's new supreme leader?"
     },
     "technology": {
-      "last_updated": "2026-03-10T00:18:52Z",
+      "last_updated": "2026-03-10T00:32:21Z",
       "hn_top": [
-        {
-          "title": "Sir Tony Hoare has died",
-          "url": "http://lefenetrou.blogspot.com/2026/03/in-memoriam-tony-hoare.html",
-          "score": 185,
-          "comments": 44
-        },
         {
           "title": "Building a Procedural Hex Map with Wave Function Collapse",
           "url": "https://felixturner.github.io/hex-map-wfc/article/",
-          "score": 360,
+          "score": 367,
           "comments": 52
         },
         {
           "title": "JSLinux Now Supports x86_64",
           "url": "https://bellard.org/jslinux/",
-          "score": 224,
-          "comments": 61
+          "score": 227,
+          "comments": 64
         },
         {
           "title": "Is legal the same as legitimate: AI reimplementation and the erosion of copyleft",
           "url": "https://writings.hongminhee.org/2026/03/legal-vs-legitimate/",
-          "score": 305,
-          "comments": 341
+          "score": 314,
+          "comments": 352
         },
         {
           "title": "The first airplane fatality",
           "url": "https://www.amusingplanet.com/2026/03/thomas-selfridge-first-airplane-fatality.html",
           "score": 43,
-          "comments": 10
+          "comments": 11
+        },
+        {
+          "title": "Show HN: Remotely use my guitar tuner",
+          "url": "https://realtuner.online/",
+          "score": 19,
+          "comments": 4
         }
       ],
       "tech_headlines": [
@@ -425,10 +415,10 @@
           "published": "Wed, 04 Mar 2026 22:13:27 +0000"
         }
       ],
-      "headline": "Sir Tony Hoare has died"
+      "headline": "Building a Procedural Hex Map with Wave Function Collapse"
     },
     "policy": {
-      "last_updated": "2026-03-10T00:18:52Z",
+      "last_updated": "2026-03-10T00:32:22Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -467,7 +457,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-10T00:18:55Z",
+      "last_updated": "2026-03-10T00:32:24Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
