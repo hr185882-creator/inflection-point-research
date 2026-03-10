@@ -1,9 +1,9 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-10T05:05:50Z",
+  "fetched_at": "2026-03-10T05:17:50Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-10T05:05:51Z",
+      "last_updated": "2026-03-10T05:17:51Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
@@ -39,57 +39,57 @@
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 70201.22,
+          "price": 70190.734,
           "prev_close": 68443.15,
-          "change": 1758.07,
-          "change_pct": 2.57,
+          "change": 1747.584,
+          "change_pct": 2.55,
           "currency": "USD"
         },
         "EURUSD=X": {
           "label": "EUR/USD",
-          "price": 1.1621,
+          "price": 1.1623,
           "prev_close": 1.1636,
-          "change": -0.0015,
-          "change_pct": -0.13,
+          "change": -0.0013,
+          "change_pct": -0.11,
           "currency": "USD"
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 98.896,
+          "price": 98.843,
           "prev_close": 99.175,
-          "change": -0.279,
-          "change_pct": -0.28,
+          "change": -0.332,
+          "change_pct": -0.33,
           "currency": "USD"
         }
       },
       "yield_10y": 4.15,
-      "headline": "SPY 0.88%  |  BTC $70,201  |  10Y 4.15%"
+      "headline": "SPY 0.88%  |  BTC $70,191  |  10Y 4.15%"
     },
     "energy": {
-      "last_updated": "2026-03-10T05:06:01Z",
+      "last_updated": "2026-03-10T05:17:59Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 90.67,
+          "price": 88.83,
           "prev_close": 94.77,
-          "change": -4.1,
-          "change_pct": -4.33,
+          "change": -5.94,
+          "change_pct": -6.27,
           "currency": "USD"
         },
         "NG=F": {
           "label": "Natural Gas ($/MMBtu)",
-          "price": 3.13,
+          "price": 3.111,
           "prev_close": 3.12,
-          "change": 0.01,
-          "change_pct": 0.32,
+          "change": -0.009,
+          "change_pct": -0.29,
           "currency": "USD"
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 94.83,
+          "price": 93.3,
           "prev_close": 98.96,
-          "change": -4.13,
-          "change_pct": -4.17,
+          "change": -5.66,
+          "change_pct": -5.72,
           "currency": "USD"
         },
         "XLE": {
@@ -101,11 +101,32 @@
           "currency": "USD"
         }
       },
-      "headlines": [],
-      "headline": "WTI $90.67/bbl"
+      "headlines": [
+        {
+          "title": "U.S. exports of major transportation fuels in 2025 were about the same as in 2024",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67304",
+          "published": "Mon, 09 Mar 2026 09:00:00 EST"
+        },
+        {
+          "title": "U.S. electricity generation in 2025 hit a record, again",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67284",
+          "published": "Thu, 05 Mar 2026 09:00:00 EST"
+        },
+        {
+          "title": "U.S. LNG developers sign highest volume of sale and purchase contracts since 2022",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67264",
+          "published": "Tue, 03 Mar 2026 09:00:00 EST"
+        },
+        {
+          "title": "Nuclear reactor restart in Japan will likely displace natural gas electricity generation",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67244",
+          "published": "Mon, 02 Mar 2026  09:00:00 EST"
+        }
+      ],
+      "headline": "WTI $88.83/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-10T05:06:05Z",
+      "last_updated": "2026-03-10T05:18:01Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
@@ -194,7 +215,7 @@
       "headline": "NVDA 2.68%  |  MSFT 0.11%"
     },
     "sports": {
-      "last_updated": "2026-03-10T05:06:06Z",
+      "last_updated": "2026-03-10T05:18:02Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -350,7 +371,7 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-10T05:06:11Z",
+      "last_updated": "2026-03-10T05:18:07Z",
       "headlines": [
         {
           "title": "Russian economy withstood pressure from outside German expert",
@@ -391,36 +412,36 @@
       "headline": "Russian economy withstood pressure from outside German expert"
     },
     "technology": {
-      "last_updated": "2026-03-10T05:06:12Z",
+      "last_updated": "2026-03-10T05:18:08Z",
       "hn_top": [
         {
           "title": "Learnings from paying artists royalties for AI-generated art",
           "url": "https://www.kapwing.com/blog/learnings-from-paying-artists-royalties-for-ai-generated-art/",
-          "score": 56,
-          "comments": 22
+          "score": 66,
+          "comments": 26
         },
         {
           "title": "Two Years of Emacs Solo: 35 Modules, Zero External Packages, and a Full Refactor",
           "url": "https://www.rahuljuliato.com/posts/emacs-solo-two-years",
-          "score": 131,
+          "score": 132,
           "comments": 25
         },
         {
           "title": "Building a Procedural Hex Map with Wave Function Collapse",
           "url": "https://felixturner.github.io/hex-map-wfc/article/",
-          "score": 432,
+          "score": 433,
           "comments": 67
         },
         {
           "title": "Show HN: Remotely use my guitar tuner",
           "url": "https://realtuner.online/",
-          "score": 122,
-          "comments": 29
+          "score": 129,
+          "comments": 31
         },
         {
           "title": "JSLinux Now Supports x86_64",
           "url": "https://bellard.org/jslinux/",
-          "score": 277,
+          "score": 280,
           "comments": 79
         }
       ],
@@ -454,7 +475,7 @@
       "headline": "Learnings from paying artists royalties for AI-generated art"
     },
     "policy": {
-      "last_updated": "2026-03-10T05:06:12Z",
+      "last_updated": "2026-03-10T05:18:08Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -493,10 +514,67 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-10T05:06:42Z",
-      "cases": [],
+      "last_updated": "2026-03-10T05:18:10Z",
+      "cases": [
+        {
+          "title": "In Re Bystolic Antitrust Litigation",
+          "court": "Court of Appeals for the Second Circuit",
+          "date": "2024-05-13",
+          "tag": "Antitrust",
+          "link": "https://www.courtlistener.com/opinion/9501475/in-re-bystolic-antitrust-litigation/"
+        },
+        {
+          "title": "Automotive Parts Antitrust Litig.",
+          "court": "Court of Appeals for the Sixth Circuit",
+          "date": "2022-05-12",
+          "tag": "Antitrust",
+          "link": "https://www.courtlistener.com/opinion/6468000/automotive-parts-antitrust-litig/"
+        },
+        {
+          "title": "Capon v. Monopoly Game LLC",
+          "court": "California Court of Appeal",
+          "date": "2011-03-04",
+          "tag": "Antitrust",
+          "link": "https://www.courtlistener.com/opinion/5810084/capon-v-monopoly-game-llc/"
+        },
+        {
+          "title": "In re Telexfree Sec. Litig.",
+          "court": "District Court, District of Columbia",
+          "date": "2019-01-29",
+          "tag": "Regulatory",
+          "link": "https://www.courtlistener.com/opinion/7333964/in-re-telexfree-sec-litig/"
+        },
+        {
+          "title": "Fed. Trade Comm'n v. Abbvie Inc.",
+          "court": "District Court, E.D. Pennsylvania",
+          "date": "2018-06-29",
+          "tag": "Regulatory",
+          "link": "https://www.courtlistener.com/opinion/7331819/fed-trade-commn-v-abbvie-inc/"
+        },
+        {
+          "title": "FTC v. ZAAPPAAZ",
+          "court": "Court of Appeals for the Fifth Circuit",
+          "date": "2025-06-16",
+          "tag": "Regulatory",
+          "link": "https://www.courtlistener.com/opinion/10605413/ftc-v-zaappaaz/"
+        },
+        {
+          "title": "Knight First Amendment Institute at Columbia University v. CIA",
+          "court": "Court of Appeals for the D.C. Circuit",
+          "date": "2021-08-27",
+          "tag": "Constitutional",
+          "link": "https://www.courtlistener.com/opinion/5064123/knight-first-amendment-institute-at-columbia-university-v-cia/"
+        },
+        {
+          "title": "Ratification of the Equal Rights Amendment",
+          "court": "Department of Justice Office of Legal Counsel",
+          "date": "2020-01-06",
+          "tag": "Constitutional",
+          "link": "https://www.courtlistener.com/opinion/4713839/ratification-of-the-equal-rights-amendment/"
+        }
+      ],
       "scotus_opinions": [],
-      "headline": null
+      "headline": "In Re Bystolic Antitrust Litigation"
     }
   }
 }
