@@ -1,9 +1,9 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-10T01:32:38Z",
+  "fetched_at": "2026-03-10T01:47:29Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-10T01:32:39Z",
+      "last_updated": "2026-03-10T01:47:29Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
@@ -39,57 +39,57 @@
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 68979.31,
+          "price": 68928.64,
           "prev_close": 68443.15,
-          "change": 536.16,
-          "change_pct": 0.78,
+          "change": 485.49,
+          "change_pct": 0.71,
           "currency": "USD"
         },
         "EURUSD=X": {
           "label": "EUR/USD",
-          "price": 1.1618,
+          "price": 1.1617,
           "prev_close": 1.1636,
-          "change": -0.0018,
-          "change_pct": -0.15,
+          "change": -0.0019,
+          "change_pct": -0.16,
           "currency": "USD"
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 98.818,
+          "price": 98.85,
           "prev_close": 99.175,
-          "change": -0.357,
-          "change_pct": -0.36,
+          "change": -0.325,
+          "change_pct": -0.33,
           "currency": "USD"
         }
       },
       "yield_10y": 4.15,
-      "headline": "SPY 0.88%  |  BTC $68,979  |  10Y 4.15%"
+      "headline": "SPY 0.88%  |  BTC $68,929  |  10Y 4.15%"
     },
     "energy": {
-      "last_updated": "2026-03-10T01:32:48Z",
+      "last_updated": "2026-03-10T01:47:39Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 86.15,
+          "price": 85.43,
           "prev_close": 94.77,
-          "change": -8.62,
-          "change_pct": -9.1,
+          "change": -9.34,
+          "change_pct": -9.86,
           "currency": "USD"
         },
         "NG=F": {
           "label": "Natural Gas ($/MMBtu)",
-          "price": 3.089,
+          "price": 3.081,
           "prev_close": 3.12,
-          "change": -0.031,
-          "change_pct": -0.99,
+          "change": -0.039,
+          "change_pct": -1.25,
           "currency": "USD"
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 89.51,
+          "price": 89.03,
           "prev_close": 98.96,
-          "change": -9.45,
-          "change_pct": -9.55,
+          "change": -9.93,
+          "change_pct": -10.03,
           "currency": "USD"
         },
         "XLE": {
@@ -101,32 +101,11 @@
           "currency": "USD"
         }
       },
-      "headlines": [
-        {
-          "title": "U.S. exports of major transportation fuels in 2025 were about the same as in 2024",
-          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67304",
-          "published": "Mon, 09 Mar 2026 09:00:00 EST"
-        },
-        {
-          "title": "U.S. electricity generation in 2025 hit a record, again",
-          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67284",
-          "published": "Thu, 05 Mar 2026 09:00:00 EST"
-        },
-        {
-          "title": "U.S. LNG developers sign highest volume of sale and purchase contracts since 2022",
-          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67264",
-          "published": "Tue, 03 Mar 2026 09:00:00 EST"
-        },
-        {
-          "title": "Nuclear reactor restart in Japan will likely displace natural gas electricity generation",
-          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67244",
-          "published": "Mon, 02 Mar 2026  09:00:00 EST"
-        }
-      ],
-      "headline": "WTI $86.15/bbl"
+      "headlines": [],
+      "headline": "WTI $85.43/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-10T01:32:49Z",
+      "last_updated": "2026-03-10T01:47:40Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
@@ -215,7 +194,7 @@
       "headline": "NVDA 2.68%  |  MSFT 0.11%"
     },
     "sports": {
-      "last_updated": "2026-03-10T01:32:50Z",
+      "last_updated": "2026-03-10T01:47:41Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -242,23 +221,23 @@
             {
               "home": "BKN",
               "away": "MEM",
-              "home_score": "110",
-              "away_score": "95",
-              "status": "7:55 - 4th"
+              "home_score": "123",
+              "away_score": "105",
+              "status": "2:33 - 4th"
             },
             {
               "home": "OKC",
               "away": "DEN",
-              "home_score": "98",
-              "away_score": "96",
-              "status": "10:37 - 4th"
+              "home_score": "104",
+              "away_score": "104",
+              "status": "6:54 - 4th"
             },
             {
               "home": "UTAH",
               "away": "GS",
-              "home_score": "21",
-              "away_score": "22",
-              "status": "2:24 - 1st"
+              "home_score": "37",
+              "away_score": "36",
+              "status": "9:11 - 2nd"
             }
           ]
         },
@@ -371,7 +350,7 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-10T01:32:55Z",
+      "last_updated": "2026-03-10T01:47:41Z",
       "headlines": [
         {
           "title": "Who is Mojtaba Khamenei, Iran's new supreme leader?",
@@ -402,37 +381,37 @@
       "headline": "Who is Mojtaba Khamenei, Iran's new supreme leader?"
     },
     "technology": {
-      "last_updated": "2026-03-10T01:32:55Z",
+      "last_updated": "2026-03-10T01:47:43Z",
       "hn_top": [
         {
           "title": "Two Years of Emacs Solo: 35 Modules, Zero External Packages, and a Full Refactor",
           "url": "https://www.rahuljuliato.com/posts/emacs-solo-two-years",
-          "score": 43,
-          "comments": 1
-        },
-        {
-          "title": "Building a Procedural Hex Map with Wave Function Collapse",
-          "url": "https://felixturner.github.io/hex-map-wfc/article/",
-          "score": 382,
-          "comments": 57
+          "score": 58,
+          "comments": 3
         },
         {
           "title": "It looks like the \u201cJVG algorithm\u201d only wins on tiny numbers",
           "url": "https://scottaaronson.blog/?p=9615",
-          "score": 14,
-          "comments": 4
+          "score": 20,
+          "comments": 7
+        },
+        {
+          "title": "Building a Procedural Hex Map with Wave Function Collapse",
+          "url": "https://felixturner.github.io/hex-map-wfc/article/",
+          "score": 386,
+          "comments": 57
         },
         {
           "title": "JSLinux Now Supports x86_64",
           "url": "https://bellard.org/jslinux/",
-          "score": 237,
-          "comments": 69
+          "score": 242,
+          "comments": 70
         },
         {
           "title": "Show HN: Remotely use my guitar tuner",
           "url": "https://realtuner.online/",
-          "score": 55,
-          "comments": 11
+          "score": 63,
+          "comments": 12
         }
       ],
       "tech_headlines": [
@@ -465,7 +444,7 @@
       "headline": "Two Years of Emacs Solo: 35 Modules, Zero External Packages, and a Full Refactor"
     },
     "policy": {
-      "last_updated": "2026-03-10T01:32:56Z",
+      "last_updated": "2026-03-10T01:47:43Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -504,7 +483,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-10T01:32:59Z",
+      "last_updated": "2026-03-10T01:47:46Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
