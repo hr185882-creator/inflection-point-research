@@ -1,4 +1,580 @@
 {
   "schema_version": "1.2",
   "fetched_at": "2026-03-10T06:11:25Z",
-  "domains": {"markets": {"last_updated": "2026-03-10T06:11:26Z"}, "energy": {}, "companies": {}, "sports": {}, "geopolitics": {}, "technology": {}, "policy": {}, "legal": {}}}
+  "domains": {
+    "markets": {
+      "last_updated": "2026-03-10T06:11:26Z",
+      "quotes": {
+        "SPY": {
+          "label": "S&P 500 ETF",
+          "price": 678.27,
+          "prev_close": 672.38,
+          "change": 5.89,
+          "change_pct": 0.88,
+          "currency": "USD"
+        },
+        "QQQ": {
+          "label": "Nasdaq 100 ETF",
+          "price": 607.76,
+          "prev_close": 599.75,
+          "change": 8.01,
+          "change_pct": 1.34,
+          "currency": "USD"
+        },
+        "GLD": {
+          "label": "Gold ETF",
+          "price": 472.53,
+          "prev_close": 473.51,
+          "change": -0.98,
+          "change_pct": -0.21,
+          "currency": "USD"
+        },
+        "TLT": {
+          "label": "20Y Treasury ETF",
+          "price": 89.23,
+          "prev_close": 88.46,
+          "change": 0.77,
+          "change_pct": 0.87,
+          "currency": "USD"
+        },
+        "BTC-USD": {
+          "label": "Bitcoin",
+          "price": 69889.08,
+          "prev_close": 68443.15,
+          "change": 1445.93,
+          "change_pct": 2.11,
+          "currency": "USD"
+        },
+        "EURUSD=X": {
+          "label": "EUR/USD",
+          "price": 1.1628,
+          "prev_close": 1.1636,
+          "change": -0.0008,
+          "change_pct": -0.07,
+          "currency": "USD"
+        },
+        "DX-Y.NYB": {
+          "label": "DXY",
+          "price": 98.794,
+          "prev_close": 99.175,
+          "change": -0.381,
+          "change_pct": -0.38,
+          "currency": "USD"
+        }
+      },
+      "yield_10y": 4.15,
+      "headline": "SPY 0.88%  |  BTC $69,889  |  10Y 4.15%"
+    },
+    "energy": {
+      "last_updated": "2026-03-10T06:11:35Z",
+      "quotes": {
+        "CL=F": {
+          "label": "WTI Crude ($/bbl)",
+          "price": 88.77,
+          "prev_close": 94.77,
+          "change": -6.0,
+          "change_pct": -6.33,
+          "currency": "USD"
+        },
+        "NG=F": {
+          "label": "Natural Gas ($/MMBtu)",
+          "price": 3.095,
+          "prev_close": 3.12,
+          "change": -0.025,
+          "change_pct": -0.8,
+          "currency": "USD"
+        },
+        "BZ=F": {
+          "label": "Brent Crude ($/bbl)",
+          "price": 93.13,
+          "prev_close": 98.96,
+          "change": -5.83,
+          "change_pct": -5.89,
+          "currency": "USD"
+        },
+        "XLE": {
+          "label": "Energy ETF",
+          "price": 56.32,
+          "prev_close": 56.57,
+          "change": -0.25,
+          "change_pct": -0.44,
+          "currency": "USD"
+        }
+      },
+      "headlines": [
+        {
+          "title": "U.S. exports of major transportation fuels in 2025 were about the same as in 2024",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67304",
+          "published": "Mon, 09 Mar 2026 09:00:00 EST"
+        },
+        {
+          "title": "U.S. electricity generation in 2025 hit a record, again",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67284",
+          "published": "Thu, 05 Mar 2026 09:00:00 EST"
+        },
+        {
+          "title": "U.S. LNG developers sign highest volume of sale and purchase contracts since 2022",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67264",
+          "published": "Tue, 03 Mar 2026 09:00:00 EST"
+        },
+        {
+          "title": "Nuclear reactor restart in Japan will likely displace natural gas electricity generation",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67244",
+          "published": "Mon, 02 Mar 2026  09:00:00 EST"
+        }
+      ],
+      "headline": "WTI $88.77/bbl"
+    },
+    "companies": {
+      "last_updated": "2026-03-10T06:11:37Z",
+      "quotes": {
+        "NVDA": {
+          "label": "NVIDIA",
+          "price": 182.65,
+          "prev_close": 177.885,
+          "change": 4.765,
+          "change_pct": 2.68,
+          "currency": "USD"
+        },
+        "MSFT": {
+          "label": "Microsoft",
+          "price": 409.41,
+          "prev_close": 408.96,
+          "change": 0.45,
+          "change_pct": 0.11,
+          "currency": "USD"
+        },
+        "AAPL": {
+          "label": "Apple",
+          "price": 259.88,
+          "prev_close": 257.46,
+          "change": 2.42,
+          "change_pct": 0.94,
+          "currency": "USD"
+        },
+        "META": {
+          "label": "Meta",
+          "price": 647.39,
+          "prev_close": 644.86,
+          "change": 2.53,
+          "change_pct": 0.39,
+          "currency": "USD"
+        },
+        "TSLA": {
+          "label": "Tesla",
+          "price": 398.68,
+          "prev_close": 396.73,
+          "change": 1.95,
+          "change_pct": 0.49,
+          "currency": "USD"
+        },
+        "AMZN": {
+          "label": "Amazon",
+          "price": 213.49,
+          "prev_close": 213.12,
+          "change": 0.37,
+          "change_pct": 0.17,
+          "currency": "USD"
+        },
+        "GOOGL": {
+          "label": "Alphabet",
+          "price": 306.36,
+          "prev_close": 298.27,
+          "change": 8.09,
+          "change_pct": 2.71,
+          "currency": "USD"
+        }
+      },
+      "recent_filings": [
+        {
+          "title": "IONIS PHARMACEUTICALS INC  (IONS) \u2014 8-K (2026-03-09)",
+          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=IONIS%20PHARMACEUTICALS%20INC%20%20%28IONS%29&type=8-K&dateb=&owner=include&count=5",
+          "published": "2026-03-09"
+        },
+        {
+          "title": "Cartesian Therapeutics, Inc.  (RNAC) \u2014 8-K (2026-03-09)",
+          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Cartesian%20Therapeutics%2C%20Inc.%20%20%28RNAC%29&type=8-K&dateb=&owner=include&count=5",
+          "published": "2026-03-09"
+        },
+        {
+          "title": "enCore Energy Corp.  (EU) \u2014 8-K (2026-03-09)",
+          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=enCore%20Energy%20Corp.%20%20%28EU%29&type=8-K&dateb=&owner=include&count=5",
+          "published": "2026-03-09"
+        },
+        {
+          "title": "NET Power Inc.  (NPWR, NPWR-WT) \u2014 8-K (2026-03-09)",
+          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=NET%20Power%20Inc.%20%20%28NPWR%2C%20NPWR-WT%29&type=8-K&dateb=&owner=include&count=5",
+          "published": "2026-03-09"
+        },
+        {
+          "title": "Symbotic Inc.  (SYM) \u2014 8-K (2026-03-09)",
+          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Symbotic%20Inc.%20%20%28SYM%29&type=8-K&dateb=&owner=include&count=5",
+          "published": "2026-03-09"
+        }
+      ],
+      "headline": "NVDA 2.68%  |  MSFT 0.11%"
+    },
+    "sports": {
+      "last_updated": "2026-03-10T06:11:37Z",
+      "scores": {
+        "nfl": {
+          "label": "NFL",
+          "games": [
+            {
+              "home": "NE",
+              "away": "SEA",
+              "home_score": "13",
+              "away_score": "29",
+              "status": "Final"
+            }
+          ]
+        },
+        "nba": {
+          "label": "NBA",
+          "games": [
+            {
+              "home": "CLE",
+              "away": "PHI",
+              "home_score": "115",
+              "away_score": "101",
+              "status": "Final"
+            },
+            {
+              "home": "BKN",
+              "away": "MEM",
+              "home_score": "126",
+              "away_score": "115",
+              "status": "Final"
+            },
+            {
+              "home": "OKC",
+              "away": "DEN",
+              "home_score": "129",
+              "away_score": "126",
+              "status": "Final"
+            },
+            {
+              "home": "UTAH",
+              "away": "GS",
+              "home_score": "119",
+              "away_score": "116",
+              "status": "Final"
+            }
+          ]
+        },
+        "mlb": {
+          "label": "MLB",
+          "games": [
+            {
+              "home": "ATL",
+              "away": "MIN",
+              "home_score": "9",
+              "away_score": "8",
+              "status": "Final"
+            },
+            {
+              "home": "BOS",
+              "away": "PHI",
+              "home_score": "5",
+              "away_score": "3",
+              "status": "Final"
+            },
+            {
+              "home": "DET",
+              "away": "TB",
+              "home_score": "4",
+              "away_score": "4",
+              "status": "Final"
+            },
+            {
+              "home": "HOU",
+              "away": "STL",
+              "home_score": "10",
+              "away_score": "3",
+              "status": "Final"
+            }
+          ]
+        }
+      },
+      "injuries": {
+        "nfl": [
+          {
+            "player": "Isaac Seumalo",
+            "team": "",
+            "status": "Active",
+            "detail": "The Cardinals agreed to terms with Seumalo on a three-year, $31.5 million contract Monday, Jeremy Fowler of ESPN.com reports."
+          },
+          {
+            "player": "Roy Lopez",
+            "team": "",
+            "status": "Active",
+            "detail": "Lopez signed a two-year, $11.5 million contract with the Cardinals on Monday that includes $7 million guaranteed, Ian Rapoport of NFL Network reports."
+          },
+          {
+            "player": "Tyrone Wheatley Jr.",
+            "team": "",
+            "status": "Questionable",
+            "detail": "questionable"
+          },
+          {
+            "player": "Cameron Thomas",
+            "team": "",
+            "status": "Active",
+            "detail": "Thomas agreed to a one-year, $3.1 million contract with the Falcons on Monday, Marc Raimondi of ESPN.com reports."
+          },
+          {
+            "player": "John Simpson",
+            "team": "",
+            "status": "Active",
+            "detail": "Simpson agreed to a three-year, $30 million contract with the Ravens on Monday, Mike Garafolo of NFL Network reports."
+          },
+          {
+            "player": "Tyler Huntley",
+            "team": "",
+            "status": "Active",
+            "detail": "Huntley and the Ravens agreed to a two-year, $11 million contract Saturday, Adam Schefter of ESPN reports."
+          }
+        ],
+        "nba": [
+          {
+            "player": "Jonathan Kuminga",
+            "team": "",
+            "status": "Day-To-Day",
+            "detail": "Kuminga is questionable for Tuesday's game against the Mavericks due to a left knee bone bruise."
+          },
+          {
+            "player": "Payton Pritchard",
+            "team": "",
+            "status": "Day-To-Day",
+            "detail": "Pritchard (neck) is Taylor Snow of the Celtics' official site for Tuesday's game against the Spurs."
+          },
+          {
+            "player": "Nikola Vucevic",
+            "team": "",
+            "status": "Out",
+            "detail": "Vucevic underwent surgery Saturday to stabilize a fracture in his right ring finger and will be reevaluated in 3-to-4 weeks."
+          },
+          {
+            "player": "Egor Demin",
+            "team": "",
+            "status": "Out",
+            "detail": "The Nets announced Monday that Demin (foot) will miss the rest of the season, NBA reporter Marc Stein reports."
+          },
+          {
+            "player": "Michael Porter Jr.",
+            "team": "",
+            "status": "Out",
+            "detail": "Porter (rest) has been ruled out for Monday's game against the Grizzlies."
+          }
+        ]
+      },
+      "headline": "NFL / NBA / MLB live scores"
+    },
+    "geopolitics": {
+      "last_updated": "2026-03-10T06:11:43Z",
+      "headlines": [
+        {
+          "title": "Russian economy withstood pressure from outside German expert",
+          "link": "https://tass.com/economy/2073165",
+          "published": "20260119T140000Z"
+        },
+        {
+          "title": "Sudan : united kingdom Hits  Sudan War Machine  With New Sanctions",
+          "link": "https://allafrica.com/stories/202602060005.html",
+          "published": "20260206T060000Z"
+        },
+        {
+          "title": "UK Sanctions Sudanese Army and RSF Leaders",
+          "link": "https://english.aawsat.com/arab-world/5237657-uk-sanctions-sudanese-army-and-rsf-leaders",
+          "published": "20260205T183000Z"
+        },
+        {
+          "title": "U . S . sanctions Gaza charities over alleged Hamas ties \u2013 NaturalNews . com",
+          "link": "https://www.naturalnews.com/2026-01-26-us-sanctions-gaza-charities-over-hamas-ties.html",
+          "published": "20260126T130000Z"
+        },
+        {
+          "title": "Myanmar military using commercial paramotors , gyrocopters for attacks : Report",
+          "link": "https://www.siasat.com/myanmar-military-using-commercial-paramotors-gyrocopters-for-attacks-report-3331737/",
+          "published": "20260126T140000Z"
+        },
+        {
+          "title": "Who is Mojtaba Khamenei, Iran's new supreme leader?",
+          "link": "https://www.bbc.com/news/articles/c78xxg05w0zo?at_medium=RSS&at_campaign=rss",
+          "published": "Sun, 08 Mar 2026 21:51:48 GMT"
+        },
+        {
+          "title": "US teacher killed after toilet paper prank goes wrong",
+          "link": "https://www.bbc.com/news/articles/cdr24g1p3vpo?at_medium=RSS&at_campaign=rss",
+          "published": "Mon, 09 Mar 2026 17:09:21 GMT"
+        }
+      ],
+      "headline": "Russian economy withstood pressure from outside German expert"
+    },
+    "technology": {
+      "last_updated": "2026-03-10T06:11:43Z",
+      "hn_top": [
+        {
+          "title": "Learnings from paying artists royalties for AI-generated art",
+          "url": "https://www.kapwing.com/blog/learnings-from-paying-artists-royalties-for-ai-generated-art/",
+          "score": 90,
+          "comments": 50
+        },
+        {
+          "title": "Two Years of Emacs Solo",
+          "url": "https://www.rahuljuliato.com/posts/emacs-solo-two-years",
+          "score": 153,
+          "comments": 32
+        },
+        {
+          "title": "Building a Procedural Hex Map with Wave Function Collapse",
+          "url": "https://felixturner.github.io/hex-map-wfc/article/",
+          "score": 447,
+          "comments": 68
+        },
+        {
+          "title": "Optimizing Top K in Postgres",
+          "url": "https://www.paradedb.com/blog/optimizing-top-k",
+          "score": 20,
+          "comments": 0
+        },
+        {
+          "title": "Show HN: I Was Here \u2013 Draw on street view, others can find your drawings",
+          "url": "https://washere.live",
+          "score": 6,
+          "comments": 0
+        }
+      ],
+      "tech_headlines": [
+        {
+          "title": "Don\u2019t Expect Big Surprises in the Government\u2019s Alien Files",
+          "link": "https://www.wired.com/story/dont-expect-big-surprises-in-the-governments-alien-files/",
+          "published": "Mon, 09 Mar 2026 10:00:00 +0000"
+        },
+        {
+          "title": "Why RFK\u2019s CDC Is Endorsing \u2018Shared Decisionmaking\u2019 for Vaccines",
+          "link": "https://www.wired.com/story/why-rfks-cdc-is-endorsing-shared-decision-making-for-vaccines/",
+          "published": "Mon, 09 Mar 2026 09:30:00 +0000"
+        },
+        {
+          "title": "Left-Handed People Are More Competitive, Says Science",
+          "link": "https://www.wired.com/story/left-handed-people-are-more-competitive-says-science/",
+          "published": "Sun, 08 Mar 2026 09:00:00 +0000"
+        },
+        {
+          "title": "Sleep Apnea Often Goes Undetected in Women. That\u2019s Starting to Change",
+          "link": "https://www.wired.com/story/sleep-apnea-women-detection-treatment/",
+          "published": "Fri, 06 Mar 2026 09:30:00 +0000"
+        },
+        {
+          "title": "Big Tech Signs White House Data Center Pledge With Good Optics and Little Substance",
+          "link": "https://www.wired.com/story/big-tech-signs-white-house-data-center-pledge-with-good-optics-not-much-substance/",
+          "published": "Wed, 04 Mar 2026 22:13:27 +0000"
+        }
+      ],
+      "headline": "Learnings from paying artists royalties for AI-generated art"
+    },
+    "policy": {
+      "last_updated": "2026-03-10T06:11:44Z",
+      "bills": [
+        {
+          "title": "Most-Viewed Bills - Week of March 8, 2026",
+          "link": "https://www.congress.gov/most-viewed-bills",
+          "published": ""
+        }
+      ],
+      "federal_rules": [
+        {
+          "title": "Christmas Tree Promotion, Research, and Information Order",
+          "link": "https://www.federalregister.gov/documents/2026/03/09/2026-04586/christmas-tree-promotion-research-and-information-order",
+          "published": "2026-03-09"
+        },
+        {
+          "title": "Magnuson-Stevens Fishery Conservation and Management Act Provisions; Fisheries of the Northeastern United States; Northeast Multispecies Fishery; Framework Adjustment 69",
+          "link": "https://www.federalregister.gov/documents/2026/03/09/2026-04585/magnuson-stevens-fishery-conservation-and-management-act-provisions-fisheries-of-the-northeastern",
+          "published": "2026-03-09"
+        },
+        {
+          "title": "Avocados Grown in South Florida and Imported Avocados; Change in Maturity Requirements",
+          "link": "https://www.federalregister.gov/documents/2026/03/09/2026-04584/avocados-grown-in-south-florida-and-imported-avocados-change-in-maturity-requirements",
+          "published": "2026-03-09"
+        },
+        {
+          "title": "Paper and Paper-Based Packaging Promotion, Research and Information Order Termination",
+          "link": "https://www.federalregister.gov/documents/2026/03/09/2026-04570/paper-and-paper-based-packaging-promotion-research-and-information-order-termination",
+          "published": "2026-03-09"
+        },
+        {
+          "title": "Supplemental Disaster Relief Program and Dairy Margin Coverage Program; Correction",
+          "link": "https://www.federalregister.gov/documents/2026/03/09/2026-04531/supplemental-disaster-relief-program-and-dairy-margin-coverage-program-correction",
+          "published": "2026-03-09"
+        }
+      ],
+      "scotus": [],
+      "headline": "Most-Viewed Bills - Week of March 8, 2026"
+    },
+    "legal": {
+      "last_updated": "2026-03-10T06:11:46Z",
+      "cases": [
+        {
+          "title": "In Re Bystolic Antitrust Litigation",
+          "court": "Court of Appeals for the Second Circuit",
+          "date": "2024-05-13",
+          "tag": "Antitrust",
+          "link": "https://www.courtlistener.com/opinion/9501475/in-re-bystolic-antitrust-litigation/"
+        },
+        {
+          "title": "Automotive Parts Antitrust Litig.",
+          "court": "Court of Appeals for the Sixth Circuit",
+          "date": "2022-05-12",
+          "tag": "Antitrust",
+          "link": "https://www.courtlistener.com/opinion/6468000/automotive-parts-antitrust-litig/"
+        },
+        {
+          "title": "Capon v. Monopoly Game LLC",
+          "court": "California Court of Appeal",
+          "date": "2011-03-04",
+          "tag": "Antitrust",
+          "link": "https://www.courtlistener.com/opinion/5810084/capon-v-monopoly-game-llc/"
+        },
+        {
+          "title": "In re Telexfree Sec. Litig.",
+          "court": "District Court, District of Columbia",
+          "date": "2019-01-29",
+          "tag": "Regulatory",
+          "link": "https://www.courtlistener.com/opinion/7333964/in-re-telexfree-sec-litig/"
+        },
+        {
+          "title": "Fed. Trade Comm'n v. Abbvie Inc.",
+          "court": "District Court, E.D. Pennsylvania",
+          "date": "2018-06-29",
+          "tag": "Regulatory",
+          "link": "https://www.courtlistener.com/opinion/7331819/fed-trade-commn-v-abbvie-inc/"
+        },
+        {
+          "title": "FTC v. ZAAPPAAZ",
+          "court": "Court of Appeals for the Fifth Circuit",
+          "date": "2025-06-16",
+          "tag": "Regulatory",
+          "link": "https://www.courtlistener.com/opinion/10605413/ftc-v-zaappaaz/"
+        },
+        {
+          "title": "Knight First Amendment Institute at Columbia University v. CIA",
+          "court": "Court of Appeals for the D.C. Circuit",
+          "date": "2021-08-27",
+          "tag": "Constitutional",
+          "link": "https://www.courtlistener.com/opinion/5064123/knight-first-amendment-institute-at-columbia-university-v-cia/"
+        },
+        {
+          "title": "Ratification of the Equal Rights Amendment",
+          "court": "Department of Justice Office of Legal Counsel",
+          "date": "2020-01-06",
+          "tag": "Constitutional",
+          "link": "https://www.courtlistener.com/opinion/4713839/ratification-of-the-equal-rights-amendment/"
+        }
+      ],
+      "scotus_opinions": [],
+      "headline": "In Re Bystolic Antitrust Litigation"
+    }
+  }
+}
