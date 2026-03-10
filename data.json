@@ -1,103 +1,103 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-10T19:46:49Z",
+  "fetched_at": "2026-03-10T20:06:00Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-10T19:46:49Z",
+      "last_updated": "2026-03-10T20:06:01Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
-          "price": 677.46,
+          "price": 677.05,
           "prev_close": 678.27,
-          "change": -0.81,
-          "change_pct": -0.12,
+          "change": -1.22,
+          "change_pct": -0.18,
           "currency": "USD"
         },
         "QQQ": {
           "label": "Nasdaq 100 ETF",
-          "price": 607.84,
+          "price": 607.77,
           "prev_close": 607.76,
-          "change": 0.08,
-          "change_pct": 0.01,
+          "change": 0.01,
+          "change_pct": 0.0,
           "currency": "USD"
         },
         "GLD": {
           "label": "Gold ETF",
-          "price": 476.91,
+          "price": 477.71,
           "prev_close": 472.53,
-          "change": 4.38,
-          "change_pct": 0.93,
+          "change": 5.18,
+          "change_pct": 1.1,
           "currency": "USD"
         },
         "TLT": {
           "label": "20Y Treasury ETF",
-          "price": 88.355,
+          "price": 88.28,
           "prev_close": 89.23,
-          "change": -0.875,
-          "change_pct": -0.98,
+          "change": -0.95,
+          "change_pct": -1.06,
           "currency": "USD"
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 70025.625,
+          "price": 70077.61,
           "prev_close": 68443.15,
-          "change": 1582.475,
-          "change_pct": 2.31,
+          "change": 1634.46,
+          "change_pct": 2.39,
           "currency": "USD"
         },
         "EURUSD=X": {
           "label": "EUR/USD",
-          "price": 1.1616,
+          "price": 1.1612,
           "prev_close": 1.1636,
-          "change": -0.002,
-          "change_pct": -0.17,
+          "change": -0.0024,
+          "change_pct": -0.21,
           "currency": "USD"
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 98.922,
+          "price": 98.921,
           "prev_close": 99.175,
-          "change": -0.253,
+          "change": -0.254,
           "change_pct": -0.26,
           "currency": "USD"
         }
       },
       "yield_10y": 4.15,
-      "headline": "SPY -0.12%  |  BTC $70,026  |  10Y 4.15%"
+      "headline": "SPY -0.18%  |  BTC $70,078  |  10Y 4.15%"
     },
     "energy": {
-      "last_updated": "2026-03-10T19:46:59Z",
+      "last_updated": "2026-03-10T20:06:09Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 86.7,
+          "price": 86.67,
           "prev_close": 94.77,
-          "change": -8.07,
-          "change_pct": -8.52,
+          "change": -8.1,
+          "change_pct": -8.55,
           "currency": "USD"
         },
         "NG=F": {
           "label": "Natural Gas ($/MMBtu)",
-          "price": 3.041,
+          "price": 3.047,
           "prev_close": 3.12,
-          "change": -0.079,
-          "change_pct": -2.53,
+          "change": -0.073,
+          "change_pct": -2.34,
           "currency": "USD"
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 87.59,
+          "price": 87.99,
           "prev_close": 93.72,
-          "change": -6.13,
-          "change_pct": -6.54,
+          "change": -5.73,
+          "change_pct": -6.11,
           "currency": "USD"
         },
         "XLE": {
           "label": "Energy ETF",
-          "price": 55.735,
+          "price": 55.61,
           "prev_close": 56.32,
-          "change": -0.585,
-          "change_pct": -1.04,
+          "change": -0.71,
+          "change_pct": -1.26,
           "currency": "USD"
         }
       },
@@ -123,99 +123,99 @@
           "published": "Tue, 03 Mar 2026 09:00:00 EST"
         }
       ],
-      "headline": "WTI $86.70/bbl"
+      "headline": "WTI $86.67/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-10T19:47:00Z",
+      "last_updated": "2026-03-10T20:06:11Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
-          "price": 183.667,
+          "price": 184.77,
           "prev_close": 182.65,
-          "change": 1.017,
-          "change_pct": 0.56,
+          "change": 2.12,
+          "change_pct": 1.16,
           "currency": "USD"
         },
         "MSFT": {
           "label": "Microsoft",
-          "price": 405.005,
+          "price": 405.76,
           "prev_close": 409.41,
-          "change": -4.405,
-          "change_pct": -1.08,
+          "change": -3.65,
+          "change_pct": -0.89,
           "currency": "USD"
         },
         "AAPL": {
           "label": "Apple",
-          "price": 260.78,
+          "price": 260.83,
           "prev_close": 259.88,
-          "change": 0.9,
-          "change_pct": 0.35,
+          "change": 0.95,
+          "change_pct": 0.37,
           "currency": "USD"
         },
         "META": {
           "label": "Meta",
-          "price": 653.855,
+          "price": 654.07,
           "prev_close": 647.39,
-          "change": 6.465,
-          "change_pct": 1.0,
+          "change": 6.68,
+          "change_pct": 1.03,
           "currency": "USD"
         },
         "TSLA": {
           "label": "Tesla",
-          "price": 399.88,
+          "price": 399.235,
           "prev_close": 398.68,
-          "change": 1.2,
-          "change_pct": 0.3,
+          "change": 0.555,
+          "change_pct": 0.14,
           "currency": "USD"
         },
         "AMZN": {
           "label": "Amazon",
-          "price": 214.3,
+          "price": 214.33,
           "prev_close": 213.49,
-          "change": 0.81,
-          "change_pct": 0.38,
+          "change": 0.84,
+          "change_pct": 0.39,
           "currency": "USD"
         },
         "GOOGL": {
           "label": "Alphabet",
-          "price": 306.99,
+          "price": 307.04,
           "prev_close": 306.36,
-          "change": 0.63,
-          "change_pct": 0.21,
+          "change": 0.68,
+          "change_pct": 0.22,
           "currency": "USD"
         }
       },
       "recent_filings": [
         {
-          "title": "Aclaris Therapeutics, Inc.  (ACRS) \u2014 8-K (2026-03-10)",
+          "title": "Aclaris Therapeutics, Inc.  (ACRS) -- 8-K (2026-03-10)",
           "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Aclaris%20Therapeutics%2C%20Inc.%20%20%28ACRS%29&type=8-K&dateb=&owner=include&count=5",
           "published": "2026-03-10"
         },
         {
-          "title": "Synchrony Financial  (SYF, SYF-PA, SYF-PB) \u2014 8-K (2026-03-10)",
+          "title": "Synchrony Financial  (SYF, SYF-PA, SYF-PB) -- 8-K (2026-03-10)",
           "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Synchrony%20Financial%20%20%28SYF%2C%20SYF-PA%2C%20SYF-PB%29&type=8-K&dateb=&owner=include&count=5",
           "published": "2026-03-10"
         },
         {
-          "title": "AN2 Therapeutics, Inc.  (ANTX) \u2014 8-K (2026-03-10)",
+          "title": "AN2 Therapeutics, Inc.  (ANTX) -- 8-K (2026-03-10)",
           "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=AN2%20Therapeutics%2C%20Inc.%20%20%28ANTX%29&type=8-K&dateb=&owner=include&count=5",
           "published": "2026-03-10"
         },
         {
-          "title": "Archimedes Tech SPAC Partners III Co.  (ARCI, ARCIU) \u2014 8-K (2026-03-10)",
+          "title": "Archimedes Tech SPAC Partners III Co.  (ARCI, ARCIU) -- 8-K (2026-03-10)",
           "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Archimedes%20Tech%20SPAC%20Partners%20III%20Co.%20%20%28ARCI%2C%20ARCIU%29&type=8-K&dateb=&owner=include&count=5",
           "published": "2026-03-10"
         },
         {
-          "title": "STARZ ENTERTAINMENT CORP /CN/  (STRZ) \u2014 8-K (2026-03-10)",
+          "title": "STARZ ENTERTAINMENT CORP /CN/  (STRZ) -- 8-K (2026-03-10)",
           "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=STARZ%20ENTERTAINMENT%20CORP%20/CN/%20%20%28STRZ%29&type=8-K&dateb=&owner=include&count=5",
           "published": "2026-03-10"
         }
       ],
-      "headline": "NVDA 0.56%  |  MSFT -1.08%"
+      "headline": "NVDA 1.16%  |  MSFT -0.89%"
     },
     "sports": {
-      "last_updated": "2026-03-10T19:47:01Z",
+      "last_updated": "2026-03-10T20:06:12Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -270,14 +270,14 @@
               "away": "DET",
               "home_score": "2",
               "away_score": "7",
-              "status": "Bot 9th"
+              "status": "Final"
             },
             {
               "home": "HOU",
               "away": "BAL",
               "home_score": "6",
               "away_score": "6",
-              "status": "Bot 7th"
+              "status": "Top 9th"
             },
             {
               "home": "PHI",
@@ -289,9 +289,9 @@
             {
               "home": "TB",
               "away": "MIN",
-              "home_score": "3",
+              "home_score": "5",
               "away_score": "6",
-              "status": "Bot 9th"
+              "status": "Final"
             }
           ]
         }
@@ -371,7 +371,7 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-10T19:47:01Z",
+      "last_updated": "2026-03-10T20:06:22Z",
       "headlines": [
         {
           "title": "'I just want to be able to sleep': Attacks in Iran rock cities and cut power",
@@ -402,37 +402,37 @@
       "headline": "'I just want to be able to sleep': Attacks in Iran rock cities and cut power"
     },
     "technology": {
-      "last_updated": "2026-03-10T19:47:02Z",
+      "last_updated": "2026-03-10T20:06:24Z",
       "hn_top": [
         {
           "title": "Tony Hoare has died",
           "url": "https://blog.computationalcomplexity.org/2026/03/tony-hoare-1934-2026.html",
-          "score": 1001,
-          "comments": 144
+          "score": 1034,
+          "comments": 146
         },
         {
-          "title": "You Hired the AI to Write the Tests. Of Course They Pass",
+          "title": "I'm building agents that run while I sleep",
           "url": "https://www.claudecodecamp.com/p/i-m-building-agents-that-run-while-i-sleep",
-          "score": 27,
-          "comments": 22
+          "score": 49,
+          "comments": 43
         },
         {
           "title": "Yann LeCun raises $1B to build AI that understands the physical world",
           "url": "https://www.wired.com/story/yann-lecun-raises-dollar1-billion-to-build-ai-that-understands-the-physical-world/",
-          "score": 123,
-          "comments": 255
+          "score": 135,
+          "comments": 258
         },
         {
           "title": "Launch HN: RunAnywhere (YC W26) \u2013 Faster AI Inference on Apple Silicon",
           "url": "https://github.com/RunanywhereAI/rcli",
-          "score": 130,
-          "comments": 45
+          "score": 134,
+          "comments": 52
         },
         {
           "title": "Google to Discontinue Widevine Cloud License Service in April 2027",
           "url": "https://castlabs.com/blog/widevine-retiring-cloud-license-service/",
-          "score": 18,
-          "comments": 3
+          "score": 27,
+          "comments": 7
         }
       ],
       "tech_headlines": [
@@ -465,7 +465,7 @@
       "headline": "Tony Hoare has died"
     },
     "policy": {
-      "last_updated": "2026-03-10T19:47:03Z",
+      "last_updated": "2026-03-10T20:06:25Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -504,8 +504,29 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-10T19:47:19Z",
+      "last_updated": "2026-03-10T20:06:32Z",
       "cases": [
+        {
+          "title": "In Re Bystolic Antitrust Litigation",
+          "court": "Court of Appeals for the Second Circuit",
+          "date": "2024-05-13",
+          "tag": "Antitrust",
+          "link": "https://www.courtlistener.com/opinion/9501475/in-re-bystolic-antitrust-litigation/"
+        },
+        {
+          "title": "Automotive Parts Antitrust Litig.",
+          "court": "Court of Appeals for the Sixth Circuit",
+          "date": "2022-05-12",
+          "tag": "Antitrust",
+          "link": "https://www.courtlistener.com/opinion/6468000/automotive-parts-antitrust-litig/"
+        },
+        {
+          "title": "Capon v. Monopoly Game LLC",
+          "court": "California Court of Appeal",
+          "date": "2011-03-04",
+          "tag": "Antitrust",
+          "link": "https://www.courtlistener.com/opinion/5810084/capon-v-monopoly-game-llc/"
+        },
         {
           "title": "In re Telexfree Sec. Litig.",
           "court": "District Court, District of Columbia",
@@ -543,7 +564,7 @@
         }
       ],
       "scotus_opinions": [],
-      "headline": "In re Telexfree Sec. Litig."
+      "headline": "In Re Bystolic Antitrust Litigation"
     }
   }
 }
