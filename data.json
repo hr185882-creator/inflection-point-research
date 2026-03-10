@@ -1,9 +1,9 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-10T09:31:48Z",
+  "fetched_at": "2026-03-10T09:47:15Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-10T09:31:48Z",
+      "last_updated": "2026-03-10T09:47:15Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
@@ -39,57 +39,57 @@
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 71249.65,
+          "price": 71091.2,
           "prev_close": 68443.15,
-          "change": 2806.5,
-          "change_pct": 4.1,
+          "change": 2648.05,
+          "change_pct": 3.87,
           "currency": "USD"
         },
         "EURUSD=X": {
           "label": "EUR/USD",
-          "price": 1.1658,
+          "price": 1.1659,
           "prev_close": 1.1636,
-          "change": 0.0022,
-          "change_pct": 0.19,
+          "change": 0.0023,
+          "change_pct": 0.2,
           "currency": "USD"
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 98.596,
+          "price": 98.598,
           "prev_close": 99.175,
-          "change": -0.579,
+          "change": -0.577,
           "change_pct": -0.58,
           "currency": "USD"
         }
       },
-      "yield_10y": null,
-      "headline": null
+      "yield_10y": 4.15,
+      "headline": "SPY 0.88%  |  BTC $71,091  |  10Y 4.15%"
     },
     "energy": {
-      "last_updated": "2026-03-10T09:31:48Z",
+      "last_updated": "2026-03-10T09:47:25Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 86.97,
+          "price": 86.45,
           "prev_close": 94.77,
-          "change": -7.8,
-          "change_pct": -8.23,
+          "change": -8.32,
+          "change_pct": -8.78,
           "currency": "USD"
         },
         "NG=F": {
           "label": "Natural Gas ($/MMBtu)",
-          "price": 3.059,
+          "price": 3.064,
           "prev_close": 3.12,
-          "change": -0.061,
-          "change_pct": -1.96,
+          "change": -0.056,
+          "change_pct": -1.79,
           "currency": "USD"
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 86.18,
+          "price": 85.98,
           "prev_close": 93.72,
-          "change": -7.54,
-          "change_pct": -8.05,
+          "change": -7.74,
+          "change_pct": -8.26,
           "currency": "USD"
         },
         "XLE": {
@@ -102,10 +102,10 @@
         }
       },
       "headlines": [],
-      "headline": "WTI $86.97/bbl"
+      "headline": "WTI $86.45/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-10T09:31:49Z",
+      "last_updated": "2026-03-10T09:47:27Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
@@ -164,11 +164,37 @@
           "currency": "USD"
         }
       },
-      "recent_filings": [],
+      "recent_filings": [
+        {
+          "title": "IONIS PHARMACEUTICALS INC  (IONS) \u2014 8-K (2026-03-09)",
+          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=IONIS%20PHARMACEUTICALS%20INC%20%20%28IONS%29&type=8-K&dateb=&owner=include&count=5",
+          "published": "2026-03-09"
+        },
+        {
+          "title": "Cartesian Therapeutics, Inc.  (RNAC) \u2014 8-K (2026-03-09)",
+          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Cartesian%20Therapeutics%2C%20Inc.%20%20%28RNAC%29&type=8-K&dateb=&owner=include&count=5",
+          "published": "2026-03-09"
+        },
+        {
+          "title": "enCore Energy Corp.  (EU) \u2014 8-K (2026-03-09)",
+          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=enCore%20Energy%20Corp.%20%20%28EU%29&type=8-K&dateb=&owner=include&count=5",
+          "published": "2026-03-09"
+        },
+        {
+          "title": "NET Power Inc.  (NPWR, NPWR-WT) \u2014 8-K (2026-03-09)",
+          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=NET%20Power%20Inc.%20%20%28NPWR%2C%20NPWR-WT%29&type=8-K&dateb=&owner=include&count=5",
+          "published": "2026-03-09"
+        },
+        {
+          "title": "Symbotic Inc.  (SYM) \u2014 8-K (2026-03-09)",
+          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Symbotic%20Inc.%20%20%28SYM%29&type=8-K&dateb=&owner=include&count=5",
+          "published": "2026-03-09"
+        }
+      ],
       "headline": "NVDA 2.68%  |  MSFT 0.11%"
     },
     "sports": {
-      "last_updated": "2026-03-10T09:31:50Z",
+      "last_updated": "2026-03-10T09:47:27Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -324,7 +350,7 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-10T09:31:51Z",
+      "last_updated": "2026-03-10T09:47:28Z",
       "headlines": [
         {
           "title": "Mixed messages from Trump leave more questions than answers over war's end",
@@ -347,45 +373,45 @@
           "published": "Mon, 09 Mar 2026 23:30:46 GMT"
         },
         {
-          "title": "Anthropic sues US government for calling it a risk",
-          "link": "https://www.bbc.com/news/articles/cq571w5vllxo?at_medium=RSS&at_campaign=rss",
-          "published": "Mon, 09 Mar 2026 21:33:05 GMT"
+          "title": "Madagascar military leader dissolves government in surprise move",
+          "link": "https://www.bbc.com/news/articles/c39wywm298lo?at_medium=RSS&at_campaign=rss",
+          "published": "Tue, 10 Mar 2026 07:48:51 GMT"
         }
       ],
       "headline": "Mixed messages from Trump leave more questions than answers over war's end"
     },
     "technology": {
-      "last_updated": "2026-03-10T09:31:51Z",
+      "last_updated": "2026-03-10T09:47:28Z",
       "hn_top": [
         {
           "title": "Redox OS has adopted a Certificate of Origin policy and a strict no-LLM policy",
           "url": "https://gitlab.redox-os.org/redox-os/redox/-/blob/master/CONTRIBUTING.md",
-          "score": 41,
-          "comments": 19
+          "score": 63,
+          "comments": 42
         },
         {
           "title": "Lotus 1-2-3 on the PC with DOS",
           "url": "https://stonetools.ghost.io/lotus123-dos/",
-          "score": 77,
-          "comments": 27
+          "score": 84,
+          "comments": 28
         },
         {
           "title": "Two Years of Emacs Solo",
           "url": "https://www.rahuljuliato.com/posts/emacs-solo-two-years",
-          "score": 245,
-          "comments": 67
+          "score": 249,
+          "comments": 71
         },
         {
           "title": "Optimizing Top K in Postgres",
           "url": "https://www.paradedb.com/blog/optimizing-top-k",
-          "score": 65,
-          "comments": 9
+          "score": 72,
+          "comments": 10
         },
         {
-          "title": "Building a Procedural Hex Map with Wave Function Collapse",
-          "url": "https://felixturner.github.io/hex-map-wfc/article/",
-          "score": 485,
-          "comments": 70
+          "title": "LoGeR \u2013 3D reconstruction from extremely long videos (DeepMind, UC Berkeley)",
+          "url": "https://loger-project.github.io",
+          "score": 28,
+          "comments": 12
         }
       ],
       "tech_headlines": [
@@ -418,7 +444,7 @@
       "headline": "Redox OS has adopted a Certificate of Origin policy and a strict no-LLM policy"
     },
     "policy": {
-      "last_updated": "2026-03-10T09:31:52Z",
+      "last_updated": "2026-03-10T09:47:29Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -457,7 +483,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-10T09:31:54Z",
+      "last_updated": "2026-03-10T09:47:35Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
