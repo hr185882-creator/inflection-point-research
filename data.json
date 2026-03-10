@@ -1,9 +1,9 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-10T22:04:25Z",
+  "fetched_at": "2026-03-10T22:17:37Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-10T22:04:25Z",
+      "last_updated": "2026-03-10T22:17:45Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
@@ -39,57 +39,57 @@
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 69855.58,
+          "price": 69622.15,
           "prev_close": 68443.15,
-          "change": 1412.43,
-          "change_pct": 2.06,
+          "change": 1179.0,
+          "change_pct": 1.72,
           "currency": "USD"
         },
         "EURUSD=X": {
           "label": "EUR/USD",
-          "price": 1.1616,
+          "price": 1.1613,
           "prev_close": 1.1636,
-          "change": -0.002,
-          "change_pct": -0.17,
+          "change": -0.0023,
+          "change_pct": -0.2,
           "currency": "USD"
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 98.917,
+          "price": 98.914,
           "prev_close": 99.175,
-          "change": -0.258,
+          "change": -0.261,
           "change_pct": -0.26,
           "currency": "USD"
         }
       },
       "yield_10y": 4.12,
-      "headline": "SPY -0.16%  |  BTC $69,856  |  10Y 4.12%"
+      "headline": "SPY -0.16%  |  BTC $69,622  |  10Y 4.12%"
     },
     "energy": {
-      "last_updated": "2026-03-10T22:04:36Z",
+      "last_updated": "2026-03-10T22:18:09Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 86.39,
+          "price": 87.57,
           "prev_close": 83.45,
-          "change": 2.94,
-          "change_pct": 3.52,
+          "change": 4.12,
+          "change_pct": 4.94,
           "currency": "USD"
         },
         "NG=F": {
           "label": "Natural Gas ($/MMBtu)",
-          "price": 3.06,
+          "price": 3.049,
           "prev_close": 3.02,
-          "change": 0.04,
-          "change_pct": 1.32,
+          "change": 0.029,
+          "change_pct": 0.96,
           "currency": "USD"
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 87.64,
+          "price": 89.11,
           "prev_close": 85.27,
-          "change": 2.37,
-          "change_pct": 2.78,
+          "change": 3.84,
+          "change_pct": 4.5,
           "currency": "USD"
         },
         "XLE": {
@@ -101,11 +101,32 @@
           "currency": "USD"
         }
       },
-      "headlines": [],
-      "headline": "WTI $86.39/bbl"
+      "headlines": [
+        {
+          "title": "Annual U.S. crude oil exports decrease for first time since 2021",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67324",
+          "published": "Tue, 10 Mar 2026 09:00:00 EST"
+        },
+        {
+          "title": "U.S. exports of major transportation fuels in 2025 were about the same as in 2024",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67304",
+          "published": "Mon, 09 Mar 2026 09:00:00 EST"
+        },
+        {
+          "title": "U.S. electricity generation in 2025 hit a record, again",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67284",
+          "published": "Thu, 05 Mar 2026 09:00:00 EST"
+        },
+        {
+          "title": "U.S. LNG developers sign highest volume of sale and purchase contracts since 2022",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67264",
+          "published": "Tue, 03 Mar 2026 09:00:00 EST"
+        }
+      ],
+      "headline": "WTI $87.57/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-10T22:04:37Z",
+      "last_updated": "2026-03-10T22:18:24Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
@@ -166,6 +187,11 @@
       },
       "recent_filings": [
         {
+          "title": "Aclaris Therapeutics, Inc.  (ACRS) -- 8-K (2026-03-10)",
+          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Aclaris%20Therapeutics%2C%20Inc.%20%20%28ACRS%29&type=8-K&dateb=&owner=include&count=5",
+          "published": "2026-03-10"
+        },
+        {
           "title": "Motorsport Games Inc.  (MSGM) -- 8-K (2026-03-10)",
           "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Motorsport%20Games%20Inc.%20%20%28MSGM%29&type=8-K&dateb=&owner=include&count=5",
           "published": "2026-03-10"
@@ -173,11 +199,6 @@
         {
           "title": "Crown PropTech Acquisitions  (CPTKW) -- 8-K (2026-03-10)",
           "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Crown%20PropTech%20Acquisitions%20%20%28CPTKW%29&type=8-K&dateb=&owner=include&count=5",
-          "published": "2026-03-10"
-        },
-        {
-          "title": "Aclaris Therapeutics, Inc.  (ACRS) -- 8-K (2026-03-10)",
-          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Aclaris%20Therapeutics%2C%20Inc.%20%20%28ACRS%29&type=8-K&dateb=&owner=include&count=5",
           "published": "2026-03-10"
         },
         {
@@ -194,7 +215,7 @@
       "headline": "NVDA 1.16%  |  MSFT -0.89%"
     },
     "sports": {
-      "last_updated": "2026-03-10T22:04:40Z",
+      "last_updated": "2026-03-10T22:18:48Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -278,16 +299,16 @@
       "injuries": {
         "nfl": [
           {
+            "player": "Jacoby Brissett",
+            "team": "",
+            "status": "Active",
+            "detail": "Brissett is on track to keep his starting job after the Cardinals settled for Gardner Minshew as their QB addition at the start of free agency, Josh Weinfuss of ESPN.com reports."
+          },
+          {
             "player": "Isaac Seumalo",
             "team": "",
             "status": "Active",
             "detail": "The Cardinals agreed to terms with Seumalo on a three-year, $31.5 million contract Monday, Jeremy Fowler of ESPN.com reports."
-          },
-          {
-            "player": "Roy Lopez",
-            "team": "",
-            "status": "Active",
-            "detail": "Lopez signed a two-year, $11.5 million contract with the Cardinals on Monday that includes $7 million guaranteed, Ian Rapoport of NFL Network reports."
           },
           {
             "player": "Tyrone Wheatley Jr.",
@@ -350,7 +371,7 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-10T22:04:40Z",
+      "last_updated": "2026-03-10T22:18:49Z",
       "headlines": [
         {
           "title": "'I just want to be able to sleep': Attacks in Iran rock cities and cut power",
@@ -368,50 +389,50 @@
           "published": "Tue, 10 Mar 2026 21:59:54 GMT"
         },
         {
-          "title": "Two more connected to Iranian football team stay in Australia, BBC understands",
-          "link": "https://www.bbc.com/news/articles/c93j2492d0do?at_medium=RSS&at_campaign=rss",
-          "published": "Tue, 10 Mar 2026 20:39:21 GMT"
-        },
-        {
           "title": "Georgia voters to pick replacement for Marjorie Taylor Greene in special election",
           "link": "https://www.bbc.com/news/articles/c77ey1v7jrzo?at_medium=RSS&at_campaign=rss",
           "published": "Tue, 10 Mar 2026 10:47:08 GMT"
+        },
+        {
+          "title": "Two more connected to Iranian football team stay in Australia, BBC understands",
+          "link": "https://www.bbc.com/news/articles/c93j2492d0do?at_medium=RSS&at_campaign=rss",
+          "published": "Tue, 10 Mar 2026 20:39:21 GMT"
         }
       ],
       "headline": "'I just want to be able to sleep': Attacks in Iran rock cities and cut power"
     },
     "technology": {
-      "last_updated": "2026-03-10T22:04:41Z",
+      "last_updated": "2026-03-10T22:18:50Z",
       "hn_top": [
         {
           "title": "Tony Hoare has died",
           "url": "https://blog.computationalcomplexity.org/2026/03/tony-hoare-1934-2026.html",
-          "score": 1235,
-          "comments": 174
+          "score": 1259,
+          "comments": 176
         },
         {
           "title": "RISC-V Is Sloooow",
           "url": "https://marcin.juszkiewicz.com.pl/2026/03/10/risc-v-is-sloooow/",
-          "score": 88,
-          "comments": 74
+          "score": 103,
+          "comments": 84
         },
         {
           "title": "After outages, Amazon to make senior engineers sign off on AI-assisted changes",
           "url": "https://arstechnica.com/ai/2026/03/after-outages-amazon-to-make-senior-engineers-sign-off-on-ai-assisted-changes/",
-          "score": 199,
-          "comments": 262
+          "score": 224,
+          "comments": 274
         },
         {
           "title": "Agents that run while I sleep",
           "url": "https://www.claudecodecamp.com/p/i-m-building-agents-that-run-while-i-sleep",
-          "score": 140,
-          "comments": 94
+          "score": 151,
+          "comments": 99
         },
         {
           "title": "Yann LeCun raises $1B to build AI that understands the physical world",
           "url": "https://www.wired.com/story/yann-lecun-raises-dollar1-billion-to-build-ai-that-understands-the-physical-world/",
-          "score": 229,
-          "comments": 282
+          "score": 237,
+          "comments": 283
         }
       ],
       "tech_headlines": [
@@ -444,7 +465,7 @@
       "headline": "Tony Hoare has died"
     },
     "policy": {
-      "last_updated": "2026-03-10T22:04:41Z",
+      "last_updated": "2026-03-10T22:18:52Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -483,7 +504,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-10T22:04:42Z",
+      "last_updated": "2026-03-10T22:18:54Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
