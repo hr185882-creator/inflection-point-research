@@ -1,187 +1,166 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-10T14:31:02Z",
+  "fetched_at": "2026-03-10T14:47:43Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-10T14:31:02Z",
+      "last_updated": "2026-03-10T14:47:44Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
-          "price": 678.37,
+          "price": 679.772,
           "prev_close": 678.27,
-          "change": 0.1,
-          "change_pct": 0.01,
+          "change": 1.502,
+          "change_pct": 0.22,
           "currency": "USD"
         },
         "QQQ": {
           "label": "Nasdaq 100 ETF",
-          "price": 608.87,
+          "price": 610.188,
           "prev_close": 607.76,
-          "change": 1.11,
-          "change_pct": 0.18,
+          "change": 2.428,
+          "change_pct": 0.4,
           "currency": "USD"
         },
         "GLD": {
           "label": "Gold ETF",
-          "price": 478.81,
+          "price": 478.51,
           "prev_close": 472.53,
-          "change": 6.28,
-          "change_pct": 1.33,
+          "change": 5.98,
+          "change_pct": 1.27,
           "currency": "USD"
         },
         "TLT": {
           "label": "20Y Treasury ETF",
-          "price": 88.79,
+          "price": 88.805,
           "prev_close": 89.23,
-          "change": -0.44,
-          "change_pct": -0.49,
+          "change": -0.425,
+          "change_pct": -0.48,
           "currency": "USD"
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 69808.195,
+          "price": 70472.805,
           "prev_close": 68443.15,
-          "change": 1365.045,
-          "change_pct": 1.99,
+          "change": 2029.655,
+          "change_pct": 2.97,
           "currency": "USD"
         },
         "EURUSD=X": {
           "label": "EUR/USD",
-          "price": 1.1647,
+          "price": 1.1648,
           "prev_close": 1.1636,
-          "change": 0.0011,
-          "change_pct": 0.09,
+          "change": 0.0012,
+          "change_pct": 0.1,
           "currency": "USD"
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 98.694,
+          "price": 98.646,
           "prev_close": 99.175,
-          "change": -0.481,
-          "change_pct": -0.49,
+          "change": -0.529,
+          "change_pct": -0.53,
           "currency": "USD"
         }
       },
       "yield_10y": 4.15,
-      "headline": "SPY 0.01%  |  BTC $69,808  |  10Y 4.15%"
+      "headline": "SPY 0.22%  |  BTC $70,473  |  10Y 4.15%"
     },
     "energy": {
-      "last_updated": "2026-03-10T14:31:12Z",
+      "last_updated": "2026-03-10T14:47:55Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 87.18,
+          "price": 85.3,
           "prev_close": 94.77,
-          "change": -7.59,
-          "change_pct": -8.01,
+          "change": -9.47,
+          "change_pct": -9.99,
           "currency": "USD"
         },
         "NG=F": {
           "label": "Natural Gas ($/MMBtu)",
-          "price": 3.052,
+          "price": 3.055,
           "prev_close": 3.12,
-          "change": -0.068,
-          "change_pct": -2.18,
+          "change": -0.065,
+          "change_pct": -2.08,
           "currency": "USD"
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 86.63,
+          "price": 85.57,
           "prev_close": 93.72,
-          "change": -7.09,
-          "change_pct": -7.57,
+          "change": -8.15,
+          "change_pct": -8.7,
           "currency": "USD"
         },
         "XLE": {
           "label": "Energy ETF",
-          "price": 56.164,
+          "price": 56.325,
           "prev_close": 56.32,
-          "change": -0.156,
-          "change_pct": -0.28,
+          "change": 0.005,
+          "change_pct": 0.01,
           "currency": "USD"
         }
       },
-      "headlines": [
-        {
-          "title": "Annual U.S. crude oil exports decrease for first time since 2021",
-          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67324",
-          "published": "Tue, 10 Mar 2026 09:00:00 EST"
-        },
-        {
-          "title": "U.S. exports of major transportation fuels in 2025 were about the same as in 2024",
-          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67304",
-          "published": "Mon, 09 Mar 2026 09:00:00 EST"
-        },
-        {
-          "title": "U.S. electricity generation in 2025 hit a record, again",
-          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67284",
-          "published": "Thu, 05 Mar 2026 09:00:00 EST"
-        },
-        {
-          "title": "U.S. LNG developers sign highest volume of sale and purchase contracts since 2022",
-          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67264",
-          "published": "Tue, 03 Mar 2026 09:00:00 EST"
-        }
-      ],
-      "headline": "WTI $87.18/bbl"
+      "headlines": [],
+      "headline": "WTI $85.30/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-10T14:31:13Z",
+      "last_updated": "2026-03-10T14:47:56Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
-          "price": 184.265,
+          "price": 184.81,
           "prev_close": 182.65,
-          "change": 1.615,
-          "change_pct": 0.88,
+          "change": 2.16,
+          "change_pct": 1.18,
           "currency": "USD"
         },
         "MSFT": {
           "label": "Microsoft",
-          "price": 404.696,
+          "price": 405.37,
           "prev_close": 409.41,
-          "change": -4.714,
-          "change_pct": -1.15,
+          "change": -4.04,
+          "change_pct": -0.99,
           "currency": "USD"
         },
         "AAPL": {
           "label": "Apple",
-          "price": 260.22,
+          "price": 260.89,
           "prev_close": 259.88,
-          "change": 0.34,
-          "change_pct": 0.13,
+          "change": 1.01,
+          "change_pct": 0.39,
           "currency": "USD"
         },
         "META": {
           "label": "Meta",
-          "price": 653.8,
+          "price": 658.18,
           "prev_close": 647.39,
-          "change": 6.41,
-          "change_pct": 0.99,
+          "change": 10.79,
+          "change_pct": 1.67,
           "currency": "USD"
         },
         "TSLA": {
           "label": "Tesla",
-          "price": 401.54,
+          "price": 401.965,
           "prev_close": 398.68,
-          "change": 2.86,
-          "change_pct": 0.72,
+          "change": 3.285,
+          "change_pct": 0.82,
           "currency": "USD"
         },
         "AMZN": {
           "label": "Amazon",
-          "price": 214.47,
+          "price": 214.72,
           "prev_close": 213.49,
-          "change": 0.98,
-          "change_pct": 0.46,
+          "change": 1.23,
+          "change_pct": 0.58,
           "currency": "USD"
         },
         "GOOGL": {
           "label": "Alphabet",
-          "price": 307.17,
+          "price": 307.7,
           "prev_close": 306.36,
-          "change": 0.81,
-          "change_pct": 0.26,
+          "change": 1.34,
+          "change_pct": 0.44,
           "currency": "USD"
         }
       },
@@ -212,10 +191,10 @@
           "published": "2026-03-10"
         }
       ],
-      "headline": "NVDA 0.88%  |  MSFT -1.15%"
+      "headline": "NVDA 1.18%  |  MSFT -0.99%"
     },
     "sports": {
-      "last_updated": "2026-03-10T14:31:14Z",
+      "last_updated": "2026-03-10T14:47:56Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -371,8 +350,33 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-10T14:31:14Z",
+      "last_updated": "2026-03-10T14:48:01Z",
       "headlines": [
+        {
+          "title": "Russian economy withstood pressure from outside German expert",
+          "link": "https://tass.com/economy/2073165",
+          "published": "20260119T140000Z"
+        },
+        {
+          "title": "Sudan : united kingdom Hits  Sudan War Machine  With New Sanctions",
+          "link": "https://allafrica.com/stories/202602060005.html",
+          "published": "20260206T060000Z"
+        },
+        {
+          "title": "UK Sanctions Sudanese Army and RSF Leaders",
+          "link": "https://english.aawsat.com/arab-world/5237657-uk-sanctions-sudanese-army-and-rsf-leaders",
+          "published": "20260205T183000Z"
+        },
+        {
+          "title": "U . S . sanctions Gaza charities over alleged Hamas ties \u2013 NaturalNews . com",
+          "link": "https://www.naturalnews.com/2026-01-26-us-sanctions-gaza-charities-over-hamas-ties.html",
+          "published": "20260126T130000Z"
+        },
+        {
+          "title": "Myanmar military using commercial paramotors , gyrocopters for attacks : Report",
+          "link": "https://www.siasat.com/myanmar-military-using-commercial-paramotors-gyrocopters-for-attacks-report-3331737/",
+          "published": "20260126T140000Z"
+        },
         {
           "title": "Mixed messages from Trump leave more questions than answers over war's end",
           "link": "https://www.bbc.com/news/articles/c93j2dw72q9o?at_medium=RSS&at_campaign=rss",
@@ -382,57 +386,42 @@
           "title": "Five Iranian footballers granted Australian visas after anthem protest",
           "link": "https://www.bbc.com/news/articles/cwy8e978xl8o?at_medium=RSS&at_campaign=rss",
           "published": "Tue, 10 Mar 2026 10:38:32 GMT"
-        },
-        {
-          "title": "Lebanon calls for talks with Israel on plan to end Hezbollah conflict",
-          "link": "https://www.bbc.com/news/articles/cd9g5p3ppxlo?at_medium=RSS&at_campaign=rss",
-          "published": "Tue, 10 Mar 2026 12:00:25 GMT"
-        },
-        {
-          "title": "Family of child injured in Canada school shooting sues OpenAI",
-          "link": "https://www.bbc.com/news/articles/c309y25prnlo?at_medium=RSS&at_campaign=rss",
-          "published": "Tue, 10 Mar 2026 11:27:55 GMT"
-        },
-        {
-          "title": "Canada police investigate reports of shots fired at US consulate in Toronto",
-          "link": "https://www.bbc.com/news/articles/cwy8lrq9rg2o?at_medium=RSS&at_campaign=rss",
-          "published": "Tue, 10 Mar 2026 14:22:03 GMT"
         }
       ],
-      "headline": "Mixed messages from Trump leave more questions than answers over war's end"
+      "headline": "Russian economy withstood pressure from outside German expert"
     },
     "technology": {
-      "last_updated": "2026-03-10T14:31:15Z",
+      "last_updated": "2026-03-10T14:48:02Z",
       "hn_top": [
         {
           "title": "Rebasing in Magit",
           "url": "https://entropicthoughts.com/rebasing-in-magit",
-          "score": 39,
-          "comments": 27
+          "score": 50,
+          "comments": 28
         },
         {
           "title": "Intel Demos Chip to Compute with Encrypted Data",
           "url": "https://spectrum.ieee.org/fhe-intel",
-          "score": 47,
-          "comments": 8
+          "score": 64,
+          "comments": 14
         },
         {
           "title": "I put my whole life into a single database",
           "url": "https://howisfelix.today/",
-          "score": 228,
-          "comments": 99
+          "score": 236,
+          "comments": 106
         },
         {
           "title": "FreeBSD 14.4-Release Announcement",
           "url": "https://www.freebsd.org/releases/14.4R/announce/",
-          "score": 93,
-          "comments": 22
+          "score": 101,
+          "comments": 23
         },
         {
-          "title": "The Gervais Principle, or the Office According to \"The Office\" (2009)",
-          "url": "https://www.ribbonfarm.com/2009/10/07/the-gervais-principle-or-the-office-according-to-the-office/",
-          "score": 155,
-          "comments": 49
+          "title": "Online age-verification tools for child safety are surveilling adults",
+          "url": "https://www.cnbc.com/2026/03/08/social-media-child-safety-internet-ai-surveillance.html",
+          "score": 120,
+          "comments": 54
         }
       ],
       "tech_headlines": [
@@ -465,7 +454,7 @@
       "headline": "Rebasing in Magit"
     },
     "policy": {
-      "last_updated": "2026-03-10T14:31:16Z",
+      "last_updated": "2026-03-10T14:48:04Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -504,7 +493,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-10T14:31:19Z",
+      "last_updated": "2026-03-10T14:48:09Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
