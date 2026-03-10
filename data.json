@@ -1,9 +1,9 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-10T04:32:28Z",
+  "fetched_at": "2026-03-10T04:47:53Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-10T04:32:29Z",
+      "last_updated": "2026-03-10T04:47:53Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
@@ -39,10 +39,10 @@
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 69785.31,
+          "price": 69969.29,
           "prev_close": 68443.15,
-          "change": 1342.16,
-          "change_pct": 1.96,
+          "change": 1526.14,
+          "change_pct": 2.23,
           "currency": "USD"
         },
         "EURUSD=X": {
@@ -55,25 +55,25 @@
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 98.907,
+          "price": 98.91,
           "prev_close": 99.175,
-          "change": -0.268,
+          "change": -0.265,
           "change_pct": -0.27,
           "currency": "USD"
         }
       },
       "yield_10y": 4.15,
-      "headline": "SPY 0.88%  |  BTC $69,785  |  10Y 4.15%"
+      "headline": "SPY 0.88%  |  BTC $69,969  |  10Y 4.15%"
     },
     "energy": {
-      "last_updated": "2026-03-10T04:32:39Z",
+      "last_updated": "2026-03-10T04:48:04Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 90.39,
+          "price": 90.27,
           "prev_close": 94.77,
-          "change": -4.38,
-          "change_pct": -4.62,
+          "change": -4.5,
+          "change_pct": -4.75,
           "currency": "USD"
         },
         "NG=F": {
@@ -86,10 +86,10 @@
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 94.29,
+          "price": 94.17,
           "prev_close": 98.96,
-          "change": -4.67,
-          "change_pct": -4.72,
+          "change": -4.79,
+          "change_pct": -4.84,
           "currency": "USD"
         },
         "XLE": {
@@ -102,10 +102,10 @@
         }
       },
       "headlines": [],
-      "headline": "WTI $90.39/bbl"
+      "headline": "WTI $90.27/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-10T04:32:40Z",
+      "last_updated": "2026-03-10T04:48:05Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
@@ -194,7 +194,7 @@
       "headline": "NVDA 2.68%  |  MSFT 0.11%"
     },
     "sports": {
-      "last_updated": "2026-03-10T04:32:41Z",
+      "last_updated": "2026-03-10T04:48:05Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -350,33 +350,8 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-10T04:32:45Z",
+      "last_updated": "2026-03-10T04:48:13Z",
       "headlines": [
-        {
-          "title": "Russian economy withstood pressure from outside German expert",
-          "link": "https://tass.com/economy/2073165",
-          "published": "20260119T140000Z"
-        },
-        {
-          "title": "Sudan : united kingdom Hits  Sudan War Machine  With New Sanctions",
-          "link": "https://allafrica.com/stories/202602060005.html",
-          "published": "20260206T060000Z"
-        },
-        {
-          "title": "UK Sanctions Sudanese Army and RSF Leaders",
-          "link": "https://english.aawsat.com/arab-world/5237657-uk-sanctions-sudanese-army-and-rsf-leaders",
-          "published": "20260205T183000Z"
-        },
-        {
-          "title": "U . S . sanctions Gaza charities over alleged Hamas ties \u2013 NaturalNews . com",
-          "link": "https://www.naturalnews.com/2026-01-26-us-sanctions-gaza-charities-over-hamas-ties.html",
-          "published": "20260126T130000Z"
-        },
-        {
-          "title": "Myanmar military using commercial paramotors , gyrocopters for attacks : Report",
-          "link": "https://www.siasat.com/myanmar-military-using-commercial-paramotors-gyrocopters-for-attacks-report-3331737/",
-          "published": "20260126T140000Z"
-        },
         {
           "title": "Who is Mojtaba Khamenei, Iran's new supreme leader?",
           "link": "https://www.bbc.com/news/articles/c78xxg05w0zo?at_medium=RSS&at_campaign=rss",
@@ -386,42 +361,57 @@
           "title": "US teacher killed after toilet paper prank goes wrong",
           "link": "https://www.bbc.com/news/articles/cdr24g1p3vpo?at_medium=RSS&at_campaign=rss",
           "published": "Mon, 09 Mar 2026 17:09:21 GMT"
+        },
+        {
+          "title": "G7 to take 'necessary measures' to support energy supplies",
+          "link": "https://www.bbc.com/news/articles/c79542n0grwo?at_medium=RSS&at_campaign=rss",
+          "published": "Mon, 09 Mar 2026 23:30:46 GMT"
+        },
+        {
+          "title": "Hundreds of teenagers report for duty as Croatia reinstates conscription",
+          "link": "https://www.bbc.com/news/articles/c93j2l32lzgo?at_medium=RSS&at_campaign=rss",
+          "published": "Mon, 09 Mar 2026 14:49:34 GMT"
+        },
+        {
+          "title": "Alleged Bondi gunman seeks order to suppress family's identity",
+          "link": "https://www.bbc.com/news/articles/cy8lwnyj40eo?at_medium=RSS&at_campaign=rss",
+          "published": "Mon, 09 Mar 2026 08:13:58 GMT"
         }
       ],
-      "headline": "Russian economy withstood pressure from outside German expert"
+      "headline": "Who is Mojtaba Khamenei, Iran's new supreme leader?"
     },
     "technology": {
-      "last_updated": "2026-03-10T04:32:46Z",
+      "last_updated": "2026-03-10T04:48:14Z",
       "hn_top": [
-        {
-          "title": "Two Years of Emacs Solo: 35 Modules, Zero External Packages, and a Full Refactor",
-          "url": "https://www.rahuljuliato.com/posts/emacs-solo-two-years",
-          "score": 126,
-          "comments": 24
-        },
         {
           "title": "Learnings from paying artists royalties for AI-generated art",
           "url": "https://www.kapwing.com/blog/learnings-from-paying-artists-royalties-for-ai-generated-art/",
-          "score": 38,
-          "comments": 14
+          "score": 45,
+          "comments": 17
+        },
+        {
+          "title": "Two Years of Emacs Solo: 35 Modules, Zero External Packages, and a Full Refactor",
+          "url": "https://www.rahuljuliato.com/posts/emacs-solo-two-years",
+          "score": 127,
+          "comments": 24
         },
         {
           "title": "Building a Procedural Hex Map with Wave Function Collapse",
           "url": "https://felixturner.github.io/hex-map-wfc/article/",
-          "score": 425,
+          "score": 429,
           "comments": 65
         },
         {
           "title": "Show HN: Remotely use my guitar tuner",
           "url": "https://realtuner.online/",
-          "score": 113,
+          "score": 118,
           "comments": 28
         },
         {
           "title": "JSLinux Now Supports x86_64",
           "url": "https://bellard.org/jslinux/",
-          "score": 269,
-          "comments": 78
+          "score": 270,
+          "comments": 79
         }
       ],
       "tech_headlines": [
@@ -451,10 +441,10 @@
           "published": "Wed, 04 Mar 2026 22:13:27 +0000"
         }
       ],
-      "headline": "Two Years of Emacs Solo: 35 Modules, Zero External Packages, and a Full Refactor"
+      "headline": "Learnings from paying artists royalties for AI-generated art"
     },
     "policy": {
-      "last_updated": "2026-03-10T04:32:46Z",
+      "last_updated": "2026-03-10T04:48:14Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -493,7 +483,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-10T04:32:51Z",
+      "last_updated": "2026-03-10T04:48:17Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
