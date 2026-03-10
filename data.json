@@ -1,9 +1,9 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-10T08:35:56Z",
+  "fetched_at": "2026-03-10T08:47:08Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-10T08:35:56Z",
+      "last_updated": "2026-03-10T08:47:09Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
@@ -39,57 +39,57 @@
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 70919.875,
+          "price": 70988.086,
           "prev_close": 68443.15,
-          "change": 2476.725,
-          "change_pct": 3.62,
+          "change": 2544.936,
+          "change_pct": 3.72,
           "currency": "USD"
         },
         "EURUSD=X": {
           "label": "EUR/USD",
-          "price": 1.1655,
+          "price": 1.1659,
           "prev_close": 1.1636,
-          "change": 0.0019,
-          "change_pct": 0.16,
+          "change": 0.0023,
+          "change_pct": 0.2,
           "currency": "USD"
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 98.58,
+          "price": 98.604,
           "prev_close": 99.175,
-          "change": -0.595,
-          "change_pct": -0.6,
+          "change": -0.571,
+          "change_pct": -0.58,
           "currency": "USD"
         }
       },
-      "yield_10y": 4.15,
-      "headline": "SPY 0.88%  |  BTC $70,920  |  10Y 4.15%"
+      "yield_10y": null,
+      "headline": null
     },
     "energy": {
-      "last_updated": "2026-03-10T08:36:06Z",
+      "last_updated": "2026-03-10T08:47:09Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 86.87,
+          "price": 87.43,
           "prev_close": 94.77,
-          "change": -7.9,
-          "change_pct": -8.34,
+          "change": -7.34,
+          "change_pct": -7.75,
           "currency": "USD"
         },
         "NG=F": {
           "label": "Natural Gas ($/MMBtu)",
-          "price": 3.075,
+          "price": 3.076,
           "prev_close": 3.12,
-          "change": -0.045,
-          "change_pct": -1.44,
+          "change": -0.044,
+          "change_pct": -1.41,
           "currency": "USD"
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 86.74,
+          "price": 87.12,
           "prev_close": 93.72,
-          "change": -6.98,
-          "change_pct": -7.45,
+          "change": -6.6,
+          "change_pct": -7.04,
           "currency": "USD"
         },
         "XLE": {
@@ -102,10 +102,10 @@
         }
       },
       "headlines": [],
-      "headline": "WTI $86.87/bbl"
+      "headline": "WTI $87.43/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-10T08:36:07Z",
+      "last_updated": "2026-03-10T08:47:10Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
@@ -164,37 +164,11 @@
           "currency": "USD"
         }
       },
-      "recent_filings": [
-        {
-          "title": "IONIS PHARMACEUTICALS INC  (IONS) \u2014 8-K (2026-03-09)",
-          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=IONIS%20PHARMACEUTICALS%20INC%20%20%28IONS%29&type=8-K&dateb=&owner=include&count=5",
-          "published": "2026-03-09"
-        },
-        {
-          "title": "Cartesian Therapeutics, Inc.  (RNAC) \u2014 8-K (2026-03-09)",
-          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Cartesian%20Therapeutics%2C%20Inc.%20%20%28RNAC%29&type=8-K&dateb=&owner=include&count=5",
-          "published": "2026-03-09"
-        },
-        {
-          "title": "enCore Energy Corp.  (EU) \u2014 8-K (2026-03-09)",
-          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=enCore%20Energy%20Corp.%20%20%28EU%29&type=8-K&dateb=&owner=include&count=5",
-          "published": "2026-03-09"
-        },
-        {
-          "title": "NET Power Inc.  (NPWR, NPWR-WT) \u2014 8-K (2026-03-09)",
-          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=NET%20Power%20Inc.%20%20%28NPWR%2C%20NPWR-WT%29&type=8-K&dateb=&owner=include&count=5",
-          "published": "2026-03-09"
-        },
-        {
-          "title": "Symbotic Inc.  (SYM) \u2014 8-K (2026-03-09)",
-          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Symbotic%20Inc.%20%20%28SYM%29&type=8-K&dateb=&owner=include&count=5",
-          "published": "2026-03-09"
-        }
-      ],
+      "recent_filings": [],
       "headline": "NVDA 2.68%  |  MSFT 0.11%"
     },
     "sports": {
-      "last_updated": "2026-03-10T08:36:08Z",
+      "last_updated": "2026-03-10T08:47:10Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -350,7 +324,7 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-10T08:36:15Z",
+      "last_updated": "2026-03-10T08:47:11Z",
       "headlines": [
         {
           "title": "Rising prices, mixed messages: Iran war is fraught with political risk for Trump",
@@ -381,37 +355,37 @@
       "headline": "Rising prices, mixed messages: Iran war is fraught with political risk for Trump"
     },
     "technology": {
-      "last_updated": "2026-03-10T08:36:15Z",
+      "last_updated": "2026-03-10T08:47:11Z",
       "hn_top": [
-        {
-          "title": "Two Years of Emacs Solo",
-          "url": "https://www.rahuljuliato.com/posts/emacs-solo-two-years",
-          "score": 221,
-          "comments": 55
-        },
         {
           "title": "Lotus 1-2-3 on the PC with DOS",
           "url": "https://stonetools.ghost.io/lotus123-dos/",
-          "score": 58,
-          "comments": 14
+          "score": 60,
+          "comments": 17
+        },
+        {
+          "title": "Two Years of Emacs Solo",
+          "url": "https://www.rahuljuliato.com/posts/emacs-solo-two-years",
+          "score": 229,
+          "comments": 58
         },
         {
           "title": "macOS Tahoe windows have different corner radiuses",
           "url": "https://lapcatsoftware.com/articles/2026/3/1.html",
-          "score": 82,
-          "comments": 43
-        },
-        {
-          "title": "No, it doesn't cost Anthropic $5k per Claude Code user",
-          "url": "https://martinalderson.com/posts/no-it-doesnt-cost-anthropic-5k-per-claude-code-user/",
-          "score": 161,
-          "comments": 104
+          "score": 86,
+          "comments": 47
         },
         {
           "title": "Optimizing Top K in Postgres",
           "url": "https://www.paradedb.com/blog/optimizing-top-k",
-          "score": 55,
+          "score": 60,
           "comments": 7
+        },
+        {
+          "title": "No, it doesn't cost Anthropic $5k per Claude Code user",
+          "url": "https://martinalderson.com/posts/no-it-doesnt-cost-anthropic-5k-per-claude-code-user/",
+          "score": 172,
+          "comments": 113
         }
       ],
       "tech_headlines": [
@@ -441,10 +415,10 @@
           "published": "Wed, 04 Mar 2026 22:13:27 +0000"
         }
       ],
-      "headline": "Two Years of Emacs Solo"
+      "headline": "Lotus 1-2-3 on the PC with DOS"
     },
     "policy": {
-      "last_updated": "2026-03-10T08:36:16Z",
+      "last_updated": "2026-03-10T08:47:12Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -483,7 +457,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-10T08:36:17Z",
+      "last_updated": "2026-03-10T08:47:16Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
