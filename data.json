@@ -1,16 +1,16 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-10T20:06:00Z",
+  "fetched_at": "2026-03-10T20:31:04Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-10T20:06:01Z",
+      "last_updated": "2026-03-10T20:31:05Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
-          "price": 677.05,
+          "price": 677.18,
           "prev_close": 678.27,
-          "change": -1.22,
-          "change_pct": -0.18,
+          "change": -1.09,
+          "change_pct": -0.16,
           "currency": "USD"
         },
         "QQQ": {
@@ -23,10 +23,10 @@
         },
         "GLD": {
           "label": "Gold ETF",
-          "price": 477.71,
+          "price": 477.86,
           "prev_close": 472.53,
-          "change": 5.18,
-          "change_pct": 1.1,
+          "change": 5.33,
+          "change_pct": 1.13,
           "currency": "USD"
         },
         "TLT": {
@@ -39,65 +39,65 @@
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 70077.61,
+          "price": 70236.64,
           "prev_close": 68443.15,
-          "change": 1634.46,
-          "change_pct": 2.39,
+          "change": 1793.49,
+          "change_pct": 2.62,
           "currency": "USD"
         },
         "EURUSD=X": {
           "label": "EUR/USD",
-          "price": 1.1612,
+          "price": 1.1618,
           "prev_close": 1.1636,
-          "change": -0.0024,
-          "change_pct": -0.21,
+          "change": -0.0018,
+          "change_pct": -0.15,
           "currency": "USD"
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 98.921,
+          "price": 98.91,
           "prev_close": 99.175,
-          "change": -0.254,
-          "change_pct": -0.26,
+          "change": -0.265,
+          "change_pct": -0.27,
           "currency": "USD"
         }
       },
-      "yield_10y": 4.15,
-      "headline": "SPY -0.18%  |  BTC $70,078  |  10Y 4.15%"
+      "yield_10y": 4.12,
+      "headline": "SPY -0.16%  |  BTC $70,237  |  10Y 4.12%"
     },
     "energy": {
-      "last_updated": "2026-03-10T20:06:09Z",
+      "last_updated": "2026-03-10T20:31:13Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 86.67,
+          "price": 86.02,
           "prev_close": 94.77,
-          "change": -8.1,
-          "change_pct": -8.55,
+          "change": -8.75,
+          "change_pct": -9.23,
           "currency": "USD"
         },
         "NG=F": {
           "label": "Natural Gas ($/MMBtu)",
-          "price": 3.047,
+          "price": 3.055,
           "prev_close": 3.12,
-          "change": -0.073,
-          "change_pct": -2.34,
+          "change": -0.065,
+          "change_pct": -2.08,
           "currency": "USD"
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 87.99,
+          "price": 87.31,
           "prev_close": 93.72,
-          "change": -5.73,
-          "change_pct": -6.11,
+          "change": -6.41,
+          "change_pct": -6.84,
           "currency": "USD"
         },
         "XLE": {
           "label": "Energy ETF",
-          "price": 55.61,
+          "price": 55.6,
           "prev_close": 56.32,
-          "change": -0.71,
-          "change_pct": -1.26,
+          "change": -0.72,
+          "change_pct": -1.28,
           "currency": "USD"
         }
       },
@@ -123,10 +123,10 @@
           "published": "Tue, 03 Mar 2026 09:00:00 EST"
         }
       ],
-      "headline": "WTI $86.67/bbl"
+      "headline": "WTI $86.02/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-10T20:06:11Z",
+      "last_updated": "2026-03-10T20:31:14Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
@@ -187,35 +187,35 @@
       },
       "recent_filings": [
         {
+          "title": "Motorsport Games Inc.  (MSGM) -- 8-K (2026-03-10)",
+          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Motorsport%20Games%20Inc.%20%20%28MSGM%29&type=8-K&dateb=&owner=include&count=5",
+          "published": "2026-03-10"
+        },
+        {
           "title": "Aclaris Therapeutics, Inc.  (ACRS) -- 8-K (2026-03-10)",
           "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Aclaris%20Therapeutics%2C%20Inc.%20%20%28ACRS%29&type=8-K&dateb=&owner=include&count=5",
+          "published": "2026-03-10"
+        },
+        {
+          "title": "Crown PropTech Acquisitions  (CPTKW) -- 8-K (2026-03-10)",
+          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Crown%20PropTech%20Acquisitions%20%20%28CPTKW%29&type=8-K&dateb=&owner=include&count=5",
+          "published": "2026-03-10"
+        },
+        {
+          "title": "Scorpius Holdings, Inc.  (SCPX) -- 8-K (2026-03-10)",
+          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Scorpius%20Holdings%2C%20Inc.%20%20%28SCPX%29&type=8-K&dateb=&owner=include&count=5",
           "published": "2026-03-10"
         },
         {
           "title": "Synchrony Financial  (SYF, SYF-PA, SYF-PB) -- 8-K (2026-03-10)",
           "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Synchrony%20Financial%20%20%28SYF%2C%20SYF-PA%2C%20SYF-PB%29&type=8-K&dateb=&owner=include&count=5",
           "published": "2026-03-10"
-        },
-        {
-          "title": "AN2 Therapeutics, Inc.  (ANTX) -- 8-K (2026-03-10)",
-          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=AN2%20Therapeutics%2C%20Inc.%20%20%28ANTX%29&type=8-K&dateb=&owner=include&count=5",
-          "published": "2026-03-10"
-        },
-        {
-          "title": "Archimedes Tech SPAC Partners III Co.  (ARCI, ARCIU) -- 8-K (2026-03-10)",
-          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Archimedes%20Tech%20SPAC%20Partners%20III%20Co.%20%20%28ARCI%2C%20ARCIU%29&type=8-K&dateb=&owner=include&count=5",
-          "published": "2026-03-10"
-        },
-        {
-          "title": "STARZ ENTERTAINMENT CORP /CN/  (STRZ) -- 8-K (2026-03-10)",
-          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=STARZ%20ENTERTAINMENT%20CORP%20/CN/%20%20%28STRZ%29&type=8-K&dateb=&owner=include&count=5",
-          "published": "2026-03-10"
         }
       ],
       "headline": "NVDA 1.16%  |  MSFT -0.89%"
     },
     "sports": {
-      "last_updated": "2026-03-10T20:06:12Z",
+      "last_updated": "2026-03-10T20:31:15Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -275,9 +275,9 @@
             {
               "home": "HOU",
               "away": "BAL",
-              "home_score": "6",
+              "home_score": "7",
               "away_score": "6",
-              "status": "Top 9th"
+              "status": "Final"
             },
             {
               "home": "PHI",
@@ -371,7 +371,7 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-10T20:06:22Z",
+      "last_updated": "2026-03-10T20:31:16Z",
       "headlines": [
         {
           "title": "'I just want to be able to sleep': Attacks in Iran rock cities and cut power",
@@ -379,60 +379,60 @@
           "published": "Tue, 10 Mar 2026 13:26:17 GMT"
         },
         {
-          "title": "Five Iranian footballers granted Australian visas after anthem protest",
-          "link": "https://www.bbc.com/news/articles/cwy8e978xl8o?at_medium=RSS&at_campaign=rss",
-          "published": "Tue, 10 Mar 2026 10:38:32 GMT"
+          "title": "Steve Rosenberg: Russia seeks diplomatic and economic gains from Iran war",
+          "link": "https://www.bbc.com/news/articles/c4gjyg0djvmo?at_medium=RSS&at_campaign=rss",
+          "published": "Tue, 10 Mar 2026 19:35:29 GMT"
         },
         {
-          "title": "Lebanon calls for talks with Israel on plan to end Hezbollah conflict",
-          "link": "https://www.bbc.com/news/articles/cd9g5p3ppxlo?at_medium=RSS&at_campaign=rss",
-          "published": "Tue, 10 Mar 2026 12:00:25 GMT"
+          "title": "Georgia voters to pick replacement for Marjorie Taylor Greene in special election",
+          "link": "https://www.bbc.com/news/articles/c77ey1v7jrzo?at_medium=RSS&at_campaign=rss",
+          "published": "Tue, 10 Mar 2026 10:47:08 GMT"
         },
         {
-          "title": "Family of child injured in Canada school shooting sues OpenAI",
-          "link": "https://www.bbc.com/news/articles/c309y25prnlo?at_medium=RSS&at_campaign=rss",
-          "published": "Tue, 10 Mar 2026 11:27:55 GMT"
+          "title": "Russia's deportation of Ukrainian children amounts to crime against humanity, UN says",
+          "link": "https://www.bbc.com/news/articles/cz7g5xnvl2eo?at_medium=RSS&at_campaign=rss",
+          "published": "Tue, 10 Mar 2026 17:50:52 GMT"
         },
         {
-          "title": "Syrian ex-colonel in court on crimes against humanity charge",
-          "link": "https://www.bbc.com/news/articles/cedz4jp379wo?at_medium=RSS&at_campaign=rss",
-          "published": "Tue, 10 Mar 2026 14:17:37 GMT"
+          "title": "Acclaimed Peruvian writer Alfredo Bryce Echenique dies aged 87",
+          "link": "https://www.bbc.com/news/articles/ce82j8j8l25o?at_medium=RSS&at_campaign=rss",
+          "published": "Tue, 10 Mar 2026 20:10:56 GMT"
         }
       ],
       "headline": "'I just want to be able to sleep': Attacks in Iran rock cities and cut power"
     },
     "technology": {
-      "last_updated": "2026-03-10T20:06:24Z",
+      "last_updated": "2026-03-10T20:31:16Z",
       "hn_top": [
         {
           "title": "Tony Hoare has died",
           "url": "https://blog.computationalcomplexity.org/2026/03/tony-hoare-1934-2026.html",
-          "score": 1034,
-          "comments": 146
+          "score": 1093,
+          "comments": 152
         },
         {
-          "title": "I'm building agents that run while I sleep",
+          "title": "Agents that run while I sleep",
           "url": "https://www.claudecodecamp.com/p/i-m-building-agents-that-run-while-i-sleep",
-          "score": 49,
-          "comments": 43
+          "score": 82,
+          "comments": 59
+        },
+        {
+          "title": "RISC-V Is Sloooow",
+          "url": "https://marcin.juszkiewicz.com.pl/2026/03/10/risc-v-is-sloooow/",
+          "score": 18,
+          "comments": 7
         },
         {
           "title": "Yann LeCun raises $1B to build AI that understands the physical world",
           "url": "https://www.wired.com/story/yann-lecun-raises-dollar1-billion-to-build-ai-that-understands-the-physical-world/",
-          "score": 135,
-          "comments": 258
+          "score": 159,
+          "comments": 266
         },
         {
           "title": "Launch HN: RunAnywhere (YC W26) \u2013 Faster AI Inference on Apple Silicon",
           "url": "https://github.com/RunanywhereAI/rcli",
-          "score": 134,
-          "comments": 52
-        },
-        {
-          "title": "Google to Discontinue Widevine Cloud License Service in April 2027",
-          "url": "https://castlabs.com/blog/widevine-retiring-cloud-license-service/",
-          "score": 27,
-          "comments": 7
+          "score": 142,
+          "comments": 55
         }
       ],
       "tech_headlines": [
@@ -465,7 +465,7 @@
       "headline": "Tony Hoare has died"
     },
     "policy": {
-      "last_updated": "2026-03-10T20:06:25Z",
+      "last_updated": "2026-03-10T20:31:17Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -504,7 +504,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-10T20:06:32Z",
+      "last_updated": "2026-03-10T20:31:25Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
