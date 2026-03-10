@@ -1,9 +1,9 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-10T06:31:14Z",
+  "fetched_at": "2026-03-10T06:49:53Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-10T06:31:15Z",
+      "last_updated": "2026-03-10T06:49:53Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
@@ -39,57 +39,57 @@
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 70160.31,
+          "price": 69970.51,
           "prev_close": 68443.15,
-          "change": 1717.16,
-          "change_pct": 2.51,
+          "change": 1527.36,
+          "change_pct": 2.23,
           "currency": "USD"
         },
         "EURUSD=X": {
           "label": "EUR/USD",
-          "price": 1.1633,
+          "price": 1.1637,
           "prev_close": 1.1636,
-          "change": -0.0003,
-          "change_pct": -0.03,
+          "change": 0.0001,
+          "change_pct": 0.01,
           "currency": "USD"
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 98.753,
+          "price": 98.691,
           "prev_close": 99.175,
-          "change": -0.422,
-          "change_pct": -0.43,
+          "change": -0.484,
+          "change_pct": -0.49,
           "currency": "USD"
         }
       },
-      "yield_10y": 4.15,
-      "headline": "SPY 0.88%  |  BTC $70,160  |  10Y 4.15%"
+      "yield_10y": null,
+      "headline": null
     },
     "energy": {
-      "last_updated": "2026-03-10T06:31:23Z",
+      "last_updated": "2026-03-10T06:49:53Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 88.95,
+          "price": 90.0,
           "prev_close": 94.77,
-          "change": -5.82,
-          "change_pct": -6.14,
+          "change": -4.77,
+          "change_pct": -5.03,
           "currency": "USD"
         },
         "NG=F": {
           "label": "Natural Gas ($/MMBtu)",
-          "price": 3.11,
+          "price": 3.109,
           "prev_close": 3.12,
-          "change": -0.01,
-          "change_pct": -0.32,
+          "change": -0.011,
+          "change_pct": -0.35,
           "currency": "USD"
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 93.1,
+          "price": 93.91,
           "prev_close": 98.96,
-          "change": -5.86,
-          "change_pct": -5.92,
+          "change": -5.05,
+          "change_pct": -5.1,
           "currency": "USD"
         },
         "XLE": {
@@ -101,32 +101,11 @@
           "currency": "USD"
         }
       },
-      "headlines": [
-        {
-          "title": "U.S. exports of major transportation fuels in 2025 were about the same as in 2024",
-          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67304",
-          "published": "Mon, 09 Mar 2026 09:00:00 EST"
-        },
-        {
-          "title": "U.S. electricity generation in 2025 hit a record, again",
-          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67284",
-          "published": "Thu, 05 Mar 2026 09:00:00 EST"
-        },
-        {
-          "title": "U.S. LNG developers sign highest volume of sale and purchase contracts since 2022",
-          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67264",
-          "published": "Tue, 03 Mar 2026 09:00:00 EST"
-        },
-        {
-          "title": "Nuclear reactor restart in Japan will likely displace natural gas electricity generation",
-          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67244",
-          "published": "Mon, 02 Mar 2026  09:00:00 EST"
-        }
-      ],
-      "headline": "WTI $88.95/bbl"
+      "headlines": [],
+      "headline": "WTI $90.00/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-10T06:31:24Z",
+      "last_updated": "2026-03-10T06:49:54Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
@@ -185,37 +164,11 @@
           "currency": "USD"
         }
       },
-      "recent_filings": [
-        {
-          "title": "IONIS PHARMACEUTICALS INC  (IONS) \u2014 8-K (2026-03-09)",
-          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=IONIS%20PHARMACEUTICALS%20INC%20%20%28IONS%29&type=8-K&dateb=&owner=include&count=5",
-          "published": "2026-03-09"
-        },
-        {
-          "title": "Cartesian Therapeutics, Inc.  (RNAC) \u2014 8-K (2026-03-09)",
-          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Cartesian%20Therapeutics%2C%20Inc.%20%20%28RNAC%29&type=8-K&dateb=&owner=include&count=5",
-          "published": "2026-03-09"
-        },
-        {
-          "title": "enCore Energy Corp.  (EU) \u2014 8-K (2026-03-09)",
-          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=enCore%20Energy%20Corp.%20%20%28EU%29&type=8-K&dateb=&owner=include&count=5",
-          "published": "2026-03-09"
-        },
-        {
-          "title": "NET Power Inc.  (NPWR, NPWR-WT) \u2014 8-K (2026-03-09)",
-          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=NET%20Power%20Inc.%20%20%28NPWR%2C%20NPWR-WT%29&type=8-K&dateb=&owner=include&count=5",
-          "published": "2026-03-09"
-        },
-        {
-          "title": "Symbotic Inc.  (SYM) \u2014 8-K (2026-03-09)",
-          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Symbotic%20Inc.%20%20%28SYM%29&type=8-K&dateb=&owner=include&count=5",
-          "published": "2026-03-09"
-        }
-      ],
+      "recent_filings": [],
       "headline": "NVDA 2.68%  |  MSFT 0.11%"
     },
     "sports": {
-      "last_updated": "2026-03-10T06:31:25Z",
+      "last_updated": "2026-03-10T06:49:55Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -371,7 +324,7 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-10T06:31:31Z",
+      "last_updated": "2026-03-10T06:50:04Z",
       "headlines": [
         {
           "title": "Russian economy withstood pressure from outside German expert",
@@ -404,45 +357,45 @@
           "published": "Tue, 10 Mar 2026 02:37:46 GMT"
         },
         {
-          "title": "Iran's new leader has never been tested. He now faces an existential battle",
-          "link": "https://www.bbc.com/news/articles/cwykdn0yn4wo?at_medium=RSS&at_campaign=rss",
-          "published": "Mon, 09 Mar 2026 19:51:00 GMT"
+          "title": "Faisal Islam: Trump comments may have eased oil price surge, but havoc remains",
+          "link": "https://www.bbc.com/news/articles/cz7g5vv2gejo?at_medium=RSS&at_campaign=rss",
+          "published": "Tue, 10 Mar 2026 00:48:12 GMT"
         }
       ],
       "headline": "Russian economy withstood pressure from outside German expert"
     },
     "technology": {
-      "last_updated": "2026-03-10T06:31:32Z",
+      "last_updated": "2026-03-10T06:50:04Z",
       "hn_top": [
-        {
-          "title": "Learnings from paying artists royalties for AI-generated art",
-          "url": "https://www.kapwing.com/blog/learnings-from-paying-artists-royalties-for-ai-generated-art/",
-          "score": 97,
-          "comments": 56
-        },
         {
           "title": "Two Years of Emacs Solo",
           "url": "https://www.rahuljuliato.com/posts/emacs-solo-two-years",
-          "score": 160,
-          "comments": 32
+          "score": 169,
+          "comments": 38
         },
         {
-          "title": "Building a Procedural Hex Map with Wave Function Collapse",
-          "url": "https://felixturner.github.io/hex-map-wfc/article/",
-          "score": 453,
-          "comments": 68
+          "title": "Learnings from paying artists royalties for AI-generated art",
+          "url": "https://www.kapwing.com/blog/learnings-from-paying-artists-royalties-for-ai-generated-art/",
+          "score": 104,
+          "comments": 72
         },
         {
           "title": "Optimizing Top K in Postgres",
           "url": "https://www.paradedb.com/blog/optimizing-top-k",
-          "score": 23,
-          "comments": 0
+          "score": 32,
+          "comments": 1
         },
         {
-          "title": "Show HN: Remotely use my guitar tuner",
-          "url": "https://realtuner.online/",
-          "score": 147,
-          "comments": 36
+          "title": "Building a Procedural Hex Map with Wave Function Collapse",
+          "url": "https://felixturner.github.io/hex-map-wfc/article/",
+          "score": 454,
+          "comments": 68
+        },
+        {
+          "title": "No, it doesn't cost Anthropic $5k per Claude Code user",
+          "url": "https://martinalderson.com/posts/no-it-doesnt-cost-anthropic-5k-per-claude-code-user/",
+          "score": 104,
+          "comments": 49
         }
       ],
       "tech_headlines": [
@@ -472,10 +425,10 @@
           "published": "Wed, 04 Mar 2026 22:13:27 +0000"
         }
       ],
-      "headline": "Learnings from paying artists royalties for AI-generated art"
+      "headline": "Two Years of Emacs Solo"
     },
     "policy": {
-      "last_updated": "2026-03-10T06:31:32Z",
+      "last_updated": "2026-03-10T06:50:05Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -514,7 +467,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-10T06:31:36Z",
+      "last_updated": "2026-03-10T06:50:07Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
