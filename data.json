@@ -1,1 +1,517 @@
-ewogICJzY2hlbWFfdmVyc2lvbiI6ICIxLjIiLAogICJmZXRjaGVkX2F0IjogIjIwMjYtMDMtMTBUMDM6MzE6MjFaIiwKICAiZG9tYWlucyI6IHsKICAgICJtYXJrZXRzIjogewogICAgICAibGFzdF91cGRhdGVkIjogIjIwMjYtMDMtMTBUMDM6MzE6MjFaIiwKICAgICAgInF1b3RlcyI6IHsKICAgICAgICAiU1BZIjogewogICAgICAgICAgImxhYmVsIjogIlMmUCA1MDAgRVRGIiwKICAgICAgICAgICJwcmljZSI6IDY3OC4yNywKICAgICAgICAgICJwcmV2X2Nsb3NlIjogNjcyLjM4LAogICAgICAgICAgImNoYW5nZSI6IDUuODksCiAgICAgICAgICAiY2hhbmdlX3BjdCI6IDAuODgsCiAgICAgICAgICAiY3VycmVuY3kiOiAiVVNEIgogICAgICAgIH0sCiAgICAgICAgIlFRUSI6IHsKICAgICAgICAgICJsYWJlbCI6ICJOYXNkYXEgMTAwIEVURiIsCiAgICAgICAgICAicHJpY2UiOiA2MDcuNzYsCiAgICAgICAgICAicHJldl9jbG9zZSI6IDU5OS43NSwKICAgICAgICAgICJjaGFuZ2UiOiA4LjAxLAogICAgICAgICAgImNoYW5nZV9wY3QiOiAxLjM0LAogICAgICAgICAgImN1cnJlbmN5IjogIlVTRCIKICAgICAgICB9LAogICAgICAgICJHTEQiOiB7CiAgICAgICAgICAibGFiZWwiOiAiR29sZCBFVEYiLAogICAgICAgICAgInByaWNlIjogNDcyLjUzLAogICAgICAgICAgInByZXZfY2xvc2UiOiA0NzMuNTEsCiAgICAgICAgICAiY2hhbmdlIjogLTAuOTgsCiAgICAgICAgICAiY2hhbmdlX3BjdCI6IC0wLjIxLAogICAgICAgICAgImN1cnJlbmN5IjogIlVTRCIKICAgICAgICB9LAogICAgICAgICJUTFQiOiB7CiAgICAgICAgICAibGFiZWwiOiAiMjBZIFRyZWFzdXJ5IEVURiIsCiAgICAgICAgICAicHJpY2UiOiA4OS4yMywKICAgICAgICAgICJwcmV2X2Nsb3NlIjogODguNDYsCiAgICAgICAgICAiY2hhbmdlIjogMC43NywKICAgICAgICAgICJjaGFuZ2VfcGN0IjogMC44NywKICAgICAgICAgICJjdXJyZW5jeSI6ICJVU0QiCiAgICAgICAgfSwKICAgICAgICAiQlRDLVVTRCI6IHsKICAgICAgICAgICJsYWJlbCI6ICJCaXRjb2luIiwKICAgICAgICAgICJwcmljZSI6IDcwMTYwLjQ3LAogICAgICAgICAgInByZXZfY2xvc2UiOiA2ODQ0My4xNSwKICAgICAgICAgICJjaGFuZ2UiOiAxNzE3LjMyLAogICAgICAgICAgImNoYW5nZV9wY3QiOiAyLjUxLAogICAgICAgICAgImN1cnJlbmN5IjogIlVTRCIKICAgICAgICB9LAogICAgICAgICJFVVJVU0Q9WCI6IHsKICAgICAgICAgICJsYWJlbCI6ICJFVVIvVVNEIiwKICAgICAgICAgICJwcmljZSI6IDEuMTYxMywKICAgICAgICAgICJwcmV2X2Nsb3NlIjogMS4xNjM2LAogICAgICAgICAgImNoYW5nZSI6IC0wLjAwMjMsCiAgICAgICAgICAiY2hhbmdlX3BjdCI6IC0wLjIsCiAgICAgICAgICAiY3VycmVuY3kiOiAiVVNEIgogICAgICAgIH0sCiAgICAgICAgIkRYLVkuTllCIjogewogICAgICAgICAgImxhYmVsIjogIkRYWSIsCiAgICAgICAgICAicHJpY2UiOiA5OC44NzksCiAgICAgICAgICAicHJldl9jbG9zZSI6IDk5LjE3NSwKICAgICAgICAgICJjaGFuZ2UiOiAtMC4yOTYsCiAgICAgICAgICAiY2hhbmdlX3BjdCI6IC0wLjMsCiAgICAgICAgICAiY3VycmVuY3kiOiAiVVNEIgogICAgICAgIH0KICAgICAgfSwKICAgICAgInlpZWxkXzEweSI6IDQuMTUsCiAgICAgICJoZWFkbGluZSI6ICJTUFkgMC44OCUgIHwgIEJUQyAkNzAsMTYwICB8ICAxMFkgNC4xNSUiCiAgICB9LAogICAgImVuZXJneSI6IHsKICAgICAgImxhc3RfdXBkYXRlZCI6ICIyMDI2LTAzLTEwVDAzOjMxOjMxWiIsCiAgICAgICJxdW90ZXMiOiB7CiAgICAgICAgIkNMPUYiOiB7CiAgICAgICAgICAibGFiZWwiOiAiV1RJIENydWRlICgkL2JibCkiLAogICAgICAgICAgInByaWNlIjogODguMjcsCiAgICAgICAgICAicHJldl9jbG9zZSI6IDk0Ljc3LAogICAgICAgICAgImNoYW5nZSI6IC02LjUsCiAgICAgICAgICAiY2hhbmdlX3BjdCI6IC02Ljg2LAogICAgICAgICAgImN1cnJlbmN5IjogIlVTRCIKICAgICAgICB9LAogICAgICAgICJORz1GIjogewogICAgICAgICAgImxhYmVsIjogIk5hdHVyYWwgR2FzICgkL01NQnR1KSIsCiAgICAgICAgICAicHJpY2UiOiAzLjExNCwKICAgICAgICAgICJwcmV2X2Nsb3NlIjogMy4xMiwKICAgICAgICAgICJjaGFuZ2UiOiAtMC4wMDYsCiAgICAgICAgICAiY2hhbmdlX3BjdCI6IC0wLjE5LAogICAgICAgICAgImN1cnJlbmN5IjogIlVTRCIKICAgICAgICB9LAogICAgICAgICJCWj1GIjogewogICAgICAgICAgImxhYmVsIjogIkJyZW50IENydWRlICgkL2JibCkiLAogICAgICAgICAgInByaWNlIjogOTIuMjUsCiAgICAgICAgICAicHJldl9jbG9zZSI6IDk4Ljk2LAogICAgICAgICAgImNoYW5nZSI6IC02LjcxLAogICAgICAgICAgImNoYW5nZV9wY3QiOiAtNi43OCwKICAgICAgICAgICJjdXJyZW5jeSI6ICJVU0QiCiAgICAgICAgfSwKICAgICAgICAiWExFIjogewogICAgICAgICAgImxhYmVsIjogIkVuZXJneSBFVEYiLAogICAgICAgICAgInByaWNlIjogNTYuMzIsCiAgICAgICAgICAicHJldl9jbG9zZSI6IDU2LjU3LAogICAgICAgICAgImNoYW5nZSI6IC0wLjI1LAogICAgICAgICAgImNoYW5nZV9wY3QiOiAtMC40NCwKICAgICAgICAgICJjdXJyZW5jeSI6ICJVU0QiCiAgICAgICAgfQogICAgICB9LAogICAgICAiaGVhZGxpbmVzIjogWwogICAgICAgIHsKICAgICAgICAgICJ0aXRsZSI6ICJVLlMuIGV4cG9ydHMgb2YgbWFqb3IgdHJhbnNwb3J0YXRpb24gZnVlbHMgaW4gMjAyNSB3ZXJlIGFib3V0IHRoZSBzYW1lIGFzIGluIDIwMjQiLAogICAgICAgICAgImxpbmsiOiAiaHR0cHM6Ly93d3cuZWlhLmdvdi90b2RheWluZW5lcmd5L2RldGFpbC5waHA/aWQ9NjczMDQiLAogICAgICAgICAgInB1Ymxpc2hlZCI6ICJNb24sIDA5IE1hciAyMDI2IDA5OjAwOjAwIEVTVCIKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICJ0aXRsZSI6ICJVLlMuIGVsZWN0cmljaXR5IGdlbmVyYXRpb24gaW4gMjAyNSBoaXQgYSByZWNvcmQsIGFnYWluIiwKICAgICAgICAgICJsaW5rIjogImh0dHBzOi8vd3d3LmVpYS5nb3YvdG9kYXlpbmVuZXJneS9kZXRhaWwucGhwP2lkPTY3Mjg0IiwKICAgICAgICAgICJwdWJsaXNoZWQiOiAiVGh1LCAwNSBNYXIgMjAyNiAwOTowMDowMCBFU1QiCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAidGl0bGUiOiAiVS5TLiBMTkcgZGV2ZWxvcGVycyBzaWduIGhpZ2hlc3Qgdm9sdW1lIG9mIHNhbGUgYW5kIHB1cmNoYXNlIGNvbnRyYWN0cyBzaW5jZSAyMDIyIiwKICAgICAgICAgICJsaW5rIjogImh0dHBzOi8vd3d3LmVpYS5nb3YvdG9kYXlpbmVyZ3kvZGV0YWlsLnBocD9pZD02NzI2NCIsCiAgICAgICAgICAicHVibGlzaGVkIjogIlR1ZSwgMDMgTWFyIDIwMjYgMDk6MDA6MDAgRVNUIgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgInRpdGxlIjogIk51Y2xlYXIgcmVhY3RvciByZXN0YXJ0IGluIEphcGFuIHdpbGwgbGlrZWx5IGRpc3BsYWNlIG5hdHVyYWwgZ2FzIGVsZWN0cmljaXR5IGdlbmVyYXRpb24iLAogICAgICAgICAgImxpbmsiOiAiaHR0cHM6Ly93d3cuZWlhLmdvdi90b2RheWluZW5lcmd5L2RldGFpbC5waHA/aWQ9NjcyNDQiLAogICAgICAgICAgInB1Ymxpc2hlZCI6ICJNb24sIDAyIE1hciAyMDI2ICAwOTowMDowMCBFU1QiCiAgICAgICAgfQogICAgICBdLAogICAgICAiaGVhZGxpbmUiOiAiV1RJICQzOC4yNy9iYmwiCiAgICB9LAogICAgImNvbXBhbmllcyI6IHsKICAgICAgImxhc3RfdXBkYXRlZCI6ICIyMDI2LTAzLTEwVDAzOjMxOjMyWiIsCiAgICAgICJxdW90ZXMiOiB7CiAgICAgICAgIk5WREEiOiB7CiAgICAgICAgICAibGFiZWwiOiAiTlZJRElBIiwKICAgICAgICAgICJwcmljZSI6IDE4Mi42NSwKICAgICAgICAgICJwcmV2X2Nsb3NlIjogMTc3Ljg4NSwKICAgICAgICAgICJjaGFuZ2UiOiA0Ljc2NSwKICAgICAgICAgICJjaGFuZ2VfcGN0IjogMi42OCwKICAgICAgICAgICJjdXJyZW5jeSI6ICJVU0QiCiAgICAgICAgfSwKICAgICAgICAiTVNGVCI6IHsKICAgICAgICAgICJsYWJlbCI6ICJNaWNyb3NvZnQiLAogICAgICAgICAgInByaWNlIjogNDA5LjQxLAogICAgICAgICAgInByZXZfY2xvc2UiOiA0MDguOTYsCiAgICAgICAgICAiY2hhbmdlIjogMC40NSwKICAgICAgICAgICJjaGFuZ2VfcGN0IjogMC4xMSwKICAgICAgICAgICJjdXJyZW5jeSI6ICJVU0QiCiAgICAgICAgfSwKICAgICAgICAiQUFQTCI6IHsKICAgICAgICAgICJsYWJlbCI6ICJBcHBsZSIsCiAgICAgICAgICAicHJpY2UiOiAyNTkuODgsCiAgICAgICAgICAicHJldl9jbG9zZSI6IDI1Ny40NiwKICAgICAgICAgICJjaGFuZ2UiOiAyLjQyLAogICAgICAgICAgImNoYW5nZV9wY3QiOiAwLjk0LAogICAgICAgICAgImN1cnJlbmN5IjogIlVTRCIKICAgICAgICB9LAogICAgICAgICJNRVRBIjogewogICAgICAgICAgImxhYmVsIjogIk1ldGEiLAogICAgICAgICAgInByaWNlIjogNjQ3LjM5LAogICAgICAgICAgInByZXZfY2xvc2UiOiA2NDQuODYsCiAgICAgICAgICAiY2hhbmdlIjogMi41MywKICAgICAgICAgICJjaGFuZ2VfcGN0IjogMC4zOSwKICAgICAgICAgICJjdXJyZW5jeSI6ICJVU0QiCiAgICAgICAgfSwKICAgICAgICAiVFNMQSI6IHsKICAgICAgICAgICJsYWJlbCI6ICJUZXNsYSIsCiAgICAgICAgICAicHJpY2UiOiAzOTguNjgsCiAgICAgICAgICAicHJldl9jbG9zZSI6IDM5Ni43MywKICAgICAgICAgICJjaGFuZ2UiOiAxLjk1LAogICAgICAgICAgImNoYW5nZV9wY3QiOiAwLjQ5LAogICAgICAgICAgImN1cnJlbmN5IjogIlVTRCIKICAgICAgICB9LAogICAgICAgICJBTVpOIjogewogICAgICAgICAgImxhYmVsIjogIkFtYXpvbiIsCiAgICAgICAgICAicHJpY2UiOiAyMTMuNDksCiAgICAgICAgICAicHJldl9jbG9zZSI6IDIxMy4xMiwKICAgICAgICAgICJjaGFuZ2UiOiAwLjM3LAogICAgICAgICAgImNoYW5nZV9wY3QiOiAwLjE3LAogICAgICAgICAgImN1cnJlbmN5IjogIlVTRCIKICAgICAgICB9LAogICAgICAgICJHT09HTCI6IHsKICAgICAgICAgICJsYWJlbCI6ICJBbHBoYWJldCIsCiAgICAgICAgICAicHJpY2UiOiAzMDYuMzYsCiAgICAgICAgICAicHJldl9jbG9zZSI6IDI5OC4yNywKICAgICAgICAgICJjaGFuZ2UiOiA4LjA5LAogICAgICAgICAgImNoYW5nZV9wY3QiOiAyLjcxLAogICAgICAgICAgImN1cnJlbmN5IjogIlVTRCIKICAgICAgICB9CiAgICAgIH0sCiAgICAgICJyZWNlbnRfZmlsaW5ncyI6IFsKICAgICAgICB7CiAgICAgICAgICAidGl0bGUiOiAiSU9OSVMgUEhBUk1BQ0VVVElDQUxTIElOQyAgKElPTlMpIFx1MjAxNCA4LUsgKDIwMjYtMDMtMDkpIiwKICAgICAgICAgICJsaW5rIjogImh0dHBzOi8vd3d3LnNlYy5nb3YvY2dpLWJpbi9icm93c2UtZWRnYXI/YWN0aW9uPWdldGNvbXBhbnkmY29tcGFueT1JT05JUyUyMFBIQVJNQUNFVVRJQ0FMUyUyMElOQyUyMCUyMChJT05TKSZ0eXBlPTgtSyZkYXRlYj0mb3duZXI9aW5jbHVkZSZjb3VudD01IiwKICAgICAgICAgICJwdWJsaXNoZWQiOiAiMjAyNi0wMy0wOSIKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICJ0aXRsZSI6ICJDYXJ0ZXNpYW4gVGhlcmFwZXV0aWNzLCBJbmMuICAoUk5BQykgXHUyMDE0IDgtSyAoMjAyNi0wMy0wOSkiLAogICAgICAgICAgImxpbmsiOiAiaHR0cHM6Ly93d3cuc2VjLmdvdi9jZ2ktYmluL2Jyb3dzZS1lZGdhcj9hY3Rpb249Z2V0Y29tcGFueSZjb21wYW55PUNhcnRlc2lhbiUyMFRoZXJhcGV1dGljcyUyQyUyMEluYy4lMjAlMjAoUk5BQykmdHlwZT04LUsmZGF0ZWI9Jm93bmVyPWluY2x1ZGUmY291bnQ9NSIsCiAgICAgICAgICAicHVibGlzaGVkIjogIjIwMjYtMDMtMDkiCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAidGl0bGUiOiAiZW5Db3JlIEVuZXJneSBDb3JwLiAgKEVVKSBcdTIwMTQgOC1LICgyMDI2LTAzLTA5KSIsCiAgICAgICAgICAibGluayI6ICJodHRwczovL3d3dy5zZWMuZ292L2NnaS1iaW4vYnJvd3NlLWVkZ2FyP2FjdGlvbj1nZXRjb21wYW55JmNvbXBhbnk9ZW5Db3JlJTIwRW5lcmd5JTIwQ29ycC4lMjAlMjAoRVUpdHlwZT04LUsmZGF0ZWI9Jm93bmVyPWluY2x1ZGUmY291bnQ9NSIsCiAgICAgICAgICAicHVibGlzaGVkIjogIjIwMjYtMDMtMDkiCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAidGl0bGUiOiAiTkVUIFBvd2VyIEluYy4gIChOUFdSLCBOUFdSLVdUKSBcdTIwMTQgOC1LICgyMDI2LTAzLTA5KSIsCiAgICAgICAgICAibGluayI6ICJodHRwczovL3d3dy5zZWMuZ292L2NnaS1iaW4vYnJvd3NlLWVkZ2FyP2FjdGlvbj1nZXRjb21wYW55JmNvbXBhbnk9TkVUJTIwUG93ZXIlMjBJbmMuJTIwJTIwKE5QV1IlMkMlMjBOUFdSLVdUKSZ0eXBlPTgtSyZkYXRlYj0mb3duZXI9aW5jbHVkZSZjb3VudD01IiwKICAgICAgICAgICJwdWJsaXNoZWQiOiAiMjAyNi0wMy0wOSIKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICJ0aXRsZSI6ICJTeW1ib3RpYyBJbmMuICAoU1lNKSBcdTIwMTQgOC1LICgyMDI2LTAzLTA5KSIsCiAgICAgICAgICAibGluayI6ICJodHRwczovL3d3dy5zZWMuZ292L2NnaS1iaW4vYnJvd3NlLWVkZ2FyP2FjdGlvbj1nZXRjb21wYW55JmNvbXBhbnk9U3ltYm90aWMlMjBJbmMuJTIwJTIwKFNZTSkmdHlwZT04LUsmZGF0ZWI9Jm93bmVyPWluY2x1ZGUmY291bnQ9NSIsCiAgICAgICAgICAicHVibGlzaGVkIjogIjIwMjYtMDMtMDkiCiAgICAgICAgfQogICAgICBdLAogICAgICAiaGVhZGxpbmUiOiAiTlZEQSAyLjY4JSAgfCAgTVNGVCAwLjExJSIKICAgIH0sCiAgICAic3BvcnRzIjogewogICAgICAibGFzdF91cGRhdGVkIjogIjIwMjYtMDMtMTBUMDM6MzE6MzRaIiwKICAgICAgInNjb3JlcyI6IHsKICAgICAgICAibmZsIjogeyJsYWJlbCI6ICJORkwiLCAiZ2FtZXMiOiBbeyJob21lIjogIk5FIiwgImF3YXkiOiAiU0VBIiwgImhvbWVfc2NvcmUiOiAiMTMiLCAiYXdheV9zY29yZSI6ICIyOSIsICJzdGF0dXMiOiAiRmluYWwifV19LAogICAgICAgICJuYmEiOiB7ImxhYmVsIjogIk5CQSIsICJnYW1lcyI6IFt7ImhvbWUiOiAiQ0xFIiwgImF3YXkiOiAiUEhJIiwgImhvbWVfc2NvcmUiOiAiMTE1IiwgImF3YXlfc2NvcmUiOiAiMTAxIiwgInN0YXR1cyI6ICJGaW5hbCJ9LCB7ImhvbWUiOiAiQktOIiwgImF3YXkiOiAiTUVNIiwgImhvbWVfc2NvcmUiOiAiMTI2IiwgImF3YXlfc2NvcmUiOiAiMTE1IiwgInN0YXR1cyI6ICJGaW5hbCJ9LCB7ImhvbWUiOiAiT0tDIiwgImF3YXkiOiAiREVOIiwgImhvbWVfc2NvcmUiOiAiMTI5IiwgImF3YXlfc2NvcmUiOiAiMTI2IiwgInN0YXR1cyI6ICJGaW5hbCJ9LCB7ImhvbWUiOiAiVVRBSCIsICJhd2F5IjogIkdTIiwgImhvbWVfc2NvcmUiOiAiMTE5IiwgImF3YXlfc2NvcmUiOiAiMTE2IiwgInN0YXR1cyI6ICIxLjcgLSA0dGgifV19LAogICAgICAgICJtbGIiOiB7ImxhYmVsIjogIk1MQiIsICJnYW1lcyI6IFt7ImhvbWUiOiAiQVRMIiwgImF3YXkiOiAiTUlOIiwgImhvbWVfc2NvcmUiOiAiOSIsICJhd2F5X3Njb3JlIjogIjgiLCAic3RhdHVzIjogIkZpbmFsIn0sIHsiaG9tZSI6ICJCT1MiLCAiYXdheSI6ICJQSEkiLCAiaG9tZV9zY29yZSI6ICI1IiwgImF3YXlfc2NvcmUiOiAiMyIsICJzdGF0dXMiOiAiRmluYWwifSwgeyJob21lIjogIkRFVCIsICJhd2F5IjogIlRCIiwgImhvbWVfc2NvcmUiOiAiNCIsICJhd2F5X3Njb3JlIjogIjQiLCAic3RhdHVzIjogIkZpbmFsIn0sIHsiaG9tZSI6ICJIT1UiLCAiYXdheSI6ICJTVEwiLCAiaG9tZV9zY29yZSI6ICIxMCIsICJhd2F5X3Njb3JlIjogIjMiLCAic3RhdHVzIjogIkZpbmFsIn1dfQogICAgICB9LAogICAgICAiaW5qdXJpZXMiOiB7Im5mbCI6IFt7InBsYXllciI6ICJJc2FhYyBTZXVtYWxvIiwgInRlYW0iOiAiIiwgInN0YXR1cyI6ICJBY3RpdmUiLCAiZGV0YWlsIjogIlRoZSBDYXJkaW5hbHMgYWdyZWVkIHRvIHRlcm1zIHdpdGggU2V1bWFsbyBvbiBhIHRocmVlLXllYXIsICQzMS41IG1pbGxpb24gY29udHJhY3QgTW9uZGF5LCBKZXJlbXkgRm93bGVyIG9mIEVTUE4uY29tIHJlcG9ydHMuIn0sIHsicGxheWVyIjogIlJveSBMb3BleiIsICJ0ZWFtIjogIiIsICJzdGF0dXMiOiAiQWN0aXZlIiwgImRldGFpbCI6ICJMb3BleiBzaWduZWQgYSB0d28teWVhciwgJDExLjUgbWlsbGlvbiBjb250cmFjdCB3aXRoIHRoZSBDYXJkaW5hbHMgb24gTW9uZGF5IHRoYXQgaW5jbHVkZXMgJDcgbWlsbGlvbiBndWFyYW50ZWVkLCBJYW4gUmFwb3BvcnQgb2YgTkZMIE5ldHdvcmsgcmVwb3J0cy4ifV0sICJuYmEiOiBbeyJwbGF5ZXIiOiAiSm9uYXRoYW4gS3VtaW5nYSIsICJ0ZWFtIjogIiIsICJzdGF0dXMiOiAiRGF5LVRvLURheSIsICJkZXRhaWwiOiAiS3VtaW5nYSBpcyBxdWVzdGlvbmFibGUgZm9yIFR1ZXNkYXkncyBnYW1lIGFnYWluc3QgdGhlIE1hdmVyaWNrcyBkdWUgdG8gYSBsZWZ0IGtuZWUgYm9uZSBicnVpc2UuIn0sIHsicGxheWVyIjogIlBheXRvbiBQcml0Y2hhcmQiLCAidGVhbSI6ICIiLCAic3RhdHVzIjogIkRheS1Uby1EYXkiLCAiZGV0YWlsIjogIlByaXRjaGFyZCAobmVjaykgaXMgVGF5bG9yIFNub3cgb2YgdGhlIENlbHRpY3MnIG9mZmljaWFsIHNpdGUgZm9yIFR1ZXNkYXkncyBnYW1lIGFnYWluc3QgdGhlIFNwdXJzLiJ9XX0sCiAgICAgICJoZWFkbGluZSI6ICJORkwgLyBOQkEgLyBNTEIgbGl2ZSBzY29yZXMiCiAgICB9LAogICAgImdlb3BvbGl0aWNzIjogewogICAgICAibGFzdF91cGRhdGVkIjogIjIwMjYtMDMtMTBUMDM6MzE6MzRaIiwKICAgICAgImhlYWRsaW5lcyI6IFsKICAgICAgICB7InRpdGxlIjogIldobyBpcyBNb2p0YWJhIEtoYW1lbmVpLCBJcmFuJ3MgbmV3IHN1cHJlbWUgbGVhZGVyPyIsICJsaW5rIjogImh0dHBzOi8vd3d3LmJiYy5jb20vbmV3cy9hcnRpY2xlcy9jNzh4eGcwNXcwem8/YXRfbWVkaXVtPVJTUyZhdF9jYW1wYWlnbj1yc3MiLCAicHVibGlzaGVkIjogIlN1biwgMDggTWFyIDIwMjYgMjE6NTE6NDggR01UIn0sCiAgICAgICAgeyJ0aXRsZSI6ICJVU3RlYWNoZXIga2lsbGVkIGFmdGVyIHRvaWxldCBwYXBlciBwcmFuayBnb2VzIHdyb25nIiwgImxpbmsiOiAiaHR0cHM6Ly93d3cuYmJjLmNvbS9uZXdzL2FydGljbGVzL2NkcjI0ZzFwM3Zwbz9hdF9tZWRpdW09UlNTJmF0X2NhbXBhaWduPXJzcyIsICJwdWJsaXNoZWQiOiAiTW9uLCAwOSBNYXIgMjAyNiAxNzowOToyMSBHTVQifSwKICAgICAgICB7InRpdGxlIjogIkc3IHRvIHRha2UgJ25lY2Vzc2FyeSBtZWFzdXJlcycgdG8gc3VwcG9ydCBlbmVyZ3kgc3VwcGxpZXMiLCAibGluayI6ICJodHRwczovL3d3dy5iYmMuY29tL25ld3MvYXJ0aWNsZXMvYzc5NTQybjBncndvP2F0X21lZGl1bT1SU1MmYXRfY2FtcGFpZ249cnNzIiwgInB1Ymxpc2hlZCI6ICJNb24sIDA5IE1hciAyMDI2IDIzOjMwOjQ2IEdNVCJ9LAogICAgICAgIHsidGl0bGUiOiAiSHVuZHJlZHMgb2YgdGVlbmFnZXJzIHJlcG9ydCBmb3IgZHV0eSBhcyBDcm9hdGlhIHJlaW5zdGF0ZXMgY29uc2NyaXB0aW9uIiwgImxpbmsiOiAiaHR0cHM6Ly93d3cuYmJjLmNvbS9uZXdzL2FydGljbGVzL2M5M2oyMzJsemdvP2F0X21lZGl1bT1SU1MmYXRfY2FtcGFpZ249cnNzIiwgInB1Ymxpc2hlZCI6ICJNb24sIDA5IE1hciAyMDI2IDE0OjQ5OjM0IEdNVCJ9LAogICAgICAgIHsidGl0bGUiOiAiQWxsZWdlZCBCb25kaSBndW5tYW4gc2Vla3Mgb3JkZXIgdG8gc3VwcHJlc3MgZmFtaWx5J3MgaWRlbnRpdHkiLCAibGluayI6ICJodHRwczovL3d3dy5iYmMuY29tL25ld3MvYXJ0aWNsZXMvY3k4bHdueWo0MGVvP2F0X21lZGl1bT1SU1MmYXRfY2FtcGFpZ249cnNzIiwgInB1Ymxpc2hlZCI6ICJNb24sIDA5IE1hciAyMDI2IDA4OjEzOjU4IEdNVCJ9CiAgICAgIF0sCiAgICAgICJoZWFkbGluZSI6ICJXaG8gaXMgTW9qdGFiYSBLaGFtZW5laSwgSXJhbidzIG5ldyBzdXByZW1lIGxlYWRlcj8iCiAgICB9LAogICAgInRlY2hub2xvZ3kiOiB7CiAgICAgICJsYXN0X3VwZGF0ZWQiOiAiMjAyNi0wMy0xMFQwMzozMTozNVoiLAogICAgICAiaG5fdG9wIjogWwogICAgICAgIHsidGl0bGUiOiAiVHdvIFllYXJzIG9mIEVtYWNzIFNvbG86IDM1IE1vZHVsZXMsIFplcm8gRXh0ZXJuYWwgUGFja2FnZXMsIGFuZCBhIEZ1bGwgUmVmYWN0b3IiLCAidXJsIjogImh0dHBzOi8vd3d3LnJhaHVsanVsaWF0by5jb20vcG9zdHMvZW1hY3Mtc29sby10d28teWVhcnMiLCAic2NvcmUiOiAxMDMsICJjb21tZW50cyI6IDE2fSwKICAgICAgICB7InRpdGxlIjogIkJ1aWxkaW5nIGEgUHJvY2VkdXJhbCBIZXggTWFwIHdpdGggV2F2ZSBGdW5jdGlvbiBDb2xsYXBzZSIsICJ1cmwiOiAiaHR0cHM6Ly9mZWxpeHR1cm5lci5naXRodWIuaW8vaGV4LW1hcC13ZmMvYXJ0aWNsZS8iLCAic2NvcmUiOiA0MTQsICJjb21tZW50cyI6IDYxfSwKICAgICAgICB7InRpdGxlIjogIlNob3cgSE46IFJlbW90ZWx5IHVzZSBteSBndWl0YXIgdHVuZXIiLCAidXJsIjogImh0dHBzOi8vcmVhbHR1bmVyLm9ubGluZS8iLCAic2NvcmUiOiA5OSwgImNvbW1lbnRzIjogMjZ9LAogICAgICAgIHsidGl0bGUiOiAiVGhlIFwiSlZHIGFsZ29yaXRobVwiIG9ubHkgd2lucyBvbiB0aW55IG51bWJlcnMiLCAidXJsIjogImh0dHBzOi8vc2NvdHRhYXJvbnNvbi5ibG9nLz9wPTk2MTUiLCAic2NvcmUiOiAzOCwgImNvbW1lbnRzIjogMTd9LAogICAgICAgIHsidGl0bGUiOiAiSlNMaW51eCBOb3cgU3VwcG9ydHMgeDg2XzY0IiwgInVybCI6ICJodHRwczovL2JlbGxhcmQub3JnL2pzbGludXgvIiwgInNjb3JlIjogMjYxLCAiY29tbWVudHMiOiA3NH0KICAgICAgXSwKICAgICAgInRlY2hfaGVhZGxpbmVzIjogWwogICAgICAgIHsidGl0bGUiOiAiRG9uJ3QgRXhwZWN0IEJpZyBTdXJwcmlzZXMgaW4gdGhlIEdvdmVybm1lbnQncyBBbGllbiBGaWxlcyIsICJsaW5rIjogImh0dHBzOi8vd3d3LndpcmVkLmNvbS9zdG9yeS9kb250LWV4cGVjdC1iaWctc3VycHJpc2VzLWluLXRoZS1nb3Zlcm5tZW50cy1hbGllbi1maWxlcy8iLCAicHVibGlzaGVkIjogIk1vbiwgMDkgTWFyIDIwMjYgMTA6MDA6MDAgKzAwMDAifSwKICAgICAgICB7InRpdGxlIjogIldoeSBSRksnJ3MgQ0RDIElzIEVuZG9yc2luZyAnU2hhcmVkIERlY2lzaW9ubWFraW5nJyBmb3IgVmFjY2luZXMiLCAibGluayI6ICJodHRwczovL3d3dy53aXJlZC5jb20vc3Rvcnkvd2h5LXJma3MtY2RjLWlzLWVuZG9yc2luZy1zaGFyZWQtZGVjaXNpb24tbWFraW5nLWZvci12YWNjaW5lcy8iLCAicHVibGlzaGVkIjogIk1vbiwgMDkgTWFyIDIwMjYgMDk6MzA6MDAgKzAwMDAifQogICAgICBdLAogICAgICAiaGVhZGxpbmUiOiAiVHdvIFllYXJzIG9mIEVtYWNzIFNvbG86IDM1IE1vZHVsZXMsIFplcm8gRXh0ZXJuYWwgUGFja2FnZXMsIGFuZCBhIEZ1bGwgUmVmYWN0b3IiCiAgICB9LAogICAgInBvbGljeSI6IHsKICAgICAgImxhc3RfdXBkYXRlZCI6ICIyMDI2LTAzLTEwVDAzOjMxOjM1WiIsCiAgICAgICJiaWxscyI6IFt7InRpdGxlIjogIk1vc3QtVmlld2VkIEJpbGxzIC0gV2VlayBvZiBNYXJjaCA4LCAyMDI2IiwgImxpbmsiOiAiaHR0cHM6Ly93d3cuY29uZ3Jlc3MuZ292L21vc3Qtdmlld2VkLWJpbGxzIiwgInB1Ymxpc2hlZCI6ICIifV0sCiAgICAgICJmZWRlcmFsX3J1bGVzIjogWwogICAgICAgIHsidGl0bGUiOiAiQ2hyaXN0bWFzIFRyZWUgUHJvbW90aW9uLCBSZXNlYXJjaCwgYW5kIEluZm9ybWF0aW9uIE9yZGVyIiwgImxpbmsiOiAiaHR0cHM6Ly93d3cuZmVkZXJhbHJlZ2lzdGVyLmdvdi9kb2N1bWVudHMvMjAyNi8wMy8wOS8yMDI2LTA0NTg2L2NocmlzdG1hcy10cmVlLXByb21vdGlvbi1yZXNlYXJjaC1hbmQtaW5mb3JtYXRpb24tb3JkZXIiLCAicHVibGlzaGVkIjogIjIwMjYtMDMtMDkifSwKICAgICAgICB7InRpdGxlIjogIk1hZ251c29uLVN0ZXZlbnMgRmlzaGVyeSBDb25zZXJ2YXRpb24gYW5kIE1hbmFnZW1lbnQgQWN0IFByb3Zpc2lvbnMiLCAibGluayI6ICJodHRwczovL3d3dy5mZWRlcmFscmVnaXN0ZXIuZ292L2RvY3VtZW50cy8yMDI2LzAzLzA5LzIwMjYtMDQ1ODUiLCAicHVibGlzaGVkIjogIjIwMjYtMDMtMDkifSwKICAgICAgICB7InRpdGxlIjogIkF2b2NhZG9zIEdyb3duIGluIFNvdXRoIEZsb3JpZGEgYW5kIEltcG9ydGVkIEF2b2NhZG9zOyBDaGFuZ2UgaW4gTWF0dXJpdHkgUmVxdWlyZW1lbnRzIiwgImxpbmsiOiAiaHR0cHM6Ly93d3cuZmVkZXJhbHJlZ2lzdGVyLmdvdi9kb2N1bWVudHMvMjAyNi8wMy8wOS8yMDI2LTA0NTg0IiwgInB1Ymxpc2hlZCI6ICIyMDI2LTAzLTA5In0KICAgICAgXSwKICAgICAgInNjb3R1cyI6IFtdLAogICAgICAiaGVhZGxpbmUiOiAiTW9zdC1WaWV3ZWQgQmlsbHMgLSBXZWVrIG9mIE1hcmNoIDgsIDIwMjYiCiAgICB9LAogICAgImxlZ2FsIjogewogICAgICAibGFzdF91cGRhdGVkIjogIjIwMjYtMDMtMTBUMDM6MzE6MzhaIiwKICAgICAgImNhc2VzIjogWwogICAgICAgIHsidGl0bGUiOiAiSW4gUmUgQnlzdG9saWMgQW50aXRydXN0IExpdGlnYXRpb24iLCAiY291cnQiOiAiQ291cnQgb2YgQXBwZWFscyBmb3IgdGhlIFNlY29uZCBDaXJjdWl0IiwgImRhdGUiOiAiMjAyNC0wNS0xMyIsICJ0YWciOiAiQW50aXRydXN0IiwgImxpbmsiOiAiaHR0cHM6Ly93d3cuY291cnRsaXN0ZW5lci5jb20vb3Bpbmlvbi85NTAxNDc1L2luLXJlLWJ5c3RvbGljLWFudGl0cnVzdC1saXRpZ2F0aW9uLyJ9LAogICAgICAgIHsidGl0bGUiOiAiQXV0b21vdGl2ZSBQYXJ0cyBBbnRpdHJ1c3QgTGl0aWcuIiwgImNvdXJ0IjogIkNvdXJ0IG9mIEFwcGVhbHMgZm9yIHRoZSBTaXh0aCBDaXJjdWl0IiwgImRhdGUiOiAiMjAyMi0wNS0xMiIsICJ0YWciOiAiQW50aXRydXN0IiwgImxpbmsiOiAiaHR0cHM6Ly93d3cuY291cnRsaXN0ZW5lci5jb20vb3Bpbmlvbi82NDY4MDAwL2F1dG9tb3RpdmUtcGFydHMtYW50aXRydXN0LWxpdGlnLyJ9LAogICAgICAgIHsidGl0bGUiOiAiRlRDIHYuIFpBQVBQQUFaIiwgImNvdXJ0IjogIkNvdXJ0IG9mIEFwcGVhbHMgZm9yIHRoZSBGaWZ0aCBDaXJjdWl0IiwgImRhdGUiOiAiMjAyNS0wNi0xNiIsICJ0YWciOiAiUmVndWxhdG9yeSIsICJsaW5rIjogImh0dHBzOi8vd3d3LmNvdXJ0bGlzdGVuZXIuY29tL29waW5pb24vMTA2MDU0MTMvZnRjLXYtemFhcHBhYXovIn0sCiAgICAgICAgeyJ0aXRsZSI6ICJLbmlnaHQgRmlyc3QgQW1lbmRtZW50IEluc3RpdHV0ZSBhdCBDb2x1bWJpYSBVbml2ZXJzaXR5IHYuIENJQSIsICJjb3VydCI6ICJDb3VydCBvZiBBcHBlYWxzIGZvciB0aGUgRC5DLiBDaXJjdWl0IiwgImRhdGUiOiAiMjAyMS0wOC0yNyIsICJ0YWciOiAiQ29uc3RpdHV0aW9uYWwiLCAibGluayI6ICJodHRwczovL3d3dy5jb3VydGxpc3RlbmVyLmNvbS9vcGluaW9uLzUwNjQxMjMva25pZ2h0LWZpcnN0LWFtZW5kbWVudC1pbnN0aXR1dGUtYXQtY29sdW1iaWEtdW5pdmVyc2l0eS12LWNpYS8ifQogICAgICBdLAogICAgICAic2NvdHVzX29waW5pb25zIjogW10sCiAgICAgICJoZWFkbGluZSI6ICJJbiBSZSBCeXN0b2xpYyBBbnRpdHJ1c3QgTGl0aWdhdGlvbiIKICAgIH0KICB9Cn0=
+{
+  "schema_version": "1.2",
+  "fetched_at": "2026-03-09T19:17:04Z",
+  "domains": {
+    "markets": {
+      "last_updated": "2026-03-09T19:17:05Z",
+      "quotes": {
+        "SPY": {
+          "label": "S&P 500 ETF",
+          "price": 670.64,
+          "prev_close": 672.38,
+          "change": -1.74,
+          "change_pct": -0.26,
+          "currency": "USD"
+        },
+        "QQQ": {
+          "label": "Nasdaq 100 ETF",
+          "price": 600.269,
+          "prev_close": 599.75,
+          "change": 0.519,
+          "change_pct": 0.09,
+          "currency": "USD"
+        },
+        "GLD": {
+          "label": "Gold ETF",
+          "price": 470.32,
+          "prev_close": 473.51,
+          "change": -3.19,
+          "change_pct": -0.67,
+          "currency": "USD"
+        },
+        "TLT": {
+          "label": "20Y Treasury ETF",
+          "price": 88.94,
+          "prev_close": 88.46,
+          "change": 0.48,
+          "change_pct": 0.54,
+          "currency": "USD"
+        },
+        "BTC-USD": {
+          "label": "Bitcoin",
+          "price": 68416.28,
+          "prev_close": 65975.7,
+          "change": 2440.58,
+          "change_pct": 3.7,
+          "currency": "USD"
+        },
+        "EURUSD=X": {
+          "label": "EUR/USD",
+          "price": 1.1586,
+          "prev_close": 1.1621,
+          "change": -0.0035,
+          "change_pct": -0.3,
+          "currency": "USD"
+        },
+        "DX-Y.NYB": {
+          "label": "DXY",
+          "price": 99.152,
+          "prev_close": 98.986,
+          "change": 0.166,
+          "change_pct": 0.17,
+          "currency": "USD"
+        }
+      },
+      "yield_10y": null,
+      "headline": null
+    },
+    "energy": {
+      "last_updated": "2026-03-09T19:17:05Z",
+      "quotes": {
+        "CL=F": {
+          "label": "WTI Crude ($/bbl)",
+          "price": 95.35,
+          "prev_close": 90.9,
+          "change": 4.45,
+          "change_pct": 4.9,
+          "currency": "USD"
+        },
+        "NG=F": {
+          "label": "Natural Gas ($/MMBtu)",
+          "price": 3.149,
+          "prev_close": 3.186,
+          "change": -0.037,
+          "change_pct": -1.16,
+          "currency": "USD"
+        },
+        "BZ=F": {
+          "label": "Brent Crude ($/bbl)",
+          "price": 99.45,
+          "prev_close": 92.69,
+          "change": 6.76,
+          "change_pct": 7.29,
+          "currency": "USD"
+        },
+        "XLE": {
+          "label": "Energy ETF",
+          "price": 56.55,
+          "prev_close": 56.57,
+          "change": -0.02,
+          "change_pct": -0.04,
+          "currency": "USD"
+        }
+      },
+      "headlines": [],
+      "headline": "WTI $95.35/bbl"
+    },
+    "companies": {
+      "last_updated": "2026-03-09T19:17:06Z",
+      "quotes": {
+        "NVDA": {
+          "label": "NVIDIA",
+          "price": 179.95,
+          "prev_close": 177.885,
+          "change": 2.065,
+          "change_pct": 1.16,
+          "currency": "USD"
+        },
+        "MSFT": {
+          "label": "Microsoft",
+          "price": 405.24,
+          "prev_close": 408.96,
+          "change": -3.72,
+          "change_pct": -0.91,
+          "currency": "USD"
+        },
+        "AAPL": {
+          "label": "Apple",
+          "price": 257.45,
+          "prev_close": 257.46,
+          "change": -0.01,
+          "change_pct": -0.0,
+          "currency": "USD"
+        },
+        "META": {
+          "label": "Meta",
+          "price": 636.44,
+          "prev_close": 644.86,
+          "change": -8.42,
+          "change_pct": -1.31,
+          "currency": "USD"
+        },
+        "TSLA": {
+          "label": "Tesla",
+          "price": 393.21,
+          "prev_close": 396.73,
+          "change": -3.52,
+          "change_pct": -0.89,
+          "currency": "USD"
+        },
+        "AMZN": {
+          "label": "Amazon",
+          "price": 209.575,
+          "prev_close": 213.12,
+          "change": -3.545,
+          "change_pct": -1.66,
+          "currency": "USD"
+        },
+        "GOOGL": {
+          "label": "Alphabet",
+          "price": 302.84,
+          "prev_close": 298.27,
+          "change": 4.57,
+          "change_pct": 1.53,
+          "currency": "USD"
+        }
+      },
+      "recent_filings": [],
+      "headline": "NVDA 1.16%  |  MSFT -0.91%"
+    },
+    "sports": {
+      "last_updated": "2026-03-09T19:17:06Z",
+      "scores": {
+        "nfl": {
+          "label": "NFL",
+          "games": [
+            {
+              "home": "NE",
+              "away": "SEA",
+              "home_score": "13",
+              "away_score": "29",
+              "status": "Final"
+            }
+          ]
+        },
+        "nba": {
+          "label": "NBA",
+          "games": [
+            {
+              "home": "CLE",
+              "away": "PHI",
+              "home_score": "0",
+              "away_score": "0",
+              "status": "3/9 - 7:00 PM EDT"
+            },
+            {
+              "home": "BKN",
+              "away": "MEM",
+              "home_score": "0",
+              "away_score": "0",
+              "status": "3/9 - 7:30 PM EDT"
+            },
+            {
+              "home": "OKC",
+              "away": "DEN",
+              "home_score": "0",
+              "away_score": "0",
+              "status": "3/9 - 7:30 PM EDT"
+            },
+            {
+              "home": "UTAH",
+              "away": "GS",
+              "home_score": "0",
+              "away_score": "0",
+              "status": "3/9 - 9:00 PM EDT"
+            }
+          ]
+        },
+        "mlb": {
+          "label": "MLB",
+          "games": [
+            {
+              "home": "ATL",
+              "away": "MIN",
+              "home_score": "9",
+              "away_score": "4",
+              "status": "Top 7th"
+            },
+            {
+              "home": "BOS",
+              "away": "PHI",
+              "home_score": "5",
+              "away_score": "3",
+              "status": "Bot 8th"
+            },
+            {
+              "home": "DET",
+              "away": "TB",
+              "home_score": "4",
+              "away_score": "4",
+              "status": "Top 8th"
+            },
+            {
+              "home": "HOU",
+              "away": "STL",
+              "home_score": "5",
+              "away_score": "2",
+              "status": "Top 7th"
+            }
+          ]
+        }
+      },
+      "injuries": {
+        "nfl": [
+          {
+            "player": "Tyler Allgeier",
+            "team": "",
+            "status": "Active",
+            "detail": "Allgeier agreed to terms on a two-year, $12.25 million contract with Arizona on Monday, Mike Garafolo of NFL Network reports."
+          },
+          {
+            "player": "Blake Gillikin",
+            "team": "",
+            "status": "Questionable",
+            "detail": "Gillikin (back) and the Cardinals agreed on a one-year, $2.65 million contract Sunday, Mike Garafolo of NFL Network reports."
+          },
+          {
+            "player": "Tyrone Wheatley Jr.",
+            "team": "",
+            "status": "Questionable",
+            "detail": "questionable"
+          },
+          {
+            "player": "Jahan Dotson",
+            "team": "",
+            "status": "Active",
+            "detail": "Dotson and the Falcons have reached agreement on a two-year contract, Adam Schefter of ESPN reports."
+          },
+          {
+            "player": "Tyler Huntley",
+            "team": "",
+            "status": "Active",
+            "detail": "Huntley and the Ravens agreed to a two-year, $11 million contract Saturday, Adam Schefter of ESPN reports."
+          },
+          {
+            "player": "Nate Wiggins",
+            "team": "",
+            "status": "Questionable",
+            "detail": "Wiggins (undisclosed) underwent offseason surgery, Jonas Shaffer of TheBaltimoreBanner.com reports."
+          }
+        ],
+        "nba": [
+          {
+            "player": "Jonathan Kuminga",
+            "team": "",
+            "status": "Day-To-Day",
+            "detail": "Kuminga (knee) will not play Saturday against the 76ers."
+          },
+          {
+            "player": "Nikola Vucevic",
+            "team": "",
+            "status": "Out",
+            "detail": "Vucevic underwent surgery Saturday to stabilize a fracture in his right ring finger and will be reevaluated in 3-to-4 weeks."
+          },
+          {
+            "player": "Michael Porter Jr.",
+            "team": "",
+            "status": "Out",
+            "detail": "Porter (rest) has been ruled out for Monday's game against the Grizzlies."
+          },
+          {
+            "player": "Egor Demin",
+            "team": "",
+            "status": "Out",
+            "detail": "Demin (foot) won't play Monday versus Memphis."
+          }
+        ]
+      },
+      "headline": "NFL / NBA / MLB live scores"
+    },
+    "geopolitics": {
+      "last_updated": "2026-03-09T19:17:17Z",
+      "headlines": [
+        {
+          "title": "Who is Mojtaba Khamenei, Iran's new supreme leader?",
+          "link": "https://www.bbc.com/news/articles/c78xxg05w0zo?at_medium=RSS&at_campaign=rss",
+          "published": "Sun, 08 Mar 2026 21:51:48 GMT"
+        },
+        {
+          "title": "US teacher killed after toilet paper prank goes wrong",
+          "link": "https://www.bbc.com/news/articles/cdr24g1p3vpo?at_medium=RSS&at_campaign=rss",
+          "published": "Mon, 09 Mar 2026 17:09:21 GMT"
+        },
+        {
+          "title": "G7 to take 'necessary measures' to support energy supplies",
+          "link": "https://www.bbc.com/news/articles/c79542n0grwo?at_medium=RSS&at_campaign=rss",
+          "published": "Mon, 09 Mar 2026 17:33:36 GMT"
+        },
+        {
+          "title": "Hundreds of teenagers report for duty as Croatia reinstates conscription",
+          "link": "https://www.bbc.com/news/articles/c93j2l32lzgo?at_medium=RSS&at_campaign=rss",
+          "published": "Mon, 09 Mar 2026 14:49:34 GMT"
+        },
+        {
+          "title": "Alleged Bondi gunman seeks order to suppress family's identity",
+          "link": "https://www.bbc.com/news/articles/cy8lwnyj40eo?at_medium=RSS&at_campaign=rss",
+          "published": "Mon, 09 Mar 2026 08:13:58 GMT"
+        }
+      ],
+      "headline": "Who is Mojtaba Khamenei, Iran's new supreme leader?"
+    },
+    "technology": {
+      "last_updated": "2026-03-09T19:17:17Z",
+      "hn_top": [
+        {
+          "title": "Fixfest is a global gathering of repairers, tinkerers, and activists",
+          "url": "https://fixfest.therestartproject.org/",
+          "score": 89,
+          "comments": 7
+        },
+        {
+          "title": "JSLinux Now Supports x86_64",
+          "url": "https://bellard.org/jslinux/",
+          "score": 76,
+          "comments": 16
+        },
+        {
+          "title": "Building a Procedural Hex Map with Wave Function Collapse",
+          "url": "https://felixturner.github.io/hex-map-wfc/article/",
+          "score": 133,
+          "comments": 26
+        },
+        {
+          "title": "Launch HN: Terminal Use (YC W26) \u2013 Vercel for filesystem-based agents",
+          "url": "https://news.ycombinator.com/item?id=47311657",
+          "score": 37,
+          "comments": 18
+        },
+        {
+          "title": "Show HN: The Mog Programming Language",
+          "url": "https://moglang.org",
+          "score": 26,
+          "comments": 5
+        }
+      ],
+      "tech_headlines": [
+        {
+          "title": "Don\u2019t Expect Big Surprises in the Government\u2019s Alien Files",
+          "link": "https://www.wired.com/story/dont-expect-big-surprises-in-the-governments-alien-files/",
+          "published": "Mon, 09 Mar 2026 10:00:00 +0000"
+        },
+        {
+          "title": "Why RFK\u2019s CDC Is Endorsing \u2018Shared Decisionmaking\u2019 for Vaccines",
+          "link": "https://www.wired.com/story/why-rfks-cdc-is-endorsing-shared-decision-making-for-vaccines/",
+          "published": "Mon, 09 Mar 2026 09:30:00 +0000"
+        },
+        {
+          "title": "Left-Handed People Are More Competitive, Says Science",
+          "link": "https://www.wired.com/story/left-handed-people-are-more-competitive-says-science/",
+          "published": "Sun, 08 Mar 2026 09:00:00 +0000"
+        },
+        {
+          "title": "Sleep Apnea Often Goes Undetected in Women. That\u2019s Starting to Change",
+          "link": "https://www.wired.com/story/sleep-apnea-women-detection-treatment/",
+          "published": "Fri, 06 Mar 2026 09:30:00 +0000"
+        },
+        {
+          "title": "Big Tech Signs White House Data Center Pledge With Good Optics and Little Substance",
+          "link": "https://www.wired.com/story/big-tech-signs-white-house-data-center-pledge-with-good-optics-not-much-substance/",
+          "published": "Wed, 04 Mar 2026 22:13:27 +0000"
+        }
+      ],
+      "headline": "Fixfest is a global gathering of repairers, tinkerers, and activists"
+    },
+    "policy": {
+      "last_updated": "2026-03-09T19:17:18Z",
+      "bills": [
+        {
+          "title": "Most-Viewed Bills - Week of March 8, 2026",
+          "link": "https://www.congress.gov/most-viewed-bills",
+          "published": ""
+        }
+      ],
+      "federal_rules": [
+        {
+          "title": "Christmas Tree Promotion, Research, and Information Order",
+          "link": "https://www.federalregister.gov/documents/2026/03/09/2026-04586/christmas-tree-promotion-research-and-information-order",
+          "published": "2026-03-09"
+        },
+        {
+          "title": "Magnuson-Stevens Fishery Conservation and Management Act Provisions; Fisheries of the Northeastern United States; Northeast Multispecies Fishery; Framework Adjustment 69",
+          "link": "https://www.federalregister.gov/documents/2026/03/09/2026-04585/magnuson-stevens-fishery-conservation-and-management-act-provisions-fisheries-of-the-northeastern",
+          "published": "2026-03-09"
+        },
+        {
+          "title": "Avocados Grown in South Florida and Imported Avocados; Change in Maturity Requirements",
+          "link": "https://www.federalregister.gov/documents/2026/03/09/2026-04584/avocados-grown-in-south-florida-and-imported-avocados-change-in-maturity-requirements",
+          "published": "2026-03-09"
+        },
+        {
+          "title": "Paper and Paper-Based Packaging Promotion, Research and Information Order Termination",
+          "link": "https://www.federalregister.gov/documents/2026/03/09/2026-04570/paper-and-paper-based-packaging-promotion-research-and-information-order-termination",
+          "published": "2026-03-09"
+        },
+        {
+          "title": "Supplemental Disaster Relief Program and Dairy Margin Coverage Program; Correction",
+          "link": "https://www.federalregister.gov/documents/2026/03/09/2026-04531/supplemental-disaster-relief-program-and-dairy-margin-coverage-program-correction",
+          "published": "2026-03-09"
+        }
+      ],
+      "scotus": [],
+      "headline": "Most-Viewed Bills - Week of March 8, 2026"
+    },
+    "legal": {
+      "last_updated": "2026-03-09T19:17:20Z",
+      "cases": [
+        {
+          "title": "In Re Bystolic Antitrust Litigation",
+          "court": "Court of Appeals for the Second Circuit",
+          "date": "2024-05-13",
+          "tag": "Antitrust",
+          "link": "https://www.courtlistener.com/opinion/9501475/in-re-bystolic-antitrust-litigation/"
+        },
+        {
+          "title": "Automotive Parts Antitrust Litig.",
+          "court": "Court of Appeals for the Sixth Circuit",
+          "date": "2022-05-12",
+          "tag": "Antitrust",
+          "link": "https://www.courtlistener.com/opinion/6468000/automotive-parts-antitrust-litig/"
+        },
+        {
+          "title": "Capon v. Monopoly Game LLC",
+          "court": "California Court of Appeal",
+          "date": "2011-03-04",
+          "tag": "Antitrust",
+          "link": "https://www.courtlistener.com/opinion/5810084/capon-v-monopoly-game-llc/"
+        },
+        {
+          "title": "In re Telexfree Sec. Litig.",
+          "court": "District Court, District of Columbia",
+          "date": "2019-01-29",
+          "tag": "Regulatory",
+          "link": "https://www.courtlistener.com/opinion/7333964/in-re-telexfree-sec-litig/"
+        },
+        {
+          "title": "Fed. Trade Comm'n v. Abbvie Inc.",
+          "court": "District Court, E.D. Pennsylvania",
+          "date": "2018-06-29",
+          "tag": "Regulatory",
+          "link": "https://www.courtlistener.com/opinion/7331819/fed-trade-commn-v-abbvie-inc/"
+        },
+        {
+          "title": "FTC v. ZAAPPAAZ",
+          "court": "Court of Appeals for the Fifth Circuit",
+          "date": "2025-06-16",
+          "tag": "Regulatory",
+          "link": "https://www.courtlistener.com/opinion/10605413/ftc-v-zaappaaz/"
+        },
+        {
+          "title": "Knight First Amendment Institute at Columbia University v. CIA",
+          "court": "Court of Appeals for the D.C. Circuit",
+          "date": "2021-08-27",
+          "tag": "Constitutional",
+          "link": "https://www.courtlistener.com/opinion/5064123/knight-first-amendment-institute-at-columbia-university-v-cia/"
+        },
+        {
+          "title": "Ratification of the Equal Rights Amendment",
+          "court": "Department of Justice Office of Legal Counsel",
+          "date": "2020-01-06",
+          "tag": "Constitutional",
+          "link": "https://www.courtlistener.com/opinion/4713839/ratification-of-the-equal-rights-amendment/"
+        }
+      ],
+      "scotus_opinions": [],
+      "headline": "In Re Bystolic Antitrust Litigation"
+    }
+  }
+}
