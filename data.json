@@ -1,9 +1,9 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-10T06:18:04Z",
+  "fetched_at": "2026-03-10T06:31:14Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-10T06:18:05Z",
+      "last_updated": "2026-03-10T06:31:15Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
@@ -39,57 +39,57 @@
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 69879.695,
+          "price": 70160.31,
           "prev_close": 68443.15,
-          "change": 1436.545,
-          "change_pct": 2.1,
+          "change": 1717.16,
+          "change_pct": 2.51,
           "currency": "USD"
         },
         "EURUSD=X": {
           "label": "EUR/USD",
-          "price": 1.1631,
+          "price": 1.1633,
           "prev_close": 1.1636,
-          "change": -0.0005,
-          "change_pct": -0.04,
+          "change": -0.0003,
+          "change_pct": -0.03,
           "currency": "USD"
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 98.792,
+          "price": 98.753,
           "prev_close": 99.175,
-          "change": -0.383,
-          "change_pct": -0.39,
+          "change": -0.422,
+          "change_pct": -0.43,
           "currency": "USD"
         }
       },
       "yield_10y": 4.15,
-      "headline": "SPY 0.88%  |  BTC $69,880  |  10Y 4.15%"
+      "headline": "SPY 0.88%  |  BTC $70,160  |  10Y 4.15%"
     },
     "energy": {
-      "last_updated": "2026-03-10T06:18:13Z",
+      "last_updated": "2026-03-10T06:31:23Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 88.39,
+          "price": 88.95,
           "prev_close": 94.77,
-          "change": -6.38,
-          "change_pct": -6.73,
+          "change": -5.82,
+          "change_pct": -6.14,
           "currency": "USD"
         },
         "NG=F": {
           "label": "Natural Gas ($/MMBtu)",
-          "price": 3.087,
+          "price": 3.11,
           "prev_close": 3.12,
-          "change": -0.033,
-          "change_pct": -1.06,
+          "change": -0.01,
+          "change_pct": -0.32,
           "currency": "USD"
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 92.59,
+          "price": 93.1,
           "prev_close": 98.96,
-          "change": -6.37,
-          "change_pct": -6.44,
+          "change": -5.86,
+          "change_pct": -5.92,
           "currency": "USD"
         },
         "XLE": {
@@ -123,10 +123,10 @@
           "published": "Mon, 02 Mar 2026  09:00:00 EST"
         }
       ],
-      "headline": "WTI $88.39/bbl"
+      "headline": "WTI $88.95/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-10T06:18:15Z",
+      "last_updated": "2026-03-10T06:31:24Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
@@ -215,7 +215,7 @@
       "headline": "NVDA 2.68%  |  MSFT 0.11%"
     },
     "sports": {
-      "last_updated": "2026-03-10T06:18:15Z",
+      "last_updated": "2026-03-10T06:31:25Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -371,68 +371,78 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-10T06:18:16Z",
+      "last_updated": "2026-03-10T06:31:31Z",
       "headlines": [
         {
-          "title": "Who is Mojtaba Khamenei, Iran's new supreme leader?",
-          "link": "https://www.bbc.com/news/articles/c78xxg05w0zo?at_medium=RSS&at_campaign=rss",
-          "published": "Sun, 08 Mar 2026 21:51:48 GMT"
+          "title": "Russian economy withstood pressure from outside German expert",
+          "link": "https://tass.com/economy/2073165",
+          "published": "20260119T140000Z"
         },
         {
-          "title": "US teacher killed after toilet paper prank goes wrong",
-          "link": "https://www.bbc.com/news/articles/cdr24g1p3vpo?at_medium=RSS&at_campaign=rss",
-          "published": "Mon, 09 Mar 2026 17:09:21 GMT"
+          "title": "Sudan : united kingdom Hits  Sudan War Machine  With New Sanctions",
+          "link": "https://allafrica.com/stories/202602060005.html",
+          "published": "20260206T060000Z"
         },
         {
-          "title": "G7 to take 'necessary measures' to support energy supplies",
-          "link": "https://www.bbc.com/news/articles/c79542n0grwo?at_medium=RSS&at_campaign=rss",
-          "published": "Mon, 09 Mar 2026 23:30:46 GMT"
+          "title": "UK Sanctions Sudanese Army and RSF Leaders",
+          "link": "https://english.aawsat.com/arab-world/5237657-uk-sanctions-sudanese-army-and-rsf-leaders",
+          "published": "20260205T183000Z"
         },
         {
-          "title": "Hundreds of teenagers report for duty as Croatia reinstates conscription",
-          "link": "https://www.bbc.com/news/articles/c93j2l32lzgo?at_medium=RSS&at_campaign=rss",
-          "published": "Mon, 09 Mar 2026 14:49:34 GMT"
+          "title": "U . S . sanctions Gaza charities over alleged Hamas ties \u2013 NaturalNews . com",
+          "link": "https://www.naturalnews.com/2026-01-26-us-sanctions-gaza-charities-over-hamas-ties.html",
+          "published": "20260126T130000Z"
         },
         {
-          "title": "Alleged Bondi gunman seeks order to suppress family's identity",
-          "link": "https://www.bbc.com/news/articles/cy8lwnyj40eo?at_medium=RSS&at_campaign=rss",
-          "published": "Mon, 09 Mar 2026 08:13:58 GMT"
+          "title": "Myanmar military using commercial paramotors , gyrocopters for attacks : Report",
+          "link": "https://www.siasat.com/myanmar-military-using-commercial-paramotors-gyrocopters-for-attacks-report-3331737/",
+          "published": "20260126T140000Z"
+        },
+        {
+          "title": "Rising prices, mixed messages: Iran war is fraught with political risk for Trump",
+          "link": "https://www.bbc.com/news/articles/c93j2dw72q9o?at_medium=RSS&at_campaign=rss",
+          "published": "Tue, 10 Mar 2026 02:37:46 GMT"
+        },
+        {
+          "title": "Iran's new leader has never been tested. He now faces an existential battle",
+          "link": "https://www.bbc.com/news/articles/cwykdn0yn4wo?at_medium=RSS&at_campaign=rss",
+          "published": "Mon, 09 Mar 2026 19:51:00 GMT"
         }
       ],
-      "headline": "Who is Mojtaba Khamenei, Iran's new supreme leader?"
+      "headline": "Russian economy withstood pressure from outside German expert"
     },
     "technology": {
-      "last_updated": "2026-03-10T06:18:18Z",
+      "last_updated": "2026-03-10T06:31:32Z",
       "hn_top": [
         {
           "title": "Learnings from paying artists royalties for AI-generated art",
           "url": "https://www.kapwing.com/blog/learnings-from-paying-artists-royalties-for-ai-generated-art/",
-          "score": 91,
-          "comments": 50
+          "score": 97,
+          "comments": 56
         },
         {
           "title": "Two Years of Emacs Solo",
           "url": "https://www.rahuljuliato.com/posts/emacs-solo-two-years",
-          "score": 156,
+          "score": 160,
           "comments": 32
         },
         {
           "title": "Building a Procedural Hex Map with Wave Function Collapse",
           "url": "https://felixturner.github.io/hex-map-wfc/article/",
-          "score": 449,
+          "score": 453,
           "comments": 68
         },
         {
           "title": "Optimizing Top K in Postgres",
           "url": "https://www.paradedb.com/blog/optimizing-top-k",
-          "score": 21,
+          "score": 23,
           "comments": 0
         },
         {
-          "title": "Show HN: I Was Here \u2013 Draw on street view, others can find your drawings",
-          "url": "https://washere.live",
-          "score": 8,
-          "comments": 0
+          "title": "Show HN: Remotely use my guitar tuner",
+          "url": "https://realtuner.online/",
+          "score": 147,
+          "comments": 36
         }
       ],
       "tech_headlines": [
@@ -465,7 +475,7 @@
       "headline": "Learnings from paying artists royalties for AI-generated art"
     },
     "policy": {
-      "last_updated": "2026-03-10T06:18:18Z",
+      "last_updated": "2026-03-10T06:31:32Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -504,7 +514,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-10T06:18:20Z",
+      "last_updated": "2026-03-10T06:31:36Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
