@@ -1,9 +1,9 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-10T12:31:29Z",
+  "fetched_at": "2026-03-10T12:46:59Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-10T12:31:29Z",
+      "last_updated": "2026-03-10T12:46:59Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
@@ -39,26 +39,26 @@
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 70424.336,
+          "price": 70454.47,
           "prev_close": 68443.15,
-          "change": 1981.186,
-          "change_pct": 2.89,
+          "change": 2011.32,
+          "change_pct": 2.94,
           "currency": "USD"
         },
         "EURUSD=X": {
           "label": "EUR/USD",
-          "price": 1.1631,
+          "price": 1.1639,
           "prev_close": 1.1636,
-          "change": -0.0005,
-          "change_pct": -0.04,
+          "change": 0.0003,
+          "change_pct": 0.03,
           "currency": "USD"
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 98.784,
+          "price": 98.772,
           "prev_close": 99.175,
-          "change": -0.391,
-          "change_pct": -0.39,
+          "change": -0.403,
+          "change_pct": -0.41,
           "currency": "USD"
         }
       },
@@ -66,30 +66,30 @@
       "headline": null
     },
     "energy": {
-      "last_updated": "2026-03-10T12:31:30Z",
+      "last_updated": "2026-03-10T12:47:00Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 90.56,
+          "price": 90.3,
           "prev_close": 94.77,
-          "change": -4.21,
-          "change_pct": -4.44,
+          "change": -4.47,
+          "change_pct": -4.72,
           "currency": "USD"
         },
         "NG=F": {
           "label": "Natural Gas ($/MMBtu)",
-          "price": 3.072,
+          "price": 3.067,
           "prev_close": 3.12,
-          "change": -0.048,
-          "change_pct": -1.54,
+          "change": -0.053,
+          "change_pct": -1.7,
           "currency": "USD"
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 88.64,
+          "price": 88.47,
           "prev_close": 93.72,
-          "change": -5.08,
-          "change_pct": -5.42,
+          "change": -5.25,
+          "change_pct": -5.6,
           "currency": "USD"
         },
         "XLE": {
@@ -102,10 +102,10 @@
         }
       },
       "headlines": [],
-      "headline": "WTI $90.56/bbl"
+      "headline": "WTI $90.30/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-10T12:31:30Z",
+      "last_updated": "2026-03-10T12:47:00Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
@@ -168,7 +168,7 @@
       "headline": "NVDA 2.68%  |  MSFT 0.11%"
     },
     "sports": {
-      "last_updated": "2026-03-10T12:31:31Z",
+      "last_updated": "2026-03-10T12:47:01Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -324,7 +324,7 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-10T12:31:31Z",
+      "last_updated": "2026-03-10T12:47:03Z",
       "headlines": [
         {
           "title": "Mixed messages from Trump leave more questions than answers over war's end",
@@ -347,45 +347,45 @@
           "published": "Tue, 10 Mar 2026 11:27:55 GMT"
         },
         {
-          "title": "Volkswagen to cut 50,000 jobs as profits drop",
-          "link": "https://www.bbc.com/news/articles/c4gqyyly9v8o?at_medium=RSS&at_campaign=rss",
-          "published": "Tue, 10 Mar 2026 11:29:25 GMT"
+          "title": "Canada police investigate reports of shots fired at US consulate in Toronto",
+          "link": "https://www.bbc.com/news/articles/cwy8lrq9rg2o?at_medium=RSS&at_campaign=rss",
+          "published": "Tue, 10 Mar 2026 12:30:22 GMT"
         }
       ],
       "headline": "Mixed messages from Trump leave more questions than answers over war's end"
     },
     "technology": {
-      "last_updated": "2026-03-10T12:31:32Z",
+      "last_updated": "2026-03-10T12:47:03Z",
       "hn_top": [
         {
           "title": "I put my whole life into a single database",
           "url": "https://howisfelix.today/",
-          "score": 102,
-          "comments": 24
+          "score": 117,
+          "comments": 32
         },
         {
           "title": "Redox OS has adopted a Certificate of Origin policy and a strict no-LLM policy",
           "url": "https://gitlab.redox-os.org/redox-os/redox/-/blob/master/CONTRIBUTING.md",
-          "score": 201,
-          "comments": 166
+          "score": 209,
+          "comments": 176
         },
         {
-          "title": "The Gervais Principle, or the Office According to \"The Office\"",
+          "title": "The Gervais Principle, or the Office According to \"The Office\" (2009)",
           "url": "https://www.ribbonfarm.com/2009/10/07/the-gervais-principle-or-the-office-according-to-the-office/",
-          "score": 88,
-          "comments": 20
+          "score": 97,
+          "comments": 25
+        },
+        {
+          "title": "FreeBSD 14.4-Release Announcement",
+          "url": "https://www.freebsd.org/releases/14.4R/announce/",
+          "score": 19,
+          "comments": 1
         },
         {
           "title": "Ask HN: Remember Fidonet?",
           "url": "https://news.ycombinator.com/item?id=47321760",
-          "score": 27,
-          "comments": 9
-        },
-        {
-          "title": "Two Years of Emacs Solo",
-          "url": "https://www.rahuljuliato.com/posts/emacs-solo-two-years",
-          "score": 281,
-          "comments": 89
+          "score": 39,
+          "comments": 17
         }
       ],
       "tech_headlines": [
@@ -418,7 +418,7 @@
       "headline": "I put my whole life into a single database"
     },
     "policy": {
-      "last_updated": "2026-03-10T12:31:32Z",
+      "last_updated": "2026-03-10T12:47:04Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -457,7 +457,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-10T12:31:35Z",
+      "last_updated": "2026-03-10T12:47:06Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
