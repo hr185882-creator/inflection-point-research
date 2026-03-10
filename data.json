@@ -1,9 +1,9 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-10T21:31:05Z",
+  "fetched_at": "2026-03-10T21:46:09Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-10T21:31:05Z",
+      "last_updated": "2026-03-10T21:46:09Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
@@ -39,34 +39,34 @@
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 70001.07,
+          "price": 69742.29,
           "prev_close": 68443.15,
-          "change": 1557.92,
-          "change_pct": 2.28,
+          "change": 1299.14,
+          "change_pct": 1.9,
           "currency": "USD"
         },
         "EURUSD=X": {
           "label": "EUR/USD",
-          "price": 1.1614,
+          "price": 1.1613,
           "prev_close": 1.1636,
-          "change": -0.0022,
-          "change_pct": -0.19,
+          "change": -0.0023,
+          "change_pct": -0.2,
           "currency": "USD"
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 98.936,
+          "price": 98.934,
           "prev_close": 99.175,
-          "change": -0.239,
+          "change": -0.241,
           "change_pct": -0.24,
           "currency": "USD"
         }
       },
       "yield_10y": 4.12,
-      "headline": "SPY -0.16%  |  BTC $70,001  |  10Y 4.12%"
+      "headline": "SPY -0.16%  |  BTC $69,742  |  10Y 4.12%"
     },
     "energy": {
-      "last_updated": "2026-03-10T21:31:13Z",
+      "last_updated": "2026-03-10T21:46:20Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
@@ -101,32 +101,11 @@
           "currency": "USD"
         }
       },
-      "headlines": [
-        {
-          "title": "Annual U.S. crude oil exports decrease for first time since 2021",
-          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67324",
-          "published": "Tue, 10 Mar 2026 09:00:00 EST"
-        },
-        {
-          "title": "U.S. exports of major transportation fuels in 2025 were about the same as in 2024",
-          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67304",
-          "published": "Mon, 09 Mar 2026 09:00:00 EST"
-        },
-        {
-          "title": "U.S. electricity generation in 2025 hit a record, again",
-          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67284",
-          "published": "Thu, 05 Mar 2026 09:00:00 EST"
-        },
-        {
-          "title": "U.S. LNG developers sign highest volume of sale and purchase contracts since 2022",
-          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67264",
-          "published": "Tue, 03 Mar 2026 09:00:00 EST"
-        }
-      ],
+      "headlines": [],
       "headline": "WTI $86.39/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-10T21:31:15Z",
+      "last_updated": "2026-03-10T21:46:21Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
@@ -215,7 +194,7 @@
       "headline": "NVDA 1.16%  |  MSFT -0.89%"
     },
     "sports": {
-      "last_updated": "2026-03-10T21:31:15Z",
+      "last_updated": "2026-03-10T21:46:22Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -371,8 +350,33 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-10T21:31:16Z",
+      "last_updated": "2026-03-10T21:46:26Z",
       "headlines": [
+        {
+          "title": "Russian economy withstood pressure from outside German expert",
+          "link": "https://tass.com/economy/2073165",
+          "published": "20260119T140000Z"
+        },
+        {
+          "title": "Sudan : united kingdom Hits  Sudan War Machine  With New Sanctions",
+          "link": "https://allafrica.com/stories/202602060005.html",
+          "published": "20260206T060000Z"
+        },
+        {
+          "title": "UK Sanctions Sudanese Army and RSF Leaders",
+          "link": "https://english.aawsat.com/arab-world/5237657-uk-sanctions-sudanese-army-and-rsf-leaders",
+          "published": "20260205T183000Z"
+        },
+        {
+          "title": "U . S . sanctions Gaza charities over alleged Hamas ties \u2013 NaturalNews . com",
+          "link": "https://www.naturalnews.com/2026-01-26-us-sanctions-gaza-charities-over-hamas-ties.html",
+          "published": "20260126T130000Z"
+        },
+        {
+          "title": "Myanmar military using commercial paramotors , gyrocopters for attacks : Report",
+          "link": "https://www.siasat.com/myanmar-military-using-commercial-paramotors-gyrocopters-for-attacks-report-3331737/",
+          "published": "20260126T140000Z"
+        },
         {
           "title": "'I just want to be able to sleep': Attacks in Iran rock cities and cut power",
           "link": "https://www.bbc.com/news/articles/cev7llekwllo?at_medium=RSS&at_campaign=rss",
@@ -382,56 +386,41 @@
           "title": "Steve Rosenberg: Russia seeks diplomatic and economic gains from Iran war",
           "link": "https://www.bbc.com/news/articles/c4gjyg0djvmo?at_medium=RSS&at_campaign=rss",
           "published": "Tue, 10 Mar 2026 19:35:29 GMT"
-        },
-        {
-          "title": "Georgia voters to pick replacement for Marjorie Taylor Greene in special election",
-          "link": "https://www.bbc.com/news/articles/c77ey1v7jrzo?at_medium=RSS&at_campaign=rss",
-          "published": "Tue, 10 Mar 2026 10:47:08 GMT"
-        },
-        {
-          "title": "Two more connected to Iranian football team stay in Australia, BBC understands",
-          "link": "https://www.bbc.com/news/articles/c93j2492d0do?at_medium=RSS&at_campaign=rss",
-          "published": "Tue, 10 Mar 2026 20:39:21 GMT"
-        },
-        {
-          "title": "Russia's deportation of Ukrainian children amounts to crime against humanity, UN says",
-          "link": "https://www.bbc.com/news/articles/cz7g5xnvl2eo?at_medium=RSS&at_campaign=rss",
-          "published": "Tue, 10 Mar 2026 17:50:52 GMT"
         }
       ],
-      "headline": "'I just want to be able to sleep': Attacks in Iran rock cities and cut power"
+      "headline": "Russian economy withstood pressure from outside German expert"
     },
     "technology": {
-      "last_updated": "2026-03-10T21:31:17Z",
+      "last_updated": "2026-03-10T21:46:27Z",
       "hn_top": [
         {
           "title": "Tony Hoare has died",
           "url": "https://blog.computationalcomplexity.org/2026/03/tony-hoare-1934-2026.html",
-          "score": 1184,
-          "comments": 164
+          "score": 1211,
+          "comments": 168
         },
         {
           "title": "RISC-V Is Sloooow",
           "url": "https://marcin.juszkiewicz.com.pl/2026/03/10/risc-v-is-sloooow/",
-          "score": 65,
-          "comments": 49
+          "score": 72,
+          "comments": 64
         },
         {
           "title": "After outages, Amazon to make senior engineers sign off on AI-assisted changes",
           "url": "https://arstechnica.com/ai/2026/03/after-outages-amazon-to-make-senior-engineers-sign-off-on-ai-assisted-changes/",
-          "score": 138,
-          "comments": 237
+          "score": 169,
+          "comments": 245
         },
         {
           "title": "Agents that run while I sleep",
           "url": "https://www.claudecodecamp.com/p/i-m-building-agents-that-run-while-i-sleep",
-          "score": 125,
-          "comments": 86
+          "score": 130,
+          "comments": 89
         },
         {
           "title": "Yann LeCun raises $1B to build AI that understands the physical world",
           "url": "https://www.wired.com/story/yann-lecun-raises-dollar1-billion-to-build-ai-that-understands-the-physical-world/",
-          "score": 204,
+          "score": 215,
           "comments": 279
         }
       ],
@@ -465,7 +454,7 @@
       "headline": "Tony Hoare has died"
     },
     "policy": {
-      "last_updated": "2026-03-10T21:31:17Z",
+      "last_updated": "2026-03-10T21:46:27Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -504,7 +493,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-10T21:31:22Z",
+      "last_updated": "2026-03-10T21:46:31Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
