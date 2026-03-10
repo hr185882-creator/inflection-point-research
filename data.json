@@ -1,9 +1,9 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-10T04:47:53Z",
+  "fetched_at": "2026-03-10T05:05:50Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-10T04:47:53Z",
+      "last_updated": "2026-03-10T05:05:51Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
@@ -39,57 +39,57 @@
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 69969.29,
+          "price": 70201.22,
           "prev_close": 68443.15,
-          "change": 1526.14,
-          "change_pct": 2.23,
+          "change": 1758.07,
+          "change_pct": 2.57,
           "currency": "USD"
         },
         "EURUSD=X": {
           "label": "EUR/USD",
-          "price": 1.1616,
+          "price": 1.1621,
           "prev_close": 1.1636,
-          "change": -0.002,
-          "change_pct": -0.17,
+          "change": -0.0015,
+          "change_pct": -0.13,
           "currency": "USD"
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 98.91,
+          "price": 98.896,
           "prev_close": 99.175,
-          "change": -0.265,
-          "change_pct": -0.27,
+          "change": -0.279,
+          "change_pct": -0.28,
           "currency": "USD"
         }
       },
       "yield_10y": 4.15,
-      "headline": "SPY 0.88%  |  BTC $69,969  |  10Y 4.15%"
+      "headline": "SPY 0.88%  |  BTC $70,201  |  10Y 4.15%"
     },
     "energy": {
-      "last_updated": "2026-03-10T04:48:04Z",
+      "last_updated": "2026-03-10T05:06:01Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 90.27,
+          "price": 90.67,
           "prev_close": 94.77,
-          "change": -4.5,
-          "change_pct": -4.75,
+          "change": -4.1,
+          "change_pct": -4.33,
           "currency": "USD"
         },
         "NG=F": {
           "label": "Natural Gas ($/MMBtu)",
-          "price": 3.118,
+          "price": 3.13,
           "prev_close": 3.12,
-          "change": -0.002,
-          "change_pct": -0.06,
+          "change": 0.01,
+          "change_pct": 0.32,
           "currency": "USD"
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 94.17,
+          "price": 94.83,
           "prev_close": 98.96,
-          "change": -4.79,
-          "change_pct": -4.84,
+          "change": -4.13,
+          "change_pct": -4.17,
           "currency": "USD"
         },
         "XLE": {
@@ -102,10 +102,10 @@
         }
       },
       "headlines": [],
-      "headline": "WTI $90.27/bbl"
+      "headline": "WTI $90.67/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-10T04:48:05Z",
+      "last_updated": "2026-03-10T05:06:05Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
@@ -194,7 +194,7 @@
       "headline": "NVDA 2.68%  |  MSFT 0.11%"
     },
     "sports": {
-      "last_updated": "2026-03-10T04:48:05Z",
+      "last_updated": "2026-03-10T05:06:06Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -350,8 +350,33 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-10T04:48:13Z",
+      "last_updated": "2026-03-10T05:06:11Z",
       "headlines": [
+        {
+          "title": "Russian economy withstood pressure from outside German expert",
+          "link": "https://tass.com/economy/2073165",
+          "published": "20260119T140000Z"
+        },
+        {
+          "title": "Sudan : united kingdom Hits  Sudan War Machine  With New Sanctions",
+          "link": "https://allafrica.com/stories/202602060005.html",
+          "published": "20260206T060000Z"
+        },
+        {
+          "title": "UK Sanctions Sudanese Army and RSF Leaders",
+          "link": "https://english.aawsat.com/arab-world/5237657-uk-sanctions-sudanese-army-and-rsf-leaders",
+          "published": "20260205T183000Z"
+        },
+        {
+          "title": "U . S . sanctions Gaza charities over alleged Hamas ties \u2013 NaturalNews . com",
+          "link": "https://www.naturalnews.com/2026-01-26-us-sanctions-gaza-charities-over-hamas-ties.html",
+          "published": "20260126T130000Z"
+        },
+        {
+          "title": "Myanmar military using commercial paramotors , gyrocopters for attacks : Report",
+          "link": "https://www.siasat.com/myanmar-military-using-commercial-paramotors-gyrocopters-for-attacks-report-3331737/",
+          "published": "20260126T140000Z"
+        },
         {
           "title": "Who is Mojtaba Khamenei, Iran's new supreme leader?",
           "link": "https://www.bbc.com/news/articles/c78xxg05w0zo?at_medium=RSS&at_campaign=rss",
@@ -361,56 +386,41 @@
           "title": "US teacher killed after toilet paper prank goes wrong",
           "link": "https://www.bbc.com/news/articles/cdr24g1p3vpo?at_medium=RSS&at_campaign=rss",
           "published": "Mon, 09 Mar 2026 17:09:21 GMT"
-        },
-        {
-          "title": "G7 to take 'necessary measures' to support energy supplies",
-          "link": "https://www.bbc.com/news/articles/c79542n0grwo?at_medium=RSS&at_campaign=rss",
-          "published": "Mon, 09 Mar 2026 23:30:46 GMT"
-        },
-        {
-          "title": "Hundreds of teenagers report for duty as Croatia reinstates conscription",
-          "link": "https://www.bbc.com/news/articles/c93j2l32lzgo?at_medium=RSS&at_campaign=rss",
-          "published": "Mon, 09 Mar 2026 14:49:34 GMT"
-        },
-        {
-          "title": "Alleged Bondi gunman seeks order to suppress family's identity",
-          "link": "https://www.bbc.com/news/articles/cy8lwnyj40eo?at_medium=RSS&at_campaign=rss",
-          "published": "Mon, 09 Mar 2026 08:13:58 GMT"
         }
       ],
-      "headline": "Who is Mojtaba Khamenei, Iran's new supreme leader?"
+      "headline": "Russian economy withstood pressure from outside German expert"
     },
     "technology": {
-      "last_updated": "2026-03-10T04:48:14Z",
+      "last_updated": "2026-03-10T05:06:12Z",
       "hn_top": [
         {
           "title": "Learnings from paying artists royalties for AI-generated art",
           "url": "https://www.kapwing.com/blog/learnings-from-paying-artists-royalties-for-ai-generated-art/",
-          "score": 45,
-          "comments": 17
+          "score": 56,
+          "comments": 22
         },
         {
           "title": "Two Years of Emacs Solo: 35 Modules, Zero External Packages, and a Full Refactor",
           "url": "https://www.rahuljuliato.com/posts/emacs-solo-two-years",
-          "score": 127,
-          "comments": 24
+          "score": 131,
+          "comments": 25
         },
         {
           "title": "Building a Procedural Hex Map with Wave Function Collapse",
           "url": "https://felixturner.github.io/hex-map-wfc/article/",
-          "score": 429,
-          "comments": 65
+          "score": 432,
+          "comments": 67
         },
         {
           "title": "Show HN: Remotely use my guitar tuner",
           "url": "https://realtuner.online/",
-          "score": 118,
-          "comments": 28
+          "score": 122,
+          "comments": 29
         },
         {
           "title": "JSLinux Now Supports x86_64",
           "url": "https://bellard.org/jslinux/",
-          "score": 270,
+          "score": 277,
           "comments": 79
         }
       ],
@@ -444,7 +454,7 @@
       "headline": "Learnings from paying artists royalties for AI-generated art"
     },
     "policy": {
-      "last_updated": "2026-03-10T04:48:14Z",
+      "last_updated": "2026-03-10T05:06:12Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -483,67 +493,10 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-10T04:48:17Z",
-      "cases": [
-        {
-          "title": "In Re Bystolic Antitrust Litigation",
-          "court": "Court of Appeals for the Second Circuit",
-          "date": "2024-05-13",
-          "tag": "Antitrust",
-          "link": "https://www.courtlistener.com/opinion/9501475/in-re-bystolic-antitrust-litigation/"
-        },
-        {
-          "title": "Automotive Parts Antitrust Litig.",
-          "court": "Court of Appeals for the Sixth Circuit",
-          "date": "2022-05-12",
-          "tag": "Antitrust",
-          "link": "https://www.courtlistener.com/opinion/6468000/automotive-parts-antitrust-litig/"
-        },
-        {
-          "title": "Capon v. Monopoly Game LLC",
-          "court": "California Court of Appeal",
-          "date": "2011-03-04",
-          "tag": "Antitrust",
-          "link": "https://www.courtlistener.com/opinion/5810084/capon-v-monopoly-game-llc/"
-        },
-        {
-          "title": "In re Telexfree Sec. Litig.",
-          "court": "District Court, District of Columbia",
-          "date": "2019-01-29",
-          "tag": "Regulatory",
-          "link": "https://www.courtlistener.com/opinion/7333964/in-re-telexfree-sec-litig/"
-        },
-        {
-          "title": "Fed. Trade Comm'n v. Abbvie Inc.",
-          "court": "District Court, E.D. Pennsylvania",
-          "date": "2018-06-29",
-          "tag": "Regulatory",
-          "link": "https://www.courtlistener.com/opinion/7331819/fed-trade-commn-v-abbvie-inc/"
-        },
-        {
-          "title": "FTC v. ZAAPPAAZ",
-          "court": "Court of Appeals for the Fifth Circuit",
-          "date": "2025-06-16",
-          "tag": "Regulatory",
-          "link": "https://www.courtlistener.com/opinion/10605413/ftc-v-zaappaaz/"
-        },
-        {
-          "title": "Knight First Amendment Institute at Columbia University v. CIA",
-          "court": "Court of Appeals for the D.C. Circuit",
-          "date": "2021-08-27",
-          "tag": "Constitutional",
-          "link": "https://www.courtlistener.com/opinion/5064123/knight-first-amendment-institute-at-columbia-university-v-cia/"
-        },
-        {
-          "title": "Ratification of the Equal Rights Amendment",
-          "court": "Department of Justice Office of Legal Counsel",
-          "date": "2020-01-06",
-          "tag": "Constitutional",
-          "link": "https://www.courtlistener.com/opinion/4713839/ratification-of-the-equal-rights-amendment/"
-        }
-      ],
+      "last_updated": "2026-03-10T05:06:42Z",
+      "cases": [],
       "scotus_opinions": [],
-      "headline": "In Re Bystolic Antitrust Litigation"
+      "headline": null
     }
   }
 }
