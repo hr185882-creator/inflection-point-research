@@ -1,9 +1,9 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-10T11:30:58Z",
+  "fetched_at": "2026-03-10T11:54:55Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-10T11:30:58Z",
+      "last_updated": "2026-03-10T11:54:55Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
@@ -39,57 +39,57 @@
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 70654.21,
+          "price": 70677.555,
           "prev_close": 68443.15,
-          "change": 2211.06,
-          "change_pct": 3.23,
+          "change": 2234.405,
+          "change_pct": 3.26,
           "currency": "USD"
         },
         "EURUSD=X": {
           "label": "EUR/USD",
-          "price": 1.1647,
+          "price": 1.1648,
           "prev_close": 1.1636,
-          "change": 0.0011,
-          "change_pct": 0.09,
+          "change": 0.0012,
+          "change_pct": 0.1,
           "currency": "USD"
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 98.674,
+          "price": 98.663,
           "prev_close": 99.175,
-          "change": -0.501,
-          "change_pct": -0.51,
+          "change": -0.512,
+          "change_pct": -0.52,
           "currency": "USD"
         }
       },
       "yield_10y": 4.15,
-      "headline": "SPY 0.88%  |  BTC $70,654  |  10Y 4.15%"
+      "headline": "SPY 0.88%  |  BTC $70,678  |  10Y 4.15%"
     },
     "energy": {
-      "last_updated": "2026-03-10T11:31:08Z",
+      "last_updated": "2026-03-10T11:55:04Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 88.21,
+          "price": 88.54,
           "prev_close": 94.77,
-          "change": -6.56,
-          "change_pct": -6.92,
+          "change": -6.23,
+          "change_pct": -6.57,
           "currency": "USD"
         },
         "NG=F": {
           "label": "Natural Gas ($/MMBtu)",
-          "price": 3.128,
+          "price": 3.106,
           "prev_close": 3.12,
-          "change": 0.008,
-          "change_pct": 0.26,
+          "change": -0.014,
+          "change_pct": -0.45,
           "currency": "USD"
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 86.88,
+          "price": 87.05,
           "prev_close": 93.72,
-          "change": -6.84,
-          "change_pct": -7.3,
+          "change": -6.67,
+          "change_pct": -7.12,
           "currency": "USD"
         },
         "XLE": {
@@ -101,11 +101,32 @@
           "currency": "USD"
         }
       },
-      "headlines": [],
-      "headline": "WTI $88.21/bbl"
+      "headlines": [
+        {
+          "title": "U.S. exports of major transportation fuels in 2025 were about the same as in 2024",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67304",
+          "published": "Mon, 09 Mar 2026 09:00:00 EST"
+        },
+        {
+          "title": "U.S. electricity generation in 2025 hit a record, again",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67284",
+          "published": "Thu, 05 Mar 2026 09:00:00 EST"
+        },
+        {
+          "title": "U.S. LNG developers sign highest volume of sale and purchase contracts since 2022",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67264",
+          "published": "Tue, 03 Mar 2026 09:00:00 EST"
+        },
+        {
+          "title": "Nuclear reactor restart in Japan will likely displace natural gas electricity generation",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67244",
+          "published": "Mon, 02 Mar 2026  09:00:00 EST"
+        }
+      ],
+      "headline": "WTI $88.54/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-10T11:31:10Z",
+      "last_updated": "2026-03-10T11:55:05Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
@@ -194,7 +215,7 @@
       "headline": "NVDA 2.68%  |  MSFT 0.11%"
     },
     "sports": {
-      "last_updated": "2026-03-10T11:31:11Z",
+      "last_updated": "2026-03-10T11:55:06Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -350,7 +371,7 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-10T11:31:15Z",
+      "last_updated": "2026-03-10T11:55:12Z",
       "headlines": [
         {
           "title": "Russian economy withstood pressure from outside German expert",
@@ -391,37 +412,37 @@
       "headline": "Russian economy withstood pressure from outside German expert"
     },
     "technology": {
-      "last_updated": "2026-03-10T11:31:16Z",
+      "last_updated": "2026-03-10T11:55:13Z",
       "hn_top": [
         {
           "title": "I put my whole life into a single database",
           "url": "https://howisfelix.today/",
-          "score": 28,
-          "comments": 5
+          "score": 59,
+          "comments": 14
         },
         {
           "title": "Redox OS has adopted a Certificate of Origin policy and a strict no-LLM policy",
           "url": "https://gitlab.redox-os.org/redox-os/redox/-/blob/master/CONTRIBUTING.md",
-          "score": 158,
-          "comments": 129
+          "score": 172,
+          "comments": 140
         },
         {
-          "title": "Yann LeCun's AI startup raises $1B in Europe's largest ever seed round",
-          "url": "https://www.ft.com/content/e5245ec3-1a58-4eff-ab58-480b6259aaf1",
-          "score": 50,
-          "comments": 38
-        },
-        {
-          "title": "Lotus 1-2-3 on the PC with DOS",
-          "url": "https://stonetools.ghost.io/lotus123-dos/",
-          "score": 106,
-          "comments": 38
+          "title": "The Gervais Principle, or the Office According to \"The Office\"",
+          "url": "https://www.ribbonfarm.com/2009/10/07/the-gervais-principle-or-the-office-according-to-the-office/",
+          "score": 62,
+          "comments": 11
         },
         {
           "title": "Two Years of Emacs Solo",
           "url": "https://www.rahuljuliato.com/posts/emacs-solo-two-years",
-          "score": 271,
-          "comments": 81
+          "score": 275,
+          "comments": 83
+        },
+        {
+          "title": "Lotus 1-2-3 on the PC with DOS",
+          "url": "https://stonetools.ghost.io/lotus123-dos/",
+          "score": 111,
+          "comments": 38
         }
       ],
       "tech_headlines": [
@@ -454,7 +475,7 @@
       "headline": "I put my whole life into a single database"
     },
     "policy": {
-      "last_updated": "2026-03-10T11:31:16Z",
+      "last_updated": "2026-03-10T11:55:13Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -493,7 +514,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-10T11:31:19Z",
+      "last_updated": "2026-03-10T11:55:17Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
