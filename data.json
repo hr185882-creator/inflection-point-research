@@ -1,9 +1,9 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-10T21:23:03Z",
+  "fetched_at": "2026-03-10T21:31:05Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-10T21:23:04Z",
+      "last_updated": "2026-03-10T21:31:05Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
@@ -39,34 +39,34 @@
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 70040.914,
+          "price": 70001.07,
           "prev_close": 68443.15,
-          "change": 1597.764,
-          "change_pct": 2.33,
+          "change": 1557.92,
+          "change_pct": 2.28,
           "currency": "USD"
         },
         "EURUSD=X": {
           "label": "EUR/USD",
-          "price": 1.1612,
+          "price": 1.1614,
           "prev_close": 1.1636,
-          "change": -0.0024,
-          "change_pct": -0.21,
+          "change": -0.0022,
+          "change_pct": -0.19,
           "currency": "USD"
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 98.948,
+          "price": 98.936,
           "prev_close": 99.175,
-          "change": -0.227,
-          "change_pct": -0.23,
+          "change": -0.239,
+          "change_pct": -0.24,
           "currency": "USD"
         }
       },
       "yield_10y": 4.12,
-      "headline": "SPY -0.16%  |  BTC $70,041  |  10Y 4.12%"
+      "headline": "SPY -0.16%  |  BTC $70,001  |  10Y 4.12%"
     },
     "energy": {
-      "last_updated": "2026-03-10T21:23:14Z",
+      "last_updated": "2026-03-10T21:31:13Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
@@ -101,11 +101,32 @@
           "currency": "USD"
         }
       },
-      "headlines": [],
+      "headlines": [
+        {
+          "title": "Annual U.S. crude oil exports decrease for first time since 2021",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67324",
+          "published": "Tue, 10 Mar 2026 09:00:00 EST"
+        },
+        {
+          "title": "U.S. exports of major transportation fuels in 2025 were about the same as in 2024",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67304",
+          "published": "Mon, 09 Mar 2026 09:00:00 EST"
+        },
+        {
+          "title": "U.S. electricity generation in 2025 hit a record, again",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67284",
+          "published": "Thu, 05 Mar 2026 09:00:00 EST"
+        },
+        {
+          "title": "U.S. LNG developers sign highest volume of sale and purchase contracts since 2022",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67264",
+          "published": "Tue, 03 Mar 2026 09:00:00 EST"
+        }
+      ],
       "headline": "WTI $86.39/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-10T21:23:15Z",
+      "last_updated": "2026-03-10T21:31:15Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
@@ -186,15 +207,15 @@
           "published": "2026-03-10"
         },
         {
-          "title": "Scorpius Holdings, Inc.  (SCPX) -- 8-K (2026-03-10)",
-          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Scorpius%20Holdings%2C%20Inc.%20%20%28SCPX%29&type=8-K&dateb=&owner=include&count=5",
+          "title": "ULTRALIFE CORP  (ULBI) -- 8-K (2026-03-10)",
+          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=ULTRALIFE%20CORP%20%20%28ULBI%29&type=8-K&dateb=&owner=include&count=5",
           "published": "2026-03-10"
         }
       ],
       "headline": "NVDA 1.16%  |  MSFT -0.89%"
     },
     "sports": {
-      "last_updated": "2026-03-10T21:23:16Z",
+      "last_updated": "2026-03-10T21:31:15Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -350,7 +371,7 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-10T21:23:16Z",
+      "last_updated": "2026-03-10T21:31:16Z",
       "headlines": [
         {
           "title": "'I just want to be able to sleep': Attacks in Iran rock cities and cut power",
@@ -381,37 +402,37 @@
       "headline": "'I just want to be able to sleep': Attacks in Iran rock cities and cut power"
     },
     "technology": {
-      "last_updated": "2026-03-10T21:23:18Z",
+      "last_updated": "2026-03-10T21:31:17Z",
       "hn_top": [
         {
           "title": "Tony Hoare has died",
           "url": "https://blog.computationalcomplexity.org/2026/03/tony-hoare-1934-2026.html",
-          "score": 1172,
-          "comments": 161
+          "score": 1184,
+          "comments": 164
         },
         {
           "title": "RISC-V Is Sloooow",
           "url": "https://marcin.juszkiewicz.com.pl/2026/03/10/risc-v-is-sloooow/",
-          "score": 62,
-          "comments": 42
-        },
-        {
-          "title": "Agents that run while I sleep",
-          "url": "https://www.claudecodecamp.com/p/i-m-building-agents-that-run-while-i-sleep",
-          "score": 120,
-          "comments": 79
+          "score": 65,
+          "comments": 49
         },
         {
           "title": "After outages, Amazon to make senior engineers sign off on AI-assisted changes",
           "url": "https://arstechnica.com/ai/2026/03/after-outages-amazon-to-make-senior-engineers-sign-off-on-ai-assisted-changes/",
-          "score": 124,
-          "comments": 231
+          "score": 138,
+          "comments": 237
+        },
+        {
+          "title": "Agents that run while I sleep",
+          "url": "https://www.claudecodecamp.com/p/i-m-building-agents-that-run-while-i-sleep",
+          "score": 125,
+          "comments": 86
         },
         {
           "title": "Yann LeCun raises $1B to build AI that understands the physical world",
           "url": "https://www.wired.com/story/yann-lecun-raises-dollar1-billion-to-build-ai-that-understands-the-physical-world/",
-          "score": 200,
-          "comments": 278
+          "score": 204,
+          "comments": 279
         }
       ],
       "tech_headlines": [
@@ -444,7 +465,7 @@
       "headline": "Tony Hoare has died"
     },
     "policy": {
-      "last_updated": "2026-03-10T21:23:19Z",
+      "last_updated": "2026-03-10T21:31:17Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -483,7 +504,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-10T21:23:21Z",
+      "last_updated": "2026-03-10T21:31:22Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
