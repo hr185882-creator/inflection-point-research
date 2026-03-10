@@ -1,9 +1,9 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-10T03:04:21Z",
+  "fetched_at": "2026-03-10T03:16:06Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-10T03:04:22Z",
+      "last_updated": "2026-03-10T03:16:07Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
@@ -39,10 +39,10 @@
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 70334.19,
+          "price": 70172.195,
           "prev_close": 68443.15,
-          "change": 1891.04,
-          "change_pct": 2.76,
+          "change": 1729.045,
+          "change_pct": 2.53,
           "currency": "USD"
         },
         "EURUSD=X": {
@@ -55,41 +55,41 @@
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 98.871,
-          "prev_close": 99.175,
-          "change": -0.304,
-          "change_pct": -0.31,
+          "price": 98.884,
+          "prev_close": 98.99,
+          "change": -0.106,
+          "change_pct": -0.11,
           "currency": "USD"
         }
       },
       "yield_10y": 4.15,
-      "headline": "SPY 0.88%  |  BTC $70,334  |  10Y 4.15%"
+      "headline": "SPY 0.88%  |  BTC $70,172  |  10Y 4.15%"
     },
     "energy": {
-      "last_updated": "2026-03-10T03:04:32Z",
+      "last_updated": "2026-03-10T03:16:17Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 87.83,
+          "price": 88.85,
           "prev_close": 94.77,
-          "change": -6.94,
-          "change_pct": -7.32,
+          "change": -5.92,
+          "change_pct": -6.25,
           "currency": "USD"
         },
         "NG=F": {
           "label": "Natural Gas ($/MMBtu)",
-          "price": 3.117,
+          "price": 3.116,
           "prev_close": 3.12,
-          "change": -0.003,
-          "change_pct": -0.1,
+          "change": -0.004,
+          "change_pct": -0.13,
           "currency": "USD"
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 91.5,
+          "price": 92.43,
           "prev_close": 98.96,
-          "change": -7.46,
-          "change_pct": -7.54,
+          "change": -6.53,
+          "change_pct": -6.6,
           "currency": "USD"
         },
         "XLE": {
@@ -101,11 +101,32 @@
           "currency": "USD"
         }
       },
-      "headlines": [],
-      "headline": "WTI $87.83/bbl"
+      "headlines": [
+        {
+          "title": "U.S. exports of major transportation fuels in 2025 were about the same as in 2024",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67304",
+          "published": "Mon, 09 Mar 2026 09:00:00 EST"
+        },
+        {
+          "title": "U.S. electricity generation in 2025 hit a record, again",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67284",
+          "published": "Thu, 05 Mar 2026 09:00:00 EST"
+        },
+        {
+          "title": "U.S. LNG developers sign highest volume of sale and purchase contracts since 2022",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67264",
+          "published": "Tue, 03 Mar 2026 09:00:00 EST"
+        },
+        {
+          "title": "Nuclear reactor restart in Japan will likely displace natural gas electricity generation",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67244",
+          "published": "Mon, 02 Mar 2026  09:00:00 EST"
+        }
+      ],
+      "headline": "WTI $88.85/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-10T03:04:38Z",
+      "last_updated": "2026-03-10T03:16:18Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
@@ -194,7 +215,7 @@
       "headline": "NVDA 2.68%  |  MSFT 0.11%"
     },
     "sports": {
-      "last_updated": "2026-03-10T03:04:38Z",
+      "last_updated": "2026-03-10T03:16:18Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -235,9 +256,9 @@
             {
               "home": "UTAH",
               "away": "GS",
-              "home_score": "102",
-              "away_score": "92",
-              "status": "8:10 - 4th"
+              "home_score": "108",
+              "away_score": "105",
+              "status": "3:28 - 4th"
             }
           ]
         },
@@ -350,88 +371,78 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-10T03:04:45Z",
+      "last_updated": "2026-03-10T03:16:18Z",
       "headlines": [
         {
-          "title": "Russian economy withstood pressure from outside German expert",
-          "link": "https://tass.com/economy/2073165",
-          "published": "20260119T140000Z"
-        },
-        {
-          "title": "Sudan : united kingdom Hits  Sudan War Machine  With New Sanctions",
-          "link": "https://allafrica.com/stories/202602060005.html",
-          "published": "20260206T060000Z"
-        },
-        {
-          "title": "UK Sanctions Sudanese Army and RSF Leaders",
-          "link": "https://english.aawsat.com/arab-world/5237657-uk-sanctions-sudanese-army-and-rsf-leaders",
-          "published": "20260205T183000Z"
-        },
-        {
-          "title": "U . S . sanctions Gaza charities over alleged Hamas ties",
-          "link": "https://www.naturalnews.com/2026-01-26-us-sanctions-gaza-charities-over-hamas-ties.html",
-          "published": "20260126T130000Z"
-        },
-        {
-          "title": "Myanmar military using commercial paramotors , gyrocopters for attacks : Report",
-          "link": "https://www.siasat.com/myanmar-military-using-commercial-paramotors-gyrocopters-for-attacks-report-3331737/",
-          "published": "20260126T140000Z"
-        },
-        {
           "title": "Who is Mojtaba Khamenei, Iran's new supreme leader?",
-          "link": "https://www.bbc.com/news/articles/c78xxg05w0zo",
+          "link": "https://www.bbc.com/news/articles/c78xxg05w0zo?at_medium=RSS&at_campaign=rss",
           "published": "Sun, 08 Mar 2026 21:51:48 GMT"
         },
         {
           "title": "US teacher killed after toilet paper prank goes wrong",
-          "link": "https://www.bbc.com/news/articles/cdr24g1p3vpo",
+          "link": "https://www.bbc.com/news/articles/cdr24g1p3vpo?at_medium=RSS&at_campaign=rss",
           "published": "Mon, 09 Mar 2026 17:09:21 GMT"
+        },
+        {
+          "title": "G7 to take 'necessary measures' to support energy supplies",
+          "link": "https://www.bbc.com/news/articles/c79542n0grwo?at_medium=RSS&at_campaign=rss",
+          "published": "Mon, 09 Mar 2026 23:30:46 GMT"
+        },
+        {
+          "title": "Hundreds of teenagers report for duty as Croatia reinstates conscription",
+          "link": "https://www.bbc.com/news/articles/c93j2l32lzgo?at_medium=RSS&at_campaign=rss",
+          "published": "Mon, 09 Mar 2026 14:49:34 GMT"
+        },
+        {
+          "title": "Alleged Bondi gunman seeks order to suppress family's identity",
+          "link": "https://www.bbc.com/news/articles/cy8lwnyj40eo?at_medium=RSS&at_campaign=rss",
+          "published": "Mon, 09 Mar 2026 08:13:58 GMT"
         }
       ],
-      "headline": "Russian economy withstood pressure from outside German expert"
+      "headline": "Who is Mojtaba Khamenei, Iran's new supreme leader?"
     },
     "technology": {
-      "last_updated": "2026-03-10T03:04:46Z",
+      "last_updated": "2026-03-10T03:16:19Z",
       "hn_top": [
         {
           "title": "Two Years of Emacs Solo: 35 Modules, Zero External Packages, and a Full Refactor",
           "url": "https://www.rahuljuliato.com/posts/emacs-solo-two-years",
-          "score": 92,
+          "score": 98,
           "comments": 15
         },
         {
           "title": "Building a Procedural Hex Map with Wave Function Collapse",
           "url": "https://felixturner.github.io/hex-map-wfc/article/",
-          "score": 407,
+          "score": 411,
           "comments": 61
         },
         {
           "title": "Show HN: Remotely use my guitar tuner",
           "url": "https://realtuner.online/",
-          "score": 90,
-          "comments": 23
+          "score": 98,
+          "comments": 24
         },
         {
-          "title": "The JVG algorithm only wins on tiny numbers",
+          "title": "The \u201cJVG algorithm\u201d only wins on tiny numbers",
           "url": "https://scottaaronson.blog/?p=9615",
-          "score": 35,
+          "score": 36,
           "comments": 17
         },
         {
           "title": "JSLinux Now Supports x86_64",
           "url": "https://bellard.org/jslinux/",
           "score": 260,
-          "comments": 73
+          "comments": 74
         }
       ],
       "tech_headlines": [
         {
-          "title": "Don't Expect Big Surprises in the Government's Alien Files",
+          "title": "Don\u2019t Expect Big Surprises in the Government\u2019s Alien Files",
           "link": "https://www.wired.com/story/dont-expect-big-surprises-in-the-governments-alien-files/",
           "published": "Mon, 09 Mar 2026 10:00:00 +0000"
         },
         {
-          "title": "Why RFK's CDC Is Endorsing Shared Decisionmaking for Vaccines",
+          "title": "Why RFK\u2019s CDC Is Endorsing \u2018Shared Decisionmaking\u2019 for Vaccines",
           "link": "https://www.wired.com/story/why-rfks-cdc-is-endorsing-shared-decision-making-for-vaccines/",
           "published": "Mon, 09 Mar 2026 09:30:00 +0000"
         },
@@ -441,7 +452,7 @@
           "published": "Sun, 08 Mar 2026 09:00:00 +0000"
         },
         {
-          "title": "Sleep Apnea Often Goes Undetected in Women. That's Starting to Change",
+          "title": "Sleep Apnea Often Goes Undetected in Women. That\u2019s Starting to Change",
           "link": "https://www.wired.com/story/sleep-apnea-women-detection-treatment/",
           "published": "Fri, 06 Mar 2026 09:30:00 +0000"
         },
@@ -454,7 +465,7 @@
       "headline": "Two Years of Emacs Solo: 35 Modules, Zero External Packages, and a Full Refactor"
     },
     "policy": {
-      "last_updated": "2026-03-10T03:04:47Z",
+      "last_updated": "2026-03-10T03:16:20Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -493,7 +504,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-10T03:04:51Z",
+      "last_updated": "2026-03-10T03:16:28Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
