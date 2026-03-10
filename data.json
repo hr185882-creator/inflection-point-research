@@ -1,9 +1,9 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-10T10:47:24Z",
+  "fetched_at": "2026-03-10T11:08:50Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-10T10:47:25Z",
+      "last_updated": "2026-03-10T11:08:50Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
@@ -39,41 +39,41 @@
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 70751.875,
+          "price": 70850.09,
           "prev_close": 68443.15,
-          "change": 2308.725,
-          "change_pct": 3.37,
+          "change": 2406.94,
+          "change_pct": 3.52,
           "currency": "USD"
         },
         "EURUSD=X": {
           "label": "EUR/USD",
-          "price": 1.1637,
+          "price": 1.165,
           "prev_close": 1.1636,
-          "change": 0.0001,
-          "change_pct": 0.01,
+          "change": 0.0014,
+          "change_pct": 0.12,
           "currency": "USD"
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 98.795,
+          "price": 98.695,
           "prev_close": 99.175,
-          "change": -0.38,
-          "change_pct": -0.38,
+          "change": -0.48,
+          "change_pct": -0.48,
           "currency": "USD"
         }
       },
       "yield_10y": 4.15,
-      "headline": "SPY 0.88%  |  BTC $70,752  |  10Y 4.15%"
+      "headline": "SPY 0.88%  |  BTC $70,850  |  10Y 4.15%"
     },
     "energy": {
-      "last_updated": "2026-03-10T10:47:35Z",
+      "last_updated": "2026-03-10T11:08:59Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 89.73,
+          "price": 88.7,
           "prev_close": 94.77,
-          "change": -5.04,
-          "change_pct": -5.32,
+          "change": -6.07,
+          "change_pct": -6.4,
           "currency": "USD"
         },
         "NG=F": {
@@ -86,10 +86,10 @@
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 88.33,
+          "price": 87.27,
           "prev_close": 93.72,
-          "change": -5.39,
-          "change_pct": -5.75,
+          "change": -6.45,
+          "change_pct": -6.88,
           "currency": "USD"
         },
         "XLE": {
@@ -101,11 +101,32 @@
           "currency": "USD"
         }
       },
-      "headlines": [],
-      "headline": "WTI $89.73/bbl"
+      "headlines": [
+        {
+          "title": "U.S. exports of major transportation fuels in 2025 were about the same as in 2024",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67304",
+          "published": "Mon, 09 Mar 2026 09:00:00 EST"
+        },
+        {
+          "title": "U.S. electricity generation in 2025 hit a record, again",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67284",
+          "published": "Thu, 05 Mar 2026 09:00:00 EST"
+        },
+        {
+          "title": "U.S. LNG developers sign highest volume of sale and purchase contracts since 2022",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67264",
+          "published": "Tue, 03 Mar 2026 09:00:00 EST"
+        },
+        {
+          "title": "Nuclear reactor restart in Japan will likely displace natural gas electricity generation",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67244",
+          "published": "Mon, 02 Mar 2026  09:00:00 EST"
+        }
+      ],
+      "headline": "WTI $88.70/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-10T10:47:36Z",
+      "last_updated": "2026-03-10T11:09:00Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
@@ -194,7 +215,7 @@
       "headline": "NVDA 2.68%  |  MSFT 0.11%"
     },
     "sports": {
-      "last_updated": "2026-03-10T10:47:37Z",
+      "last_updated": "2026-03-10T11:09:00Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -350,7 +371,7 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-10T10:47:37Z",
+      "last_updated": "2026-03-10T11:09:01Z",
       "headlines": [
         {
           "title": "Mixed messages from Trump leave more questions than answers over war's end",
@@ -381,40 +402,45 @@
       "headline": "Mixed messages from Trump leave more questions than answers over war's end"
     },
     "technology": {
-      "last_updated": "2026-03-10T10:47:38Z",
+      "last_updated": "2026-03-10T11:09:02Z",
       "hn_top": [
         {
           "title": "Redox OS has adopted a Certificate of Origin policy and a strict no-LLM policy",
           "url": "https://gitlab.redox-os.org/redox-os/redox/-/blob/master/CONTRIBUTING.md",
-          "score": 113,
-          "comments": 98
+          "score": 136,
+          "comments": 119
         },
         {
           "title": "Lotus 1-2-3 on the PC with DOS",
           "url": "https://stonetools.ghost.io/lotus123-dos/",
-          "score": 98,
-          "comments": 33
+          "score": 105,
+          "comments": 37
         },
         {
           "title": "Two Years of Emacs Solo",
           "url": "https://www.rahuljuliato.com/posts/emacs-solo-two-years",
-          "score": 265,
-          "comments": 78
+          "score": 269,
+          "comments": 79
+        },
+        {
+          "title": "Yann LeCun's AI startup raises $1B in Europe's largest ever seed round",
+          "url": "https://www.ft.com/content/e5245ec3-1a58-4eff-ab58-480b6259aaf1",
+          "score": 15,
+          "comments": 4
         },
         {
           "title": "LoGeR \u2013 3D reconstruction from extremely long videos (DeepMind, UC Berkeley)",
           "url": "https://loger-project.github.io",
-          "score": 42,
-          "comments": 16
-        },
-        {
-          "title": "Building a Procedural Hex Map with Wave Function Collapse",
-          "url": "https://felixturner.github.io/hex-map-wfc/article/",
-          "score": 498,
-          "comments": 72
+          "score": 52,
+          "comments": 18
         }
       ],
       "tech_headlines": [
+        {
+          "title": "How Can a Locomotive Pull a Long Train That\u2019s Much Heavier?",
+          "link": "https://www.wired.com/story/how-can-a-locomotive-pull-a-train-thats-much-heavier/",
+          "published": "Tue, 10 Mar 2026 11:00:00 +0000"
+        },
         {
           "title": "Don\u2019t Expect Big Surprises in the Government\u2019s Alien Files",
           "link": "https://www.wired.com/story/dont-expect-big-surprises-in-the-governments-alien-files/",
@@ -434,17 +460,12 @@
           "title": "Sleep Apnea Often Goes Undetected in Women. That\u2019s Starting to Change",
           "link": "https://www.wired.com/story/sleep-apnea-women-detection-treatment/",
           "published": "Fri, 06 Mar 2026 09:30:00 +0000"
-        },
-        {
-          "title": "Big Tech Signs White House Data Center Pledge With Good Optics and Little Substance",
-          "link": "https://www.wired.com/story/big-tech-signs-white-house-data-center-pledge-with-good-optics-not-much-substance/",
-          "published": "Wed, 04 Mar 2026 22:13:27 +0000"
         }
       ],
       "headline": "Redox OS has adopted a Certificate of Origin policy and a strict no-LLM policy"
     },
     "policy": {
-      "last_updated": "2026-03-10T10:47:39Z",
+      "last_updated": "2026-03-10T11:09:02Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -483,7 +504,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-10T10:47:41Z",
+      "last_updated": "2026-03-10T11:09:05Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
