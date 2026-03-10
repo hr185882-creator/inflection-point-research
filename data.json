@@ -1,9 +1,9 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-10T01:03:31Z",
+  "fetched_at": "2026-03-10T01:16:27Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-10T01:03:31Z",
+      "last_updated": "2026-03-10T01:16:28Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
@@ -39,57 +39,57 @@
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 69161.78,
+          "price": 69170.89,
           "prev_close": 68443.15,
-          "change": 718.63,
-          "change_pct": 1.05,
+          "change": 727.74,
+          "change_pct": 1.06,
           "currency": "USD"
         },
         "EURUSD=X": {
           "label": "EUR/USD",
-          "price": 1.1629,
+          "price": 1.1632,
           "prev_close": 1.1636,
-          "change": -0.0007,
-          "change_pct": -0.06,
+          "change": -0.0004,
+          "change_pct": -0.03,
           "currency": "USD"
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 98.807,
+          "price": 98.786,
           "prev_close": 99.175,
-          "change": -0.368,
-          "change_pct": -0.37,
+          "change": -0.389,
+          "change_pct": -0.39,
           "currency": "USD"
         }
       },
       "yield_10y": 4.15,
-      "headline": "SPY 0.88%  |  BTC $69,162  |  10Y 4.15%"
+      "headline": "SPY 0.88%  |  BTC $69,171  |  10Y 4.15%"
     },
     "energy": {
-      "last_updated": "2026-03-10T01:03:40Z",
+      "last_updated": "2026-03-10T01:16:36Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 86.29,
+          "price": 86.72,
           "prev_close": 94.77,
-          "change": -8.48,
-          "change_pct": -8.95,
+          "change": -8.05,
+          "change_pct": -8.49,
           "currency": "USD"
         },
         "NG=F": {
           "label": "Natural Gas ($/MMBtu)",
-          "price": 3.079,
+          "price": 3.088,
           "prev_close": 3.12,
-          "change": -0.041,
-          "change_pct": -1.31,
+          "change": -0.032,
+          "change_pct": -1.03,
           "currency": "USD"
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 89.7,
+          "price": 90.0,
           "prev_close": 98.96,
-          "change": -9.26,
-          "change_pct": -9.36,
+          "change": -8.96,
+          "change_pct": -9.05,
           "currency": "USD"
         },
         "XLE": {
@@ -123,10 +123,10 @@
           "published": "Mon, 02 Mar 2026  09:00:00 EST"
         }
       ],
-      "headline": "WTI $86.29/bbl"
+      "headline": "WTI $86.72/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-10T01:03:41Z",
+      "last_updated": "2026-03-10T01:16:38Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
@@ -187,27 +187,27 @@
       },
       "recent_filings": [
         {
-          "title": "IONIS PHARMACEUTICALS INC  (IONS) -- 8-K (2026-03-09)",
+          "title": "IONIS PHARMACEUTICALS INC  (IONS) \u2014 8-K (2026-03-09)",
           "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=IONIS%20PHARMACEUTICALS%20INC%20%20%28IONS%29&type=8-K&dateb=&owner=include&count=5",
           "published": "2026-03-09"
         },
         {
-          "title": "Cartesian Therapeutics, Inc.  (RNAC) -- 8-K (2026-03-09)",
+          "title": "Cartesian Therapeutics, Inc.  (RNAC) \u2014 8-K (2026-03-09)",
           "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Cartesian%20Therapeutics%2C%20Inc.%20%20%28RNAC%29&type=8-K&dateb=&owner=include&count=5",
           "published": "2026-03-09"
         },
         {
-          "title": "enCore Energy Corp.  (EU) -- 8-K (2026-03-09)",
+          "title": "enCore Energy Corp.  (EU) \u2014 8-K (2026-03-09)",
           "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=enCore%20Energy%20Corp.%20%20%28EU%29&type=8-K&dateb=&owner=include&count=5",
           "published": "2026-03-09"
         },
         {
-          "title": "NET Power Inc.  (NPWR, NPWR-WT) -- 8-K (2026-03-09)",
+          "title": "NET Power Inc.  (NPWR, NPWR-WT) \u2014 8-K (2026-03-09)",
           "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=NET%20Power%20Inc.%20%20%28NPWR%2C%20NPWR-WT%29&type=8-K&dateb=&owner=include&count=5",
           "published": "2026-03-09"
         },
         {
-          "title": "Symbotic Inc.  (SYM) -- 8-K (2026-03-09)",
+          "title": "Symbotic Inc.  (SYM) \u2014 8-K (2026-03-09)",
           "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Symbotic%20Inc.%20%20%28SYM%29&type=8-K&dateb=&owner=include&count=5",
           "published": "2026-03-09"
         }
@@ -215,7 +215,7 @@
       "headline": "NVDA 2.68%  |  MSFT 0.11%"
     },
     "sports": {
-      "last_updated": "2026-03-10T01:03:41Z",
+      "last_updated": "2026-03-10T01:16:38Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -235,30 +235,30 @@
             {
               "home": "CLE",
               "away": "PHI",
-              "home_score": "98",
-              "away_score": "82",
-              "status": "8:09 - 4th"
+              "home_score": "110",
+              "away_score": "90",
+              "status": "3:31 - 4th"
             },
             {
               "home": "BKN",
               "away": "MEM",
-              "home_score": "79",
-              "away_score": "71",
-              "status": "6:58 - 3rd"
+              "home_score": "88",
+              "away_score": "83",
+              "status": "54.9 - 3rd"
             },
             {
               "home": "OKC",
               "away": "DEN",
-              "home_score": "66",
-              "away_score": "62",
-              "status": "11:23 - 3rd"
+              "home_score": "76",
+              "away_score": "78",
+              "status": "5:12 - 3rd"
             },
             {
               "home": "UTAH",
               "away": "GS",
-              "home_score": "0",
-              "away_score": "0",
-              "status": "3/9 - 9:00 PM EDT"
+              "home_score": "9",
+              "away_score": "5",
+              "status": "8:31 - 1st"
             }
           ]
         },
@@ -371,7 +371,7 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-10T01:03:41Z",
+      "last_updated": "2026-03-10T01:16:38Z",
       "headlines": [
         {
           "title": "Who is Mojtaba Khamenei, Iran's new supreme leader?",
@@ -402,37 +402,37 @@
       "headline": "Who is Mojtaba Khamenei, Iran's new supreme leader?"
     },
     "technology": {
-      "last_updated": "2026-03-10T01:03:42Z",
+      "last_updated": "2026-03-10T01:16:39Z",
       "hn_top": [
-        {
-          "title": "Building a Procedural Hex Map with Wave Function Collapse",
-          "url": "https://felixturner.github.io/hex-map-wfc/article/",
-          "score": 375,
-          "comments": 54
-        },
         {
           "title": "Two Years of Emacs Solo: 35 Modules, Zero External Packages, and a Full Refactor",
           "url": "https://www.rahuljuliato.com/posts/emacs-solo-two-years",
-          "score": 13,
+          "score": 28,
           "comments": 0
         },
         {
-          "title": "JSLinux Now Supports x86_64",
-          "url": "https://bellard.org/jslinux/",
-          "score": 232,
-          "comments": 68
+          "title": "Building a Procedural Hex Map with Wave Function Collapse",
+          "url": "https://felixturner.github.io/hex-map-wfc/article/",
+          "score": 378,
+          "comments": 55
         },
         {
           "title": "It looks like the \u201cJVG algorithm\u201d only wins on tiny numbers",
           "url": "https://scottaaronson.blog/?p=9615",
-          "score": 6,
-          "comments": 2
+          "score": 10,
+          "comments": 3
+        },
+        {
+          "title": "JSLinux Now Supports x86_64",
+          "url": "https://bellard.org/jslinux/",
+          "score": 235,
+          "comments": 68
         },
         {
           "title": "Show HN: Remotely use my guitar tuner",
           "url": "https://realtuner.online/",
-          "score": 43,
-          "comments": 8
+          "score": 48,
+          "comments": 9
         }
       ],
       "tech_headlines": [
@@ -462,10 +462,10 @@
           "published": "Wed, 04 Mar 2026 22:13:27 +0000"
         }
       ],
-      "headline": "Building a Procedural Hex Map with Wave Function Collapse"
+      "headline": "Two Years of Emacs Solo: 35 Modules, Zero External Packages, and a Full Refactor"
     },
     "policy": {
-      "last_updated": "2026-03-10T01:03:43Z",
+      "last_updated": "2026-03-10T01:16:40Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -504,7 +504,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-10T01:03:47Z",
+      "last_updated": "2026-03-10T01:16:42Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
