@@ -1,9 +1,9 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-10T23:04:31Z",
+  "fetched_at": "2026-03-10T23:32:30Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-10T23:04:32Z",
+      "last_updated": "2026-03-10T23:32:31Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
@@ -39,18 +39,18 @@
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 69807.52,
+          "price": 69814.625,
           "prev_close": 68443.15,
-          "change": 1364.37,
-          "change_pct": 1.99,
+          "change": 1371.475,
+          "change_pct": 2.0,
           "currency": "USD"
         },
         "EURUSD=X": {
           "label": "EUR/USD",
-          "price": 1.161,
+          "price": 1.1612,
           "prev_close": 1.1636,
-          "change": -0.0026,
-          "change_pct": -0.22,
+          "change": -0.0024,
+          "change_pct": -0.21,
           "currency": "USD"
         },
         "DX-Y.NYB": {
@@ -63,33 +63,33 @@
         }
       },
       "yield_10y": 4.12,
-      "headline": "SPY -0.16%  |  BTC $69,808  |  10Y 4.12%"
+      "headline": "SPY -0.16%  |  BTC $69,815  |  10Y 4.12%"
     },
     "energy": {
-      "last_updated": "2026-03-10T23:04:42Z",
+      "last_updated": "2026-03-10T23:32:40Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 88.27,
+          "price": 86.06,
           "prev_close": 83.45,
-          "change": 4.82,
-          "change_pct": 5.78,
+          "change": 2.61,
+          "change_pct": 3.13,
           "currency": "USD"
         },
         "NG=F": {
           "label": "Natural Gas ($/MMBtu)",
-          "price": 3.05,
+          "price": 3.052,
           "prev_close": 3.02,
-          "change": 0.03,
-          "change_pct": 0.99,
+          "change": 0.032,
+          "change_pct": 1.06,
           "currency": "USD"
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 89.71,
+          "price": 87.63,
           "prev_close": 85.27,
-          "change": 4.44,
-          "change_pct": 5.21,
+          "change": 2.36,
+          "change_pct": 2.77,
           "currency": "USD"
         },
         "XLE": {
@@ -101,11 +101,32 @@
           "currency": "USD"
         }
       },
-      "headlines": [],
-      "headline": "WTI $88.27/bbl"
+      "headlines": [
+        {
+          "title": "Annual U.S. crude oil exports decrease for first time since 2021",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67324",
+          "published": "Tue, 10 Mar 2026 09:00:00 EST"
+        },
+        {
+          "title": "U.S. exports of major transportation fuels in 2025 were about the same as in 2024",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67304",
+          "published": "Mon, 09 Mar 2026 09:00:00 EST"
+        },
+        {
+          "title": "U.S. electricity generation in 2025 hit a record, again",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67284",
+          "published": "Thu, 05 Mar 2026 09:00:00 EST"
+        },
+        {
+          "title": "U.S. LNG developers sign highest volume of sale and purchase contracts since 2022",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67264",
+          "published": "Tue, 03 Mar 2026 09:00:00 EST"
+        }
+      ],
+      "headline": "WTI $86.06/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-10T23:04:43Z",
+      "last_updated": "2026-03-10T23:32:41Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
@@ -194,7 +215,7 @@
       "headline": "NVDA 1.16%  |  MSFT -0.89%"
     },
     "sports": {
-      "last_updated": "2026-03-10T23:04:44Z",
+      "last_updated": "2026-03-10T23:32:42Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -214,9 +235,9 @@
             {
               "home": "PHI",
               "away": "MEM",
-              "home_score": "0",
-              "away_score": "0",
-              "status": "3/10 - 7:00 PM EDT"
+              "home_score": "20",
+              "away_score": "29",
+              "status": "2:23 - 1st"
             },
             {
               "home": "BKN",
@@ -350,33 +371,8 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-10T23:04:46Z",
+      "last_updated": "2026-03-10T23:32:52Z",
       "headlines": [
-        {
-          "title": "Russian economy withstood pressure from outside German expert",
-          "link": "https://tass.com/economy/2073165",
-          "published": "20260119T140000Z"
-        },
-        {
-          "title": "Sudan : united kingdom Hits  Sudan War Machine  With New Sanctions",
-          "link": "https://allafrica.com/stories/202602060005.html",
-          "published": "20260206T060000Z"
-        },
-        {
-          "title": "UK Sanctions Sudanese Army and RSF Leaders",
-          "link": "https://english.aawsat.com/arab-world/5237657-uk-sanctions-sudanese-army-and-rsf-leaders",
-          "published": "20260205T183000Z"
-        },
-        {
-          "title": "U . S . sanctions Gaza charities over alleged Hamas ties \u2013 NaturalNews . com",
-          "link": "https://www.naturalnews.com/2026-01-26-us-sanctions-gaza-charities-over-hamas-ties.html",
-          "published": "20260126T130000Z"
-        },
-        {
-          "title": "Myanmar military using commercial paramotors , gyrocopters for attacks : Report",
-          "link": "https://www.siasat.com/myanmar-military-using-commercial-paramotors-gyrocopters-for-attacks-report-3331737/",
-          "published": "20260126T140000Z"
-        },
         {
           "title": "'I just want to be able to sleep': Attacks in Iran rock cities and cut power",
           "link": "https://www.bbc.com/news/articles/cev7llekwllo?at_medium=RSS&at_campaign=rss",
@@ -386,42 +382,57 @@
           "title": "Steve Rosenberg: Russia seeks diplomatic and economic gains from Iran war",
           "link": "https://www.bbc.com/news/articles/c4gjyg0djvmo?at_medium=RSS&at_campaign=rss",
           "published": "Tue, 10 Mar 2026 19:35:29 GMT"
+        },
+        {
+          "title": "At least six dead in Switzerland bus fire",
+          "link": "https://www.bbc.com/news/articles/c5y4wdlyy9xo?at_medium=RSS&at_campaign=rss",
+          "published": "Tue, 10 Mar 2026 22:35:37 GMT"
+        },
+        {
+          "title": "Georgia voters to pick replacement for Marjorie Taylor Greene in special election",
+          "link": "https://www.bbc.com/news/articles/c77ey1v7jrzo?at_medium=RSS&at_campaign=rss",
+          "published": "Tue, 10 Mar 2026 10:47:08 GMT"
+        },
+        {
+          "title": "Two more connected to Iranian football team stay in Australia, BBC understands",
+          "link": "https://www.bbc.com/news/articles/c93j2492d0do?at_medium=RSS&at_campaign=rss",
+          "published": "Tue, 10 Mar 2026 20:39:21 GMT"
         }
       ],
-      "headline": "Russian economy withstood pressure from outside German expert"
+      "headline": "'I just want to be able to sleep': Attacks in Iran rock cities and cut power"
     },
     "technology": {
-      "last_updated": "2026-03-10T23:04:47Z",
+      "last_updated": "2026-03-10T23:32:52Z",
       "hn_top": [
         {
           "title": "Tony Hoare has died",
           "url": "https://blog.computationalcomplexity.org/2026/03/tony-hoare-1934-2026.html",
-          "score": 1321,
-          "comments": 182
+          "score": 1350,
+          "comments": 186
         },
         {
           "title": "After outages, Amazon to make senior engineers sign off on AI-assisted changes",
           "url": "https://arstechnica.com/ai/2026/03/after-outages-amazon-to-make-senior-engineers-sign-off-on-ai-assisted-changes/",
-          "score": 306,
-          "comments": 319
+          "score": 363,
+          "comments": 345
         },
         {
           "title": "U+237C \u237c Is Azimuth",
           "url": "https://ionathan.ch/2026/02/16/angzarr.html",
-          "score": 19,
+          "score": 44,
           "comments": 3
         },
         {
           "title": "RISC-V Is Sloooow",
           "url": "https://marcin.juszkiewicz.com.pl/2026/03/10/risc-v-is-sloooow/",
-          "score": 126,
-          "comments": 101
+          "score": 139,
+          "comments": 115
         },
         {
           "title": "Agents that run while I sleep",
           "url": "https://www.claudecodecamp.com/p/i-m-building-agents-that-run-while-i-sleep",
-          "score": 170,
-          "comments": 117
+          "score": 176,
+          "comments": 126
         }
       ],
       "tech_headlines": [
@@ -454,7 +465,7 @@
       "headline": "Tony Hoare has died"
     },
     "policy": {
-      "last_updated": "2026-03-10T23:04:47Z",
+      "last_updated": "2026-03-10T23:32:54Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -493,7 +504,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-10T23:04:49Z",
+      "last_updated": "2026-03-10T23:32:55Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
