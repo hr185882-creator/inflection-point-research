@@ -1,9 +1,9 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-10T20:46:07Z",
+  "fetched_at": "2026-03-10T21:02:03Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-10T20:46:08Z",
+      "last_updated": "2026-03-10T21:02:04Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
@@ -39,57 +39,57 @@
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 70250.21,
+          "price": 70254.5,
           "prev_close": 68443.15,
-          "change": 1807.06,
-          "change_pct": 2.64,
+          "change": 1811.35,
+          "change_pct": 2.65,
           "currency": "USD"
         },
         "EURUSD=X": {
           "label": "EUR/USD",
-          "price": 1.1614,
+          "price": 1.1612,
           "prev_close": 1.1636,
-          "change": -0.0022,
-          "change_pct": -0.19,
+          "change": -0.0024,
+          "change_pct": -0.21,
           "currency": "USD"
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 98.927,
+          "price": 98.939,
           "prev_close": 99.175,
-          "change": -0.248,
-          "change_pct": -0.25,
+          "change": -0.236,
+          "change_pct": -0.24,
           "currency": "USD"
         }
       },
       "yield_10y": 4.12,
-      "headline": "SPY -0.16%  |  BTC $70,250  |  10Y 4.12%"
+      "headline": "SPY -0.16%  |  BTC $70,254  |  10Y 4.12%"
     },
     "energy": {
-      "last_updated": "2026-03-10T20:46:18Z",
+      "last_updated": "2026-03-10T21:02:14Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 86.81,
+          "price": 86.67,
           "prev_close": 94.77,
-          "change": -7.96,
-          "change_pct": -8.4,
+          "change": -8.1,
+          "change_pct": -8.55,
           "currency": "USD"
         },
         "NG=F": {
           "label": "Natural Gas ($/MMBtu)",
-          "price": 3.048,
+          "price": 3.052,
           "prev_close": 3.12,
-          "change": -0.072,
-          "change_pct": -2.31,
+          "change": -0.068,
+          "change_pct": -2.18,
           "currency": "USD"
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 87.88,
+          "price": 87.8,
           "prev_close": 93.72,
-          "change": -5.84,
-          "change_pct": -6.23,
+          "change": -5.92,
+          "change_pct": -6.32,
           "currency": "USD"
         },
         "XLE": {
@@ -102,10 +102,10 @@
         }
       },
       "headlines": [],
-      "headline": "WTI $86.81/bbl"
+      "headline": "WTI $86.67/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-10T20:46:19Z",
+      "last_updated": "2026-03-10T21:02:17Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
@@ -194,7 +194,7 @@
       "headline": "NVDA 1.16%  |  MSFT -0.89%"
     },
     "sports": {
-      "last_updated": "2026-03-10T20:46:21Z",
+      "last_updated": "2026-03-10T21:02:43Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -350,7 +350,7 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-10T20:46:22Z",
+      "last_updated": "2026-03-10T21:02:44Z",
       "headlines": [
         {
           "title": "'I just want to be able to sleep': Attacks in Iran rock cities and cut power",
@@ -381,37 +381,37 @@
       "headline": "'I just want to be able to sleep': Attacks in Iran rock cities and cut power"
     },
     "technology": {
-      "last_updated": "2026-03-10T20:46:22Z",
+      "last_updated": "2026-03-10T21:02:44Z",
       "hn_top": [
         {
           "title": "Tony Hoare has died",
           "url": "https://blog.computationalcomplexity.org/2026/03/tony-hoare-1934-2026.html",
-          "score": 1119,
-          "comments": 153
+          "score": 1141,
+          "comments": 156
         },
         {
           "title": "Agents that run while I sleep",
           "url": "https://www.claudecodecamp.com/p/i-m-building-agents-that-run-while-i-sleep",
-          "score": 94,
-          "comments": 66
+          "score": 103,
+          "comments": 76
         },
         {
           "title": "RISC-V Is Sloooow",
           "url": "https://marcin.juszkiewicz.com.pl/2026/03/10/risc-v-is-sloooow/",
-          "score": 27,
-          "comments": 14
+          "score": 41,
+          "comments": 29
         },
         {
           "title": "Yann LeCun raises $1B to build AI that understands the physical world",
           "url": "https://www.wired.com/story/yann-lecun-raises-dollar1-billion-to-build-ai-that-understands-the-physical-world/",
-          "score": 178,
-          "comments": 271
+          "score": 186,
+          "comments": 275
         },
         {
-          "title": "Launch HN: RunAnywhere (YC W26) \u2013 Faster AI Inference on Apple Silicon",
-          "url": "https://github.com/RunanywhereAI/rcli",
-          "score": 146,
-          "comments": 60
+          "title": "After outages, Amazon to make senior engineers sign off on AI-assisted changes",
+          "url": "https://arstechnica.com/ai/2026/03/after-outages-amazon-to-make-senior-engineers-sign-off-on-ai-assisted-changes/",
+          "score": 74,
+          "comments": 222
         }
       ],
       "tech_headlines": [
@@ -444,7 +444,7 @@
       "headline": "Tony Hoare has died"
     },
     "policy": {
-      "last_updated": "2026-03-10T20:46:23Z",
+      "last_updated": "2026-03-10T21:02:45Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -483,7 +483,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-10T20:46:32Z",
+      "last_updated": "2026-03-10T21:02:53Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
