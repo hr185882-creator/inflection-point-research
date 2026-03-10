@@ -1,9 +1,9 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-10T13:05:18Z",
+  "fetched_at": "2026-03-10T13:16:44Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-10T13:05:19Z",
+      "last_updated": "2026-03-10T13:16:45Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
@@ -39,57 +39,57 @@
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 70597.02,
+          "price": 70721.79,
           "prev_close": 68443.15,
-          "change": 2153.87,
-          "change_pct": 3.15,
+          "change": 2278.64,
+          "change_pct": 3.33,
           "currency": "USD"
         },
         "EURUSD=X": {
           "label": "EUR/USD",
-          "price": 1.1641,
+          "price": 1.1646,
           "prev_close": 1.1636,
-          "change": 0.0005,
-          "change_pct": 0.04,
+          "change": 0.001,
+          "change_pct": 0.09,
           "currency": "USD"
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 98.68,
+          "price": 98.652,
           "prev_close": 99.175,
-          "change": -0.495,
-          "change_pct": -0.5,
+          "change": -0.523,
+          "change_pct": -0.53,
           "currency": "USD"
         }
       },
-      "yield_10y": null,
-      "headline": null
+      "yield_10y": 4.15,
+      "headline": "SPY 0.88%  |  BTC $70,722  |  10Y 4.15%"
     },
     "energy": {
-      "last_updated": "2026-03-10T13:05:19Z",
+      "last_updated": "2026-03-10T13:16:53Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 89.3,
+          "price": 88.43,
           "prev_close": 94.77,
-          "change": -5.47,
-          "change_pct": -5.77,
+          "change": -6.34,
+          "change_pct": -6.69,
           "currency": "USD"
         },
         "NG=F": {
           "label": "Natural Gas ($/MMBtu)",
-          "price": 3.018,
+          "price": 3.036,
           "prev_close": 3.12,
-          "change": -0.102,
-          "change_pct": -3.27,
+          "change": -0.084,
+          "change_pct": -2.69,
           "currency": "USD"
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 87.69,
+          "price": 87.3,
           "prev_close": 93.72,
-          "change": -6.03,
-          "change_pct": -6.43,
+          "change": -6.42,
+          "change_pct": -6.85,
           "currency": "USD"
         },
         "XLE": {
@@ -101,11 +101,32 @@
           "currency": "USD"
         }
       },
-      "headlines": [],
-      "headline": "WTI $89.30/bbl"
+      "headlines": [
+        {
+          "title": "Annual U.S. crude oil exports decrease for first time since 2021",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67324",
+          "published": "Tue, 10 Mar 2026 09:00:00 EST"
+        },
+        {
+          "title": "U.S. exports of major transportation fuels in 2025 were about the same as in 2024",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67304",
+          "published": "Mon, 09 Mar 2026 09:00:00 EST"
+        },
+        {
+          "title": "U.S. electricity generation in 2025 hit a record, again",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67284",
+          "published": "Thu, 05 Mar 2026 09:00:00 EST"
+        },
+        {
+          "title": "U.S. LNG developers sign highest volume of sale and purchase contracts since 2022",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67264",
+          "published": "Tue, 03 Mar 2026 09:00:00 EST"
+        }
+      ],
+      "headline": "WTI $88.43/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-10T13:05:20Z",
+      "last_updated": "2026-03-10T13:16:54Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
@@ -164,11 +185,37 @@
           "currency": "USD"
         }
       },
-      "recent_filings": [],
+      "recent_filings": [
+        {
+          "title": "Aclaris Therapeutics, Inc.  (ACRS) \u2014 8-K (2026-03-10)",
+          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Aclaris%20Therapeutics%2C%20Inc.%20%20%28ACRS%29&type=8-K&dateb=&owner=include&count=5",
+          "published": "2026-03-10"
+        },
+        {
+          "title": "Synchrony Financial  (SYF, SYF-PA, SYF-PB) \u2014 8-K (2026-03-10)",
+          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Synchrony%20Financial%20%20%28SYF%2C%20SYF-PA%2C%20SYF-PB%29&type=8-K&dateb=&owner=include&count=5",
+          "published": "2026-03-10"
+        },
+        {
+          "title": "AN2 Therapeutics, Inc.  (ANTX) \u2014 8-K (2026-03-10)",
+          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=AN2%20Therapeutics%2C%20Inc.%20%20%28ANTX%29&type=8-K&dateb=&owner=include&count=5",
+          "published": "2026-03-10"
+        },
+        {
+          "title": "Archimedes Tech SPAC Partners III Co.  (ARCI, ARCIU) \u2014 8-K (2026-03-10)",
+          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Archimedes%20Tech%20SPAC%20Partners%20III%20Co.%20%20%28ARCI%2C%20ARCIU%29&type=8-K&dateb=&owner=include&count=5",
+          "published": "2026-03-10"
+        },
+        {
+          "title": "STARZ ENTERTAINMENT CORP /CN/  (STRZ) \u2014 8-K (2026-03-10)",
+          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=STARZ%20ENTERTAINMENT%20CORP%20/CN/%20%20%28STRZ%29&type=8-K&dateb=&owner=include&count=5",
+          "published": "2026-03-10"
+        }
+      ],
       "headline": "NVDA 2.68%  |  MSFT 0.11%"
     },
     "sports": {
-      "last_updated": "2026-03-10T13:05:25Z",
+      "last_updated": "2026-03-10T13:16:55Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -324,7 +371,7 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-10T13:05:25Z",
+      "last_updated": "2026-03-10T13:17:06Z",
       "headlines": [
         {
           "title": "Mixed messages from Trump leave more questions than answers over war's end",
@@ -355,37 +402,37 @@
       "headline": "Mixed messages from Trump leave more questions than answers over war's end"
     },
     "technology": {
-      "last_updated": "2026-03-10T13:05:26Z",
+      "last_updated": "2026-03-10T13:17:06Z",
       "hn_top": [
         {
           "title": "I put my whole life into a single database",
           "url": "https://howisfelix.today/",
-          "score": 146,
-          "comments": 40
+          "score": 163,
+          "comments": 46
         },
         {
           "title": "FreeBSD 14.4-Release Announcement",
           "url": "https://www.freebsd.org/releases/14.4R/announce/",
-          "score": 36,
-          "comments": 3
-        },
-        {
-          "title": "Redox OS has adopted a Certificate of Origin policy and a strict no-LLM policy",
-          "url": "https://gitlab.redox-os.org/redox-os/redox/-/blob/master/CONTRIBUTING.md",
-          "score": 223,
-          "comments": 196
+          "score": 42,
+          "comments": 5
         },
         {
           "title": "The Gervais Principle, or the Office According to \"The Office\" (2009)",
           "url": "https://www.ribbonfarm.com/2009/10/07/the-gervais-principle-or-the-office-according-to-the-office/",
-          "score": 105,
-          "comments": 29
+          "score": 113,
+          "comments": 33
         },
         {
-          "title": "Practical Guide to Bare Metal C++",
-          "url": "https://arobenko.github.io/bare_metal_cpp/#_abstract_classes",
-          "score": 28,
-          "comments": 6
+          "title": "Redox OS has adopted a Certificate of Origin policy and a strict no-LLM policy",
+          "url": "https://gitlab.redox-os.org/redox-os/redox/-/blob/master/CONTRIBUTING.md",
+          "score": 227,
+          "comments": 212
+        },
+        {
+          "title": "Ask HN: Remember Fidonet?",
+          "url": "https://news.ycombinator.com/item?id=47321760",
+          "score": 50,
+          "comments": 27
         }
       ],
       "tech_headlines": [
@@ -418,7 +465,7 @@
       "headline": "I put my whole life into a single database"
     },
     "policy": {
-      "last_updated": "2026-03-10T13:05:27Z",
+      "last_updated": "2026-03-10T13:17:07Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -457,7 +504,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-10T13:05:30Z",
+      "last_updated": "2026-03-10T13:17:10Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
