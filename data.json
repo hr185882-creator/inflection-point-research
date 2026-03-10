@@ -1,274 +1,507 @@
-#!/usr/bin/env python3
-"""
-Inflection OS - Live Data Fetcher
-Fetches all domain APIs (free, no keys) and writes data.json.
-"""
-import json, os, base64, re, urllib.request, urllib.error, urllib.parse
-import xml.etree.ElementTree as ET
-from datetime import datetime, timezone
-
-def fetch_json(url, timeout=10):
-    req = urllib.request.Request(url, headers={"User-Agent": "InflectionOS/1.0"})
-    try:
-        with urllib.request.urlopen(req, timeout=timeout) as r:
-            return json.loads(r.read().decode())
-    except Exception as e:
-        print(f"  [WARN] fetch_json {url[:60]} -> {e}")
-        return None
-
-def fetch_text(url, timeout=10):
-    req = urllib.request.Request(url, headers={"User-Agent": "InflectionOS/1.0"})
-    try:
-        with urllib.request.urlopen(req, timeout=timeout) as r:
-            return r.read().decode("utf-8", errors="replace")
-    except Exception as e:
-        print(f"  [WARN] fetch_text {url[:60]} -> {e}")
-        return None
-
-def parse_rss(xml_str, max_items=5):
-    if not xml_str:
-        return []
-    try:
-        root = ET.fromstring(xml_str)
-        ns = {"atom": "http://www.w3.org/2005/Atom"}
-        items = []
-        for item in root.findall(".//item")[:max_items]:
-            t = item.findtext("title", "").strip()
-            l = item.findtext("link", "").strip()
-            p = item.findtext("pubDate", "").strip()
-            if t:
-                items.append({"title": t, "link": l, "published": p})
-        if not items:
-            for entry in root.findall(".//atom:entry", ns)[:max_items]:
-                t = entry.findtext("atom:title", "", ns).strip()
-                l_el = entry.find("atom:link", ns)
-                l = l_el.get("href", "") if l_el is not None else ""
-                p = entry.findtext("atom:updated", "", ns).strip()
-                if t:
-                    items.append({"title": t, "link": l, "published": p})
-        return items
-    except Exception as e:
-        print(f"  [WARN] parse_rss -> {e}")
-        return []
-
-def yahoo_quote(symbol):
-    url = f"https://query1.finance.yahoo.com/v8/finance/chart/{urllib.parse.quote(symbol)}?interval=1d&range=1d"
-    data = fetch_json(url)
-    if not data:
-        return None
-    try:
-        meta  = data["chart"]["result"][0]["meta"]
-        price = meta.get("regularMarketPrice")
-        prev  = meta.get("chartPreviousClose") or meta.get("previousClose")
-        change = round(price - prev, 4) if price and prev else None
-        pct    = round((change / prev) * 100, 2) if change and prev else None
-        return {"price": price, "prev_close": prev, "change": change, "change_pct": pct, "currency": meta.get("currency", "USD")}
-    except Exception as e:
-        print(f"  [WARN] yahoo_quote {symbol} -> {e}")
-        return None
-
-def now_iso():
-    return datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
-
-def fetch_markets():
-    print("  Fetching: Markets")
-    symbols = {"SPY": "S&P 500 ETF", "QQQ": "Nasdaq 100 ETF", "GLD": "Gold ETF", "TLT": "20Y Treasury ETF", "BTC-USD": "Bitcoin", "EURUSD=X": "EUR/USD", "DX-Y.NYB": "DXY"}
-    quotes = {}
-    for sym, label in symbols.items():
-        q = yahoo_quote(sym)
-        if q:
-            quotes[sym] = {"label": label, **q}
-    csv = fetch_text("https://fred.stlouisfed.org/graph/fredgraph.csv?id=DGS10")
-    yield_10y = None
-    if csv:
-        lines = [l for l in csv.strip().splitlines() if l and not l.startswith("DATE")]
-        if lines:
-            try: yield_10y = float(lines[-1].split(",")[1])
-            except: pass
-    btc_price = quotes.get("BTC-USD", {}).get("price")
-    spy_pct   = quotes.get("SPY", {}).get("change_pct")
-    return {"last_updated": now_iso(), "quotes": quotes, "yield_10y": yield_10y,
-            "headline": f"SPY {spy_pct}%  |  BTC ${btc_price:,.0f}  |  10Y {yield_10y}%" if btc_price and yield_10y else None}
-
-def fetch_energy():
-    print("  Fetching: Energy")
-    symbols = {"CL=F": "WTI Crude ($/bbl)", "NG=F": "Natural Gas ($/MMBtu)", "BZ=F": "Brent Crude ($/bbl)", "XLE": "Energy ETF"}
-    quotes = {}
-    for sym, label in symbols.items():
-        q = yahoo_quote(sym)
-        if q:
-            quotes[sym] = {"label": label, **q}
-    headlines = parse_rss(fetch_text("https://www.eia.gov/rss/todayinenergy.xml"), max_items=4)
-    wti = quotes.get("CL=F", {}).get("price")
-    return {"last_updated": now_iso(), "quotes": quotes, "headlines": headlines,
-            "headline": f"WTI ${wti:.2f}/bbl" if wti else None}
-
-def fetch_companies():
-    print("  Fetching: Companies")
-    watchlist = {"NVDA": "NVIDIA", "MSFT": "Microsoft", "AAPL": "Apple", "META": "Meta", "TSLA": "Tesla", "AMZN": "Amazon", "GOOGL": "Alphabet"}
-    quotes = {}
-    for sym, label in watchlist.items():
-        q = yahoo_quote(sym)
-        if q:
-            quotes[sym] = {"label": label, **q}
-    sec_data = fetch_json("https://efts.sec.gov/LATEST/search-index?forms=8-K&startdt=2026-03-01")
-    filings = []
-    if sec_data and "hits" in sec_data:
-        for hit in sec_data["hits"].get("hits", [])[:5]:
-            src = hit.get("_source", {})
-            names = src.get("display_names", [])
-            entity = names[0].split(" (CIK")[0].strip() if names else ""
-            period = src.get("file_date", "")
-            link   = f"https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company={urllib.parse.quote(entity)}&type=8-K&dateb=&owner=include&count=5"
-            if entity:
-                filings.append({"title": f"{entity} — 8-K ({period})", "link": link, "published": period})
-    nvda_pct = quotes.get("NVDA", {}).get("change_pct")
-    msft_pct = quotes.get("MSFT", {}).get("change_pct")
-    return {"last_updated": now_iso(), "quotes": quotes, "recent_filings": filings,
-            "headline": f"NVDA {nvda_pct}%  |  MSFT {msft_pct}%" if nvda_pct else None}
-
-def fetch_sports():
-    print("  Fetching: Sports")
-    leagues = {"nfl": ("football", "NFL"), "nba": ("basketball", "NBA"), "mlb": ("baseball", "MLB")}
-    scores = {}
-    injuries = {}
-    for lid, (sport, label) in leagues.items():
-        sb = fetch_json(f"https://site.api.espn.com/apis/site/v2/sports/{sport}/{lid}/scoreboard")
-        if sb and "events" in sb:
-            games = []
-            for ev in sb["events"][:4]:
-                comps = ev.get("competitions", [{}])[0]
-                cs = comps.get("competitors", [])
-                if len(cs) == 2:
-                    games.append({"home": cs[0].get("team", {}).get("abbreviation", ""), "away": cs[1].get("team", {}).get("abbreviation", ""),
-                                  "home_score": cs[0].get("score", ""), "away_score": cs[1].get("score", ""),
-                                  "status": ev.get("status", {}).get("type", {}).get("shortDetail", "")})
-            scores[lid] = {"label": label, "games": games}
-        if lid in ("nfl", "nba"):
-            inj = fetch_json(f"https://site.api.espn.com/apis/site/v2/sports/{sport}/{lid}/injuries")
-            if inj and "injuries" in inj:
-                top = []
-                for ti in inj["injuries"][:3]:
-                    for p in ti.get("injuries", [])[:2]:
-                        top.append({"player": p.get("athlete", {}).get("displayName", ""), "team": ti.get("team", {}).get("abbreviation", ""),
-                                    "status": p.get("status", ""), "detail": p.get("shortComment", "")})
-                injuries[lid] = top
-    return {"last_updated": now_iso(), "scores": scores, "injuries": injuries, "headline": "NFL / NBA / MLB live scores"}
-
-def fetch_geopolitics():
-    print("  Fetching: Geopolitics")
-    gdelt_data = fetch_json("https://api.gdeltproject.org/api/v2/doc/doc?query=%28conflict+OR+sanctions+OR+military%29+sourcelang%3Aeng&mode=artlist&maxrecords=10&format=json")
-    gdelt = []
-    if gdelt_data and "articles" in gdelt_data:
-        for a in gdelt_data["articles"][:5]:
-            if a.get("title"):
-                gdelt.append({"title": a["title"], "link": a.get("url", ""), "published": a.get("seendate", "")})
-    bbc   = parse_rss(fetch_text("https://feeds.bbci.co.uk/news/world/rss.xml"), 5)
-    seen, headlines = set(), []
-    for item in gdelt + bbc:
-        key = item["title"][:40].lower()
-        if key not in seen:
-            seen.add(key)
-            headlines.append(item)
-        if len(headlines) >= 7:
-            break
-    return {"last_updated": now_iso(), "headlines": headlines[:7], "headline": headlines[0]["title"] if headlines else None}
-
-def fetch_technology():
-    print("  Fetching: Technology")
-    hn_top = fetch_json("https://hacker-news.firebaseio.com/v0/topstories.json")
-    hn_stories = []
-    if hn_top:
-        for sid in hn_top[:8]:
-            s = fetch_json(f"https://hacker-news.firebaseio.com/v0/item/{sid}.json")
-            if s and s.get("title"):
-                hn_stories.append({"title": s["title"], "url": s.get("url", f"https://news.ycombinator.com/item?id={sid}"), "score": s.get("score", 0), "comments": s.get("descendants", 0)})
-            if len(hn_stories) >= 5:
-                break
-    tech_news = parse_rss(fetch_text("https://www.wired.com/feed/category/science/latest/rss"), 5)
-    if not tech_news:
-        tech_news = parse_rss(fetch_text("https://feeds.arstechnica.com/arstechnica/technology-lab"), 5)
-    return {"last_updated": now_iso(), "hn_top": hn_stories, "tech_headlines": tech_news,
-            "headline": hn_stories[0]["title"] if hn_stories else None}
-
-def fetch_policy():
-    print("  Fetching: Policy")
-    bills = parse_rss(fetch_text("https://www.congress.gov/rss/most-viewed-bills.xml"), 5)
-    fr_data = fetch_json("https://www.federalregister.gov/api/v1/articles.json?conditions[type][]=RULE&conditions[type][]=PROPOSED_RULE&per_page=5&order=newest")
-    rules = []
-    if fr_data and "results" in fr_data:
-        for r in fr_data["results"][:5]:
-            title = r.get("title", "")
-            link  = r.get("html_url", "")
-            pub   = r.get("publication_date", "")
-            if title:
-                rules.append({"title": title, "link": link, "published": pub})
-    scotus = parse_rss(fetch_text("https://www.supremecourt.gov/rss/opinions/slipopinion/25"), 3) or []
-    headline = bills[0]["title"] if bills else (rules[0]["title"] if rules else None)
-    return {"last_updated": now_iso(), "bills": bills, "federal_rules": rules, "scotus": scotus, "headline": headline}
-
-def fetch_legal():
-    print("  Fetching: Legal (CourtListener)")
-    token = os.environ.get("COURTLISTENER_TOKEN", "")
-    headers = {"User-Agent": "InflectionOS/1.0"}
-    if token:
-        headers["Authorization"] = f"Token {token}"
-    queries = [
-        ("antitrust OR monopoly", "Antitrust"),
-        ("SEC enforcement OR FTC complaint", "Regulatory"),
-        ("First Amendment OR Fourth Amendment", "Constitutional"),
-    ]
-    cases = []
-    seen = set()
-    for q, tag in queries:
-        url = (
-            "https://www.courtlistener.com/api/rest/v4/search/"
-            "?q=" + urllib.parse.quote(q) + "&type=o&order_by=score+desc&page_size=3"
-        )
-        req = urllib.request.Request(url, headers=headers)
-        try:
-            with urllib.request.urlopen(req, timeout=10) as r:
-                data = json.loads(r.read().decode())
-            for hit in (data.get("results") or [])[:3]:
-                name = hit.get("caseName") or hit.get("case_name", "")
-                court = hit.get("court", "")
-                date = (hit.get("dateFiled") or hit.get("date_filed", ""))[:10]
-                url_path = hit.get("absolute_url", "")
-                link = "https://www.courtlistener.com" + url_path if url_path else ""
-                key = name[:40].lower()
-                if name and key not in seen:
-                    seen.add(key)
-                    cases.append({"title": name, "court": court, "date": date, "tag": tag, "link": link})
-        except Exception as e:
-            print("  [WARN] CourtListener query -> " + str(e))
-    scotus_rss = parse_rss(fetch_text("https://www.supremecourt.gov/rss/opinions/slipopinion/25"), 3)
-    headline = cases[0]["title"] if cases else (scotus_rss[0]["title"] if scotus_rss else None)
-    return {"last_updated": now_iso(), "cases": cases[:8], "scotus_opinions": scotus_rss, "headline": headline}
-
-def build_payload():
-    print("Building live data payload...")
-    return {
-        "schema_version": "1.2",
-        "fetched_at": now_iso(),
-        "domains": {
-            "markets":     fetch_markets(),
-            "energy":      fetch_energy(),
-            "companies":   fetch_companies(),
-            "sports":      fetch_sports(),
-            "geopolitics": fetch_geopolitics(),
-            "technology":  fetch_technology(),
-            "policy":      fetch_policy(),
-            "legal":       fetch_legal(),
+{
+  "schema_version": "1.2",
+  "fetched_at": "2026-03-10T16:30:56Z",
+  "domains": {
+    "markets": {
+      "last_updated": "2026-03-10T16:30:58Z",
+      "quotes": {
+        "SPY": {
+          "label": "S&P 500 ETF",
+          "price": 680.88,
+          "prev_close": 678.27,
+          "change": 2.61,
+          "change_pct": 0.38,
+          "currency": "USD"
+        },
+        "QQQ": {
+          "label": "Nasdaq 100 ETF",
+          "price": 611.45,
+          "prev_close": 607.76,
+          "change": 3.69,
+          "change_pct": 0.61,
+          "currency": "USD"
+        },
+        "GLD": {
+          "label": "Gold ETF",
+          "price": 480.71,
+          "prev_close": 472.53,
+          "change": 8.18,
+          "change_pct": 1.73,
+          "currency": "USD"
+        },
+        "TLT": {
+          "label": "20Y Treasury ETF",
+          "price": 88.84,
+          "prev_close": 89.23,
+          "change": -0.39,
+          "change_pct": -0.44,
+          "currency": "USD"
+        },
+        "BTC-USD": {
+          "label": "Bitcoin",
+          "price": 71434.94,
+          "prev_close": 68443.15,
+          "change": 2991.79,
+          "change_pct": 4.37,
+          "currency": "USD"
+        },
+        "EURUSD=X": {
+          "label": "EUR/USD",
+          "price": 1.165,
+          "prev_close": 1.1636,
+          "change": 0.0014,
+          "change_pct": 0.12,
+          "currency": "USD"
+        },
+        "DX-Y.NYB": {
+          "label": "DXY",
+          "price": 98.665,
+          "prev_close": 99.175,
+          "change": -0.51,
+          "change_pct": -0.51,
+          "currency": "USD"
         }
+      },
+      "yield_10y": 4.15,
+      "headline": "SPY 0.38%  |  BTC $71,435  |  10Y 4.15%"
+    },
+    "energy": {
+      "last_updated": "2026-03-10T16:31:08Z",
+      "quotes": {
+        "CL=F": {
+          "label": "WTI Crude ($/bbl)",
+          "price": 85.05,
+          "prev_close": 94.77,
+          "change": -9.72,
+          "change_pct": -10.26,
+          "currency": "USD"
+        },
+        "NG=F": {
+          "label": "Natural Gas ($/MMBtu)",
+          "price": 3.044,
+          "prev_close": 3.12,
+          "change": -0.076,
+          "change_pct": -2.44,
+          "currency": "USD"
+        },
+        "BZ=F": {
+          "label": "Brent Crude ($/bbl)",
+          "price": 85.99,
+          "prev_close": 93.72,
+          "change": -7.73,
+          "change_pct": -8.25,
+          "currency": "USD"
+        },
+        "XLE": {
+          "label": "Energy ETF",
+          "price": 56.11,
+          "prev_close": 56.32,
+          "change": -0.21,
+          "change_pct": -0.37,
+          "currency": "USD"
+        }
+      },
+      "headlines": [],
+      "headline": "WTI $85.05/bbl"
+    },
+    "companies": {
+      "last_updated": "2026-03-10T16:31:10Z",
+      "quotes": {
+        "NVDA": {
+          "label": "NVIDIA",
+          "price": 185.39,
+          "prev_close": 182.65,
+          "change": 2.74,
+          "change_pct": 1.5,
+          "currency": "USD"
+        },
+        "MSFT": {
+          "label": "Microsoft",
+          "price": 407.435,
+          "prev_close": 409.41,
+          "change": -1.975,
+          "change_pct": -0.48,
+          "currency": "USD"
+        },
+        "AAPL": {
+          "label": "Apple",
+          "price": 261.69,
+          "prev_close": 259.88,
+          "change": 1.81,
+          "change_pct": 0.7,
+          "currency": "USD"
+        },
+        "META": {
+          "label": "Meta",
+          "price": 657.91,
+          "prev_close": 647.39,
+          "change": 10.52,
+          "change_pct": 1.62,
+          "currency": "USD"
+        },
+        "TSLA": {
+          "label": "Tesla",
+          "price": 402.78,
+          "prev_close": 398.68,
+          "change": 4.1,
+          "change_pct": 1.03,
+          "currency": "USD"
+        },
+        "AMZN": {
+          "label": "Amazon",
+          "price": 215.01,
+          "prev_close": 213.49,
+          "change": 1.52,
+          "change_pct": 0.71,
+          "currency": "USD"
+        },
+        "GOOGL": {
+          "label": "Alphabet",
+          "price": 308.437,
+          "prev_close": 306.36,
+          "change": 2.077,
+          "change_pct": 0.68,
+          "currency": "USD"
+        }
+      },
+      "recent_filings": [
+        {
+          "title": "Aclaris Therapeutics, Inc.  (ACRS) \u2014 8-K (2026-03-10)",
+          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Aclaris%20Therapeutics%2C%20Inc.%20%20%28ACRS%29&type=8-K&dateb=&owner=include&count=5",
+          "published": "2026-03-10"
+        },
+        {
+          "title": "Synchrony Financial  (SYF, SYF-PA, SYF-PB) \u2014 8-K (2026-03-10)",
+          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Synchrony%20Financial%20%20%28SYF%2C%20SYF-PA%2C%20SYF-PB%29&type=8-K&dateb=&owner=include&count=5",
+          "published": "2026-03-10"
+        },
+        {
+          "title": "AN2 Therapeutics, Inc.  (ANTX) \u2014 8-K (2026-03-10)",
+          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=AN2%20Therapeutics%2C%20Inc.%20%20%28ANTX%29&type=8-K&dateb=&owner=include&count=5",
+          "published": "2026-03-10"
+        },
+        {
+          "title": "Archimedes Tech SPAC Partners III Co.  (ARCI, ARCIU) \u2014 8-K (2026-03-10)",
+          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Archimedes%20Tech%20SPAC%20Partners%20III%20Co.%20%20%28ARCI%2C%20ARCIU%29&type=8-K&dateb=&owner=include&count=5",
+          "published": "2026-03-10"
+        },
+        {
+          "title": "STARZ ENTERTAINMENT CORP /CN/  (STRZ) \u2014 8-K (2026-03-10)",
+          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=STARZ%20ENTERTAINMENT%20CORP%20/CN/%20%20%28STRZ%29&type=8-K&dateb=&owner=include&count=5",
+          "published": "2026-03-10"
+        }
+      ],
+      "headline": "NVDA 1.5%  |  MSFT -0.48%"
+    },
+    "sports": {
+      "last_updated": "2026-03-10T16:31:11Z",
+      "scores": {
+        "nfl": {
+          "label": "NFL",
+          "games": [
+            {
+              "home": "NE",
+              "away": "SEA",
+              "home_score": "13",
+              "away_score": "29",
+              "status": "Final"
+            }
+          ]
+        },
+        "nba": {
+          "label": "NBA",
+          "games": [
+            {
+              "home": "PHI",
+              "away": "MEM",
+              "home_score": "0",
+              "away_score": "0",
+              "status": "3/10 - 7:00 PM EDT"
+            },
+            {
+              "home": "BKN",
+              "away": "DET",
+              "home_score": "0",
+              "away_score": "0",
+              "status": "3/10 - 7:30 PM EDT"
+            },
+            {
+              "home": "MIA",
+              "away": "WSH",
+              "home_score": "0",
+              "away_score": "0",
+              "status": "3/10 - 7:30 PM EDT"
+            },
+            {
+              "home": "ATL",
+              "away": "DAL",
+              "home_score": "0",
+              "away_score": "0",
+              "status": "3/10 - 7:30 PM EDT"
+            }
+          ]
+        },
+        "mlb": {
+          "label": "MLB",
+          "games": [
+            {
+              "home": "BOS",
+              "away": "DET",
+              "home_score": "0",
+              "away_score": "0",
+              "status": "3/10 - 1:05 PM EDT"
+            },
+            {
+              "home": "HOU",
+              "away": "BAL",
+              "home_score": "0",
+              "away_score": "0",
+              "status": "3/10 - 1:05 PM EDT"
+            },
+            {
+              "home": "PHI",
+              "away": "NYY",
+              "home_score": "0",
+              "away_score": "0",
+              "status": "3/10 - 1:05 PM EDT"
+            },
+            {
+              "home": "TB",
+              "away": "MIN",
+              "home_score": "0",
+              "away_score": "0",
+              "status": "3/10 - 1:05 PM EDT"
+            }
+          ]
+        }
+      },
+      "injuries": {
+        "nfl": [
+          {
+            "player": "Isaac Seumalo",
+            "team": "",
+            "status": "Active",
+            "detail": "The Cardinals agreed to terms with Seumalo on a three-year, $31.5 million contract Monday, Jeremy Fowler of ESPN.com reports."
+          },
+          {
+            "player": "Roy Lopez",
+            "team": "",
+            "status": "Active",
+            "detail": "Lopez signed a two-year, $11.5 million contract with the Cardinals on Monday that includes $7 million guaranteed, Ian Rapoport of NFL Network reports."
+          },
+          {
+            "player": "Tyrone Wheatley Jr.",
+            "team": "",
+            "status": "Questionable",
+            "detail": "questionable"
+          },
+          {
+            "player": "Cameron Thomas",
+            "team": "",
+            "status": "Active",
+            "detail": "Thomas agreed to a one-year, $3.1 million contract with the Falcons on Monday, Marc Raimondi of ESPN.com reports."
+          },
+          {
+            "player": "John Simpson",
+            "team": "",
+            "status": "Active",
+            "detail": "Simpson agreed to a three-year, $30 million contract with the Ravens on Monday, Mike Garafolo of NFL Network reports."
+          },
+          {
+            "player": "Tyler Huntley",
+            "team": "",
+            "status": "Active",
+            "detail": "Huntley and the Ravens agreed to a two-year, $11 million contract Saturday, Adam Schefter of ESPN reports."
+          }
+        ],
+        "nba": [
+          {
+            "player": "Jonathan Kuminga",
+            "team": "",
+            "status": "Day-To-Day",
+            "detail": "Kuminga is questionable for Tuesday's game against the Mavericks due to a left knee bone bruise."
+          },
+          {
+            "player": "Payton Pritchard",
+            "team": "",
+            "status": "Day-To-Day",
+            "detail": "Pritchard (neck) is Taylor Snow of the Celtics' official site for Tuesday's game against the Spurs."
+          },
+          {
+            "player": "Nikola Vucevic",
+            "team": "",
+            "status": "Out",
+            "detail": "Vucevic underwent surgery Saturday to stabilize a fracture in his right ring finger and will be reevaluated in 3-to-4 weeks."
+          },
+          {
+            "player": "Michael Porter Jr.",
+            "team": "",
+            "status": "Day-To-Day",
+            "detail": "Porter (rest) has been ruled out for Monday's game against the Grizzlies."
+          },
+          {
+            "player": "Egor Demin",
+            "team": "",
+            "status": "Out",
+            "detail": "The Nets announced Monday that Demin (foot) will miss the rest of the season, NBA reporter Marc Stein reports."
+          }
+        ]
+      },
+      "headline": "NFL / NBA / MLB live scores"
+    },
+    "geopolitics": {
+      "last_updated": "2026-03-10T16:31:11Z",
+      "headlines": [
+        {
+          "title": "'I just want to be able to sleep': Attacks in Iran rock cities and cut power",
+          "link": "https://www.bbc.com/news/articles/cev7llekwllo?at_medium=RSS&at_campaign=rss",
+          "published": "Tue, 10 Mar 2026 13:26:17 GMT"
+        },
+        {
+          "title": "Five Iranian footballers granted Australian visas after anthem protest",
+          "link": "https://www.bbc.com/news/articles/cwy8e978xl8o?at_medium=RSS&at_campaign=rss",
+          "published": "Tue, 10 Mar 2026 10:38:32 GMT"
+        },
+        {
+          "title": "Lebanon calls for talks with Israel on plan to end Hezbollah conflict",
+          "link": "https://www.bbc.com/news/articles/cd9g5p3ppxlo?at_medium=RSS&at_campaign=rss",
+          "published": "Tue, 10 Mar 2026 12:00:25 GMT"
+        },
+        {
+          "title": "Family of child injured in Canada school shooting sues OpenAI",
+          "link": "https://www.bbc.com/news/articles/c309y25prnlo?at_medium=RSS&at_campaign=rss",
+          "published": "Tue, 10 Mar 2026 11:27:55 GMT"
+        },
+        {
+          "title": "Syrian ex-colonel in court on crimes against humanity charge",
+          "link": "https://www.bbc.com/news/articles/cedz4jp379wo?at_medium=RSS&at_campaign=rss",
+          "published": "Tue, 10 Mar 2026 14:17:37 GMT"
+        }
+      ],
+      "headline": "'I just want to be able to sleep': Attacks in Iran rock cities and cut power"
+    },
+    "technology": {
+      "last_updated": "2026-03-10T16:31:12Z",
+      "hn_top": [
+        {
+          "title": "Tony Hoare has died",
+          "url": "https://blog.computationalcomplexity.org/2026/03/tony-hoare-1934-2026.html",
+          "score": 405,
+          "comments": 37
+        },
+        {
+          "title": "Intel Demos Chip to Compute with Encrypted Data",
+          "url": "https://spectrum.ieee.org/fhe-intel",
+          "score": 122,
+          "comments": 32
+        },
+        {
+          "title": "Rebasing in Magit",
+          "url": "https://entropicthoughts.com/rebasing-in-magit",
+          "score": 108,
+          "comments": 73
+        },
+        {
+          "title": "I put my whole life into a single database",
+          "url": "https://howisfelix.today/",
+          "score": 301,
+          "comments": 139
+        },
+        {
+          "title": "Launch HN: Didit (YC W26) \u2013 Stripe for Identity Verification",
+          "url": "https://news.ycombinator.com/item?id=47324296",
+          "score": 20,
+          "comments": 20
+        }
+      ],
+      "tech_headlines": [
+        {
+          "title": "How Can a Locomotive Pull a Long Train That\u2019s Much Heavier?",
+          "link": "https://www.wired.com/story/how-can-a-locomotive-pull-a-train-thats-much-heavier/",
+          "published": "Tue, 10 Mar 2026 11:00:00 +0000"
+        },
+        {
+          "title": "Don\u2019t Expect Big Surprises in the Government\u2019s Alien Files",
+          "link": "https://www.wired.com/story/dont-expect-big-surprises-in-the-governments-alien-files/",
+          "published": "Mon, 09 Mar 2026 10:00:00 +0000"
+        },
+        {
+          "title": "Why RFK\u2019s CDC Is Endorsing \u2018Shared Decisionmaking\u2019 for Vaccines",
+          "link": "https://www.wired.com/story/why-rfks-cdc-is-endorsing-shared-decision-making-for-vaccines/",
+          "published": "Mon, 09 Mar 2026 09:30:00 +0000"
+        },
+        {
+          "title": "Left-Handed People Are More Competitive, Says Science",
+          "link": "https://www.wired.com/story/left-handed-people-are-more-competitive-says-science/",
+          "published": "Sun, 08 Mar 2026 09:00:00 +0000"
+        },
+        {
+          "title": "Sleep Apnea Often Goes Undetected in Women. That\u2019s Starting to Change",
+          "link": "https://www.wired.com/story/sleep-apnea-women-detection-treatment/",
+          "published": "Fri, 06 Mar 2026 09:30:00 +0000"
+        }
+      ],
+      "headline": "Tony Hoare has died"
+    },
+    "policy": {
+      "last_updated": "2026-03-10T16:31:13Z",
+      "bills": [
+        {
+          "title": "Most-Viewed Bills - Week of March 8, 2026",
+          "link": "https://www.congress.gov/most-viewed-bills",
+          "published": ""
+        }
+      ],
+      "federal_rules": [
+        {
+          "title": "Updates to the Popcorn Promotion, Research, and Consumer Information Order",
+          "link": "https://www.federalregister.gov/documents/2026/03/10/2026-04694/updates-to-the-popcorn-promotion-research-and-consumer-information-order",
+          "published": "2026-03-10"
+        },
+        {
+          "title": "Fisheries of the Exclusive Economic Zone Off Alaska; Bering Sea and Aleutian Islands; 2026 and 2027 Harvest Specifications for Groundfish",
+          "link": "https://www.federalregister.gov/documents/2026/03/10/2026-04684/fisheries-of-the-exclusive-economic-zone-off-alaska-bering-sea-and-aleutian-islands-2026-and-2027",
+          "published": "2026-03-10"
+        },
+        {
+          "title": "Airworthiness Directives; Airbus SAS Airplanes",
+          "link": "https://www.federalregister.gov/documents/2026/03/10/2026-04677/airworthiness-directives-airbus-sas-airplanes",
+          "published": "2026-03-10"
+        },
+        {
+          "title": "Designation of Propionyl Chloride as a List I Chemical",
+          "link": "https://www.federalregister.gov/documents/2026/03/10/2026-04657/designation-of-propionyl-chloride-as-a-list-i-chemical",
+          "published": "2026-03-10"
+        },
+        {
+          "title": "Air Plan Approval; North Dakota; Approval of Air Quality Implementation Plans; Regional Haze State Implementation Plan; Regional Haze Five Year Progress Report and Nitrogen Oxides Best Available Retrofit Technology Determination for Coal Creek Station for the First Implementation Period",
+          "link": "https://www.federalregister.gov/documents/2026/03/10/2026-04649/air-plan-approval-north-dakota-approval-of-air-quality-implementation-plans-regional-haze-state",
+          "published": "2026-03-10"
+        }
+      ],
+      "scotus": [],
+      "headline": "Most-Viewed Bills - Week of March 8, 2026"
+    },
+    "legal": {
+      "last_updated": "2026-03-10T16:31:35Z",
+      "cases": [
+        {
+          "title": "Knight First Amendment Institute at Columbia University v. CIA",
+          "court": "Court of Appeals for the D.C. Circuit",
+          "date": "2021-08-27",
+          "tag": "Constitutional",
+          "link": "https://www.courtlistener.com/opinion/5064123/knight-first-amendment-institute-at-columbia-university-v-cia/"
+        },
+        {
+          "title": "Ratification of the Equal Rights Amendment",
+          "court": "Department of Justice Office of Legal Counsel",
+          "date": "2020-01-06",
+          "tag": "Constitutional",
+          "link": "https://www.courtlistener.com/opinion/4713839/ratification-of-the-equal-rights-amendment/"
+        }
+      ],
+      "scotus_opinions": [],
+      "headline": "Knight First Amendment Institute at Columbia University v. CIA"
     }
-
-if __name__ == "__main__":
-    payload = build_payload()
-    out_path = "/tmp/data.json"
-    with open(out_path, "w") as f:
-        json.dump(payload, f, indent=2)
-    print(f"\nSaved to {out_path}")
-    # Print summary
-    for domain, data in payload["domains"].items():
-        headline = data.get("headline", "(no headline)")
-        print(f"  [{domain}] {headline}")
+  }
+}
