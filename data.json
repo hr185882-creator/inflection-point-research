@@ -1,9 +1,9 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-10T08:19:38Z",
+  "fetched_at": "2026-03-10T08:35:56Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-10T08:19:40Z",
+      "last_updated": "2026-03-10T08:35:56Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
@@ -39,57 +39,57 @@
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 70809.62,
+          "price": 70919.875,
           "prev_close": 68443.15,
-          "change": 2366.47,
-          "change_pct": 3.46,
+          "change": 2476.725,
+          "change_pct": 3.62,
           "currency": "USD"
         },
         "EURUSD=X": {
           "label": "EUR/USD",
-          "price": 1.1654,
+          "price": 1.1655,
           "prev_close": 1.1636,
-          "change": 0.0018,
-          "change_pct": 0.15,
+          "change": 0.0019,
+          "change_pct": 0.16,
           "currency": "USD"
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 98.59,
+          "price": 98.58,
           "prev_close": 99.175,
-          "change": -0.585,
-          "change_pct": -0.59,
+          "change": -0.595,
+          "change_pct": -0.6,
           "currency": "USD"
         }
       },
       "yield_10y": 4.15,
-      "headline": "SPY 0.88%  |  BTC $70,810  |  10Y 4.15%"
+      "headline": "SPY 0.88%  |  BTC $70,920  |  10Y 4.15%"
     },
     "energy": {
-      "last_updated": "2026-03-10T08:19:49Z",
+      "last_updated": "2026-03-10T08:36:06Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 86.68,
+          "price": 86.87,
           "prev_close": 94.77,
-          "change": -8.09,
-          "change_pct": -8.54,
+          "change": -7.9,
+          "change_pct": -8.34,
           "currency": "USD"
         },
         "NG=F": {
           "label": "Natural Gas ($/MMBtu)",
-          "price": 3.059,
+          "price": 3.075,
           "prev_close": 3.12,
-          "change": -0.061,
-          "change_pct": -1.96,
+          "change": -0.045,
+          "change_pct": -1.44,
           "currency": "USD"
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 86.37,
+          "price": 86.74,
           "prev_close": 93.72,
-          "change": -7.35,
-          "change_pct": -7.84,
+          "change": -6.98,
+          "change_pct": -7.45,
           "currency": "USD"
         },
         "XLE": {
@@ -101,32 +101,11 @@
           "currency": "USD"
         }
       },
-      "headlines": [
-        {
-          "title": "U.S. exports of major transportation fuels in 2025 were about the same as in 2024",
-          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67304",
-          "published": "Mon, 09 Mar 2026 09:00:00 EST"
-        },
-        {
-          "title": "U.S. electricity generation in 2025 hit a record, again",
-          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67284",
-          "published": "Thu, 05 Mar 2026 09:00:00 EST"
-        },
-        {
-          "title": "U.S. LNG developers sign highest volume of sale and purchase contracts since 2022",
-          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67264",
-          "published": "Tue, 03 Mar 2026 09:00:00 EST"
-        },
-        {
-          "title": "Nuclear reactor restart in Japan will likely displace natural gas electricity generation",
-          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67244",
-          "published": "Mon, 02 Mar 2026  09:00:00 EST"
-        }
-      ],
-      "headline": "WTI $86.68/bbl"
+      "headlines": [],
+      "headline": "WTI $86.87/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-10T08:19:51Z",
+      "last_updated": "2026-03-10T08:36:07Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
@@ -215,7 +194,7 @@
       "headline": "NVDA 2.68%  |  MSFT 0.11%"
     },
     "sports": {
-      "last_updated": "2026-03-10T08:19:52Z",
+      "last_updated": "2026-03-10T08:36:08Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -371,78 +350,78 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-10T08:20:02Z",
+      "last_updated": "2026-03-10T08:36:15Z",
       "headlines": [
         {
           "title": "Rising prices, mixed messages: Iran war is fraught with political risk for Trump",
-          "link": "https://www.bbc.com/news/articles/c93j2dw72q9o",
+          "link": "https://www.bbc.com/news/articles/c93j2dw72q9o?at_medium=RSS&at_campaign=rss",
           "published": "Tue, 10 Mar 2026 02:37:46 GMT"
         },
         {
           "title": "Faisal Islam: Trump comments may have eased oil price surge, but havoc remains",
-          "link": "https://www.bbc.com/news/articles/cz7g5vv2gejo",
+          "link": "https://www.bbc.com/news/articles/cz7g5vv2gejo?at_medium=RSS&at_campaign=rss",
           "published": "Tue, 10 Mar 2026 00:48:12 GMT"
         },
         {
           "title": "Five Iranian footballers granted Australian visas after anthem protest",
-          "link": "https://www.bbc.com/news/articles/cwy8e978xl8o",
+          "link": "https://www.bbc.com/news/articles/cwy8e978xl8o?at_medium=RSS&at_campaign=rss",
           "published": "Tue, 10 Mar 2026 07:00:04 GMT"
         },
         {
           "title": "G7 to take 'necessary measures' to support energy supplies",
-          "link": "https://www.bbc.com/news/articles/c79542n0grwo",
+          "link": "https://www.bbc.com/news/articles/c79542n0grwo?at_medium=RSS&at_campaign=rss",
           "published": "Mon, 09 Mar 2026 23:30:46 GMT"
         },
         {
           "title": "Anthropic sues US government for calling it a risk",
-          "link": "https://www.bbc.com/news/articles/cq571w5vllxo",
+          "link": "https://www.bbc.com/news/articles/cq571w5vllxo?at_medium=RSS&at_campaign=rss",
           "published": "Mon, 09 Mar 2026 21:33:05 GMT"
         }
       ],
       "headline": "Rising prices, mixed messages: Iran war is fraught with political risk for Trump"
     },
     "technology": {
-      "last_updated": "2026-03-10T08:20:03Z",
+      "last_updated": "2026-03-10T08:36:15Z",
       "hn_top": [
         {
           "title": "Two Years of Emacs Solo",
           "url": "https://www.rahuljuliato.com/posts/emacs-solo-two-years",
-          "score": 214,
-          "comments": 53
-        },
-        {
-          "title": "macOS Tahoe windows have different corner radiuses",
-          "url": "https://lapcatsoftware.com/articles/2026/3/1.html",
-          "score": 68,
-          "comments": 36
+          "score": 221,
+          "comments": 55
         },
         {
           "title": "Lotus 1-2-3 on the PC with DOS",
           "url": "https://stonetools.ghost.io/lotus123-dos/",
-          "score": 47,
-          "comments": 12
+          "score": 58,
+          "comments": 14
         },
         {
-          "title": "Optimizing Top K in Postgres",
-          "url": "https://www.paradedb.com/blog/optimizing-top-k",
-          "score": 53,
-          "comments": 6
+          "title": "macOS Tahoe windows have different corner radiuses",
+          "url": "https://lapcatsoftware.com/articles/2026/3/1.html",
+          "score": 82,
+          "comments": 43
         },
         {
           "title": "No, it doesn't cost Anthropic $5k per Claude Code user",
           "url": "https://martinalderson.com/posts/no-it-doesnt-cost-anthropic-5k-per-claude-code-user/",
-          "score": 150,
-          "comments": 94
+          "score": 161,
+          "comments": 104
+        },
+        {
+          "title": "Optimizing Top K in Postgres",
+          "url": "https://www.paradedb.com/blog/optimizing-top-k",
+          "score": 55,
+          "comments": 7
         }
       ],
       "tech_headlines": [
         {
-          "title": "Don't Expect Big Surprises in the Government's Alien Files",
+          "title": "Don\u2019t Expect Big Surprises in the Government\u2019s Alien Files",
           "link": "https://www.wired.com/story/dont-expect-big-surprises-in-the-governments-alien-files/",
           "published": "Mon, 09 Mar 2026 10:00:00 +0000"
         },
         {
-          "title": "Why RFK's CDC Is Endorsing 'Shared Decisionmaking' for Vaccines",
+          "title": "Why RFK\u2019s CDC Is Endorsing \u2018Shared Decisionmaking\u2019 for Vaccines",
           "link": "https://www.wired.com/story/why-rfks-cdc-is-endorsing-shared-decision-making-for-vaccines/",
           "published": "Mon, 09 Mar 2026 09:30:00 +0000"
         },
@@ -452,7 +431,7 @@
           "published": "Sun, 08 Mar 2026 09:00:00 +0000"
         },
         {
-          "title": "Sleep Apnea Often Goes Undetected in Women. That's Starting to Change",
+          "title": "Sleep Apnea Often Goes Undetected in Women. That\u2019s Starting to Change",
           "link": "https://www.wired.com/story/sleep-apnea-women-detection-treatment/",
           "published": "Fri, 06 Mar 2026 09:30:00 +0000"
         },
@@ -465,7 +444,7 @@
       "headline": "Two Years of Emacs Solo"
     },
     "policy": {
-      "last_updated": "2026-03-10T08:20:04Z",
+      "last_updated": "2026-03-10T08:36:16Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -495,7 +474,7 @@
           "published": "2026-03-10"
         },
         {
-          "title": "Air Plan Approval; North Dakota; Approval of Air Quality Implementation Plans; Regional Haze State Implementation Plan",
+          "title": "Air Plan Approval; North Dakota; Approval of Air Quality Implementation Plans; Regional Haze State Implementation Plan; Regional Haze Five Year Progress Report and Nitrogen Oxides Best Available Retrofit Technology Determination for Coal Creek Station for the First Implementation Period",
           "link": "https://www.federalregister.gov/documents/2026/03/10/2026-04649/air-plan-approval-north-dakota-approval-of-air-quality-implementation-plans-regional-haze-state",
           "published": "2026-03-10"
         }
@@ -504,7 +483,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-10T08:20:06Z",
+      "last_updated": "2026-03-10T08:36:17Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
