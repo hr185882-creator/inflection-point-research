@@ -1,103 +1,103 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-10T14:03:02Z",
+  "fetched_at": "2026-03-10T14:31:02Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-10T14:03:03Z",
+      "last_updated": "2026-03-10T14:31:02Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
-          "price": 675.506,
+          "price": 678.37,
           "prev_close": 678.27,
-          "change": -2.764,
-          "change_pct": -0.41,
+          "change": 0.1,
+          "change_pct": 0.01,
           "currency": "USD"
         },
         "QQQ": {
           "label": "Nasdaq 100 ETF",
-          "price": 606.661,
+          "price": 608.87,
           "prev_close": 607.76,
-          "change": -1.099,
-          "change_pct": -0.18,
+          "change": 1.11,
+          "change_pct": 0.18,
           "currency": "USD"
         },
         "GLD": {
           "label": "Gold ETF",
-          "price": 477.96,
+          "price": 478.81,
           "prev_close": 472.53,
-          "change": 5.43,
-          "change_pct": 1.15,
+          "change": 6.28,
+          "change_pct": 1.33,
           "currency": "USD"
         },
         "TLT": {
           "label": "20Y Treasury ETF",
-          "price": 88.805,
+          "price": 88.79,
           "prev_close": 89.23,
-          "change": -0.425,
-          "change_pct": -0.48,
+          "change": -0.44,
+          "change_pct": -0.49,
           "currency": "USD"
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 69665.44,
+          "price": 69808.195,
           "prev_close": 68443.15,
-          "change": 1222.29,
-          "change_pct": 1.79,
+          "change": 1365.045,
+          "change_pct": 1.99,
           "currency": "USD"
         },
         "EURUSD=X": {
           "label": "EUR/USD",
-          "price": 1.1633,
+          "price": 1.1647,
           "prev_close": 1.1636,
-          "change": -0.0003,
-          "change_pct": -0.03,
+          "change": 0.0011,
+          "change_pct": 0.09,
           "currency": "USD"
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 98.751,
+          "price": 98.694,
           "prev_close": 99.175,
-          "change": -0.424,
-          "change_pct": -0.43,
+          "change": -0.481,
+          "change_pct": -0.49,
           "currency": "USD"
         }
       },
       "yield_10y": 4.15,
-      "headline": "SPY -0.41%  |  BTC $69,665  |  10Y 4.15%"
+      "headline": "SPY 0.01%  |  BTC $69,808  |  10Y 4.15%"
     },
     "energy": {
-      "last_updated": "2026-03-10T14:03:11Z",
+      "last_updated": "2026-03-10T14:31:12Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 87.9,
+          "price": 87.18,
           "prev_close": 94.77,
-          "change": -6.87,
-          "change_pct": -7.25,
+          "change": -7.59,
+          "change_pct": -8.01,
           "currency": "USD"
         },
         "NG=F": {
           "label": "Natural Gas ($/MMBtu)",
-          "price": 3.039,
+          "price": 3.052,
           "prev_close": 3.12,
-          "change": -0.081,
-          "change_pct": -2.6,
+          "change": -0.068,
+          "change_pct": -2.18,
           "currency": "USD"
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 87.3,
+          "price": 86.63,
           "prev_close": 93.72,
-          "change": -6.42,
-          "change_pct": -6.85,
+          "change": -7.09,
+          "change_pct": -7.57,
           "currency": "USD"
         },
         "XLE": {
           "label": "Energy ETF",
-          "price": 55.84,
+          "price": 56.164,
           "prev_close": 56.32,
-          "change": -0.48,
-          "change_pct": -0.85,
+          "change": -0.156,
+          "change_pct": -0.28,
           "currency": "USD"
         }
       },
@@ -123,65 +123,65 @@
           "published": "Tue, 03 Mar 2026 09:00:00 EST"
         }
       ],
-      "headline": "WTI $87.90/bbl"
+      "headline": "WTI $87.18/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-10T14:03:12Z",
+      "last_updated": "2026-03-10T14:31:13Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
-          "price": 182.25,
+          "price": 184.265,
           "prev_close": 182.65,
-          "change": -0.4,
-          "change_pct": -0.22,
+          "change": 1.615,
+          "change_pct": 0.88,
           "currency": "USD"
         },
         "MSFT": {
           "label": "Microsoft",
-          "price": 403.93,
+          "price": 404.696,
           "prev_close": 409.41,
-          "change": -5.48,
-          "change_pct": -1.34,
+          "change": -4.714,
+          "change_pct": -1.15,
           "currency": "USD"
         },
         "AAPL": {
           "label": "Apple",
-          "price": 257.81,
+          "price": 260.22,
           "prev_close": 259.88,
-          "change": -2.07,
-          "change_pct": -0.8,
+          "change": 0.34,
+          "change_pct": 0.13,
           "currency": "USD"
         },
         "META": {
           "label": "Meta",
-          "price": 652.64,
+          "price": 653.8,
           "prev_close": 647.39,
-          "change": 5.25,
-          "change_pct": 0.81,
+          "change": 6.41,
+          "change_pct": 0.99,
           "currency": "USD"
         },
         "TSLA": {
           "label": "Tesla",
-          "price": 404.73,
+          "price": 401.54,
           "prev_close": 398.68,
-          "change": 6.05,
-          "change_pct": 1.52,
+          "change": 2.86,
+          "change_pct": 0.72,
           "currency": "USD"
         },
         "AMZN": {
           "label": "Amazon",
-          "price": 213.02,
+          "price": 214.47,
           "prev_close": 213.49,
-          "change": -0.47,
-          "change_pct": -0.22,
+          "change": 0.98,
+          "change_pct": 0.46,
           "currency": "USD"
         },
         "GOOGL": {
           "label": "Alphabet",
-          "price": 305.815,
+          "price": 307.17,
           "prev_close": 306.36,
-          "change": -0.545,
-          "change_pct": -0.18,
+          "change": 0.81,
+          "change_pct": 0.26,
           "currency": "USD"
         }
       },
@@ -212,10 +212,10 @@
           "published": "2026-03-10"
         }
       ],
-      "headline": "NVDA -0.22%  |  MSFT -1.34%"
+      "headline": "NVDA 0.88%  |  MSFT -1.15%"
     },
     "sports": {
-      "last_updated": "2026-03-10T14:03:13Z",
+      "last_updated": "2026-03-10T14:31:14Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -371,7 +371,7 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-10T14:03:13Z",
+      "last_updated": "2026-03-10T14:31:14Z",
       "headlines": [
         {
           "title": "Mixed messages from Trump leave more questions than answers over war's end",
@@ -396,43 +396,43 @@
         {
           "title": "Canada police investigate reports of shots fired at US consulate in Toronto",
           "link": "https://www.bbc.com/news/articles/cwy8lrq9rg2o?at_medium=RSS&at_campaign=rss",
-          "published": "Tue, 10 Mar 2026 12:30:22 GMT"
+          "published": "Tue, 10 Mar 2026 14:22:03 GMT"
         }
       ],
       "headline": "Mixed messages from Trump leave more questions than answers over war's end"
     },
     "technology": {
-      "last_updated": "2026-03-10T14:03:14Z",
+      "last_updated": "2026-03-10T14:31:15Z",
       "hn_top": [
         {
           "title": "Rebasing in Magit",
           "url": "https://entropicthoughts.com/rebasing-in-magit",
-          "score": 17,
-          "comments": 2
-        },
-        {
-          "title": "I put my whole life into a single database",
-          "url": "https://howisfelix.today/",
-          "score": 205,
-          "comments": 85
+          "score": 39,
+          "comments": 27
         },
         {
           "title": "Intel Demos Chip to Compute with Encrypted Data",
           "url": "https://spectrum.ieee.org/fhe-intel",
-          "score": 20,
-          "comments": 0
+          "score": 47,
+          "comments": 8
+        },
+        {
+          "title": "I put my whole life into a single database",
+          "url": "https://howisfelix.today/",
+          "score": 228,
+          "comments": 99
         },
         {
           "title": "FreeBSD 14.4-Release Announcement",
           "url": "https://www.freebsd.org/releases/14.4R/announce/",
-          "score": 80,
-          "comments": 16
+          "score": 93,
+          "comments": 22
         },
         {
           "title": "The Gervais Principle, or the Office According to \"The Office\" (2009)",
           "url": "https://www.ribbonfarm.com/2009/10/07/the-gervais-principle-or-the-office-according-to-the-office/",
-          "score": 140,
-          "comments": 38
+          "score": 155,
+          "comments": 49
         }
       ],
       "tech_headlines": [
@@ -465,7 +465,7 @@
       "headline": "Rebasing in Magit"
     },
     "policy": {
-      "last_updated": "2026-03-10T14:03:15Z",
+      "last_updated": "2026-03-10T14:31:16Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -504,7 +504,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-10T14:03:19Z",
+      "last_updated": "2026-03-10T14:31:19Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
