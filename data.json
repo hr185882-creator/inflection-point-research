@@ -1,9 +1,9 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-10T09:19:51Z",
+  "fetched_at": "2026-03-10T09:31:48Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-10T09:19:52Z",
+      "last_updated": "2026-03-10T09:31:48Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
@@ -39,26 +39,26 @@
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 70795.914,
+          "price": 71249.65,
           "prev_close": 68443.15,
-          "change": 2352.764,
-          "change_pct": 3.44,
+          "change": 2806.5,
+          "change_pct": 4.1,
           "currency": "USD"
         },
         "EURUSD=X": {
           "label": "EUR/USD",
-          "price": 1.166,
+          "price": 1.1658,
           "prev_close": 1.1636,
-          "change": 0.0024,
-          "change_pct": 0.21,
+          "change": 0.0022,
+          "change_pct": 0.19,
           "currency": "USD"
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 98.616,
+          "price": 98.596,
           "prev_close": 99.175,
-          "change": -0.559,
-          "change_pct": -0.56,
+          "change": -0.579,
+          "change_pct": -0.58,
           "currency": "USD"
         }
       },
@@ -66,30 +66,30 @@
       "headline": null
     },
     "energy": {
-      "last_updated": "2026-03-10T09:19:52Z",
+      "last_updated": "2026-03-10T09:31:48Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 87.87,
+          "price": 86.97,
           "prev_close": 94.77,
-          "change": -6.9,
-          "change_pct": -7.28,
+          "change": -7.8,
+          "change_pct": -8.23,
           "currency": "USD"
         },
         "NG=F": {
           "label": "Natural Gas ($/MMBtu)",
-          "price": 3.08,
+          "price": 3.059,
           "prev_close": 3.12,
-          "change": -0.04,
-          "change_pct": -1.28,
+          "change": -0.061,
+          "change_pct": -1.96,
           "currency": "USD"
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 87.11,
+          "price": 86.18,
           "prev_close": 93.72,
-          "change": -6.61,
-          "change_pct": -7.05,
+          "change": -7.54,
+          "change_pct": -8.05,
           "currency": "USD"
         },
         "XLE": {
@@ -102,10 +102,10 @@
         }
       },
       "headlines": [],
-      "headline": "WTI $87.87/bbl"
+      "headline": "WTI $86.97/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-10T09:19:53Z",
+      "last_updated": "2026-03-10T09:31:49Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
@@ -168,7 +168,7 @@
       "headline": "NVDA 2.68%  |  MSFT 0.11%"
     },
     "sports": {
-      "last_updated": "2026-03-10T09:19:53Z",
+      "last_updated": "2026-03-10T09:31:50Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -324,10 +324,10 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-10T09:19:53Z",
+      "last_updated": "2026-03-10T09:31:51Z",
       "headlines": [
         {
-          "title": "Rising prices, mixed messages: Iran war is fraught with political risk for Trump",
+          "title": "Mixed messages from Trump leave more questions than answers over war's end",
           "link": "https://www.bbc.com/news/articles/c93j2dw72q9o?at_medium=RSS&at_campaign=rss",
           "published": "Tue, 10 Mar 2026 02:37:46 GMT"
         },
@@ -352,40 +352,40 @@
           "published": "Mon, 09 Mar 2026 21:33:05 GMT"
         }
       ],
-      "headline": "Rising prices, mixed messages: Iran war is fraught with political risk for Trump"
+      "headline": "Mixed messages from Trump leave more questions than answers over war's end"
     },
     "technology": {
-      "last_updated": "2026-03-10T09:19:54Z",
+      "last_updated": "2026-03-10T09:31:51Z",
       "hn_top": [
         {
           "title": "Redox OS has adopted a Certificate of Origin policy and a strict no-LLM policy",
           "url": "https://gitlab.redox-os.org/redox-os/redox/-/blob/master/CONTRIBUTING.md",
-          "score": 28,
-          "comments": 8
+          "score": 41,
+          "comments": 19
         },
         {
           "title": "Lotus 1-2-3 on the PC with DOS",
           "url": "https://stonetools.ghost.io/lotus123-dos/",
-          "score": 75,
-          "comments": 24
+          "score": 77,
+          "comments": 27
         },
         {
           "title": "Two Years of Emacs Solo",
           "url": "https://www.rahuljuliato.com/posts/emacs-solo-two-years",
-          "score": 238,
-          "comments": 61
+          "score": 245,
+          "comments": 67
         },
         {
           "title": "Optimizing Top K in Postgres",
           "url": "https://www.paradedb.com/blog/optimizing-top-k",
-          "score": 63,
-          "comments": 8
+          "score": 65,
+          "comments": 9
         },
         {
-          "title": "LoGeR \u2013 3D reconstruction from extremely long videos (DeepMind, UC Berkeley)",
-          "url": "https://loger-project.github.io",
-          "score": 22,
-          "comments": 10
+          "title": "Building a Procedural Hex Map with Wave Function Collapse",
+          "url": "https://felixturner.github.io/hex-map-wfc/article/",
+          "score": 485,
+          "comments": 70
         }
       ],
       "tech_headlines": [
@@ -418,7 +418,7 @@
       "headline": "Redox OS has adopted a Certificate of Origin policy and a strict no-LLM policy"
     },
     "policy": {
-      "last_updated": "2026-03-10T09:19:55Z",
+      "last_updated": "2026-03-10T09:31:52Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -457,7 +457,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-10T09:19:59Z",
+      "last_updated": "2026-03-10T09:31:54Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
