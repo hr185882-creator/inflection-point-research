@@ -1,9 +1,9 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-10T21:02:03Z",
+  "fetched_at": "2026-03-10T21:23:03Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-10T21:02:04Z",
+      "last_updated": "2026-03-10T21:23:04Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
@@ -39,10 +39,10 @@
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 70254.5,
+          "price": 70040.914,
           "prev_close": 68443.15,
-          "change": 1811.35,
-          "change_pct": 2.65,
+          "change": 1597.764,
+          "change_pct": 2.33,
           "currency": "USD"
         },
         "EURUSD=X": {
@@ -55,41 +55,41 @@
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 98.939,
+          "price": 98.948,
           "prev_close": 99.175,
-          "change": -0.236,
-          "change_pct": -0.24,
+          "change": -0.227,
+          "change_pct": -0.23,
           "currency": "USD"
         }
       },
       "yield_10y": 4.12,
-      "headline": "SPY -0.16%  |  BTC $70,254  |  10Y 4.12%"
+      "headline": "SPY -0.16%  |  BTC $70,041  |  10Y 4.12%"
     },
     "energy": {
-      "last_updated": "2026-03-10T21:02:14Z",
+      "last_updated": "2026-03-10T21:23:14Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 86.67,
+          "price": 86.39,
           "prev_close": 94.77,
-          "change": -8.1,
-          "change_pct": -8.55,
+          "change": -8.38,
+          "change_pct": -8.84,
           "currency": "USD"
         },
         "NG=F": {
           "label": "Natural Gas ($/MMBtu)",
-          "price": 3.052,
+          "price": 3.06,
           "prev_close": 3.12,
-          "change": -0.068,
-          "change_pct": -2.18,
+          "change": -0.06,
+          "change_pct": -1.92,
           "currency": "USD"
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 87.8,
+          "price": 87.64,
           "prev_close": 93.72,
-          "change": -5.92,
-          "change_pct": -6.32,
+          "change": -6.08,
+          "change_pct": -6.49,
           "currency": "USD"
         },
         "XLE": {
@@ -102,10 +102,10 @@
         }
       },
       "headlines": [],
-      "headline": "WTI $86.67/bbl"
+      "headline": "WTI $86.39/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-10T21:02:17Z",
+      "last_updated": "2026-03-10T21:23:15Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
@@ -166,11 +166,6 @@
       },
       "recent_filings": [
         {
-          "title": "Aclaris Therapeutics, Inc.  (ACRS) -- 8-K (2026-03-10)",
-          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Aclaris%20Therapeutics%2C%20Inc.%20%20%28ACRS%29&type=8-K&dateb=&owner=include&count=5",
-          "published": "2026-03-10"
-        },
-        {
           "title": "Motorsport Games Inc.  (MSGM) -- 8-K (2026-03-10)",
           "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Motorsport%20Games%20Inc.%20%20%28MSGM%29&type=8-K&dateb=&owner=include&count=5",
           "published": "2026-03-10"
@@ -181,20 +176,25 @@
           "published": "2026-03-10"
         },
         {
-          "title": "Scorpius Holdings, Inc.  (SCPX) -- 8-K (2026-03-10)",
-          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Scorpius%20Holdings%2C%20Inc.%20%20%28SCPX%29&type=8-K&dateb=&owner=include&count=5",
+          "title": "Aclaris Therapeutics, Inc.  (ACRS) -- 8-K (2026-03-10)",
+          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Aclaris%20Therapeutics%2C%20Inc.%20%20%28ACRS%29&type=8-K&dateb=&owner=include&count=5",
           "published": "2026-03-10"
         },
         {
-          "title": "Synchrony Financial  (SYF, SYF-PA, SYF-PB) -- 8-K (2026-03-10)",
-          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Synchrony%20Financial%20%20%28SYF%2C%20SYF-PA%2C%20SYF-PB%29&type=8-K&dateb=&owner=include&count=5",
+          "title": "First Guaranty Bancshares, Inc.  (FGBI, FGBIP) -- 8-K (2026-03-10)",
+          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=First%20Guaranty%20Bancshares%2C%20Inc.%20%20%28FGBI%2C%20FGBIP%29&type=8-K&dateb=&owner=include&count=5",
+          "published": "2026-03-10"
+        },
+        {
+          "title": "Scorpius Holdings, Inc.  (SCPX) -- 8-K (2026-03-10)",
+          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Scorpius%20Holdings%2C%20Inc.%20%20%28SCPX%29&type=8-K&dateb=&owner=include&count=5",
           "published": "2026-03-10"
         }
       ],
       "headline": "NVDA 1.16%  |  MSFT -0.89%"
     },
     "sports": {
-      "last_updated": "2026-03-10T21:02:43Z",
+      "last_updated": "2026-03-10T21:23:16Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -296,10 +296,10 @@
             "detail": "questionable"
           },
           {
-            "player": "Jake Bailey",
+            "player": "Michael Penix Jr.",
             "team": "",
-            "status": "Active",
-            "detail": "Bailey agreed to terms Tuesday on a contract with the Falcons, Gabriel Burns of AJC.com reports."
+            "status": "Questionable",
+            "detail": "Penix (knee) won't necessarily be Atlanta's starting quarterback once he's healthy, as new addition Tua Tagovailoa will get a real chance to earn the role, Cameron Wolfe of NFL Network reports."
           },
           {
             "player": "John Simpson",
@@ -350,7 +350,7 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-10T21:02:44Z",
+      "last_updated": "2026-03-10T21:23:16Z",
       "headlines": [
         {
           "title": "'I just want to be able to sleep': Attacks in Iran rock cities and cut power",
@@ -381,37 +381,37 @@
       "headline": "'I just want to be able to sleep': Attacks in Iran rock cities and cut power"
     },
     "technology": {
-      "last_updated": "2026-03-10T21:02:44Z",
+      "last_updated": "2026-03-10T21:23:18Z",
       "hn_top": [
         {
           "title": "Tony Hoare has died",
           "url": "https://blog.computationalcomplexity.org/2026/03/tony-hoare-1934-2026.html",
-          "score": 1141,
-          "comments": 156
-        },
-        {
-          "title": "Agents that run while I sleep",
-          "url": "https://www.claudecodecamp.com/p/i-m-building-agents-that-run-while-i-sleep",
-          "score": 103,
-          "comments": 76
+          "score": 1172,
+          "comments": 161
         },
         {
           "title": "RISC-V Is Sloooow",
           "url": "https://marcin.juszkiewicz.com.pl/2026/03/10/risc-v-is-sloooow/",
-          "score": 41,
-          "comments": 29
+          "score": 62,
+          "comments": 42
         },
         {
-          "title": "Yann LeCun raises $1B to build AI that understands the physical world",
-          "url": "https://www.wired.com/story/yann-lecun-raises-dollar1-billion-to-build-ai-that-understands-the-physical-world/",
-          "score": 186,
-          "comments": 275
+          "title": "Agents that run while I sleep",
+          "url": "https://www.claudecodecamp.com/p/i-m-building-agents-that-run-while-i-sleep",
+          "score": 120,
+          "comments": 79
         },
         {
           "title": "After outages, Amazon to make senior engineers sign off on AI-assisted changes",
           "url": "https://arstechnica.com/ai/2026/03/after-outages-amazon-to-make-senior-engineers-sign-off-on-ai-assisted-changes/",
-          "score": 74,
-          "comments": 222
+          "score": 124,
+          "comments": 231
+        },
+        {
+          "title": "Yann LeCun raises $1B to build AI that understands the physical world",
+          "url": "https://www.wired.com/story/yann-lecun-raises-dollar1-billion-to-build-ai-that-understands-the-physical-world/",
+          "score": 200,
+          "comments": 278
         }
       ],
       "tech_headlines": [
@@ -444,7 +444,7 @@
       "headline": "Tony Hoare has died"
     },
     "policy": {
-      "last_updated": "2026-03-10T21:02:45Z",
+      "last_updated": "2026-03-10T21:23:19Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -483,7 +483,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-10T21:02:53Z",
+      "last_updated": "2026-03-10T21:23:21Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
