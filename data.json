@@ -1,166 +1,166 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-10T16:30:56Z",
+  "fetched_at": "2026-03-10T19:32:44Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-10T16:30:58Z",
+      "last_updated": "2026-03-10T19:32:44Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
-          "price": 680.88,
+          "price": 677.13,
           "prev_close": 678.27,
-          "change": 2.61,
-          "change_pct": 0.38,
+          "change": -1.14,
+          "change_pct": -0.17,
           "currency": "USD"
         },
         "QQQ": {
           "label": "Nasdaq 100 ETF",
-          "price": 611.45,
+          "price": 607.32,
           "prev_close": 607.76,
-          "change": 3.69,
-          "change_pct": 0.61,
+          "change": -0.44,
+          "change_pct": -0.07,
           "currency": "USD"
         },
         "GLD": {
           "label": "Gold ETF",
-          "price": 480.71,
+          "price": 476.82,
           "prev_close": 472.53,
-          "change": 8.18,
-          "change_pct": 1.73,
+          "change": 4.29,
+          "change_pct": 0.91,
           "currency": "USD"
         },
         "TLT": {
           "label": "20Y Treasury ETF",
-          "price": 88.84,
+          "price": 88.37,
           "prev_close": 89.23,
-          "change": -0.39,
-          "change_pct": -0.44,
+          "change": -0.86,
+          "change_pct": -0.96,
           "currency": "USD"
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 71434.94,
+          "price": 69977.69,
           "prev_close": 68443.15,
-          "change": 2991.79,
-          "change_pct": 4.37,
+          "change": 1534.54,
+          "change_pct": 2.24,
           "currency": "USD"
         },
         "EURUSD=X": {
           "label": "EUR/USD",
-          "price": 1.165,
+          "price": 1.1618,
           "prev_close": 1.1636,
-          "change": 0.0014,
-          "change_pct": 0.12,
+          "change": -0.0018,
+          "change_pct": -0.15,
           "currency": "USD"
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 98.665,
+          "price": 98.842,
           "prev_close": 99.175,
-          "change": -0.51,
-          "change_pct": -0.51,
+          "change": -0.333,
+          "change_pct": -0.34,
           "currency": "USD"
         }
       },
       "yield_10y": 4.15,
-      "headline": "SPY 0.38%  |  BTC $71,435  |  10Y 4.15%"
+      "headline": "SPY -0.17%  |  BTC $69,978  |  10Y 4.15%"
     },
     "energy": {
-      "last_updated": "2026-03-10T16:31:08Z",
+      "last_updated": "2026-03-10T19:32:54Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 85.05,
+          "price": 86.03,
           "prev_close": 94.77,
-          "change": -9.72,
-          "change_pct": -10.26,
+          "change": -8.74,
+          "change_pct": -9.22,
           "currency": "USD"
         },
         "NG=F": {
           "label": "Natural Gas ($/MMBtu)",
-          "price": 3.044,
+          "price": 3.042,
           "prev_close": 3.12,
-          "change": -0.076,
-          "change_pct": -2.44,
+          "change": -0.078,
+          "change_pct": -2.5,
           "currency": "USD"
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 85.99,
+          "price": 87.19,
           "prev_close": 93.72,
-          "change": -7.73,
-          "change_pct": -8.25,
+          "change": -6.53,
+          "change_pct": -6.97,
           "currency": "USD"
         },
         "XLE": {
           "label": "Energy ETF",
-          "price": 56.11,
+          "price": 55.68,
           "prev_close": 56.32,
-          "change": -0.21,
-          "change_pct": -0.37,
+          "change": -0.64,
+          "change_pct": -1.14,
           "currency": "USD"
         }
       },
       "headlines": [],
-      "headline": "WTI $85.05/bbl"
+      "headline": "WTI $86.03/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-10T16:31:10Z",
+      "last_updated": "2026-03-10T19:32:56Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
-          "price": 185.39,
+          "price": 184.39,
           "prev_close": 182.65,
-          "change": 2.74,
-          "change_pct": 1.5,
+          "change": 1.74,
+          "change_pct": 0.95,
           "currency": "USD"
         },
         "MSFT": {
           "label": "Microsoft",
-          "price": 407.435,
+          "price": 404.7,
           "prev_close": 409.41,
-          "change": -1.975,
-          "change_pct": -0.48,
+          "change": -4.71,
+          "change_pct": -1.15,
           "currency": "USD"
         },
         "AAPL": {
           "label": "Apple",
-          "price": 261.69,
+          "price": 260.68,
           "prev_close": 259.88,
-          "change": 1.81,
-          "change_pct": 0.7,
+          "change": 0.8,
+          "change_pct": 0.31,
           "currency": "USD"
         },
         "META": {
           "label": "Meta",
-          "price": 657.91,
+          "price": 653.78,
           "prev_close": 647.39,
-          "change": 10.52,
-          "change_pct": 1.62,
+          "change": 6.39,
+          "change_pct": 0.99,
           "currency": "USD"
         },
         "TSLA": {
           "label": "Tesla",
-          "price": 402.78,
+          "price": 399.958,
           "prev_close": 398.68,
-          "change": 4.1,
-          "change_pct": 1.03,
+          "change": 1.278,
+          "change_pct": 0.32,
           "currency": "USD"
         },
         "AMZN": {
           "label": "Amazon",
-          "price": 215.01,
+          "price": 214.15,
           "prev_close": 213.49,
-          "change": 1.52,
-          "change_pct": 0.71,
+          "change": 0.66,
+          "change_pct": 0.31,
           "currency": "USD"
         },
         "GOOGL": {
           "label": "Alphabet",
-          "price": 308.437,
+          "price": 306.67,
           "prev_close": 306.36,
-          "change": 2.077,
-          "change_pct": 0.68,
+          "change": 0.31,
+          "change_pct": 0.1,
           "currency": "USD"
         }
       },
@@ -191,10 +191,10 @@
           "published": "2026-03-10"
         }
       ],
-      "headline": "NVDA 1.5%  |  MSFT -0.48%"
+      "headline": "NVDA 0.95%  |  MSFT -1.15%"
     },
     "sports": {
-      "last_updated": "2026-03-10T16:31:11Z",
+      "last_updated": "2026-03-10T19:32:56Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -247,30 +247,30 @@
             {
               "home": "BOS",
               "away": "DET",
-              "home_score": "0",
-              "away_score": "0",
-              "status": "3/10 - 1:05 PM EDT"
+              "home_score": "2",
+              "away_score": "7",
+              "status": "Top 9th"
             },
             {
               "home": "HOU",
               "away": "BAL",
-              "home_score": "0",
-              "away_score": "0",
-              "status": "3/10 - 1:05 PM EDT"
+              "home_score": "6",
+              "away_score": "4",
+              "status": "Top 7th"
             },
             {
               "home": "PHI",
               "away": "NYY",
-              "home_score": "0",
-              "away_score": "0",
-              "status": "3/10 - 1:05 PM EDT"
+              "home_score": "2",
+              "away_score": "4",
+              "status": "Mid 9th"
             },
             {
               "home": "TB",
               "away": "MIN",
-              "home_score": "0",
-              "away_score": "0",
-              "status": "3/10 - 1:05 PM EDT"
+              "home_score": "3",
+              "away_score": "6",
+              "status": "Bot 8th"
             }
           ]
         }
@@ -296,10 +296,10 @@
             "detail": "questionable"
           },
           {
-            "player": "Cameron Thomas",
+            "player": "Jake Bailey",
             "team": "",
             "status": "Active",
-            "detail": "Thomas agreed to a one-year, $3.1 million contract with the Falcons on Monday, Marc Raimondi of ESPN.com reports."
+            "detail": "Bailey agreed to terms Tuesday on a contract with the Falcons, Gabriel Burns of AJC.com reports."
           },
           {
             "player": "John Simpson",
@@ -324,8 +324,8 @@
           {
             "player": "Payton Pritchard",
             "team": "",
-            "status": "Day-To-Day",
-            "detail": "Pritchard (neck) is Taylor Snow of the Celtics' official site for Tuesday's game against the Spurs."
+            "status": "Out",
+            "detail": "Pritchard is out for Tuesday's game against the Spurs due to a neck spasm."
           },
           {
             "player": "Nikola Vucevic",
@@ -334,23 +334,23 @@
             "detail": "Vucevic underwent surgery Saturday to stabilize a fracture in his right ring finger and will be reevaluated in 3-to-4 weeks."
           },
           {
-            "player": "Michael Porter Jr.",
-            "team": "",
-            "status": "Day-To-Day",
-            "detail": "Porter (rest) has been ruled out for Monday's game against the Grizzlies."
-          },
-          {
-            "player": "Egor Demin",
+            "player": "Ziaire Williams",
             "team": "",
             "status": "Out",
-            "detail": "The Nets announced Monday that Demin (foot) will miss the rest of the season, NBA reporter Marc Stein reports."
+            "detail": "Williams (illness) won't play in Tuesday's game against the Pistons, per Brian Lewis of the New York Post."
+          },
+          {
+            "player": "Day'Ron Sharpe",
+            "team": "",
+            "status": "Out",
+            "detail": "Sharpe won't play in Tuesday's game against Detroit due to a left thumb sprain, per Brian Lewis of the New York Post."
           }
         ]
       },
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-10T16:31:11Z",
+      "last_updated": "2026-03-10T19:32:57Z",
       "headlines": [
         {
           "title": "'I just want to be able to sleep': Attacks in Iran rock cities and cut power",
@@ -381,40 +381,45 @@
       "headline": "'I just want to be able to sleep': Attacks in Iran rock cities and cut power"
     },
     "technology": {
-      "last_updated": "2026-03-10T16:31:12Z",
+      "last_updated": "2026-03-10T19:32:58Z",
       "hn_top": [
         {
           "title": "Tony Hoare has died",
           "url": "https://blog.computationalcomplexity.org/2026/03/tony-hoare-1934-2026.html",
-          "score": 405,
-          "comments": 37
+          "score": 976,
+          "comments": 142
         },
         {
-          "title": "Intel Demos Chip to Compute with Encrypted Data",
-          "url": "https://spectrum.ieee.org/fhe-intel",
-          "score": 122,
-          "comments": 32
+          "title": "Launch HN: RunAnywhere (YC W26) \u2013 Faster AI Inference on Apple Silicon",
+          "url": "https://github.com/RunanywhereAI/rcli",
+          "score": 125,
+          "comments": 44
         },
         {
-          "title": "Rebasing in Magit",
-          "url": "https://entropicthoughts.com/rebasing-in-magit",
-          "score": 108,
-          "comments": 73
+          "title": "Yann LeCun raises $1B to build AI that understands the physical world",
+          "url": "https://www.wired.com/story/yann-lecun-raises-dollar1-billion-to-build-ai-that-understands-the-physical-world/",
+          "score": 106,
+          "comments": 251
         },
         {
-          "title": "I put my whole life into a single database",
-          "url": "https://howisfelix.today/",
-          "score": 301,
-          "comments": 139
+          "title": "Debian decides not to decide on AI-generated contributions",
+          "url": "https://lwn.net/SubscriberLink/1061544/125f911834966dd0/",
+          "score": 194,
+          "comments": 160
         },
         {
-          "title": "Launch HN: Didit (YC W26) \u2013 Stripe for Identity Verification",
-          "url": "https://news.ycombinator.com/item?id=47324296",
-          "score": 20,
-          "comments": 20
+          "title": "Billion-Parameter Theories",
+          "url": "https://www.worldgov.org/complexity.html",
+          "score": 49,
+          "comments": 24
         }
       ],
       "tech_headlines": [
+        {
+          "title": "Interstellar Comet 3I/Atlas Has Another Surprise: It\u2019s Full of Alcohol",
+          "link": "https://www.wired.com/story/interstellar-comet-3i-atlas-has-another-surprise-its-full-of-alcohol/",
+          "published": "Tue, 10 Mar 2026 18:48:25 +0000"
+        },
         {
           "title": "How Can a Locomotive Pull a Long Train That\u2019s Much Heavier?",
           "link": "https://www.wired.com/story/how-can-a-locomotive-pull-a-train-thats-much-heavier/",
@@ -434,17 +439,12 @@
           "title": "Left-Handed People Are More Competitive, Says Science",
           "link": "https://www.wired.com/story/left-handed-people-are-more-competitive-says-science/",
           "published": "Sun, 08 Mar 2026 09:00:00 +0000"
-        },
-        {
-          "title": "Sleep Apnea Often Goes Undetected in Women. That\u2019s Starting to Change",
-          "link": "https://www.wired.com/story/sleep-apnea-women-detection-treatment/",
-          "published": "Fri, 06 Mar 2026 09:30:00 +0000"
         }
       ],
       "headline": "Tony Hoare has died"
     },
     "policy": {
-      "last_updated": "2026-03-10T16:31:13Z",
+      "last_updated": "2026-03-10T19:32:58Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -483,8 +483,50 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-10T16:31:35Z",
+      "last_updated": "2026-03-10T19:33:09Z",
       "cases": [
+        {
+          "title": "In Re Bystolic Antitrust Litigation",
+          "court": "Court of Appeals for the Second Circuit",
+          "date": "2024-05-13",
+          "tag": "Antitrust",
+          "link": "https://www.courtlistener.com/opinion/9501475/in-re-bystolic-antitrust-litigation/"
+        },
+        {
+          "title": "Automotive Parts Antitrust Litig.",
+          "court": "Court of Appeals for the Sixth Circuit",
+          "date": "2022-05-12",
+          "tag": "Antitrust",
+          "link": "https://www.courtlistener.com/opinion/6468000/automotive-parts-antitrust-litig/"
+        },
+        {
+          "title": "Capon v. Monopoly Game LLC",
+          "court": "California Court of Appeal",
+          "date": "2011-03-04",
+          "tag": "Antitrust",
+          "link": "https://www.courtlistener.com/opinion/5810084/capon-v-monopoly-game-llc/"
+        },
+        {
+          "title": "In re Telexfree Sec. Litig.",
+          "court": "District Court, District of Columbia",
+          "date": "2019-01-29",
+          "tag": "Regulatory",
+          "link": "https://www.courtlistener.com/opinion/7333964/in-re-telexfree-sec-litig/"
+        },
+        {
+          "title": "Fed. Trade Comm'n v. Abbvie Inc.",
+          "court": "District Court, E.D. Pennsylvania",
+          "date": "2018-06-29",
+          "tag": "Regulatory",
+          "link": "https://www.courtlistener.com/opinion/7331819/fed-trade-commn-v-abbvie-inc/"
+        },
+        {
+          "title": "FTC v. ZAAPPAAZ",
+          "court": "Court of Appeals for the Fifth Circuit",
+          "date": "2025-06-16",
+          "tag": "Regulatory",
+          "link": "https://www.courtlistener.com/opinion/10605413/ftc-v-zaappaaz/"
+        },
         {
           "title": "Knight First Amendment Institute at Columbia University v. CIA",
           "court": "Court of Appeals for the D.C. Circuit",
@@ -501,7 +543,7 @@
         }
       ],
       "scotus_opinions": [],
-      "headline": "Knight First Amendment Institute at Columbia University v. CIA"
+      "headline": "In Re Bystolic Antitrust Litigation"
     }
   }
 }
