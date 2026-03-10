@@ -1,9 +1,9 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-10T05:33:40Z",
+  "fetched_at": "2026-03-10T05:46:54Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-10T05:33:41Z",
+      "last_updated": "2026-03-10T05:46:54Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
@@ -39,57 +39,57 @@
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 70040.64,
+          "price": 69949.445,
           "prev_close": 68443.15,
-          "change": 1597.49,
-          "change_pct": 2.33,
+          "change": 1506.295,
+          "change_pct": 2.2,
           "currency": "USD"
         },
         "EURUSD=X": {
           "label": "EUR/USD",
-          "price": 1.162,
+          "price": 1.1618,
           "prev_close": 1.1636,
-          "change": -0.0016,
-          "change_pct": -0.14,
+          "change": -0.0018,
+          "change_pct": -0.15,
           "currency": "USD"
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 98.831,
+          "price": 98.847,
           "prev_close": 99.175,
-          "change": -0.344,
-          "change_pct": -0.35,
+          "change": -0.328,
+          "change_pct": -0.33,
           "currency": "USD"
         }
       },
       "yield_10y": 4.15,
-      "headline": "SPY 0.88%  |  BTC $70,041  |  10Y 4.15%"
+      "headline": "SPY 0.88%  |  BTC $69,949  |  10Y 4.15%"
     },
     "energy": {
-      "last_updated": "2026-03-10T05:33:51Z",
+      "last_updated": "2026-03-10T05:47:03Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 88.54,
+          "price": 88.38,
           "prev_close": 94.77,
-          "change": -6.23,
-          "change_pct": -6.57,
+          "change": -6.39,
+          "change_pct": -6.74,
           "currency": "USD"
         },
         "NG=F": {
           "label": "Natural Gas ($/MMBtu)",
-          "price": 3.105,
+          "price": 3.103,
           "prev_close": 3.12,
-          "change": -0.015,
-          "change_pct": -0.48,
+          "change": -0.017,
+          "change_pct": -0.54,
           "currency": "USD"
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 93.19,
+          "price": 92.57,
           "prev_close": 98.96,
-          "change": -5.77,
-          "change_pct": -5.83,
+          "change": -6.39,
+          "change_pct": -6.46,
           "currency": "USD"
         },
         "XLE": {
@@ -101,11 +101,32 @@
           "currency": "USD"
         }
       },
-      "headlines": [],
-      "headline": "WTI $88.54/bbl"
+      "headlines": [
+        {
+          "title": "U.S. exports of major transportation fuels in 2025 were about the same as in 2024",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67304",
+          "published": "Mon, 09 Mar 2026 09:00:00 EST"
+        },
+        {
+          "title": "U.S. electricity generation in 2025 hit a record, again",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67284",
+          "published": "Thu, 05 Mar 2026 09:00:00 EST"
+        },
+        {
+          "title": "U.S. LNG developers sign highest volume of sale and purchase contracts since 2022",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67264",
+          "published": "Tue, 03 Mar 2026 09:00:00 EST"
+        },
+        {
+          "title": "Nuclear reactor restart in Japan will likely displace natural gas electricity generation",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67244",
+          "published": "Mon, 02 Mar 2026  09:00:00 EST"
+        }
+      ],
+      "headline": "WTI $88.38/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-10T05:33:52Z",
+      "last_updated": "2026-03-10T05:47:04Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
@@ -194,7 +215,7 @@
       "headline": "NVDA 2.68%  |  MSFT 0.11%"
     },
     "sports": {
-      "last_updated": "2026-03-10T05:33:53Z",
+      "last_updated": "2026-03-10T05:47:04Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -350,7 +371,7 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-10T05:34:03Z",
+      "last_updated": "2026-03-10T05:47:10Z",
       "headlines": [
         {
           "title": "Russian economy withstood pressure from outside German expert",
@@ -391,37 +412,37 @@
       "headline": "Russian economy withstood pressure from outside German expert"
     },
     "technology": {
-      "last_updated": "2026-03-10T05:34:03Z",
+      "last_updated": "2026-03-10T05:47:11Z",
       "hn_top": [
         {
           "title": "Learnings from paying artists royalties for AI-generated art",
           "url": "https://www.kapwing.com/blog/learnings-from-paying-artists-royalties-for-ai-generated-art/",
-          "score": 72,
-          "comments": 36
+          "score": 78,
+          "comments": 41
         },
         {
           "title": "Two Years of Emacs Solo: 35 Modules, Zero External Packages, and a Full Refactor",
           "url": "https://www.rahuljuliato.com/posts/emacs-solo-two-years",
-          "score": 137,
-          "comments": 27
+          "score": 145,
+          "comments": 30
         },
         {
           "title": "Building a Procedural Hex Map with Wave Function Collapse",
           "url": "https://felixturner.github.io/hex-map-wfc/article/",
-          "score": 439,
+          "score": 443,
           "comments": 67
+        },
+        {
+          "title": "How we optimized Top K in Postgres",
+          "url": "https://www.paradedb.com/blog/optimizing-top-k",
+          "score": 10,
+          "comments": 0
         },
         {
           "title": "Show HN: Remotely use my guitar tuner",
           "url": "https://realtuner.online/",
-          "score": 132,
+          "score": 134,
           "comments": 31
-        },
-        {
-          "title": "JSLinux Now Supports x86_64",
-          "url": "https://bellard.org/jslinux/",
-          "score": 281,
-          "comments": 79
         }
       ],
       "tech_headlines": [
@@ -454,7 +475,7 @@
       "headline": "Learnings from paying artists royalties for AI-generated art"
     },
     "policy": {
-      "last_updated": "2026-03-10T05:34:04Z",
+      "last_updated": "2026-03-10T05:47:11Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -493,7 +514,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-10T05:34:08Z",
+      "last_updated": "2026-03-10T05:47:12Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
