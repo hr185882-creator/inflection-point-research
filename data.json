@@ -1,9 +1,9 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-10T07:32:37Z",
+  "fetched_at": "2026-03-10T07:47:25Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-10T07:32:38Z",
+      "last_updated": "2026-03-10T07:47:26Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
@@ -39,57 +39,57 @@
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 70311.75,
+          "price": 70338.74,
           "prev_close": 68443.15,
-          "change": 1868.6,
-          "change_pct": 2.73,
+          "change": 1895.59,
+          "change_pct": 2.77,
           "currency": "USD"
         },
         "EURUSD=X": {
           "label": "EUR/USD",
-          "price": 1.1651,
+          "price": 1.1656,
           "prev_close": 1.1636,
-          "change": 0.0015,
-          "change_pct": 0.13,
+          "change": 0.002,
+          "change_pct": 0.17,
           "currency": "USD"
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 98.658,
+          "price": 98.602,
           "prev_close": 99.175,
-          "change": -0.517,
-          "change_pct": -0.52,
+          "change": -0.573,
+          "change_pct": -0.58,
           "currency": "USD"
         }
       },
       "yield_10y": 4.15,
-      "headline": "SPY 0.88%  |  BTC $70,312  |  10Y 4.15%"
+      "headline": "SPY 0.88%  |  BTC $70,339  |  10Y 4.15%"
     },
     "energy": {
-      "last_updated": "2026-03-10T07:32:48Z",
+      "last_updated": "2026-03-10T07:47:34Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 87.51,
+          "price": 87.44,
           "prev_close": 94.77,
-          "change": -7.26,
-          "change_pct": -7.66,
+          "change": -7.33,
+          "change_pct": -7.73,
           "currency": "USD"
         },
         "NG=F": {
           "label": "Natural Gas ($/MMBtu)",
-          "price": 3.067,
+          "price": 3.075,
           "prev_close": 3.12,
-          "change": -0.053,
-          "change_pct": -1.7,
+          "change": -0.045,
+          "change_pct": -1.44,
           "currency": "USD"
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 91.7,
+          "price": 86.64,
           "prev_close": 98.96,
-          "change": -7.26,
-          "change_pct": -7.34,
+          "change": -12.32,
+          "change_pct": -12.45,
           "currency": "USD"
         },
         "XLE": {
@@ -101,11 +101,32 @@
           "currency": "USD"
         }
       },
-      "headlines": [],
-      "headline": "WTI $87.51/bbl"
+      "headlines": [
+        {
+          "title": "U.S. exports of major transportation fuels in 2025 were about the same as in 2024",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67304",
+          "published": "Mon, 09 Mar 2026 09:00:00 EST"
+        },
+        {
+          "title": "U.S. electricity generation in 2025 hit a record, again",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67284",
+          "published": "Thu, 05 Mar 2026 09:00:00 EST"
+        },
+        {
+          "title": "U.S. LNG developers sign highest volume of sale and purchase contracts since 2022",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67264",
+          "published": "Tue, 03 Mar 2026 09:00:00 EST"
+        },
+        {
+          "title": "Nuclear reactor restart in Japan will likely displace natural gas electricity generation",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67244",
+          "published": "Mon, 02 Mar 2026  09:00:00 EST"
+        }
+      ],
+      "headline": "WTI $87.44/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-10T07:32:49Z",
+      "last_updated": "2026-03-10T07:47:35Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
@@ -194,7 +215,7 @@
       "headline": "NVDA 2.68%  |  MSFT 0.11%"
     },
     "sports": {
-      "last_updated": "2026-03-10T07:32:50Z",
+      "last_updated": "2026-03-10T07:47:36Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -350,7 +371,7 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-10T07:32:53Z",
+      "last_updated": "2026-03-10T07:47:43Z",
       "headlines": [
         {
           "title": "Russian economy withstood pressure from outside German expert",
@@ -391,37 +412,37 @@
       "headline": "Russian economy withstood pressure from outside German expert"
     },
     "technology": {
-      "last_updated": "2026-03-10T07:32:53Z",
+      "last_updated": "2026-03-10T07:47:44Z",
       "hn_top": [
         {
           "title": "Two Years of Emacs Solo",
           "url": "https://www.rahuljuliato.com/posts/emacs-solo-two-years",
-          "score": 182,
+          "score": 189,
           "comments": 48
         },
         {
           "title": "Optimizing Top K in Postgres",
           "url": "https://www.paradedb.com/blog/optimizing-top-k",
-          "score": 45,
-          "comments": 4
+          "score": 48,
+          "comments": 5
         },
         {
           "title": "Claude Code, Claude Cowork and Codex #5",
           "url": "https://thezvi.wordpress.com/2026/03/09/claude-code-claude-cowork-and-codex-5/",
-          "score": 21,
-          "comments": 19
+          "score": 27,
+          "comments": 24
         },
         {
           "title": "Lotus 1-2-3 on the PC with DOS",
           "url": "https://stonetools.ghost.io/lotus123-dos/",
-          "score": 36,
+          "score": 39,
           "comments": 9
         },
         {
           "title": "No, it doesn't cost Anthropic $5k per Claude Code user",
           "url": "https://martinalderson.com/posts/no-it-doesnt-cost-anthropic-5k-per-claude-code-user/",
-          "score": 129,
-          "comments": 73
+          "score": 133,
+          "comments": 80
         }
       ],
       "tech_headlines": [
@@ -454,7 +475,7 @@
       "headline": "Two Years of Emacs Solo"
     },
     "policy": {
-      "last_updated": "2026-03-10T07:32:54Z",
+      "last_updated": "2026-03-10T07:47:44Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -493,7 +514,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-10T07:32:56Z",
+      "last_updated": "2026-03-10T07:47:46Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
