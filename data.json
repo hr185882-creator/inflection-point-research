@@ -1,9 +1,9 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-10T10:08:01Z",
+  "fetched_at": "2026-03-10T10:16:34Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-10T10:08:01Z",
+      "last_updated": "2026-03-10T10:16:34Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
@@ -39,57 +39,57 @@
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 71002.32,
+          "price": 70873.45,
           "prev_close": 68443.15,
-          "change": 2559.17,
-          "change_pct": 3.74,
+          "change": 2430.3,
+          "change_pct": 3.55,
           "currency": "USD"
         },
         "EURUSD=X": {
           "label": "EUR/USD",
-          "price": 1.1652,
+          "price": 1.165,
           "prev_close": 1.1636,
-          "change": 0.0016,
-          "change_pct": 0.14,
+          "change": 0.0014,
+          "change_pct": 0.12,
           "currency": "USD"
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 98.616,
+          "price": 98.656,
           "prev_close": 99.175,
-          "change": -0.559,
-          "change_pct": -0.56,
+          "change": -0.519,
+          "change_pct": -0.52,
           "currency": "USD"
         }
       },
       "yield_10y": 4.15,
-      "headline": "SPY 0.88%  |  BTC $71,002  |  10Y 4.15%"
+      "headline": "SPY 0.88%  |  BTC $70,873  |  10Y 4.15%"
     },
     "energy": {
-      "last_updated": "2026-03-10T10:08:12Z",
+      "last_updated": "2026-03-10T10:16:43Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 86.97,
+          "price": 87.63,
           "prev_close": 94.77,
-          "change": -7.8,
-          "change_pct": -8.23,
+          "change": -7.14,
+          "change_pct": -7.53,
           "currency": "USD"
         },
         "NG=F": {
           "label": "Natural Gas ($/MMBtu)",
-          "price": 3.073,
+          "price": 3.092,
           "prev_close": 3.12,
-          "change": -0.047,
-          "change_pct": -1.51,
+          "change": -0.028,
+          "change_pct": -0.9,
           "currency": "USD"
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 86.29,
+          "price": 87.07,
           "prev_close": 93.72,
-          "change": -7.43,
-          "change_pct": -7.93,
+          "change": -6.65,
+          "change_pct": -7.1,
           "currency": "USD"
         },
         "XLE": {
@@ -101,11 +101,32 @@
           "currency": "USD"
         }
       },
-      "headlines": [],
-      "headline": "WTI $86.97/bbl"
+      "headlines": [
+        {
+          "title": "U.S. exports of major transportation fuels in 2025 were about the same as in 2024",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67304",
+          "published": "Mon, 09 Mar 2026 09:00:00 EST"
+        },
+        {
+          "title": "U.S. electricity generation in 2025 hit a record, again",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67284",
+          "published": "Thu, 05 Mar 2026 09:00:00 EST"
+        },
+        {
+          "title": "U.S. LNG developers sign highest volume of sale and purchase contracts since 2022",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67264",
+          "published": "Tue, 03 Mar 2026 09:00:00 EST"
+        },
+        {
+          "title": "Nuclear reactor restart in Japan will likely displace natural gas electricity generation",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67244",
+          "published": "Mon, 02 Mar 2026  09:00:00 EST"
+        }
+      ],
+      "headline": "WTI $87.63/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-10T10:08:12Z",
+      "last_updated": "2026-03-10T10:16:44Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
@@ -181,20 +202,20 @@
           "published": "2026-03-10"
         },
         {
-          "title": "Playtika Holding Corp.  (PLTK) \u2014 8-K (2026-03-10)",
-          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Playtika%20Holding%20Corp.%20%20%28PLTK%29&type=8-K&dateb=&owner=include&count=5",
+          "title": "Trio Petroleum Corp  (TPET) \u2014 8-K (2026-03-10)",
+          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Trio%20Petroleum%20Corp%20%20%28TPET%29&type=8-K&dateb=&owner=include&count=5",
           "published": "2026-03-10"
         },
         {
-          "title": "Arq, Inc.  (ARQ) \u2014 8-K (2026-03-10)",
-          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Arq%2C%20Inc.%20%20%28ARQ%29&type=8-K&dateb=&owner=include&count=5",
+          "title": "Playtika Holding Corp.  (PLTK) \u2014 8-K (2026-03-10)",
+          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Playtika%20Holding%20Corp.%20%20%28PLTK%29&type=8-K&dateb=&owner=include&count=5",
           "published": "2026-03-10"
         }
       ],
       "headline": "NVDA 2.68%  |  MSFT 0.11%"
     },
     "sports": {
-      "last_updated": "2026-03-10T10:08:14Z",
+      "last_updated": "2026-03-10T10:16:44Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -350,33 +371,8 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-10T10:08:19Z",
+      "last_updated": "2026-03-10T10:16:45Z",
       "headlines": [
-        {
-          "title": "Russian economy withstood pressure from outside German expert",
-          "link": "https://tass.com/economy/2073165",
-          "published": "20260119T140000Z"
-        },
-        {
-          "title": "Sudan : united kingdom Hits  Sudan War Machine  With New Sanctions",
-          "link": "https://allafrica.com/stories/202602060005.html",
-          "published": "20260206T060000Z"
-        },
-        {
-          "title": "UK Sanctions Sudanese Army and RSF Leaders",
-          "link": "https://english.aawsat.com/arab-world/5237657-uk-sanctions-sudanese-army-and-rsf-leaders",
-          "published": "20260205T183000Z"
-        },
-        {
-          "title": "U . S . sanctions Gaza charities over alleged Hamas ties \u2013 NaturalNews . com",
-          "link": "https://www.naturalnews.com/2026-01-26-us-sanctions-gaza-charities-over-hamas-ties.html",
-          "published": "20260126T130000Z"
-        },
-        {
-          "title": "Myanmar military using commercial paramotors , gyrocopters for attacks : Report",
-          "link": "https://www.siasat.com/myanmar-military-using-commercial-paramotors-gyrocopters-for-attacks-report-3331737/",
-          "published": "20260126T140000Z"
-        },
         {
           "title": "Mixed messages from Trump leave more questions than answers over war's end",
           "link": "https://www.bbc.com/news/articles/c93j2dw72q9o?at_medium=RSS&at_campaign=rss",
@@ -386,42 +382,57 @@
           "title": "Faisal Islam: Trump comments may have eased oil price surge, but havoc remains",
           "link": "https://www.bbc.com/news/articles/cz7g5vv2gejo?at_medium=RSS&at_campaign=rss",
           "published": "Tue, 10 Mar 2026 00:48:12 GMT"
+        },
+        {
+          "title": "Five Iranian footballers granted Australian visas after anthem protest",
+          "link": "https://www.bbc.com/news/articles/cwy8e978xl8o?at_medium=RSS&at_campaign=rss",
+          "published": "Tue, 10 Mar 2026 07:00:04 GMT"
+        },
+        {
+          "title": "G7 to take 'necessary measures' to support energy supplies",
+          "link": "https://www.bbc.com/news/articles/c79542n0grwo?at_medium=RSS&at_campaign=rss",
+          "published": "Mon, 09 Mar 2026 23:30:46 GMT"
+        },
+        {
+          "title": "Alexander Butterfield, who revealed Nixon Watergate tapes, dies aged 99",
+          "link": "https://www.bbc.com/news/articles/ckg15l9welxo?at_medium=RSS&at_campaign=rss",
+          "published": "Tue, 10 Mar 2026 09:54:39 GMT"
         }
       ],
-      "headline": "Russian economy withstood pressure from outside German expert"
+      "headline": "Mixed messages from Trump leave more questions than answers over war's end"
     },
     "technology": {
-      "last_updated": "2026-03-10T10:08:20Z",
+      "last_updated": "2026-03-10T10:16:45Z",
       "hn_top": [
         {
           "title": "Redox OS has adopted a Certificate of Origin policy and a strict no-LLM policy",
           "url": "https://gitlab.redox-os.org/redox-os/redox/-/blob/master/CONTRIBUTING.md",
-          "score": 84,
-          "comments": 64
+          "score": 87,
+          "comments": 70
         },
         {
           "title": "Lotus 1-2-3 on the PC with DOS",
           "url": "https://stonetools.ghost.io/lotus123-dos/",
-          "score": 88,
+          "score": 90,
           "comments": 29
         },
         {
           "title": "Two Years of Emacs Solo",
           "url": "https://www.rahuljuliato.com/posts/emacs-solo-two-years",
-          "score": 252,
-          "comments": 74
+          "score": 254,
+          "comments": 76
         },
         {
           "title": "Optimizing Top K in Postgres",
           "url": "https://www.paradedb.com/blog/optimizing-top-k",
-          "score": 76,
+          "score": 78,
           "comments": 12
         },
         {
-          "title": "macOS Tahoe windows have different corner radiuses",
-          "url": "https://lapcatsoftware.com/articles/2026/3/1.html",
-          "score": 141,
-          "comments": 95
+          "title": "LoGeR \u2013 3D reconstruction from extremely long videos (DeepMind, UC Berkeley)",
+          "url": "https://loger-project.github.io",
+          "score": 37,
+          "comments": 13
         }
       ],
       "tech_headlines": [
@@ -454,7 +465,7 @@
       "headline": "Redox OS has adopted a Certificate of Origin policy and a strict no-LLM policy"
     },
     "policy": {
-      "last_updated": "2026-03-10T10:08:21Z",
+      "last_updated": "2026-03-10T10:16:46Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -493,7 +504,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-10T10:08:23Z",
+      "last_updated": "2026-03-10T10:16:47Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
