@@ -1,200 +1,174 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-10T16:02:12Z",
+  "fetched_at": "2026-03-09T19:17:04Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-10T16:02:13Z",
+      "last_updated": "2026-03-09T19:17:05Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
-          "price": 680.84,
-          "prev_close": 678.27,
-          "change": 2.57,
-          "change_pct": 0.38,
+          "price": 670.64,
+          "prev_close": 672.38,
+          "change": -1.74,
+          "change_pct": -0.26,
           "currency": "USD"
         },
         "QQQ": {
           "label": "Nasdaq 100 ETF",
-          "price": 611.18,
-          "prev_close": 607.76,
-          "change": 3.42,
-          "change_pct": 0.56,
+          "price": 600.269,
+          "prev_close": 599.75,
+          "change": 0.519,
+          "change_pct": 0.09,
           "currency": "USD"
         },
         "GLD": {
           "label": "Gold ETF",
-          "price": 480.428,
-          "prev_close": 472.53,
-          "change": 7.898,
-          "change_pct": 1.67,
+          "price": 470.32,
+          "prev_close": 473.51,
+          "change": -3.19,
+          "change_pct": -0.67,
           "currency": "USD"
         },
         "TLT": {
           "label": "20Y Treasury ETF",
-          "price": 88.945,
-          "prev_close": 89.23,
-          "change": -0.285,
-          "change_pct": -0.32,
+          "price": 88.94,
+          "prev_close": 88.46,
+          "change": 0.48,
+          "change_pct": 0.54,
           "currency": "USD"
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 71360.664,
-          "prev_close": 68443.15,
-          "change": 2917.514,
-          "change_pct": 4.26,
+          "price": 68416.28,
+          "prev_close": 65975.7,
+          "change": 2440.58,
+          "change_pct": 3.7,
           "currency": "USD"
         },
         "EURUSD=X": {
           "label": "EUR/USD",
-          "price": 1.1648,
-          "prev_close": 1.1636,
-          "change": 0.0012,
-          "change_pct": 0.1,
+          "price": 1.1586,
+          "prev_close": 1.1621,
+          "change": -0.0035,
+          "change_pct": -0.3,
           "currency": "USD"
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 98.644,
-          "prev_close": 99.175,
-          "change": -0.531,
-          "change_pct": -0.54,
+          "price": 99.152,
+          "prev_close": 98.986,
+          "change": 0.166,
+          "change_pct": 0.17,
           "currency": "USD"
         }
       },
-      "yield_10y": 4.15,
-      "headline": "SPY 0.38%  |  BTC $71,361  |  10Y 4.15%"
+      "yield_10y": null,
+      "headline": null
     },
     "energy": {
-      "last_updated": "2026-03-10T16:02:23Z",
+      "last_updated": "2026-03-09T19:17:05Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 84.27,
-          "prev_close": 94.77,
-          "change": -10.5,
-          "change_pct": -11.08,
+          "price": 95.35,
+          "prev_close": 90.9,
+          "change": 4.45,
+          "change_pct": 4.9,
           "currency": "USD"
         },
         "NG=F": {
           "label": "Natural Gas ($/MMBtu)",
-          "price": 3.035,
-          "prev_close": 3.12,
-          "change": -0.085,
-          "change_pct": -2.72,
+          "price": 3.149,
+          "prev_close": 3.186,
+          "change": -0.037,
+          "change_pct": -1.16,
           "currency": "USD"
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 85.21,
-          "prev_close": 93.72,
-          "change": -8.51,
-          "change_pct": -9.08,
+          "price": 99.45,
+          "prev_close": 92.69,
+          "change": 6.76,
+          "change_pct": 7.29,
           "currency": "USD"
         },
         "XLE": {
           "label": "Energy ETF",
-          "price": 56.235,
-          "prev_close": 56.32,
-          "change": -0.085,
-          "change_pct": -0.15,
+          "price": 56.55,
+          "prev_close": 56.57,
+          "change": -0.02,
+          "change_pct": -0.04,
           "currency": "USD"
         }
       },
       "headlines": [],
-      "headline": "WTI $84.27/bbl"
+      "headline": "WTI $95.35/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-10T16:02:25Z",
+      "last_updated": "2026-03-09T19:17:06Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
-          "price": 185.47,
-          "prev_close": 182.65,
-          "change": 2.82,
-          "change_pct": 1.54,
+          "price": 179.95,
+          "prev_close": 177.885,
+          "change": 2.065,
+          "change_pct": 1.16,
           "currency": "USD"
         },
         "MSFT": {
           "label": "Microsoft",
-          "price": 406.515,
-          "prev_close": 409.41,
-          "change": -2.895,
-          "change_pct": -0.71,
+          "price": 405.24,
+          "prev_close": 408.96,
+          "change": -3.72,
+          "change_pct": -0.91,
           "currency": "USD"
         },
         "AAPL": {
           "label": "Apple",
-          "price": 261.52,
-          "prev_close": 259.88,
-          "change": 1.64,
-          "change_pct": 0.63,
+          "price": 257.45,
+          "prev_close": 257.46,
+          "change": -0.01,
+          "change_pct": -0.0,
           "currency": "USD"
         },
         "META": {
           "label": "Meta",
-          "price": 656.56,
-          "prev_close": 647.39,
-          "change": 9.17,
-          "change_pct": 1.42,
+          "price": 636.44,
+          "prev_close": 644.86,
+          "change": -8.42,
+          "change_pct": -1.31,
           "currency": "USD"
         },
         "TSLA": {
           "label": "Tesla",
-          "price": 402.43,
-          "prev_close": 398.68,
-          "change": 3.75,
-          "change_pct": 0.94,
+          "price": 393.21,
+          "prev_close": 396.73,
+          "change": -3.52,
+          "change_pct": -0.89,
           "currency": "USD"
         },
         "AMZN": {
           "label": "Amazon",
-          "price": 214.49,
-          "prev_close": 213.49,
-          "change": 1.0,
-          "change_pct": 0.47,
+          "price": 209.575,
+          "prev_close": 213.12,
+          "change": -3.545,
+          "change_pct": -1.66,
           "currency": "USD"
         },
         "GOOGL": {
           "label": "Alphabet",
-          "price": 309.03,
-          "prev_close": 306.36,
-          "change": 2.67,
-          "change_pct": 0.87,
+          "price": 302.84,
+          "prev_close": 298.27,
+          "change": 4.57,
+          "change_pct": 1.53,
           "currency": "USD"
         }
       },
-      "recent_filings": [
-        {
-          "title": "Aclaris Therapeutics, Inc.  (ACRS) \u2014 8-K (2026-03-10)",
-          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Aclaris%20Therapeutics%2C%20Inc.%20%20%28ACRS%29&type=8-K&dateb=&owner=include&count=5",
-          "published": "2026-03-10"
-        },
-        {
-          "title": "Synchrony Financial  (SYF, SYF-PA, SYF-PB) \u2014 8-K (2026-03-10)",
-          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Synchrony%20Financial%20%20%28SYF%2C%20SYF-PA%2C%20SYF-PB%29&type=8-K&dateb=&owner=include&count=5",
-          "published": "2026-03-10"
-        },
-        {
-          "title": "AN2 Therapeutics, Inc.  (ANTX) \u2014 8-K (2026-03-10)",
-          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=AN2%20Therapeutics%2C%20Inc.%20%20%28ANTX%29&type=8-K&dateb=&owner=include&count=5",
-          "published": "2026-03-10"
-        },
-        {
-          "title": "Archimedes Tech SPAC Partners III Co.  (ARCI, ARCIU) \u2014 8-K (2026-03-10)",
-          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Archimedes%20Tech%20SPAC%20Partners%20III%20Co.%20%20%28ARCI%2C%20ARCIU%29&type=8-K&dateb=&owner=include&count=5",
-          "published": "2026-03-10"
-        },
-        {
-          "title": "STARZ ENTERTAINMENT CORP /CN/  (STRZ) \u2014 8-K (2026-03-10)",
-          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=STARZ%20ENTERTAINMENT%20CORP%20/CN/%20%20%28STRZ%29&type=8-K&dateb=&owner=include&count=5",
-          "published": "2026-03-10"
-        }
-      ],
-      "headline": "NVDA 1.54%  |  MSFT -0.71%"
+      "recent_filings": [],
+      "headline": "NVDA 1.16%  |  MSFT -0.91%"
     },
     "sports": {
-      "last_updated": "2026-03-10T16:02:26Z",
+      "last_updated": "2026-03-09T19:17:06Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -212,32 +186,32 @@
           "label": "NBA",
           "games": [
             {
-              "home": "PHI",
-              "away": "MEM",
+              "home": "CLE",
+              "away": "PHI",
               "home_score": "0",
               "away_score": "0",
-              "status": "3/10 - 7:00 PM EDT"
+              "status": "3/9 - 7:00 PM EDT"
             },
             {
               "home": "BKN",
-              "away": "DET",
+              "away": "MEM",
               "home_score": "0",
               "away_score": "0",
-              "status": "3/10 - 7:30 PM EDT"
+              "status": "3/9 - 7:30 PM EDT"
             },
             {
-              "home": "MIA",
-              "away": "WSH",
+              "home": "OKC",
+              "away": "DEN",
               "home_score": "0",
               "away_score": "0",
-              "status": "3/10 - 7:30 PM EDT"
+              "status": "3/9 - 7:30 PM EDT"
             },
             {
-              "home": "ATL",
-              "away": "DAL",
+              "home": "UTAH",
+              "away": "GS",
               "home_score": "0",
               "away_score": "0",
-              "status": "3/10 - 7:30 PM EDT"
+              "status": "3/9 - 9:00 PM EDT"
             }
           ]
         },
@@ -245,32 +219,32 @@
           "label": "MLB",
           "games": [
             {
+              "home": "ATL",
+              "away": "MIN",
+              "home_score": "9",
+              "away_score": "4",
+              "status": "Top 7th"
+            },
+            {
               "home": "BOS",
-              "away": "DET",
-              "home_score": "0",
-              "away_score": "0",
-              "status": "3/10 - 1:05 PM EDT"
+              "away": "PHI",
+              "home_score": "5",
+              "away_score": "3",
+              "status": "Bot 8th"
+            },
+            {
+              "home": "DET",
+              "away": "TB",
+              "home_score": "4",
+              "away_score": "4",
+              "status": "Top 8th"
             },
             {
               "home": "HOU",
-              "away": "BAL",
-              "home_score": "0",
-              "away_score": "0",
-              "status": "3/10 - 1:05 PM EDT"
-            },
-            {
-              "home": "PHI",
-              "away": "NYY",
-              "home_score": "0",
-              "away_score": "0",
-              "status": "3/10 - 1:05 PM EDT"
-            },
-            {
-              "home": "TB",
-              "away": "MIN",
-              "home_score": "0",
-              "away_score": "0",
-              "status": "3/10 - 1:05 PM EDT"
+              "away": "STL",
+              "home_score": "5",
+              "away_score": "2",
+              "status": "Top 7th"
             }
           ]
         }
@@ -278,16 +252,16 @@
       "injuries": {
         "nfl": [
           {
-            "player": "Isaac Seumalo",
+            "player": "Tyler Allgeier",
             "team": "",
             "status": "Active",
-            "detail": "The Cardinals agreed to terms with Seumalo on a three-year, $31.5 million contract Monday, Jeremy Fowler of ESPN.com reports."
+            "detail": "Allgeier agreed to terms on a two-year, $12.25 million contract with Arizona on Monday, Mike Garafolo of NFL Network reports."
           },
           {
-            "player": "Roy Lopez",
+            "player": "Blake Gillikin",
             "team": "",
-            "status": "Active",
-            "detail": "Lopez signed a two-year, $11.5 million contract with the Cardinals on Monday that includes $7 million guaranteed, Ian Rapoport of NFL Network reports."
+            "status": "Questionable",
+            "detail": "Gillikin (back) and the Cardinals agreed on a one-year, $2.65 million contract Sunday, Mike Garafolo of NFL Network reports."
           },
           {
             "player": "Tyrone Wheatley Jr.",
@@ -296,22 +270,22 @@
             "detail": "questionable"
           },
           {
-            "player": "Cameron Thomas",
+            "player": "Jahan Dotson",
             "team": "",
             "status": "Active",
-            "detail": "Thomas agreed to a one-year, $3.1 million contract with the Falcons on Monday, Marc Raimondi of ESPN.com reports."
-          },
-          {
-            "player": "John Simpson",
-            "team": "",
-            "status": "Active",
-            "detail": "Simpson agreed to a three-year, $30 million contract with the Ravens on Monday, Mike Garafolo of NFL Network reports."
+            "detail": "Dotson and the Falcons have reached agreement on a two-year contract, Adam Schefter of ESPN reports."
           },
           {
             "player": "Tyler Huntley",
             "team": "",
             "status": "Active",
             "detail": "Huntley and the Ravens agreed to a two-year, $11 million contract Saturday, Adam Schefter of ESPN reports."
+          },
+          {
+            "player": "Nate Wiggins",
+            "team": "",
+            "status": "Questionable",
+            "detail": "Wiggins (undisclosed) underwent offseason surgery, Jonas Shaffer of TheBaltimoreBanner.com reports."
           }
         ],
         "nba": [
@@ -319,13 +293,7 @@
             "player": "Jonathan Kuminga",
             "team": "",
             "status": "Day-To-Day",
-            "detail": "Kuminga is questionable for Tuesday's game against the Mavericks due to a left knee bone bruise."
-          },
-          {
-            "player": "Payton Pritchard",
-            "team": "",
-            "status": "Day-To-Day",
-            "detail": "Pritchard (neck) is Taylor Snow of the Celtics' official site for Tuesday's game against the Spurs."
+            "detail": "Kuminga (knee) will not play Saturday against the 76ers."
           },
           {
             "player": "Nikola Vucevic",
@@ -336,100 +304,85 @@
           {
             "player": "Michael Porter Jr.",
             "team": "",
-            "status": "Day-To-Day",
+            "status": "Out",
             "detail": "Porter (rest) has been ruled out for Monday's game against the Grizzlies."
           },
           {
             "player": "Egor Demin",
             "team": "",
             "status": "Out",
-            "detail": "The Nets announced Monday that Demin (foot) will miss the rest of the season, NBA reporter Marc Stein reports."
+            "detail": "Demin (foot) won't play Monday versus Memphis."
           }
         ]
       },
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-10T16:02:29Z",
+      "last_updated": "2026-03-09T19:17:17Z",
       "headlines": [
         {
-          "title": "Russian economy withstood pressure from outside German expert",
-          "link": "https://tass.com/economy/2073165",
-          "published": "20260119T140000Z"
+          "title": "Who is Mojtaba Khamenei, Iran's new supreme leader?",
+          "link": "https://www.bbc.com/news/articles/c78xxg05w0zo?at_medium=RSS&at_campaign=rss",
+          "published": "Sun, 08 Mar 2026 21:51:48 GMT"
         },
         {
-          "title": "Sudan : united kingdom Hits  Sudan War Machine  With New Sanctions",
-          "link": "https://allafrica.com/stories/202602060005.html",
-          "published": "20260206T060000Z"
+          "title": "US teacher killed after toilet paper prank goes wrong",
+          "link": "https://www.bbc.com/news/articles/cdr24g1p3vpo?at_medium=RSS&at_campaign=rss",
+          "published": "Mon, 09 Mar 2026 17:09:21 GMT"
         },
         {
-          "title": "UK Sanctions Sudanese Army and RSF Leaders",
-          "link": "https://english.aawsat.com/arab-world/5237657-uk-sanctions-sudanese-army-and-rsf-leaders",
-          "published": "20260205T183000Z"
+          "title": "G7 to take 'necessary measures' to support energy supplies",
+          "link": "https://www.bbc.com/news/articles/c79542n0grwo?at_medium=RSS&at_campaign=rss",
+          "published": "Mon, 09 Mar 2026 17:33:36 GMT"
         },
         {
-          "title": "U . S . sanctions Gaza charities over alleged Hamas ties \u2013 NaturalNews . com",
-          "link": "https://www.naturalnews.com/2026-01-26-us-sanctions-gaza-charities-over-hamas-ties.html",
-          "published": "20260126T130000Z"
+          "title": "Hundreds of teenagers report for duty as Croatia reinstates conscription",
+          "link": "https://www.bbc.com/news/articles/c93j2l32lzgo?at_medium=RSS&at_campaign=rss",
+          "published": "Mon, 09 Mar 2026 14:49:34 GMT"
         },
         {
-          "title": "Myanmar military using commercial paramotors , gyrocopters for attacks : Report",
-          "link": "https://www.siasat.com/myanmar-military-using-commercial-paramotors-gyrocopters-for-attacks-report-3331737/",
-          "published": "20260126T140000Z"
-        },
-        {
-          "title": "Mixed messages from Trump leave more questions than answers over war's end",
-          "link": "https://www.bbc.com/news/articles/c93j2dw72q9o?at_medium=RSS&at_campaign=rss",
-          "published": "Tue, 10 Mar 2026 02:37:46 GMT"
-        },
-        {
-          "title": "Five Iranian footballers granted Australian visas after anthem protest",
-          "link": "https://www.bbc.com/news/articles/cwy8e978xl8o?at_medium=RSS&at_campaign=rss",
-          "published": "Tue, 10 Mar 2026 10:38:32 GMT"
+          "title": "Alleged Bondi gunman seeks order to suppress family's identity",
+          "link": "https://www.bbc.com/news/articles/cy8lwnyj40eo?at_medium=RSS&at_campaign=rss",
+          "published": "Mon, 09 Mar 2026 08:13:58 GMT"
         }
       ],
-      "headline": "Russian economy withstood pressure from outside German expert"
+      "headline": "Who is Mojtaba Khamenei, Iran's new supreme leader?"
     },
     "technology": {
-      "last_updated": "2026-03-10T16:02:30Z",
+      "last_updated": "2026-03-09T19:17:17Z",
       "hn_top": [
         {
-          "title": "Tony Hoare has died",
-          "url": "https://blog.computationalcomplexity.org/2026/03/tony-hoare-1934-2026.html",
-          "score": 268,
-          "comments": 20
+          "title": "Fixfest is a global gathering of repairers, tinkerers, and activists",
+          "url": "https://fixfest.therestartproject.org/",
+          "score": 89,
+          "comments": 7
         },
         {
-          "title": "Rebasing in Magit",
-          "url": "https://entropicthoughts.com/rebasing-in-magit",
-          "score": 92,
-          "comments": 57
+          "title": "JSLinux Now Supports x86_64",
+          "url": "https://bellard.org/jslinux/",
+          "score": 76,
+          "comments": 16
         },
         {
-          "title": "Intel Demos Chip to Compute with Encrypted Data",
-          "url": "https://spectrum.ieee.org/fhe-intel",
-          "score": 111,
+          "title": "Building a Procedural Hex Map with Wave Function Collapse",
+          "url": "https://felixturner.github.io/hex-map-wfc/article/",
+          "score": 133,
           "comments": 26
         },
         {
-          "title": "I put my whole life into a single database",
-          "url": "https://howisfelix.today/",
-          "score": 286,
-          "comments": 132
+          "title": "Launch HN: Terminal Use (YC W26) \u2013 Vercel for filesystem-based agents",
+          "url": "https://news.ycombinator.com/item?id=47311657",
+          "score": 37,
+          "comments": 18
         },
         {
-          "title": "Launch HN: Didit (YC W26) \u2013 Stripe for Identity Verification",
-          "url": "https://news.ycombinator.com/item?id=47324296",
-          "score": 11,
-          "comments": 14
+          "title": "Show HN: The Mog Programming Language",
+          "url": "https://moglang.org",
+          "score": 26,
+          "comments": 5
         }
       ],
       "tech_headlines": [
-        {
-          "title": "How Can a Locomotive Pull a Long Train That\u2019s Much Heavier?",
-          "link": "https://www.wired.com/story/how-can-a-locomotive-pull-a-train-thats-much-heavier/",
-          "published": "Tue, 10 Mar 2026 11:00:00 +0000"
-        },
         {
           "title": "Don\u2019t Expect Big Surprises in the Government\u2019s Alien Files",
           "link": "https://www.wired.com/story/dont-expect-big-surprises-in-the-governments-alien-files/",
@@ -449,12 +402,17 @@
           "title": "Sleep Apnea Often Goes Undetected in Women. That\u2019s Starting to Change",
           "link": "https://www.wired.com/story/sleep-apnea-women-detection-treatment/",
           "published": "Fri, 06 Mar 2026 09:30:00 +0000"
+        },
+        {
+          "title": "Big Tech Signs White House Data Center Pledge With Good Optics and Little Substance",
+          "link": "https://www.wired.com/story/big-tech-signs-white-house-data-center-pledge-with-good-optics-not-much-substance/",
+          "published": "Wed, 04 Mar 2026 22:13:27 +0000"
         }
       ],
-      "headline": "Tony Hoare has died"
+      "headline": "Fixfest is a global gathering of repairers, tinkerers, and activists"
     },
     "policy": {
-      "last_updated": "2026-03-10T16:02:30Z",
+      "last_updated": "2026-03-09T19:17:18Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -464,36 +422,36 @@
       ],
       "federal_rules": [
         {
-          "title": "Updates to the Popcorn Promotion, Research, and Consumer Information Order",
-          "link": "https://www.federalregister.gov/documents/2026/03/10/2026-04694/updates-to-the-popcorn-promotion-research-and-consumer-information-order",
-          "published": "2026-03-10"
+          "title": "Christmas Tree Promotion, Research, and Information Order",
+          "link": "https://www.federalregister.gov/documents/2026/03/09/2026-04586/christmas-tree-promotion-research-and-information-order",
+          "published": "2026-03-09"
         },
         {
-          "title": "Fisheries of the Exclusive Economic Zone Off Alaska; Bering Sea and Aleutian Islands; 2026 and 2027 Harvest Specifications for Groundfish",
-          "link": "https://www.federalregister.gov/documents/2026/03/10/2026-04684/fisheries-of-the-exclusive-economic-zone-off-alaska-bering-sea-and-aleutian-islands-2026-and-2027",
-          "published": "2026-03-10"
+          "title": "Magnuson-Stevens Fishery Conservation and Management Act Provisions; Fisheries of the Northeastern United States; Northeast Multispecies Fishery; Framework Adjustment 69",
+          "link": "https://www.federalregister.gov/documents/2026/03/09/2026-04585/magnuson-stevens-fishery-conservation-and-management-act-provisions-fisheries-of-the-northeastern",
+          "published": "2026-03-09"
         },
         {
-          "title": "Airworthiness Directives; Airbus SAS Airplanes",
-          "link": "https://www.federalregister.gov/documents/2026/03/10/2026-04677/airworthiness-directives-airbus-sas-airplanes",
-          "published": "2026-03-10"
+          "title": "Avocados Grown in South Florida and Imported Avocados; Change in Maturity Requirements",
+          "link": "https://www.federalregister.gov/documents/2026/03/09/2026-04584/avocados-grown-in-south-florida-and-imported-avocados-change-in-maturity-requirements",
+          "published": "2026-03-09"
         },
         {
-          "title": "Designation of Propionyl Chloride as a List I Chemical",
-          "link": "https://www.federalregister.gov/documents/2026/03/10/2026-04657/designation-of-propionyl-chloride-as-a-list-i-chemical",
-          "published": "2026-03-10"
+          "title": "Paper and Paper-Based Packaging Promotion, Research and Information Order Termination",
+          "link": "https://www.federalregister.gov/documents/2026/03/09/2026-04570/paper-and-paper-based-packaging-promotion-research-and-information-order-termination",
+          "published": "2026-03-09"
         },
         {
-          "title": "Air Plan Approval; North Dakota; Approval of Air Quality Implementation Plans; Regional Haze State Implementation Plan; Regional Haze Five Year Progress Report and Nitrogen Oxides Best Available Retrofit Technology Determination for Coal Creek Station for the First Implementation Period",
-          "link": "https://www.federalregister.gov/documents/2026/03/10/2026-04649/air-plan-approval-north-dakota-approval-of-air-quality-implementation-plans-regional-haze-state",
-          "published": "2026-03-10"
+          "title": "Supplemental Disaster Relief Program and Dairy Margin Coverage Program; Correction",
+          "link": "https://www.federalregister.gov/documents/2026/03/09/2026-04531/supplemental-disaster-relief-program-and-dairy-margin-coverage-program-correction",
+          "published": "2026-03-09"
         }
       ],
       "scotus": [],
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-10T16:02:31Z",
+      "last_updated": "2026-03-09T19:17:20Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
