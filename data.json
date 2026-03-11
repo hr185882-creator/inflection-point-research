@@ -1,9 +1,9 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-11T12:32:29Z",
+  "fetched_at": "2026-03-11T12:45:55Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-11T12:32:30Z",
+      "last_updated": "2026-03-11T12:45:56Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
@@ -39,57 +39,57 @@
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 69393.76,
+          "price": 69202.195,
           "prev_close": 69956.93,
-          "change": -563.17,
-          "change_pct": -0.81,
+          "change": -754.735,
+          "change_pct": -1.08,
           "currency": "USD"
         },
         "EURUSD=X": {
           "label": "EUR/USD",
-          "price": 1.16,
+          "price": 1.1592,
           "prev_close": 1.1614,
-          "change": -0.0014,
-          "change_pct": -0.12,
+          "change": -0.0022,
+          "change_pct": -0.19,
           "currency": "USD"
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 99.033,
+          "price": 99.071,
           "prev_close": 98.826,
-          "change": 0.207,
-          "change_pct": 0.21,
+          "change": 0.245,
+          "change_pct": 0.25,
           "currency": "USD"
         }
       },
       "yield_10y": 4.12,
-      "headline": "SPY -0.16%  |  BTC $69,394  |  10Y 4.12%"
+      "headline": "SPY -0.16%  |  BTC $69,202  |  10Y 4.12%"
     },
     "energy": {
-      "last_updated": "2026-03-11T12:32:38Z",
+      "last_updated": "2026-03-11T12:46:05Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 86.94,
+          "price": 87.11,
           "prev_close": 83.45,
-          "change": 3.49,
-          "change_pct": 4.18,
+          "change": 3.66,
+          "change_pct": 4.39,
           "currency": "USD"
         },
         "NG=F": {
           "label": "Natural Gas ($/MMBtu)",
-          "price": 3.1,
+          "price": 3.112,
           "prev_close": 3.02,
-          "change": 0.08,
-          "change_pct": 2.65,
+          "change": 0.092,
+          "change_pct": 3.05,
           "currency": "USD"
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 87.82,
+          "price": 88.15,
           "prev_close": 85.27,
-          "change": 2.55,
-          "change_pct": 2.99,
+          "change": 2.88,
+          "change_pct": 3.38,
           "currency": "USD"
         },
         "XLE": {
@@ -123,10 +123,10 @@
           "published": "Tue, 03 Mar 2026 09:00:00 EST"
         }
       ],
-      "headline": "WTI $86.94/bbl"
+      "headline": "WTI $87.11/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-11T12:32:39Z",
+      "last_updated": "2026-03-11T12:46:06Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
@@ -187,13 +187,13 @@
       },
       "recent_filings": [
         {
-          "title": "Pangaea Logistics Solutions Ltd.  (PANL) \u2014 8-K (2026-03-11)",
-          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Pangaea%20Logistics%20Solutions%20Ltd.%20%20%28PANL%29&type=8-K&dateb=&owner=include&count=5",
+          "title": "Sonos Inc  (SONO) \u2014 8-K (2026-03-11)",
+          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Sonos%20Inc%20%20%28SONO%29&type=8-K&dateb=&owner=include&count=5",
           "published": "2026-03-11"
         },
         {
-          "title": "Sonos Inc  (SONO) \u2014 8-K (2026-03-11)",
-          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Sonos%20Inc%20%20%28SONO%29&type=8-K&dateb=&owner=include&count=5",
+          "title": "Pangaea Logistics Solutions Ltd.  (PANL) \u2014 8-K (2026-03-11)",
+          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Pangaea%20Logistics%20Solutions%20Ltd.%20%20%28PANL%29&type=8-K&dateb=&owner=include&count=5",
           "published": "2026-03-11"
         },
         {
@@ -215,7 +215,7 @@
       "headline": "NVDA 1.16%  |  MSFT -0.89%"
     },
     "sports": {
-      "last_updated": "2026-03-11T12:32:40Z",
+      "last_updated": "2026-03-11T12:46:06Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -371,10 +371,10 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-11T12:32:40Z",
+      "last_updated": "2026-03-11T12:46:16Z",
       "headlines": [
         {
-          "title": "G7 welcomes potential record release of oil reserves in bid to curb soaring prices",
+          "title": "G7 welcomes potential record release of oil reserves as prices surge",
           "link": "https://www.bbc.com/news/articles/cly093xxlzzo?at_medium=RSS&at_campaign=rss",
           "published": "Wed, 11 Mar 2026 12:07:11 GMT"
         },
@@ -399,40 +399,40 @@
           "published": "Wed, 11 Mar 2026 04:14:40 GMT"
         }
       ],
-      "headline": "G7 welcomes potential record release of oil reserves in bid to curb soaring prices"
+      "headline": "G7 welcomes potential record release of oil reserves as prices surge"
     },
     "technology": {
-      "last_updated": "2026-03-11T12:32:41Z",
+      "last_updated": "2026-03-11T12:46:17Z",
       "hn_top": [
         {
           "title": "Building a TB-303 from Scratch",
           "url": "https://loopmaster.xyz/tutorials/tb303-from-scratch",
-          "score": 98,
-          "comments": 28
+          "score": 104,
+          "comments": 31
         },
         {
           "title": "Zig \u2013 Type Resolution Redesign and Language Changes",
           "url": "https://ziglang.org/devlog/2026/#2026-03-10",
-          "score": 286,
-          "comments": 113
+          "score": 288,
+          "comments": 119
         },
         {
           "title": "Create value for others and don\u2019t worry about the returns",
           "url": "https://geohot.github.io//blog/jekyll/update/2026/03/11/running-69-agents.html",
-          "score": 430,
-          "comments": 263
-        },
-        {
-          "title": "U+237C \u237c Is Azimuth",
-          "url": "https://ionathan.ch/2026/02/16/angzarr.html",
-          "score": 336,
-          "comments": 51
+          "score": 437,
+          "comments": 279
         },
         {
           "title": "Cloudflare crawl endpoint",
           "url": "https://developers.cloudflare.com/changelog/post/2026-03-10-br-crawl-endpoint/",
-          "score": 342,
-          "comments": 133
+          "score": 345,
+          "comments": 135
+        },
+        {
+          "title": "U+237C \u237c Is Azimuth",
+          "url": "https://ionathan.ch/2026/02/16/angzarr.html",
+          "score": 338,
+          "comments": 55
         }
       ],
       "tech_headlines": [
@@ -465,7 +465,7 @@
       "headline": "Building a TB-303 from Scratch"
     },
     "policy": {
-      "last_updated": "2026-03-11T12:32:41Z",
+      "last_updated": "2026-03-11T12:46:18Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -504,7 +504,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-11T12:32:44Z",
+      "last_updated": "2026-03-11T12:46:20Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
