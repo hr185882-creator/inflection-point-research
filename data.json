@@ -1,9 +1,9 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-11T21:48:09Z",
+  "fetched_at": "2026-03-11T22:15:51Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-11T21:48:19Z",
+      "last_updated": "2026-03-11T22:15:52Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
@@ -39,26 +39,26 @@
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 70606.12,
+          "price": 70841.0,
           "prev_close": 69956.93,
-          "change": 649.19,
-          "change_pct": 0.93,
+          "change": 884.07,
+          "change_pct": 1.26,
           "currency": "USD"
         },
         "EURUSD=X": {
           "label": "EUR/USD",
-          "price": 1.157,
+          "price": 1.1571,
           "prev_close": 1.1614,
-          "change": -0.0044,
-          "change_pct": -0.38,
+          "change": -0.0043,
+          "change_pct": -0.37,
           "currency": "USD"
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 99.259,
+          "price": 99.251,
           "prev_close": 98.826,
-          "change": 0.433,
-          "change_pct": 0.44,
+          "change": 0.425,
+          "change_pct": 0.43,
           "currency": "USD"
         }
       },
@@ -66,30 +66,30 @@
       "headline": null
     },
     "energy": {
-      "last_updated": "2026-03-11T21:48:27Z",
+      "last_updated": "2026-03-11T22:15:52Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 88.41,
-          "prev_close": 83.45,
-          "change": 4.96,
-          "change_pct": 5.94,
+          "price": 89.82,
+          "prev_close": 87.25,
+          "change": 2.57,
+          "change_pct": 2.95,
           "currency": "USD"
         },
         "NG=F": {
           "label": "Natural Gas ($/MMBtu)",
-          "price": 3.227,
-          "prev_close": 3.02,
-          "change": 0.207,
-          "change_pct": 6.85,
+          "price": 3.22,
+          "prev_close": 3.209,
+          "change": 0.011,
+          "change_pct": 0.34,
           "currency": "USD"
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 90.26,
-          "prev_close": 85.27,
-          "change": 4.99,
-          "change_pct": 5.85,
+          "price": 91.4,
+          "prev_close": 89.35,
+          "change": 2.05,
+          "change_pct": 2.29,
           "currency": "USD"
         },
         "XLE": {
@@ -101,32 +101,11 @@
           "currency": "USD"
         }
       },
-      "headlines": [
-        {
-          "title": "Annual U.S. crude oil exports decrease for first time since 2021",
-          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67324",
-          "published": "Tue, 10 Mar 2026 09:00:00 EST"
-        },
-        {
-          "title": "U.S. exports of major transportation fuels in 2025 were about the same as in 2024",
-          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67304",
-          "published": "Mon, 09 Mar 2026 09:00:00 EST"
-        },
-        {
-          "title": "U.S. electricity generation in 2025 hit a record, again",
-          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67284",
-          "published": "Thu, 05 Mar 2026 09:00:00 EST"
-        },
-        {
-          "title": "U.S. LNG developers sign highest volume of sale and purchase contracts since 2022",
-          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67264",
-          "published": "Tue, 03 Mar 2026 09:00:00 EST"
-        }
-      ],
-      "headline": "WTI $88.41/bbl"
+      "headlines": [],
+      "headline": "WTI $89.82/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-11T21:48:29Z",
+      "last_updated": "2026-03-11T22:15:53Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
@@ -185,37 +164,11 @@
           "currency": "USD"
         }
       },
-      "recent_filings": [
-        {
-          "title": "Pangaea Logistics Solutions Ltd.  (PANL) \u2014 8-K (2026-03-11)",
-          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Pangaea%20Logistics%20Solutions%20Ltd.%20%20%28PANL%29&type=8-K&dateb=&owner=include&count=5",
-          "published": "2026-03-11"
-        },
-        {
-          "title": "Sonos Inc  (SONO) \u2014 8-K (2026-03-11)",
-          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Sonos%20Inc%20%20%28SONO%29&type=8-K&dateb=&owner=include&count=5",
-          "published": "2026-03-11"
-        },
-        {
-          "title": "Strive, Inc.  (ASST, SATA) \u2014 8-K (2026-03-11)",
-          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Strive%2C%20Inc.%20%20%28ASST%2C%20SATA%29&type=8-K&dateb=&owner=include&count=5",
-          "published": "2026-03-11"
-        },
-        {
-          "title": "Sagimet Biosciences Inc.  (SGMT) \u2014 8-K (2026-03-11)",
-          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Sagimet%20Biosciences%20Inc.%20%20%28SGMT%29&type=8-K&dateb=&owner=include&count=5",
-          "published": "2026-03-11"
-        },
-        {
-          "title": "Marpai, Inc.  (MRAI) \u2014 8-K (2026-03-11)",
-          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Marpai%2C%20Inc.%20%20%28MRAI%29&type=8-K&dateb=&owner=include&count=5",
-          "published": "2026-03-11"
-        }
-      ],
+      "recent_filings": [],
       "headline": "NVDA 0.68%  |  MSFT -0.22%"
     },
     "sports": {
-      "last_updated": "2026-03-11T21:48:30Z",
+      "last_updated": "2026-03-11T22:15:53Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -377,8 +330,33 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-11T21:48:30Z",
+      "last_updated": "2026-03-11T22:16:08Z",
       "headlines": [
+        {
+          "title": "Russian economy withstood pressure from outside German expert",
+          "link": "https://tass.com/economy/2073165",
+          "published": "20260119T140000Z"
+        },
+        {
+          "title": "Sudan : united kingdom Hits  Sudan War Machine  With New Sanctions",
+          "link": "https://allafrica.com/stories/202602060005.html",
+          "published": "20260206T060000Z"
+        },
+        {
+          "title": "UK Sanctions Sudanese Army and RSF Leaders",
+          "link": "https://english.aawsat.com/arab-world/5237657-uk-sanctions-sudanese-army-and-rsf-leaders",
+          "published": "20260205T183000Z"
+        },
+        {
+          "title": "U . S . sanctions Gaza charities over alleged Hamas ties \u2013 NaturalNews . com",
+          "link": "https://www.naturalnews.com/2026-01-26-us-sanctions-gaza-charities-over-hamas-ties.html",
+          "published": "20260126T130000Z"
+        },
+        {
+          "title": "Myanmar military using commercial paramotors , gyrocopters for attacks : Report",
+          "link": "https://www.siasat.com/myanmar-military-using-commercial-paramotors-gyrocopters-for-attacks-report-3331737/",
+          "published": "20260126T140000Z"
+        },
         {
           "title": "Bowen: Trump has called for an Iran uprising but the lessons from Iraq in 1991 loom large",
           "link": "https://www.bbc.com/news/articles/cn0znx4xrl9o?at_medium=RSS&at_campaign=rss",
@@ -388,60 +366,50 @@
           "title": "Countries agree to record release of emergency oil reserves as prices surge",
           "link": "https://www.bbc.com/news/articles/cly093xxlzzo?at_medium=RSS&at_campaign=rss",
           "published": "Wed, 11 Mar 2026 15:51:11 GMT"
-        },
-        {
-          "title": "'Even under missiles we carry on living' - how young Iranians are coping with war",
-          "link": "https://www.bbc.com/news/articles/c1mj1pyrzryo?at_medium=RSS&at_campaign=rss",
-          "published": "Wed, 11 Mar 2026 16:00:34 GMT"
-        },
-        {
-          "title": "EU and UK demand Israel stop surge in West Bank settler violence since Iran war",
-          "link": "https://www.bbc.com/news/articles/c620vwl97vyo?at_medium=RSS&at_campaign=rss",
-          "published": "Wed, 11 Mar 2026 14:13:52 GMT"
-        },
-        {
-          "title": "Three brothers arrested after explosion at US embassy in Oslo",
-          "link": "https://www.bbc.com/news/articles/cx2grl7lrrmo?at_medium=RSS&at_campaign=rss",
-          "published": "Wed, 11 Mar 2026 18:28:46 GMT"
         }
       ],
-      "headline": "Bowen: Trump has called for an Iran uprising but the lessons from Iraq in 1991 loom large"
+      "headline": "Russian economy withstood pressure from outside German expert"
     },
     "technology": {
-      "last_updated": "2026-03-11T21:48:30Z",
+      "last_updated": "2026-03-11T22:16:09Z",
       "hn_top": [
         {
           "title": "Don't post generated/AI-edited comments. HN is for conversation between humans.",
           "url": "https://news.ycombinator.com/newsguidelines.html#generated",
-          "score": 1548,
-          "comments": 631
-        },
-        {
-          "title": "The dead Internet is not a theory anymore",
-          "url": "https://www.adriankrebs.ch/blog/dead-internet/",
-          "score": 217,
-          "comments": 127
+          "score": 1798,
+          "comments": 701
         },
         {
           "title": "Temporal: A nine-year journey to fix time in JavaScript",
           "url": "https://bloomberg.github.io/js-blog/post/temporal/",
-          "score": 403,
-          "comments": 139
+          "score": 408,
+          "comments": 141
         },
         {
-          "title": "I'm glad the Anthropic fight is happening now",
-          "url": "https://www.dwarkesh.com/p/dow-anthropic",
-          "score": 70,
-          "comments": 44
+          "title": "Many SWE-bench-Passing PRs would not be merged",
+          "url": "https://metr.org/notes/2026-03-10-many-swe-bench-passing-prs-would-not-be-merged-into-main/",
+          "score": 24,
+          "comments": 0
         },
         {
           "title": "Making WebAssembly a first-class language on the Web",
           "url": "https://hacks.mozilla.org/2026/02/making-webassembly-a-first-class-language-on-the-web/",
-          "score": 306,
-          "comments": 121
+          "score": 317,
+          "comments": 123
+        },
+        {
+          "title": "I'm glad the Anthropic fight is happening now",
+          "url": "https://www.dwarkesh.com/p/dow-anthropic",
+          "score": 91,
+          "comments": 81
         }
       ],
       "tech_headlines": [
+        {
+          "title": "The South Carolina Measles Outbreak Is Slowing Down",
+          "link": "https://www.wired.com/story/the-south-carolina-measles-outbreak-is-slowing-down/",
+          "published": "Wed, 11 Mar 2026 22:12:36 +0000"
+        },
         {
           "title": "Technology Is Reshaping Sleep Apnea Treatment",
           "link": "https://www.wired.com/story/sleep-apnea-treatment-tech/",
@@ -461,17 +429,12 @@
           "title": "Don\u2019t Expect Big Surprises in the Government\u2019s Alien Files",
           "link": "https://www.wired.com/story/dont-expect-big-surprises-in-the-governments-alien-files/",
           "published": "Mon, 09 Mar 2026 10:00:00 +0000"
-        },
-        {
-          "title": "Why RFK\u2019s CDC Is Endorsing \u2018Shared Decisionmaking\u2019 for Vaccines",
-          "link": "https://www.wired.com/story/why-rfks-cdc-is-endorsing-shared-decision-making-for-vaccines/",
-          "published": "Mon, 09 Mar 2026 09:30:00 +0000"
         }
       ],
       "headline": "Don't post generated/AI-edited comments. HN is for conversation between humans."
     },
     "policy": {
-      "last_updated": "2026-03-11T21:48:31Z",
+      "last_updated": "2026-03-11T22:16:10Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -510,7 +473,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-11T21:48:36Z",
+      "last_updated": "2026-03-11T22:16:13Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
