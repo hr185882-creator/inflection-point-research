@@ -1,178 +1,61 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-11T19:48:59Z",
+  "fetched_at": "2026-03-11T20:04:13Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-11T19:49:02Z",
+      "last_updated": "2026-03-11T20:04:14Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
-          "price": 675.59,
+          "price": 676.28,
           "prev_close": 677.18,
-          "change": -1.59,
-          "change_pct": -0.23,
-          "currency": "USD"
-        },
-        "QQQ": {
-          "label": "Nasdaq 100 ETF",
-          "price": 607.08,
-          "prev_close": 607.77,
-          "change": -0.69,
-          "change_pct": -0.11,
-          "currency": "USD"
-        },
-        "GLD": {
-          "label": "Gold ETF",
-          "price": 475.71,
-          "prev_close": 477.86,
-          "change": -2.15,
-          "change_pct": -0.45,
-          "currency": "USD"
-        },
-        "TLT": {
-          "label": "20Y Treasury ETF",
-          "price": 87.245,
-          "prev_close": 88.28,
-          "change": -1.035,
-          "change_pct": -1.17,
-          "currency": "USD"
-        },
-        "BTC-USD": {
-          "label": "Bitcoin",
-          "price": 70674.9,
-          "prev_close": 69956.93,
-          "change": 717.97,
-          "change_pct": 1.03,
-          "currency": "USD"
-        },
-        "EURUSD=X": {
-          "label": "EUR/USD",
-          "price": 1.1575,
-          "prev_close": 1.1614,
-          "change": -0.0039,
-          "change_pct": -0.34,
-          "currency": "USD"
-        },
-        "DX-Y.NYB": {
-          "label": "DXY",
-          "price": 99.236,
-          "prev_close": 98.826,
-          "change": 0.41,
-          "change_pct": 0.41,
+          "change": -0.9,
+          "change_pct": -0.13,
           "currency": "USD"
         }
       },
       "yield_10y": 4.12,
-      "headline": "SPY -0.23%  |  BTC $70,675  |  10Y 4.12%"
+      "headline": null
     },
     "energy": {
-      "last_updated": "2026-03-11T19:49:13Z",
-      "quotes": {
-        "CL=F": {
-          "label": "WTI Crude ($/bbl)",
-          "price": 87.64,
-          "prev_close": 83.45,
-          "change": 4.19,
-          "change_pct": 5.02,
-          "currency": "USD"
+      "last_updated": "2026-03-11T20:04:23Z",
+      "quotes": {},
+      "headlines": [
+        {
+          "title": "Annual U.S. crude oil exports decrease for first time since 2021",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67324",
+          "published": "Tue, 10 Mar 2026 09:00:00 EST"
         },
-        "NG=F": {
-          "label": "Natural Gas ($/MMBtu)",
-          "price": 3.198,
-          "prev_close": 3.02,
-          "change": 0.178,
-          "change_pct": 5.89,
-          "currency": "USD"
+        {
+          "title": "U.S. exports of major transportation fuels in 2025 were about the same as in 2024",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67304",
+          "published": "Mon, 09 Mar 2026 09:00:00 EST"
         },
-        "BZ=F": {
-          "label": "Brent Crude ($/bbl)",
-          "price": 89.65,
-          "prev_close": 85.27,
-          "change": 4.38,
-          "change_pct": 5.14,
-          "currency": "USD"
+        {
+          "title": "U.S. electricity generation in 2025 hit a record, again",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67284",
+          "published": "Thu, 05 Mar 2026 09:00:00 EST"
         },
-        "XLE": {
-          "label": "Energy ETF",
-          "price": 56.975,
-          "prev_close": 55.6,
-          "change": 1.375,
-          "change_pct": 2.47,
-          "currency": "USD"
+        {
+          "title": "U.S. LNG developers sign highest volume of sale and purchase contracts since 2022",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67264",
+          "published": "Tue, 03 Mar 2026 09:00:00 EST"
         }
-      },
-      "headlines": [],
-      "headline": "WTI $87.64/bbl"
+      ],
+      "headline": null
     },
     "companies": {
-      "last_updated": "2026-03-11T19:49:14Z",
-      "quotes": {
-        "NVDA": {
-          "label": "NVIDIA",
-          "price": 185.465,
-          "prev_close": 184.77,
-          "change": 0.695,
-          "change_pct": 0.38,
-          "currency": "USD"
-        },
-        "MSFT": {
-          "label": "Microsoft",
-          "price": 404.278,
-          "prev_close": 405.76,
-          "change": -1.482,
-          "change_pct": -0.37,
-          "currency": "USD"
-        },
-        "AAPL": {
-          "label": "Apple",
-          "price": 260.14,
-          "prev_close": 260.83,
-          "change": -0.69,
-          "change_pct": -0.26,
-          "currency": "USD"
-        },
-        "META": {
-          "label": "Meta",
-          "price": 653.11,
-          "prev_close": 654.07,
-          "change": -0.96,
-          "change_pct": -0.15,
-          "currency": "USD"
-        },
-        "TSLA": {
-          "label": "Tesla",
-          "price": 407.94,
-          "prev_close": 399.235,
-          "change": 8.705,
-          "change_pct": 2.18,
-          "currency": "USD"
-        },
-        "AMZN": {
-          "label": "Amazon",
-          "price": 212.75,
-          "prev_close": 214.33,
-          "change": -1.58,
-          "change_pct": -0.74,
-          "currency": "USD"
-        },
-        "GOOGL": {
-          "label": "Alphabet",
-          "price": 307.86,
-          "prev_close": 307.04,
-          "change": 0.82,
-          "change_pct": 0.27,
-          "currency": "USD"
-        }
-      },
+      "last_updated": "2026-03-11T20:04:24Z",
+      "quotes": {},
       "recent_filings": [
-        {
-          "title": "Sonos Inc  (SONO) \u2014 8-K (2026-03-11)",
-          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Sonos%20Inc%20%20%28SONO%29&type=8-K&dateb=&owner=include&count=5",
-          "published": "2026-03-11"
-        },
         {
           "title": "Pangaea Logistics Solutions Ltd.  (PANL) \u2014 8-K (2026-03-11)",
           "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Pangaea%20Logistics%20Solutions%20Ltd.%20%20%28PANL%29&type=8-K&dateb=&owner=include&count=5",
+          "published": "2026-03-11"
+        },
+        {
+          "title": "Sonos Inc  (SONO) \u2014 8-K (2026-03-11)",
+          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Sonos%20Inc%20%20%28SONO%29&type=8-K&dateb=&owner=include&count=5",
           "published": "2026-03-11"
         },
         {
@@ -191,10 +74,10 @@
           "published": "2026-03-11"
         }
       ],
-      "headline": "NVDA 0.38%  |  MSFT -0.37%"
+      "headline": null
     },
     "sports": {
-      "last_updated": "2026-03-11T19:49:17Z",
+      "last_updated": "2026-03-11T20:04:25Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -290,16 +173,16 @@
             "detail": "Knight is re-signing with the Cardinals on a one-year contract, Mike Garafolo of NFL Network reports."
           },
           {
-            "player": "Channing Tindall",
-            "team": "",
-            "status": "Active",
-            "detail": "The Falcons have agreed to a one-year deal with Tindall, Adam Schefter of ESPN reports."
-          },
-          {
             "player": "Tyrone Wheatley Jr.",
             "team": "",
             "status": "Questionable",
             "detail": "questionable"
+          },
+          {
+            "player": "Azeez Ojulari",
+            "team": "",
+            "status": "Questionable",
+            "detail": "Ojulari is slated to sign a one-year deal with the Falcons, Tom Pelissero of NFL Network reports."
           },
           {
             "player": "Chidobe Awuzie",
@@ -350,33 +233,8 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-11T19:49:22Z",
+      "last_updated": "2026-03-11T20:04:36Z",
       "headlines": [
-        {
-          "title": "Russian economy withstood pressure from outside German expert",
-          "link": "https://tass.com/economy/2073165",
-          "published": "20260119T140000Z"
-        },
-        {
-          "title": "Sudan : united kingdom Hits  Sudan War Machine  With New Sanctions",
-          "link": "https://allafrica.com/stories/202602060005.html",
-          "published": "20260206T060000Z"
-        },
-        {
-          "title": "UK Sanctions Sudanese Army and RSF Leaders",
-          "link": "https://english.aawsat.com/arab-world/5237657-uk-sanctions-sudanese-army-and-rsf-leaders",
-          "published": "20260205T183000Z"
-        },
-        {
-          "title": "U . S . sanctions Gaza charities over alleged Hamas ties \u2013 NaturalNews . com",
-          "link": "https://www.naturalnews.com/2026-01-26-us-sanctions-gaza-charities-over-hamas-ties.html",
-          "published": "20260126T130000Z"
-        },
-        {
-          "title": "Myanmar military using commercial paramotors , gyrocopters for attacks : Report",
-          "link": "https://www.siasat.com/myanmar-military-using-commercial-paramotors-gyrocopters-for-attacks-report-3331737/",
-          "published": "20260126T140000Z"
-        },
         {
           "title": "Bowen: Trump has called for an Iran uprising but the lessons from Iraq in 1991 loom large",
           "link": "https://www.bbc.com/news/articles/cn0znx4xrl9o?at_medium=RSS&at_campaign=rss",
@@ -386,42 +244,57 @@
           "title": "Countries agree to record release of emergency oil reserves as prices surge",
           "link": "https://www.bbc.com/news/articles/cly093xxlzzo?at_medium=RSS&at_campaign=rss",
           "published": "Wed, 11 Mar 2026 15:51:11 GMT"
+        },
+        {
+          "title": "'Even under missiles we carry on living' - how young Iranians are coping with war",
+          "link": "https://www.bbc.com/news/articles/c1mj1pyrzryo?at_medium=RSS&at_campaign=rss",
+          "published": "Wed, 11 Mar 2026 16:00:34 GMT"
+        },
+        {
+          "title": "EU and UK demand Israel stop surge in West Bank settler violence since Iran war",
+          "link": "https://www.bbc.com/news/articles/c620vwl97vyo?at_medium=RSS&at_campaign=rss",
+          "published": "Wed, 11 Mar 2026 14:13:52 GMT"
+        },
+        {
+          "title": "Three brothers arrested after explosion at US embassy in Oslo",
+          "link": "https://www.bbc.com/news/articles/cx2grl7lrrmo?at_medium=RSS&at_campaign=rss",
+          "published": "Wed, 11 Mar 2026 18:28:46 GMT"
         }
       ],
-      "headline": "Russian economy withstood pressure from outside German expert"
+      "headline": "Bowen: Trump has called for an Iran uprising but the lessons from Iraq in 1991 loom large"
     },
     "technology": {
-      "last_updated": "2026-03-11T19:49:23Z",
+      "last_updated": "2026-03-11T20:04:36Z",
       "hn_top": [
         {
           "title": "Don't post generated/AI-edited comments. HN is for conversation between humans.",
           "url": "https://news.ycombinator.com/newsguidelines.html#generated",
-          "score": 57,
-          "comments": 10
+          "score": 319,
+          "comments": 95
         },
         {
           "title": "Temporal: A nine-year journey to fix time in JavaScript",
           "url": "https://bloomberg.github.io/js-blog/post/temporal/",
-          "score": 321,
-          "comments": 120
+          "score": 340,
+          "comments": 122
         },
         {
           "title": "Making WebAssembly a first-class language on the Web",
           "url": "https://hacks.mozilla.org/2026/02/making-webassembly-a-first-class-language-on-the-web/",
-          "score": 227,
-          "comments": 102
+          "score": 240,
+          "comments": 106
         },
         {
           "title": "Entities enabling scientific fraud at scale (2025)",
           "url": "https://doi.org/10.1073/pnas.2420092122",
-          "score": 214,
-          "comments": 134
+          "score": 217,
+          "comments": 142
         },
         {
-          "title": "BitNet: 100B Param 1-Bit model for local CPUs",
-          "url": "https://github.com/microsoft/BitNet",
-          "score": 252,
-          "comments": 120
+          "title": "Show HN: I built a tool that watches webpages and exposes changes as RSS",
+          "url": "https://sitespy.app",
+          "score": 54,
+          "comments": 19
         }
       ],
       "tech_headlines": [
@@ -454,7 +327,7 @@
       "headline": "Don't post generated/AI-edited comments. HN is for conversation between humans."
     },
     "policy": {
-      "last_updated": "2026-03-11T19:49:23Z",
+      "last_updated": "2026-03-11T20:04:37Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -493,7 +366,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-11T19:49:24Z",
+      "last_updated": "2026-03-11T20:04:38Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
