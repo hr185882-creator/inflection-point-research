@@ -1,61 +1,170 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-11T20:04:13Z",
+  "fetched_at": "2026-03-11T20:17:01Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-11T20:04:14Z",
+      "last_updated": "2026-03-11T20:17:12Z",
       "quotes": {
-        "SPY": {
-          "label": "S&P 500 ETF",
-          "price": 676.28,
-          "prev_close": 677.18,
-          "change": -0.9,
-          "change_pct": -0.13,
+        "QQQ": {
+          "label": "Nasdaq 100 ETF",
+          "price": 607.69,
+          "prev_close": 607.77,
+          "change": -0.08,
+          "change_pct": -0.01,
+          "currency": "USD"
+        },
+        "GLD": {
+          "label": "Gold ETF",
+          "price": 476.24,
+          "prev_close": 477.86,
+          "change": -1.62,
+          "change_pct": -0.34,
+          "currency": "USD"
+        },
+        "TLT": {
+          "label": "20Y Treasury ETF",
+          "price": 87.14,
+          "prev_close": 88.28,
+          "change": -1.14,
+          "change_pct": -1.29,
+          "currency": "USD"
+        },
+        "BTC-USD": {
+          "label": "Bitcoin",
+          "price": 70480.34,
+          "prev_close": 69956.93,
+          "change": 523.41,
+          "change_pct": 0.75,
+          "currency": "USD"
+        },
+        "EURUSD=X": {
+          "label": "EUR/USD",
+          "price": 1.1575,
+          "prev_close": 1.1614,
+          "change": -0.0039,
+          "change_pct": -0.34,
+          "currency": "USD"
+        },
+        "DX-Y.NYB": {
+          "label": "DXY",
+          "price": 99.239,
+          "prev_close": 98.826,
+          "change": 0.413,
+          "change_pct": 0.42,
           "currency": "USD"
         }
       },
-      "yield_10y": 4.12,
+      "yield_10y": null,
       "headline": null
     },
     "energy": {
-      "last_updated": "2026-03-11T20:04:23Z",
-      "quotes": {},
-      "headlines": [
-        {
-          "title": "Annual U.S. crude oil exports decrease for first time since 2021",
-          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67324",
-          "published": "Tue, 10 Mar 2026 09:00:00 EST"
+      "last_updated": "2026-03-11T20:17:22Z",
+      "quotes": {
+        "CL=F": {
+          "label": "WTI Crude ($/bbl)",
+          "price": 88.2,
+          "prev_close": 83.45,
+          "change": 4.75,
+          "change_pct": 5.69,
+          "currency": "USD"
         },
-        {
-          "title": "U.S. exports of major transportation fuels in 2025 were about the same as in 2024",
-          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67304",
-          "published": "Mon, 09 Mar 2026 09:00:00 EST"
+        "NG=F": {
+          "label": "Natural Gas ($/MMBtu)",
+          "price": 3.21,
+          "prev_close": 3.02,
+          "change": 0.19,
+          "change_pct": 6.29,
+          "currency": "USD"
         },
-        {
-          "title": "U.S. electricity generation in 2025 hit a record, again",
-          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67284",
-          "published": "Thu, 05 Mar 2026 09:00:00 EST"
+        "BZ=F": {
+          "label": "Brent Crude ($/bbl)",
+          "price": 90.04,
+          "prev_close": 85.27,
+          "change": 4.77,
+          "change_pct": 5.59,
+          "currency": "USD"
         },
-        {
-          "title": "U.S. LNG developers sign highest volume of sale and purchase contracts since 2022",
-          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67264",
-          "published": "Tue, 03 Mar 2026 09:00:00 EST"
+        "XLE": {
+          "label": "Energy ETF",
+          "price": 56.98,
+          "prev_close": 55.6,
+          "change": 1.38,
+          "change_pct": 2.48,
+          "currency": "USD"
         }
-      ],
-      "headline": null
+      },
+      "headlines": [],
+      "headline": "WTI $88.20/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-11T20:04:24Z",
-      "quotes": {},
-      "recent_filings": [
-        {
-          "title": "Pangaea Logistics Solutions Ltd.  (PANL) \u2014 8-K (2026-03-11)",
-          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Pangaea%20Logistics%20Solutions%20Ltd.%20%20%28PANL%29&type=8-K&dateb=&owner=include&count=5",
-          "published": "2026-03-11"
+      "last_updated": "2026-03-11T20:17:23Z",
+      "quotes": {
+        "NVDA": {
+          "label": "NVIDIA",
+          "price": 186.03,
+          "prev_close": 184.77,
+          "change": 1.26,
+          "change_pct": 0.68,
+          "currency": "USD"
         },
+        "MSFT": {
+          "label": "Microsoft",
+          "price": 404.88,
+          "prev_close": 405.76,
+          "change": -0.88,
+          "change_pct": -0.22,
+          "currency": "USD"
+        },
+        "AAPL": {
+          "label": "Apple",
+          "price": 260.81,
+          "prev_close": 260.83,
+          "change": -0.02,
+          "change_pct": -0.01,
+          "currency": "USD"
+        },
+        "META": {
+          "label": "Meta",
+          "price": 654.86,
+          "prev_close": 654.07,
+          "change": 0.79,
+          "change_pct": 0.12,
+          "currency": "USD"
+        },
+        "TSLA": {
+          "label": "Tesla",
+          "price": 407.82,
+          "prev_close": 399.235,
+          "change": 8.585,
+          "change_pct": 2.15,
+          "currency": "USD"
+        },
+        "AMZN": {
+          "label": "Amazon",
+          "price": 212.65,
+          "prev_close": 214.33,
+          "change": -1.68,
+          "change_pct": -0.78,
+          "currency": "USD"
+        },
+        "GOOGL": {
+          "label": "Alphabet",
+          "price": 308.7,
+          "prev_close": 307.04,
+          "change": 1.66,
+          "change_pct": 0.54,
+          "currency": "USD"
+        }
+      },
+      "recent_filings": [
         {
           "title": "Sonos Inc  (SONO) \u2014 8-K (2026-03-11)",
           "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Sonos%20Inc%20%20%28SONO%29&type=8-K&dateb=&owner=include&count=5",
+          "published": "2026-03-11"
+        },
+        {
+          "title": "Pangaea Logistics Solutions Ltd.  (PANL) \u2014 8-K (2026-03-11)",
+          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Pangaea%20Logistics%20Solutions%20Ltd.%20%20%28PANL%29&type=8-K&dateb=&owner=include&count=5",
           "published": "2026-03-11"
         },
         {
@@ -74,10 +183,10 @@
           "published": "2026-03-11"
         }
       ],
-      "headline": null
+      "headline": "NVDA 0.68%  |  MSFT -0.22%"
     },
     "sports": {
-      "last_updated": "2026-03-11T20:04:25Z",
+      "last_updated": "2026-03-11T20:17:24Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -233,8 +342,33 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-11T20:04:36Z",
+      "last_updated": "2026-03-11T20:17:30Z",
       "headlines": [
+        {
+          "title": "Russian economy withstood pressure from outside German expert",
+          "link": "https://tass.com/economy/2073165",
+          "published": "20260119T140000Z"
+        },
+        {
+          "title": "Sudan : united kingdom Hits  Sudan War Machine  With New Sanctions",
+          "link": "https://allafrica.com/stories/202602060005.html",
+          "published": "20260206T060000Z"
+        },
+        {
+          "title": "UK Sanctions Sudanese Army and RSF Leaders",
+          "link": "https://english.aawsat.com/arab-world/5237657-uk-sanctions-sudanese-army-and-rsf-leaders",
+          "published": "20260205T183000Z"
+        },
+        {
+          "title": "U . S . sanctions Gaza charities over alleged Hamas ties \u2013 NaturalNews . com",
+          "link": "https://www.naturalnews.com/2026-01-26-us-sanctions-gaza-charities-over-hamas-ties.html",
+          "published": "20260126T130000Z"
+        },
+        {
+          "title": "Myanmar military using commercial paramotors , gyrocopters for attacks : Report",
+          "link": "https://www.siasat.com/myanmar-military-using-commercial-paramotors-gyrocopters-for-attacks-report-3331737/",
+          "published": "20260126T140000Z"
+        },
         {
           "title": "Bowen: Trump has called for an Iran uprising but the lessons from Iraq in 1991 loom large",
           "link": "https://www.bbc.com/news/articles/cn0znx4xrl9o?at_medium=RSS&at_campaign=rss",
@@ -244,57 +378,42 @@
           "title": "Countries agree to record release of emergency oil reserves as prices surge",
           "link": "https://www.bbc.com/news/articles/cly093xxlzzo?at_medium=RSS&at_campaign=rss",
           "published": "Wed, 11 Mar 2026 15:51:11 GMT"
-        },
-        {
-          "title": "'Even under missiles we carry on living' - how young Iranians are coping with war",
-          "link": "https://www.bbc.com/news/articles/c1mj1pyrzryo?at_medium=RSS&at_campaign=rss",
-          "published": "Wed, 11 Mar 2026 16:00:34 GMT"
-        },
-        {
-          "title": "EU and UK demand Israel stop surge in West Bank settler violence since Iran war",
-          "link": "https://www.bbc.com/news/articles/c620vwl97vyo?at_medium=RSS&at_campaign=rss",
-          "published": "Wed, 11 Mar 2026 14:13:52 GMT"
-        },
-        {
-          "title": "Three brothers arrested after explosion at US embassy in Oslo",
-          "link": "https://www.bbc.com/news/articles/cx2grl7lrrmo?at_medium=RSS&at_campaign=rss",
-          "published": "Wed, 11 Mar 2026 18:28:46 GMT"
         }
       ],
-      "headline": "Bowen: Trump has called for an Iran uprising but the lessons from Iraq in 1991 loom large"
+      "headline": "Russian economy withstood pressure from outside German expert"
     },
     "technology": {
-      "last_updated": "2026-03-11T20:04:36Z",
+      "last_updated": "2026-03-11T20:17:31Z",
       "hn_top": [
         {
           "title": "Don't post generated/AI-edited comments. HN is for conversation between humans.",
           "url": "https://news.ycombinator.com/newsguidelines.html#generated",
-          "score": 319,
-          "comments": 95
+          "score": 481,
+          "comments": 194
         },
         {
           "title": "Temporal: A nine-year journey to fix time in JavaScript",
           "url": "https://bloomberg.github.io/js-blog/post/temporal/",
-          "score": 340,
-          "comments": 122
+          "score": 346,
+          "comments": 126
         },
         {
           "title": "Making WebAssembly a first-class language on the Web",
           "url": "https://hacks.mozilla.org/2026/02/making-webassembly-a-first-class-language-on-the-web/",
-          "score": 240,
-          "comments": 106
+          "score": 247,
+          "comments": 109
         },
         {
           "title": "Entities enabling scientific fraud at scale (2025)",
           "url": "https://doi.org/10.1073/pnas.2420092122",
-          "score": 217,
-          "comments": 142
+          "score": 222,
+          "comments": 147
         },
         {
-          "title": "Show HN: I built a tool that watches webpages and exposes changes as RSS",
-          "url": "https://sitespy.app",
-          "score": 54,
-          "comments": 19
+          "title": "BitNet: 100B Param 1-Bit model for local CPUs",
+          "url": "https://github.com/microsoft/BitNet",
+          "score": 259,
+          "comments": 125
         }
       ],
       "tech_headlines": [
@@ -327,7 +446,7 @@
       "headline": "Don't post generated/AI-edited comments. HN is for conversation between humans."
     },
     "policy": {
-      "last_updated": "2026-03-11T20:04:37Z",
+      "last_updated": "2026-03-11T20:17:32Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -366,7 +485,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-11T20:04:38Z",
+      "last_updated": "2026-03-11T20:17:41Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
