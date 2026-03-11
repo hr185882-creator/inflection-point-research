@@ -1,9 +1,9 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-11T05:15:55Z",
+  "fetched_at": "2026-03-11T05:32:40Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-11T05:15:56Z",
+      "last_updated": "2026-03-11T05:32:41Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
@@ -39,10 +39,10 @@
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 70043.7,
+          "price": 69942.055,
           "prev_close": 69956.93,
-          "change": 86.77,
-          "change_pct": 0.12,
+          "change": -14.875,
+          "change_pct": -0.02,
           "currency": "USD"
         },
         "EURUSD=X": {
@@ -55,41 +55,41 @@
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 98.746,
+          "price": 98.772,
           "prev_close": 98.826,
-          "change": -0.08,
-          "change_pct": -0.08,
+          "change": -0.054,
+          "change_pct": -0.05,
           "currency": "USD"
         }
       },
       "yield_10y": 4.12,
-      "headline": "SPY -0.16%  |  BTC $70,044  |  10Y 4.12%"
+      "headline": "SPY -0.16%  |  BTC $69,942  |  10Y 4.12%"
     },
     "energy": {
-      "last_updated": "2026-03-11T05:16:06Z",
+      "last_updated": "2026-03-11T05:32:49Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 83.03,
+          "price": 83.4,
           "prev_close": 83.45,
-          "change": -0.42,
-          "change_pct": -0.5,
+          "change": -0.05,
+          "change_pct": -0.06,
           "currency": "USD"
         },
         "NG=F": {
           "label": "Natural Gas ($/MMBtu)",
-          "price": 3.04,
+          "price": 3.037,
           "prev_close": 3.02,
-          "change": 0.02,
-          "change_pct": 0.66,
+          "change": 0.017,
+          "change_pct": 0.56,
           "currency": "USD"
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 84.5,
+          "price": 84.79,
           "prev_close": 85.27,
-          "change": -0.77,
-          "change_pct": -0.9,
+          "change": -0.48,
+          "change_pct": -0.56,
           "currency": "USD"
         },
         "XLE": {
@@ -101,11 +101,32 @@
           "currency": "USD"
         }
       },
-      "headlines": [],
-      "headline": "WTI $83.03/bbl"
+      "headlines": [
+        {
+          "title": "Annual U.S. crude oil exports decrease for first time since 2021",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67324",
+          "published": "Tue, 10 Mar 2026 09:00:00 EST"
+        },
+        {
+          "title": "U.S. exports of major transportation fuels in 2025 were about the same as in 2024",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67304",
+          "published": "Mon, 09 Mar 2026 09:00:00 EST"
+        },
+        {
+          "title": "U.S. electricity generation in 2025 hit a record, again",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67284",
+          "published": "Thu, 05 Mar 2026 09:00:00 EST"
+        },
+        {
+          "title": "U.S. LNG developers sign highest volume of sale and purchase contracts since 2022",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67264",
+          "published": "Tue, 03 Mar 2026 09:00:00 EST"
+        }
+      ],
+      "headline": "WTI $83.40/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-11T05:16:07Z",
+      "last_updated": "2026-03-11T05:32:50Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
@@ -166,11 +187,6 @@
       },
       "recent_filings": [
         {
-          "title": "Aclaris Therapeutics, Inc.  (ACRS) \u2014 8-K (2026-03-10)",
-          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Aclaris%20Therapeutics%2C%20Inc.%20%20%28ACRS%29&type=8-K&dateb=&owner=include&count=5",
-          "published": "2026-03-10"
-        },
-        {
           "title": "Motorsport Games Inc.  (MSGM) \u2014 8-K (2026-03-10)",
           "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Motorsport%20Games%20Inc.%20%20%28MSGM%29&type=8-K&dateb=&owner=include&count=5",
           "published": "2026-03-10"
@@ -178,6 +194,11 @@
         {
           "title": "Crown PropTech Acquisitions  (CPTKW) \u2014 8-K (2026-03-10)",
           "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Crown%20PropTech%20Acquisitions%20%20%28CPTKW%29&type=8-K&dateb=&owner=include&count=5",
+          "published": "2026-03-10"
+        },
+        {
+          "title": "Aclaris Therapeutics, Inc.  (ACRS) \u2014 8-K (2026-03-10)",
+          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Aclaris%20Therapeutics%2C%20Inc.%20%20%28ACRS%29&type=8-K&dateb=&owner=include&count=5",
           "published": "2026-03-10"
         },
         {
@@ -194,7 +215,7 @@
       "headline": "NVDA 1.16%  |  MSFT -0.89%"
     },
     "sports": {
-      "last_updated": "2026-03-11T05:16:08Z",
+      "last_updated": "2026-03-11T05:32:51Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -350,7 +371,7 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-11T05:16:08Z",
+      "last_updated": "2026-03-11T05:32:52Z",
       "headlines": [
         {
           "title": "'I just want to be able to sleep': Attacks in Iran rock cities and cut power",
@@ -381,36 +402,36 @@
       "headline": "'I just want to be able to sleep': Attacks in Iran rock cities and cut power"
     },
     "technology": {
-      "last_updated": "2026-03-11T05:16:09Z",
+      "last_updated": "2026-03-11T05:32:52Z",
       "hn_top": [
         {
           "title": "Tony Hoare has died",
           "url": "https://blog.computationalcomplexity.org/2026/03/tony-hoare-1934-2026.html",
-          "score": 1623,
-          "comments": 211
+          "score": 1627,
+          "comments": 212
         },
         {
           "title": "Zig \u2013 Type Resolution Redesign and Language Changes",
           "url": "https://ziglang.org/devlog/2026/#2026-03-10",
-          "score": 87,
-          "comments": 19
+          "score": 101,
+          "comments": 22
         },
         {
           "title": "U+237C \u237c Is Azimuth",
           "url": "https://ionathan.ch/2026/02/16/angzarr.html",
-          "score": 218,
-          "comments": 23
+          "score": 220,
+          "comments": 24
         },
         {
           "title": "Cloudflare crawl endpoint",
           "url": "https://developers.cloudflare.com/changelog/post/2026-03-10-br-crawl-endpoint/",
-          "score": 199,
-          "comments": 93
+          "score": 209,
+          "comments": 94
         },
         {
           "title": "Julia Snail \u2013 An Emacs Development Environment for Julia Like Clojure's Cider",
           "url": "https://github.com/gcv/julia-snail",
-          "score": 28,
+          "score": 30,
           "comments": 1
         }
       ],
@@ -444,7 +465,7 @@
       "headline": "Tony Hoare has died"
     },
     "policy": {
-      "last_updated": "2026-03-11T05:16:09Z",
+      "last_updated": "2026-03-11T05:32:53Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -483,7 +504,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-11T05:16:13Z",
+      "last_updated": "2026-03-11T05:32:56Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
