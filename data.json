@@ -1,9 +1,9 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-11T21:17:49Z",
+  "fetched_at": "2026-03-11T21:32:42Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-11T21:18:00Z",
+      "last_updated": "2026-03-11T21:32:52Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
@@ -39,26 +39,26 @@
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 70566.99,
+          "price": 70573.555,
           "prev_close": 69956.93,
-          "change": 610.06,
-          "change_pct": 0.87,
+          "change": 616.625,
+          "change_pct": 0.88,
           "currency": "USD"
         },
         "EURUSD=X": {
           "label": "EUR/USD",
-          "price": 1.1574,
+          "price": 1.1571,
           "prev_close": 1.1614,
-          "change": -0.004,
-          "change_pct": -0.34,
+          "change": -0.0043,
+          "change_pct": -0.37,
           "currency": "USD"
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 99.261,
+          "price": 99.254,
           "prev_close": 98.826,
-          "change": 0.435,
-          "change_pct": 0.44,
+          "change": 0.428,
+          "change_pct": 0.43,
           "currency": "USD"
         }
       },
@@ -66,7 +66,7 @@
       "headline": null
     },
     "energy": {
-      "last_updated": "2026-03-11T21:18:09Z",
+      "last_updated": "2026-03-11T21:33:01Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
@@ -126,7 +126,7 @@
       "headline": "WTI $88.41/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-11T21:18:10Z",
+      "last_updated": "2026-03-11T21:33:03Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
@@ -187,27 +187,27 @@
       },
       "recent_filings": [
         {
-          "title": "Pangaea Logistics Solutions Ltd.  (PANL) -- 8-K (2026-03-11)",
-          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Pangaea%20Logistics%20Solutions%20Ltd.%20%20%28PANL%29&type=8-K&dateb=&owner=include&count=5",
-          "published": "2026-03-11"
-        },
-        {
-          "title": "Sonos Inc  (SONO) -- 8-K (2026-03-11)",
+          "title": "Sonos Inc  (SONO) \u2014 8-K (2026-03-11)",
           "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Sonos%20Inc%20%20%28SONO%29&type=8-K&dateb=&owner=include&count=5",
           "published": "2026-03-11"
         },
         {
-          "title": "Strive, Inc.  (ASST, SATA) -- 8-K (2026-03-11)",
+          "title": "Pangaea Logistics Solutions Ltd.  (PANL) \u2014 8-K (2026-03-11)",
+          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Pangaea%20Logistics%20Solutions%20Ltd.%20%20%28PANL%29&type=8-K&dateb=&owner=include&count=5",
+          "published": "2026-03-11"
+        },
+        {
+          "title": "Strive, Inc.  (ASST, SATA) \u2014 8-K (2026-03-11)",
           "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Strive%2C%20Inc.%20%20%28ASST%2C%20SATA%29&type=8-K&dateb=&owner=include&count=5",
           "published": "2026-03-11"
         },
         {
-          "title": "Sagimet Biosciences Inc.  (SGMT) -- 8-K (2026-03-11)",
+          "title": "Sagimet Biosciences Inc.  (SGMT) \u2014 8-K (2026-03-11)",
           "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Sagimet%20Biosciences%20Inc.%20%20%28SGMT%29&type=8-K&dateb=&owner=include&count=5",
           "published": "2026-03-11"
         },
         {
-          "title": "Marpai, Inc.  (MRAI) -- 8-K (2026-03-11)",
+          "title": "Marpai, Inc.  (MRAI) \u2014 8-K (2026-03-11)",
           "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Marpai%2C%20Inc.%20%20%28MRAI%29&type=8-K&dateb=&owner=include&count=5",
           "published": "2026-03-11"
         }
@@ -215,7 +215,7 @@
       "headline": "NVDA 0.68%  |  MSFT -0.22%"
     },
     "sports": {
-      "last_updated": "2026-03-11T21:18:10Z",
+      "last_updated": "2026-03-11T21:33:04Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -337,28 +337,28 @@
         ],
         "nba": [
           {
-            "player": "Dyson Daniels",
-            "team": "",
-            "status": "Day-To-Day",
-            "detail": "Daniels accumulated 14 points (6-11 FG, 0-2 3Pt, 2-2 FT), seven rebounds, 10 assists and three steals over 36 minutes during Tuesday's 124-112 win over the Mavericks."
-          },
-          {
             "player": "Jonathan Kuminga",
             "team": "",
             "status": "Out",
-            "detail": "Kuminga (knee) has been ruled out for Tuesday's game against the Mavericks, Brad Rowland of the Locked On Podcast Network reports."
+            "detail": "Kuminga is questionable for Thursday's game versus the Nets due to a left knee bone bruise."
+          },
+          {
+            "player": "Dyson Daniels",
+            "team": "",
+            "status": "Day-To-Day",
+            "detail": "Daniels is listed as questionable for Thursday's game against Brooklyn due to a left great toe sprain."
+          },
+          {
+            "player": "Jayson Tatum",
+            "team": "",
+            "status": "Day-To-Day",
+            "detail": "Tatum (Achilles) is questionable for Thursday's game against the Thunder, Zack Cox of the Boston Herald reports."
           },
           {
             "player": "Payton Pritchard",
             "team": "",
             "status": "Day-To-Day",
             "detail": "Pritchard is out for Tuesday's game against the Spurs due to a neck spasm."
-          },
-          {
-            "player": "Nikola Vucevic",
-            "team": "",
-            "status": "Out",
-            "detail": "Vucevic underwent surgery Saturday to stabilize a fracture in his right ring finger and will be reevaluated in 3-to-4 weeks."
           },
           {
             "player": "Ziaire Williams",
@@ -377,7 +377,7 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-11T21:18:11Z",
+      "last_updated": "2026-03-11T21:33:12Z",
       "headlines": [
         {
           "title": "Bowen: Trump has called for an Iran uprising but the lessons from Iraq in 1991 loom large",
@@ -408,37 +408,37 @@
       "headline": "Bowen: Trump has called for an Iran uprising but the lessons from Iraq in 1991 loom large"
     },
     "technology": {
-      "last_updated": "2026-03-11T21:18:12Z",
+      "last_updated": "2026-03-11T21:33:13Z",
       "hn_top": [
         {
           "title": "Don't post generated/AI-edited comments. HN is for conversation between humans.",
           "url": "https://news.ycombinator.com/newsguidelines.html#generated",
-          "score": 1267,
-          "comments": 554
+          "score": 1403,
+          "comments": 591
         },
         {
           "title": "The dead Internet is not a theory anymore",
           "url": "https://www.adriankrebs.ch/blog/dead-internet/",
-          "score": 154,
-          "comments": 75
+          "score": 183,
+          "comments": 105
         },
         {
           "title": "Temporal: A nine-year journey to fix time in JavaScript",
           "url": "https://bloomberg.github.io/js-blog/post/temporal/",
-          "score": 387,
-          "comments": 137
+          "score": 395,
+          "comments": 138
         },
         {
           "title": "I'm glad the Anthropic fight is happening now",
           "url": "https://www.dwarkesh.com/p/dow-anthropic",
-          "score": 43,
-          "comments": 19
+          "score": 58,
+          "comments": 33
         },
         {
           "title": "Making WebAssembly a first-class language on the Web",
           "url": "https://hacks.mozilla.org/2026/02/making-webassembly-a-first-class-language-on-the-web/",
-          "score": 288,
-          "comments": 118
+          "score": 297,
+          "comments": 119
         }
       ],
       "tech_headlines": [
@@ -471,7 +471,7 @@
       "headline": "Don't post generated/AI-edited comments. HN is for conversation between humans."
     },
     "policy": {
-      "last_updated": "2026-03-11T21:18:12Z",
+      "last_updated": "2026-03-11T21:33:14Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -510,7 +510,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-11T21:18:13Z",
+      "last_updated": "2026-03-11T21:33:21Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
