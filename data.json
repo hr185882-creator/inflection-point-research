@@ -1,103 +1,103 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-11T17:01:24Z",
+  "fetched_at": "2026-03-11T17:15:55Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-11T17:01:25Z",
+      "last_updated": "2026-03-11T17:15:56Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
-          "price": 676.293,
+          "price": 675.89,
           "prev_close": 677.18,
-          "change": -0.887,
-          "change_pct": -0.13,
+          "change": -1.29,
+          "change_pct": -0.19,
           "currency": "USD"
         },
         "QQQ": {
           "label": "Nasdaq 100 ETF",
-          "price": 608.481,
+          "price": 608.137,
           "prev_close": 607.77,
-          "change": 0.711,
-          "change_pct": 0.12,
+          "change": 0.367,
+          "change_pct": 0.06,
           "currency": "USD"
         },
         "GLD": {
           "label": "Gold ETF",
-          "price": 475.785,
+          "price": 475.665,
           "prev_close": 477.86,
-          "change": -2.075,
-          "change_pct": -0.43,
+          "change": -2.195,
+          "change_pct": -0.46,
           "currency": "USD"
         },
         "TLT": {
           "label": "20Y Treasury ETF",
-          "price": 87.31,
+          "price": 87.19,
           "prev_close": 88.28,
-          "change": -0.97,
-          "change_pct": -1.1,
+          "change": -1.09,
+          "change_pct": -1.23,
           "currency": "USD"
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 70571.31,
+          "price": 70879.35,
           "prev_close": 69956.93,
-          "change": 614.38,
-          "change_pct": 0.88,
+          "change": 922.42,
+          "change_pct": 1.32,
           "currency": "USD"
         },
         "EURUSD=X": {
           "label": "EUR/USD",
-          "price": 1.1574,
+          "price": 1.1578,
           "prev_close": 1.1614,
-          "change": -0.004,
-          "change_pct": -0.34,
+          "change": -0.0036,
+          "change_pct": -0.31,
           "currency": "USD"
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 99.239,
+          "price": 99.204,
           "prev_close": 98.826,
-          "change": 0.413,
-          "change_pct": 0.42,
+          "change": 0.378,
+          "change_pct": 0.38,
           "currency": "USD"
         }
       },
       "yield_10y": 4.12,
-      "headline": "SPY -0.13%  |  BTC $70,571  |  10Y 4.12%"
+      "headline": "SPY -0.19%  |  BTC $70,879  |  10Y 4.12%"
     },
     "energy": {
-      "last_updated": "2026-03-11T17:01:35Z",
+      "last_updated": "2026-03-11T17:16:05Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 87.37,
+          "price": 86.79,
           "prev_close": 83.45,
-          "change": 3.92,
-          "change_pct": 4.7,
+          "change": 3.34,
+          "change_pct": 4.0,
           "currency": "USD"
         },
         "NG=F": {
           "label": "Natural Gas ($/MMBtu)",
-          "price": 3.156,
+          "price": 3.159,
           "prev_close": 3.02,
-          "change": 0.136,
-          "change_pct": 4.5,
+          "change": 0.139,
+          "change_pct": 4.6,
           "currency": "USD"
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 88.71,
+          "price": 88.41,
           "prev_close": 85.27,
-          "change": 3.44,
-          "change_pct": 4.03,
+          "change": 3.14,
+          "change_pct": 3.68,
           "currency": "USD"
         },
         "XLE": {
           "label": "Energy ETF",
-          "price": 56.725,
+          "price": 56.62,
           "prev_close": 55.6,
-          "change": 1.125,
-          "change_pct": 2.02,
+          "change": 1.02,
+          "change_pct": 1.83,
           "currency": "USD"
         }
       },
@@ -123,65 +123,65 @@
           "published": "Tue, 03 Mar 2026 09:00:00 EST"
         }
       ],
-      "headline": "WTI $87.37/bbl"
+      "headline": "WTI $86.79/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-11T17:01:36Z",
+      "last_updated": "2026-03-11T17:16:07Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
-          "price": 185.8,
+          "price": 185.575,
           "prev_close": 184.77,
-          "change": 1.03,
-          "change_pct": 0.56,
+          "change": 0.805,
+          "change_pct": 0.44,
           "currency": "USD"
         },
         "MSFT": {
           "label": "Microsoft",
-          "price": 403.846,
+          "price": 404.095,
           "prev_close": 405.76,
-          "change": -1.914,
-          "change_pct": -0.47,
+          "change": -1.665,
+          "change_pct": -0.41,
           "currency": "USD"
         },
         "AAPL": {
           "label": "Apple",
-          "price": 260.679,
+          "price": 260.9,
           "prev_close": 260.83,
-          "change": -0.151,
-          "change_pct": -0.06,
+          "change": 0.07,
+          "change_pct": 0.03,
           "currency": "USD"
         },
         "META": {
           "label": "Meta",
-          "price": 654.02,
+          "price": 654.23,
           "prev_close": 654.07,
-          "change": -0.05,
-          "change_pct": -0.01,
+          "change": 0.16,
+          "change_pct": 0.02,
           "currency": "USD"
         },
         "TSLA": {
           "label": "Tesla",
-          "price": 407.335,
+          "price": 406.71,
           "prev_close": 399.235,
-          "change": 8.1,
-          "change_pct": 2.03,
+          "change": 7.475,
+          "change_pct": 1.87,
           "currency": "USD"
         },
         "AMZN": {
           "label": "Amazon",
-          "price": 212.95,
+          "price": 212.76,
           "prev_close": 214.33,
-          "change": -1.38,
-          "change_pct": -0.64,
+          "change": -1.57,
+          "change_pct": -0.73,
           "currency": "USD"
         },
         "GOOGL": {
           "label": "Alphabet",
-          "price": 309.52,
+          "price": 309.05,
           "prev_close": 307.04,
-          "change": 2.48,
-          "change_pct": 0.81,
+          "change": 2.01,
+          "change_pct": 0.65,
           "currency": "USD"
         }
       },
@@ -212,10 +212,10 @@
           "published": "2026-03-11"
         }
       ],
-      "headline": "NVDA 0.56%  |  MSFT -0.47%"
+      "headline": "NVDA 0.44%  |  MSFT -0.41%"
     },
     "sports": {
-      "last_updated": "2026-03-11T17:01:38Z",
+      "last_updated": "2026-03-11T17:16:07Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -270,28 +270,28 @@
               "away": "TB",
               "home_score": "0",
               "away_score": "0",
-              "status": "3/11 - 1:05 PM EDT"
+              "status": "Bot 1st"
             },
             {
               "home": "BAL",
               "away": "PIT",
               "home_score": "0",
               "away_score": "0",
-              "status": "3/11 - 1:05 PM EDT"
+              "status": "End 1st"
             },
             {
               "home": "MIN",
               "away": "DET",
               "home_score": "0",
               "away_score": "0",
-              "status": "3/11 - 1:05 PM EDT"
+              "status": "Bot 1st"
             },
             {
               "home": "WSH",
               "away": "STL",
               "home_score": "0",
               "away_score": "0",
-              "status": "3/11 - 1:05 PM EDT"
+              "status": "Bot 1st"
             }
           ]
         }
@@ -299,16 +299,16 @@
       "injuries": {
         "nfl": [
           {
+            "player": "Channing Tindall",
+            "team": "",
+            "status": "Active",
+            "detail": ""
+          },
+          {
             "player": "Bam Knight",
             "team": "",
             "status": "Active",
             "detail": "Knight is re-signing with the Cardinals on a one-year contract, Mike Garafolo of NFL Network reports."
-          },
-          {
-            "player": "Jacoby Brissett",
-            "team": "",
-            "status": "Active",
-            "detail": "Brissett is on track to keep his starting job after the Cardinals settled for Gardner Minshew as their QB addition at the start of free agency, Josh Weinfuss of ESPN.com reports."
           },
           {
             "player": "Tyrone Wheatley Jr.",
@@ -371,33 +371,8 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-11T17:01:43Z",
+      "last_updated": "2026-03-11T17:16:10Z",
       "headlines": [
-        {
-          "title": "Russian economy withstood pressure from outside German expert",
-          "link": "https://tass.com/economy/2073165",
-          "published": "20260119T140000Z"
-        },
-        {
-          "title": "Sudan : united kingdom Hits  Sudan War Machine  With New Sanctions",
-          "link": "https://allafrica.com/stories/202602060005.html",
-          "published": "20260206T060000Z"
-        },
-        {
-          "title": "UK Sanctions Sudanese Army and RSF Leaders",
-          "link": "https://english.aawsat.com/arab-world/5237657-uk-sanctions-sudanese-army-and-rsf-leaders",
-          "published": "20260205T183000Z"
-        },
-        {
-          "title": "U . S . sanctions Gaza charities over alleged Hamas ties \u2013 NaturalNews . com",
-          "link": "https://www.naturalnews.com/2026-01-26-us-sanctions-gaza-charities-over-hamas-ties.html",
-          "published": "20260126T130000Z"
-        },
-        {
-          "title": "Myanmar military using commercial paramotors , gyrocopters for attacks : Report",
-          "link": "https://www.siasat.com/myanmar-military-using-commercial-paramotors-gyrocopters-for-attacks-report-3331737/",
-          "published": "20260126T140000Z"
-        },
         {
           "title": "Bowen: Trump has called for an Iran uprising but the lessons from Iraq in 1991 loom large",
           "link": "https://www.bbc.com/news/articles/cn0znx4xrl9o?at_medium=RSS&at_campaign=rss",
@@ -407,42 +382,57 @@
           "title": "Countries agree to record release of emergency oil reserves as prices surge",
           "link": "https://www.bbc.com/news/articles/cly093xxlzzo?at_medium=RSS&at_campaign=rss",
           "published": "Wed, 11 Mar 2026 15:51:11 GMT"
+        },
+        {
+          "title": "'Even under missiles we carry on living' - how young Iranians are coping with war",
+          "link": "https://www.bbc.com/news/articles/c1mj1pyrzryo?at_medium=RSS&at_campaign=rss",
+          "published": "Wed, 11 Mar 2026 16:00:34 GMT"
+        },
+        {
+          "title": "EU and UK demand Israel stop surge in West Bank settler violence since Iran war",
+          "link": "https://www.bbc.com/news/articles/c620vwl97vyo?at_medium=RSS&at_campaign=rss",
+          "published": "Wed, 11 Mar 2026 14:13:52 GMT"
+        },
+        {
+          "title": "Ukraine says it has hit Russian 'missile component' plant",
+          "link": "https://www.bbc.com/news/articles/ckg1eqw30l9o?at_medium=RSS&at_campaign=rss",
+          "published": "Wed, 11 Mar 2026 11:16:02 GMT"
         }
       ],
-      "headline": "Russian economy withstood pressure from outside German expert"
+      "headline": "Bowen: Trump has called for an Iran uprising but the lessons from Iraq in 1991 loom large"
     },
     "technology": {
-      "last_updated": "2026-03-11T17:01:44Z",
+      "last_updated": "2026-03-11T17:16:10Z",
       "hn_top": [
         {
           "title": "Temporal: A nine-year journey to fix time in JavaScript",
           "url": "https://bloomberg.github.io/js-blog/post/temporal/",
-          "score": 107,
-          "comments": 34
+          "score": 125,
+          "comments": 42
         },
         {
           "title": "Entities enabling scientific fraud at scale are large, resilient, growing (2025)",
           "url": "https://doi.org/10.1073/pnas.2420092122",
-          "score": 162,
-          "comments": 61
-        },
-        {
-          "title": "Wiz joins Google",
-          "url": "https://www.wiz.io/blog/google-closes-deal-to-acquire-wiz",
-          "score": 62,
-          "comments": 30
-        },
-        {
-          "title": "BitNet: 100B Param 1-Bit model for local CPUs",
-          "url": "https://github.com/microsoft/BitNet",
-          "score": 188,
-          "comments": 99
+          "score": 167,
+          "comments": 65
         },
         {
           "title": "Making WebAssembly a first-class language on the Web",
           "url": "https://hacks.mozilla.org/2026/02/making-webassembly-a-first-class-language-on-the-web/",
-          "score": 61,
-          "comments": 17
+          "score": 80,
+          "comments": 29
+        },
+        {
+          "title": "Wiz joins Google",
+          "url": "https://www.wiz.io/blog/google-closes-deal-to-acquire-wiz",
+          "score": 69,
+          "comments": 43
+        },
+        {
+          "title": "BitNet: 100B Param 1-Bit model for local CPUs",
+          "url": "https://github.com/microsoft/BitNet",
+          "score": 192,
+          "comments": 105
         }
       ],
       "tech_headlines": [
@@ -475,7 +465,7 @@
       "headline": "Temporal: A nine-year journey to fix time in JavaScript"
     },
     "policy": {
-      "last_updated": "2026-03-11T17:01:45Z",
+      "last_updated": "2026-03-11T17:16:11Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -514,7 +504,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-11T17:01:49Z",
+      "last_updated": "2026-03-11T17:16:15Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
