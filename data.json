@@ -1,9 +1,9 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-11T08:52:55Z",
+  "fetched_at": "2026-03-11T09:07:21Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-11T08:52:56Z",
+      "last_updated": "2026-03-11T09:07:21Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
@@ -39,57 +39,57 @@
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 69607.01,
+          "price": 69574.55,
           "prev_close": 69956.93,
-          "change": -349.92,
-          "change_pct": -0.5,
+          "change": -382.38,
+          "change_pct": -0.55,
           "currency": "USD"
         },
         "EURUSD=X": {
           "label": "EUR/USD",
-          "price": 1.161,
+          "price": 1.1596,
           "prev_close": 1.1614,
-          "change": -0.0004,
-          "change_pct": -0.03,
+          "change": -0.0018,
+          "change_pct": -0.15,
           "currency": "USD"
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 98.968,
+          "price": 98.981,
           "prev_close": 98.826,
-          "change": 0.142,
-          "change_pct": 0.14,
+          "change": 0.155,
+          "change_pct": 0.16,
           "currency": "USD"
         }
       },
       "yield_10y": 4.12,
-      "headline": "SPY -0.16%  |  BTC $69,607  |  10Y 4.12%"
+      "headline": "SPY -0.16%  |  BTC $69,575  |  10Y 4.12%"
     },
     "energy": {
-      "last_updated": "2026-03-11T08:53:06Z",
+      "last_updated": "2026-03-11T09:07:31Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 85.14,
+          "price": 86.73,
           "prev_close": 83.45,
-          "change": 1.69,
-          "change_pct": 2.03,
+          "change": 3.28,
+          "change_pct": 3.93,
           "currency": "USD"
         },
         "NG=F": {
           "label": "Natural Gas ($/MMBtu)",
-          "price": 3.07,
+          "price": 3.085,
           "prev_close": 3.02,
-          "change": 0.05,
-          "change_pct": 1.66,
+          "change": 0.065,
+          "change_pct": 2.15,
           "currency": "USD"
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 85.79,
+          "price": 87.05,
           "prev_close": 85.27,
-          "change": 0.52,
-          "change_pct": 0.61,
+          "change": 1.78,
+          "change_pct": 2.09,
           "currency": "USD"
         },
         "XLE": {
@@ -101,11 +101,32 @@
           "currency": "USD"
         }
       },
-      "headlines": [],
-      "headline": "WTI $85.14/bbl"
+      "headlines": [
+        {
+          "title": "Annual U.S. crude oil exports decrease for first time since 2021",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67324",
+          "published": "Tue, 10 Mar 2026 09:00:00 EST"
+        },
+        {
+          "title": "U.S. exports of major transportation fuels in 2025 were about the same as in 2024",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67304",
+          "published": "Mon, 09 Mar 2026 09:00:00 EST"
+        },
+        {
+          "title": "U.S. electricity generation in 2025 hit a record, again",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67284",
+          "published": "Thu, 05 Mar 2026 09:00:00 EST"
+        },
+        {
+          "title": "U.S. LNG developers sign highest volume of sale and purchase contracts since 2022",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67264",
+          "published": "Tue, 03 Mar 2026 09:00:00 EST"
+        }
+      ],
+      "headline": "WTI $86.73/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-11T08:53:06Z",
+      "last_updated": "2026-03-11T09:07:32Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
@@ -194,7 +215,7 @@
       "headline": "NVDA 1.16%  |  MSFT -0.89%"
     },
     "sports": {
-      "last_updated": "2026-03-11T08:53:07Z",
+      "last_updated": "2026-03-11T09:07:32Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -350,7 +371,7 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-11T08:53:17Z",
+      "last_updated": "2026-03-11T09:07:42Z",
       "headlines": [
         {
           "title": "'I just want to be able to sleep': Attacks in Iran rock cities and cut power",
@@ -381,37 +402,37 @@
       "headline": "'I just want to be able to sleep': Attacks in Iran rock cities and cut power"
     },
     "technology": {
-      "last_updated": "2026-03-11T08:53:18Z",
+      "last_updated": "2026-03-11T09:07:43Z",
       "hn_top": [
         {
           "title": "Why does AI tell you to use Terminal so much?",
           "url": "https://eclecticlight.co/2026/03/11/why-does-ai-tell-you-to-use-terminal-so-much/",
-          "score": 19,
-          "comments": 20
-        },
-        {
-          "title": "Create value for others and don\u2019t worry about the returns",
-          "url": "https://geohot.github.io//blog/jekyll/update/2026/03/11/running-69-agents.html",
-          "score": 269,
-          "comments": 112
+          "score": 24,
+          "comments": 35
         },
         {
           "title": "Zig \u2013 Type Resolution Redesign and Language Changes",
           "url": "https://ziglang.org/devlog/2026/#2026-03-10",
-          "score": 189,
-          "comments": 58
+          "score": 193,
+          "comments": 62
         },
         {
-          "title": "TADA: Fast, Reliable Speech Generation Through Text-Acoustic Synchronization",
-          "url": "https://www.hume.ai/blog/opensource-tada",
-          "score": 26,
-          "comments": 3
+          "title": "Create value for others and don\u2019t worry about the returns",
+          "url": "https://geohot.github.io//blog/jekyll/update/2026/03/11/running-69-agents.html",
+          "score": 279,
+          "comments": 125
         },
         {
           "title": "U+237C \u237c Is Azimuth",
           "url": "https://ionathan.ch/2026/02/16/angzarr.html",
-          "score": 278,
+          "score": 284,
           "comments": 26
+        },
+        {
+          "title": "TADA: Fast, Reliable Speech Generation Through Text-Acoustic Synchronization",
+          "url": "https://www.hume.ai/blog/opensource-tada",
+          "score": 27,
+          "comments": 4
         }
       ],
       "tech_headlines": [
@@ -444,7 +465,7 @@
       "headline": "Why does AI tell you to use Terminal so much?"
     },
     "policy": {
-      "last_updated": "2026-03-11T08:53:18Z",
+      "last_updated": "2026-03-11T09:07:43Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -483,7 +504,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-11T08:53:20Z",
+      "last_updated": "2026-03-11T09:07:47Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
