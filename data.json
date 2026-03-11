@@ -1,9 +1,9 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-11T22:15:51Z",
+  "fetched_at": "2026-03-11T22:30:54Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-11T22:15:52Z",
+      "last_updated": "2026-03-11T22:30:54Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
@@ -39,18 +39,18 @@
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 70841.0,
+          "price": 70610.98,
           "prev_close": 69956.93,
-          "change": 884.07,
-          "change_pct": 1.26,
+          "change": 654.05,
+          "change_pct": 0.93,
           "currency": "USD"
         },
         "EURUSD=X": {
           "label": "EUR/USD",
-          "price": 1.1571,
+          "price": 1.1563,
           "prev_close": 1.1614,
-          "change": -0.0043,
-          "change_pct": -0.37,
+          "change": -0.0051,
+          "change_pct": -0.44,
           "currency": "USD"
         },
         "DX-Y.NYB": {
@@ -66,30 +66,30 @@
       "headline": null
     },
     "energy": {
-      "last_updated": "2026-03-11T22:15:52Z",
+      "last_updated": "2026-03-11T22:30:54Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 89.82,
+          "price": 89.86,
           "prev_close": 87.25,
-          "change": 2.57,
-          "change_pct": 2.95,
+          "change": 2.61,
+          "change_pct": 2.99,
           "currency": "USD"
         },
         "NG=F": {
           "label": "Natural Gas ($/MMBtu)",
-          "price": 3.22,
+          "price": 3.218,
           "prev_close": 3.209,
-          "change": 0.011,
-          "change_pct": 0.34,
+          "change": 0.009,
+          "change_pct": 0.28,
           "currency": "USD"
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 91.4,
+          "price": 91.51,
           "prev_close": 89.35,
-          "change": 2.05,
-          "change_pct": 2.29,
+          "change": 2.16,
+          "change_pct": 2.42,
           "currency": "USD"
         },
         "XLE": {
@@ -102,10 +102,10 @@
         }
       },
       "headlines": [],
-      "headline": "WTI $89.82/bbl"
+      "headline": "WTI $89.86/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-11T22:15:53Z",
+      "last_updated": "2026-03-11T22:30:55Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
@@ -168,7 +168,7 @@
       "headline": "NVDA 0.68%  |  MSFT -0.22%"
     },
     "sports": {
-      "last_updated": "2026-03-11T22:15:53Z",
+      "last_updated": "2026-03-11T22:30:56Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -252,16 +252,16 @@
       "injuries": {
         "nfl": [
           {
+            "player": "Andrew Wingard",
+            "team": "",
+            "status": "Active",
+            "detail": "Arizona signed Wingard to a one-year, $3 million contract Wednesday, Jeremy Fowler of ESPN.comreports."
+          },
+          {
             "player": "Trey Benson",
             "team": "",
             "status": "Questionable",
             "detail": "Benson (knee) faces increased competition for touches in 2026 after the Cardinals signed Tyler Allgeier and restructured James Conner's contract, Darren Urban of the team's official site reports."
-          },
-          {
-            "player": "Bam Knight",
-            "team": "",
-            "status": "Active",
-            "detail": "Knight is re-signing with the Cardinals on a one-year contract, Mike Garafolo of NFL Network reports."
           },
           {
             "player": "Tyrone Wheatley Jr.",
@@ -270,10 +270,10 @@
             "detail": "questionable"
           },
           {
-            "player": "Azeez Ojulari",
+            "player": "Corey Levin",
             "team": "",
             "status": "Questionable",
-            "detail": "Ojulari is slated to sign a one-year deal with the Falcons, Tom Pelissero of NFL Network reports."
+            "detail": "The Falcons signed Levin (biceps) to a one-year contract Wednesday, Marc Raimondi of ESPN.com reports."
           },
           {
             "player": "Chidobe Awuzie",
@@ -330,33 +330,8 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-11T22:16:08Z",
+      "last_updated": "2026-03-11T22:31:02Z",
       "headlines": [
-        {
-          "title": "Russian economy withstood pressure from outside German expert",
-          "link": "https://tass.com/economy/2073165",
-          "published": "20260119T140000Z"
-        },
-        {
-          "title": "Sudan : united kingdom Hits  Sudan War Machine  With New Sanctions",
-          "link": "https://allafrica.com/stories/202602060005.html",
-          "published": "20260206T060000Z"
-        },
-        {
-          "title": "UK Sanctions Sudanese Army and RSF Leaders",
-          "link": "https://english.aawsat.com/arab-world/5237657-uk-sanctions-sudanese-army-and-rsf-leaders",
-          "published": "20260205T183000Z"
-        },
-        {
-          "title": "U . S . sanctions Gaza charities over alleged Hamas ties \u2013 NaturalNews . com",
-          "link": "https://www.naturalnews.com/2026-01-26-us-sanctions-gaza-charities-over-hamas-ties.html",
-          "published": "20260126T130000Z"
-        },
-        {
-          "title": "Myanmar military using commercial paramotors , gyrocopters for attacks : Report",
-          "link": "https://www.siasat.com/myanmar-military-using-commercial-paramotors-gyrocopters-for-attacks-report-3331737/",
-          "published": "20260126T140000Z"
-        },
         {
           "title": "Bowen: Trump has called for an Iran uprising but the lessons from Iraq in 1991 loom large",
           "link": "https://www.bbc.com/news/articles/cn0znx4xrl9o?at_medium=RSS&at_campaign=rss",
@@ -366,42 +341,57 @@
           "title": "Countries agree to record release of emergency oil reserves as prices surge",
           "link": "https://www.bbc.com/news/articles/cly093xxlzzo?at_medium=RSS&at_campaign=rss",
           "published": "Wed, 11 Mar 2026 15:51:11 GMT"
+        },
+        {
+          "title": "'Even under missiles we carry on living' - how young Iranians are coping with war",
+          "link": "https://www.bbc.com/news/articles/c1mj1pyrzryo?at_medium=RSS&at_campaign=rss",
+          "published": "Wed, 11 Mar 2026 16:00:34 GMT"
+        },
+        {
+          "title": "EU and UK demand Israel stop surge in West Bank settler violence since Iran war",
+          "link": "https://www.bbc.com/news/articles/c620vwl97vyo?at_medium=RSS&at_campaign=rss",
+          "published": "Wed, 11 Mar 2026 14:13:52 GMT"
+        },
+        {
+          "title": "Three brothers arrested after explosion at US embassy in Oslo",
+          "link": "https://www.bbc.com/news/articles/cx2grl7lrrmo?at_medium=RSS&at_campaign=rss",
+          "published": "Wed, 11 Mar 2026 18:28:46 GMT"
         }
       ],
-      "headline": "Russian economy withstood pressure from outside German expert"
+      "headline": "Bowen: Trump has called for an Iran uprising but the lessons from Iraq in 1991 loom large"
     },
     "technology": {
-      "last_updated": "2026-03-11T22:16:09Z",
+      "last_updated": "2026-03-11T22:31:03Z",
       "hn_top": [
         {
           "title": "Don't post generated/AI-edited comments. HN is for conversation between humans.",
           "url": "https://news.ycombinator.com/newsguidelines.html#generated",
-          "score": 1798,
-          "comments": 701
+          "score": 1928,
+          "comments": 745
         },
         {
           "title": "Temporal: A nine-year journey to fix time in JavaScript",
           "url": "https://bloomberg.github.io/js-blog/post/temporal/",
-          "score": 408,
-          "comments": 141
+          "score": 418,
+          "comments": 142
         },
         {
           "title": "Many SWE-bench-Passing PRs would not be merged",
           "url": "https://metr.org/notes/2026-03-10-many-swe-bench-passing-prs-would-not-be-merged-into-main/",
-          "score": 24,
-          "comments": 0
+          "score": 33,
+          "comments": 1
         },
         {
           "title": "Making WebAssembly a first-class language on the Web",
           "url": "https://hacks.mozilla.org/2026/02/making-webassembly-a-first-class-language-on-the-web/",
-          "score": 317,
-          "comments": 123
+          "score": 323,
+          "comments": 124
         },
         {
-          "title": "I'm glad the Anthropic fight is happening now",
-          "url": "https://www.dwarkesh.com/p/dow-anthropic",
-          "score": 91,
-          "comments": 81
+          "title": "Google closes deal to acquire Wiz",
+          "url": "https://www.wiz.io/blog/google-closes-deal-to-acquire-wiz",
+          "score": 182,
+          "comments": 127
         }
       ],
       "tech_headlines": [
@@ -434,7 +424,7 @@
       "headline": "Don't post generated/AI-edited comments. HN is for conversation between humans."
     },
     "policy": {
-      "last_updated": "2026-03-11T22:16:10Z",
+      "last_updated": "2026-03-11T22:31:03Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -473,7 +463,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-11T22:16:13Z",
+      "last_updated": "2026-03-11T22:31:08Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
