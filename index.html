@@ -1,596 +1,1271 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Inflection OS</title>
-  <style>
-    :root {
-      --bg: #0a0a0a;
-      --surface: #111111;
-      --border: #1e1e1e;
-      --accent: #c8a96e;
-      --accent-dim: #7a6040;
-      --text: #e8e8e8;
-      --text-muted: #5a5a5a;
-      --text-mid: #9a9a9a;
-      --green: #4caf7d;
-      --red: #e05555;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>INFLECTION OS</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #0a0a0a;
+    --surface: #111111;
+    --surface2: #161616;
+    --border: #1e1e1e;
+    --border2: #2a2a2a;
+    --accent: #c8a96e;
+    --accent-dim: #8a7149;
+    --green: #4caf7d;
+    --red: #e05555;
+    --text: #d4d4d4;
+    --text-dim: #7a7a7a;
+    --text-bright: #efefef;
+    --mono: 'Courier New', Courier, monospace;
+    --serif: Georgia, 'Times New Roman', serif;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--serif);
+    font-size: 14px;
+    line-height: 1.5;
+    min-height: 100vh;
+  }
+
+  /* ── NAV ── */
+  #nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    height: 48px;
+    background: #0d0d0d;
+    border-bottom: 1px solid var(--border2);
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    gap: 14px;
+  }
+
+  #logo {
+    font-family: var(--mono);
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--accent);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    user-select: none;
+  }
+
+  #logo span {
+    color: var(--accent-dim);
+    font-size: 11px;
+    margin-left: 6px;
+    letter-spacing: 0.08em;
+  }
+
+  .live-dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--green);
+    flex-shrink: 0;
+    animation: pulse 2s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(76,175,125,0.5); }
+    50% { opacity: 0.6; box-shadow: 0 0 0 4px rgba(76,175,125,0); }
+  }
+
+  #nav-right {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  #schema-badge {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--text-dim);
+    background: var(--border);
+    padding: 2px 7px;
+    border-radius: 3px;
+    letter-spacing: 0.05em;
+  }
+
+  #refresh-btn {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    color: var(--accent);
+    background: transparent;
+    border: 1px solid var(--accent-dim);
+    padding: 5px 12px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s;
+    text-transform: uppercase;
+  }
+
+  #refresh-btn:hover { background: var(--accent); color: #0a0a0a; }
+  #refresh-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+
+  /* ── TICKER BAR ── */
+  #ticker-bar {
+    position: fixed;
+    top: 48px; left: 0; right: 0;
+    z-index: 99;
+    height: 34px;
+    background: #0d0d0d;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    gap: 0;
+    overflow: hidden;
+  }
+
+  .tick-item {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+    padding: 0 14px;
+    border-right: 1px solid var(--border);
+    flex-shrink: 0;
+  }
+
+  .tick-item:first-child { padding-left: 0; }
+
+  .tick-sym {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--text-dim);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .tick-price {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--text-bright);
+    font-weight: bold;
+  }
+
+  .tick-chg {
+    font-family: var(--mono);
+    font-size: 10px;
+  }
+
+  .tick-chg.up { color: var(--green); }
+  .tick-chg.dn { color: var(--red); }
+  .tick-chg.flat { color: var(--text-dim); }
+
+  #ticker-updated {
+    margin-left: auto;
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--text-dim);
+    flex-shrink: 0;
+    padding-left: 14px;
+  }
+
+  /* ── LAYOUT ── */
+  #main {
+    margin-top: 82px; /* nav + ticker */
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    gap: 16px;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 98px;
+  }
+
+  /* ── CARDS ── */
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 16px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .card.wide { grid-column: span 2; }
+
+  .card-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    gap: 8px;
+  }
+
+  .card-title {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: bold;
+  }
+
+  .card-headline {
+    font-size: 11px;
+    color: var(--text-dim);
+    margin-top: 2px;
+    font-family: var(--serif);
+    font-style: italic;
+    line-height: 1.3;
+  }
+
+  .card-timestamp {
+    font-family: var(--mono);
+    font-size: 9px;
+    color: var(--text-dim);
+    white-space: nowrap;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+
+  /* ── TABLES ── */
+  .quote-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: var(--mono);
+    font-size: 11px;
+    margin-bottom: 4px;
+  }
+
+  .quote-table th {
+    text-align: left;
+    color: var(--text-dim);
+    font-size: 9px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0 4px 6px 4px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .quote-table th:not(:first-child) { text-align: right; }
+
+  .quote-table td {
+    padding: 5px 4px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: middle;
+  }
+
+  .quote-table tr:last-child td { border-bottom: none; }
+
+  .quote-table tr:hover td { background: var(--surface2); }
+
+  .q-sym {
+    color: var(--text-bright);
+    font-weight: bold;
+    font-size: 11px;
+  }
+
+  .q-label {
+    color: var(--text-dim);
+    font-size: 9px;
+    display: block;
+    margin-top: 1px;
+  }
+
+  .q-price {
+    text-align: right;
+    color: var(--text-bright);
+    font-size: 12px;
+  }
+
+  .q-chg { text-align: right; font-size: 11px; }
+  .q-chg.up { color: var(--green); }
+  .q-chg.dn { color: var(--red); }
+  .q-chg.flat { color: var(--text-dim); }
+
+  /* ── YIELD BADGE ── */
+  .yield-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+    padding: 7px 10px;
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 3px;
+  }
+
+  .yield-label {
+    font-family: var(--mono);
+    font-size: 9px;
+    color: var(--text-dim);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .yield-val {
+    font-family: var(--mono);
+    font-size: 14px;
+    color: var(--accent);
+    font-weight: bold;
+  }
+
+  .yield-unit {
+    font-family: var(--mono);
+    font-size: 9px;
+    color: var(--text-dim);
+  }
+
+  /* ── DIVIDER ── */
+  .section-divider {
+    height: 1px;
+    background: var(--border);
+    margin: 12px 0;
+  }
+
+  .section-label {
+    font-family: var(--mono);
+    font-size: 9px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    margin-bottom: 8px;
+  }
+
+  /* ── NEWS LIST ── */
+  .news-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .news-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 6px 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .news-item:last-child { border-bottom: none; }
+
+  .news-bullet {
+    color: var(--accent-dim);
+    font-family: var(--mono);
+    font-size: 10px;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .news-title {
+    font-size: 12px;
+    line-height: 1.4;
+    color: var(--text);
+  }
+
+  .news-title a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.1s;
+  }
+
+  .news-title a:hover { color: var(--accent); }
+
+  .news-time {
+    font-family: var(--mono);
+    font-size: 9px;
+    color: var(--text-dim);
+    margin-top: 2px;
+    display: block;
+  }
+
+  /* ── HN STORIES ── */
+  .hn-list { list-style: none; display: flex; flex-direction: column; gap: 4px; }
+
+  .hn-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 7px 8px;
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    transition: border-color 0.1s;
+  }
+
+  .hn-item:hover { border-color: var(--border2); }
+
+  .hn-rank {
+    font-family: var(--mono);
+    font-size: 9px;
+    color: var(--accent-dim);
+    min-width: 18px;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .hn-body { flex: 1; min-width: 0; }
+
+  .hn-title {
+    font-size: 12px;
+    line-height: 1.4;
+    color: var(--text);
+  }
+
+  .hn-title a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .hn-title a:hover { color: var(--accent); }
+
+  .hn-meta {
+    font-family: var(--mono);
+    font-size: 9px;
+    color: var(--text-dim);
+    margin-top: 3px;
+    display: flex;
+    gap: 10px;
+  }
+
+  .hn-meta .up { color: var(--green); }
+  .hn-meta .cm { color: var(--text-dim); }
+
+  /* ── SPORTS ── */
+  .sport-section { margin-bottom: 12px; }
+
+  .sport-label {
+    font-family: var(--mono);
+    font-size: 9px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent-dim);
+    margin-bottom: 6px;
+  }
+
+  .game-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 8px;
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    margin-bottom: 4px;
+    font-family: var(--mono);
+    font-size: 11px;
+    gap: 8px;
+  }
+
+  .game-teams { flex: 1; min-width: 0; }
+
+  .game-team {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--text);
+    font-size: 11px;
+  }
+
+  .game-score {
+    font-size: 13px;
+    font-weight: bold;
+    color: var(--text-bright);
+    text-align: right;
+    min-width: 36px;
+  }
+
+  .game-status {
+    font-size: 9px;
+    color: var(--text-dim);
+    text-align: right;
+    min-width: 40px;
+    white-space: nowrap;
+  }
+
+  .vs-sep {
+    color: var(--text-dim);
+    font-size: 9px;
+    padding: 0 4px;
+  }
+
+  .no-games {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--text-dim);
+    font-style: italic;
+    padding: 4px 0;
+  }
+
+  /* ── INJURY LIST ── */
+  .inj-table {
+    width: 100%;
+    font-family: var(--mono);
+    font-size: 10px;
+    border-collapse: collapse;
+  }
+
+  .inj-table td {
+    padding: 4px 4px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+
+  .inj-table tr:last-child td { border-bottom: none; }
+
+  .inj-player { color: var(--text-bright); font-weight: bold; }
+  .inj-team { color: var(--text-dim); font-size: 9px; }
+  .inj-status { color: var(--red); font-size: 9px; }
+  .inj-detail { color: var(--text-dim); font-size: 9px; }
+
+  /* ── POLICY ── */
+  .policy-item {
+    padding: 6px 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .policy-item:last-child { border-bottom: none; }
+
+  .policy-title {
+    font-size: 11px;
+    line-height: 1.4;
+    color: var(--text);
+  }
+
+  .policy-title a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .policy-title a:hover { color: var(--accent); }
+
+  .policy-time {
+    font-family: var(--mono);
+    font-size: 9px;
+    color: var(--text-dim);
+    margin-top: 2px;
+  }
+
+  /* ── LOADING / ERROR ── */
+  #loading-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 200;
+    background: var(--bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .spinner {
+    width: 36px;
+    height: 36px;
+    border: 2px solid var(--border2);
+    border-top-color: var(--accent);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+  }
+
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  .loading-text {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--text-dim);
+    letter-spacing: 0.1em;
+  }
+
+  #error-banner {
+    display: none;
+    position: fixed;
+    top: 82px;
+    left: 20px; right: 20px;
+    z-index: 150;
+    background: #1a0a0a;
+    border: 1px solid var(--red);
+    color: var(--red);
+    font-family: var(--mono);
+    font-size: 11px;
+    padding: 10px 16px;
+    border-radius: 3px;
+    letter-spacing: 0.04em;
+  }
+
+  /* ── SCROLLBAR ── */
+  ::-webkit-scrollbar { width: 5px; height: 5px; }
+  ::-webkit-scrollbar-track { background: var(--bg); }
+  ::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 3px; }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 900px) {
+    #main {
+      grid-template-columns: 1fr;
+      padding: 12px;
     }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { background: var(--bg); color: var(--text); font-family: 'Georgia', serif; font-size: 16px; line-height: 1.75; }
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    nav {
-      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-      background: rgba(10,10,10,0.96); border-bottom: 1px solid var(--border);
-      display: flex; align-items: center; justify-content: space-between;
-      padding: 0 56px; height: 62px;
+    .card.wide { grid-column: span 1; }
+    #ticker-bar {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
     }
-    .nav-logo { font-family: 'Courier New', monospace; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); }
-    .nav-links { display: flex; gap: 40px; list-style: none; }
-    .nav-links a { font-family: 'Courier New', monospace; font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-muted); transition: color 0.2s; }
-    .nav-links a:hover { color: var(--accent); text-decoration: none; }
-    #live-bar {
-      position: fixed; top: 62px; left: 0; right: 0; z-index: 99;
-      background: #0d0d0d; border-bottom: 1px solid var(--border);
-      display: flex; align-items: center; padding: 0 56px; height: 34px; overflow: hidden;
-    }
-    .live-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--green); margin-right: 10px; flex-shrink: 0; animation: pulse 2s infinite; }
-    @keyframes pulse { 0%,100%{opacity:1}50%{opacity:0.3} }
-    .live-label { font-family: 'Courier New', monospace; font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-muted); margin-right: 24px; flex-shrink: 0; }
-    .live-ticker { display: flex; align-items: center; gap: 24px; overflow-x: auto; scrollbar-width: none; }
-    .live-ticker::-webkit-scrollbar { display: none; }
-    .tick-item { font-family: 'Courier New', monospace; font-size: 10px; letter-spacing: 0.08em; white-space: nowrap; color: var(--text-mid); display: flex; align-items: center; gap: 6px; }
-    .tick-label { color: var(--text-muted); }
-    .tick-val { color: var(--text); }
-    .tick-up { color: var(--green); }
-    .tick-dn { color: var(--red); }
-    .last-updated { font-family: 'Courier New', monospace; font-size: 9px; letter-spacing: 0.12em; color: var(--text-muted); margin-left: auto; flex-shrink: 0; padding-left: 24px; }
-    section { width: 100%; border-bottom: 1px solid var(--border); }
-    .inner { max-width: 860px; margin: 0 auto; padding: 100px 48px; }
-    .inner-wide { max-width: 1080px; margin: 0 auto; padding: 100px 48px; }
-    #hero { min-height: 100vh; display: flex; align-items: center; border-bottom: 1px solid var(--border); }
-    #hero .inner { padding-top: 120px; }
-    .hero-eyebrow { font-family: 'Courier New', monospace; font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--accent-dim); margin-bottom: 36px; }
-    .hero-h1 { font-size: clamp(34px, 5.5vw, 60px); font-weight: normal; line-height: 1.15; color: var(--text); margin-bottom: 48px; }
-    .hero-h1 em { font-style: normal; color: var(--accent); }
-    .cta-row { display: flex; gap: 16px; flex-wrap: wrap; }
-    .btn-primary { display: inline-block; padding: 13px 28px; background: var(--accent); color: #0a0a0a; font-family: 'Courier New', monospace; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; font-weight: bold; border: none; cursor: pointer; transition: opacity 0.2s; }
-    .btn-primary:hover { opacity: 0.85; text-decoration: none; }
-    .btn-secondary { display: inline-block; padding: 13px 28px; background: transparent; color: var(--text-mid); font-family: 'Courier New', monospace; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; border: 1px solid var(--border); cursor: pointer; transition: border-color 0.2s, color 0.2s; }
-    .btn-secondary:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
-    .section-label { font-family: 'Courier New', monospace; font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--accent-dim); margin-bottom: 40px; display: block; }
-    .what-h2 { font-size: clamp(24px, 3.5vw, 36px); font-weight: normal; line-height: 1.3; margin-bottom: 28px; }
-    .body-text { font-size: 16px; color: var(--text-mid); line-height: 1.8; margin-bottom: 20px; }
-    #different { background: var(--surface); }
-    .diff-intro { font-size: 16px; color: var(--text-muted); line-height: 1.8; margin-bottom: 36px; font-style: italic; }
-    .diff-lead { font-size: 18px; color: var(--text); line-height: 1.7; margin-bottom: 32px; }
-    .diff-list { list-style: none; display: flex; flex-direction: column; gap: 14px; margin-bottom: 40px; }
-    .diff-list li { font-size: 15px; color: var(--text-mid); padding-left: 20px; position: relative; line-height: 1.6; }
-    .diff-list li::before { content: ''; position: absolute; left: 0; top: 11px; width: 6px; height: 1px; background: var(--accent); }
-    .diff-close { font-size: 15px; color: var(--text-muted); line-height: 1.8; margin-bottom: 12px; }
-    .diff-kicker { font-size: 16px; color: var(--accent); font-style: italic; }
-    .steps { display: flex; flex-direction: column; gap: 0; }
-    .step { display: grid; grid-template-columns: 48px 1fr; gap: 24px; padding: 36px 0; border-bottom: 1px solid var(--border); }
-    .step:last-child { border-bottom: none; }
-    .step-num { font-family: 'Courier New', monospace; font-size: 11px; color: var(--accent-dim); padding-top: 4px; letter-spacing: 0.1em; }
-    .step-title { font-size: 17px; color: var(--text); font-weight: normal; margin-bottom: 10px; }
-    #domains { background: var(--surface); }
-    .domain-intro { font-size: 16px; color: var(--text-mid); line-height: 1.8; margin-bottom: 60px; }
-    .domain-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1px; background: var(--border); border: 1px solid var(--border); }
-    .domain-card { background: var(--surface); padding: 32px 28px; transition: background 0.2s; }
-    .domain-card:hover { background: #161616; }
-    .domain-tag { font-family: 'Courier New', monospace; font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); margin-bottom: 12px; display: block; }
-    .domain-title { font-size: 15px; color: var(--text); font-weight: normal; margin-bottom: 10px; }
-    .domain-body { font-size: 13px; color: var(--text-muted); line-height: 1.7; margin-bottom: 14px; }
-    .live-data { margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--border); display: flex; flex-direction: column; gap: 6px; }
-    .live-row { display: flex; justify-content: space-between; align-items: baseline; font-family: 'Courier New', monospace; font-size: 11px; }
-    .live-row-label { color: var(--text-muted); letter-spacing: 0.06em; }
-    .live-row-val { color: var(--text); font-weight: bold; }
-    .live-row-val.up { color: var(--green); }
-    .live-row-val.dn { color: var(--red); }
-    .live-headline { font-size: 11px; color: var(--text-muted); line-height: 1.5; margin-top: 4px; font-family: 'Courier New', monospace; }
-    .live-headline a { color: var(--text-mid); font-size: 11px; }
-    .live-headline a:hover { color: var(--accent); }
-    .live-loading { font-family: 'Courier New', monospace; font-size: 10px; color: var(--text-muted); letter-spacing: 0.1em; margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--border); }
-    #why { background: #0d0d0d; }
-    .why-lines { display: flex; flex-direction: column; gap: 10px; margin: 28px 0 36px; }
-    .why-line { font-family: 'Courier New', monospace; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-muted); }
-    .for-text { font-size: 16px; color: var(--text-mid); line-height: 1.8; margin-bottom: 20px; }
-    #positioning { background: var(--surface); }
-    .position-statement { font-size: clamp(18px, 2.5vw, 26px); color: var(--text); line-height: 1.5; font-weight: normal; max-width: 740px; }
-    .feature-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1px; background: var(--border); border: 1px solid var(--border); margin-top: 16px; }
-    .feature-item { background: var(--bg); padding: 24px 22px; font-family: 'Courier New', monospace; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); }
-    #cta { background: #0d0d0d; }
-    #cta .inner { text-align: center; }
-    .cta-headline { font-size: clamp(28px, 4vw, 48px); font-weight: normal; line-height: 1.25; margin-bottom: 20px; }
-    .cta-headline span { display: block; }
-    .cta-sub { font-size: 15px; color: var(--text-muted); line-height: 1.8; margin-bottom: 48px; }
-    footer { border-top: 1px solid var(--border); padding: 32px 56px; display: flex; align-items: center; justify-content: space-between; }
-    .footer-logo { font-family: 'Courier New', monospace; font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-muted); }
-    .footer-tag { font-family: 'Courier New', monospace; font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent-dim); font-style: italic; }
-    @media (max-width: 720px) {
-      nav { padding: 0 24px; }
-      .nav-links { display: none; }
-      #live-bar { padding: 0 24px; }
-      .inner, .inner-wide { padding: 72px 24px; }
-      #hero .inner { padding-top: 140px; }
-      footer { padding: 28px 24px; flex-direction: column; gap: 12px; text-align: center; }
-    }
-  </style>
+    .tick-item { padding: 0 10px; }
+  }
+
+  @media (max-width: 600px) {
+    #logo span { display: none; }
+    #schema-badge { display: none; }
+  }
+</style>
 </head>
 <body>
 
-<nav>
-  <span class="nav-logo">Inflection OS</span>
-  <ul class="nav-links">
-    <li><a href="#what">What It Is</a></li>
-    <li><a href="#how">How It Works</a></li>
-    <li><a href="#domains">Domains</a></li>
-    <li><a href="#product">Platform</a></li>
-    <li><a href="#who">Who It's For</a></li>
-  </ul>
-</nav>
-
-<div id="live-bar">
-  <span class="live-dot"></span>
-  <span class="live-label">Live</span>
-  <div class="live-ticker" id="ticker">
-    <span class="tick-item"><span class="tick-label">Loading...</span></span>
-  </div>
-  <span class="last-updated" id="last-updated-bar">--</span>
+<!-- Loading Overlay -->
+<div id="loading-overlay">
+  <div class="spinner"></div>
+  <div class="loading-text">FETCHING LIVE DATA&hellip;</div>
 </div>
 
-<section id="hero">
-  <div class="inner">
-    <p class="hero-eyebrow">Inflection OS</p>
-    <h1 class="hero-h1">See what changed.<br>Understand why it matters.<br>Act before the shift becomes obvious.</h1>
-    <div class="cta-row">
-      <a href="#domains" class="btn-primary">View Live Dashboard</a>
-      <a href="#how" class="btn-secondary">How It Works</a>
+<!-- Error Banner -->
+<div id="error-banner"></div>
+
+<!-- Nav -->
+<nav id="nav">
+  <div id="logo">INFLECTION OS<span>// SIGNAL DASHBOARD</span></div>
+  <div class="live-dot" id="live-dot"></div>
+  <div id="nav-right">
+    <div id="schema-badge">v1.2</div>
+    <button id="refresh-btn" onclick="fetchData()">&#x21BB; REFRESH</button>
+  </div>
+</nav>
+
+<!-- Ticker Bar -->
+<div id="ticker-bar">
+  <div id="ticker-items"></div>
+  <div id="ticker-updated"></div>
+</div>
+
+<!-- Main Grid -->
+<div id="main">
+
+  <!-- MARKETS (wide) -->
+  <div class="card wide" id="card-markets">
+    <div class="card-header">
+      <div>
+        <div class="card-title">&#9632; Markets</div>
+        <div class="card-headline" id="hl-markets"></div>
+      </div>
+      <div class="card-timestamp" id="ts-markets"></div>
     </div>
+    <div id="body-markets"></div>
   </div>
-</section>
 
-<section id="what">
-  <div class="inner">
-    <span class="section-label">What It Is</span>
-    <h2 class="what-h2">Inflection OS is a private live tracking and alert system designed for personal use.</h2>
-    <p class="body-text">It monitors the people, companies, countries, markets, players, teams, topics, and narratives I care about across all domains. It pulls in new information automatically, identifies what changed, evaluates whether it matters, updates scenario ladders, and helps me decide whether to act, monitor, or review.</p>
-    <p class="body-text">It is built for one purpose: turning live information into structured judgment before consensus catches up.</p>
-  </div>
-</section>
-
-<section id="different">
-  <div class="inner">
-    <span class="section-label">What Makes It Different</span>
-    <p class="diff-intro">Most systems either overwhelm the user with raw information or summarize events without structure.</p>
-    <p class="diff-lead">Inflection OS is different because it is built around disciplined reasoning.</p>
-    <ul class="diff-list">
-      <li>It separates fact from inference.</li>
-      <li>It prioritizes source quality.</li>
-      <li>It tracks structural pressure, not just headlines.</li>
-      <li>It updates scenarios instead of repeating noise.</li>
-      <li>It treats ambiguity honestly.</li>
-      <li>It is designed for action, not passive consumption.</li>
-    </ul>
-    <p class="diff-close">The goal is not perfect prediction.</p>
-    <p class="diff-kicker">The goal is better decisions under uncertainty.</p>
-  </div>
-</section>
-
-<section id="how">
-  <div class="inner">
-    <span class="section-label">How It Works</span>
-    <p class="body-text">The system runs a simple loop.</p>
-    <div class="steps">
-      <div class="step"><span class="step-num">01</span><div><h3 class="step-title">It monitors selected sources.</h3></div></div>
-      <div class="step"><span class="step-num">02</span><div><h3 class="step-title">It ingests new evidence.</h3></div></div>
-      <div class="step"><span class="step-num">03</span><div><h3 class="step-title">It extracts the core claims.</h3></div></div>
-      <div class="step"><span class="step-num">04</span><div><h3 class="step-title">It scores importance and source quality.</h3></div></div>
-      <div class="step"><span class="step-num">05</span><div><h3 class="step-title">It updates scenarios.</h3></div></div>
-      <div class="step"><span class="step-num">06</span><div><h3 class="step-title">It sends alerts or review items when something meaningful changes.</h3></div></div>
+  <!-- ENERGY -->
+  <div class="card" id="card-energy">
+    <div class="card-header">
+      <div>
+        <div class="card-title">&#9632; Energy</div>
+        <div class="card-headline" id="hl-energy"></div>
+      </div>
+      <div class="card-timestamp" id="ts-energy"></div>
     </div>
-    <p class="body-text" style="margin-top:48px;">Instead of just dumping information on me, the platform is built to answer a tighter set of questions:</p>
-    <ul class="diff-list">
-      <li>What changed?</li>
-      <li>Why does it matter?</li>
-      <li>Who does it affect?</li>
-      <li>What becomes more or less likely next?</li>
-      <li>Does this require action, monitoring, or skepticism?</li>
-    </ul>
+    <div id="body-energy"></div>
   </div>
-</section>
 
-<section id="domains">
-  <div class="inner-wide">
-    <span class="section-label">Built to track all domains &mdash; updated every 6 minutes</span>
-    <p class="domain-intro">Inflection OS is intentionally cross-domain. It is designed to track live developments wherever structured judgment creates value. The domain can change. The reasoning system stays the same.</p>
-    <div class="domain-grid">
-
-      <div class="domain-card">
-        <span class="domain-tag">01</span>
-        <h3 class="domain-title">Geopolitics and security</h3>
-        <p class="domain-body">Monitor states, alliances, conflict risk, sanctions, military posture, regional escalation, and diplomatic movement.</p>
-        <div class="live-loading" id="geo-loading">Loading...</div>
-        <div class="live-data" id="geo-live" style="display:none"></div>
+  <!-- COMPANIES (wide) -->
+  <div class="card wide" id="card-companies">
+    <div class="card-header">
+      <div>
+        <div class="card-title">&#9632; Companies</div>
+        <div class="card-headline" id="hl-companies"></div>
       </div>
-
-      <div class="domain-card">
-        <span class="domain-tag">02</span>
-        <h3 class="domain-title">Markets and macroeconomics</h3>
-        <p class="domain-body">Track rates, inflation, liquidity, commodities, currencies, policy shifts, and broader market pressure.</p>
-        <div class="live-loading" id="mkt-loading">Loading...</div>
-        <div class="live-data" id="mkt-live" style="display:none"></div>
-      </div>
-
-      <div class="domain-card">
-        <span class="domain-tag">03</span>
-        <h3 class="domain-title">Energy and resources</h3>
-        <p class="domain-body">Monitor oil, gas, logistics, supply disruptions, production changes, strategic reserves, and energy policy.</p>
-        <div class="live-loading" id="nrg-loading">Loading...</div>
-        <div class="live-data" id="nrg-live" style="display:none"></div>
-      </div>
-
-      <div class="domain-card">
-        <span class="domain-tag">04</span>
-        <h3 class="domain-title">Companies and filings</h3>
-        <p class="domain-body">Track public companies through filings, earnings, guidance, management language, capital raises, and strategic changes.</p>
-        <div class="live-loading" id="co-loading">Loading...</div>
-        <div class="live-data" id="co-live" style="display:none"></div>
-      </div>
-
-      <div class="domain-card">
-        <span class="domain-tag">05</span>
-        <h3 class="domain-title">Technology and platforms</h3>
-        <p class="domain-body">Monitor AI developments, product launches, platform policy changes, competition, adoption, and ecosystem shifts.</p>
-        <div class="live-loading" id="tech-loading">Loading...</div>
-        <div class="live-data" id="tech-live" style="display:none"></div>
-      </div>
-
-      <div class="domain-card">
-        <span class="domain-tag">06</span>
-        <h3 class="domain-title">Policy, law, and regulation</h3>
-        <p class="domain-body">Track legislation, rule changes, court actions, agency decisions, and regulatory pressure.</p>
-        <div class="live-loading" id="pol-loading">Loading...</div>
-        <div class="live-data" id="pol-live" style="display:none"></div>
-      </div>
-
-      <div class="domain-card">
-        <span class="domain-tag">07</span>
-        <h3 class="domain-title">Sports and performance</h3>
-        <p class="domain-body">Track injuries, roster changes, player status, usage, coaching decisions, and structural game edges.</p>
-        <div class="live-loading" id="spt-loading">Loading...</div>
-        <div class="live-data" id="spt-live" style="display:none"></div>
-      </div>
-
-      <div class="domain-card">
-        <span class="domain-tag">08</span>
-        <h3 class="domain-title">Media and public narratives</h3>
-        <p class="domain-body">Monitor claims, narrative shifts, viral stories, public messaging, and distortion between signal and noise.</p>
-        <div class="live-loading" id="med-loading">Loading...</div>
-        <div class="live-data" id="med-live" style="display:none"></div>
-      </div>
-
-      <div class="domain-card">
-        <span class="domain-tag">09</span>
-        <h3 class="domain-title">Claim verification and open-source analysis</h3>
-        <p class="domain-body">Audit important claims using source hierarchy, corroboration logic, and explicit uncertainty handling.</p>
-        <div class="live-loading" id="clm-loading">Loading...</div>
-        <div class="live-data" id="clm-live" style="display:none"></div>
-
-      <div class="domain-card">
-        <span class="domain-tag">10</span>
-        <h3 class="domain-title">Legal and judiciary</h3>
-        <p class="domain-body">Federal court opinions, SCOTUS decisions, antitrust enforcement, and regulatory litigation signals.</p>
-        <div class="live-loading" id="leg-loading">Loading...</div>
-        <div class="live-data" id="leg-live" style="display:none"></div>
-      </div>
-
+      <div class="card-timestamp" id="ts-companies"></div>
     </div>
+    <div id="body-companies"></div>
   </div>
-</section>
 
-<section id="product">
-  <div class="inner-wide">
-    <span class="section-label">What the dashboard does</span>
-    <p class="body-text">The dashboard is my command center. It shows:</p>
-    <ul class="diff-list">
-      <li>live alerts</li>
-      <li>recent evidence</li>
-      <li>tracked entities</li>
-      <li>scenario changes</li>
-      <li>open review items</li>
-      <li>upcoming catalysts</li>
-      <li>cross-domain watchlists</li>
-    </ul>
-    <p class="body-text">Each entity has its own page with current scenarios, recent evidence, extracted signals, memo history, and review state.</p>
-    <p class="body-text">When the system is confident something important changed, it creates an alert or memo. When the signal is ambiguous, contradictory, or low-confidence, it sends it into a review queue instead of pretending certainty.</p>
-  </div>
-</section>
-
-<section id="why">
-  <div class="inner">
-    <span class="section-label">Why it exists</span>
-    <h2 class="what-h2">Complex systems move when incentives shift, constraints tighten, capabilities change, or timelines compress.</h2>
-    <div class="why-lines">
-      <p class="why-line">The challenge is not just finding information.</p>
-      <p class="why-line">The challenge is understanding what changed early enough for that change to matter.</p>
+  <!-- GEOPOLITICS -->
+  <div class="card" id="card-geopolitics">
+    <div class="card-header">
+      <div>
+        <div class="card-title">&#9632; Geopolitics</div>
+        <div class="card-headline" id="hl-geopolitics"></div>
+      </div>
+      <div class="card-timestamp" id="ts-geopolitics"></div>
     </div>
-    <p class="body-text">Inflection OS exists to give me a private system for monitoring those shifts live, without relying on scattered feeds, memory, or headline-driven noise.</p>
+    <div id="body-geopolitics"></div>
   </div>
-</section>
 
-<section id="who">
-  <div class="inner">
-    <span class="section-label">Who it is for</span>
-    <p class="for-text">This version is built for me personally.</p>
-    <p class="for-text">It is a private operating system for live monitoring, structured judgment, and cross-domain decision support. It is meant to track what I care about, reduce noise, highlight signal, and make it easier to spot important shifts early.</p>
-  </div>
-</section>
-
-<section id="positioning">
-  <div class="inner">
-    <span class="section-label">Positioning statement</span>
-    <p class="position-statement">Inflection OS is my personal cross-domain live tracker, built to monitor important entities in real time, update scenarios as new evidence arrives, and alert me when something actually matters.</p>
-  </div>
-</section>
-
-<section id="features">
-  <div class="inner-wide">
-    <span class="section-label">Core Features</span>
-    <div class="feature-grid">
-      <div class="feature-item">Personal watchlists across all domains</div>
-      <div class="feature-item">Live source monitoring</div>
-      <div class="feature-item">Evidence ingestion and claim extraction</div>
-      <div class="feature-item">Source-quality prioritization</div>
-      <div class="feature-item">Scenario tracking and updates</div>
-      <div class="feature-item">Alert generation</div>
-      <div class="feature-item">Memo generation</div>
-      <div class="feature-item">Review queue for ambiguity</div>
-      <div class="feature-item">Entity pages with history and context</div>
-      <div class="feature-item">Private operator dashboard</div>
+  <!-- TECHNOLOGY (wide) -->
+  <div class="card wide" id="card-technology">
+    <div class="card-header">
+      <div>
+        <div class="card-title">&#9632; Technology</div>
+        <div class="card-headline" id="hl-technology"></div>
+      </div>
+      <div class="card-timestamp" id="ts-technology"></div>
     </div>
+    <div id="body-technology"></div>
   </div>
-</section>
 
-<section id="cta">
-  <div class="inner">
-    <h2 class="cta-headline">
-      <span>See what changed.</span>
-      <span>Understand why it matters.</span>
-      <span>Act before the shift becomes obvious.</span>
-    </h2>
-    <p class="cta-sub">Inflection OS is my personal cross-domain live tracker, built to monitor important entities in real time, update scenarios as new evidence arrives, and alert me when something actually matters.</p>
-    <div class="cta-row" style="justify-content:center;">
-      <a href="#domains" class="btn-primary">View Live Dashboard</a>
+  <!-- SPORTS -->
+  <div class="card" id="card-sports">
+    <div class="card-header">
+      <div>
+        <div class="card-title">&#9632; Sports</div>
+        <div class="card-headline" id="hl-sports"></div>
+      </div>
+      <div class="card-timestamp" id="ts-sports"></div>
     </div>
+    <div id="body-sports"></div>
   </div>
-</section>
 
-<footer>
-  <span class="footer-logo">Inflection OS</span>
-  <span class="footer-tag">Updated every 6 minutes</span>
-</footer>
+  <!-- POLICY -->
+  <div class="card" id="card-policy">
+    <div class="card-header">
+      <div>
+        <div class="card-title">&#9632; Policy</div>
+        <div class="card-headline" id="hl-policy"></div>
+      </div>
+      <div class="card-timestamp" id="ts-policy"></div>
+    </div>
+    <div id="body-policy"></div>
+  </div>
+
+</div><!-- /main -->
 
 <script>
-(function () {
-  var DATA_URL = 'https://raw.githubusercontent.com/hr185882-creator/inflection-point-research/main/data.json';
+'use strict';
 
-  function fmt(val, d) {
-    if (val === null || val === undefined) return '--';
-    return Number(val).toFixed(d !== undefined ? d : 2);
+const DATA_URL = 'https://raw.githubusercontent.com/hr185882-creator/inflection-point-research/main/data.json';
+const REFRESH_INTERVAL = 5 * 60 * 1000; // 5 min
+const TICKER_SYMS = ['SPY', 'QQQ', 'BTC-USD', 'NVDA', 'MSFT', 'CL=F'];
+
+let lastData = null;
+let refreshTimer = null;
+
+/* ── UTILITIES ── */
+
+function relTime(isoStr) {
+  if (!isoStr) return '';
+  const now = Date.now();
+  const then = new Date(isoStr).getTime();
+  if (isNaN(then)) return '';
+  const diff = Math.floor((now - then) / 1000);
+  if (diff < 60) return diff + 's ago';
+  if (diff < 3600) return Math.floor(diff / 60) + 'm ago';
+  if (diff < 86400) return Math.floor(diff / 3600) + 'h ago';
+  return Math.floor(diff / 86400) + 'd ago';
+}
+
+function fmtPrice(p, sym) {
+  if (p == null) return '—';
+  const n = parseFloat(p);
+  if (isNaN(n)) return '—';
+  if (sym === 'BTC-USD') return '$' + n.toLocaleString('en-US', {minimumFractionDigits: 0, maximumFractionDigits: 0});
+  if (sym === 'EURUSD=X') return n.toFixed(4);
+  if (sym === 'DX-Y.NYB') return n.toFixed(2);
+  if (n >= 1000) return n.toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2});
+  return n.toFixed(2);
+}
+
+function fmtPct(p) {
+  if (p == null) return null;
+  const n = parseFloat(p);
+  if (isNaN(n)) return null;
+  const sign = n >= 0 ? '+' : '';
+  return sign + n.toFixed(2) + '%';
+}
+
+function chgClass(p) {
+  if (p == null) return 'flat';
+  const n = parseFloat(p);
+  if (isNaN(n) || n === 0) return 'flat';
+  return n > 0 ? 'up' : 'dn';
+}
+
+function esc(s) {
+  if (!s) return '';
+  return String(s)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
+function fmtPub(str) {
+  if (!str) return '';
+  try {
+    const d = new Date(str);
+    if (isNaN(d)) return '';
+    return relTime(str);
+  } catch (e) { return ''; }
+}
+
+/* ── TICKER BAR ── */
+
+function renderTicker(data) {
+  const mkt = data.domains.markets || {};
+  const companies = data.domains.companies || {};
+  const energy = data.domains.energy || {};
+
+  // Merge all quotes
+  const allQuotes = Object.assign({}, mkt.quotes || {}, companies.quotes || {}, energy.quotes || {});
+
+  const itemsEl = document.getElementById('ticker-items');
+  const updEl = document.getElementById('ticker-updated');
+  let html = '';
+
+  TICKER_SYMS.forEach(sym => {
+    const q = allQuotes[sym];
+    if (!q) return;
+    const pct = fmtPct(q.change_pct);
+    const cls = chgClass(q.change_pct);
+    const arrow = cls === 'up' ? '&#9650;' : cls === 'dn' ? '&#9660;' : '&#9644;';
+    html += `<div class="tick-item">
+      <span class="tick-sym">${esc(sym)}</span>
+      <span class="tick-price">${fmtPrice(q.price, sym)}</span>
+      ${pct ? `<span class="tick-chg ${cls}">${arrow} ${esc(pct)}</span>` : ''}
+    </div>`;
+  });
+
+  itemsEl.style.cssText = 'display:flex;align-items:center;flex:1;overflow:hidden;';
+  itemsEl.innerHTML = html;
+
+  const fetchedAt = data.fetched_at;
+  updEl.innerHTML = fetchedAt ? `Updated ${relTime(fetchedAt)}` : '';
+}
+
+/* ── MARKETS CARD ── */
+
+function renderMarkets(d) {
+  const q = d.quotes || {};
+  const order = ['SPY', 'QQQ', 'GLD', 'TLT', 'BTC-USD', 'EURUSD=X', 'DX-Y.NYB'];
+  document.getElementById('hl-markets').textContent = d.headline || '';
+  document.getElementById('ts-markets').textContent = relTime(d.last_updated);
+
+  let rows = '';
+  order.forEach(sym => {
+    const item = q[sym];
+    if (!item) return;
+    const pct = fmtPct(item.change_pct);
+    const chg = fmtPct(item.change_pct);
+    const cls = chgClass(item.change_pct);
+    const arrow = cls === 'up' ? '&#9650;' : cls === 'dn' ? '&#9660;' : '';
+    rows += `<tr>
+      <td><span class="q-sym">${esc(sym)}</span><span class="q-label">${esc(item.label || '')}</span></td>
+      <td class="q-price">${fmtPrice(item.price, sym)}</td>
+      <td class="q-chg ${cls}">${chg ? arrow + ' ' + esc(chg) : '—'}</td>
+    </tr>`;
+  });
+
+  let html = `<table class="quote-table">
+    <thead><tr>
+      <th>Ticker</th>
+      <th style="text-align:right">Price</th>
+      <th style="text-align:right">Chg %</th>
+    </tr></thead>
+    <tbody>${rows}</tbody>
+  </table>`;
+
+  if (d.yield_10y != null) {
+    html += `<div class="yield-row">
+      <span class="yield-label">10Y Treasury Yield</span>
+      <span class="yield-val">${parseFloat(d.yield_10y).toFixed(2)}</span>
+      <span class="yield-unit">%</span>
+    </div>`;
   }
 
-  function fmtPct(val) {
-    if (val === null || val === undefined) return '';
-    var n = Number(val);
-    return (n >= 0 ? '+' : '') + n.toFixed(2) + '%';
-  }
+  document.getElementById('body-markets').innerHTML = html;
+}
 
-  function pctCls(val) {
-    if (val === null || val === undefined) return '';
-    return Number(val) >= 0 ? 'up' : 'dn';
-  }
+/* ── ENERGY CARD ── */
 
-  function row(label, valHtml) {
-    return '<div class="live-row"><span class="live-row-label">' + label + '</span><span class="live-row-val">' + valHtml + '</span></div>';
-  }
+function renderEnergy(d) {
+  const q = d.quotes || {};
+  const order = ['CL=F', 'BZ=F', 'NG=F', 'XLE'];
+  document.getElementById('hl-energy').textContent = d.headline || '';
+  document.getElementById('ts-energy').textContent = relTime(d.last_updated);
 
-  function hl(text, url) {
-    var t = text ? (text.length > 62 ? text.slice(0, 62) + '...' : text) : '--';
-    var c = url ? '<a href="' + url + '" target="_blank" rel="noopener">' + t + '</a>' : t;
-    return '<div class="live-headline">&rsaquo; ' + c + '</div>';
-  }
+  let rows = '';
+  order.forEach(sym => {
+    const item = q[sym];
+    if (!item) return;
+    const pct = fmtPct(item.change_pct);
+    const cls = chgClass(item.change_pct);
+    const arrow = cls === 'up' ? '&#9650;' : cls === 'dn' ? '&#9660;' : '';
+    rows += `<tr>
+      <td><span class="q-sym">${esc(sym)}</span><span class="q-label">${esc(item.label || '')}</span></td>
+      <td class="q-price">${fmtPrice(item.price, sym)}</td>
+      <td class="q-chg ${cls}">${pct ? arrow + ' ' + esc(pct) : '—'}</td>
+    </tr>`;
+  });
 
-  function timeAgo(iso) {
-    if (!iso) return '--';
-    var s = Math.floor((Date.now() - new Date(iso).getTime()) / 1000);
-    if (s < 60) return s + 's ago';
-    if (s < 3600) return Math.floor(s / 60) + 'm ago';
-    if (s < 86400) return Math.floor(s / 3600) + 'h ago';
-    return Math.floor(s / 86400) + 'd ago';
-  }
+  let html = `<table class="quote-table">
+    <thead><tr>
+      <th>Ticker</th>
+      <th style="text-align:right">Price</th>
+      <th style="text-align:right">Chg %</th>
+    </tr></thead>
+    <tbody>${rows}</tbody>
+  </table>`;
 
-  function show(lid, did, html) {
-    var l = document.getElementById(lid), d = document.getElementById(did);
-    if (l) l.style.display = 'none';
-    if (d) { d.innerHTML = html; d.style.display = 'flex'; }
-  }
-
-  function renderAll(raw) {
-    var d  = raw.domains || {};
-    var m  = d.markets    || {};
-    var e  = d.energy     || {};
-    var c  = d.companies  || {};
-    var s  = d.sports     || {};
-    var g  = d.geopolitics|| {};
-    var t  = d.technology || {};
-    var p  = d.policy     || {};
-    var mq = m.quotes || {};
-    var eq = e.quotes || {};
-    var cq = c.quotes || {};
-
-    // ── Ticker bar ────────────────────────────────────────────────
-    var ticks = [
-      {l:'SPY',   v: mq['SPY']     ? '$'+fmt(mq['SPY'].price,2)     : '--', pct: mq['SPY']     ? mq['SPY'].change_pct     : null},
-      {l:'BTC',   v: mq['BTC-USD'] ? '$'+fmt(mq['BTC-USD'].price,0) : '--', pct: mq['BTC-USD'] ? mq['BTC-USD'].change_pct : null},
-      {l:'DXY',   v: mq['DX-Y.NYB']? fmt(mq['DX-Y.NYB'].price,2)   : '--', pct: mq['DX-Y.NYB']? mq['DX-Y.NYB'].change_pct: null},
-      {l:'10Y',   v: m.yield_10y   ? fmt(m.yield_10y,2)+'%'         : '--', pct: null},
-      {l:'EUR/USD',v: mq['EURUSD=X']? fmt(mq['EURUSD=X'].price,4)   : '--', pct: mq['EURUSD=X']? mq['EURUSD=X'].change_pct: null},
-      {l:'WTI',   v: eq['CL=F']   ? '$'+fmt(eq['CL=F'].price,2)    : '--', pct: eq['CL=F']   ? eq['CL=F'].change_pct    : null},
-      {l:'BRENT', v: eq['BZ=F']   ? '$'+fmt(eq['BZ=F'].price,2)    : '--', pct: eq['BZ=F']   ? eq['BZ=F'].change_pct    : null},
-      {l:'GOLD',  v: mq['GLD']    ? '$'+fmt(mq['GLD'].price,2)     : '--', pct: mq['GLD']    ? mq['GLD'].change_pct     : null}
-    ];
-    var tk = document.getElementById('ticker');
-    if (tk) tk.innerHTML = ticks.map(function(x){
-      var ph = x.pct !== null && x.pct !== undefined
-        ? ' <span class="'+pctCls(x.pct)+'">'+fmtPct(x.pct)+'</span>' : '';
-      return '<span class="tick-item"><span class="tick-label">'+x.l+'</span> <span class="tick-val">'+x.v+'</span>'+ph+'</span>';
-    }).join('');
-    var ub = document.getElementById('last-updated-bar');
-    if (ub) ub.textContent = 'Updated ' + timeAgo(raw.fetched_at || m.last_updated);
-
-    // ── Markets ───────────────────────────────────────────────────
-    var mh = '';
-    ['SPY','QQQ','GLD','TLT','BTC-USD','EURUSD=X'].forEach(function(sym){
-      var q = mq[sym]; if (!q) return;
-      var label = q.label || sym;
-      var val = sym === 'BTC-USD' ? '$'+fmt(q.price,0) : sym === 'EURUSD=X' ? fmt(q.price,4) : '$'+fmt(q.price,2);
-      val += ' <span class="'+pctCls(q.change_pct)+'">'+fmtPct(q.change_pct)+'</span>';
-      mh += row(label, val);
+  const headlines = (d.headlines || []).slice(0, 5);
+  if (headlines.length) {
+    html += `<div class="section-divider"></div>
+    <div class="section-label">EIA Headlines</div>
+    <ul class="news-list">`;
+    headlines.forEach(h => {
+      html += `<li class="news-item">
+        <span class="news-bullet">&#9642;</span>
+        <div class="news-title">
+          <a href="${esc(h.link || '#')}" target="_blank" rel="noopener">${esc(h.title || '')}</a>
+          <span class="news-time">${fmtPub(h.published)}</span>
+        </div>
+      </li>`;
     });
-    if (m.yield_10y) mh += row('10Y Treasury Yield', fmt(m.yield_10y,2)+'%');
-    show('mkt-loading','mkt-live',mh || row('Markets','--'));
+    html += '</ul>';
+  }
 
-    // ── Energy ────────────────────────────────────────────────────
-    var eh = '';
-    ['CL=F','BZ=F','NG=F','XLE'].forEach(function(sym){
-      var q = eq[sym]; if (!q) return;
-      eh += row(q.label||sym, '$'+fmt(q.price,2)+' <span class="'+pctCls(q.change_pct)+'">'+fmtPct(q.change_pct)+'</span>');
+  document.getElementById('body-energy').innerHTML = html;
+}
+
+/* ── COMPANIES CARD ── */
+
+function renderCompanies(d) {
+  const q = d.quotes || {};
+  const order = ['NVDA', 'MSFT', 'AAPL', 'META', 'TSLA', 'AMZN', 'GOOGL'];
+  document.getElementById('hl-companies').textContent = d.headline || '';
+  document.getElementById('ts-companies').textContent = relTime(d.last_updated);
+
+  let rows = '';
+  order.forEach(sym => {
+    const item = q[sym];
+    if (!item) return;
+    const pct = fmtPct(item.change_pct);
+    const cls = chgClass(item.change_pct);
+    const arrow = cls === 'up' ? '&#9650;' : cls === 'dn' ? '&#9660;' : '';
+    rows += `<tr>
+      <td><span class="q-sym">${esc(sym)}</span><span class="q-label">${esc(item.label || '')}</span></td>
+      <td class="q-price">${fmtPrice(item.price, sym)}</td>
+      <td class="q-chg ${cls}">${pct ? arrow + ' ' + esc(pct) : '—'}</td>
+    </tr>`;
+  });
+
+  let html = `<table class="quote-table">
+    <thead><tr>
+      <th>Ticker</th>
+      <th style="text-align:right">Price</th>
+      <th style="text-align:right">Chg %</th>
+    </tr></thead>
+    <tbody>${rows}</tbody>
+  </table>`;
+
+  const filings = (d.recent_filings || []).slice(0, 6);
+  if (filings.length) {
+    html += `<div class="section-divider"></div>
+    <div class="section-label">Recent SEC Filings (8-K)</div>
+    <ul class="news-list">`;
+    filings.forEach(f => {
+      html += `<li class="news-item">
+        <span class="news-bullet">&#9642;</span>
+        <div class="news-title">
+          <a href="${esc(f.link || '#')}" target="_blank" rel="noopener">${esc(f.title || '')}</a>
+          <span class="news-time">${fmtPub(f.published)}</span>
+        </div>
+      </li>`;
     });
-    if ((e.headlines||[]).length) {
-      eh += '<div style="margin-top:10px">';
-      e.headlines.slice(0,2).forEach(function(x){ eh += hl(x.title,x.link); });
-      eh += '</div>';
-    }
-    show('nrg-loading','nrg-live',eh || row('Energy','--'));
+    html += '</ul>';
+  }
 
-    // ── Companies ─────────────────────────────────────────────────
-    var ch = '';
-    ['NVDA','MSFT','AAPL','META','TSLA','AMZN','GOOGL'].forEach(function(sym){
-      var q = cq[sym]; if (!q) return;
-      ch += row(q.label||sym, '$'+fmt(q.price,2)+' <span class="'+pctCls(q.change_pct)+'">'+fmtPct(q.change_pct)+'</span>');
+  document.getElementById('body-companies').innerHTML = html;
+}
+
+/* ── GEOPOLITICS CARD ── */
+
+function renderGeopolitics(d) {
+  document.getElementById('hl-geopolitics').textContent = d.headline || '';
+  document.getElementById('ts-geopolitics').textContent = relTime(d.last_updated);
+
+  const headlines = (d.headlines || []).slice(0, 10);
+  let html = '';
+  if (headlines.length) {
+    html += '<ul class="news-list">';
+    headlines.forEach(h => {
+      html += `<li class="news-item">
+        <span class="news-bullet">&#9642;</span>
+        <div class="news-title">
+          <a href="${esc(h.link || '#')}" target="_blank" rel="noopener">${esc(h.title || '')}</a>
+          <span class="news-time">${fmtPub(h.published)}</span>
+        </div>
+      </li>`;
     });
-    var filings = c.recent_filings || [];
-    if (filings.length) {
-      ch += '<div style="margin-top:10px">';
-      filings.slice(0,2).forEach(function(x){ ch += hl(x.title,x.link); });
-      ch += '</div>';
-    }
-    show('co-loading','co-live',ch || row('Companies','--'));
+    html += '</ul>';
+  } else {
+    html = '<div class="no-games">No headlines available.</div>';
+  }
 
-    // ── Sports ────────────────────────────────────────────────────
-    var sh = '';
-    var scores = s.scores || {};
-    ['nfl','nba','mlb'].forEach(function(lid){
-      var lg = scores[lid]; if (!lg || !lg.games || !lg.games.length) return;
-      sh += '<div style="margin-bottom:8px"><span style="font-family:Courier New,monospace;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:var(--accent-dim)">'+lg.label+'</span></div>';
-      lg.games.slice(0,2).forEach(function(g){
-        var score = g.home_score !== '' && g.away_score !== ''
-          ? g.away+' '+g.away_score+' @ '+g.home+' '+g.home_score
-          : g.away+' @ '+g.home;
-        sh += row(score, g.status);
+  document.getElementById('body-geopolitics').innerHTML = html;
+}
+
+/* ── TECHNOLOGY CARD ── */
+
+function renderTechnology(d) {
+  document.getElementById('hl-technology').textContent = d.headline || '';
+  document.getElementById('ts-technology').textContent = relTime(d.last_updated);
+
+  const hn = (d.hn_top || []).slice(0, 8);
+  const wired = (d.tech_headlines || []).slice(0, 5);
+
+  let html = '';
+
+  if (hn.length) {
+    html += '<div class="section-label">Hacker News &mdash; Top Stories</div>';
+    html += '<ul class="hn-list">';
+    hn.forEach((s, i) => {
+      html += `<li class="hn-item">
+        <span class="hn-rank">${String(i + 1).padStart(2, '0')}.</span>
+        <div class="hn-body">
+          <div class="hn-title"><a href="${esc(s.url || '#')}" target="_blank" rel="noopener">${esc(s.title || '')}</a></div>
+          <div class="hn-meta">
+            <span class="up">&#9650; ${s.score != null ? s.score : '?'} pts</span>
+            <span class="cm">&#9632; ${s.comments != null ? s.comments : '?'} comments</span>
+          </div>
+        </div>
+      </li>`;
+    });
+    html += '</ul>';
+  }
+
+  if (wired.length) {
+    html += `<div class="section-divider"></div>
+    <div class="section-label">Wired &mdash; Latest</div>
+    <ul class="news-list">`;
+    wired.forEach(h => {
+      html += `<li class="news-item">
+        <span class="news-bullet">&#9642;</span>
+        <div class="news-title">
+          <a href="${esc(h.link || '#')}" target="_blank" rel="noopener">${esc(h.title || '')}</a>
+          <span class="news-time">${fmtPub(h.published)}</span>
+        </div>
+      </li>`;
+    });
+    html += '</ul>';
+  }
+
+  document.getElementById('body-technology').innerHTML = html;
+}
+
+/* ── SPORTS CARD ── */
+
+function renderSports(d) {
+  document.getElementById('hl-sports').textContent = d.headline || '';
+  document.getElementById('ts-sports').textContent = relTime(d.last_updated);
+
+  const scores = d.scores || {};
+  const injuries = d.injuries || {};
+  const sports = ['nfl', 'nba', 'mlb'];
+
+  let html = '';
+
+  sports.forEach(sp => {
+    const section = scores[sp];
+    if (!section) return;
+    const games = section.games || [];
+    html += `<div class="sport-section">
+      <div class="sport-label">${esc(section.label || sp.toUpperCase())}</div>`;
+    if (games.length === 0) {
+      html += '<div class="no-games">No games scheduled.</div>';
+    } else {
+      games.slice(0, 4).forEach(g => {
+        const hs = g.home_score != null ? g.home_score : '';
+        const as_ = g.away_score != null ? g.away_score : '';
+        const scoreStr = (hs !== '' && as_ !== '') ? `${hs}&ndash;${as_}` : 'vs';
+        html += `<div class="game-row">
+          <div class="game-teams">
+            <div class="game-team">${esc(g.away || '')} <span class="vs-sep">@</span> ${esc(g.home || '')}</div>
+          </div>
+          <div class="game-score">${scoreStr}</div>
+          <div class="game-status">${esc(g.status || '')}</div>
+        </div>`;
       });
+    }
+    html += '</div>';
+  });
+
+  // Injuries
+  const allInj = [];
+  ['nfl', 'nba'].forEach(sp => {
+    (injuries[sp] || []).forEach(i => allInj.push({ ...i, sport: sp.toUpperCase() }));
+  });
+
+  if (allInj.length) {
+    html += `<div class="section-divider"></div>
+    <div class="section-label">Injury Report</div>
+    <table class="inj-table"><tbody>`;
+    allInj.slice(0, 10).forEach(inj => {
+      html += `<tr>
+        <td><span class="inj-player">${esc(inj.player || '')}</span><br><span class="inj-team">${esc(inj.team || '')} &middot; ${esc(inj.sport)}</span></td>
+        <td><span class="inj-status">${esc(inj.status || '')}</span><br><span class="inj-detail">${esc(inj.detail || '')}</span></td>
+      </tr>`;
     });
-    var injuries = s.injuries || {};
-    var injList = (injuries.nfl||[]).concat(injuries.nba||[]).slice(0,3);
-    if (injList.length) {
-      sh += '<div style="margin-top:10px">';
-      injList.forEach(function(p){ if(p.player) sh += hl(p.player+' ('+p.team+') \u2014 '+p.status, ''); });
-      sh += '</div>';
-    }
-    show('spt-loading','spt-live',sh || '<div class="live-headline">No games scheduled</div>');
-
-    // ── Geopolitics ───────────────────────────────────────────────
-    var gh = '';
-    var geo_heads = g.headlines || [];
-    if (geo_heads.length) geo_heads.slice(0,5).forEach(function(x){ gh += hl(x.title,x.link); });
-    else gh = '<div class="live-headline">No data</div>';
-    show('geo-loading','geo-live',gh);
-
-    // ── Technology ────────────────────────────────────────────────
-    var th = '';
-    var hn = t.hn_top || [];
-    if (hn.length) hn.slice(0,4).forEach(function(x){ th += hl(x.title+' ('+x.score+'pts)',x.url); });
-    var tech_news = t.tech_headlines || [];
-    if (tech_news.length) {
-      th += '<div style="margin-top:8px">';
-      tech_news.slice(0,2).forEach(function(x){ th += hl(x.title,x.link||x.url); });
-      th += '</div>';
-    }
-    show('tech-loading','tech-live',th || '<div class="live-headline">No data</div>');
-
-    // ── Policy ────────────────────────────────────────────────────
-    var ph2 = '';
-    var bills = p.bills || [];
-    var rules = p.federal_rules || [];
-    var scotus = p.scotus || [];
-    if (bills.length) { ph2 += '<div style="margin-bottom:6px"><span style="font-family:Courier New,monospace;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:var(--accent-dim)">CONGRESS</span></div>'; bills.slice(0,2).forEach(function(x){ ph2 += hl(x.title,x.link); }); }
-    if (rules.length) { ph2 += '<div style="margin:8px 0 6px"><span style="font-family:Courier New,monospace;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:var(--accent-dim)">FED REGISTER</span></div>'; rules.slice(0,2).forEach(function(x){ ph2 += hl(x.title,x.link); }); }
-    if (scotus.length) { ph2 += '<div style="margin:8px 0 6px"><span style="font-family:Courier New,monospace;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:var(--accent-dim)">SCOTUS</span></div>'; scotus.slice(0,2).forEach(function(x){ ph2 += hl(x.title,x.link); }); }
-    show('pol-loading','pol-live',ph2 || '<div class="live-headline">No data</div>');
+    html += '</tbody></table>';
   }
 
-  // Legal
-  function renderLegal(d) {
-    var leg = d.legal;
-    if (leg) {
-      var legEl = document.getElementById('leg-live');
-      var legLoad = document.getElementById('leg-loading');
-      if (legEl) {
-        var legHtml = '';
-        if (leg.cases && leg.cases.length) {
-          leg.cases.slice(0, 5).forEach(function(c) {
-            legHtml += '<div class="live-row" style="flex-direction:column;gap:2px;margin-bottom:8px;">';
-            legHtml += '<a href="' + (c.link || '#') + '" target="_blank" style="color:var(--text);text-decoration:none;font-size:11px;font-family:Courier New;">' + c.title + '</a>';
-            legHtml += '<span style="color:var(--accent);font-size:10px;font-family:Courier New;">' + (c.tag || '') + (c.court ? ' — ' + c.court : '') + (c.date ? ' (' + c.date + ')' : '') + '</span>';
-            legHtml += '</div>';
-          });
-        }
-        if (leg.scotus_opinions && leg.scotus_opinions.length) {
-          legHtml += '<div style="margin-top:6px;padding-top:6px;border-top:1px solid var(--border);font-family:Courier New;font-size:10px;color:var(--accent);">SCOTUS</div>';
-          leg.scotus_opinions.slice(0, 2).forEach(function(o) {
-            legHtml += '<div class="live-row" style="flex-direction:column;gap:1px;margin-bottom:4px;">';
-            legHtml += '<a href="' + (o.link || '#') + '" target="_blank" style="color:var(--text);text-decoration:none;font-size:11px;font-family:Courier New;">' + o.title + '</a>';
-            legHtml += '</div>';
-          });
-        }
-        if (!legHtml) legHtml = '<span class="live-headline">No cases returned this cycle</span>';
-        legEl.innerHTML = legHtml;
-        legEl.style.display = 'flex';
-        if (legLoad) legLoad.style.display = 'none';
-      }
+  document.getElementById('body-sports').innerHTML = html;
+}
+
+/* ── POLICY CARD ── */
+
+function renderPolicy(d) {
+  document.getElementById('hl-policy').textContent = d.headline || '';
+  document.getElementById('ts-policy').textContent = relTime(d.last_updated);
+
+  const bills = (d.bills || []).slice(0, 5);
+  const rules = (d.federal_rules || []).slice(0, 5);
+  const scotus = (d.scotus || []).slice(0, 3);
+
+  let html = '';
+
+  if (bills.length) {
+    html += '<div class="section-label">Congress &mdash; Most Viewed Bills</div>';
+    bills.forEach(b => {
+      html += `<div class="policy-item">
+        <div class="policy-title"><a href="${esc(b.link || '#')}" target="_blank" rel="noopener">${esc(b.title || '')}</a></div>
+        <div class="policy-time">${fmtPub(b.published)}</div>
+      </div>`;
+    });
+  }
+
+  if (rules.length) {
+    html += `<div class="section-divider"></div>
+    <div class="section-label">Federal Register &mdash; Rules</div>`;
+    rules.forEach(r => {
+      html += `<div class="policy-item">
+        <div class="policy-title"><a href="${esc(r.link || '#')}" target="_blank" rel="noopener">${esc(r.title || '')}</a></div>
+        <div class="policy-time">${fmtPub(r.published)}</div>
+      </div>`;
+    });
+  }
+
+  if (scotus.length) {
+    html += `<div class="section-divider"></div>
+    <div class="section-label">SCOTUS &mdash; Recent Opinions</div>`;
+    scotus.forEach(s => {
+      html += `<div class="policy-item">
+        <div class="policy-title"><a href="${esc(s.link || '#')}" target="_blank" rel="noopener">${esc(s.title || '')}</a></div>
+        <div class="policy-time">${fmtPub(s.published)}</div>
+      </div>`;
+    });
+  }
+
+  if (!bills.length && !rules.length && !scotus.length) {
+    html = '<div class="no-games">No policy data available.</div>';
+  }
+
+  document.getElementById('body-policy').innerHTML = html;
+}
+
+/* ── MAIN RENDER ── */
+
+function renderAll(data) {
+  lastData = data;
+  const d = data.domains || {};
+
+  if (d.markets) renderMarkets(d.markets);
+  if (d.energy) renderEnergy(d.energy);
+  if (d.companies) renderCompanies(d.companies);
+  if (d.geopolitics) renderGeopolitics(d.geopolitics);
+  if (d.technology) renderTechnology(d.technology);
+  if (d.sports) renderSports(d.sports);
+  if (d.policy) renderPolicy(d.policy);
+
+  renderTicker(data);
+
+  // Update schema badge
+  if (data.schema_version) {
+    document.getElementById('schema-badge').textContent = 'v' + data.schema_version;
+  }
+}
+
+/* ── FETCH ── */
+
+async function fetchData() {
+  const btn = document.getElementById('refresh-btn');
+  const errEl = document.getElementById('error-banner');
+  const overlay = document.getElementById('loading-overlay');
+
+  btn.disabled = true;
+  btn.textContent = '... LOADING';
+  errEl.style.display = 'none';
+
+  try {
+    const url = DATA_URL + '?t=' + Date.now();
+    const res = await fetch(url, { cache: 'no-store' });
+    if (!res.ok) throw new Error('HTTP ' + res.status + ' — ' + res.statusText);
+    const data = await res.json();
+    renderAll(data);
+    overlay.style.display = 'none';
+    overlay.style.pointerEvents = 'none';
+  } catch (err) {
+    console.error('Fetch error:', err);
+    errEl.style.display = 'block';
+    errEl.textContent = '&#9888; Data fetch failed: ' + err.message + '. Retrying in 60s.';
+    if (!lastData) {
+      overlay.querySelector('.loading-text').textContent = 'FETCH FAILED — RETRYING...';
+    } else {
+      overlay.style.display = 'none';
     }
+    // Retry sooner on error
+    if (refreshTimer) clearTimeout(refreshTimer);
+    refreshTimer = setTimeout(fetchData, 60000);
+  } finally {
+    btn.disabled = false;
+    btn.innerHTML = '&#x21BB; REFRESH';
   }
+}
 
-  function loadData() {
-    fetch(DATA_URL + '?t=' + Date.now())
-      .then(function(r){ return r.json(); })
-      .then(function(d){ renderAll(d); renderLegal(d); })
-      .catch(function(){
-        ['geo','mkt','nrg','co','spt','tech','pol','leg'].forEach(function(id){
-          var el = document.getElementById(id+'-loading');
-          if (el) el.textContent = 'Data unavailable';
-        });
-      });
+/* ── LIVE TIMESTAMP TICK ── */
+
+function tickTimestamps() {
+  if (!lastData) return;
+  const d = lastData.domains || {};
+  const mapping = {
+    'ts-markets': d.markets && d.markets.last_updated,
+    'ts-energy': d.energy && d.energy.last_updated,
+    'ts-companies': d.companies && d.companies.last_updated,
+    'ts-geopolitics': d.geopolitics && d.geopolitics.last_updated,
+    'ts-technology': d.technology && d.technology.last_updated,
+    'ts-sports': d.sports && d.sports.last_updated,
+    'ts-policy': d.policy && d.policy.last_updated,
+  };
+  Object.entries(mapping).forEach(([id, ts]) => {
+    const el = document.getElementById(id);
+    if (el && ts) el.textContent = relTime(ts);
+  });
+  const updEl = document.getElementById('ticker-updated');
+  if (updEl && lastData.fetched_at) {
+    updEl.textContent = 'Updated ' + relTime(lastData.fetched_at);
   }
+}
 
-  loadData();
-  setInterval(loadData, 5 * 60 * 1000);
+/* ── INIT ── */
+
+(function init() {
+  fetchData();
+
+  // Auto-refresh every 5 min
+  refreshTimer = setInterval(fetchData, REFRESH_INTERVAL);
+
+  // Tick timestamps every 30s
+  setInterval(tickTimestamps, 30000);
 })();
 </script>
-
 </body>
 </html>
