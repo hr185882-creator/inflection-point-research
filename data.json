@@ -1,9 +1,9 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-11T09:07:21Z",
+  "fetched_at": "2026-03-11T09:21:22Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-11T09:07:21Z",
+      "last_updated": "2026-03-11T09:21:22Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
@@ -39,57 +39,57 @@
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 69574.55,
+          "price": 69637.52,
           "prev_close": 69956.93,
-          "change": -382.38,
-          "change_pct": -0.55,
+          "change": -319.41,
+          "change_pct": -0.46,
           "currency": "USD"
         },
         "EURUSD=X": {
           "label": "EUR/USD",
-          "price": 1.1596,
+          "price": 1.1602,
           "prev_close": 1.1614,
-          "change": -0.0018,
-          "change_pct": -0.15,
+          "change": -0.0012,
+          "change_pct": -0.1,
           "currency": "USD"
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 98.981,
+          "price": 98.979,
           "prev_close": 98.826,
-          "change": 0.155,
-          "change_pct": 0.16,
+          "change": 0.153,
+          "change_pct": 0.15,
           "currency": "USD"
         }
       },
       "yield_10y": 4.12,
-      "headline": "SPY -0.16%  |  BTC $69,575  |  10Y 4.12%"
+      "headline": "SPY -0.16%  |  BTC $69,638  |  10Y 4.12%"
     },
     "energy": {
-      "last_updated": "2026-03-11T09:07:31Z",
+      "last_updated": "2026-03-11T09:21:31Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 86.73,
+          "price": 87.06,
           "prev_close": 83.45,
-          "change": 3.28,
-          "change_pct": 3.93,
+          "change": 3.61,
+          "change_pct": 4.33,
           "currency": "USD"
         },
         "NG=F": {
           "label": "Natural Gas ($/MMBtu)",
-          "price": 3.085,
+          "price": 3.098,
           "prev_close": 3.02,
-          "change": 0.065,
-          "change_pct": 2.15,
+          "change": 0.078,
+          "change_pct": 2.58,
           "currency": "USD"
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 87.05,
+          "price": 87.48,
           "prev_close": 85.27,
-          "change": 1.78,
-          "change_pct": 2.09,
+          "change": 2.21,
+          "change_pct": 2.59,
           "currency": "USD"
         },
         "XLE": {
@@ -123,10 +123,10 @@
           "published": "Tue, 03 Mar 2026 09:00:00 EST"
         }
       ],
-      "headline": "WTI $86.73/bbl"
+      "headline": "WTI $87.06/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-11T09:07:32Z",
+      "last_updated": "2026-03-11T09:21:31Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
@@ -215,7 +215,7 @@
       "headline": "NVDA 1.16%  |  MSFT -0.89%"
     },
     "sports": {
-      "last_updated": "2026-03-11T09:07:32Z",
+      "last_updated": "2026-03-11T09:21:33Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -371,7 +371,7 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-11T09:07:42Z",
+      "last_updated": "2026-03-11T09:21:43Z",
       "headlines": [
         {
           "title": "'I just want to be able to sleep': Attacks in Iran rock cities and cut power",
@@ -402,37 +402,37 @@
       "headline": "'I just want to be able to sleep': Attacks in Iran rock cities and cut power"
     },
     "technology": {
-      "last_updated": "2026-03-11T09:07:43Z",
+      "last_updated": "2026-03-11T09:21:43Z",
       "hn_top": [
-        {
-          "title": "Why does AI tell you to use Terminal so much?",
-          "url": "https://eclecticlight.co/2026/03/11/why-does-ai-tell-you-to-use-terminal-so-much/",
-          "score": 24,
-          "comments": 35
-        },
         {
           "title": "Zig \u2013 Type Resolution Redesign and Language Changes",
           "url": "https://ziglang.org/devlog/2026/#2026-03-10",
-          "score": 193,
-          "comments": 62
+          "score": 200,
+          "comments": 64
         },
         {
           "title": "Create value for others and don\u2019t worry about the returns",
           "url": "https://geohot.github.io//blog/jekyll/update/2026/03/11/running-69-agents.html",
-          "score": 279,
-          "comments": 125
+          "score": 294,
+          "comments": 137
         },
         {
           "title": "U+237C \u237c Is Azimuth",
           "url": "https://ionathan.ch/2026/02/16/angzarr.html",
-          "score": 284,
-          "comments": 26
+          "score": 288,
+          "comments": 28
+        },
+        {
+          "title": "Cloudflare crawl endpoint",
+          "url": "https://developers.cloudflare.com/changelog/post/2026-03-10-br-crawl-endpoint/",
+          "score": 287,
+          "comments": 114
         },
         {
           "title": "TADA: Fast, Reliable Speech Generation Through Text-Acoustic Synchronization",
           "url": "https://www.hume.ai/blog/opensource-tada",
-          "score": 27,
-          "comments": 4
+          "score": 30,
+          "comments": 5
         }
       ],
       "tech_headlines": [
@@ -462,10 +462,10 @@
           "published": "Mon, 09 Mar 2026 09:30:00 +0000"
         }
       ],
-      "headline": "Why does AI tell you to use Terminal so much?"
+      "headline": "Zig \u2013 Type Resolution Redesign and Language Changes"
     },
     "policy": {
-      "last_updated": "2026-03-11T09:07:43Z",
+      "last_updated": "2026-03-11T09:21:44Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -504,7 +504,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-11T09:07:47Z",
+      "last_updated": "2026-03-11T09:21:45Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
