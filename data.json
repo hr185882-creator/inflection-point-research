@@ -1,9 +1,9 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-11T21:05:51Z",
+  "fetched_at": "2026-03-11T21:17:49Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-11T21:06:01Z",
+      "last_updated": "2026-03-11T21:18:00Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
@@ -39,26 +39,26 @@
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 70637.836,
+          "price": 70566.99,
           "prev_close": 69956.93,
-          "change": 680.906,
-          "change_pct": 0.97,
+          "change": 610.06,
+          "change_pct": 0.87,
           "currency": "USD"
         },
         "EURUSD=X": {
           "label": "EUR/USD",
-          "price": 1.1571,
+          "price": 1.1574,
           "prev_close": 1.1614,
-          "change": -0.0043,
-          "change_pct": -0.37,
+          "change": -0.004,
+          "change_pct": -0.34,
           "currency": "USD"
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 99.271,
+          "price": 99.261,
           "prev_close": 98.826,
-          "change": 0.445,
-          "change_pct": 0.45,
+          "change": 0.435,
+          "change_pct": 0.44,
           "currency": "USD"
         }
       },
@@ -66,30 +66,30 @@
       "headline": null
     },
     "energy": {
-      "last_updated": "2026-03-11T21:06:10Z",
+      "last_updated": "2026-03-11T21:18:09Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 88.43,
+          "price": 88.41,
           "prev_close": 83.45,
-          "change": 4.98,
-          "change_pct": 5.97,
+          "change": 4.96,
+          "change_pct": 5.94,
           "currency": "USD"
         },
         "NG=F": {
           "label": "Natural Gas ($/MMBtu)",
-          "price": 3.223,
+          "price": 3.227,
           "prev_close": 3.02,
-          "change": 0.203,
-          "change_pct": 6.72,
+          "change": 0.207,
+          "change_pct": 6.85,
           "currency": "USD"
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 90.33,
+          "price": 90.26,
           "prev_close": 85.27,
-          "change": 5.06,
-          "change_pct": 5.93,
+          "change": 4.99,
+          "change_pct": 5.85,
           "currency": "USD"
         },
         "XLE": {
@@ -123,10 +123,10 @@
           "published": "Tue, 03 Mar 2026 09:00:00 EST"
         }
       ],
-      "headline": "WTI $88.43/bbl"
+      "headline": "WTI $88.41/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-11T21:06:11Z",
+      "last_updated": "2026-03-11T21:18:10Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
@@ -187,27 +187,27 @@
       },
       "recent_filings": [
         {
-          "title": "Pangaea Logistics Solutions Ltd.  (PANL) \u2014 8-K (2026-03-11)",
+          "title": "Pangaea Logistics Solutions Ltd.  (PANL) -- 8-K (2026-03-11)",
           "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Pangaea%20Logistics%20Solutions%20Ltd.%20%20%28PANL%29&type=8-K&dateb=&owner=include&count=5",
           "published": "2026-03-11"
         },
         {
-          "title": "Sonos Inc  (SONO) \u2014 8-K (2026-03-11)",
+          "title": "Sonos Inc  (SONO) -- 8-K (2026-03-11)",
           "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Sonos%20Inc%20%20%28SONO%29&type=8-K&dateb=&owner=include&count=5",
           "published": "2026-03-11"
         },
         {
-          "title": "Strive, Inc.  (ASST, SATA) \u2014 8-K (2026-03-11)",
+          "title": "Strive, Inc.  (ASST, SATA) -- 8-K (2026-03-11)",
           "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Strive%2C%20Inc.%20%20%28ASST%2C%20SATA%29&type=8-K&dateb=&owner=include&count=5",
           "published": "2026-03-11"
         },
         {
-          "title": "Sagimet Biosciences Inc.  (SGMT) \u2014 8-K (2026-03-11)",
+          "title": "Sagimet Biosciences Inc.  (SGMT) -- 8-K (2026-03-11)",
           "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Sagimet%20Biosciences%20Inc.%20%20%28SGMT%29&type=8-K&dateb=&owner=include&count=5",
           "published": "2026-03-11"
         },
         {
-          "title": "Marpai, Inc.  (MRAI) \u2014 8-K (2026-03-11)",
+          "title": "Marpai, Inc.  (MRAI) -- 8-K (2026-03-11)",
           "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Marpai%2C%20Inc.%20%20%28MRAI%29&type=8-K&dateb=&owner=include&count=5",
           "published": "2026-03-11"
         }
@@ -215,7 +215,7 @@
       "headline": "NVDA 0.68%  |  MSFT -0.22%"
     },
     "sports": {
-      "last_updated": "2026-03-11T21:06:11Z",
+      "last_updated": "2026-03-11T21:18:10Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -337,6 +337,12 @@
         ],
         "nba": [
           {
+            "player": "Dyson Daniels",
+            "team": "",
+            "status": "Day-To-Day",
+            "detail": "Daniels accumulated 14 points (6-11 FG, 0-2 3Pt, 2-2 FT), seven rebounds, 10 assists and three steals over 36 minutes during Tuesday's 124-112 win over the Mavericks."
+          },
+          {
             "player": "Jonathan Kuminga",
             "team": "",
             "status": "Out",
@@ -371,7 +377,7 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-11T21:06:17Z",
+      "last_updated": "2026-03-11T21:18:11Z",
       "headlines": [
         {
           "title": "Bowen: Trump has called for an Iran uprising but the lessons from Iraq in 1991 loom large",
@@ -402,37 +408,37 @@
       "headline": "Bowen: Trump has called for an Iran uprising but the lessons from Iraq in 1991 loom large"
     },
     "technology": {
-      "last_updated": "2026-03-11T21:06:18Z",
+      "last_updated": "2026-03-11T21:18:12Z",
       "hn_top": [
         {
           "title": "Don't post generated/AI-edited comments. HN is for conversation between humans.",
           "url": "https://news.ycombinator.com/newsguidelines.html#generated",
-          "score": 1127,
-          "comments": 504
+          "score": 1267,
+          "comments": 554
         },
         {
           "title": "The dead Internet is not a theory anymore",
           "url": "https://www.adriankrebs.ch/blog/dead-internet/",
-          "score": 121,
-          "comments": 47
+          "score": 154,
+          "comments": 75
         },
         {
           "title": "Temporal: A nine-year journey to fix time in JavaScript",
           "url": "https://bloomberg.github.io/js-blog/post/temporal/",
-          "score": 373,
-          "comments": 133
-        },
-        {
-          "title": "Making WebAssembly a first-class language on the Web",
-          "url": "https://hacks.mozilla.org/2026/02/making-webassembly-a-first-class-language-on-the-web/",
-          "score": 282,
-          "comments": 118
+          "score": 387,
+          "comments": 137
         },
         {
           "title": "I'm glad the Anthropic fight is happening now",
           "url": "https://www.dwarkesh.com/p/dow-anthropic",
-          "score": 27,
-          "comments": 9
+          "score": 43,
+          "comments": 19
+        },
+        {
+          "title": "Making WebAssembly a first-class language on the Web",
+          "url": "https://hacks.mozilla.org/2026/02/making-webassembly-a-first-class-language-on-the-web/",
+          "score": 288,
+          "comments": 118
         }
       ],
       "tech_headlines": [
@@ -465,7 +471,7 @@
       "headline": "Don't post generated/AI-edited comments. HN is for conversation between humans."
     },
     "policy": {
-      "last_updated": "2026-03-11T21:06:18Z",
+      "last_updated": "2026-03-11T21:18:12Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -504,7 +510,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-11T21:06:23Z",
+      "last_updated": "2026-03-11T21:18:13Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
