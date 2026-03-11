@@ -1,166 +1,187 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-11T17:46:00Z",
+  "fetched_at": "2026-03-11T18:02:14Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-11T17:46:01Z",
+      "last_updated": "2026-03-11T18:02:14Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
-          "price": 674.55,
+          "price": 674.9,
           "prev_close": 677.18,
-          "change": -2.63,
-          "change_pct": -0.39,
+          "change": -2.28,
+          "change_pct": -0.34,
           "currency": "USD"
         },
         "QQQ": {
           "label": "Nasdaq 100 ETF",
-          "price": 606.44,
+          "price": 606.83,
           "prev_close": 607.77,
-          "change": -1.33,
-          "change_pct": -0.22,
+          "change": -0.94,
+          "change_pct": -0.15,
           "currency": "USD"
         },
         "GLD": {
           "label": "Gold ETF",
-          "price": 474.38,
+          "price": 475.005,
           "prev_close": 477.86,
-          "change": -3.48,
-          "change_pct": -0.73,
+          "change": -2.855,
+          "change_pct": -0.6,
           "currency": "USD"
         },
         "TLT": {
           "label": "20Y Treasury ETF",
-          "price": 87.16,
+          "price": 87.245,
           "prev_close": 88.28,
-          "change": -1.12,
-          "change_pct": -1.27,
+          "change": -1.035,
+          "change_pct": -1.17,
           "currency": "USD"
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 70749.6,
+          "price": 70801.61,
           "prev_close": 69956.93,
-          "change": 792.67,
-          "change_pct": 1.13,
+          "change": 844.68,
+          "change_pct": 1.21,
           "currency": "USD"
         },
         "EURUSD=X": {
           "label": "EUR/USD",
-          "price": 1.1571,
+          "price": 1.1574,
           "prev_close": 1.1614,
-          "change": -0.0043,
-          "change_pct": -0.37,
+          "change": -0.004,
+          "change_pct": -0.34,
           "currency": "USD"
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 99.204,
+          "price": 99.227,
           "prev_close": 98.826,
-          "change": 0.378,
-          "change_pct": 0.38,
+          "change": 0.401,
+          "change_pct": 0.41,
           "currency": "USD"
         }
       },
       "yield_10y": 4.12,
-      "headline": "SPY -0.39%  |  BTC $70,750  |  10Y 4.12%"
+      "headline": "SPY -0.34%  |  BTC $70,802  |  10Y 4.12%"
     },
     "energy": {
-      "last_updated": "2026-03-11T17:46:12Z",
+      "last_updated": "2026-03-11T18:02:24Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 87.44,
+          "price": 87.5,
           "prev_close": 83.45,
-          "change": 3.99,
-          "change_pct": 4.78,
+          "change": 4.05,
+          "change_pct": 4.85,
           "currency": "USD"
         },
         "NG=F": {
           "label": "Natural Gas ($/MMBtu)",
-          "price": 3.207,
+          "price": 3.196,
           "prev_close": 3.02,
-          "change": 0.187,
-          "change_pct": 6.19,
+          "change": 0.176,
+          "change_pct": 5.83,
           "currency": "USD"
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 88.95,
+          "price": 88.85,
           "prev_close": 85.27,
-          "change": 3.68,
-          "change_pct": 4.32,
+          "change": 3.58,
+          "change_pct": 4.2,
           "currency": "USD"
         },
         "XLE": {
           "label": "Energy ETF",
-          "price": 56.66,
+          "price": 56.635,
           "prev_close": 55.6,
-          "change": 1.06,
-          "change_pct": 1.91,
+          "change": 1.035,
+          "change_pct": 1.86,
           "currency": "USD"
         }
       },
-      "headlines": [],
-      "headline": "WTI $87.44/bbl"
+      "headlines": [
+        {
+          "title": "Annual U.S. crude oil exports decrease for first time since 2021",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67324",
+          "published": "Tue, 10 Mar 2026 09:00:00 EST"
+        },
+        {
+          "title": "U.S. exports of major transportation fuels in 2025 were about the same as in 2024",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67304",
+          "published": "Mon, 09 Mar 2026 09:00:00 EST"
+        },
+        {
+          "title": "U.S. electricity generation in 2025 hit a record, again",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67284",
+          "published": "Thu, 05 Mar 2026 09:00:00 EST"
+        },
+        {
+          "title": "U.S. LNG developers sign highest volume of sale and purchase contracts since 2022",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67264",
+          "published": "Tue, 03 Mar 2026 09:00:00 EST"
+        }
+      ],
+      "headline": "WTI $87.50/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-11T17:46:13Z",
+      "last_updated": "2026-03-11T18:02:25Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
-          "price": 185.1,
+          "price": 185.11,
           "prev_close": 184.77,
-          "change": 0.33,
+          "change": 0.34,
           "change_pct": 0.18,
           "currency": "USD"
         },
         "MSFT": {
           "label": "Microsoft",
-          "price": 402.895,
+          "price": 403.365,
           "prev_close": 405.76,
-          "change": -2.865,
-          "change_pct": -0.71,
+          "change": -2.395,
+          "change_pct": -0.59,
           "currency": "USD"
         },
         "AAPL": {
           "label": "Apple",
-          "price": 260.16,
+          "price": 260.305,
           "prev_close": 260.83,
-          "change": -0.67,
-          "change_pct": -0.26,
+          "change": -0.525,
+          "change_pct": -0.2,
           "currency": "USD"
         },
         "META": {
           "label": "Meta",
-          "price": 652.47,
+          "price": 651.93,
           "prev_close": 654.07,
-          "change": -1.6,
-          "change_pct": -0.24,
+          "change": -2.14,
+          "change_pct": -0.33,
           "currency": "USD"
         },
         "TSLA": {
           "label": "Tesla",
-          "price": 405.895,
+          "price": 405.525,
           "prev_close": 399.235,
-          "change": 6.66,
-          "change_pct": 1.67,
+          "change": 6.29,
+          "change_pct": 1.58,
           "currency": "USD"
         },
         "AMZN": {
           "label": "Amazon",
-          "price": 212.12,
+          "price": 212.16,
           "prev_close": 214.33,
-          "change": -2.21,
-          "change_pct": -1.03,
+          "change": -2.17,
+          "change_pct": -1.01,
           "currency": "USD"
         },
         "GOOGL": {
           "label": "Alphabet",
-          "price": 308.68,
+          "price": 308.29,
           "prev_close": 307.04,
-          "change": 1.64,
-          "change_pct": 0.53,
+          "change": 1.25,
+          "change_pct": 0.41,
           "currency": "USD"
         }
       },
@@ -191,10 +212,10 @@
           "published": "2026-03-11"
         }
       ],
-      "headline": "NVDA 0.18%  |  MSFT -0.71%"
+      "headline": "NVDA 0.18%  |  MSFT -0.59%"
     },
     "sports": {
-      "last_updated": "2026-03-11T17:46:14Z",
+      "last_updated": "2026-03-11T18:02:26Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -249,28 +270,28 @@
               "away": "TB",
               "home_score": "1",
               "away_score": "0",
-              "status": "Top 3rd"
+              "status": "Top 4th"
             },
             {
               "home": "BAL",
               "away": "PIT",
               "home_score": "0",
               "away_score": "0",
-              "status": "Bot 3rd"
+              "status": "Bot 4th"
             },
             {
               "home": "MIN",
               "away": "DET",
               "home_score": "0",
-              "away_score": "0",
-              "status": "Bot 3rd"
+              "away_score": "1",
+              "status": "Bot 4th"
             },
             {
               "home": "WSH",
               "away": "STL",
               "home_score": "1",
               "away_score": "0",
-              "status": "Top 3rd"
+              "status": "Top 4th"
             }
           ]
         }
@@ -350,7 +371,7 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-11T17:46:24Z",
+      "last_updated": "2026-03-11T18:02:34Z",
       "headlines": [
         {
           "title": "Bowen: Trump has called for an Iran uprising but the lessons from Iraq in 1991 loom large",
@@ -381,37 +402,37 @@
       "headline": "Bowen: Trump has called for an Iran uprising but the lessons from Iraq in 1991 loom large"
     },
     "technology": {
-      "last_updated": "2026-03-11T17:46:25Z",
+      "last_updated": "2026-03-11T18:02:35Z",
       "hn_top": [
         {
           "title": "Temporal: A nine-year journey to fix time in JavaScript",
           "url": "https://bloomberg.github.io/js-blog/post/temporal/",
-          "score": 164,
-          "comments": 69
-        },
-        {
-          "title": "Entities enabling scientific fraud at scale are large, resilient, growing (2025)",
-          "url": "https://doi.org/10.1073/pnas.2420092122",
-          "score": 175,
-          "comments": 79
+          "score": 185,
+          "comments": 77
         },
         {
           "title": "Making WebAssembly a first-class language on the Web",
           "url": "https://hacks.mozilla.org/2026/02/making-webassembly-a-first-class-language-on-the-web/",
-          "score": 104,
-          "comments": 40
+          "score": 123,
+          "comments": 45
         },
         {
-          "title": "Where Some See Strings, She Sees a Space-Time Made of Fractals",
-          "url": "https://www.quantamagazine.org/where-some-see-strings-she-sees-a-space-time-made-of-fractals-20260311/",
-          "score": 46,
-          "comments": 2
+          "title": "Entities enabling scientific fraud at scale are large, resilient, growing (2025)",
+          "url": "https://doi.org/10.1073/pnas.2420092122",
+          "score": 179,
+          "comments": 84
         },
         {
           "title": "BitNet: 100B Param 1-Bit model for local CPUs",
           "url": "https://github.com/microsoft/BitNet",
-          "score": 206,
-          "comments": 108
+          "score": 215,
+          "comments": 112
+        },
+        {
+          "title": "Where Some See Strings, She Sees a Space-Time Made of Fractals",
+          "url": "https://www.quantamagazine.org/where-some-see-strings-she-sees-a-space-time-made-of-fractals-20260311/",
+          "score": 52,
+          "comments": 3
         }
       ],
       "tech_headlines": [
@@ -444,7 +465,7 @@
       "headline": "Temporal: A nine-year journey to fix time in JavaScript"
     },
     "policy": {
-      "last_updated": "2026-03-11T17:46:25Z",
+      "last_updated": "2026-03-11T18:02:35Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -483,7 +504,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-11T17:46:31Z",
+      "last_updated": "2026-03-11T18:02:42Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
