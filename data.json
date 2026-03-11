@@ -1,9 +1,9 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-11T08:37:00Z",
+  "fetched_at": "2026-03-11T08:52:55Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-11T08:37:01Z",
+      "last_updated": "2026-03-11T08:52:56Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
@@ -39,57 +39,57 @@
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 69578.53,
+          "price": 69607.01,
           "prev_close": 69956.93,
-          "change": -378.4,
-          "change_pct": -0.54,
+          "change": -349.92,
+          "change_pct": -0.5,
           "currency": "USD"
         },
         "EURUSD=X": {
           "label": "EUR/USD",
-          "price": 1.1617,
+          "price": 1.161,
           "prev_close": 1.1614,
-          "change": 0.0003,
-          "change_pct": 0.03,
+          "change": -0.0004,
+          "change_pct": -0.03,
           "currency": "USD"
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 98.929,
+          "price": 98.968,
           "prev_close": 98.826,
-          "change": 0.103,
-          "change_pct": 0.1,
+          "change": 0.142,
+          "change_pct": 0.14,
           "currency": "USD"
         }
       },
       "yield_10y": 4.12,
-      "headline": "SPY -0.16%  |  BTC $69,579  |  10Y 4.12%"
+      "headline": "SPY -0.16%  |  BTC $69,607  |  10Y 4.12%"
     },
     "energy": {
-      "last_updated": "2026-03-11T08:37:09Z",
+      "last_updated": "2026-03-11T08:53:06Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 85.7,
+          "price": 85.14,
           "prev_close": 83.45,
-          "change": 2.25,
-          "change_pct": 2.7,
+          "change": 1.69,
+          "change_pct": 2.03,
           "currency": "USD"
         },
         "NG=F": {
           "label": "Natural Gas ($/MMBtu)",
-          "price": 3.063,
+          "price": 3.07,
           "prev_close": 3.02,
-          "change": 0.043,
-          "change_pct": 1.42,
+          "change": 0.05,
+          "change_pct": 1.66,
           "currency": "USD"
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 86.28,
+          "price": 85.79,
           "prev_close": 85.27,
-          "change": 1.01,
-          "change_pct": 1.18,
+          "change": 0.52,
+          "change_pct": 0.61,
           "currency": "USD"
         },
         "XLE": {
@@ -101,32 +101,11 @@
           "currency": "USD"
         }
       },
-      "headlines": [
-        {
-          "title": "Annual U.S. crude oil exports decrease for first time since 2021",
-          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67324",
-          "published": "Tue, 10 Mar 2026 09:00:00 EST"
-        },
-        {
-          "title": "U.S. exports of major transportation fuels in 2025 were about the same as in 2024",
-          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67304",
-          "published": "Mon, 09 Mar 2026 09:00:00 EST"
-        },
-        {
-          "title": "U.S. electricity generation in 2025 hit a record, again",
-          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67284",
-          "published": "Thu, 05 Mar 2026 09:00:00 EST"
-        },
-        {
-          "title": "U.S. LNG developers sign highest volume of sale and purchase contracts since 2022",
-          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67264",
-          "published": "Tue, 03 Mar 2026 09:00:00 EST"
-        }
-      ],
-      "headline": "WTI $85.70/bbl"
+      "headlines": [],
+      "headline": "WTI $85.14/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-11T08:37:10Z",
+      "last_updated": "2026-03-11T08:53:06Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
@@ -215,7 +194,7 @@
       "headline": "NVDA 1.16%  |  MSFT -0.89%"
     },
     "sports": {
-      "last_updated": "2026-03-11T08:37:11Z",
+      "last_updated": "2026-03-11T08:53:07Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -371,33 +350,8 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-11T08:37:15Z",
+      "last_updated": "2026-03-11T08:53:17Z",
       "headlines": [
-        {
-          "title": "Russian economy withstood pressure from outside German expert",
-          "link": "https://tass.com/economy/2073165",
-          "published": "20260119T140000Z"
-        },
-        {
-          "title": "Sudan : united kingdom Hits  Sudan War Machine  With New Sanctions",
-          "link": "https://allafrica.com/stories/202602060005.html",
-          "published": "20260206T060000Z"
-        },
-        {
-          "title": "UK Sanctions Sudanese Army and RSF Leaders",
-          "link": "https://english.aawsat.com/arab-world/5237657-uk-sanctions-sudanese-army-and-rsf-leaders",
-          "published": "20260205T183000Z"
-        },
-        {
-          "title": "U . S . sanctions Gaza charities over alleged Hamas ties \u2013 NaturalNews . com",
-          "link": "https://www.naturalnews.com/2026-01-26-us-sanctions-gaza-charities-over-hamas-ties.html",
-          "published": "20260126T130000Z"
-        },
-        {
-          "title": "Myanmar military using commercial paramotors , gyrocopters for attacks : Report",
-          "link": "https://www.siasat.com/myanmar-military-using-commercial-paramotors-gyrocopters-for-attacks-report-3331737/",
-          "published": "20260126T140000Z"
-        },
         {
           "title": "'I just want to be able to sleep': Attacks in Iran rock cities and cut power",
           "link": "https://www.bbc.com/news/articles/cev7llekwllo?at_medium=RSS&at_campaign=rss",
@@ -407,41 +361,56 @@
           "title": "Jeffrey Epstein had two key aides - why do they still control his money and secrets?",
           "link": "https://www.bbc.com/news/articles/cdjm7rxjxneo?at_medium=RSS&at_campaign=rss",
           "published": "Wed, 11 Mar 2026 00:10:20 GMT"
+        },
+        {
+          "title": "Steve Rosenberg: Russia seeks diplomatic and economic gains from Iran war",
+          "link": "https://www.bbc.com/news/articles/c4gjyg0djvmo?at_medium=RSS&at_campaign=rss",
+          "published": "Tue, 10 Mar 2026 19:35:29 GMT"
+        },
+        {
+          "title": "At least six dead in Switzerland bus fire",
+          "link": "https://www.bbc.com/news/articles/c5y4wdlyy9xo?at_medium=RSS&at_campaign=rss",
+          "published": "Wed, 11 Mar 2026 06:13:12 GMT"
+        },
+        {
+          "title": "Woman charged with attempted murder after shooting at Rihanna's home",
+          "link": "https://www.bbc.com/news/articles/cgjze644wjvo?at_medium=RSS&at_campaign=rss",
+          "published": "Wed, 11 Mar 2026 03:10:09 GMT"
         }
       ],
-      "headline": "Russian economy withstood pressure from outside German expert"
+      "headline": "'I just want to be able to sleep': Attacks in Iran rock cities and cut power"
     },
     "technology": {
-      "last_updated": "2026-03-11T08:37:16Z",
+      "last_updated": "2026-03-11T08:53:18Z",
       "hn_top": [
         {
           "title": "Why does AI tell you to use Terminal so much?",
           "url": "https://eclecticlight.co/2026/03/11/why-does-ai-tell-you-to-use-terminal-so-much/",
-          "score": 10,
-          "comments": 3
+          "score": 19,
+          "comments": 20
         },
         {
           "title": "Create value for others and don\u2019t worry about the returns",
           "url": "https://geohot.github.io//blog/jekyll/update/2026/03/11/running-69-agents.html",
-          "score": 257,
-          "comments": 104
+          "score": 269,
+          "comments": 112
         },
         {
           "title": "Zig \u2013 Type Resolution Redesign and Language Changes",
           "url": "https://ziglang.org/devlog/2026/#2026-03-10",
-          "score": 184,
-          "comments": 56
+          "score": 189,
+          "comments": 58
         },
         {
-          "title": "I'm going to build my own OpenClaw, with blackjack and bun",
-          "url": "https://github.com/rcarmo/piclaw",
-          "score": 21,
-          "comments": 14
+          "title": "TADA: Fast, Reliable Speech Generation Through Text-Acoustic Synchronization",
+          "url": "https://www.hume.ai/blog/opensource-tada",
+          "score": 26,
+          "comments": 3
         },
         {
           "title": "U+237C \u237c Is Azimuth",
           "url": "https://ionathan.ch/2026/02/16/angzarr.html",
-          "score": 272,
+          "score": 278,
           "comments": 26
         }
       ],
@@ -475,7 +444,7 @@
       "headline": "Why does AI tell you to use Terminal so much?"
     },
     "policy": {
-      "last_updated": "2026-03-11T08:37:16Z",
+      "last_updated": "2026-03-11T08:53:18Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -514,7 +483,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-11T08:37:17Z",
+      "last_updated": "2026-03-11T08:53:20Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
