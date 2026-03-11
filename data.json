@@ -1,9 +1,9 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-11T11:04:58Z",
+  "fetched_at": "2026-03-11T11:16:00Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-11T11:04:59Z",
+      "last_updated": "2026-03-11T11:16:01Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
@@ -39,57 +39,57 @@
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 69625.055,
+          "price": 69587.5,
           "prev_close": 69956.93,
-          "change": -331.875,
-          "change_pct": -0.47,
+          "change": -369.43,
+          "change_pct": -0.53,
           "currency": "USD"
         },
         "EURUSD=X": {
           "label": "EUR/USD",
-          "price": 1.1609,
+          "price": 1.1612,
           "prev_close": 1.1614,
-          "change": -0.0005,
-          "change_pct": -0.04,
+          "change": -0.0002,
+          "change_pct": -0.02,
           "currency": "USD"
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 98.926,
+          "price": 98.961,
           "prev_close": 98.826,
-          "change": 0.1,
-          "change_pct": 0.1,
+          "change": 0.135,
+          "change_pct": 0.14,
           "currency": "USD"
         }
       },
       "yield_10y": 4.12,
-      "headline": "SPY -0.16%  |  BTC $69,625  |  10Y 4.12%"
+      "headline": "SPY -0.16%  |  BTC $69,588  |  10Y 4.12%"
     },
     "energy": {
-      "last_updated": "2026-03-11T11:05:08Z",
+      "last_updated": "2026-03-11T11:16:11Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 85.26,
+          "price": 85.2,
           "prev_close": 83.45,
-          "change": 1.81,
-          "change_pct": 2.17,
+          "change": 1.75,
+          "change_pct": 2.1,
           "currency": "USD"
         },
         "NG=F": {
           "label": "Natural Gas ($/MMBtu)",
-          "price": 3.05,
+          "price": 3.053,
           "prev_close": 3.02,
-          "change": 0.03,
-          "change_pct": 0.99,
+          "change": 0.033,
+          "change_pct": 1.09,
           "currency": "USD"
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 86.21,
+          "price": 86.14,
           "prev_close": 85.27,
-          "change": 0.94,
-          "change_pct": 1.1,
+          "change": 0.87,
+          "change_pct": 1.02,
           "currency": "USD"
         },
         "XLE": {
@@ -101,32 +101,11 @@
           "currency": "USD"
         }
       },
-      "headlines": [
-        {
-          "title": "Annual U.S. crude oil exports decrease for first time since 2021",
-          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67324",
-          "published": "Tue, 10 Mar 2026 09:00:00 EST"
-        },
-        {
-          "title": "U.S. exports of major transportation fuels in 2025 were about the same as in 2024",
-          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67304",
-          "published": "Mon, 09 Mar 2026 09:00:00 EST"
-        },
-        {
-          "title": "U.S. electricity generation in 2025 hit a record, again",
-          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67284",
-          "published": "Thu, 05 Mar 2026 09:00:00 EST"
-        },
-        {
-          "title": "U.S. LNG developers sign highest volume of sale and purchase contracts since 2022",
-          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67264",
-          "published": "Tue, 03 Mar 2026 09:00:00 EST"
-        }
-      ],
-      "headline": "WTI $85.26/bbl"
+      "headlines": [],
+      "headline": "WTI $85.20/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-11T11:05:09Z",
+      "last_updated": "2026-03-11T11:16:14Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
@@ -215,7 +194,7 @@
       "headline": "NVDA 1.16%  |  MSFT -0.89%"
     },
     "sports": {
-      "last_updated": "2026-03-11T11:05:12Z",
+      "last_updated": "2026-03-11T11:16:15Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -371,7 +350,7 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-11T11:05:18Z",
+      "last_updated": "2026-03-11T11:16:26Z",
       "headlines": [
         {
           "title": "Russian economy withstood pressure from outside German expert",
@@ -412,31 +391,31 @@
       "headline": "Russian economy withstood pressure from outside German expert"
     },
     "technology": {
-      "last_updated": "2026-03-11T11:05:18Z",
+      "last_updated": "2026-03-11T11:16:27Z",
       "hn_top": [
         {
           "title": "Zig \u2013 Type Resolution Redesign and Language Changes",
           "url": "https://ziglang.org/devlog/2026/#2026-03-10",
-          "score": 255,
-          "comments": 92
+          "score": 259,
+          "comments": 98
         },
         {
           "title": "Building a TB-303 from Scratch",
           "url": "https://loopmaster.xyz/tutorials/tb303-from-scratch",
-          "score": 51,
-          "comments": 12
+          "score": 55,
+          "comments": 15
         },
         {
           "title": "Create value for others and don\u2019t worry about the returns",
           "url": "https://geohot.github.io//blog/jekyll/update/2026/03/11/running-69-agents.html",
-          "score": 371,
-          "comments": 211
+          "score": 376,
+          "comments": 215
         },
         {
           "title": "U+237C \u237c Is Azimuth",
           "url": "https://ionathan.ch/2026/02/16/angzarr.html",
-          "score": 321,
-          "comments": 35
+          "score": 323,
+          "comments": 39
         },
         {
           "title": "Cloudflare crawl endpoint",
@@ -475,7 +454,7 @@
       "headline": "Zig \u2013 Type Resolution Redesign and Language Changes"
     },
     "policy": {
-      "last_updated": "2026-03-11T11:05:19Z",
+      "last_updated": "2026-03-11T11:16:27Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -514,7 +493,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-11T11:05:21Z",
+      "last_updated": "2026-03-11T11:16:31Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
