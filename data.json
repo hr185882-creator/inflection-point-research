@@ -1,9 +1,9 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-10T23:46:13Z",
+  "fetched_at": "2026-03-11T00:02:51Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-10T23:46:14Z",
+      "last_updated": "2026-03-11T00:02:52Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
@@ -39,57 +39,57 @@
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 69926.66,
+          "price": 69872.53,
           "prev_close": 68443.15,
-          "change": 1483.51,
-          "change_pct": 2.17,
+          "change": 1429.38,
+          "change_pct": 2.09,
           "currency": "USD"
         },
         "EURUSD=X": {
           "label": "EUR/USD",
-          "price": 1.1614,
+          "price": 1.1616,
           "prev_close": 1.1636,
-          "change": -0.0022,
-          "change_pct": -0.19,
+          "change": -0.002,
+          "change_pct": -0.17,
           "currency": "USD"
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 98.914,
+          "price": 98.919,
           "prev_close": 98.826,
-          "change": 0.088,
+          "change": 0.093,
           "change_pct": 0.09,
           "currency": "USD"
         }
       },
       "yield_10y": 4.12,
-      "headline": "SPY -0.16%  |  BTC $69,927  |  10Y 4.12%"
+      "headline": "SPY -0.16%  |  BTC $69,873  |  10Y 4.12%"
     },
     "energy": {
-      "last_updated": "2026-03-10T23:46:23Z",
+      "last_updated": "2026-03-11T00:03:00Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 85.8,
+          "price": 85.65,
           "prev_close": 83.45,
-          "change": 2.35,
-          "change_pct": 2.82,
+          "change": 2.2,
+          "change_pct": 2.64,
           "currency": "USD"
         },
         "NG=F": {
           "label": "Natural Gas ($/MMBtu)",
-          "price": 3.049,
+          "price": 3.058,
           "prev_close": 3.02,
-          "change": 0.029,
-          "change_pct": 0.96,
+          "change": 0.038,
+          "change_pct": 1.26,
           "currency": "USD"
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 87.61,
+          "price": 87.46,
           "prev_close": 85.27,
-          "change": 2.34,
-          "change_pct": 2.74,
+          "change": 2.19,
+          "change_pct": 2.57,
           "currency": "USD"
         },
         "XLE": {
@@ -123,10 +123,10 @@
           "published": "Tue, 03 Mar 2026 09:00:00 EST"
         }
       ],
-      "headline": "WTI $85.80/bbl"
+      "headline": "WTI $85.65/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-10T23:46:24Z",
+      "last_updated": "2026-03-11T00:03:01Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
@@ -215,7 +215,7 @@
       "headline": "NVDA 1.16%  |  MSFT -0.89%"
     },
     "sports": {
-      "last_updated": "2026-03-10T23:46:25Z",
+      "last_updated": "2026-03-11T00:03:02Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -235,30 +235,30 @@
             {
               "home": "PHI",
               "away": "MEM",
-              "home_score": "37",
-              "away_score": "38",
-              "status": "9:30 - 2nd"
+              "home_score": "58",
+              "away_score": "58",
+              "status": "3:14 - 2nd"
             },
             {
               "home": "BKN",
               "away": "DET",
-              "home_score": "7",
-              "away_score": "12",
-              "status": "8:34 - 1st"
+              "home_score": "17",
+              "away_score": "30",
+              "status": "3:47 - 1st"
             },
             {
               "home": "MIA",
               "away": "WSH",
-              "home_score": "7",
-              "away_score": "7",
-              "status": "8:16 - 1st"
+              "home_score": "31",
+              "away_score": "22",
+              "status": "2:17 - 1st"
             },
             {
               "home": "ATL",
               "away": "DAL",
-              "home_score": "10",
-              "away_score": "2",
-              "status": "9:24 - 1st"
+              "home_score": "33",
+              "away_score": "21",
+              "status": "1:44 - 1st"
             }
           ]
         },
@@ -371,8 +371,33 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-10T23:46:25Z",
+      "last_updated": "2026-03-11T00:03:06Z",
       "headlines": [
+        {
+          "title": "Russian economy withstood pressure from outside German expert",
+          "link": "https://tass.com/economy/2073165",
+          "published": "20260119T140000Z"
+        },
+        {
+          "title": "Sudan : united kingdom Hits  Sudan War Machine  With New Sanctions",
+          "link": "https://allafrica.com/stories/202602060005.html",
+          "published": "20260206T060000Z"
+        },
+        {
+          "title": "UK Sanctions Sudanese Army and RSF Leaders",
+          "link": "https://english.aawsat.com/arab-world/5237657-uk-sanctions-sudanese-army-and-rsf-leaders",
+          "published": "20260205T183000Z"
+        },
+        {
+          "title": "U . S . sanctions Gaza charities over alleged Hamas ties \u2013 NaturalNews . com",
+          "link": "https://www.naturalnews.com/2026-01-26-us-sanctions-gaza-charities-over-hamas-ties.html",
+          "published": "20260126T130000Z"
+        },
+        {
+          "title": "Myanmar military using commercial paramotors , gyrocopters for attacks : Report",
+          "link": "https://www.siasat.com/myanmar-military-using-commercial-paramotors-gyrocopters-for-attacks-report-3331737/",
+          "published": "20260126T140000Z"
+        },
         {
           "title": "'I just want to be able to sleep': Attacks in Iran rock cities and cut power",
           "link": "https://www.bbc.com/news/articles/cev7llekwllo?at_medium=RSS&at_campaign=rss",
@@ -382,57 +407,42 @@
           "title": "Steve Rosenberg: Russia seeks diplomatic and economic gains from Iran war",
           "link": "https://www.bbc.com/news/articles/c4gjyg0djvmo?at_medium=RSS&at_campaign=rss",
           "published": "Tue, 10 Mar 2026 19:35:29 GMT"
-        },
-        {
-          "title": "At least six dead in Switzerland bus fire",
-          "link": "https://www.bbc.com/news/articles/c5y4wdlyy9xo?at_medium=RSS&at_campaign=rss",
-          "published": "Tue, 10 Mar 2026 22:35:37 GMT"
-        },
-        {
-          "title": "Georgia voters to pick replacement for Marjorie Taylor Greene in special election",
-          "link": "https://www.bbc.com/news/articles/c77ey1v7jrzo?at_medium=RSS&at_campaign=rss",
-          "published": "Tue, 10 Mar 2026 10:47:08 GMT"
-        },
-        {
-          "title": "Two more connected to Iranian football team stay in Australia, BBC understands",
-          "link": "https://www.bbc.com/news/articles/c93j2492d0do?at_medium=RSS&at_campaign=rss",
-          "published": "Tue, 10 Mar 2026 20:39:21 GMT"
         }
       ],
-      "headline": "'I just want to be able to sleep': Attacks in Iran rock cities and cut power"
+      "headline": "Russian economy withstood pressure from outside German expert"
     },
     "technology": {
-      "last_updated": "2026-03-10T23:46:26Z",
+      "last_updated": "2026-03-11T00:03:08Z",
       "hn_top": [
         {
           "title": "Tony Hoare has died",
           "url": "https://blog.computationalcomplexity.org/2026/03/tony-hoare-1934-2026.html",
-          "score": 1358,
-          "comments": 187
+          "score": 1375,
+          "comments": 188
         },
         {
           "title": "U+237C \u237c Is Azimuth",
           "url": "https://ionathan.ch/2026/02/16/angzarr.html",
-          "score": 56,
-          "comments": 4
-        },
-        {
-          "title": "Agents that run while I sleep",
-          "url": "https://www.claudecodecamp.com/p/i-m-building-agents-that-run-while-i-sleep",
-          "score": 181,
-          "comments": 128
-        },
-        {
-          "title": "Yann LeCun raises $1B to build AI that understands the physical world",
-          "url": "https://www.wired.com/story/yann-lecun-raises-dollar1-billion-to-build-ai-that-understands-the-physical-world/",
-          "score": 277,
-          "comments": 303
+          "score": 71,
+          "comments": 6
         },
         {
           "title": "Cloudflare Crawl Endpoint",
           "url": "https://developers.cloudflare.com/changelog/post/2026-03-10-br-crawl-endpoint/",
-          "score": 40,
-          "comments": 11
+          "score": 55,
+          "comments": 26
+        },
+        {
+          "title": "Agents that run while I sleep",
+          "url": "https://www.claudecodecamp.com/p/i-m-building-agents-that-run-while-i-sleep",
+          "score": 184,
+          "comments": 130
+        },
+        {
+          "title": "Yann LeCun raises $1B to build AI that understands the physical world",
+          "url": "https://www.wired.com/story/yann-lecun-raises-dollar1-billion-to-build-ai-that-understands-the-physical-world/",
+          "score": 281,
+          "comments": 307
         }
       ],
       "tech_headlines": [
@@ -465,7 +475,7 @@
       "headline": "Tony Hoare has died"
     },
     "policy": {
-      "last_updated": "2026-03-10T23:46:26Z",
+      "last_updated": "2026-03-11T00:03:08Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -504,7 +514,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-10T23:46:31Z",
+      "last_updated": "2026-03-11T00:03:11Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
