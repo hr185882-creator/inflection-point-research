@@ -1,9 +1,9 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-11T02:46:00Z",
+  "fetched_at": "2026-03-11T03:02:22Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-11T02:46:01Z",
+      "last_updated": "2026-03-11T03:02:22Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
@@ -39,57 +39,57 @@
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 69708.86,
+          "price": 69816.51,
           "prev_close": 69956.93,
-          "change": -248.07,
-          "change_pct": -0.35,
+          "change": -140.42,
+          "change_pct": -0.2,
           "currency": "USD"
         },
         "EURUSD=X": {
           "label": "EUR/USD",
-          "price": 1.1628,
+          "price": 1.1632,
           "prev_close": 1.1614,
-          "change": 0.0014,
-          "change_pct": 0.12,
+          "change": 0.0018,
+          "change_pct": 0.15,
           "currency": "USD"
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 98.869,
+          "price": 98.796,
           "prev_close": 98.826,
-          "change": 0.043,
-          "change_pct": 0.04,
+          "change": -0.03,
+          "change_pct": -0.03,
           "currency": "USD"
         }
       },
       "yield_10y": 4.12,
-      "headline": "SPY -0.16%  |  BTC $69,709  |  10Y 4.12%"
+      "headline": "SPY -0.16%  |  BTC $69,817  |  10Y 4.12%"
     },
     "energy": {
-      "last_updated": "2026-03-11T02:46:11Z",
+      "last_updated": "2026-03-11T03:02:33Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 84.28,
+          "price": 84.38,
           "prev_close": 83.45,
-          "change": 0.83,
-          "change_pct": 0.99,
+          "change": 0.93,
+          "change_pct": 1.11,
           "currency": "USD"
         },
         "NG=F": {
           "label": "Natural Gas ($/MMBtu)",
-          "price": 3.029,
+          "price": 3.027,
           "prev_close": 3.02,
-          "change": 0.009,
-          "change_pct": 0.3,
+          "change": 0.007,
+          "change_pct": 0.23,
           "currency": "USD"
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 86.0,
+          "price": 86.03,
           "prev_close": 85.27,
-          "change": 0.73,
-          "change_pct": 0.86,
+          "change": 0.76,
+          "change_pct": 0.89,
           "currency": "USD"
         },
         "XLE": {
@@ -102,10 +102,10 @@
         }
       },
       "headlines": [],
-      "headline": "WTI $84.28/bbl"
+      "headline": "WTI $84.38/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-11T02:46:12Z",
+      "last_updated": "2026-03-11T03:02:38Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
@@ -194,7 +194,7 @@
       "headline": "NVDA 1.16%  |  MSFT -0.89%"
     },
     "sports": {
-      "last_updated": "2026-03-11T02:46:13Z",
+      "last_updated": "2026-03-11T03:03:13Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -350,7 +350,7 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-11T02:46:13Z",
+      "last_updated": "2026-03-11T03:03:23Z",
       "headlines": [
         {
           "title": "'I just want to be able to sleep': Attacks in Iran rock cities and cut power",
@@ -381,37 +381,37 @@
       "headline": "'I just want to be able to sleep': Attacks in Iran rock cities and cut power"
     },
     "technology": {
-      "last_updated": "2026-03-11T02:46:14Z",
+      "last_updated": "2026-03-11T03:03:24Z",
       "hn_top": [
         {
           "title": "Tony Hoare has died",
           "url": "https://blog.computationalcomplexity.org/2026/03/tony-hoare-1934-2026.html",
-          "score": 1542,
+          "score": 1550,
           "comments": 200
         },
         {
           "title": "U+237C \u237c Is Azimuth",
           "url": "https://ionathan.ch/2026/02/16/angzarr.html",
-          "score": 152,
-          "comments": 17
+          "score": 170,
+          "comments": 18
         },
         {
           "title": "Cloudflare crawl endpoint",
           "url": "https://developers.cloudflare.com/changelog/post/2026-03-10-br-crawl-endpoint/",
-          "score": 137,
+          "score": 147,
           "comments": 69
+        },
+        {
+          "title": "Zig \u2013 Type Resolution Redesign and Language Changes",
+          "url": "https://ziglang.org/devlog/2026/#2026-03-10",
+          "score": 28,
+          "comments": 3
         },
         {
           "title": "Agents that run while I sleep",
           "url": "https://www.claudecodecamp.com/p/i-m-building-agents-that-run-while-i-sleep",
-          "score": 242,
-          "comments": 198
-        },
-        {
-          "title": "Yann LeCun raises $1B to build AI that understands the physical world",
-          "url": "https://www.wired.com/story/yann-lecun-raises-dollar1-billion-to-build-ai-that-understands-the-physical-world/",
-          "score": 349,
-          "comments": 330
+          "score": 245,
+          "comments": 204
         }
       ],
       "tech_headlines": [
@@ -444,7 +444,7 @@
       "headline": "Tony Hoare has died"
     },
     "policy": {
-      "last_updated": "2026-03-11T02:46:14Z",
+      "last_updated": "2026-03-11T03:03:25Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -483,7 +483,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-11T02:46:18Z",
+      "last_updated": "2026-03-11T03:03:26Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
