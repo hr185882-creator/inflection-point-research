@@ -1,9 +1,9 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-11T01:31:00Z",
+  "fetched_at": "2026-03-11T01:45:53Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-11T01:31:00Z",
+      "last_updated": "2026-03-11T01:45:54Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
@@ -39,10 +39,10 @@
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 70040.68,
+          "price": 69969.23,
           "prev_close": 69956.93,
-          "change": 83.75,
-          "change_pct": 0.12,
+          "change": 12.3,
+          "change_pct": 0.02,
           "currency": "USD"
         },
         "EURUSD=X": {
@@ -55,41 +55,41 @@
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 98.86,
+          "price": 98.846,
           "prev_close": 98.826,
-          "change": 0.034,
-          "change_pct": 0.03,
+          "change": 0.02,
+          "change_pct": 0.02,
           "currency": "USD"
         }
       },
       "yield_10y": 4.12,
-      "headline": "SPY -0.16%  |  BTC $70,041  |  10Y 4.12%"
+      "headline": "SPY -0.16%  |  BTC $69,969  |  10Y 4.12%"
     },
     "energy": {
-      "last_updated": "2026-03-11T01:31:11Z",
+      "last_updated": "2026-03-11T01:46:02Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 83.54,
+          "price": 83.5,
           "prev_close": 83.45,
-          "change": 0.09,
-          "change_pct": 0.11,
+          "change": 0.05,
+          "change_pct": 0.06,
           "currency": "USD"
         },
         "NG=F": {
           "label": "Natural Gas ($/MMBtu)",
-          "price": 3.037,
+          "price": 3.033,
           "prev_close": 3.02,
-          "change": 0.017,
-          "change_pct": 0.56,
+          "change": 0.013,
+          "change_pct": 0.43,
           "currency": "USD"
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 85.33,
+          "price": 85.28,
           "prev_close": 85.27,
-          "change": 0.06,
-          "change_pct": 0.07,
+          "change": 0.01,
+          "change_pct": 0.01,
           "currency": "USD"
         },
         "XLE": {
@@ -101,11 +101,32 @@
           "currency": "USD"
         }
       },
-      "headlines": [],
-      "headline": "WTI $83.54/bbl"
+      "headlines": [
+        {
+          "title": "Annual U.S. crude oil exports decrease for first time since 2021",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67324",
+          "published": "Tue, 10 Mar 2026 09:00:00 EST"
+        },
+        {
+          "title": "U.S. exports of major transportation fuels in 2025 were about the same as in 2024",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67304",
+          "published": "Mon, 09 Mar 2026 09:00:00 EST"
+        },
+        {
+          "title": "U.S. electricity generation in 2025 hit a record, again",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67284",
+          "published": "Thu, 05 Mar 2026 09:00:00 EST"
+        },
+        {
+          "title": "U.S. LNG developers sign highest volume of sale and purchase contracts since 2022",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67264",
+          "published": "Tue, 03 Mar 2026 09:00:00 EST"
+        }
+      ],
+      "headline": "WTI $83.50/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-11T01:31:13Z",
+      "last_updated": "2026-03-11T01:46:04Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
@@ -194,7 +215,7 @@
       "headline": "NVDA 1.16%  |  MSFT -0.89%"
     },
     "sports": {
-      "last_updated": "2026-03-11T01:31:13Z",
+      "last_updated": "2026-03-11T01:46:04Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -214,30 +235,30 @@
             {
               "home": "PHI",
               "away": "MEM",
-              "home_score": "128",
-              "away_score": "118",
-              "status": "3:36 - 4th"
+              "home_score": "139",
+              "away_score": "129",
+              "status": "Final"
             },
             {
               "home": "BKN",
               "away": "DET",
-              "home_score": "65",
-              "away_score": "102",
-              "status": "2:51 - 3rd"
+              "home_score": "73",
+              "away_score": "110",
+              "status": "10:36 - 4th"
             },
             {
               "home": "MIA",
               "away": "WSH",
-              "home_score": "113",
-              "away_score": "97",
-              "status": "End of 3rd"
+              "home_score": "133",
+              "away_score": "108",
+              "status": "7:12 - 4th"
             },
             {
               "home": "ATL",
               "away": "DAL",
-              "home_score": "99",
-              "away_score": "97",
-              "status": "8:41 - 4th"
+              "home_score": "114",
+              "away_score": "106",
+              "status": "3:16 - 4th"
             }
           ]
         },
@@ -350,8 +371,33 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-11T01:31:23Z",
+      "last_updated": "2026-03-11T01:46:12Z",
       "headlines": [
+        {
+          "title": "Russian economy withstood pressure from outside German expert",
+          "link": "https://tass.com/economy/2073165",
+          "published": "20260119T140000Z"
+        },
+        {
+          "title": "Sudan : united kingdom Hits  Sudan War Machine  With New Sanctions",
+          "link": "https://allafrica.com/stories/202602060005.html",
+          "published": "20260206T060000Z"
+        },
+        {
+          "title": "UK Sanctions Sudanese Army and RSF Leaders",
+          "link": "https://english.aawsat.com/arab-world/5237657-uk-sanctions-sudanese-army-and-rsf-leaders",
+          "published": "20260205T183000Z"
+        },
+        {
+          "title": "U . S . sanctions Gaza charities over alleged Hamas ties \u2013 NaturalNews . com",
+          "link": "https://www.naturalnews.com/2026-01-26-us-sanctions-gaza-charities-over-hamas-ties.html",
+          "published": "20260126T130000Z"
+        },
+        {
+          "title": "Myanmar military using commercial paramotors , gyrocopters for attacks : Report",
+          "link": "https://www.siasat.com/myanmar-military-using-commercial-paramotors-gyrocopters-for-attacks-report-3331737/",
+          "published": "20260126T140000Z"
+        },
         {
           "title": "'I just want to be able to sleep': Attacks in Iran rock cities and cut power",
           "link": "https://www.bbc.com/news/articles/cev7llekwllo?at_medium=RSS&at_campaign=rss",
@@ -361,57 +407,42 @@
           "title": "Jeffrey Epstein had two key aides - why do they still control his money and secrets?",
           "link": "https://www.bbc.com/news/articles/cdjm7rxjxneo?at_medium=RSS&at_campaign=rss",
           "published": "Wed, 11 Mar 2026 00:10:20 GMT"
-        },
-        {
-          "title": "Steve Rosenberg: Russia seeks diplomatic and economic gains from Iran war",
-          "link": "https://www.bbc.com/news/articles/c4gjyg0djvmo?at_medium=RSS&at_campaign=rss",
-          "published": "Tue, 10 Mar 2026 19:35:29 GMT"
-        },
-        {
-          "title": "At least six dead in Switzerland bus fire",
-          "link": "https://www.bbc.com/news/articles/c5y4wdlyy9xo?at_medium=RSS&at_campaign=rss",
-          "published": "Tue, 10 Mar 2026 22:35:37 GMT"
-        },
-        {
-          "title": "Georgia voters to pick replacement for Marjorie Taylor Greene in special election",
-          "link": "https://www.bbc.com/news/articles/c77ey1v7jrzo?at_medium=RSS&at_campaign=rss",
-          "published": "Tue, 10 Mar 2026 10:47:08 GMT"
         }
       ],
-      "headline": "'I just want to be able to sleep': Attacks in Iran rock cities and cut power"
+      "headline": "Russian economy withstood pressure from outside German expert"
     },
     "technology": {
-      "last_updated": "2026-03-11T01:31:24Z",
+      "last_updated": "2026-03-11T01:46:12Z",
       "hn_top": [
         {
           "title": "Tony Hoare has died",
           "url": "https://blog.computationalcomplexity.org/2026/03/tony-hoare-1934-2026.html",
-          "score": 1472,
-          "comments": 198
+          "score": 1486,
+          "comments": 200
         },
         {
           "title": "U+237C \u237c Is Azimuth",
           "url": "https://ionathan.ch/2026/02/16/angzarr.html",
-          "score": 121,
-          "comments": 9
+          "score": 129,
+          "comments": 11
         },
         {
-          "title": "Cloudflare Crawl Endpoint",
+          "title": "Cloudflare crawl endpoint",
           "url": "https://developers.cloudflare.com/changelog/post/2026-03-10-br-crawl-endpoint/",
-          "score": 103,
-          "comments": 55
+          "score": 110,
+          "comments": 57
         },
         {
           "title": "Agents that run while I sleep",
           "url": "https://www.claudecodecamp.com/p/i-m-building-agents-that-run-while-i-sleep",
-          "score": 220,
-          "comments": 173
+          "score": 224,
+          "comments": 179
         },
         {
           "title": "Yann LeCun raises $1B to build AI that understands the physical world",
           "url": "https://www.wired.com/story/yann-lecun-raises-dollar1-billion-to-build-ai-that-understands-the-physical-world/",
-          "score": 324,
-          "comments": 322
+          "score": 331,
+          "comments": 323
         }
       ],
       "tech_headlines": [
@@ -444,7 +475,7 @@
       "headline": "Tony Hoare has died"
     },
     "policy": {
-      "last_updated": "2026-03-11T01:31:25Z",
+      "last_updated": "2026-03-11T01:46:13Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -483,29 +514,8 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-11T01:31:28Z",
+      "last_updated": "2026-03-11T01:46:25Z",
       "cases": [
-        {
-          "title": "In Re Bystolic Antitrust Litigation",
-          "court": "Court of Appeals for the Second Circuit",
-          "date": "2024-05-13",
-          "tag": "Antitrust",
-          "link": "https://www.courtlistener.com/opinion/9501475/in-re-bystolic-antitrust-litigation/"
-        },
-        {
-          "title": "Automotive Parts Antitrust Litig.",
-          "court": "Court of Appeals for the Sixth Circuit",
-          "date": "2022-05-12",
-          "tag": "Antitrust",
-          "link": "https://www.courtlistener.com/opinion/6468000/automotive-parts-antitrust-litig/"
-        },
-        {
-          "title": "Capon v. Monopoly Game LLC",
-          "court": "California Court of Appeal",
-          "date": "2011-03-04",
-          "tag": "Antitrust",
-          "link": "https://www.courtlistener.com/opinion/5810084/capon-v-monopoly-game-llc/"
-        },
         {
           "title": "In re Telexfree Sec. Litig.",
           "court": "District Court, District of Columbia",
@@ -543,7 +553,7 @@
         }
       ],
       "scotus_opinions": [],
-      "headline": "In Re Bystolic Antitrust Litigation"
+      "headline": "In re Telexfree Sec. Litig."
     }
   }
 }
