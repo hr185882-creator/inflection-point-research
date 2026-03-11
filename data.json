@@ -1,9 +1,9 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-11T10:31:11Z",
+  "fetched_at": "2026-03-11T10:51:38Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-11T10:31:12Z",
+      "last_updated": "2026-03-11T10:51:39Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
@@ -39,57 +39,57 @@
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 69478.62,
+          "price": 69636.51,
           "prev_close": 69956.93,
-          "change": -478.31,
-          "change_pct": -0.68,
+          "change": -320.42,
+          "change_pct": -0.46,
           "currency": "USD"
         },
         "EURUSD=X": {
           "label": "EUR/USD",
-          "price": 1.1606,
+          "price": 1.161,
           "prev_close": 1.1614,
-          "change": -0.0008,
-          "change_pct": -0.07,
+          "change": -0.0004,
+          "change_pct": -0.03,
           "currency": "USD"
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 98.984,
+          "price": 98.927,
           "prev_close": 98.826,
-          "change": 0.158,
-          "change_pct": 0.16,
+          "change": 0.101,
+          "change_pct": 0.1,
           "currency": "USD"
         }
       },
       "yield_10y": 4.12,
-      "headline": "SPY -0.16%  |  BTC $69,479  |  10Y 4.12%"
+      "headline": "SPY -0.16%  |  BTC $69,637  |  10Y 4.12%"
     },
     "energy": {
-      "last_updated": "2026-03-11T10:31:20Z",
+      "last_updated": "2026-03-11T10:51:49Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 86.83,
+          "price": 85.66,
           "prev_close": 83.45,
-          "change": 3.38,
-          "change_pct": 4.05,
+          "change": 2.21,
+          "change_pct": 2.65,
           "currency": "USD"
         },
         "NG=F": {
           "label": "Natural Gas ($/MMBtu)",
-          "price": 3.067,
+          "price": 3.046,
           "prev_close": 3.02,
-          "change": 0.047,
-          "change_pct": 1.56,
+          "change": 0.026,
+          "change_pct": 0.86,
           "currency": "USD"
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 87.35,
+          "price": 86.31,
           "prev_close": 85.27,
-          "change": 2.08,
-          "change_pct": 2.44,
+          "change": 1.04,
+          "change_pct": 1.22,
           "currency": "USD"
         },
         "XLE": {
@@ -101,32 +101,11 @@
           "currency": "USD"
         }
       },
-      "headlines": [
-        {
-          "title": "Annual U.S. crude oil exports decrease for first time since 2021",
-          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67324",
-          "published": "Tue, 10 Mar 2026 09:00:00 EST"
-        },
-        {
-          "title": "U.S. exports of major transportation fuels in 2025 were about the same as in 2024",
-          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67304",
-          "published": "Mon, 09 Mar 2026 09:00:00 EST"
-        },
-        {
-          "title": "U.S. electricity generation in 2025 hit a record, again",
-          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67284",
-          "published": "Thu, 05 Mar 2026 09:00:00 EST"
-        },
-        {
-          "title": "U.S. LNG developers sign highest volume of sale and purchase contracts since 2022",
-          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67264",
-          "published": "Tue, 03 Mar 2026 09:00:00 EST"
-        }
-      ],
-      "headline": "WTI $86.83/bbl"
+      "headlines": [],
+      "headline": "WTI $85.66/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-11T10:31:21Z",
+      "last_updated": "2026-03-11T10:51:50Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
@@ -187,13 +166,13 @@
       },
       "recent_filings": [
         {
-          "title": "Pangaea Logistics Solutions Ltd.  (PANL) \u2014 8-K (2026-03-11)",
-          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Pangaea%20Logistics%20Solutions%20Ltd.%20%20%28PANL%29&type=8-K&dateb=&owner=include&count=5",
+          "title": "Sonos Inc  (SONO) \u2014 8-K (2026-03-11)",
+          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Sonos%20Inc%20%20%28SONO%29&type=8-K&dateb=&owner=include&count=5",
           "published": "2026-03-11"
         },
         {
-          "title": "Sonos Inc  (SONO) \u2014 8-K (2026-03-11)",
-          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Sonos%20Inc%20%20%28SONO%29&type=8-K&dateb=&owner=include&count=5",
+          "title": "Pangaea Logistics Solutions Ltd.  (PANL) \u2014 8-K (2026-03-11)",
+          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Pangaea%20Logistics%20Solutions%20Ltd.%20%20%28PANL%29&type=8-K&dateb=&owner=include&count=5",
           "published": "2026-03-11"
         },
         {
@@ -202,20 +181,20 @@
           "published": "2026-03-11"
         },
         {
-          "title": "MILESTONE SCIENTIFIC INC.  (MLSS) \u2014 8-K (2026-03-11)",
-          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=MILESTONE%20SCIENTIFIC%20INC.%20%20%28MLSS%29&type=8-K&dateb=&owner=include&count=5",
+          "title": "Pelican Acquisition Corp  (PELI, PELIR, PELIU) \u2014 8-K (2026-03-11)",
+          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Pelican%20Acquisition%20Corp%20%20%28PELI%2C%20PELIR%2C%20PELIU%29&type=8-K&dateb=&owner=include&count=5",
           "published": "2026-03-11"
         },
         {
-          "title": "NEWS CORP  (NWS, NWSA, NWSLL) \u2014 8-K (2026-03-11)",
-          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=NEWS%20CORP%20%20%28NWS%2C%20NWSA%2C%20NWSLL%29&type=8-K&dateb=&owner=include&count=5",
+          "title": "MILESTONE SCIENTIFIC INC.  (MLSS) \u2014 8-K (2026-03-11)",
+          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=MILESTONE%20SCIENTIFIC%20INC.%20%20%28MLSS%29&type=8-K&dateb=&owner=include&count=5",
           "published": "2026-03-11"
         }
       ],
       "headline": "NVDA 1.16%  |  MSFT -0.89%"
     },
     "sports": {
-      "last_updated": "2026-03-11T10:31:22Z",
+      "last_updated": "2026-03-11T10:51:51Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -371,7 +350,7 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-11T10:31:27Z",
+      "last_updated": "2026-03-11T10:51:57Z",
       "headlines": [
         {
           "title": "Russian economy withstood pressure from outside German expert",
@@ -412,37 +391,37 @@
       "headline": "Russian economy withstood pressure from outside German expert"
     },
     "technology": {
-      "last_updated": "2026-03-11T10:31:28Z",
+      "last_updated": "2026-03-11T10:51:58Z",
       "hn_top": [
         {
           "title": "Zig \u2013 Type Resolution Redesign and Language Changes",
           "url": "https://ziglang.org/devlog/2026/#2026-03-10",
-          "score": 234,
-          "comments": 78
+          "score": 247,
+          "comments": 85
         },
         {
           "title": "Building a TB-303 from Scratch",
           "url": "https://loopmaster.xyz/tutorials/tb303-from-scratch",
-          "score": 35,
-          "comments": 7
+          "score": 44,
+          "comments": 10
         },
         {
           "title": "Create value for others and don\u2019t worry about the returns",
           "url": "https://geohot.github.io//blog/jekyll/update/2026/03/11/running-69-agents.html",
-          "score": 345,
-          "comments": 191
+          "score": 362,
+          "comments": 201
         },
         {
           "title": "U+237C \u237c Is Azimuth",
           "url": "https://ionathan.ch/2026/02/16/angzarr.html",
-          "score": 311,
-          "comments": 32
+          "score": 316,
+          "comments": 35
         },
         {
           "title": "Cloudflare crawl endpoint",
           "url": "https://developers.cloudflare.com/changelog/post/2026-03-10-br-crawl-endpoint/",
-          "score": 315,
-          "comments": 119
+          "score": 319,
+          "comments": 123
         }
       ],
       "tech_headlines": [
@@ -475,7 +454,7 @@
       "headline": "Zig \u2013 Type Resolution Redesign and Language Changes"
     },
     "policy": {
-      "last_updated": "2026-03-11T10:31:29Z",
+      "last_updated": "2026-03-11T10:51:59Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -514,7 +493,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-11T10:31:33Z",
+      "last_updated": "2026-03-11T10:51:59Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
