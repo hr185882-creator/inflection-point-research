@@ -1,9 +1,9 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-11T20:31:03Z",
+  "fetched_at": "2026-03-11T20:45:56Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-11T20:31:14Z",
+      "last_updated": "2026-03-11T20:46:07Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
@@ -39,26 +39,26 @@
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 70435.71,
+          "price": 70584.33,
           "prev_close": 69956.93,
-          "change": 478.78,
-          "change_pct": 0.68,
+          "change": 627.4,
+          "change_pct": 0.9,
           "currency": "USD"
         },
         "EURUSD=X": {
           "label": "EUR/USD",
-          "price": 1.1574,
+          "price": 1.157,
           "prev_close": 1.1614,
-          "change": -0.004,
-          "change_pct": -0.34,
+          "change": -0.0044,
+          "change_pct": -0.38,
           "currency": "USD"
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 99.239,
+          "price": 99.252,
           "prev_close": 98.826,
-          "change": 0.413,
-          "change_pct": 0.42,
+          "change": 0.426,
+          "change_pct": 0.43,
           "currency": "USD"
         }
       },
@@ -66,30 +66,30 @@
       "headline": null
     },
     "energy": {
-      "last_updated": "2026-03-11T20:31:22Z",
+      "last_updated": "2026-03-11T20:46:15Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 88.52,
+          "price": 88.09,
           "prev_close": 83.45,
-          "change": 5.07,
-          "change_pct": 6.08,
+          "change": 4.64,
+          "change_pct": 5.56,
           "currency": "USD"
         },
         "NG=F": {
           "label": "Natural Gas ($/MMBtu)",
-          "price": 3.22,
+          "price": 3.218,
           "prev_close": 3.02,
-          "change": 0.2,
-          "change_pct": 6.62,
+          "change": 0.198,
+          "change_pct": 6.56,
           "currency": "USD"
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 90.38,
+          "price": 90.04,
           "prev_close": 85.27,
-          "change": 5.11,
-          "change_pct": 5.99,
+          "change": 4.77,
+          "change_pct": 5.59,
           "currency": "USD"
         },
         "XLE": {
@@ -123,10 +123,10 @@
           "published": "Tue, 03 Mar 2026 09:00:00 EST"
         }
       ],
-      "headline": "WTI $88.52/bbl"
+      "headline": "WTI $88.09/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-11T20:31:24Z",
+      "last_updated": "2026-03-11T20:46:16Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
@@ -215,7 +215,7 @@
       "headline": "NVDA 0.68%  |  MSFT -0.22%"
     },
     "sports": {
-      "last_updated": "2026-03-11T20:31:24Z",
+      "last_updated": "2026-03-11T20:46:17Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -355,23 +355,23 @@
             "detail": "Vucevic underwent surgery Saturday to stabilize a fracture in his right ring finger and will be reevaluated in 3-to-4 weeks."
           },
           {
-            "player": "Ziaire Williams",
+            "player": "Nolan Traore",
             "team": "",
-            "status": "Day-To-Day",
-            "detail": "Williams (illness) won't play in Tuesday's game against the Pistons, per Brian Lewis of the New York Post."
+            "status": "Out",
+            "detail": "Traore will be rested Thursday against the Hawks."
           },
           {
             "player": "Day'Ron Sharpe",
             "team": "",
-            "status": "Day-To-Day",
-            "detail": "Sharpe won't play in Tuesday's game against Detroit due to a left thumb sprain, per Brian Lewis of the New York Post."
+            "status": "Out",
+            "detail": "Sharpe (thumb) is out for Thursday's game against the Hawks."
           }
         ]
       },
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-11T20:31:25Z",
+      "last_updated": "2026-03-11T20:46:24Z",
       "headlines": [
         {
           "title": "Bowen: Trump has called for an Iran uprising but the lessons from Iraq in 1991 loom large",
@@ -402,37 +402,37 @@
       "headline": "Bowen: Trump has called for an Iran uprising but the lessons from Iraq in 1991 loom large"
     },
     "technology": {
-      "last_updated": "2026-03-11T20:31:25Z",
+      "last_updated": "2026-03-11T20:46:25Z",
       "hn_top": [
         {
           "title": "Don't post generated/AI-edited comments. HN is for conversation between humans.",
           "url": "https://news.ycombinator.com/newsguidelines.html#generated",
-          "score": 664,
-          "comments": 292
+          "score": 870,
+          "comments": 395
+        },
+        {
+          "title": "The dead Internet is not a theory anymore",
+          "url": "https://www.adriankrebs.ch/blog/dead-internet/",
+          "score": 49,
+          "comments": 6
         },
         {
           "title": "Temporal: A nine-year journey to fix time in JavaScript",
           "url": "https://bloomberg.github.io/js-blog/post/temporal/",
-          "score": 354,
-          "comments": 128
+          "score": 361,
+          "comments": 129
         },
         {
           "title": "Making WebAssembly a first-class language on the Web",
           "url": "https://hacks.mozilla.org/2026/02/making-webassembly-a-first-class-language-on-the-web/",
-          "score": 264,
-          "comments": 111
+          "score": 275,
+          "comments": 115
         },
         {
-          "title": "We Were Right About Havana Syndrome",
-          "url": "https://warontherocks.com/2026/03/we-were-right-about-havana-syndrome/",
-          "score": 18,
-          "comments": 4
-        },
-        {
-          "title": "Entities enabling scientific fraud at scale (2025)",
-          "url": "https://doi.org/10.1073/pnas.2420092122",
-          "score": 225,
-          "comments": 152
+          "title": "Show HN: I built a tool that watches webpages and exposes changes as RSS",
+          "url": "https://sitespy.app",
+          "score": 78,
+          "comments": 24
         }
       ],
       "tech_headlines": [
@@ -465,7 +465,7 @@
       "headline": "Don't post generated/AI-edited comments. HN is for conversation between humans."
     },
     "policy": {
-      "last_updated": "2026-03-11T20:31:26Z",
+      "last_updated": "2026-03-11T20:46:26Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -504,7 +504,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-11T20:31:29Z",
+      "last_updated": "2026-03-11T20:46:33Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
