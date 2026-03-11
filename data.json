@@ -1,9 +1,9 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-11T07:31:06Z",
+  "fetched_at": "2026-03-11T07:45:55Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-11T07:31:07Z",
+      "last_updated": "2026-03-11T07:45:56Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
@@ -39,57 +39,57 @@
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 69832.08,
+          "price": 69596.19,
           "prev_close": 69956.93,
-          "change": -124.85,
-          "change_pct": -0.18,
+          "change": -360.74,
+          "change_pct": -0.52,
           "currency": "USD"
         },
         "EURUSD=X": {
           "label": "EUR/USD",
-          "price": 1.1633,
+          "price": 1.162,
           "prev_close": 1.1614,
-          "change": 0.0019,
-          "change_pct": 0.16,
+          "change": 0.0006,
+          "change_pct": 0.05,
           "currency": "USD"
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 98.81,
+          "price": 98.828,
           "prev_close": 98.826,
-          "change": -0.016,
-          "change_pct": -0.02,
+          "change": 0.002,
+          "change_pct": 0.0,
           "currency": "USD"
         }
       },
       "yield_10y": 4.12,
-      "headline": "SPY -0.16%  |  BTC $69,832  |  10Y 4.12%"
+      "headline": "SPY -0.16%  |  BTC $69,596  |  10Y 4.12%"
     },
     "energy": {
-      "last_updated": "2026-03-11T07:31:16Z",
+      "last_updated": "2026-03-11T07:46:06Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 83.6,
+          "price": 84.81,
           "prev_close": 83.45,
-          "change": 0.15,
-          "change_pct": 0.18,
+          "change": 1.36,
+          "change_pct": 1.63,
           "currency": "USD"
         },
         "NG=F": {
           "label": "Natural Gas ($/MMBtu)",
-          "price": 3.056,
+          "price": 3.062,
           "prev_close": 3.02,
-          "change": 0.036,
-          "change_pct": 1.19,
+          "change": 0.042,
+          "change_pct": 1.39,
           "currency": "USD"
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 84.61,
+          "price": 86.0,
           "prev_close": 85.27,
-          "change": -0.66,
-          "change_pct": -0.77,
+          "change": 0.73,
+          "change_pct": 0.86,
           "currency": "USD"
         },
         "XLE": {
@@ -101,32 +101,11 @@
           "currency": "USD"
         }
       },
-      "headlines": [
-        {
-          "title": "Annual U.S. crude oil exports decrease for first time since 2021",
-          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67324",
-          "published": "Tue, 10 Mar 2026 09:00:00 EST"
-        },
-        {
-          "title": "U.S. exports of major transportation fuels in 2025 were about the same as in 2024",
-          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67304",
-          "published": "Mon, 09 Mar 2026 09:00:00 EST"
-        },
-        {
-          "title": "U.S. electricity generation in 2025 hit a record, again",
-          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67284",
-          "published": "Thu, 05 Mar 2026 09:00:00 EST"
-        },
-        {
-          "title": "U.S. LNG developers sign highest volume of sale and purchase contracts since 2022",
-          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67264",
-          "published": "Tue, 03 Mar 2026 09:00:00 EST"
-        }
-      ],
-      "headline": "WTI $83.60/bbl"
+      "headlines": [],
+      "headline": "WTI $84.81/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-11T07:31:17Z",
+      "last_updated": "2026-03-11T07:46:07Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
@@ -215,7 +194,7 @@
       "headline": "NVDA 1.16%  |  MSFT -0.89%"
     },
     "sports": {
-      "last_updated": "2026-03-11T07:31:18Z",
+      "last_updated": "2026-03-11T07:46:08Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -371,8 +350,33 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-11T07:31:28Z",
+      "last_updated": "2026-03-11T07:46:12Z",
       "headlines": [
+        {
+          "title": "Russian economy withstood pressure from outside German expert",
+          "link": "https://tass.com/economy/2073165",
+          "published": "20260119T140000Z"
+        },
+        {
+          "title": "Sudan : united kingdom Hits  Sudan War Machine  With New Sanctions",
+          "link": "https://allafrica.com/stories/202602060005.html",
+          "published": "20260206T060000Z"
+        },
+        {
+          "title": "UK Sanctions Sudanese Army and RSF Leaders",
+          "link": "https://english.aawsat.com/arab-world/5237657-uk-sanctions-sudanese-army-and-rsf-leaders",
+          "published": "20260205T183000Z"
+        },
+        {
+          "title": "U . S . sanctions Gaza charities over alleged Hamas ties \u2013 NaturalNews . com",
+          "link": "https://www.naturalnews.com/2026-01-26-us-sanctions-gaza-charities-over-hamas-ties.html",
+          "published": "20260126T130000Z"
+        },
+        {
+          "title": "Myanmar military using commercial paramotors , gyrocopters for attacks : Report",
+          "link": "https://www.siasat.com/myanmar-military-using-commercial-paramotors-gyrocopters-for-attacks-report-3331737/",
+          "published": "20260126T140000Z"
+        },
         {
           "title": "'I just want to be able to sleep': Attacks in Iran rock cities and cut power",
           "link": "https://www.bbc.com/news/articles/cev7llekwllo?at_medium=RSS&at_campaign=rss",
@@ -382,56 +386,41 @@
           "title": "Jeffrey Epstein had two key aides - why do they still control his money and secrets?",
           "link": "https://www.bbc.com/news/articles/cdjm7rxjxneo?at_medium=RSS&at_campaign=rss",
           "published": "Wed, 11 Mar 2026 00:10:20 GMT"
-        },
-        {
-          "title": "Steve Rosenberg: Russia seeks diplomatic and economic gains from Iran war",
-          "link": "https://www.bbc.com/news/articles/c4gjyg0djvmo?at_medium=RSS&at_campaign=rss",
-          "published": "Tue, 10 Mar 2026 19:35:29 GMT"
-        },
-        {
-          "title": "At least six dead in Switzerland bus fire",
-          "link": "https://www.bbc.com/news/articles/c5y4wdlyy9xo?at_medium=RSS&at_campaign=rss",
-          "published": "Wed, 11 Mar 2026 06:13:12 GMT"
-        },
-        {
-          "title": "Woman charged with attempted murder after shooting at Rihanna's home",
-          "link": "https://www.bbc.com/news/articles/cgjze644wjvo?at_medium=RSS&at_campaign=rss",
-          "published": "Wed, 11 Mar 2026 03:10:09 GMT"
         }
       ],
-      "headline": "'I just want to be able to sleep': Attacks in Iran rock cities and cut power"
+      "headline": "Russian economy withstood pressure from outside German expert"
     },
     "technology": {
-      "last_updated": "2026-03-11T07:31:29Z",
+      "last_updated": "2026-03-11T07:46:12Z",
       "hn_top": [
         {
           "title": "Create value for others and don\u2019t worry about the returns",
           "url": "https://geohot.github.io//blog/jekyll/update/2026/03/11/running-69-agents.html",
-          "score": 141,
-          "comments": 47
+          "score": 165,
+          "comments": 61
         },
         {
           "title": "Zig \u2013 Type Resolution Redesign and Language Changes",
           "url": "https://ziglang.org/devlog/2026/#2026-03-10",
-          "score": 157,
-          "comments": 52
+          "score": 160,
+          "comments": 54
         },
         {
           "title": "U+237C \u237c Is Azimuth",
           "url": "https://ionathan.ch/2026/02/16/angzarr.html",
-          "score": 258,
-          "comments": 25
+          "score": 262,
+          "comments": 26
         },
         {
           "title": "Cloudflare crawl endpoint",
           "url": "https://developers.cloudflare.com/changelog/post/2026-03-10-br-crawl-endpoint/",
-          "score": 251,
-          "comments": 98
+          "score": 256,
+          "comments": 101
         },
         {
           "title": "Julia Snail \u2013 An Emacs Development Environment for Julia Like Clojure's Cider",
           "url": "https://github.com/gcv/julia-snail",
-          "score": 49,
+          "score": 52,
           "comments": 6
         }
       ],
@@ -465,7 +454,7 @@
       "headline": "Create value for others and don\u2019t worry about the returns"
     },
     "policy": {
-      "last_updated": "2026-03-11T07:31:30Z",
+      "last_updated": "2026-03-11T07:46:13Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -504,7 +493,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-11T07:31:32Z",
+      "last_updated": "2026-03-11T07:46:15Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
