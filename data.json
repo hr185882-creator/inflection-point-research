@@ -1,166 +1,187 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-11T15:45:51Z",
+  "fetched_at": "2026-03-11T16:04:12Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-11T15:45:52Z",
+      "last_updated": "2026-03-11T16:04:13Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
-          "price": 674.258,
+          "price": 673.8,
           "prev_close": 677.18,
-          "change": -2.922,
-          "change_pct": -0.43,
+          "change": -3.38,
+          "change_pct": -0.5,
           "currency": "USD"
         },
         "QQQ": {
           "label": "Nasdaq 100 ETF",
-          "price": 606.17,
+          "price": 605.86,
           "prev_close": 607.77,
-          "change": -1.6,
-          "change_pct": -0.26,
+          "change": -1.91,
+          "change_pct": -0.31,
           "currency": "USD"
         },
         "GLD": {
           "label": "Gold ETF",
-          "price": 475.03,
+          "price": 474.96,
           "prev_close": 477.86,
-          "change": -2.83,
-          "change_pct": -0.59,
+          "change": -2.9,
+          "change_pct": -0.61,
           "currency": "USD"
         },
         "TLT": {
           "label": "20Y Treasury ETF",
-          "price": 87.27,
+          "price": 87.23,
           "prev_close": 88.28,
-          "change": -1.01,
-          "change_pct": -1.14,
+          "change": -1.05,
+          "change_pct": -1.19,
           "currency": "USD"
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 70231.26,
+          "price": 70256.55,
           "prev_close": 69956.93,
-          "change": 274.33,
-          "change_pct": 0.39,
+          "change": 299.62,
+          "change_pct": 0.43,
           "currency": "USD"
         },
         "EURUSD=X": {
           "label": "EUR/USD",
-          "price": 1.1574,
+          "price": 1.1571,
           "prev_close": 1.1614,
-          "change": -0.004,
-          "change_pct": -0.34,
+          "change": -0.0043,
+          "change_pct": -0.37,
           "currency": "USD"
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 99.196,
+          "price": 99.225,
           "prev_close": 98.826,
-          "change": 0.37,
-          "change_pct": 0.37,
+          "change": 0.399,
+          "change_pct": 0.4,
           "currency": "USD"
         }
       },
       "yield_10y": 4.12,
-      "headline": "SPY -0.43%  |  BTC $70,231  |  10Y 4.12%"
+      "headline": "SPY -0.5%  |  BTC $70,257  |  10Y 4.12%"
     },
     "energy": {
-      "last_updated": "2026-03-11T15:46:02Z",
+      "last_updated": "2026-03-11T16:04:22Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 87.11,
+          "price": 86.97,
           "prev_close": 83.45,
-          "change": 3.66,
-          "change_pct": 4.39,
+          "change": 3.52,
+          "change_pct": 4.22,
           "currency": "USD"
         },
         "NG=F": {
           "label": "Natural Gas ($/MMBtu)",
-          "price": 3.147,
+          "price": 3.14,
           "prev_close": 3.02,
-          "change": 0.127,
-          "change_pct": 4.21,
+          "change": 0.12,
+          "change_pct": 3.97,
           "currency": "USD"
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 88.58,
+          "price": 88.44,
           "prev_close": 85.27,
-          "change": 3.31,
-          "change_pct": 3.88,
+          "change": 3.17,
+          "change_pct": 3.72,
           "currency": "USD"
         },
         "XLE": {
           "label": "Energy ETF",
-          "price": 56.435,
+          "price": 56.575,
           "prev_close": 55.6,
-          "change": 0.835,
-          "change_pct": 1.5,
+          "change": 0.975,
+          "change_pct": 1.75,
           "currency": "USD"
         }
       },
-      "headlines": [],
-      "headline": "WTI $87.11/bbl"
+      "headlines": [
+        {
+          "title": "Annual U.S. crude oil exports decrease for first time since 2021",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67324",
+          "published": "Tue, 10 Mar 2026 09:00:00 EST"
+        },
+        {
+          "title": "U.S. exports of major transportation fuels in 2025 were about the same as in 2024",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67304",
+          "published": "Mon, 09 Mar 2026 09:00:00 EST"
+        },
+        {
+          "title": "U.S. electricity generation in 2025 hit a record, again",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67284",
+          "published": "Thu, 05 Mar 2026 09:00:00 EST"
+        },
+        {
+          "title": "U.S. LNG developers sign highest volume of sale and purchase contracts since 2022",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67264",
+          "published": "Tue, 03 Mar 2026 09:00:00 EST"
+        }
+      ],
+      "headline": "WTI $86.97/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-11T15:46:03Z",
+      "last_updated": "2026-03-11T16:04:23Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
-          "price": 185.49,
+          "price": 185.345,
           "prev_close": 184.77,
-          "change": 0.72,
-          "change_pct": 0.39,
+          "change": 0.575,
+          "change_pct": 0.31,
           "currency": "USD"
         },
         "MSFT": {
           "label": "Microsoft",
-          "price": 402.71,
+          "price": 402.305,
           "prev_close": 405.76,
-          "change": -3.05,
-          "change_pct": -0.75,
+          "change": -3.455,
+          "change_pct": -0.85,
           "currency": "USD"
         },
         "AAPL": {
           "label": "Apple",
-          "price": 260.097,
+          "price": 260.21,
           "prev_close": 260.83,
-          "change": -0.733,
-          "change_pct": -0.28,
+          "change": -0.62,
+          "change_pct": -0.24,
           "currency": "USD"
         },
         "META": {
           "label": "Meta",
-          "price": 650.48,
+          "price": 648.65,
           "prev_close": 654.07,
-          "change": -3.59,
-          "change_pct": -0.55,
+          "change": -5.42,
+          "change_pct": -0.83,
           "currency": "USD"
         },
         "TSLA": {
           "label": "Tesla",
-          "price": 406.9,
+          "price": 406.93,
           "prev_close": 399.235,
-          "change": 7.665,
-          "change_pct": 1.92,
+          "change": 7.695,
+          "change_pct": 1.93,
           "currency": "USD"
         },
         "AMZN": {
           "label": "Amazon",
-          "price": 212.02,
+          "price": 211.91,
           "prev_close": 214.33,
-          "change": -2.31,
-          "change_pct": -1.08,
+          "change": -2.42,
+          "change_pct": -1.13,
           "currency": "USD"
         },
         "GOOGL": {
           "label": "Alphabet",
-          "price": 308.96,
+          "price": 308.605,
           "prev_close": 307.04,
-          "change": 1.92,
-          "change_pct": 0.63,
+          "change": 1.565,
+          "change_pct": 0.51,
           "currency": "USD"
         }
       },
@@ -191,10 +212,10 @@
           "published": "2026-03-11"
         }
       ],
-      "headline": "NVDA 0.39%  |  MSFT -0.75%"
+      "headline": "NVDA 0.31%  |  MSFT -0.85%"
     },
     "sports": {
-      "last_updated": "2026-03-11T15:46:04Z",
+      "last_updated": "2026-03-11T16:04:24Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -350,12 +371,12 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-11T15:46:04Z",
+      "last_updated": "2026-03-11T16:04:25Z",
       "headlines": [
         {
           "title": "Countries agree to record release of emergency oil reserves as prices surge",
           "link": "https://www.bbc.com/news/articles/cly093xxlzzo?at_medium=RSS&at_campaign=rss",
-          "published": "Wed, 11 Mar 2026 15:29:14 GMT"
+          "published": "Wed, 11 Mar 2026 15:51:11 GMT"
         },
         {
           "title": "EU and UK demand Israel stop surge in West Bank settler violence since Iran war",
@@ -381,37 +402,37 @@
       "headline": "Countries agree to record release of emergency oil reserves as prices surge"
     },
     "technology": {
-      "last_updated": "2026-03-11T15:46:05Z",
+      "last_updated": "2026-03-11T16:04:26Z",
       "hn_top": [
         {
           "title": "Lego's 0.002 mm Specification and Its Implications for Manufacturing (2025)",
           "url": "https://www.thewave.engineer/articles.html/productivity/legos-0002mm-specification-and-its-implications-for-manufacturing-r120/",
-          "score": 188,
-          "comments": 124
+          "score": 214,
+          "comments": 140
         },
         {
           "title": "The entities enabling scientific fraud at scale are large, resilient and growing",
           "url": "https://doi.org/10.1073/pnas.2420092122",
-          "score": 93,
-          "comments": 28
+          "score": 111,
+          "comments": 41
         },
         {
           "title": "Faster Asin() Was Hiding in Plain Sight",
           "url": "https://16bpp.net/blog/post/faster-asin-was-hiding-in-plain-sight/",
-          "score": 70,
-          "comments": 18
+          "score": 85,
+          "comments": 25
+        },
+        {
+          "title": "Temporal: The 9-Year Journey to Fix Time in JavaScript",
+          "url": "https://bloomberg.github.io/js-blog/post/temporal/",
+          "score": 24,
+          "comments": 3
         },
         {
           "title": "Microsoft BitNet: 100B Param 1-Bit model for local CPUs",
           "url": "https://github.com/microsoft/BitNet",
-          "score": 158,
-          "comments": 84
-        },
-        {
-          "title": "Whistleblower: DOGE member took Social Security data to new job",
-          "url": "https://www.washingtonpost.com/politics/2026/03/10/social-security-data-breach-doge-2/",
-          "score": 333,
-          "comments": 124
+          "score": 163,
+          "comments": 89
         }
       ],
       "tech_headlines": [
@@ -444,7 +465,7 @@
       "headline": "Lego's 0.002 mm Specification and Its Implications for Manufacturing (2025)"
     },
     "policy": {
-      "last_updated": "2026-03-11T15:46:06Z",
+      "last_updated": "2026-03-11T16:04:27Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -483,7 +504,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-11T15:46:09Z",
+      "last_updated": "2026-03-11T16:04:31Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
