@@ -1,9 +1,9 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-11T08:18:09Z",
+  "fetched_at": "2026-03-11T08:37:00Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-11T08:18:10Z",
+      "last_updated": "2026-03-11T08:37:01Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
@@ -39,57 +39,57 @@
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 69641.74,
+          "price": 69578.53,
           "prev_close": 69956.93,
-          "change": -315.19,
-          "change_pct": -0.45,
+          "change": -378.4,
+          "change_pct": -0.54,
           "currency": "USD"
         },
         "EURUSD=X": {
           "label": "EUR/USD",
-          "price": 1.1621,
+          "price": 1.1617,
           "prev_close": 1.1614,
-          "change": 0.0007,
-          "change_pct": 0.06,
+          "change": 0.0003,
+          "change_pct": 0.03,
           "currency": "USD"
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 98.91,
+          "price": 98.929,
           "prev_close": 98.826,
-          "change": 0.084,
-          "change_pct": 0.08,
+          "change": 0.103,
+          "change_pct": 0.1,
           "currency": "USD"
         }
       },
       "yield_10y": 4.12,
-      "headline": "SPY -0.16%  |  BTC $69,642  |  10Y 4.12%"
+      "headline": "SPY -0.16%  |  BTC $69,579  |  10Y 4.12%"
     },
     "energy": {
-      "last_updated": "2026-03-11T08:18:19Z",
+      "last_updated": "2026-03-11T08:37:09Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 85.2,
+          "price": 85.7,
           "prev_close": 83.45,
-          "change": 1.75,
-          "change_pct": 2.1,
+          "change": 2.25,
+          "change_pct": 2.7,
           "currency": "USD"
         },
         "NG=F": {
           "label": "Natural Gas ($/MMBtu)",
-          "price": 3.054,
+          "price": 3.063,
           "prev_close": 3.02,
-          "change": 0.034,
-          "change_pct": 1.13,
+          "change": 0.043,
+          "change_pct": 1.42,
           "currency": "USD"
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 86.07,
+          "price": 86.28,
           "prev_close": 85.27,
-          "change": 0.8,
-          "change_pct": 0.94,
+          "change": 1.01,
+          "change_pct": 1.18,
           "currency": "USD"
         },
         "XLE": {
@@ -123,10 +123,10 @@
           "published": "Tue, 03 Mar 2026 09:00:00 EST"
         }
       ],
-      "headline": "WTI $85.20/bbl"
+      "headline": "WTI $85.70/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-11T08:18:24Z",
+      "last_updated": "2026-03-11T08:37:10Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
@@ -187,6 +187,11 @@
       },
       "recent_filings": [
         {
+          "title": "Aclaris Therapeutics, Inc.  (ACRS) \u2014 8-K (2026-03-10)",
+          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Aclaris%20Therapeutics%2C%20Inc.%20%20%28ACRS%29&type=8-K&dateb=&owner=include&count=5",
+          "published": "2026-03-10"
+        },
+        {
           "title": "Motorsport Games Inc.  (MSGM) \u2014 8-K (2026-03-10)",
           "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Motorsport%20Games%20Inc.%20%20%28MSGM%29&type=8-K&dateb=&owner=include&count=5",
           "published": "2026-03-10"
@@ -194,11 +199,6 @@
         {
           "title": "Crown PropTech Acquisitions  (CPTKW) \u2014 8-K (2026-03-10)",
           "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Crown%20PropTech%20Acquisitions%20%20%28CPTKW%29&type=8-K&dateb=&owner=include&count=5",
-          "published": "2026-03-10"
-        },
-        {
-          "title": "Aclaris Therapeutics, Inc.  (ACRS) \u2014 8-K (2026-03-10)",
-          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Aclaris%20Therapeutics%2C%20Inc.%20%20%28ACRS%29&type=8-K&dateb=&owner=include&count=5",
           "published": "2026-03-10"
         },
         {
@@ -215,7 +215,7 @@
       "headline": "NVDA 1.16%  |  MSFT -0.89%"
     },
     "sports": {
-      "last_updated": "2026-03-11T08:18:24Z",
+      "last_updated": "2026-03-11T08:37:11Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -371,7 +371,7 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-11T08:18:27Z",
+      "last_updated": "2026-03-11T08:37:15Z",
       "headlines": [
         {
           "title": "Russian economy withstood pressure from outside German expert",
@@ -412,37 +412,37 @@
       "headline": "Russian economy withstood pressure from outside German expert"
     },
     "technology": {
-      "last_updated": "2026-03-11T08:18:28Z",
+      "last_updated": "2026-03-11T08:37:16Z",
       "hn_top": [
+        {
+          "title": "Why does AI tell you to use Terminal so much?",
+          "url": "https://eclecticlight.co/2026/03/11/why-does-ai-tell-you-to-use-terminal-so-much/",
+          "score": 10,
+          "comments": 3
+        },
         {
           "title": "Create value for others and don\u2019t worry about the returns",
           "url": "https://geohot.github.io//blog/jekyll/update/2026/03/11/running-69-agents.html",
-          "score": 221,
-          "comments": 86
+          "score": 257,
+          "comments": 104
         },
         {
           "title": "Zig \u2013 Type Resolution Redesign and Language Changes",
           "url": "https://ziglang.org/devlog/2026/#2026-03-10",
-          "score": 171,
-          "comments": 55
+          "score": 184,
+          "comments": 56
         },
         {
           "title": "I'm going to build my own OpenClaw, with blackjack and bun",
           "url": "https://github.com/rcarmo/piclaw",
-          "score": 15,
-          "comments": 7
+          "score": 21,
+          "comments": 14
         },
         {
           "title": "U+237C \u237c Is Azimuth",
           "url": "https://ionathan.ch/2026/02/16/angzarr.html",
-          "score": 270,
+          "score": 272,
           "comments": 26
-        },
-        {
-          "title": "TADA: Fast, Reliable Speech Generation Through Text-Acoustic Synchronization",
-          "url": "https://www.hume.ai/blog/opensource-tada",
-          "score": 18,
-          "comments": 1
         }
       ],
       "tech_headlines": [
@@ -472,10 +472,10 @@
           "published": "Mon, 09 Mar 2026 09:30:00 +0000"
         }
       ],
-      "headline": "Create value for others and don\u2019t worry about the returns"
+      "headline": "Why does AI tell you to use Terminal so much?"
     },
     "policy": {
-      "last_updated": "2026-03-11T08:18:29Z",
+      "last_updated": "2026-03-11T08:37:16Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -514,7 +514,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-11T08:18:29Z",
+      "last_updated": "2026-03-11T08:37:17Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
