@@ -1,9 +1,9 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-11T04:33:24Z",
+  "fetched_at": "2026-03-11T05:01:17Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-11T04:33:24Z",
+      "last_updated": "2026-03-11T05:01:17Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
@@ -39,57 +39,57 @@
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 69972.55,
+          "price": 70142.8,
           "prev_close": 69956.93,
-          "change": 15.62,
-          "change_pct": 0.02,
+          "change": 185.87,
+          "change_pct": 0.27,
           "currency": "USD"
         },
         "EURUSD=X": {
           "label": "EUR/USD",
-          "price": 1.1635,
+          "price": 1.1637,
           "prev_close": 1.1614,
-          "change": 0.0021,
-          "change_pct": 0.18,
+          "change": 0.0023,
+          "change_pct": 0.2,
           "currency": "USD"
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 98.778,
+          "price": 98.746,
           "prev_close": 98.826,
-          "change": -0.048,
-          "change_pct": -0.05,
+          "change": -0.08,
+          "change_pct": -0.08,
           "currency": "USD"
         }
       },
       "yield_10y": 4.12,
-      "headline": "SPY -0.16%  |  BTC $69,973  |  10Y 4.12%"
+      "headline": "SPY -0.16%  |  BTC $70,143  |  10Y 4.12%"
     },
     "energy": {
-      "last_updated": "2026-03-11T04:33:33Z",
+      "last_updated": "2026-03-11T05:01:27Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 82.83,
+          "price": 83.11,
           "prev_close": 83.45,
-          "change": -0.62,
-          "change_pct": -0.74,
+          "change": -0.34,
+          "change_pct": -0.41,
           "currency": "USD"
         },
         "NG=F": {
           "label": "Natural Gas ($/MMBtu)",
-          "price": 3.028,
+          "price": 3.041,
           "prev_close": 3.02,
-          "change": 0.008,
-          "change_pct": 0.26,
+          "change": 0.021,
+          "change_pct": 0.7,
           "currency": "USD"
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 84.53,
+          "price": 84.45,
           "prev_close": 85.27,
-          "change": -0.74,
-          "change_pct": -0.87,
+          "change": -0.82,
+          "change_pct": -0.96,
           "currency": "USD"
         },
         "XLE": {
@@ -101,32 +101,11 @@
           "currency": "USD"
         }
       },
-      "headlines": [
-        {
-          "title": "Annual U.S. crude oil exports decrease for first time since 2021",
-          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67324",
-          "published": "Tue, 10 Mar 2026 09:00:00 EST"
-        },
-        {
-          "title": "U.S. exports of major transportation fuels in 2025 were about the same as in 2024",
-          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67304",
-          "published": "Mon, 09 Mar 2026 09:00:00 EST"
-        },
-        {
-          "title": "U.S. electricity generation in 2025 hit a record, again",
-          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67284",
-          "published": "Thu, 05 Mar 2026 09:00:00 EST"
-        },
-        {
-          "title": "U.S. LNG developers sign highest volume of sale and purchase contracts since 2022",
-          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67264",
-          "published": "Tue, 03 Mar 2026 09:00:00 EST"
-        }
-      ],
-      "headline": "WTI $82.83/bbl"
+      "headlines": [],
+      "headline": "WTI $83.11/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-11T04:33:35Z",
+      "last_updated": "2026-03-11T05:01:31Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
@@ -187,11 +166,6 @@
       },
       "recent_filings": [
         {
-          "title": "Aclaris Therapeutics, Inc.  (ACRS) \u2014 8-K (2026-03-10)",
-          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Aclaris%20Therapeutics%2C%20Inc.%20%20%28ACRS%29&type=8-K&dateb=&owner=include&count=5",
-          "published": "2026-03-10"
-        },
-        {
           "title": "Motorsport Games Inc.  (MSGM) \u2014 8-K (2026-03-10)",
           "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Motorsport%20Games%20Inc.%20%20%28MSGM%29&type=8-K&dateb=&owner=include&count=5",
           "published": "2026-03-10"
@@ -199,6 +173,11 @@
         {
           "title": "Crown PropTech Acquisitions  (CPTKW) \u2014 8-K (2026-03-10)",
           "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Crown%20PropTech%20Acquisitions%20%20%28CPTKW%29&type=8-K&dateb=&owner=include&count=5",
+          "published": "2026-03-10"
+        },
+        {
+          "title": "Aclaris Therapeutics, Inc.  (ACRS) \u2014 8-K (2026-03-10)",
+          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Aclaris%20Therapeutics%2C%20Inc.%20%20%28ACRS%29&type=8-K&dateb=&owner=include&count=5",
           "published": "2026-03-10"
         },
         {
@@ -215,7 +194,7 @@
       "headline": "NVDA 1.16%  |  MSFT -0.89%"
     },
     "sports": {
-      "last_updated": "2026-03-11T04:33:36Z",
+      "last_updated": "2026-03-11T05:01:32Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -371,33 +350,8 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-11T04:33:39Z",
+      "last_updated": "2026-03-11T05:01:42Z",
       "headlines": [
-        {
-          "title": "Russian economy withstood pressure from outside German expert",
-          "link": "https://tass.com/economy/2073165",
-          "published": "20260119T140000Z"
-        },
-        {
-          "title": "Sudan : united kingdom Hits  Sudan War Machine  With New Sanctions",
-          "link": "https://allafrica.com/stories/202602060005.html",
-          "published": "20260206T060000Z"
-        },
-        {
-          "title": "UK Sanctions Sudanese Army and RSF Leaders",
-          "link": "https://english.aawsat.com/arab-world/5237657-uk-sanctions-sudanese-army-and-rsf-leaders",
-          "published": "20260205T183000Z"
-        },
-        {
-          "title": "U . S . sanctions Gaza charities over alleged Hamas ties \u2013 NaturalNews . com",
-          "link": "https://www.naturalnews.com/2026-01-26-us-sanctions-gaza-charities-over-hamas-ties.html",
-          "published": "20260126T130000Z"
-        },
-        {
-          "title": "Myanmar military using commercial paramotors , gyrocopters for attacks : Report",
-          "link": "https://www.siasat.com/myanmar-military-using-commercial-paramotors-gyrocopters-for-attacks-report-3331737/",
-          "published": "20260126T140000Z"
-        },
         {
           "title": "'I just want to be able to sleep': Attacks in Iran rock cities and cut power",
           "link": "https://www.bbc.com/news/articles/cev7llekwllo?at_medium=RSS&at_campaign=rss",
@@ -407,42 +361,57 @@
           "title": "Jeffrey Epstein had two key aides - why do they still control his money and secrets?",
           "link": "https://www.bbc.com/news/articles/cdjm7rxjxneo?at_medium=RSS&at_campaign=rss",
           "published": "Wed, 11 Mar 2026 00:10:20 GMT"
+        },
+        {
+          "title": "Steve Rosenberg: Russia seeks diplomatic and economic gains from Iran war",
+          "link": "https://www.bbc.com/news/articles/c4gjyg0djvmo?at_medium=RSS&at_campaign=rss",
+          "published": "Tue, 10 Mar 2026 19:35:29 GMT"
+        },
+        {
+          "title": "At least six dead in Switzerland bus fire",
+          "link": "https://www.bbc.com/news/articles/c5y4wdlyy9xo?at_medium=RSS&at_campaign=rss",
+          "published": "Tue, 10 Mar 2026 22:35:37 GMT"
+        },
+        {
+          "title": "Woman charged with attempted murder after shooting at Rihanna's home",
+          "link": "https://www.bbc.com/news/articles/cgjze644wjvo?at_medium=RSS&at_campaign=rss",
+          "published": "Wed, 11 Mar 2026 03:10:09 GMT"
         }
       ],
-      "headline": "Russian economy withstood pressure from outside German expert"
+      "headline": "'I just want to be able to sleep': Attacks in Iran rock cities and cut power"
     },
     "technology": {
-      "last_updated": "2026-03-11T04:33:40Z",
+      "last_updated": "2026-03-11T05:01:43Z",
       "hn_top": [
         {
           "title": "Tony Hoare has died",
           "url": "https://blog.computationalcomplexity.org/2026/03/tony-hoare-1934-2026.html",
-          "score": 1600,
-          "comments": 209
+          "score": 1615,
+          "comments": 210
         },
         {
           "title": "U+237C \u237c Is Azimuth",
           "url": "https://ionathan.ch/2026/02/16/angzarr.html",
-          "score": 203,
-          "comments": 22
+          "score": 211,
+          "comments": 23
         },
         {
           "title": "Zig \u2013 Type Resolution Redesign and Language Changes",
           "url": "https://ziglang.org/devlog/2026/#2026-03-10",
-          "score": 64,
-          "comments": 16
+          "score": 76,
+          "comments": 17
         },
         {
           "title": "Cloudflare crawl endpoint",
           "url": "https://developers.cloudflare.com/changelog/post/2026-03-10-br-crawl-endpoint/",
-          "score": 181,
-          "comments": 87
+          "score": 194,
+          "comments": 93
         },
         {
-          "title": "Agents that run while I sleep",
-          "url": "https://www.claudecodecamp.com/p/i-m-building-agents-that-run-while-i-sleep",
-          "score": 268,
-          "comments": 238
+          "title": "Julia Snail \u2013 An Emacs Development Environment for Julia Like Clojure's Cider",
+          "url": "https://github.com/gcv/julia-snail",
+          "score": 23,
+          "comments": 0
         }
       ],
       "tech_headlines": [
@@ -475,7 +444,7 @@
       "headline": "Tony Hoare has died"
     },
     "policy": {
-      "last_updated": "2026-03-11T04:33:40Z",
+      "last_updated": "2026-03-11T05:01:44Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -514,7 +483,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-11T04:33:45Z",
+      "last_updated": "2026-03-11T05:01:47Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
