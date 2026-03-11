@@ -1,9 +1,9 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-11T03:15:51Z",
+  "fetched_at": "2026-03-11T03:37:22Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-11T03:15:52Z",
+      "last_updated": "2026-03-11T03:37:01Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
@@ -39,57 +39,57 @@
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 69709.24,
+          "price": 69618.44,
           "prev_close": 69956.93,
-          "change": -247.69,
-          "change_pct": -0.35,
+          "change": -338.49,
+          "change_pct": -0.48,
           "currency": "USD"
         },
         "EURUSD=X": {
           "label": "EUR/USD",
-          "price": 1.1631,
+          "price": 1.1633,
           "prev_close": 1.1614,
-          "change": 0.0017,
-          "change_pct": 0.15,
+          "change": 0.0019,
+          "change_pct": 0.16,
           "currency": "USD"
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 98.799,
+          "price": 98.821,
           "prev_close": 98.826,
-          "change": -0.027,
-          "change_pct": -0.03,
+          "change": -0.005,
+          "change_pct": -0.01,
           "currency": "USD"
         }
       },
       "yield_10y": 4.12,
-      "headline": "SPY -0.16%  |  BTC $69,709  |  10Y 4.12%"
+      "headline": "SPY -0.16%  |  BTC $69,618  |  10Y 4.12%"
     },
     "energy": {
-      "last_updated": "2026-03-11T03:16:01Z",
+      "last_updated": "2026-03-11T03:37:10Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 84.12,
+          "price": 83.69,
           "prev_close": 83.45,
-          "change": 0.67,
-          "change_pct": 0.8,
+          "change": 0.24,
+          "change_pct": 0.29,
           "currency": "USD"
         },
         "NG=F": {
           "label": "Natural Gas ($/MMBtu)",
-          "price": 3.03,
+          "price": 3.028,
           "prev_close": 3.02,
-          "change": 0.01,
-          "change_pct": 0.33,
+          "change": 0.008,
+          "change_pct": 0.26,
           "currency": "USD"
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 85.69,
+          "price": 85.27,
           "prev_close": 85.27,
-          "change": 0.42,
-          "change_pct": 0.49,
+          "change": 0.0,
+          "change_pct": null,
           "currency": "USD"
         },
         "XLE": {
@@ -123,10 +123,10 @@
           "published": "Tue, 03 Mar 2026 09:00:00 EST"
         }
       ],
-      "headline": "WTI $84.12/bbl"
+      "headline": "WTI $83.69/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-11T03:16:03Z",
+      "last_updated": "2026-03-11T03:37:11Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
@@ -215,7 +215,7 @@
       "headline": "NVDA 1.16%  |  MSFT -0.89%"
     },
     "sports": {
-      "last_updated": "2026-03-11T03:16:03Z",
+      "last_updated": "2026-03-11T03:37:13Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -371,8 +371,33 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-11T03:16:05Z",
+      "last_updated": "2026-03-11T03:37:18Z",
       "headlines": [
+        {
+          "title": "Russian economy withstood pressure from outside German expert",
+          "link": "https://tass.com/economy/2073165",
+          "published": "20260119T140000Z"
+        },
+        {
+          "title": "Sudan : united kingdom Hits  Sudan War Machine  With New Sanctions",
+          "link": "https://allafrica.com/stories/202602060005.html",
+          "published": "20260206T060000Z"
+        },
+        {
+          "title": "UK Sanctions Sudanese Army and RSF Leaders",
+          "link": "https://english.aawsat.com/arab-world/5237657-uk-sanctions-sudanese-army-and-rsf-leaders",
+          "published": "20260205T183000Z"
+        },
+        {
+          "title": "U . S . sanctions Gaza charities over alleged Hamas ties \u2013 NaturalNews . com",
+          "link": "https://www.naturalnews.com/2026-01-26-us-sanctions-gaza-charities-over-hamas-ties.html",
+          "published": "20260126T130000Z"
+        },
+        {
+          "title": "Myanmar military using commercial paramotors , gyrocopters for attacks : Report",
+          "link": "https://www.siasat.com/myanmar-military-using-commercial-paramotors-gyrocopters-for-attacks-report-3331737/",
+          "published": "20260126T140000Z"
+        },
         {
           "title": "'I just want to be able to sleep': Attacks in Iran rock cities and cut power",
           "link": "https://www.bbc.com/news/articles/cev7llekwllo?at_medium=RSS&at_campaign=rss",
@@ -382,57 +407,42 @@
           "title": "Jeffrey Epstein had two key aides - why do they still control his money and secrets?",
           "link": "https://www.bbc.com/news/articles/cdjm7rxjxneo?at_medium=RSS&at_campaign=rss",
           "published": "Wed, 11 Mar 2026 00:10:20 GMT"
-        },
-        {
-          "title": "Steve Rosenberg: Russia seeks diplomatic and economic gains from Iran war",
-          "link": "https://www.bbc.com/news/articles/c4gjyg0djvmo?at_medium=RSS&at_campaign=rss",
-          "published": "Tue, 10 Mar 2026 19:35:29 GMT"
-        },
-        {
-          "title": "At least six dead in Switzerland bus fire",
-          "link": "https://www.bbc.com/news/articles/c5y4wdlyy9xo?at_medium=RSS&at_campaign=rss",
-          "published": "Tue, 10 Mar 2026 22:35:37 GMT"
-        },
-        {
-          "title": "Georgia voters to pick replacement for Marjorie Taylor Greene in special election",
-          "link": "https://www.bbc.com/news/articles/c77ey1v7jrzo?at_medium=RSS&at_campaign=rss",
-          "published": "Tue, 10 Mar 2026 10:47:08 GMT"
         }
       ],
-      "headline": "'I just want to be able to sleep': Attacks in Iran rock cities and cut power"
+      "headline": "Russian economy withstood pressure from outside German expert"
     },
     "technology": {
-      "last_updated": "2026-03-11T03:16:06Z",
+      "last_updated": "2026-03-11T03:37:19Z",
       "hn_top": [
         {
           "title": "Tony Hoare has died",
           "url": "https://blog.computationalcomplexity.org/2026/03/tony-hoare-1934-2026.html",
-          "score": 1556,
-          "comments": 201
+          "score": 1565,
+          "comments": 203
         },
         {
           "title": "U+237C \u237c Is Azimuth",
           "url": "https://ionathan.ch/2026/02/16/angzarr.html",
-          "score": 179,
-          "comments": 19
+          "score": 185,
+          "comments": 20
         },
         {
           "title": "Zig \u2013 Type Resolution Redesign and Language Changes",
           "url": "https://ziglang.org/devlog/2026/#2026-03-10",
-          "score": 35,
-          "comments": 4
+          "score": 46,
+          "comments": 10
         },
         {
           "title": "Cloudflare crawl endpoint",
           "url": "https://developers.cloudflare.com/changelog/post/2026-03-10-br-crawl-endpoint/",
-          "score": 148,
-          "comments": 71
+          "score": 154,
+          "comments": 78
         },
         {
           "title": "Agents that run while I sleep",
           "url": "https://www.claudecodecamp.com/p/i-m-building-agents-that-run-while-i-sleep",
-          "score": 249,
-          "comments": 208
+          "score": 252,
+          "comments": 219
         }
       ],
       "tech_headlines": [
@@ -465,7 +475,7 @@
       "headline": "Tony Hoare has died"
     },
     "policy": {
-      "last_updated": "2026-03-11T03:16:06Z",
+      "last_updated": "2026-03-11T03:37:19Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -504,7 +514,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-11T03:16:16Z",
+      "last_updated": "2026-03-11T03:37:22Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
