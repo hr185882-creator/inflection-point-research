@@ -1,9 +1,9 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-11T05:32:40Z",
+  "fetched_at": "2026-03-11T05:45:53Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-11T05:32:41Z",
+      "last_updated": "2026-03-11T05:45:54Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
@@ -39,57 +39,57 @@
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 69942.055,
+          "price": 69453.7,
           "prev_close": 69956.93,
-          "change": -14.875,
-          "change_pct": -0.02,
+          "change": -503.23,
+          "change_pct": -0.72,
           "currency": "USD"
         },
         "EURUSD=X": {
           "label": "EUR/USD",
-          "price": 1.1635,
+          "price": 1.1637,
           "prev_close": 1.1614,
-          "change": 0.0021,
-          "change_pct": 0.18,
+          "change": 0.0023,
+          "change_pct": 0.2,
           "currency": "USD"
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 98.772,
+          "price": 98.762,
           "prev_close": 98.826,
-          "change": -0.054,
-          "change_pct": -0.05,
+          "change": -0.064,
+          "change_pct": -0.06,
           "currency": "USD"
         }
       },
       "yield_10y": 4.12,
-      "headline": "SPY -0.16%  |  BTC $69,942  |  10Y 4.12%"
+      "headline": "SPY -0.16%  |  BTC $69,454  |  10Y 4.12%"
     },
     "energy": {
-      "last_updated": "2026-03-11T05:32:49Z",
+      "last_updated": "2026-03-11T05:46:02Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 83.4,
+          "price": 83.7,
           "prev_close": 83.45,
-          "change": -0.05,
-          "change_pct": -0.06,
+          "change": 0.25,
+          "change_pct": 0.3,
           "currency": "USD"
         },
         "NG=F": {
           "label": "Natural Gas ($/MMBtu)",
-          "price": 3.037,
+          "price": 3.045,
           "prev_close": 3.02,
-          "change": 0.017,
-          "change_pct": 0.56,
+          "change": 0.025,
+          "change_pct": 0.83,
           "currency": "USD"
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 84.79,
+          "price": 85.03,
           "prev_close": 85.27,
-          "change": -0.48,
-          "change_pct": -0.56,
+          "change": -0.24,
+          "change_pct": -0.28,
           "currency": "USD"
         },
         "XLE": {
@@ -123,10 +123,10 @@
           "published": "Tue, 03 Mar 2026 09:00:00 EST"
         }
       ],
-      "headline": "WTI $83.40/bbl"
+      "headline": "WTI $83.70/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-11T05:32:50Z",
+      "last_updated": "2026-03-11T05:46:03Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
@@ -187,6 +187,11 @@
       },
       "recent_filings": [
         {
+          "title": "Aclaris Therapeutics, Inc.  (ACRS) \u2014 8-K (2026-03-10)",
+          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Aclaris%20Therapeutics%2C%20Inc.%20%20%28ACRS%29&type=8-K&dateb=&owner=include&count=5",
+          "published": "2026-03-10"
+        },
+        {
           "title": "Motorsport Games Inc.  (MSGM) \u2014 8-K (2026-03-10)",
           "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Motorsport%20Games%20Inc.%20%20%28MSGM%29&type=8-K&dateb=&owner=include&count=5",
           "published": "2026-03-10"
@@ -194,11 +199,6 @@
         {
           "title": "Crown PropTech Acquisitions  (CPTKW) \u2014 8-K (2026-03-10)",
           "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Crown%20PropTech%20Acquisitions%20%20%28CPTKW%29&type=8-K&dateb=&owner=include&count=5",
-          "published": "2026-03-10"
-        },
-        {
-          "title": "Aclaris Therapeutics, Inc.  (ACRS) \u2014 8-K (2026-03-10)",
-          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Aclaris%20Therapeutics%2C%20Inc.%20%20%28ACRS%29&type=8-K&dateb=&owner=include&count=5",
           "published": "2026-03-10"
         },
         {
@@ -215,7 +215,7 @@
       "headline": "NVDA 1.16%  |  MSFT -0.89%"
     },
     "sports": {
-      "last_updated": "2026-03-11T05:32:51Z",
+      "last_updated": "2026-03-11T05:46:04Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -371,7 +371,7 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-11T05:32:52Z",
+      "last_updated": "2026-03-11T05:46:04Z",
       "headlines": [
         {
           "title": "'I just want to be able to sleep': Attacks in Iran rock cities and cut power",
@@ -402,37 +402,37 @@
       "headline": "'I just want to be able to sleep': Attacks in Iran rock cities and cut power"
     },
     "technology": {
-      "last_updated": "2026-03-11T05:32:52Z",
+      "last_updated": "2026-03-11T05:46:04Z",
       "hn_top": [
         {
           "title": "Tony Hoare has died",
           "url": "https://blog.computationalcomplexity.org/2026/03/tony-hoare-1934-2026.html",
-          "score": 1627,
-          "comments": 212
+          "score": 1639,
+          "comments": 213
         },
         {
           "title": "Zig \u2013 Type Resolution Redesign and Language Changes",
           "url": "https://ziglang.org/devlog/2026/#2026-03-10",
-          "score": 101,
-          "comments": 22
+          "score": 103,
+          "comments": 24
         },
         {
           "title": "U+237C \u237c Is Azimuth",
           "url": "https://ionathan.ch/2026/02/16/angzarr.html",
-          "score": 220,
-          "comments": 24
+          "score": 222,
+          "comments": 23
         },
         {
           "title": "Cloudflare crawl endpoint",
           "url": "https://developers.cloudflare.com/changelog/post/2026-03-10-br-crawl-endpoint/",
-          "score": 209,
+          "score": 213,
           "comments": 94
         },
         {
           "title": "Julia Snail \u2013 An Emacs Development Environment for Julia Like Clojure's Cider",
           "url": "https://github.com/gcv/julia-snail",
-          "score": 30,
-          "comments": 1
+          "score": 31,
+          "comments": 2
         }
       ],
       "tech_headlines": [
@@ -465,7 +465,7 @@
       "headline": "Tony Hoare has died"
     },
     "policy": {
-      "last_updated": "2026-03-11T05:32:53Z",
+      "last_updated": "2026-03-11T05:46:05Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -504,7 +504,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-11T05:32:56Z",
+      "last_updated": "2026-03-11T05:46:08Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
