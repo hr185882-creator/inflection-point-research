@@ -1,48 +1,48 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-11T16:46:02Z",
+  "fetched_at": "2026-03-11T17:01:24Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-11T16:46:03Z",
+      "last_updated": "2026-03-11T17:01:25Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
-          "price": 675.34,
+          "price": 676.293,
           "prev_close": 677.18,
-          "change": -1.84,
-          "change_pct": -0.27,
+          "change": -0.887,
+          "change_pct": -0.13,
           "currency": "USD"
         },
         "QQQ": {
           "label": "Nasdaq 100 ETF",
-          "price": 607.385,
+          "price": 608.481,
           "prev_close": 607.77,
-          "change": -0.385,
-          "change_pct": -0.06,
+          "change": 0.711,
+          "change_pct": 0.12,
           "currency": "USD"
         },
         "GLD": {
           "label": "Gold ETF",
-          "price": 475.47,
+          "price": 475.785,
           "prev_close": 477.86,
-          "change": -2.39,
-          "change_pct": -0.5,
+          "change": -2.075,
+          "change_pct": -0.43,
           "currency": "USD"
         },
         "TLT": {
           "label": "20Y Treasury ETF",
-          "price": 87.35,
+          "price": 87.31,
           "prev_close": 88.28,
-          "change": -0.93,
-          "change_pct": -1.05,
+          "change": -0.97,
+          "change_pct": -1.1,
           "currency": "USD"
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 70678.67,
+          "price": 70571.31,
           "prev_close": 69956.93,
-          "change": 721.74,
-          "change_pct": 1.03,
+          "change": 614.38,
+          "change_pct": 0.88,
           "currency": "USD"
         },
         "EURUSD=X": {
@@ -55,112 +55,133 @@
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 99.207,
+          "price": 99.239,
           "prev_close": 98.826,
-          "change": 0.381,
-          "change_pct": 0.39,
+          "change": 0.413,
+          "change_pct": 0.42,
           "currency": "USD"
         }
       },
       "yield_10y": 4.12,
-      "headline": "SPY -0.27%  |  BTC $70,679  |  10Y 4.12%"
+      "headline": "SPY -0.13%  |  BTC $70,571  |  10Y 4.12%"
     },
     "energy": {
-      "last_updated": "2026-03-11T16:46:13Z",
+      "last_updated": "2026-03-11T17:01:35Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 87.59,
+          "price": 87.37,
           "prev_close": 83.45,
-          "change": 4.14,
-          "change_pct": 4.96,
+          "change": 3.92,
+          "change_pct": 4.7,
           "currency": "USD"
         },
         "NG=F": {
           "label": "Natural Gas ($/MMBtu)",
-          "price": 3.14,
+          "price": 3.156,
           "prev_close": 3.02,
-          "change": 0.12,
-          "change_pct": 3.97,
+          "change": 0.136,
+          "change_pct": 4.5,
           "currency": "USD"
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 88.75,
+          "price": 88.71,
           "prev_close": 85.27,
-          "change": 3.48,
-          "change_pct": 4.08,
+          "change": 3.44,
+          "change_pct": 4.03,
           "currency": "USD"
         },
         "XLE": {
           "label": "Energy ETF",
-          "price": 56.66,
+          "price": 56.725,
           "prev_close": 55.6,
-          "change": 1.06,
-          "change_pct": 1.91,
+          "change": 1.125,
+          "change_pct": 2.02,
           "currency": "USD"
         }
       },
-      "headlines": [],
-      "headline": "WTI $87.59/bbl"
+      "headlines": [
+        {
+          "title": "Annual U.S. crude oil exports decrease for first time since 2021",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67324",
+          "published": "Tue, 10 Mar 2026 09:00:00 EST"
+        },
+        {
+          "title": "U.S. exports of major transportation fuels in 2025 were about the same as in 2024",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67304",
+          "published": "Mon, 09 Mar 2026 09:00:00 EST"
+        },
+        {
+          "title": "U.S. electricity generation in 2025 hit a record, again",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67284",
+          "published": "Thu, 05 Mar 2026 09:00:00 EST"
+        },
+        {
+          "title": "U.S. LNG developers sign highest volume of sale and purchase contracts since 2022",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67264",
+          "published": "Tue, 03 Mar 2026 09:00:00 EST"
+        }
+      ],
+      "headline": "WTI $87.37/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-11T16:46:14Z",
+      "last_updated": "2026-03-11T17:01:36Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
-          "price": 185.65,
+          "price": 185.8,
           "prev_close": 184.77,
-          "change": 0.88,
-          "change_pct": 0.48,
+          "change": 1.03,
+          "change_pct": 0.56,
           "currency": "USD"
         },
         "MSFT": {
           "label": "Microsoft",
-          "price": 403.075,
+          "price": 403.846,
           "prev_close": 405.76,
-          "change": -2.685,
-          "change_pct": -0.66,
+          "change": -1.914,
+          "change_pct": -0.47,
           "currency": "USD"
         },
         "AAPL": {
           "label": "Apple",
-          "price": 260.56,
+          "price": 260.679,
           "prev_close": 260.83,
-          "change": -0.27,
-          "change_pct": -0.1,
+          "change": -0.151,
+          "change_pct": -0.06,
           "currency": "USD"
         },
         "META": {
           "label": "Meta",
-          "price": 652.42,
+          "price": 654.02,
           "prev_close": 654.07,
-          "change": -1.65,
-          "change_pct": -0.25,
+          "change": -0.05,
+          "change_pct": -0.01,
           "currency": "USD"
         },
         "TSLA": {
           "label": "Tesla",
-          "price": 407.113,
+          "price": 407.335,
           "prev_close": 399.235,
-          "change": 7.878,
-          "change_pct": 1.97,
+          "change": 8.1,
+          "change_pct": 2.03,
           "currency": "USD"
         },
         "AMZN": {
           "label": "Amazon",
-          "price": 212.85,
+          "price": 212.95,
           "prev_close": 214.33,
-          "change": -1.48,
-          "change_pct": -0.69,
+          "change": -1.38,
+          "change_pct": -0.64,
           "currency": "USD"
         },
         "GOOGL": {
           "label": "Alphabet",
-          "price": 308.98,
+          "price": 309.52,
           "prev_close": 307.04,
-          "change": 1.94,
-          "change_pct": 0.63,
+          "change": 2.48,
+          "change_pct": 0.81,
           "currency": "USD"
         }
       },
@@ -191,10 +212,10 @@
           "published": "2026-03-11"
         }
       ],
-      "headline": "NVDA 0.48%  |  MSFT -0.66%"
+      "headline": "NVDA 0.56%  |  MSFT -0.47%"
     },
     "sports": {
-      "last_updated": "2026-03-11T16:46:15Z",
+      "last_updated": "2026-03-11T17:01:38Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -350,68 +371,78 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-11T16:46:25Z",
+      "last_updated": "2026-03-11T17:01:43Z",
       "headlines": [
+        {
+          "title": "Russian economy withstood pressure from outside German expert",
+          "link": "https://tass.com/economy/2073165",
+          "published": "20260119T140000Z"
+        },
+        {
+          "title": "Sudan : united kingdom Hits  Sudan War Machine  With New Sanctions",
+          "link": "https://allafrica.com/stories/202602060005.html",
+          "published": "20260206T060000Z"
+        },
+        {
+          "title": "UK Sanctions Sudanese Army and RSF Leaders",
+          "link": "https://english.aawsat.com/arab-world/5237657-uk-sanctions-sudanese-army-and-rsf-leaders",
+          "published": "20260205T183000Z"
+        },
+        {
+          "title": "U . S . sanctions Gaza charities over alleged Hamas ties \u2013 NaturalNews . com",
+          "link": "https://www.naturalnews.com/2026-01-26-us-sanctions-gaza-charities-over-hamas-ties.html",
+          "published": "20260126T130000Z"
+        },
+        {
+          "title": "Myanmar military using commercial paramotors , gyrocopters for attacks : Report",
+          "link": "https://www.siasat.com/myanmar-military-using-commercial-paramotors-gyrocopters-for-attacks-report-3331737/",
+          "published": "20260126T140000Z"
+        },
+        {
+          "title": "Bowen: Trump has called for an Iran uprising but the lessons from Iraq in 1991 loom large",
+          "link": "https://www.bbc.com/news/articles/cn0znx4xrl9o?at_medium=RSS&at_campaign=rss",
+          "published": "Wed, 11 Mar 2026 16:45:28 GMT"
+        },
         {
           "title": "Countries agree to record release of emergency oil reserves as prices surge",
           "link": "https://www.bbc.com/news/articles/cly093xxlzzo?at_medium=RSS&at_campaign=rss",
           "published": "Wed, 11 Mar 2026 15:51:11 GMT"
-        },
-        {
-          "title": "'Even under missiles we carry on living' - how young Iranians are coping with war",
-          "link": "https://www.bbc.com/news/articles/c1mj1pyrzryo?at_medium=RSS&at_campaign=rss",
-          "published": "Wed, 11 Mar 2026 16:00:34 GMT"
-        },
-        {
-          "title": "EU and UK demand Israel stop surge in West Bank settler violence since Iran war",
-          "link": "https://www.bbc.com/news/articles/c620vwl97vyo?at_medium=RSS&at_campaign=rss",
-          "published": "Wed, 11 Mar 2026 14:13:52 GMT"
-        },
-        {
-          "title": "Ukraine says it has hit Russian 'missile component' plant",
-          "link": "https://www.bbc.com/news/articles/ckg1eqw30l9o?at_medium=RSS&at_campaign=rss",
-          "published": "Wed, 11 Mar 2026 11:16:02 GMT"
-        },
-        {
-          "title": "French aid worker among three killed in drone strikes in rebel-held DR Congo city",
-          "link": "https://www.bbc.com/news/articles/cvgj8veg0gno?at_medium=RSS&at_campaign=rss",
-          "published": "Wed, 11 Mar 2026 15:24:57 GMT"
         }
       ],
-      "headline": "Countries agree to record release of emergency oil reserves as prices surge"
+      "headline": "Russian economy withstood pressure from outside German expert"
     },
     "technology": {
-      "last_updated": "2026-03-11T16:46:26Z",
+      "last_updated": "2026-03-11T17:01:44Z",
       "hn_top": [
         {
-          "title": "Temporal: A 9-year journey to fix time in JavaScript",
+          "title": "Temporal: A nine-year journey to fix time in JavaScript",
           "url": "https://bloomberg.github.io/js-blog/post/temporal/",
-          "score": 83,
-          "comments": 23
+          "score": 107,
+          "comments": 34
         },
         {
           "title": "Entities enabling scientific fraud at scale are large, resilient, growing (2025)",
           "url": "https://doi.org/10.1073/pnas.2420092122",
-          "score": 153,
-          "comments": 54
-        },
-        {
-          "title": "Lego's 0.002mm specification and its implications for manufacturing (2025)",
-          "url": "https://www.thewave.engineer/articles.html/productivity/legos-0002mm-specification-and-its-implications-for-manufacturing-r120/",
-          "score": 245,
-          "comments": 178
+          "score": 162,
+          "comments": 61
         },
         {
           "title": "Wiz joins Google",
           "url": "https://www.wiz.io/blog/google-closes-deal-to-acquire-wiz",
-          "score": 51,
-          "comments": 17
+          "score": 62,
+          "comments": 30
         },
         {
-          "title": "Microsoft BitNet: 100B Param 1-Bit model for local CPUs",
+          "title": "BitNet: 100B Param 1-Bit model for local CPUs",
           "url": "https://github.com/microsoft/BitNet",
-          "score": 177,
-          "comments": 96
+          "score": 188,
+          "comments": 99
+        },
+        {
+          "title": "Making WebAssembly a first-class language on the Web",
+          "url": "https://hacks.mozilla.org/2026/02/making-webassembly-a-first-class-language-on-the-web/",
+          "score": 61,
+          "comments": 17
         }
       ],
       "tech_headlines": [
@@ -441,10 +472,10 @@
           "published": "Mon, 09 Mar 2026 09:30:00 +0000"
         }
       ],
-      "headline": "Temporal: A 9-year journey to fix time in JavaScript"
+      "headline": "Temporal: A nine-year journey to fix time in JavaScript"
     },
     "policy": {
-      "last_updated": "2026-03-11T16:46:26Z",
+      "last_updated": "2026-03-11T17:01:45Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -483,7 +514,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-11T16:46:30Z",
+      "last_updated": "2026-03-11T17:01:49Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
