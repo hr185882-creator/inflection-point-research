@@ -1,9 +1,9 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-11T01:03:35Z",
+  "fetched_at": "2026-03-11T01:17:12Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-11T01:03:36Z",
+      "last_updated": "2026-03-11T01:17:12Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
@@ -39,57 +39,57 @@
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 70068.7,
+          "price": 70101.83,
           "prev_close": 69956.93,
-          "change": 111.77,
-          "change_pct": 0.16,
+          "change": 144.9,
+          "change_pct": 0.21,
           "currency": "USD"
         },
         "EURUSD=X": {
           "label": "EUR/USD",
-          "price": 1.162,
+          "price": 1.1624,
           "prev_close": 1.1614,
-          "change": 0.0006,
-          "change_pct": 0.05,
+          "change": 0.001,
+          "change_pct": 0.09,
           "currency": "USD"
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 98.864,
+          "price": 98.913,
           "prev_close": 98.826,
-          "change": 0.038,
-          "change_pct": 0.04,
+          "change": 0.087,
+          "change_pct": 0.09,
           "currency": "USD"
         }
       },
       "yield_10y": 4.12,
-      "headline": "SPY -0.16%  |  BTC $70,069  |  10Y 4.12%"
+      "headline": "SPY -0.16%  |  BTC $70,102  |  10Y 4.12%"
     },
     "energy": {
-      "last_updated": "2026-03-11T01:03:46Z",
+      "last_updated": "2026-03-11T01:17:20Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 83.03,
+          "price": 83.99,
           "prev_close": 83.45,
-          "change": -0.42,
-          "change_pct": -0.5,
+          "change": 0.54,
+          "change_pct": 0.65,
           "currency": "USD"
         },
         "NG=F": {
           "label": "Natural Gas ($/MMBtu)",
-          "price": 3.029,
+          "price": 3.037,
           "prev_close": 3.02,
-          "change": 0.009,
-          "change_pct": 0.3,
+          "change": 0.017,
+          "change_pct": 0.56,
           "currency": "USD"
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 85.0,
+          "price": 85.81,
           "prev_close": 85.27,
-          "change": -0.27,
-          "change_pct": -0.32,
+          "change": 0.54,
+          "change_pct": 0.63,
           "currency": "USD"
         },
         "XLE": {
@@ -101,11 +101,32 @@
           "currency": "USD"
         }
       },
-      "headlines": [],
-      "headline": "WTI $83.03/bbl"
+      "headlines": [
+        {
+          "title": "Annual U.S. crude oil exports decrease for first time since 2021",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67324",
+          "published": "Tue, 10 Mar 2026 09:00:00 EST"
+        },
+        {
+          "title": "U.S. exports of major transportation fuels in 2025 were about the same as in 2024",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67304",
+          "published": "Mon, 09 Mar 2026 09:00:00 EST"
+        },
+        {
+          "title": "U.S. electricity generation in 2025 hit a record, again",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67284",
+          "published": "Thu, 05 Mar 2026 09:00:00 EST"
+        },
+        {
+          "title": "U.S. LNG developers sign highest volume of sale and purchase contracts since 2022",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67264",
+          "published": "Tue, 03 Mar 2026 09:00:00 EST"
+        }
+      ],
+      "headline": "WTI $83.99/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-11T01:03:47Z",
+      "last_updated": "2026-03-11T01:17:28Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
@@ -194,7 +215,7 @@
       "headline": "NVDA 1.16%  |  MSFT -0.89%"
     },
     "sports": {
-      "last_updated": "2026-03-11T01:03:48Z",
+      "last_updated": "2026-03-11T01:17:29Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -214,30 +235,30 @@
             {
               "home": "PHI",
               "away": "MEM",
-              "home_score": "100",
-              "away_score": "109",
-              "status": "11:05 - 4th"
+              "home_score": "114",
+              "away_score": "115",
+              "status": "7:07 - 4th"
             },
             {
               "home": "BKN",
               "away": "DET",
-              "home_score": "40",
-              "away_score": "73",
-              "status": "Halftime"
+              "home_score": "48",
+              "away_score": "76",
+              "status": "9:08 - 3rd"
             },
             {
               "home": "MIA",
               "away": "WSH",
-              "home_score": "87",
-              "away_score": "70",
-              "status": "7:59 - 3rd"
+              "home_score": "102",
+              "away_score": "76",
+              "status": "4:37 - 3rd"
             },
             {
               "home": "ATL",
               "away": "DAL",
-              "home_score": "84",
-              "away_score": "69",
-              "status": "5:34 - 3rd"
+              "home_score": "95",
+              "away_score": "89",
+              "status": "7.7 - 3rd"
             }
           ]
         },
@@ -350,7 +371,7 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-11T01:03:48Z",
+      "last_updated": "2026-03-11T01:17:29Z",
       "headlines": [
         {
           "title": "'I just want to be able to sleep': Attacks in Iran rock cities and cut power",
@@ -381,37 +402,37 @@
       "headline": "'I just want to be able to sleep': Attacks in Iran rock cities and cut power"
     },
     "technology": {
-      "last_updated": "2026-03-11T01:03:49Z",
+      "last_updated": "2026-03-11T01:17:30Z",
       "hn_top": [
         {
           "title": "Tony Hoare has died",
           "url": "https://blog.computationalcomplexity.org/2026/03/tony-hoare-1934-2026.html",
-          "score": 1453,
-          "comments": 196
+          "score": 1460,
+          "comments": 198
         },
         {
           "title": "U+237C \u237c Is Azimuth",
           "url": "https://ionathan.ch/2026/02/16/angzarr.html",
-          "score": 108,
+          "score": 114,
           "comments": 9
         },
         {
           "title": "Cloudflare Crawl Endpoint",
           "url": "https://developers.cloudflare.com/changelog/post/2026-03-10-br-crawl-endpoint/",
-          "score": 93,
-          "comments": 46
+          "score": 96,
+          "comments": 53
         },
         {
           "title": "Agents that run while I sleep",
           "url": "https://www.claudecodecamp.com/p/i-m-building-agents-that-run-while-i-sleep",
-          "score": 209,
-          "comments": 162
+          "score": 214,
+          "comments": 169
         },
         {
           "title": "Yann LeCun raises $1B to build AI that understands the physical world",
           "url": "https://www.wired.com/story/yann-lecun-raises-dollar1-billion-to-build-ai-that-understands-the-physical-world/",
-          "score": 314,
-          "comments": 318
+          "score": 320,
+          "comments": 321
         }
       ],
       "tech_headlines": [
@@ -444,7 +465,7 @@
       "headline": "Tony Hoare has died"
     },
     "policy": {
-      "last_updated": "2026-03-11T01:03:49Z",
+      "last_updated": "2026-03-11T01:17:30Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -483,7 +504,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-11T01:03:58Z",
+      "last_updated": "2026-03-11T01:17:31Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
