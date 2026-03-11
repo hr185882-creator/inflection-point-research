@@ -1,9 +1,9 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-11T12:16:59Z",
+  "fetched_at": "2026-03-11T12:32:29Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-11T12:17:00Z",
+      "last_updated": "2026-03-11T12:32:30Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
@@ -39,10 +39,10 @@
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 69143.445,
+          "price": 69393.76,
           "prev_close": 69956.93,
-          "change": -813.485,
-          "change_pct": -1.16,
+          "change": -563.17,
+          "change_pct": -0.81,
           "currency": "USD"
         },
         "EURUSD=X": {
@@ -55,41 +55,41 @@
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 99.031,
+          "price": 99.033,
           "prev_close": 98.826,
-          "change": 0.205,
+          "change": 0.207,
           "change_pct": 0.21,
           "currency": "USD"
         }
       },
       "yield_10y": 4.12,
-      "headline": "SPY -0.16%  |  BTC $69,143  |  10Y 4.12%"
+      "headline": "SPY -0.16%  |  BTC $69,394  |  10Y 4.12%"
     },
     "energy": {
-      "last_updated": "2026-03-11T12:17:11Z",
+      "last_updated": "2026-03-11T12:32:38Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 86.92,
+          "price": 86.94,
           "prev_close": 83.45,
-          "change": 3.47,
-          "change_pct": 4.16,
+          "change": 3.49,
+          "change_pct": 4.18,
           "currency": "USD"
         },
         "NG=F": {
           "label": "Natural Gas ($/MMBtu)",
-          "price": 3.097,
+          "price": 3.1,
           "prev_close": 3.02,
-          "change": 0.077,
-          "change_pct": 2.55,
+          "change": 0.08,
+          "change_pct": 2.65,
           "currency": "USD"
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 87.62,
+          "price": 87.82,
           "prev_close": 85.27,
-          "change": 2.35,
-          "change_pct": 2.76,
+          "change": 2.55,
+          "change_pct": 2.99,
           "currency": "USD"
         },
         "XLE": {
@@ -101,11 +101,32 @@
           "currency": "USD"
         }
       },
-      "headlines": [],
-      "headline": "WTI $86.92/bbl"
+      "headlines": [
+        {
+          "title": "Annual U.S. crude oil exports decrease for first time since 2021",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67324",
+          "published": "Tue, 10 Mar 2026 09:00:00 EST"
+        },
+        {
+          "title": "U.S. exports of major transportation fuels in 2025 were about the same as in 2024",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67304",
+          "published": "Mon, 09 Mar 2026 09:00:00 EST"
+        },
+        {
+          "title": "U.S. electricity generation in 2025 hit a record, again",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67284",
+          "published": "Thu, 05 Mar 2026 09:00:00 EST"
+        },
+        {
+          "title": "U.S. LNG developers sign highest volume of sale and purchase contracts since 2022",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67264",
+          "published": "Tue, 03 Mar 2026 09:00:00 EST"
+        }
+      ],
+      "headline": "WTI $86.94/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-11T12:17:12Z",
+      "last_updated": "2026-03-11T12:32:39Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
@@ -166,13 +187,13 @@
       },
       "recent_filings": [
         {
-          "title": "Sonos Inc  (SONO) \u2014 8-K (2026-03-11)",
-          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Sonos%20Inc%20%20%28SONO%29&type=8-K&dateb=&owner=include&count=5",
+          "title": "Pangaea Logistics Solutions Ltd.  (PANL) \u2014 8-K (2026-03-11)",
+          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Pangaea%20Logistics%20Solutions%20Ltd.%20%20%28PANL%29&type=8-K&dateb=&owner=include&count=5",
           "published": "2026-03-11"
         },
         {
-          "title": "Pangaea Logistics Solutions Ltd.  (PANL) \u2014 8-K (2026-03-11)",
-          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Pangaea%20Logistics%20Solutions%20Ltd.%20%20%28PANL%29&type=8-K&dateb=&owner=include&count=5",
+          "title": "Sonos Inc  (SONO) \u2014 8-K (2026-03-11)",
+          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Sonos%20Inc%20%20%28SONO%29&type=8-K&dateb=&owner=include&count=5",
           "published": "2026-03-11"
         },
         {
@@ -186,15 +207,15 @@
           "published": "2026-03-11"
         },
         {
-          "title": "BROADWIND, INC.  (BWEN) \u2014 8-K (2026-03-11)",
-          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=BROADWIND%2C%20INC.%20%20%28BWEN%29&type=8-K&dateb=&owner=include&count=5",
+          "title": "Marpai, Inc.  (MRAI) \u2014 8-K (2026-03-11)",
+          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Marpai%2C%20Inc.%20%20%28MRAI%29&type=8-K&dateb=&owner=include&count=5",
           "published": "2026-03-11"
         }
       ],
       "headline": "NVDA 1.16%  |  MSFT -0.89%"
     },
     "sports": {
-      "last_updated": "2026-03-11T12:17:13Z",
+      "last_updated": "2026-03-11T12:32:40Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -350,12 +371,17 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-11T12:17:23Z",
+      "last_updated": "2026-03-11T12:32:40Z",
       "headlines": [
         {
-          "title": "Steve Rosenberg: Russia seeks diplomatic and economic gains from Iran war",
-          "link": "https://www.bbc.com/news/articles/c4gjyg0djvmo?at_medium=RSS&at_campaign=rss",
-          "published": "Tue, 10 Mar 2026 19:35:29 GMT"
+          "title": "G7 welcomes potential record release of oil reserves in bid to curb soaring prices",
+          "link": "https://www.bbc.com/news/articles/cly093xxlzzo?at_medium=RSS&at_campaign=rss",
+          "published": "Wed, 11 Mar 2026 12:07:11 GMT"
+        },
+        {
+          "title": "Ukraine says it has hit Russian 'missile component' plant",
+          "link": "https://www.bbc.com/news/articles/ckg1eqw30l9o?at_medium=RSS&at_campaign=rss",
+          "published": "Wed, 11 Mar 2026 11:16:02 GMT"
         },
         {
           "title": "Jeffrey Epstein had two key aides - why do they still control his money and secrets?",
@@ -371,47 +397,42 @@
           "title": "Member of Iranian football delegation granted Australian asylum changes her mind",
           "link": "https://www.bbc.com/news/articles/c93j2492d0do?at_medium=RSS&at_campaign=rss",
           "published": "Wed, 11 Mar 2026 04:14:40 GMT"
-        },
-        {
-          "title": "Mugabe's son drops bail request - what has happened to the family after losing power",
-          "link": "https://www.bbc.com/news/articles/cp32xx35lwwo?at_medium=RSS&at_campaign=rss",
-          "published": "Wed, 11 Mar 2026 10:31:57 GMT"
         }
       ],
-      "headline": "Steve Rosenberg: Russia seeks diplomatic and economic gains from Iran war"
+      "headline": "G7 welcomes potential record release of oil reserves in bid to curb soaring prices"
     },
     "technology": {
-      "last_updated": "2026-03-11T12:17:24Z",
+      "last_updated": "2026-03-11T12:32:41Z",
       "hn_top": [
         {
           "title": "Building a TB-303 from Scratch",
           "url": "https://loopmaster.xyz/tutorials/tb303-from-scratch",
-          "score": 87,
-          "comments": 22
+          "score": 98,
+          "comments": 28
         },
         {
           "title": "Zig \u2013 Type Resolution Redesign and Language Changes",
           "url": "https://ziglang.org/devlog/2026/#2026-03-10",
-          "score": 282,
-          "comments": 109
+          "score": 286,
+          "comments": 113
         },
         {
           "title": "Create value for others and don\u2019t worry about the returns",
           "url": "https://geohot.github.io//blog/jekyll/update/2026/03/11/running-69-agents.html",
-          "score": 413,
-          "comments": 251
+          "score": 430,
+          "comments": 263
         },
         {
           "title": "U+237C \u237c Is Azimuth",
           "url": "https://ionathan.ch/2026/02/16/angzarr.html",
-          "score": 330,
-          "comments": 47
+          "score": 336,
+          "comments": 51
         },
         {
           "title": "Cloudflare crawl endpoint",
           "url": "https://developers.cloudflare.com/changelog/post/2026-03-10-br-crawl-endpoint/",
-          "score": 335,
-          "comments": 131
+          "score": 342,
+          "comments": 133
         }
       ],
       "tech_headlines": [
@@ -444,7 +465,7 @@
       "headline": "Building a TB-303 from Scratch"
     },
     "policy": {
-      "last_updated": "2026-03-11T12:17:24Z",
+      "last_updated": "2026-03-11T12:32:41Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -483,7 +504,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-11T12:17:27Z",
+      "last_updated": "2026-03-11T12:32:44Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
