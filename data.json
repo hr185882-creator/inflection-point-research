@@ -1,95 +1,95 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-11T18:02:14Z",
+  "fetched_at": "2026-03-11T18:16:03Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-11T18:02:14Z",
+      "last_updated": "2026-03-11T18:16:04Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
-          "price": 674.9,
+          "price": 674.42,
           "prev_close": 677.18,
-          "change": -2.28,
-          "change_pct": -0.34,
+          "change": -2.76,
+          "change_pct": -0.41,
           "currency": "USD"
         },
         "QQQ": {
           "label": "Nasdaq 100 ETF",
-          "price": 606.83,
+          "price": 605.875,
           "prev_close": 607.77,
-          "change": -0.94,
-          "change_pct": -0.15,
+          "change": -1.895,
+          "change_pct": -0.31,
           "currency": "USD"
         },
         "GLD": {
           "label": "Gold ETF",
-          "price": 475.005,
+          "price": 475.3,
           "prev_close": 477.86,
-          "change": -2.855,
-          "change_pct": -0.6,
+          "change": -2.56,
+          "change_pct": -0.54,
           "currency": "USD"
         },
         "TLT": {
           "label": "20Y Treasury ETF",
-          "price": 87.245,
+          "price": 87.325,
           "prev_close": 88.28,
-          "change": -1.035,
-          "change_pct": -1.17,
+          "change": -0.955,
+          "change_pct": -1.08,
           "currency": "USD"
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 70801.61,
+          "price": 70713.72,
           "prev_close": 69956.93,
-          "change": 844.68,
-          "change_pct": 1.21,
+          "change": 756.79,
+          "change_pct": 1.08,
           "currency": "USD"
         },
         "EURUSD=X": {
           "label": "EUR/USD",
-          "price": 1.1574,
+          "price": 1.1573,
           "prev_close": 1.1614,
-          "change": -0.004,
-          "change_pct": -0.34,
+          "change": -0.0041,
+          "change_pct": -0.35,
           "currency": "USD"
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 99.227,
+          "price": 99.235,
           "prev_close": 98.826,
-          "change": 0.401,
+          "change": 0.409,
           "change_pct": 0.41,
           "currency": "USD"
         }
       },
       "yield_10y": 4.12,
-      "headline": "SPY -0.34%  |  BTC $70,802  |  10Y 4.12%"
+      "headline": "SPY -0.41%  |  BTC $70,714  |  10Y 4.12%"
     },
     "energy": {
-      "last_updated": "2026-03-11T18:02:24Z",
+      "last_updated": "2026-03-11T18:16:14Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 87.5,
+          "price": 87.83,
           "prev_close": 83.45,
-          "change": 4.05,
-          "change_pct": 4.85,
+          "change": 4.38,
+          "change_pct": 5.25,
           "currency": "USD"
         },
         "NG=F": {
           "label": "Natural Gas ($/MMBtu)",
-          "price": 3.196,
+          "price": 3.194,
           "prev_close": 3.02,
-          "change": 0.176,
-          "change_pct": 5.83,
+          "change": 0.174,
+          "change_pct": 5.76,
           "currency": "USD"
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 88.85,
+          "price": 89.03,
           "prev_close": 85.27,
-          "change": 3.58,
-          "change_pct": 4.2,
+          "change": 3.76,
+          "change_pct": 4.41,
           "currency": "USD"
         },
         "XLE": {
@@ -123,65 +123,65 @@
           "published": "Tue, 03 Mar 2026 09:00:00 EST"
         }
       ],
-      "headline": "WTI $87.50/bbl"
+      "headline": "WTI $87.83/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-11T18:02:25Z",
+      "last_updated": "2026-03-11T18:16:15Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
-          "price": 185.11,
+          "price": 184.862,
           "prev_close": 184.77,
-          "change": 0.34,
-          "change_pct": 0.18,
+          "change": 0.092,
+          "change_pct": 0.05,
           "currency": "USD"
         },
         "MSFT": {
           "label": "Microsoft",
-          "price": 403.365,
+          "price": 403.54,
           "prev_close": 405.76,
-          "change": -2.395,
-          "change_pct": -0.59,
+          "change": -2.22,
+          "change_pct": -0.55,
           "currency": "USD"
         },
         "AAPL": {
           "label": "Apple",
-          "price": 260.305,
+          "price": 259.98,
           "prev_close": 260.83,
-          "change": -0.525,
-          "change_pct": -0.2,
+          "change": -0.85,
+          "change_pct": -0.33,
           "currency": "USD"
         },
         "META": {
           "label": "Meta",
-          "price": 651.93,
+          "price": 651.15,
           "prev_close": 654.07,
-          "change": -2.14,
-          "change_pct": -0.33,
+          "change": -2.92,
+          "change_pct": -0.45,
           "currency": "USD"
         },
         "TSLA": {
           "label": "Tesla",
-          "price": 405.525,
+          "price": 404.51,
           "prev_close": 399.235,
-          "change": 6.29,
-          "change_pct": 1.58,
+          "change": 5.275,
+          "change_pct": 1.32,
           "currency": "USD"
         },
         "AMZN": {
           "label": "Amazon",
-          "price": 212.16,
+          "price": 211.82,
           "prev_close": 214.33,
-          "change": -2.17,
-          "change_pct": -1.01,
+          "change": -2.51,
+          "change_pct": -1.17,
           "currency": "USD"
         },
         "GOOGL": {
           "label": "Alphabet",
-          "price": 308.29,
+          "price": 307.905,
           "prev_close": 307.04,
-          "change": 1.25,
-          "change_pct": 0.41,
+          "change": 0.865,
+          "change_pct": 0.28,
           "currency": "USD"
         }
       },
@@ -212,10 +212,10 @@
           "published": "2026-03-11"
         }
       ],
-      "headline": "NVDA 0.18%  |  MSFT -0.59%"
+      "headline": "NVDA 0.05%  |  MSFT -0.55%"
     },
     "sports": {
-      "last_updated": "2026-03-11T18:02:26Z",
+      "last_updated": "2026-03-11T18:16:16Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -270,28 +270,28 @@
               "away": "TB",
               "home_score": "1",
               "away_score": "0",
-              "status": "Top 4th"
+              "status": "Bot 4th"
             },
             {
               "home": "BAL",
               "away": "PIT",
               "home_score": "0",
               "away_score": "0",
-              "status": "Bot 4th"
+              "status": "Bot 5th"
             },
             {
               "home": "MIN",
               "away": "DET",
               "home_score": "0",
               "away_score": "1",
-              "status": "Bot 4th"
+              "status": "Top 5th"
             },
             {
               "home": "WSH",
               "away": "STL",
               "home_score": "1",
               "away_score": "0",
-              "status": "Top 4th"
+              "status": "Top 5th"
             }
           ]
         }
@@ -299,16 +299,16 @@
       "injuries": {
         "nfl": [
           {
+            "player": "Trey Benson",
+            "team": "",
+            "status": "Questionable",
+            "detail": "Benson (knee) faces increased competition for touches in 2026 after Tyler Allgeier agreed to a two-year, $12.25 million contract with the Cardinals signed and James Conner (knee) restructured his contact to remain with the team, Darren Urban of the team's official site reports."
+          },
+          {
             "player": "Channing Tindall",
             "team": "",
             "status": "Active",
             "detail": ""
-          },
-          {
-            "player": "Bam Knight",
-            "team": "",
-            "status": "Active",
-            "detail": "Knight is re-signing with the Cardinals on a one-year contract, Mike Garafolo of NFL Network reports."
           },
           {
             "player": "Tyrone Wheatley Jr.",
@@ -371,7 +371,7 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-11T18:02:34Z",
+      "last_updated": "2026-03-11T18:16:26Z",
       "headlines": [
         {
           "title": "Bowen: Trump has called for an Iran uprising but the lessons from Iraq in 1991 loom large",
@@ -402,37 +402,37 @@
       "headline": "Bowen: Trump has called for an Iran uprising but the lessons from Iraq in 1991 loom large"
     },
     "technology": {
-      "last_updated": "2026-03-11T18:02:35Z",
+      "last_updated": "2026-03-11T18:16:27Z",
       "hn_top": [
         {
           "title": "Temporal: A nine-year journey to fix time in JavaScript",
           "url": "https://bloomberg.github.io/js-blog/post/temporal/",
-          "score": 185,
-          "comments": 77
+          "score": 202,
+          "comments": 84
         },
         {
           "title": "Making WebAssembly a first-class language on the Web",
           "url": "https://hacks.mozilla.org/2026/02/making-webassembly-a-first-class-language-on-the-web/",
-          "score": 123,
-          "comments": 45
+          "score": 138,
+          "comments": 56
         },
         {
           "title": "Entities enabling scientific fraud at scale are large, resilient, growing (2025)",
           "url": "https://doi.org/10.1073/pnas.2420092122",
-          "score": 179,
-          "comments": 84
+          "score": 185,
+          "comments": 89
         },
         {
           "title": "BitNet: 100B Param 1-Bit model for local CPUs",
           "url": "https://github.com/microsoft/BitNet",
-          "score": 215,
-          "comments": 112
+          "score": 224,
+          "comments": 113
         },
         {
           "title": "Where Some See Strings, She Sees a Space-Time Made of Fractals",
           "url": "https://www.quantamagazine.org/where-some-see-strings-she-sees-a-space-time-made-of-fractals-20260311/",
-          "score": 52,
-          "comments": 3
+          "score": 56,
+          "comments": 5
         }
       ],
       "tech_headlines": [
@@ -465,7 +465,7 @@
       "headline": "Temporal: A nine-year journey to fix time in JavaScript"
     },
     "policy": {
-      "last_updated": "2026-03-11T18:02:35Z",
+      "last_updated": "2026-03-11T18:16:27Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -504,7 +504,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-11T18:02:42Z",
+      "last_updated": "2026-03-11T18:16:33Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
