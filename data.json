@@ -1,166 +1,166 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-11T15:06:35Z",
+  "fetched_at": "2026-03-11T15:17:11Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-11T15:06:36Z",
+      "last_updated": "2026-03-11T15:17:12Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
-          "price": 677.27,
+          "price": 675.21,
           "prev_close": 677.18,
-          "change": 0.09,
-          "change_pct": 0.01,
+          "change": -1.97,
+          "change_pct": -0.29,
           "currency": "USD"
         },
         "QQQ": {
           "label": "Nasdaq 100 ETF",
-          "price": 609.42,
+          "price": 607.16,
           "prev_close": 607.77,
-          "change": 1.65,
-          "change_pct": 0.27,
+          "change": -0.61,
+          "change_pct": -0.1,
           "currency": "USD"
         },
         "GLD": {
           "label": "Gold ETF",
-          "price": 475.755,
+          "price": 475.46,
           "prev_close": 477.86,
-          "change": -2.105,
-          "change_pct": -0.44,
+          "change": -2.4,
+          "change_pct": -0.5,
           "currency": "USD"
         },
         "TLT": {
           "label": "20Y Treasury ETF",
-          "price": 87.455,
+          "price": 87.415,
           "prev_close": 88.28,
-          "change": -0.825,
-          "change_pct": -0.93,
+          "change": -0.865,
+          "change_pct": -0.98,
           "currency": "USD"
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 70414.2,
+          "price": 70123.39,
           "prev_close": 69956.93,
-          "change": 457.27,
-          "change_pct": 0.65,
+          "change": 166.46,
+          "change_pct": 0.24,
           "currency": "USD"
         },
         "EURUSD=X": {
           "label": "EUR/USD",
-          "price": 1.1583,
+          "price": 1.1581,
           "prev_close": 1.1614,
-          "change": -0.0031,
-          "change_pct": -0.27,
+          "change": -0.0033,
+          "change_pct": -0.28,
           "currency": "USD"
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 99.107,
+          "price": 99.161,
           "prev_close": 98.826,
-          "change": 0.281,
-          "change_pct": 0.28,
+          "change": 0.335,
+          "change_pct": 0.34,
           "currency": "USD"
         }
       },
       "yield_10y": 4.12,
-      "headline": "SPY 0.01%  |  BTC $70,414  |  10Y 4.12%"
+      "headline": "SPY -0.29%  |  BTC $70,123  |  10Y 4.12%"
     },
     "energy": {
-      "last_updated": "2026-03-11T15:06:44Z",
+      "last_updated": "2026-03-11T15:17:22Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 86.27,
+          "price": 86.05,
           "prev_close": 83.45,
-          "change": 2.82,
-          "change_pct": 3.38,
+          "change": 2.6,
+          "change_pct": 3.12,
           "currency": "USD"
         },
         "NG=F": {
           "label": "Natural Gas ($/MMBtu)",
-          "price": 3.136,
+          "price": 3.148,
           "prev_close": 3.02,
-          "change": 0.116,
-          "change_pct": 3.84,
+          "change": 0.128,
+          "change_pct": 4.24,
           "currency": "USD"
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 87.84,
+          "price": 87.76,
           "prev_close": 85.27,
-          "change": 2.57,
-          "change_pct": 3.01,
+          "change": 2.49,
+          "change_pct": 2.92,
           "currency": "USD"
         },
         "XLE": {
           "label": "Energy ETF",
-          "price": 56.66,
+          "price": 56.57,
           "prev_close": 55.6,
-          "change": 1.06,
-          "change_pct": 1.91,
+          "change": 0.97,
+          "change_pct": 1.74,
           "currency": "USD"
         }
       },
       "headlines": [],
-      "headline": "WTI $86.27/bbl"
+      "headline": "WTI $86.05/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-11T15:06:45Z",
+      "last_updated": "2026-03-11T15:17:23Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
-          "price": 186.353,
+          "price": 185.57,
           "prev_close": 184.77,
-          "change": 1.583,
-          "change_pct": 0.86,
+          "change": 0.8,
+          "change_pct": 0.43,
           "currency": "USD"
         },
         "MSFT": {
           "label": "Microsoft",
-          "price": 403.81,
+          "price": 401.81,
           "prev_close": 405.76,
-          "change": -1.95,
-          "change_pct": -0.48,
+          "change": -3.95,
+          "change_pct": -0.97,
           "currency": "USD"
         },
         "AAPL": {
           "label": "Apple",
-          "price": 260.72,
+          "price": 260.24,
           "prev_close": 260.83,
-          "change": -0.11,
-          "change_pct": -0.04,
+          "change": -0.59,
+          "change_pct": -0.23,
           "currency": "USD"
         },
         "META": {
           "label": "Meta",
-          "price": 652.05,
+          "price": 649.53,
           "prev_close": 654.07,
-          "change": -2.02,
-          "change_pct": -0.31,
+          "change": -4.54,
+          "change_pct": -0.69,
           "currency": "USD"
         },
         "TSLA": {
           "label": "Tesla",
-          "price": 411.49,
+          "price": 409.55,
           "prev_close": 399.235,
-          "change": 12.255,
-          "change_pct": 3.07,
+          "change": 10.315,
+          "change_pct": 2.58,
           "currency": "USD"
         },
         "AMZN": {
           "label": "Amazon",
-          "price": 213.348,
+          "price": 212.422,
           "prev_close": 214.33,
-          "change": -0.982,
-          "change_pct": -0.46,
+          "change": -1.908,
+          "change_pct": -0.89,
           "currency": "USD"
         },
         "GOOGL": {
           "label": "Alphabet",
-          "price": 310.225,
+          "price": 308.93,
           "prev_close": 307.04,
-          "change": 3.185,
-          "change_pct": 1.04,
+          "change": 1.89,
+          "change_pct": 0.62,
           "currency": "USD"
         }
       },
@@ -191,10 +191,10 @@
           "published": "2026-03-11"
         }
       ],
-      "headline": "NVDA 0.86%  |  MSFT -0.48%"
+      "headline": "NVDA 0.43%  |  MSFT -0.97%"
     },
     "sports": {
-      "last_updated": "2026-03-11T15:06:46Z",
+      "last_updated": "2026-03-11T15:17:24Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -212,32 +212,32 @@
           "label": "NBA",
           "games": [
             {
-              "home": "PHI",
-              "away": "MEM",
-              "home_score": "139",
-              "away_score": "129",
-              "status": "Final"
+              "home": "ORL",
+              "away": "CLE",
+              "home_score": "0",
+              "away_score": "0",
+              "status": "3/11 - 7:30 PM EDT"
             },
             {
-              "home": "BKN",
-              "away": "DET",
-              "home_score": "100",
-              "away_score": "138",
-              "status": "Final"
+              "home": "NO",
+              "away": "TOR",
+              "home_score": "0",
+              "away_score": "0",
+              "status": "3/11 - 8:00 PM EDT"
             },
             {
-              "home": "MIA",
-              "away": "WSH",
-              "home_score": "150",
-              "away_score": "129",
-              "status": "Final"
+              "home": "UTAH",
+              "away": "NY",
+              "home_score": "0",
+              "away_score": "0",
+              "status": "3/11 - 9:00 PM EDT"
             },
             {
-              "home": "ATL",
-              "away": "DAL",
-              "home_score": "124",
-              "away_score": "112",
-              "status": "Final"
+              "home": "DEN",
+              "away": "HOU",
+              "home_score": "0",
+              "away_score": "0",
+              "status": "3/11 - 10:00 PM EDT"
             }
           ]
         },
@@ -245,32 +245,32 @@
           "label": "MLB",
           "games": [
             {
-              "home": "BOS",
+              "home": "ATL",
+              "away": "TB",
+              "home_score": "0",
+              "away_score": "0",
+              "status": "3/11 - 1:05 PM EDT"
+            },
+            {
+              "home": "BAL",
+              "away": "PIT",
+              "home_score": "0",
+              "away_score": "0",
+              "status": "3/11 - 1:05 PM EDT"
+            },
+            {
+              "home": "MIN",
               "away": "DET",
-              "home_score": "2",
-              "away_score": "7",
-              "status": "Final"
+              "home_score": "0",
+              "away_score": "0",
+              "status": "3/11 - 1:05 PM EDT"
             },
             {
-              "home": "HOU",
-              "away": "BAL",
-              "home_score": "7",
-              "away_score": "6",
-              "status": "Final"
-            },
-            {
-              "home": "PHI",
-              "away": "NYY",
-              "home_score": "2",
-              "away_score": "4",
-              "status": "Final"
-            },
-            {
-              "home": "TB",
-              "away": "MIN",
-              "home_score": "5",
-              "away_score": "6",
-              "status": "Final"
+              "home": "WSH",
+              "away": "STL",
+              "home_score": "0",
+              "away_score": "0",
+              "status": "3/11 - 1:05 PM EDT"
             }
           ]
         }
@@ -350,33 +350,8 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-11T15:06:57Z",
+      "last_updated": "2026-03-11T15:17:24Z",
       "headlines": [
-        {
-          "title": "Russian economy withstood pressure from outside German expert",
-          "link": "https://tass.com/economy/2073165",
-          "published": "20260119T140000Z"
-        },
-        {
-          "title": "Sudan : united kingdom Hits  Sudan War Machine  With New Sanctions",
-          "link": "https://allafrica.com/stories/202602060005.html",
-          "published": "20260206T060000Z"
-        },
-        {
-          "title": "UK Sanctions Sudanese Army and RSF Leaders",
-          "link": "https://english.aawsat.com/arab-world/5237657-uk-sanctions-sudanese-army-and-rsf-leaders",
-          "published": "20260205T183000Z"
-        },
-        {
-          "title": "U . S . sanctions Gaza charities over alleged Hamas ties \u2013 NaturalNews . com",
-          "link": "https://www.naturalnews.com/2026-01-26-us-sanctions-gaza-charities-over-hamas-ties.html",
-          "published": "20260126T130000Z"
-        },
-        {
-          "title": "Myanmar military using commercial paramotors , gyrocopters for attacks : Report",
-          "link": "https://www.siasat.com/myanmar-military-using-commercial-paramotors-gyrocopters-for-attacks-report-3331737/",
-          "published": "20260126T140000Z"
-        },
         {
           "title": "Countries agree to record release of emergency oil reserves as prices surge",
           "link": "https://www.bbc.com/news/articles/cly093xxlzzo?at_medium=RSS&at_campaign=rss",
@@ -386,42 +361,57 @@
           "title": "EU and UK demand Israel stop surge in West Bank settler violence since Iran war",
           "link": "https://www.bbc.com/news/articles/c620vwl97vyo?at_medium=RSS&at_campaign=rss",
           "published": "Wed, 11 Mar 2026 14:13:52 GMT"
+        },
+        {
+          "title": "Ukraine says it has hit Russian 'missile component' plant",
+          "link": "https://www.bbc.com/news/articles/ckg1eqw30l9o?at_medium=RSS&at_campaign=rss",
+          "published": "Wed, 11 Mar 2026 11:16:02 GMT"
+        },
+        {
+          "title": "French aid worker among three killed in drone strikes in rebel-held DR Congo city",
+          "link": "https://www.bbc.com/news/articles/cvgj8veg0gno?at_medium=RSS&at_campaign=rss",
+          "published": "Wed, 11 Mar 2026 14:35:31 GMT"
+        },
+        {
+          "title": "Jeffrey Epstein had two key aides - why do they still control his money and secrets?",
+          "link": "https://www.bbc.com/news/articles/cdjm7rxjxneo?at_medium=RSS&at_campaign=rss",
+          "published": "Wed, 11 Mar 2026 00:10:20 GMT"
         }
       ],
-      "headline": "Russian economy withstood pressure from outside German expert"
+      "headline": "Countries agree to record release of emergency oil reserves as prices surge"
     },
     "technology": {
-      "last_updated": "2026-03-11T15:06:57Z",
+      "last_updated": "2026-03-11T15:17:25Z",
       "hn_top": [
         {
           "title": "Lego's 0.002 mm Specification and Its Implications for Manufacturing (2025)",
           "url": "https://www.thewave.engineer/articles.html/productivity/legos-0002mm-specification-and-its-implications-for-manufacturing-r120/",
-          "score": 128,
-          "comments": 87
+          "score": 154,
+          "comments": 92
         },
         {
           "title": "Microsoft BitNet: 100B Param 1-Bit model for local CPUs",
           "url": "https://github.com/microsoft/BitNet",
-          "score": 126,
-          "comments": 74
+          "score": 138,
+          "comments": 77
         },
         {
           "title": "The entities enabling scientific fraud at scale are large, resilient and growing",
           "url": "https://doi.org/10.1073/pnas.2420092122",
-          "score": 56,
-          "comments": 19
-        },
-        {
-          "title": "Whistleblower: DOGE member took Social Security data to new job",
-          "url": "https://www.washingtonpost.com/politics/2026/03/10/social-security-data-breach-doge-2/",
-          "score": 221,
-          "comments": 89
+          "score": 66,
+          "comments": 21
         },
         {
           "title": "Faster Asin() Was Hiding in Plain Sight",
           "url": "https://16bpp.net/blog/post/faster-asin-was-hiding-in-plain-sight/",
-          "score": 26,
-          "comments": 2
+          "score": 39,
+          "comments": 6
+        },
+        {
+          "title": "Whistleblower: DOGE member took Social Security data to new job",
+          "url": "https://www.washingtonpost.com/politics/2026/03/10/social-security-data-breach-doge-2/",
+          "score": 250,
+          "comments": 102
         }
       ],
       "tech_headlines": [
@@ -454,7 +444,7 @@
       "headline": "Lego's 0.002 mm Specification and Its Implications for Manufacturing (2025)"
     },
     "policy": {
-      "last_updated": "2026-03-11T15:06:58Z",
+      "last_updated": "2026-03-11T15:17:25Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -493,7 +483,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-11T15:07:00Z",
+      "last_updated": "2026-03-11T15:17:28Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
