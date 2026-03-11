@@ -1,9 +1,9 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-11T10:19:42Z",
+  "fetched_at": "2026-03-11T10:31:11Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-11T10:19:43Z",
+      "last_updated": "2026-03-11T10:31:12Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
@@ -39,10 +39,10 @@
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 69537.05,
+          "price": 69478.62,
           "prev_close": 69956.93,
-          "change": -419.88,
-          "change_pct": -0.6,
+          "change": -478.31,
+          "change_pct": -0.68,
           "currency": "USD"
         },
         "EURUSD=X": {
@@ -55,25 +55,25 @@
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 99.005,
+          "price": 98.984,
           "prev_close": 98.826,
-          "change": 0.179,
-          "change_pct": 0.18,
+          "change": 0.158,
+          "change_pct": 0.16,
           "currency": "USD"
         }
       },
       "yield_10y": 4.12,
-      "headline": "SPY -0.16%  |  BTC $69,537  |  10Y 4.12%"
+      "headline": "SPY -0.16%  |  BTC $69,479  |  10Y 4.12%"
     },
     "energy": {
-      "last_updated": "2026-03-11T10:19:52Z",
+      "last_updated": "2026-03-11T10:31:20Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 87.35,
+          "price": 86.83,
           "prev_close": 83.45,
-          "change": 3.9,
-          "change_pct": 4.67,
+          "change": 3.38,
+          "change_pct": 4.05,
           "currency": "USD"
         },
         "NG=F": {
@@ -86,10 +86,10 @@
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 87.42,
+          "price": 87.35,
           "prev_close": 85.27,
-          "change": 2.15,
-          "change_pct": 2.52,
+          "change": 2.08,
+          "change_pct": 2.44,
           "currency": "USD"
         },
         "XLE": {
@@ -123,10 +123,10 @@
           "published": "Tue, 03 Mar 2026 09:00:00 EST"
         }
       ],
-      "headline": "WTI $87.35/bbl"
+      "headline": "WTI $86.83/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-11T10:19:53Z",
+      "last_updated": "2026-03-11T10:31:21Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
@@ -187,27 +187,27 @@
       },
       "recent_filings": [
         {
-          "title": "Sonos Inc  (SONO) -- 8-K (2026-03-11)",
-          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Sonos%20Inc%20%20%28SONO%29&type=8-K&dateb=&owner=include&count=5",
-          "published": "2026-03-11"
-        },
-        {
-          "title": "Pangaea Logistics Solutions Ltd.  (PANL) -- 8-K (2026-03-11)",
+          "title": "Pangaea Logistics Solutions Ltd.  (PANL) \u2014 8-K (2026-03-11)",
           "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Pangaea%20Logistics%20Solutions%20Ltd.%20%20%28PANL%29&type=8-K&dateb=&owner=include&count=5",
           "published": "2026-03-11"
         },
         {
-          "title": "Aptevo Therapeutics Inc.  (APVO) -- 8-K (2026-03-11)",
+          "title": "Sonos Inc  (SONO) \u2014 8-K (2026-03-11)",
+          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Sonos%20Inc%20%20%28SONO%29&type=8-K&dateb=&owner=include&count=5",
+          "published": "2026-03-11"
+        },
+        {
+          "title": "Aptevo Therapeutics Inc.  (APVO) \u2014 8-K (2026-03-11)",
           "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Aptevo%20Therapeutics%20Inc.%20%20%28APVO%29&type=8-K&dateb=&owner=include&count=5",
           "published": "2026-03-11"
         },
         {
-          "title": "MILESTONE SCIENTIFIC INC.  (MLSS) -- 8-K (2026-03-11)",
+          "title": "MILESTONE SCIENTIFIC INC.  (MLSS) \u2014 8-K (2026-03-11)",
           "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=MILESTONE%20SCIENTIFIC%20INC.%20%20%28MLSS%29&type=8-K&dateb=&owner=include&count=5",
           "published": "2026-03-11"
         },
         {
-          "title": "NEWS CORP  (NWS, NWSA, NWSLL) -- 8-K (2026-03-11)",
+          "title": "NEWS CORP  (NWS, NWSA, NWSLL) \u2014 8-K (2026-03-11)",
           "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=NEWS%20CORP%20%20%28NWS%2C%20NWSA%2C%20NWSLL%29&type=8-K&dateb=&owner=include&count=5",
           "published": "2026-03-11"
         }
@@ -215,7 +215,7 @@
       "headline": "NVDA 1.16%  |  MSFT -0.89%"
     },
     "sports": {
-      "last_updated": "2026-03-11T10:19:57Z",
+      "last_updated": "2026-03-11T10:31:22Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -371,8 +371,33 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-11T10:20:02Z",
+      "last_updated": "2026-03-11T10:31:27Z",
       "headlines": [
+        {
+          "title": "Russian economy withstood pressure from outside German expert",
+          "link": "https://tass.com/economy/2073165",
+          "published": "20260119T140000Z"
+        },
+        {
+          "title": "Sudan : united kingdom Hits  Sudan War Machine  With New Sanctions",
+          "link": "https://allafrica.com/stories/202602060005.html",
+          "published": "20260206T060000Z"
+        },
+        {
+          "title": "UK Sanctions Sudanese Army and RSF Leaders",
+          "link": "https://english.aawsat.com/arab-world/5237657-uk-sanctions-sudanese-army-and-rsf-leaders",
+          "published": "20260205T183000Z"
+        },
+        {
+          "title": "U . S . sanctions Gaza charities over alleged Hamas ties \u2013 NaturalNews . com",
+          "link": "https://www.naturalnews.com/2026-01-26-us-sanctions-gaza-charities-over-hamas-ties.html",
+          "published": "20260126T130000Z"
+        },
+        {
+          "title": "Myanmar military using commercial paramotors , gyrocopters for attacks : Report",
+          "link": "https://www.siasat.com/myanmar-military-using-commercial-paramotors-gyrocopters-for-attacks-report-3331737/",
+          "published": "20260126T140000Z"
+        },
         {
           "title": "Steve Rosenberg: Russia seeks diplomatic and economic gains from Iran war",
           "link": "https://www.bbc.com/news/articles/c4gjyg0djvmo?at_medium=RSS&at_campaign=rss",
@@ -382,56 +407,41 @@
           "title": "Jeffrey Epstein had two key aides - why do they still control his money and secrets?",
           "link": "https://www.bbc.com/news/articles/cdjm7rxjxneo?at_medium=RSS&at_campaign=rss",
           "published": "Wed, 11 Mar 2026 00:10:20 GMT"
-        },
-        {
-          "title": "At least six dead in Switzerland bus fire",
-          "link": "https://www.bbc.com/news/articles/c5y4wdlyy9xo?at_medium=RSS&at_campaign=rss",
-          "published": "Wed, 11 Mar 2026 06:13:12 GMT"
-        },
-        {
-          "title": "Member of Iranian football delegation granted Australian asylum changes her mind",
-          "link": "https://www.bbc.com/news/articles/c93j2492d0do?at_medium=RSS&at_campaign=rss",
-          "published": "Wed, 11 Mar 2026 04:14:40 GMT"
-        },
-        {
-          "title": "Arrests, accusations and arguments - the Mugabe family after losing power",
-          "link": "https://www.bbc.com/news/articles/cp32xx35lwwo?at_medium=RSS&at_campaign=rss",
-          "published": "Wed, 11 Mar 2026 05:54:23 GMT"
         }
       ],
-      "headline": "Steve Rosenberg: Russia seeks diplomatic and economic gains from Iran war"
+      "headline": "Russian economy withstood pressure from outside German expert"
     },
     "technology": {
-      "last_updated": "2026-03-11T10:20:03Z",
+      "last_updated": "2026-03-11T10:31:28Z",
       "hn_top": [
         {
-          "title": "Zig - Type Resolution Redesign and Language Changes",
+          "title": "Zig \u2013 Type Resolution Redesign and Language Changes",
           "url": "https://ziglang.org/devlog/2026/#2026-03-10",
-          "score": 230,
-          "comments": 76
+          "score": 234,
+          "comments": 78
         },
         {
           "title": "Building a TB-303 from Scratch",
           "url": "https://loopmaster.xyz/tutorials/tb303-from-scratch",
-          "score": 31,
-          "comments": 5
+          "score": 35,
+          "comments": 7
         },
         {
-          "title": "Create value for others and don't worry about the returns",
+          "title": "Create value for others and don\u2019t worry about the returns",
           "url": "https://geohot.github.io//blog/jekyll/update/2026/03/11/running-69-agents.html",
-          "score": 338,
-          "comments": 185
+          "score": 345,
+          "comments": 191
         },
         {
-          "title": "U+237C Is Azimuth",
+          "title": "U+237C \u237c Is Azimuth",
           "url": "https://ionathan.ch/2026/02/16/angzarr.html",
-          "score": 309,
-          "comments": 31
+          "score": 311,
+          "comments": 32
         },
         {
           "title": "Cloudflare crawl endpoint",
           "url": "https://developers.cloudflare.com/changelog/post/2026-03-10-br-crawl-endpoint/",
-          "score": 311,
+          "score": 315,
           "comments": 119
         }
       ],
@@ -442,30 +452,30 @@
           "published": "Wed, 11 Mar 2026 08:00:00 +0000"
         },
         {
-          "title": "Interstellar Comet 3I/Atlas Has Another Surprise: It's Full of Alcohol",
+          "title": "Interstellar Comet 3I/Atlas Has Another Surprise: It\u2019s Full of Alcohol",
           "link": "https://www.wired.com/story/interstellar-comet-3i-atlas-has-another-surprise-its-full-of-alcohol/",
           "published": "Tue, 10 Mar 2026 18:48:25 +0000"
         },
         {
-          "title": "How Can a Locomotive Pull a Long Train That's Much Heavier?",
+          "title": "How Can a Locomotive Pull a Long Train That\u2019s Much Heavier?",
           "link": "https://www.wired.com/story/how-can-a-locomotive-pull-a-train-thats-much-heavier/",
           "published": "Tue, 10 Mar 2026 11:00:00 +0000"
         },
         {
-          "title": "Don't Expect Big Surprises in the Government's Alien Files",
+          "title": "Don\u2019t Expect Big Surprises in the Government\u2019s Alien Files",
           "link": "https://www.wired.com/story/dont-expect-big-surprises-in-the-governments-alien-files/",
-          "published": "Mon, 09 Mar 2026 09:00:00 +0000"
+          "published": "Mon, 09 Mar 2026 10:00:00 +0000"
         },
         {
-          "title": "Why RFK's CDC Is Endorsing 'Shared Decisionmaking' for Vaccines",
+          "title": "Why RFK\u2019s CDC Is Endorsing \u2018Shared Decisionmaking\u2019 for Vaccines",
           "link": "https://www.wired.com/story/why-rfks-cdc-is-endorsing-shared-decision-making-for-vaccines/",
           "published": "Mon, 09 Mar 2026 09:30:00 +0000"
         }
       ],
-      "headline": "Zig - Type Resolution Redesign and Language Changes"
+      "headline": "Zig \u2013 Type Resolution Redesign and Language Changes"
     },
     "policy": {
-      "last_updated": "2026-03-11T10:20:03Z",
+      "last_updated": "2026-03-11T10:31:29Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -504,7 +514,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-11T10:20:04Z",
+      "last_updated": "2026-03-11T10:31:33Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
