@@ -1,199 +1,178 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-11T14:45:54Z",
+  "fetched_at": "2026-03-11T15:06:35Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-11T14:45:54Z",
+      "last_updated": "2026-03-11T15:06:36Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
-          "price": 677.39,
+          "price": 677.27,
           "prev_close": 677.18,
-          "change": 0.21,
-          "change_pct": 0.03,
+          "change": 0.09,
+          "change_pct": 0.01,
           "currency": "USD"
         },
         "QQQ": {
           "label": "Nasdaq 100 ETF",
-          "price": 609.07,
+          "price": 609.42,
           "prev_close": 607.77,
-          "change": 1.3,
-          "change_pct": 0.21,
+          "change": 1.65,
+          "change_pct": 0.27,
           "currency": "USD"
         },
         "GLD": {
           "label": "Gold ETF",
-          "price": 476.28,
+          "price": 475.755,
           "prev_close": 477.86,
-          "change": -1.58,
-          "change_pct": -0.33,
+          "change": -2.105,
+          "change_pct": -0.44,
           "currency": "USD"
         },
         "TLT": {
           "label": "20Y Treasury ETF",
-          "price": 87.485,
+          "price": 87.455,
           "prev_close": 88.28,
-          "change": -0.795,
-          "change_pct": -0.9,
+          "change": -0.825,
+          "change_pct": -0.93,
           "currency": "USD"
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 70788.48,
+          "price": 70414.2,
           "prev_close": 69956.93,
-          "change": 831.55,
-          "change_pct": 1.19,
+          "change": 457.27,
+          "change_pct": 0.65,
           "currency": "USD"
         },
         "EURUSD=X": {
           "label": "EUR/USD",
-          "price": 1.159,
+          "price": 1.1583,
           "prev_close": 1.1614,
-          "change": -0.0024,
-          "change_pct": -0.21,
+          "change": -0.0031,
+          "change_pct": -0.27,
           "currency": "USD"
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 99.086,
+          "price": 99.107,
           "prev_close": 98.826,
-          "change": 0.26,
-          "change_pct": 0.26,
+          "change": 0.281,
+          "change_pct": 0.28,
           "currency": "USD"
         }
       },
       "yield_10y": 4.12,
-      "headline": "SPY 0.03%  |  BTC $70,788  |  10Y 4.12%"
+      "headline": "SPY 0.01%  |  BTC $70,414  |  10Y 4.12%"
     },
     "energy": {
-      "last_updated": "2026-03-11T14:46:04Z",
+      "last_updated": "2026-03-11T15:06:44Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 86.24,
+          "price": 86.27,
           "prev_close": 83.45,
-          "change": 2.79,
-          "change_pct": 3.34,
+          "change": 2.82,
+          "change_pct": 3.38,
           "currency": "USD"
         },
         "NG=F": {
           "label": "Natural Gas ($/MMBtu)",
-          "price": 3.126,
+          "price": 3.136,
           "prev_close": 3.02,
-          "change": 0.106,
-          "change_pct": 3.51,
+          "change": 0.116,
+          "change_pct": 3.84,
           "currency": "USD"
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 87.6,
+          "price": 87.84,
           "prev_close": 85.27,
-          "change": 2.33,
-          "change_pct": 2.73,
+          "change": 2.57,
+          "change_pct": 3.01,
           "currency": "USD"
         },
         "XLE": {
           "label": "Energy ETF",
-          "price": 56.6,
+          "price": 56.66,
           "prev_close": 55.6,
-          "change": 1.0,
-          "change_pct": 1.8,
+          "change": 1.06,
+          "change_pct": 1.91,
           "currency": "USD"
         }
       },
-      "headlines": [
-        {
-          "title": "Annual U.S. crude oil exports decrease for first time since 2021",
-          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67324",
-          "published": "Tue, 10 Mar 2026 09:00:00 EST"
-        },
-        {
-          "title": "U.S. exports of major transportation fuels in 2025 were about the same as in 2024",
-          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67304",
-          "published": "Mon, 09 Mar 2026 09:00:00 EST"
-        },
-        {
-          "title": "U.S. electricity generation in 2025 hit a record, again",
-          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67284",
-          "published": "Thu, 05 Mar 2026 09:00:00 EST"
-        },
-        {
-          "title": "U.S. LNG developers sign highest volume of sale and purchase contracts since 2022",
-          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67264",
-          "published": "Tue, 03 Mar 2026 09:00:00 EST"
-        }
-      ],
-      "headline": "WTI $86.24/bbl"
+      "headlines": [],
+      "headline": "WTI $86.27/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-11T14:46:05Z",
+      "last_updated": "2026-03-11T15:06:45Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
-          "price": 186.485,
+          "price": 186.353,
           "prev_close": 184.77,
-          "change": 1.715,
-          "change_pct": 0.93,
+          "change": 1.583,
+          "change_pct": 0.86,
           "currency": "USD"
         },
         "MSFT": {
           "label": "Microsoft",
-          "price": 404.528,
+          "price": 403.81,
           "prev_close": 405.76,
-          "change": -1.232,
-          "change_pct": -0.3,
+          "change": -1.95,
+          "change_pct": -0.48,
           "currency": "USD"
         },
         "AAPL": {
           "label": "Apple",
-          "price": 260.585,
+          "price": 260.72,
           "prev_close": 260.83,
-          "change": -0.245,
-          "change_pct": -0.09,
+          "change": -0.11,
+          "change_pct": -0.04,
           "currency": "USD"
         },
         "META": {
           "label": "Meta",
-          "price": 653.79,
+          "price": 652.05,
           "prev_close": 654.07,
-          "change": -0.28,
-          "change_pct": -0.04,
+          "change": -2.02,
+          "change_pct": -0.31,
           "currency": "USD"
         },
         "TSLA": {
           "label": "Tesla",
-          "price": 411.817,
+          "price": 411.49,
           "prev_close": 399.235,
-          "change": 12.582,
-          "change_pct": 3.15,
+          "change": 12.255,
+          "change_pct": 3.07,
           "currency": "USD"
         },
         "AMZN": {
           "label": "Amazon",
-          "price": 214.245,
+          "price": 213.348,
           "prev_close": 214.33,
-          "change": -0.085,
-          "change_pct": -0.04,
+          "change": -0.982,
+          "change_pct": -0.46,
           "currency": "USD"
         },
         "GOOGL": {
           "label": "Alphabet",
-          "price": 309.93,
+          "price": 310.225,
           "prev_close": 307.04,
-          "change": 2.89,
-          "change_pct": 0.94,
+          "change": 3.185,
+          "change_pct": 1.04,
           "currency": "USD"
         }
       },
       "recent_filings": [
         {
-          "title": "Pangaea Logistics Solutions Ltd.  (PANL) \u2014 8-K (2026-03-11)",
-          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Pangaea%20Logistics%20Solutions%20Ltd.%20%20%28PANL%29&type=8-K&dateb=&owner=include&count=5",
+          "title": "Sonos Inc  (SONO) \u2014 8-K (2026-03-11)",
+          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Sonos%20Inc%20%20%28SONO%29&type=8-K&dateb=&owner=include&count=5",
           "published": "2026-03-11"
         },
         {
-          "title": "Sonos Inc  (SONO) \u2014 8-K (2026-03-11)",
-          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Sonos%20Inc%20%20%28SONO%29&type=8-K&dateb=&owner=include&count=5",
+          "title": "Pangaea Logistics Solutions Ltd.  (PANL) \u2014 8-K (2026-03-11)",
+          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Pangaea%20Logistics%20Solutions%20Ltd.%20%20%28PANL%29&type=8-K&dateb=&owner=include&count=5",
           "published": "2026-03-11"
         },
         {
@@ -212,10 +191,10 @@
           "published": "2026-03-11"
         }
       ],
-      "headline": "NVDA 0.93%  |  MSFT -0.3%"
+      "headline": "NVDA 0.86%  |  MSFT -0.48%"
     },
     "sports": {
-      "last_updated": "2026-03-11T14:46:06Z",
+      "last_updated": "2026-03-11T15:06:46Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -371,8 +350,33 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-11T14:46:06Z",
+      "last_updated": "2026-03-11T15:06:57Z",
       "headlines": [
+        {
+          "title": "Russian economy withstood pressure from outside German expert",
+          "link": "https://tass.com/economy/2073165",
+          "published": "20260119T140000Z"
+        },
+        {
+          "title": "Sudan : united kingdom Hits  Sudan War Machine  With New Sanctions",
+          "link": "https://allafrica.com/stories/202602060005.html",
+          "published": "20260206T060000Z"
+        },
+        {
+          "title": "UK Sanctions Sudanese Army and RSF Leaders",
+          "link": "https://english.aawsat.com/arab-world/5237657-uk-sanctions-sudanese-army-and-rsf-leaders",
+          "published": "20260205T183000Z"
+        },
+        {
+          "title": "U . S . sanctions Gaza charities over alleged Hamas ties \u2013 NaturalNews . com",
+          "link": "https://www.naturalnews.com/2026-01-26-us-sanctions-gaza-charities-over-hamas-ties.html",
+          "published": "20260126T130000Z"
+        },
+        {
+          "title": "Myanmar military using commercial paramotors , gyrocopters for attacks : Report",
+          "link": "https://www.siasat.com/myanmar-military-using-commercial-paramotors-gyrocopters-for-attacks-report-3331737/",
+          "published": "20260126T140000Z"
+        },
         {
           "title": "Countries agree to record release of emergency oil reserves as prices surge",
           "link": "https://www.bbc.com/news/articles/cly093xxlzzo?at_medium=RSS&at_campaign=rss",
@@ -382,57 +386,42 @@
           "title": "EU and UK demand Israel stop surge in West Bank settler violence since Iran war",
           "link": "https://www.bbc.com/news/articles/c620vwl97vyo?at_medium=RSS&at_campaign=rss",
           "published": "Wed, 11 Mar 2026 14:13:52 GMT"
-        },
-        {
-          "title": "Ukraine says it has hit Russian 'missile component' plant",
-          "link": "https://www.bbc.com/news/articles/ckg1eqw30l9o?at_medium=RSS&at_campaign=rss",
-          "published": "Wed, 11 Mar 2026 11:16:02 GMT"
-        },
-        {
-          "title": "French aid worker among three killed in drone strikes in rebel-held DR Congo city",
-          "link": "https://www.bbc.com/news/articles/cvgj8veg0gno?at_medium=RSS&at_campaign=rss",
-          "published": "Wed, 11 Mar 2026 14:35:31 GMT"
-        },
-        {
-          "title": "Jeffrey Epstein had two key aides - why do they still control his money and secrets?",
-          "link": "https://www.bbc.com/news/articles/cdjm7rxjxneo?at_medium=RSS&at_campaign=rss",
-          "published": "Wed, 11 Mar 2026 00:10:20 GMT"
         }
       ],
-      "headline": "Countries agree to record release of emergency oil reserves as prices surge"
+      "headline": "Russian economy withstood pressure from outside German expert"
     },
     "technology": {
-      "last_updated": "2026-03-11T14:46:07Z",
+      "last_updated": "2026-03-11T15:06:57Z",
       "hn_top": [
         {
           "title": "Lego's 0.002 mm Specification and Its Implications for Manufacturing (2025)",
           "url": "https://www.thewave.engineer/articles.html/productivity/legos-0002mm-specification-and-its-implications-for-manufacturing-r120/",
-          "score": 89,
-          "comments": 56
+          "score": 128,
+          "comments": 87
         },
         {
           "title": "Microsoft BitNet: 100B Param 1-Bit model for local CPUs",
           "url": "https://github.com/microsoft/BitNet",
-          "score": 116,
-          "comments": 68
+          "score": 126,
+          "comments": 74
         },
         {
           "title": "The entities enabling scientific fraud at scale are large, resilient and growing",
           "url": "https://doi.org/10.1073/pnas.2420092122",
-          "score": 37,
-          "comments": 9
+          "score": 56,
+          "comments": 19
         },
         {
           "title": "Whistleblower: DOGE member took Social Security data to new job",
           "url": "https://www.washingtonpost.com/politics/2026/03/10/social-security-data-breach-doge-2/",
-          "score": 160,
-          "comments": 55
+          "score": 221,
+          "comments": 89
         },
         {
-          "title": "PeppyOS: A simpler alternative to ROS 2 (now with containers support)",
-          "url": "https://peppy.bot/",
-          "score": 34,
-          "comments": 8
+          "title": "Faster Asin() Was Hiding in Plain Sight",
+          "url": "https://16bpp.net/blog/post/faster-asin-was-hiding-in-plain-sight/",
+          "score": 26,
+          "comments": 2
         }
       ],
       "tech_headlines": [
@@ -465,7 +454,7 @@
       "headline": "Lego's 0.002 mm Specification and Its Implications for Manufacturing (2025)"
     },
     "policy": {
-      "last_updated": "2026-03-11T14:46:08Z",
+      "last_updated": "2026-03-11T15:06:58Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -504,7 +493,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-11T14:46:10Z",
+      "last_updated": "2026-03-11T15:07:00Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
