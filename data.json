@@ -1,48 +1,48 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-11T19:15:54Z",
+  "fetched_at": "2026-03-11T19:32:06Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-11T19:15:55Z",
+      "last_updated": "2026-03-11T19:32:07Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
-          "price": 674.41,
+          "price": 674.79,
           "prev_close": 677.18,
-          "change": -2.77,
-          "change_pct": -0.41,
+          "change": -2.39,
+          "change_pct": -0.35,
           "currency": "USD"
         },
         "QQQ": {
           "label": "Nasdaq 100 ETF",
-          "price": 606.08,
+          "price": 606.445,
           "prev_close": 607.77,
-          "change": -1.69,
-          "change_pct": -0.28,
+          "change": -1.325,
+          "change_pct": -0.22,
           "currency": "USD"
         },
         "GLD": {
           "label": "Gold ETF",
-          "price": 475.23,
+          "price": 475.645,
           "prev_close": 477.86,
-          "change": -2.63,
-          "change_pct": -0.55,
+          "change": -2.215,
+          "change_pct": -0.46,
           "currency": "USD"
         },
         "TLT": {
           "label": "20Y Treasury ETF",
-          "price": 87.295,
+          "price": 87.26,
           "prev_close": 88.28,
-          "change": -0.985,
-          "change_pct": -1.12,
+          "change": -1.02,
+          "change_pct": -1.16,
           "currency": "USD"
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 70416.72,
+          "price": 70544.56,
           "prev_close": 69956.93,
-          "change": 459.79,
-          "change_pct": 0.66,
+          "change": 587.63,
+          "change_pct": 0.84,
           "currency": "USD"
         },
         "EURUSD=X": {
@@ -55,124 +55,145 @@
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 99.25,
+          "price": 99.234,
           "prev_close": 98.826,
-          "change": 0.424,
-          "change_pct": 0.43,
+          "change": 0.408,
+          "change_pct": 0.41,
           "currency": "USD"
         }
       },
       "yield_10y": 4.12,
-      "headline": "SPY -0.41%  |  BTC $70,417  |  10Y 4.12%"
+      "headline": "SPY -0.35%  |  BTC $70,545  |  10Y 4.12%"
     },
     "energy": {
-      "last_updated": "2026-03-11T19:16:05Z",
+      "last_updated": "2026-03-11T19:32:16Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 87.6,
+          "price": 87.18,
           "prev_close": 83.45,
-          "change": 4.15,
-          "change_pct": 4.97,
+          "change": 3.73,
+          "change_pct": 4.47,
           "currency": "USD"
         },
         "NG=F": {
           "label": "Natural Gas ($/MMBtu)",
-          "price": 3.2,
+          "price": 3.207,
           "prev_close": 3.02,
-          "change": 0.18,
-          "change_pct": 5.96,
+          "change": 0.187,
+          "change_pct": 6.19,
           "currency": "USD"
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 89.85,
+          "price": 89.41,
           "prev_close": 85.27,
-          "change": 4.58,
-          "change_pct": 5.37,
+          "change": 4.14,
+          "change_pct": 4.86,
           "currency": "USD"
         },
         "XLE": {
           "label": "Energy ETF",
-          "price": 56.755,
+          "price": 56.8,
           "prev_close": 55.6,
-          "change": 1.155,
-          "change_pct": 2.08,
+          "change": 1.2,
+          "change_pct": 2.16,
           "currency": "USD"
         }
       },
-      "headlines": [],
-      "headline": "WTI $87.60/bbl"
+      "headlines": [
+        {
+          "title": "Annual U.S. crude oil exports decrease for first time since 2021",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67324",
+          "published": "Tue, 10 Mar 2026 09:00:00 EST"
+        },
+        {
+          "title": "U.S. exports of major transportation fuels in 2025 were about the same as in 2024",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67304",
+          "published": "Mon, 09 Mar 2026 09:00:00 EST"
+        },
+        {
+          "title": "U.S. electricity generation in 2025 hit a record, again",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67284",
+          "published": "Thu, 05 Mar 2026 09:00:00 EST"
+        },
+        {
+          "title": "U.S. LNG developers sign highest volume of sale and purchase contracts since 2022",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67264",
+          "published": "Tue, 03 Mar 2026 09:00:00 EST"
+        }
+      ],
+      "headline": "WTI $87.18/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-11T19:16:08Z",
+      "last_updated": "2026-03-11T19:32:19Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
-          "price": 185.41,
+          "price": 185.345,
           "prev_close": 184.77,
-          "change": 0.64,
-          "change_pct": 0.35,
+          "change": 0.575,
+          "change_pct": 0.31,
           "currency": "USD"
         },
         "MSFT": {
           "label": "Microsoft",
-          "price": 403.675,
+          "price": 403.87,
           "prev_close": 405.76,
-          "change": -2.085,
-          "change_pct": -0.51,
+          "change": -1.89,
+          "change_pct": -0.47,
           "currency": "USD"
         },
         "AAPL": {
           "label": "Apple",
-          "price": 259.92,
+          "price": 260.06,
           "prev_close": 260.83,
-          "change": -0.91,
-          "change_pct": -0.35,
+          "change": -0.77,
+          "change_pct": -0.3,
           "currency": "USD"
         },
         "META": {
           "label": "Meta",
-          "price": 652.48,
+          "price": 652.765,
           "prev_close": 654.07,
-          "change": -1.59,
-          "change_pct": -0.24,
+          "change": -1.305,
+          "change_pct": -0.2,
           "currency": "USD"
         },
         "TSLA": {
           "label": "Tesla",
-          "price": 405.68,
+          "price": 407.11,
           "prev_close": 399.235,
-          "change": 6.445,
-          "change_pct": 1.61,
+          "change": 7.875,
+          "change_pct": 1.97,
           "currency": "USD"
         },
         "AMZN": {
           "label": "Amazon",
-          "price": 212.605,
+          "price": 212.74,
           "prev_close": 214.33,
-          "change": -1.725,
-          "change_pct": -0.8,
+          "change": -1.59,
+          "change_pct": -0.74,
           "currency": "USD"
         },
         "GOOGL": {
           "label": "Alphabet",
-          "price": 307.54,
+          "price": 308.14,
           "prev_close": 307.04,
-          "change": 0.5,
-          "change_pct": 0.16,
+          "change": 1.1,
+          "change_pct": 0.36,
           "currency": "USD"
         }
       },
       "recent_filings": [
         {
-          "title": "Pangaea Logistics Solutions Ltd.  (PANL) \u2014 8-K (2026-03-11)",
-          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Pangaea%20Logistics%20Solutions%20Ltd.%20%20%28PANL%29&type=8-K&dateb=&owner=include&count=5",
+          "title": "Sonos Inc  (SONO) \u2014 8-K (2026-03-11)",
+          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Sonos%20Inc%20%20%28SONO%29&type=8-K&dateb=&owner=include&count=5",
           "published": "2026-03-11"
         },
         {
-          "title": "Sonos Inc  (SONO) \u2014 8-K (2026-03-11)",
-          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Sonos%20Inc%20%20%28SONO%29&type=8-K&dateb=&owner=include&count=5",
+          "title": "Pangaea Logistics Solutions Ltd.  (PANL) \u2014 8-K (2026-03-11)",
+          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Pangaea%20Logistics%20Solutions%20Ltd.%20%20%28PANL%29&type=8-K&dateb=&owner=include&count=5",
           "published": "2026-03-11"
         },
         {
@@ -191,10 +212,10 @@
           "published": "2026-03-11"
         }
       ],
-      "headline": "NVDA 0.35%  |  MSFT -0.51%"
+      "headline": "NVDA 0.31%  |  MSFT -0.47%"
     },
     "sports": {
-      "last_updated": "2026-03-11T19:16:09Z",
+      "last_updated": "2026-03-11T19:32:38Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -247,30 +268,30 @@
             {
               "home": "ATL",
               "away": "TB",
-              "home_score": "4",
+              "home_score": "5",
               "away_score": "3",
-              "status": "Bot 8th"
+              "status": "Final"
             },
             {
               "home": "BAL",
               "away": "PIT",
-              "home_score": "6",
-              "away_score": "0",
-              "status": "Top 8th"
+              "home_score": "7",
+              "away_score": "1",
+              "status": "Top 9th"
             },
             {
               "home": "MIN",
               "away": "DET",
-              "home_score": "0",
+              "home_score": "1",
               "away_score": "1",
-              "status": "Bot 8th"
+              "status": "Top 9th"
             },
             {
               "home": "WSH",
               "away": "STL",
               "home_score": "3",
               "away_score": "1",
-              "status": "Top 9th"
+              "status": "Final"
             }
           ]
         }
@@ -290,16 +311,16 @@
             "detail": "Knight is re-signing with the Cardinals on a one-year contract, Mike Garafolo of NFL Network reports."
           },
           {
+            "player": "Channing Tindall",
+            "team": "",
+            "status": "Active",
+            "detail": "The Falcons have agreed to a one-year deal with Tindall, Adam Schefter of ESPN reports."
+          },
+          {
             "player": "Tyrone Wheatley Jr.",
             "team": "",
             "status": "Questionable",
             "detail": "questionable"
-          },
-          {
-            "player": "Michael Penix Jr.",
-            "team": "",
-            "status": "Questionable",
-            "detail": "Penix (knee) won't necessarily be Atlanta's starting quarterback once he's healthy, as new addition Tua Tagovailoa will get a real chance to earn the job, Cameron Wolfe of NFL Network reports."
           },
           {
             "player": "Chidobe Awuzie",
@@ -350,33 +371,8 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-11T19:16:21Z",
+      "last_updated": "2026-03-11T19:32:46Z",
       "headlines": [
-        {
-          "title": "Russian economy withstood pressure from outside German expert",
-          "link": "https://tass.com/economy/2073165",
-          "published": "20260119T140000Z"
-        },
-        {
-          "title": "Sudan : united kingdom Hits  Sudan War Machine  With New Sanctions",
-          "link": "https://allafrica.com/stories/202602060005.html",
-          "published": "20260206T060000Z"
-        },
-        {
-          "title": "UK Sanctions Sudanese Army and RSF Leaders",
-          "link": "https://english.aawsat.com/arab-world/5237657-uk-sanctions-sudanese-army-and-rsf-leaders",
-          "published": "20260205T183000Z"
-        },
-        {
-          "title": "U . S . sanctions Gaza charities over alleged Hamas ties \u2013 NaturalNews . com",
-          "link": "https://www.naturalnews.com/2026-01-26-us-sanctions-gaza-charities-over-hamas-ties.html",
-          "published": "20260126T130000Z"
-        },
-        {
-          "title": "Myanmar military using commercial paramotors , gyrocopters for attacks : Report",
-          "link": "https://www.siasat.com/myanmar-military-using-commercial-paramotors-gyrocopters-for-attacks-report-3331737/",
-          "published": "20260126T140000Z"
-        },
         {
           "title": "Bowen: Trump has called for an Iran uprising but the lessons from Iraq in 1991 loom large",
           "link": "https://www.bbc.com/news/articles/cn0znx4xrl9o?at_medium=RSS&at_campaign=rss",
@@ -386,42 +382,57 @@
           "title": "Countries agree to record release of emergency oil reserves as prices surge",
           "link": "https://www.bbc.com/news/articles/cly093xxlzzo?at_medium=RSS&at_campaign=rss",
           "published": "Wed, 11 Mar 2026 15:51:11 GMT"
+        },
+        {
+          "title": "'Even under missiles we carry on living' - how young Iranians are coping with war",
+          "link": "https://www.bbc.com/news/articles/c1mj1pyrzryo?at_medium=RSS&at_campaign=rss",
+          "published": "Wed, 11 Mar 2026 16:00:34 GMT"
+        },
+        {
+          "title": "EU and UK demand Israel stop surge in West Bank settler violence since Iran war",
+          "link": "https://www.bbc.com/news/articles/c620vwl97vyo?at_medium=RSS&at_campaign=rss",
+          "published": "Wed, 11 Mar 2026 14:13:52 GMT"
+        },
+        {
+          "title": "Three brothers arrested after explosion at US embassy in Oslo",
+          "link": "https://www.bbc.com/news/articles/cx2grl7lrrmo?at_medium=RSS&at_campaign=rss",
+          "published": "Wed, 11 Mar 2026 18:28:46 GMT"
         }
       ],
-      "headline": "Russian economy withstood pressure from outside German expert"
+      "headline": "Bowen: Trump has called for an Iran uprising but the lessons from Iraq in 1991 loom large"
     },
     "technology": {
-      "last_updated": "2026-03-11T19:16:22Z",
+      "last_updated": "2026-03-11T19:32:47Z",
       "hn_top": [
         {
           "title": "Temporal: A nine-year journey to fix time in JavaScript",
           "url": "https://bloomberg.github.io/js-blog/post/temporal/",
-          "score": 288,
-          "comments": 112
+          "score": 305,
+          "comments": 114
         },
         {
           "title": "Making WebAssembly a first-class language on the Web",
           "url": "https://hacks.mozilla.org/2026/02/making-webassembly-a-first-class-language-on-the-web/",
-          "score": 200,
-          "comments": 90
+          "score": 209,
+          "comments": 97
         },
         {
           "title": "Entities enabling scientific fraud at scale (2025)",
           "url": "https://doi.org/10.1073/pnas.2420092122",
-          "score": 206,
-          "comments": 122
+          "score": 211,
+          "comments": 127
         },
         {
           "title": "BitNet: 100B Param 1-Bit model for local CPUs",
           "url": "https://github.com/microsoft/BitNet",
-          "score": 244,
+          "score": 247,
           "comments": 121
         },
         {
-          "title": "Show HN: Klaus \u2013 OpenClaw on a VM, batteries included",
-          "url": "https://klausai.com/",
-          "score": 60,
-          "comments": 41
+          "title": "Where Some See Strings, She Sees a Space-Time Made of Fractals",
+          "url": "https://www.quantamagazine.org/where-some-see-strings-she-sees-a-space-time-made-of-fractals-20260311/",
+          "score": 76,
+          "comments": 11
         }
       ],
       "tech_headlines": [
@@ -454,7 +465,7 @@
       "headline": "Temporal: A nine-year journey to fix time in JavaScript"
     },
     "policy": {
-      "last_updated": "2026-03-11T19:16:23Z",
+      "last_updated": "2026-03-11T19:32:48Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -493,7 +504,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-11T19:16:27Z",
+      "last_updated": "2026-03-11T19:32:52Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
