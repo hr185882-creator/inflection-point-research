@@ -1,9 +1,9 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-11T20:45:56Z",
+  "fetched_at": "2026-03-11T21:05:51Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-11T20:46:07Z",
+      "last_updated": "2026-03-11T21:06:01Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
@@ -39,26 +39,26 @@
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 70584.33,
+          "price": 70637.836,
           "prev_close": 69956.93,
-          "change": 627.4,
-          "change_pct": 0.9,
+          "change": 680.906,
+          "change_pct": 0.97,
           "currency": "USD"
         },
         "EURUSD=X": {
           "label": "EUR/USD",
-          "price": 1.157,
+          "price": 1.1571,
           "prev_close": 1.1614,
-          "change": -0.0044,
-          "change_pct": -0.38,
+          "change": -0.0043,
+          "change_pct": -0.37,
           "currency": "USD"
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 99.252,
+          "price": 99.271,
           "prev_close": 98.826,
-          "change": 0.426,
-          "change_pct": 0.43,
+          "change": 0.445,
+          "change_pct": 0.45,
           "currency": "USD"
         }
       },
@@ -66,30 +66,30 @@
       "headline": null
     },
     "energy": {
-      "last_updated": "2026-03-11T20:46:15Z",
+      "last_updated": "2026-03-11T21:06:10Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 88.09,
+          "price": 88.43,
           "prev_close": 83.45,
-          "change": 4.64,
-          "change_pct": 5.56,
+          "change": 4.98,
+          "change_pct": 5.97,
           "currency": "USD"
         },
         "NG=F": {
           "label": "Natural Gas ($/MMBtu)",
-          "price": 3.218,
+          "price": 3.223,
           "prev_close": 3.02,
-          "change": 0.198,
-          "change_pct": 6.56,
+          "change": 0.203,
+          "change_pct": 6.72,
           "currency": "USD"
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 90.04,
+          "price": 90.33,
           "prev_close": 85.27,
-          "change": 4.77,
-          "change_pct": 5.59,
+          "change": 5.06,
+          "change_pct": 5.93,
           "currency": "USD"
         },
         "XLE": {
@@ -123,10 +123,10 @@
           "published": "Tue, 03 Mar 2026 09:00:00 EST"
         }
       ],
-      "headline": "WTI $88.09/bbl"
+      "headline": "WTI $88.43/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-11T20:46:16Z",
+      "last_updated": "2026-03-11T21:06:11Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
@@ -187,13 +187,13 @@
       },
       "recent_filings": [
         {
-          "title": "Sonos Inc  (SONO) \u2014 8-K (2026-03-11)",
-          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Sonos%20Inc%20%20%28SONO%29&type=8-K&dateb=&owner=include&count=5",
+          "title": "Pangaea Logistics Solutions Ltd.  (PANL) \u2014 8-K (2026-03-11)",
+          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Pangaea%20Logistics%20Solutions%20Ltd.%20%20%28PANL%29&type=8-K&dateb=&owner=include&count=5",
           "published": "2026-03-11"
         },
         {
-          "title": "Pangaea Logistics Solutions Ltd.  (PANL) \u2014 8-K (2026-03-11)",
-          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Pangaea%20Logistics%20Solutions%20Ltd.%20%20%28PANL%29&type=8-K&dateb=&owner=include&count=5",
+          "title": "Sonos Inc  (SONO) \u2014 8-K (2026-03-11)",
+          "link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=Sonos%20Inc%20%20%28SONO%29&type=8-K&dateb=&owner=include&count=5",
           "published": "2026-03-11"
         },
         {
@@ -215,7 +215,7 @@
       "headline": "NVDA 0.68%  |  MSFT -0.22%"
     },
     "sports": {
-      "last_updated": "2026-03-11T20:46:17Z",
+      "last_updated": "2026-03-11T21:06:11Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -355,23 +355,23 @@
             "detail": "Vucevic underwent surgery Saturday to stabilize a fracture in his right ring finger and will be reevaluated in 3-to-4 weeks."
           },
           {
+            "player": "Ziaire Williams",
+            "team": "",
+            "status": "Day-To-Day",
+            "detail": "Williams (illness) is questionable for Thursday's game against the Hawks."
+          },
+          {
             "player": "Nolan Traore",
             "team": "",
             "status": "Out",
             "detail": "Traore will be rested Thursday against the Hawks."
-          },
-          {
-            "player": "Day'Ron Sharpe",
-            "team": "",
-            "status": "Out",
-            "detail": "Sharpe (thumb) is out for Thursday's game against the Hawks."
           }
         ]
       },
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-11T20:46:24Z",
+      "last_updated": "2026-03-11T21:06:17Z",
       "headlines": [
         {
           "title": "Bowen: Trump has called for an Iran uprising but the lessons from Iraq in 1991 loom large",
@@ -402,37 +402,37 @@
       "headline": "Bowen: Trump has called for an Iran uprising but the lessons from Iraq in 1991 loom large"
     },
     "technology": {
-      "last_updated": "2026-03-11T20:46:25Z",
+      "last_updated": "2026-03-11T21:06:18Z",
       "hn_top": [
         {
           "title": "Don't post generated/AI-edited comments. HN is for conversation between humans.",
           "url": "https://news.ycombinator.com/newsguidelines.html#generated",
-          "score": 870,
-          "comments": 395
+          "score": 1127,
+          "comments": 504
         },
         {
           "title": "The dead Internet is not a theory anymore",
           "url": "https://www.adriankrebs.ch/blog/dead-internet/",
-          "score": 49,
-          "comments": 6
+          "score": 121,
+          "comments": 47
         },
         {
           "title": "Temporal: A nine-year journey to fix time in JavaScript",
           "url": "https://bloomberg.github.io/js-blog/post/temporal/",
-          "score": 361,
-          "comments": 129
+          "score": 373,
+          "comments": 133
         },
         {
           "title": "Making WebAssembly a first-class language on the Web",
           "url": "https://hacks.mozilla.org/2026/02/making-webassembly-a-first-class-language-on-the-web/",
-          "score": 275,
-          "comments": 115
+          "score": 282,
+          "comments": 118
         },
         {
-          "title": "Show HN: I built a tool that watches webpages and exposes changes as RSS",
-          "url": "https://sitespy.app",
-          "score": 78,
-          "comments": 24
+          "title": "I'm glad the Anthropic fight is happening now",
+          "url": "https://www.dwarkesh.com/p/dow-anthropic",
+          "score": 27,
+          "comments": 9
         }
       ],
       "tech_headlines": [
@@ -465,7 +465,7 @@
       "headline": "Don't post generated/AI-edited comments. HN is for conversation between humans."
     },
     "policy": {
-      "last_updated": "2026-03-11T20:46:26Z",
+      "last_updated": "2026-03-11T21:06:18Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -504,7 +504,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-11T20:46:33Z",
+      "last_updated": "2026-03-11T21:06:23Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
