@@ -1,103 +1,103 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-11T18:16:03Z",
+  "fetched_at": "2026-03-11T18:33:06Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-11T18:16:04Z",
+      "last_updated": "2026-03-11T18:33:07Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
-          "price": 674.42,
+          "price": 675.3,
           "prev_close": 677.18,
-          "change": -2.76,
-          "change_pct": -0.41,
+          "change": -1.88,
+          "change_pct": -0.28,
           "currency": "USD"
         },
         "QQQ": {
           "label": "Nasdaq 100 ETF",
-          "price": 605.875,
+          "price": 606.936,
           "prev_close": 607.77,
-          "change": -1.895,
-          "change_pct": -0.31,
+          "change": -0.834,
+          "change_pct": -0.14,
           "currency": "USD"
         },
         "GLD": {
           "label": "Gold ETF",
-          "price": 475.3,
+          "price": 475.71,
           "prev_close": 477.86,
-          "change": -2.56,
-          "change_pct": -0.54,
+          "change": -2.15,
+          "change_pct": -0.45,
           "currency": "USD"
         },
         "TLT": {
           "label": "20Y Treasury ETF",
-          "price": 87.325,
+          "price": 87.31,
           "prev_close": 88.28,
-          "change": -0.955,
-          "change_pct": -1.08,
+          "change": -0.97,
+          "change_pct": -1.1,
           "currency": "USD"
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 70713.72,
+          "price": 70724.22,
           "prev_close": 69956.93,
-          "change": 756.79,
-          "change_pct": 1.08,
+          "change": 767.29,
+          "change_pct": 1.1,
           "currency": "USD"
         },
         "EURUSD=X": {
           "label": "EUR/USD",
-          "price": 1.1573,
+          "price": 1.1575,
           "prev_close": 1.1614,
-          "change": -0.0041,
-          "change_pct": -0.35,
+          "change": -0.0039,
+          "change_pct": -0.34,
           "currency": "USD"
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 99.235,
+          "price": 99.23,
           "prev_close": 98.826,
-          "change": 0.409,
+          "change": 0.404,
           "change_pct": 0.41,
           "currency": "USD"
         }
       },
       "yield_10y": 4.12,
-      "headline": "SPY -0.41%  |  BTC $70,714  |  10Y 4.12%"
+      "headline": "SPY -0.28%  |  BTC $70,724  |  10Y 4.12%"
     },
     "energy": {
-      "last_updated": "2026-03-11T18:16:14Z",
+      "last_updated": "2026-03-11T18:33:17Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 87.83,
+          "price": 87.94,
           "prev_close": 83.45,
-          "change": 4.38,
-          "change_pct": 5.25,
+          "change": 4.49,
+          "change_pct": 5.38,
           "currency": "USD"
         },
         "NG=F": {
           "label": "Natural Gas ($/MMBtu)",
-          "price": 3.194,
+          "price": 3.206,
           "prev_close": 3.02,
-          "change": 0.174,
-          "change_pct": 5.76,
+          "change": 0.186,
+          "change_pct": 6.16,
           "currency": "USD"
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 89.03,
+          "price": 89.49,
           "prev_close": 85.27,
-          "change": 3.76,
-          "change_pct": 4.41,
+          "change": 4.22,
+          "change_pct": 4.95,
           "currency": "USD"
         },
         "XLE": {
           "label": "Energy ETF",
-          "price": 56.635,
+          "price": 56.73,
           "prev_close": 55.6,
-          "change": 1.035,
-          "change_pct": 1.86,
+          "change": 1.13,
+          "change_pct": 2.03,
           "currency": "USD"
         }
       },
@@ -123,65 +123,65 @@
           "published": "Tue, 03 Mar 2026 09:00:00 EST"
         }
       ],
-      "headline": "WTI $87.83/bbl"
+      "headline": "WTI $87.94/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-11T18:16:15Z",
+      "last_updated": "2026-03-11T18:33:18Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
-          "price": 184.862,
+          "price": 185.195,
           "prev_close": 184.77,
-          "change": 0.092,
-          "change_pct": 0.05,
+          "change": 0.425,
+          "change_pct": 0.23,
           "currency": "USD"
         },
         "MSFT": {
           "label": "Microsoft",
-          "price": 403.54,
+          "price": 403.85,
           "prev_close": 405.76,
-          "change": -2.22,
-          "change_pct": -0.55,
+          "change": -1.91,
+          "change_pct": -0.47,
           "currency": "USD"
         },
         "AAPL": {
           "label": "Apple",
-          "price": 259.98,
+          "price": 260.23,
           "prev_close": 260.83,
-          "change": -0.85,
-          "change_pct": -0.33,
+          "change": -0.6,
+          "change_pct": -0.23,
           "currency": "USD"
         },
         "META": {
           "label": "Meta",
-          "price": 651.15,
+          "price": 652.33,
           "prev_close": 654.07,
-          "change": -2.92,
-          "change_pct": -0.45,
+          "change": -1.74,
+          "change_pct": -0.27,
           "currency": "USD"
         },
         "TSLA": {
           "label": "Tesla",
-          "price": 404.51,
+          "price": 405.33,
           "prev_close": 399.235,
-          "change": 5.275,
-          "change_pct": 1.32,
+          "change": 6.095,
+          "change_pct": 1.53,
           "currency": "USD"
         },
         "AMZN": {
           "label": "Amazon",
-          "price": 211.82,
+          "price": 212.72,
           "prev_close": 214.33,
-          "change": -2.51,
-          "change_pct": -1.17,
+          "change": -1.61,
+          "change_pct": -0.75,
           "currency": "USD"
         },
         "GOOGL": {
           "label": "Alphabet",
-          "price": 307.905,
+          "price": 308.728,
           "prev_close": 307.04,
-          "change": 0.865,
-          "change_pct": 0.28,
+          "change": 1.688,
+          "change_pct": 0.55,
           "currency": "USD"
         }
       },
@@ -212,10 +212,10 @@
           "published": "2026-03-11"
         }
       ],
-      "headline": "NVDA 0.05%  |  MSFT -0.55%"
+      "headline": "NVDA 0.23%  |  MSFT -0.47%"
     },
     "sports": {
-      "last_updated": "2026-03-11T18:16:16Z",
+      "last_updated": "2026-03-11T18:33:19Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -268,30 +268,30 @@
             {
               "home": "ATL",
               "away": "TB",
-              "home_score": "1",
+              "home_score": "3",
               "away_score": "0",
-              "status": "Bot 4th"
+              "status": "Bot 5th"
             },
             {
               "home": "BAL",
               "away": "PIT",
-              "home_score": "0",
+              "home_score": "3",
               "away_score": "0",
-              "status": "Bot 5th"
+              "status": "Top 6th"
             },
             {
               "home": "MIN",
               "away": "DET",
               "home_score": "0",
               "away_score": "1",
-              "status": "Top 5th"
+              "status": "Top 6th"
             },
             {
               "home": "WSH",
               "away": "STL",
               "home_score": "1",
               "away_score": "0",
-              "status": "Top 5th"
+              "status": "Top 6th"
             }
           ]
         }
@@ -371,7 +371,7 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-11T18:16:26Z",
+      "last_updated": "2026-03-11T18:33:20Z",
       "headlines": [
         {
           "title": "Bowen: Trump has called for an Iran uprising but the lessons from Iraq in 1991 loom large",
@@ -394,45 +394,45 @@
           "published": "Wed, 11 Mar 2026 14:13:52 GMT"
         },
         {
-          "title": "Ukraine says it has hit Russian 'missile component' plant",
-          "link": "https://www.bbc.com/news/articles/ckg1eqw30l9o?at_medium=RSS&at_campaign=rss",
-          "published": "Wed, 11 Mar 2026 11:16:02 GMT"
+          "title": "Three brothers arrested after explosion at US embassy in Oslo",
+          "link": "https://www.bbc.com/news/articles/cx2grl7lrrmo?at_medium=RSS&at_campaign=rss",
+          "published": "Wed, 11 Mar 2026 18:28:46 GMT"
         }
       ],
       "headline": "Bowen: Trump has called for an Iran uprising but the lessons from Iraq in 1991 loom large"
     },
     "technology": {
-      "last_updated": "2026-03-11T18:16:27Z",
+      "last_updated": "2026-03-11T18:33:21Z",
       "hn_top": [
         {
           "title": "Temporal: A nine-year journey to fix time in JavaScript",
           "url": "https://bloomberg.github.io/js-blog/post/temporal/",
-          "score": 202,
-          "comments": 84
+          "score": 224,
+          "comments": 92
         },
         {
           "title": "Making WebAssembly a first-class language on the Web",
           "url": "https://hacks.mozilla.org/2026/02/making-webassembly-a-first-class-language-on-the-web/",
-          "score": 138,
-          "comments": 56
+          "score": 157,
+          "comments": 63
         },
         {
           "title": "Entities enabling scientific fraud at scale are large, resilient, growing (2025)",
           "url": "https://doi.org/10.1073/pnas.2420092122",
-          "score": 185,
-          "comments": 89
+          "score": 193,
+          "comments": 96
         },
         {
           "title": "BitNet: 100B Param 1-Bit model for local CPUs",
           "url": "https://github.com/microsoft/BitNet",
-          "score": 224,
-          "comments": 113
+          "score": 229,
+          "comments": 116
         },
         {
           "title": "Where Some See Strings, She Sees a Space-Time Made of Fractals",
           "url": "https://www.quantamagazine.org/where-some-see-strings-she-sees-a-space-time-made-of-fractals-20260311/",
-          "score": 56,
-          "comments": 5
+          "score": 61,
+          "comments": 8
         }
       ],
       "tech_headlines": [
@@ -465,7 +465,7 @@
       "headline": "Temporal: A nine-year journey to fix time in JavaScript"
     },
     "policy": {
-      "last_updated": "2026-03-11T18:16:27Z",
+      "last_updated": "2026-03-11T18:33:21Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -504,7 +504,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-11T18:16:33Z",
+      "last_updated": "2026-03-11T18:33:26Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
