@@ -1,9 +1,9 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-11T01:45:53Z",
+  "fetched_at": "2026-03-11T02:05:19Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-11T01:45:54Z",
+      "last_updated": "2026-03-11T02:05:19Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
@@ -39,10 +39,10 @@
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 69969.23,
+          "price": 70117.48,
           "prev_close": 69956.93,
-          "change": 12.3,
-          "change_pct": 0.02,
+          "change": 160.55,
+          "change_pct": 0.23,
           "currency": "USD"
         },
         "EURUSD=X": {
@@ -55,41 +55,41 @@
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 98.846,
+          "price": 98.843,
           "prev_close": 98.826,
-          "change": 0.02,
+          "change": 0.017,
           "change_pct": 0.02,
           "currency": "USD"
         }
       },
       "yield_10y": 4.12,
-      "headline": "SPY -0.16%  |  BTC $69,969  |  10Y 4.12%"
+      "headline": "SPY -0.16%  |  BTC $70,117  |  10Y 4.12%"
     },
     "energy": {
-      "last_updated": "2026-03-11T01:46:02Z",
+      "last_updated": "2026-03-11T02:05:28Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 83.5,
+          "price": 83.62,
           "prev_close": 83.45,
-          "change": 0.05,
-          "change_pct": 0.06,
+          "change": 0.17,
+          "change_pct": 0.2,
           "currency": "USD"
         },
         "NG=F": {
           "label": "Natural Gas ($/MMBtu)",
-          "price": 3.033,
+          "price": 3.029,
           "prev_close": 3.02,
-          "change": 0.013,
-          "change_pct": 0.43,
+          "change": 0.009,
+          "change_pct": 0.3,
           "currency": "USD"
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 85.28,
+          "price": 85.59,
           "prev_close": 85.27,
-          "change": 0.01,
-          "change_pct": 0.01,
+          "change": 0.32,
+          "change_pct": 0.38,
           "currency": "USD"
         },
         "XLE": {
@@ -123,10 +123,10 @@
           "published": "Tue, 03 Mar 2026 09:00:00 EST"
         }
       ],
-      "headline": "WTI $83.50/bbl"
+      "headline": "WTI $83.62/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-11T01:46:04Z",
+      "last_updated": "2026-03-11T02:05:29Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
@@ -215,7 +215,7 @@
       "headline": "NVDA 1.16%  |  MSFT -0.89%"
     },
     "sports": {
-      "last_updated": "2026-03-11T01:46:04Z",
+      "last_updated": "2026-03-11T02:05:30Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -242,23 +242,23 @@
             {
               "home": "BKN",
               "away": "DET",
-              "home_score": "73",
-              "away_score": "110",
-              "status": "10:36 - 4th"
+              "home_score": "94",
+              "away_score": "131",
+              "status": "3:25 - 4th"
             },
             {
               "home": "MIA",
               "away": "WSH",
-              "home_score": "133",
-              "away_score": "108",
-              "status": "7:12 - 4th"
+              "home_score": "148",
+              "away_score": "122",
+              "status": "1:25 - 4th"
             },
             {
               "home": "ATL",
               "away": "DAL",
-              "home_score": "114",
-              "away_score": "106",
-              "status": "3:16 - 4th"
+              "home_score": "124",
+              "away_score": "112",
+              "status": "Final"
             }
           ]
         },
@@ -323,16 +323,16 @@
             "detail": "Penix (knee) won't necessarily be Atlanta's starting quarterback once he's healthy, as new addition Tua Tagovailoa will get a real chance to earn the role, Cameron Wolfe of NFL Network reports."
           },
           {
+            "player": "Dayton Wade",
+            "team": "",
+            "status": "Questionable",
+            "detail": "The Ravens are expected to re-sign Wade (ribs), Matt Zenitz of CBSSports reports."
+          },
+          {
             "player": "John Simpson",
             "team": "",
             "status": "Active",
             "detail": "Simpson agreed to a three-year, $30 million contract with the Ravens on Monday, Mike Garafolo of NFL Network reports."
-          },
-          {
-            "player": "Tyler Huntley",
-            "team": "",
-            "status": "Active",
-            "detail": "Huntley and the Ravens agreed to a two-year, $11 million contract Saturday, Adam Schefter of ESPN reports."
           }
         ],
         "nba": [
@@ -371,7 +371,7 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-11T01:46:12Z",
+      "last_updated": "2026-03-11T02:05:33Z",
       "headlines": [
         {
           "title": "Russian economy withstood pressure from outside German expert",
@@ -412,37 +412,37 @@
       "headline": "Russian economy withstood pressure from outside German expert"
     },
     "technology": {
-      "last_updated": "2026-03-11T01:46:12Z",
+      "last_updated": "2026-03-11T02:05:33Z",
       "hn_top": [
         {
           "title": "Tony Hoare has died",
           "url": "https://blog.computationalcomplexity.org/2026/03/tony-hoare-1934-2026.html",
-          "score": 1486,
+          "score": 1506,
           "comments": 200
         },
         {
           "title": "U+237C \u237c Is Azimuth",
           "url": "https://ionathan.ch/2026/02/16/angzarr.html",
-          "score": 129,
-          "comments": 11
+          "score": 135,
+          "comments": 12
         },
         {
           "title": "Cloudflare crawl endpoint",
           "url": "https://developers.cloudflare.com/changelog/post/2026-03-10-br-crawl-endpoint/",
-          "score": 110,
-          "comments": 57
+          "score": 122,
+          "comments": 62
         },
         {
           "title": "Agents that run while I sleep",
           "url": "https://www.claudecodecamp.com/p/i-m-building-agents-that-run-while-i-sleep",
-          "score": 224,
-          "comments": 179
+          "score": 231,
+          "comments": 183
         },
         {
           "title": "Yann LeCun raises $1B to build AI that understands the physical world",
           "url": "https://www.wired.com/story/yann-lecun-raises-dollar1-billion-to-build-ai-that-understands-the-physical-world/",
-          "score": 331,
-          "comments": 323
+          "score": 337,
+          "comments": 324
         }
       ],
       "tech_headlines": [
@@ -475,7 +475,7 @@
       "headline": "Tony Hoare has died"
     },
     "policy": {
-      "last_updated": "2026-03-11T01:46:13Z",
+      "last_updated": "2026-03-11T02:05:34Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -514,8 +514,29 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-11T01:46:25Z",
+      "last_updated": "2026-03-11T02:05:38Z",
       "cases": [
+        {
+          "title": "In Re Bystolic Antitrust Litigation",
+          "court": "Court of Appeals for the Second Circuit",
+          "date": "2024-05-13",
+          "tag": "Antitrust",
+          "link": "https://www.courtlistener.com/opinion/9501475/in-re-bystolic-antitrust-litigation/"
+        },
+        {
+          "title": "Automotive Parts Antitrust Litig.",
+          "court": "Court of Appeals for the Sixth Circuit",
+          "date": "2022-05-12",
+          "tag": "Antitrust",
+          "link": "https://www.courtlistener.com/opinion/6468000/automotive-parts-antitrust-litig/"
+        },
+        {
+          "title": "Capon v. Monopoly Game LLC",
+          "court": "California Court of Appeal",
+          "date": "2011-03-04",
+          "tag": "Antitrust",
+          "link": "https://www.courtlistener.com/opinion/5810084/capon-v-monopoly-game-llc/"
+        },
         {
           "title": "In re Telexfree Sec. Litig.",
           "court": "District Court, District of Columbia",
@@ -553,7 +574,7 @@
         }
       ],
       "scotus_opinions": [],
-      "headline": "In re Telexfree Sec. Litig."
+      "headline": "In Re Bystolic Antitrust Litigation"
     }
   }
 }
