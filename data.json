@@ -1,103 +1,103 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-11T14:15:51Z",
+  "fetched_at": "2026-03-11T14:32:24Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-11T14:15:52Z",
+      "last_updated": "2026-03-11T14:32:24Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
-          "price": 677.68,
+          "price": 676.01,
           "prev_close": 677.18,
-          "change": 0.5,
-          "change_pct": 0.07,
+          "change": -1.17,
+          "change_pct": -0.17,
           "currency": "USD"
         },
         "QQQ": {
           "label": "Nasdaq 100 ETF",
-          "price": 609.925,
+          "price": 608.11,
           "prev_close": 607.77,
-          "change": 2.155,
-          "change_pct": 0.35,
+          "change": 0.34,
+          "change_pct": 0.06,
           "currency": "USD"
         },
         "GLD": {
           "label": "Gold ETF",
-          "price": 476.885,
+          "price": 476.93,
           "prev_close": 477.86,
-          "change": -0.975,
-          "change_pct": -0.2,
+          "change": -0.93,
+          "change_pct": -0.19,
           "currency": "USD"
         },
         "TLT": {
           "label": "20Y Treasury ETF",
-          "price": 87.63,
+          "price": 87.56,
           "prev_close": 88.28,
-          "change": -0.65,
-          "change_pct": -0.74,
+          "change": -0.72,
+          "change_pct": -0.82,
           "currency": "USD"
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 70055.16,
+          "price": 70452.75,
           "prev_close": 69956.93,
-          "change": 98.23,
-          "change_pct": 0.14,
+          "change": 495.82,
+          "change_pct": 0.71,
           "currency": "USD"
         },
         "EURUSD=X": {
           "label": "EUR/USD",
-          "price": 1.1601,
+          "price": 1.1594,
           "prev_close": 1.1614,
-          "change": -0.0013,
-          "change_pct": -0.11,
+          "change": -0.002,
+          "change_pct": -0.17,
           "currency": "USD"
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 98.998,
+          "price": 99.043,
           "prev_close": 98.826,
-          "change": 0.172,
-          "change_pct": 0.17,
+          "change": 0.217,
+          "change_pct": 0.22,
           "currency": "USD"
         }
       },
       "yield_10y": 4.12,
-      "headline": "SPY 0.07%  |  BTC $70,055  |  10Y 4.12%"
+      "headline": "SPY -0.17%  |  BTC $70,453  |  10Y 4.12%"
     },
     "energy": {
-      "last_updated": "2026-03-11T14:16:01Z",
+      "last_updated": "2026-03-11T14:32:34Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 84.8,
+          "price": 85.6,
           "prev_close": 83.45,
-          "change": 1.35,
-          "change_pct": 1.62,
+          "change": 2.15,
+          "change_pct": 2.58,
           "currency": "USD"
         },
         "NG=F": {
           "label": "Natural Gas ($/MMBtu)",
-          "price": 3.088,
+          "price": 3.095,
           "prev_close": 3.02,
-          "change": 0.068,
-          "change_pct": 2.25,
+          "change": 0.075,
+          "change_pct": 2.48,
           "currency": "USD"
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 86.31,
+          "price": 87.2,
           "prev_close": 85.27,
-          "change": 1.04,
-          "change_pct": 1.22,
+          "change": 1.93,
+          "change_pct": 2.26,
           "currency": "USD"
         },
         "XLE": {
           "label": "Energy ETF",
-          "price": 56.3,
+          "price": 56.61,
           "prev_close": 55.6,
-          "change": 0.7,
-          "change_pct": 1.26,
+          "change": 1.01,
+          "change_pct": 1.82,
           "currency": "USD"
         }
       },
@@ -123,65 +123,65 @@
           "published": "Tue, 03 Mar 2026 09:00:00 EST"
         }
       ],
-      "headline": "WTI $84.80/bbl"
+      "headline": "WTI $85.60/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-11T14:16:03Z",
+      "last_updated": "2026-03-11T14:32:35Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
-          "price": 187.135,
+          "price": 186.386,
           "prev_close": 184.77,
-          "change": 2.365,
-          "change_pct": 1.28,
+          "change": 1.616,
+          "change_pct": 0.87,
           "currency": "USD"
         },
         "MSFT": {
           "label": "Microsoft",
-          "price": 405.86,
+          "price": 404.08,
           "prev_close": 405.76,
-          "change": 0.1,
-          "change_pct": 0.02,
+          "change": -1.68,
+          "change_pct": -0.41,
           "currency": "USD"
         },
         "AAPL": {
           "label": "Apple",
-          "price": 260.75,
+          "price": 260.09,
           "prev_close": 260.83,
-          "change": -0.08,
-          "change_pct": -0.03,
+          "change": -0.74,
+          "change_pct": -0.28,
           "currency": "USD"
         },
         "META": {
           "label": "Meta",
-          "price": 655.38,
+          "price": 652.42,
           "prev_close": 654.07,
-          "change": 1.31,
-          "change_pct": 0.2,
+          "change": -1.65,
+          "change_pct": -0.25,
           "currency": "USD"
         },
         "TSLA": {
           "label": "Tesla",
-          "price": 412.2,
+          "price": 411.06,
           "prev_close": 399.235,
-          "change": 12.965,
-          "change_pct": 3.25,
+          "change": 11.825,
+          "change_pct": 2.96,
           "currency": "USD"
         },
         "AMZN": {
           "label": "Amazon",
-          "price": 215.01,
+          "price": 213.725,
           "prev_close": 214.33,
-          "change": 0.68,
-          "change_pct": 0.32,
+          "change": -0.605,
+          "change_pct": -0.28,
           "currency": "USD"
         },
         "GOOGL": {
           "label": "Alphabet",
-          "price": 309.68,
+          "price": 310.8,
           "prev_close": 307.04,
-          "change": 2.64,
-          "change_pct": 0.86,
+          "change": 3.76,
+          "change_pct": 1.22,
           "currency": "USD"
         }
       },
@@ -212,10 +212,10 @@
           "published": "2026-03-11"
         }
       ],
-      "headline": "NVDA 1.28%  |  MSFT 0.02%"
+      "headline": "NVDA 0.87%  |  MSFT -0.41%"
     },
     "sports": {
-      "last_updated": "2026-03-11T14:16:03Z",
+      "last_updated": "2026-03-11T14:32:36Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -323,16 +323,16 @@
             "detail": "Penix (knee) won't necessarily be Atlanta's starting quarterback once he's healthy, as new addition Tua Tagovailoa will get a real chance to earn the role, Cameron Wolfe of NFL Network reports."
           },
           {
+            "player": "Lamar Jackson",
+            "team": "",
+            "status": "Active",
+            "detail": "Jackson and the Ravens are in agreement on a restructured contract to add $40 million of cap space for 2026, Adam Schefter of ESPN reports."
+          },
+          {
             "player": "Dayton Wade",
             "team": "",
             "status": "Questionable",
             "detail": "The Ravens are expected to re-sign Wade (ribs), Matt Zenitz of CBSSports reports."
-          },
-          {
-            "player": "John Simpson",
-            "team": "",
-            "status": "Active",
-            "detail": "Simpson agreed to a three-year, $30 million contract with the Ravens on Monday, Mike Garafolo of NFL Network reports."
           }
         ],
         "nba": [
@@ -357,13 +357,13 @@
           {
             "player": "Ziaire Williams",
             "team": "",
-            "status": "Out",
+            "status": "Day-To-Day",
             "detail": "Williams (illness) won't play in Tuesday's game against the Pistons, per Brian Lewis of the New York Post."
           },
           {
             "player": "Day'Ron Sharpe",
             "team": "",
-            "status": "Out",
+            "status": "Day-To-Day",
             "detail": "Sharpe won't play in Tuesday's game against Detroit due to a left thumb sprain, per Brian Lewis of the New York Post."
           }
         ]
@@ -371,12 +371,17 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-11T14:16:04Z",
+      "last_updated": "2026-03-11T14:32:46Z",
       "headlines": [
         {
-          "title": "Record release of emergency oil reserves planned as prices surge",
+          "title": "Countries agree to record release of emergency oil reserves as prices surge",
           "link": "https://www.bbc.com/news/articles/cly093xxlzzo?at_medium=RSS&at_campaign=rss",
-          "published": "Wed, 11 Mar 2026 13:46:37 GMT"
+          "published": "Wed, 11 Mar 2026 14:30:40 GMT"
+        },
+        {
+          "title": "EU and UK demand Israel stop surge in West Bank settler violence since Iran war",
+          "link": "https://www.bbc.com/news/articles/c620vwl97vyo?at_medium=RSS&at_campaign=rss",
+          "published": "Wed, 11 Mar 2026 14:13:52 GMT"
         },
         {
           "title": "Ukraine says it has hit Russian 'missile component' plant",
@@ -384,55 +389,50 @@
           "published": "Wed, 11 Mar 2026 11:16:02 GMT"
         },
         {
+          "title": "French aid worker among three killed in drone strikes in rebel-held DR Congo city",
+          "link": "https://www.bbc.com/news/articles/cvgj8veg0gno?at_medium=RSS&at_campaign=rss",
+          "published": "Wed, 11 Mar 2026 14:17:20 GMT"
+        },
+        {
           "title": "Jeffrey Epstein had two key aides - why do they still control his money and secrets?",
           "link": "https://www.bbc.com/news/articles/cdjm7rxjxneo?at_medium=RSS&at_campaign=rss",
           "published": "Wed, 11 Mar 2026 00:10:20 GMT"
-        },
-        {
-          "title": "At least six dead in Switzerland bus fire",
-          "link": "https://www.bbc.com/news/articles/c5y4wdlyy9xo?at_medium=RSS&at_campaign=rss",
-          "published": "Wed, 11 Mar 2026 11:37:23 GMT"
-        },
-        {
-          "title": "Member of Iranian football delegation granted Australian asylum changes her mind",
-          "link": "https://www.bbc.com/news/articles/c93j2492d0do?at_medium=RSS&at_campaign=rss",
-          "published": "Wed, 11 Mar 2026 04:14:40 GMT"
         }
       ],
-      "headline": "Record release of emergency oil reserves planned as prices surge"
+      "headline": "Countries agree to record release of emergency oil reserves as prices surge"
     },
     "technology": {
-      "last_updated": "2026-03-11T14:16:05Z",
+      "last_updated": "2026-03-11T14:32:47Z",
       "hn_top": [
-        {
-          "title": "Microsoft BitNet: 100B Param 1-Bit model for local CPUs",
-          "url": "https://github.com/microsoft/BitNet",
-          "score": 99,
-          "comments": 60
-        },
         {
           "title": "Lego's 0.002 mm Specification and Its Implications for Manufacturing (2025)",
           "url": "https://www.thewave.engineer/articles.html/productivity/legos-0002mm-specification-and-its-implications-for-manufacturing-r120/",
-          "score": 46,
-          "comments": 22
+          "score": 74,
+          "comments": 38
         },
         {
-          "title": "The entities enabling scientific fraud at scale are large, resilient and growing",
-          "url": "https://doi.org/10.1073/pnas.2420092122",
-          "score": 11,
-          "comments": 0
+          "title": "Microsoft BitNet: 100B Param 1-Bit model for local CPUs",
+          "url": "https://github.com/microsoft/BitNet",
+          "score": 110,
+          "comments": 63
         },
         {
           "title": "Whistleblower: DOGE member took Social Security data to new job",
           "url": "https://www.washingtonpost.com/politics/2026/03/10/social-security-data-breach-doge-2/",
-          "score": 62,
-          "comments": 15
+          "score": 121,
+          "comments": 33
+        },
+        {
+          "title": "The entities enabling scientific fraud at scale are large, resilient and growing",
+          "url": "https://doi.org/10.1073/pnas.2420092122",
+          "score": 26,
+          "comments": 5
         },
         {
           "title": "PeppyOS: A simpler alternative to ROS 2 (now with containers support)",
           "url": "https://peppy.bot/",
-          "score": 27,
-          "comments": 6
+          "score": 33,
+          "comments": 7
         }
       ],
       "tech_headlines": [
@@ -462,10 +462,10 @@
           "published": "Mon, 09 Mar 2026 09:30:00 +0000"
         }
       ],
-      "headline": "Microsoft BitNet: 100B Param 1-Bit model for local CPUs"
+      "headline": "Lego's 0.002 mm Specification and Its Implications for Manufacturing (2025)"
     },
     "policy": {
-      "last_updated": "2026-03-11T14:16:06Z",
+      "last_updated": "2026-03-11T14:32:47Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -504,7 +504,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-11T14:16:08Z",
+      "last_updated": "2026-03-11T14:32:49Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
