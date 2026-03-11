@@ -1,9 +1,9 @@
 {
   "schema_version": "1.2",
-  "fetched_at": "2026-03-11T07:45:55Z",
+  "fetched_at": "2026-03-11T08:11:26Z",
   "domains": {
     "markets": {
-      "last_updated": "2026-03-11T07:45:56Z",
+      "last_updated": "2026-03-11T08:11:27Z",
       "quotes": {
         "SPY": {
           "label": "S&P 500 ETF",
@@ -39,57 +39,57 @@
         },
         "BTC-USD": {
           "label": "Bitcoin",
-          "price": 69596.19,
+          "price": 69648.266,
           "prev_close": 69956.93,
-          "change": -360.74,
-          "change_pct": -0.52,
+          "change": -308.664,
+          "change_pct": -0.44,
           "currency": "USD"
         },
         "EURUSD=X": {
           "label": "EUR/USD",
-          "price": 1.162,
+          "price": 1.1623,
           "prev_close": 1.1614,
-          "change": 0.0006,
-          "change_pct": 0.05,
+          "change": 0.0009,
+          "change_pct": 0.08,
           "currency": "USD"
         },
         "DX-Y.NYB": {
           "label": "DXY",
-          "price": 98.828,
+          "price": 98.88,
           "prev_close": 98.826,
-          "change": 0.002,
-          "change_pct": 0.0,
+          "change": 0.054,
+          "change_pct": 0.05,
           "currency": "USD"
         }
       },
       "yield_10y": 4.12,
-      "headline": "SPY -0.16%  |  BTC $69,596  |  10Y 4.12%"
+      "headline": "SPY -0.16%  |  BTC $69,648  |  10Y 4.12%"
     },
     "energy": {
-      "last_updated": "2026-03-11T07:46:06Z",
+      "last_updated": "2026-03-11T08:11:35Z",
       "quotes": {
         "CL=F": {
           "label": "WTI Crude ($/bbl)",
-          "price": 84.81,
+          "price": 85.2,
           "prev_close": 83.45,
-          "change": 1.36,
-          "change_pct": 1.63,
+          "change": 1.75,
+          "change_pct": 2.1,
           "currency": "USD"
         },
         "NG=F": {
           "label": "Natural Gas ($/MMBtu)",
-          "price": 3.062,
+          "price": 3.063,
           "prev_close": 3.02,
-          "change": 0.042,
-          "change_pct": 1.39,
+          "change": 0.043,
+          "change_pct": 1.42,
           "currency": "USD"
         },
         "BZ=F": {
           "label": "Brent Crude ($/bbl)",
-          "price": 86.0,
+          "price": 86.26,
           "prev_close": 85.27,
-          "change": 0.73,
-          "change_pct": 0.86,
+          "change": 0.99,
+          "change_pct": 1.16,
           "currency": "USD"
         },
         "XLE": {
@@ -101,11 +101,32 @@
           "currency": "USD"
         }
       },
-      "headlines": [],
-      "headline": "WTI $84.81/bbl"
+      "headlines": [
+        {
+          "title": "Annual U.S. crude oil exports decrease for first time since 2021",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67324",
+          "published": "Tue, 10 Mar 2026 09:00:00 EST"
+        },
+        {
+          "title": "U.S. exports of major transportation fuels in 2025 were about the same as in 2024",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67304",
+          "published": "Mon, 09 Mar 2026 09:00:00 EST"
+        },
+        {
+          "title": "U.S. electricity generation in 2025 hit a record, again",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67284",
+          "published": "Thu, 05 Mar 2026 09:00:00 EST"
+        },
+        {
+          "title": "U.S. LNG developers sign highest volume of sale and purchase contracts since 2022",
+          "link": "https://www.eia.gov/todayinenergy/detail.php?id=67264",
+          "published": "Tue, 03 Mar 2026 09:00:00 EST"
+        }
+      ],
+      "headline": "WTI $85.20/bbl"
     },
     "companies": {
-      "last_updated": "2026-03-11T07:46:07Z",
+      "last_updated": "2026-03-11T08:11:36Z",
       "quotes": {
         "NVDA": {
           "label": "NVIDIA",
@@ -194,7 +215,7 @@
       "headline": "NVDA 1.16%  |  MSFT -0.89%"
     },
     "sports": {
-      "last_updated": "2026-03-11T07:46:08Z",
+      "last_updated": "2026-03-11T08:11:36Z",
       "scores": {
         "nfl": {
           "label": "NFL",
@@ -350,33 +371,8 @@
       "headline": "NFL / NBA / MLB live scores"
     },
     "geopolitics": {
-      "last_updated": "2026-03-11T07:46:12Z",
+      "last_updated": "2026-03-11T08:11:46Z",
       "headlines": [
-        {
-          "title": "Russian economy withstood pressure from outside German expert",
-          "link": "https://tass.com/economy/2073165",
-          "published": "20260119T140000Z"
-        },
-        {
-          "title": "Sudan : united kingdom Hits  Sudan War Machine  With New Sanctions",
-          "link": "https://allafrica.com/stories/202602060005.html",
-          "published": "20260206T060000Z"
-        },
-        {
-          "title": "UK Sanctions Sudanese Army and RSF Leaders",
-          "link": "https://english.aawsat.com/arab-world/5237657-uk-sanctions-sudanese-army-and-rsf-leaders",
-          "published": "20260205T183000Z"
-        },
-        {
-          "title": "U . S . sanctions Gaza charities over alleged Hamas ties \u2013 NaturalNews . com",
-          "link": "https://www.naturalnews.com/2026-01-26-us-sanctions-gaza-charities-over-hamas-ties.html",
-          "published": "20260126T130000Z"
-        },
-        {
-          "title": "Myanmar military using commercial paramotors , gyrocopters for attacks : Report",
-          "link": "https://www.siasat.com/myanmar-military-using-commercial-paramotors-gyrocopters-for-attacks-report-3331737/",
-          "published": "20260126T140000Z"
-        },
         {
           "title": "'I just want to be able to sleep': Attacks in Iran rock cities and cut power",
           "link": "https://www.bbc.com/news/articles/cev7llekwllo?at_medium=RSS&at_campaign=rss",
@@ -386,45 +382,65 @@
           "title": "Jeffrey Epstein had two key aides - why do they still control his money and secrets?",
           "link": "https://www.bbc.com/news/articles/cdjm7rxjxneo?at_medium=RSS&at_campaign=rss",
           "published": "Wed, 11 Mar 2026 00:10:20 GMT"
+        },
+        {
+          "title": "Steve Rosenberg: Russia seeks diplomatic and economic gains from Iran war",
+          "link": "https://www.bbc.com/news/articles/c4gjyg0djvmo?at_medium=RSS&at_campaign=rss",
+          "published": "Tue, 10 Mar 2026 19:35:29 GMT"
+        },
+        {
+          "title": "At least six dead in Switzerland bus fire",
+          "link": "https://www.bbc.com/news/articles/c5y4wdlyy9xo?at_medium=RSS&at_campaign=rss",
+          "published": "Wed, 11 Mar 2026 06:13:12 GMT"
+        },
+        {
+          "title": "Woman charged with attempted murder after shooting at Rihanna's home",
+          "link": "https://www.bbc.com/news/articles/cgjze644wjvo?at_medium=RSS&at_campaign=rss",
+          "published": "Wed, 11 Mar 2026 03:10:09 GMT"
         }
       ],
-      "headline": "Russian economy withstood pressure from outside German expert"
+      "headline": "'I just want to be able to sleep': Attacks in Iran rock cities and cut power"
     },
     "technology": {
-      "last_updated": "2026-03-11T07:46:12Z",
+      "last_updated": "2026-03-11T08:11:47Z",
       "hn_top": [
         {
           "title": "Create value for others and don\u2019t worry about the returns",
           "url": "https://geohot.github.io//blog/jekyll/update/2026/03/11/running-69-agents.html",
-          "score": 165,
-          "comments": 61
+          "score": 208,
+          "comments": 80
         },
         {
           "title": "Zig \u2013 Type Resolution Redesign and Language Changes",
           "url": "https://ziglang.org/devlog/2026/#2026-03-10",
-          "score": 160,
-          "comments": 54
+          "score": 168,
+          "comments": 55
+        },
+        {
+          "title": "AutoKernel: Autoresearch for GPU Kernels",
+          "url": "https://github.com/RightNow-AI/autokernel",
+          "score": 8,
+          "comments": 0
         },
         {
           "title": "U+237C \u237c Is Azimuth",
           "url": "https://ionathan.ch/2026/02/16/angzarr.html",
-          "score": 262,
+          "score": 268,
           "comments": 26
         },
         {
-          "title": "Cloudflare crawl endpoint",
-          "url": "https://developers.cloudflare.com/changelog/post/2026-03-10-br-crawl-endpoint/",
-          "score": 256,
-          "comments": 101
-        },
-        {
-          "title": "Julia Snail \u2013 An Emacs Development Environment for Julia Like Clojure's Cider",
-          "url": "https://github.com/gcv/julia-snail",
-          "score": 52,
-          "comments": 6
+          "title": "I'm going to build my own OpenClaw, with blackjack and bun",
+          "url": "https://github.com/rcarmo/piclaw",
+          "score": 12,
+          "comments": 2
         }
       ],
       "tech_headlines": [
+        {
+          "title": "Technology Is Reshaping Sleep Apnea Treatment",
+          "link": "https://www.wired.com/story/sleep-apnea-treatment-tech/",
+          "published": "Wed, 11 Mar 2026 08:00:00 +0000"
+        },
         {
           "title": "Interstellar Comet 3I/Atlas Has Another Surprise: It\u2019s Full of Alcohol",
           "link": "https://www.wired.com/story/interstellar-comet-3i-atlas-has-another-surprise-its-full-of-alcohol/",
@@ -444,17 +460,12 @@
           "title": "Why RFK\u2019s CDC Is Endorsing \u2018Shared Decisionmaking\u2019 for Vaccines",
           "link": "https://www.wired.com/story/why-rfks-cdc-is-endorsing-shared-decision-making-for-vaccines/",
           "published": "Mon, 09 Mar 2026 09:30:00 +0000"
-        },
-        {
-          "title": "Left-Handed People Are More Competitive, Says Science",
-          "link": "https://www.wired.com/story/left-handed-people-are-more-competitive-says-science/",
-          "published": "Sun, 08 Mar 2026 09:00:00 +0000"
         }
       ],
       "headline": "Create value for others and don\u2019t worry about the returns"
     },
     "policy": {
-      "last_updated": "2026-03-11T07:46:13Z",
+      "last_updated": "2026-03-11T08:11:48Z",
       "bills": [
         {
           "title": "Most-Viewed Bills - Week of March 8, 2026",
@@ -464,28 +475,28 @@
       ],
       "federal_rules": [
         {
+          "title": "Extension of Import Restrictions Imposed on Certain Archaeological and Ecclesiastical Ethnological Material of Colombia",
+          "link": "https://www.federalregister.gov/documents/2026/03/11/2026-04786/extension-of-import-restrictions-imposed-on-certain-archaeological-and-ecclesiastical-ethnological",
+          "published": "2026-03-11"
+        },
+        {
+          "title": "Amendment of Very High Frequency Omnidirectional Range Federal Airways V-14, V-192, V-210, and V-221 in the Vicinity of Muncie, Indiana",
+          "link": "https://www.federalregister.gov/documents/2026/03/11/2026-04780/amendment-of-very-high-frequency-omnidirectional-range-federal-airways-v-14-v-192-v-210-and-v-221-in",
+          "published": "2026-03-11"
+        },
+        {
+          "title": "Fisheries of the Exclusive Economic Zone Off Alaska; Gulf of Alaska; 2026 and 2027 Harvest Specifications for Groundfish",
+          "link": "https://www.federalregister.gov/documents/2026/03/11/2026-04753/fisheries-of-the-exclusive-economic-zone-off-alaska-gulf-of-alaska-2026-and-2027-harvest",
+          "published": "2026-03-11"
+        },
+        {
+          "title": "Visas: Enhancing Vetting and Combatting Fraud in the Diversity Immigrant Visa Program",
+          "link": "https://www.federalregister.gov/documents/2026/03/11/2026-04737/visas-enhancing-vetting-and-combatting-fraud-in-the-diversity-immigrant-visa-program",
+          "published": "2026-03-11"
+        },
+        {
           "title": "Updates to the Popcorn Promotion, Research, and Consumer Information Order",
           "link": "https://www.federalregister.gov/documents/2026/03/10/2026-04694/updates-to-the-popcorn-promotion-research-and-consumer-information-order",
-          "published": "2026-03-10"
-        },
-        {
-          "title": "Fisheries of the Exclusive Economic Zone Off Alaska; Bering Sea and Aleutian Islands; 2026 and 2027 Harvest Specifications for Groundfish",
-          "link": "https://www.federalregister.gov/documents/2026/03/10/2026-04684/fisheries-of-the-exclusive-economic-zone-off-alaska-bering-sea-and-aleutian-islands-2026-and-2027",
-          "published": "2026-03-10"
-        },
-        {
-          "title": "Airworthiness Directives; Airbus SAS Airplanes",
-          "link": "https://www.federalregister.gov/documents/2026/03/10/2026-04677/airworthiness-directives-airbus-sas-airplanes",
-          "published": "2026-03-10"
-        },
-        {
-          "title": "Designation of Propionyl Chloride as a List I Chemical",
-          "link": "https://www.federalregister.gov/documents/2026/03/10/2026-04657/designation-of-propionyl-chloride-as-a-list-i-chemical",
-          "published": "2026-03-10"
-        },
-        {
-          "title": "Air Plan Approval; North Dakota; Approval of Air Quality Implementation Plans; Regional Haze State Implementation Plan; Regional Haze Five Year Progress Report and Nitrogen Oxides Best Available Retrofit Technology Determination for Coal Creek Station for the First Implementation Period",
-          "link": "https://www.federalregister.gov/documents/2026/03/10/2026-04649/air-plan-approval-north-dakota-approval-of-air-quality-implementation-plans-regional-haze-state",
           "published": "2026-03-10"
         }
       ],
@@ -493,7 +504,7 @@
       "headline": "Most-Viewed Bills - Week of March 8, 2026"
     },
     "legal": {
-      "last_updated": "2026-03-11T07:46:15Z",
+      "last_updated": "2026-03-11T08:11:50Z",
       "cases": [
         {
           "title": "In Re Bystolic Antitrust Litigation",
