@@ -1,13 +1,14 @@
 # Inflection Point Research
 
-Inflection Point Research (IPR) is the structural-forecasting layer within AURORA GRID. It tests whether a development is a genuine change in system behavior or merely temporary, cyclical, local, symbolic, or narrative-driven.
+Inflection Point Research (IPR) is the structural-forecasting layer within AURORA GRID OS. It tests whether a development is a genuine change in system behavior or merely temporary, cyclical, local, symbolic, or narrative-driven.
 
 ## Canonical links
 
 - Repository: https://github.com/hr185882-creator/inflection-point-research
 - GitHub profile: https://github.com/hr185882-creator
 - AURORA GRID live site: https://hr185882-creator.github.io/aurora-grid-grindwire-site/
-- AURORA GRID v2 specification: https://github.com/hr185882-creator/aurora-grid-grindwire-site/blob/main/docs/AURORA_GRID_V2_CANONICAL.md
+- AURORA GRID OS v2.1.1 public release: https://hr185882-creator.github.io/aurora-grid-grindwire-site/release.html
+- AURORA GRID OS v2.1.1 specification: https://github.com/hr185882-creator/aurora-grid-grindwire-site/blob/main/docs/AURORA_GRID_V2_CANONICAL.md
 - AURORA Learning Platform: https://github.com/hr185882-creator/aurora-learning-platform
 - AURORA LIVE / Intel Tripwire: https://github.com/hr185882-creator/intel-tripwire
 
@@ -28,9 +29,9 @@ IPR examines:
 - the strongest continuity case
 - the reference class for comparable apparent turning points
 
-## Integration with AURORA GRID
+## Integration with AURORA GRID OS v2.1.1
 
-IPR operates inside the active v2 workflow:
+IPR operates inside the active v2.1.1 workflow:
 
 `ROUTER -> SCOUT -> SOURCEGRID -> K-ALIGN -> IPR -> BLACKGLASS-I -> CRF -> COMMAND -> BLACKGLASS-II -> RECORD LOCK`
 
